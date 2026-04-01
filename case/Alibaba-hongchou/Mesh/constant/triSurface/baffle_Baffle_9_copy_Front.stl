@@ -1,0 +1,16 @@
+solid Baffle_9_copy_Front
+  facet normal 0.000000 -1.000000 0.000000
+    outer loop
+      vertex 7.600000 19.540569 4.000000
+      vertex 7.600000 19.540569 0.005855
+      vertex 10.600000 19.540569 0.005855
+    endloop
+  endfacet
+  facet normal 0.000000 -1.000000 0.000000
+    outer loop
+      vertex 10.600000 19.540569 0.005855
+      vertex 10.600000 19.540569 4.000000
+      vertex 7.600000 19.540569 4.000000
+    endloop
+  endfacet
+endsolid Baffle_9_copy_Front

@@ -1,0 +1,116 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  7
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       volScalarField;
+    location    "0";
+    object      k;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+dimensions      [0 2 -2 0 0 0 0];
+
+internalField   uniform {{ acu_k }};
+
+boundaryField
+{
+
+    "acu_wall_.*"
+    {
+        type            kqRWallFunction;
+        value           uniform {{ acu_k }};
+    }
+
+    "acu_return_.*"
+    {
+        type            inletOutlet;
+        inletValue      uniform {{ acu_k }};
+        value           uniform {{ acu_k }};
+    }
+
+    "acu_supply_.*"
+    {
+        type            inletOutlet;
+        inletValue      uniform {{ acu_k }};
+        value           uniform {{ acu_k }};
+    }
+
+    "room_wall_.*"
+    {
+        type            kqRWallFunction;
+        value           uniform {{ acu_k }};
+    }
+
+    "raised_floor_.*"
+    {
+        type            kqRWallFunction;
+        value           uniform {{ acu_k }};
+    }
+
+    "opening_raised_floor_.*"
+    {
+        type           cyclic;
+    }
+
+    "false_ceiling_.*"
+    {
+        type            kqRWallFunction;
+        value           uniform {{ acu_k }};
+    }
+
+    "opening_false_ceiling_.*"
+    {
+        type           cyclic;
+    }
+
+    "rack_cyclic_.*"
+    {
+        type            cyclic;
+    }
+
+    "rack_air_leak_.*"
+    {
+        type           cyclic;
+    }
+
+    "box_.*"
+    {
+        type            kqRWallFunction;
+        value           uniform {{ acu_k }};
+    }
+
+    "opening_box_.*"
+    {
+        type           cyclic;
+    }
+
+    "rack_wall_.*"
+    {
+        type            kqRWallFunction;
+        value           uniform {{ acu_k }};
+    }
+
+    "server_inlet_.*"
+    {
+        type            inletOutlet;
+        inletValue      uniform {{ server_k }};
+        value           uniform {{ server_k }};
+    }
+
+    "server_outlet_.*"
+    {
+        type            inletOutlet;
+        inletValue      uniform {{ server_k }};
+        value           uniform {{ server_k }};
+    }
+}
+
+
+// ************************************************************************* //

@@ -1,0 +1,82 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  7
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       volVectorField;
+    object      U;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+dimensions      [0 1 -1 0 0 0 0];
+
+internalField   {{ 'uniform (0 0 0)' if not internal_field else internal_field }};
+
+boundaryField
+{
+
+    "room_wall_.*"
+    {
+        type            noSlip;
+    }
+
+    "raised_floor_.*"
+    {
+         type            noSlip;
+    }
+
+    "opening_raised_floor_.*"
+    {
+        type           cyclic;
+    }
+
+    "false_ceiling_.*"
+    {
+        type            noSlip;
+    }
+
+    "opening_false_ceiling_.*"
+    {
+        type            cyclic;
+    }
+
+    "box_.*"
+    {
+        type            noSlip;
+    }
+
+    "opening_box_.*"
+    {
+        type           cyclic;
+    }
+
+    "rack_wall_.*"
+    {
+        type            noSlip;
+    }
+
+    "rack_cyclic_.*"
+    {
+        type           cyclic;
+    }
+
+    "rack_air_leak_.*"
+    {
+        type           cyclic;
+    }
+    {% for acu_boundary in acu_boundaries %}
+    {{ acu_boundary.U }}
+    {% endfor %}
+    {% for server_boundary in server_boundaries %}
+    {{ server_boundary.U }}
+    {% endfor %}
+
+}
+
+// ************************************************************************* //

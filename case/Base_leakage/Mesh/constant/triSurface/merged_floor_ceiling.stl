@@ -1,0 +1,16 @@
+solid Floor_2_Top
+  facet normal 0.000000 0.000000 1.000000
+    outer loop
+      vertex 1.990648 7.426081 0.000000
+      vertex 1.990648 1.041110 0.000000
+      vertex 6.014294 1.041110 0.000000
+    endloop
+  endfacet
+  facet normal 0.000000 0.000000 1.000000
+    outer loop
+      vertex 6.014294 1.041110 0.000000
+      vertex 6.014294 7.426081 0.000000
+      vertex 1.990648 7.426081 0.000000
+    endloop
+  endfacet
+endsolid Floor_2_Top

@@ -1,0 +1,4273 @@
+{
+    "meta": {
+        "name": "mini_alibaba_mixed",
+        "version": "1.0"
+    },
+    "models": {
+        "geometryModels": {
+            "acus": {
+                "acu_model_1": {
+                    "size": {
+                        "x": 3.6,
+                        "y": 0.9,
+                        "z": 2.0
+                    },
+                    "supplyFace": {
+                        "length": 1.8,
+                        "offset": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "side": "bottom",
+                        "width": 3.4
+                    },
+                    "returnFace": {
+                        "length": 0.7,
+                        "offset": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "side": "top",
+                        "width": 3.4
+                    }
+                }
+            },
+            "racks": {
+                "rack_model_1": {
+                    "firstSlotOffset": 0.1,
+                    "size": {
+                        "x": 0.6,
+                        "y": 1.2,
+                        "z": 2.2
+                    },
+                    "slot": 42
+                }
+            },
+            "servers": {
+                "Pokemon": {
+                    "depth": 1.2,
+                    "slotOccupation": 4,
+                    "width": 0.6
+                },
+                "AliServer Thor01-12U": {
+                    "depth": 1.2,
+                    "slotOccupation": 2,
+                    "width": 0.6
+                },
+                "AliServer Thor01-2U": {
+                    "depth": 1.2,
+                    "slotOccupation": 2,
+                    "width": 0.6
+                },
+                "SA5212M4": {
+                    "depth": 1.2,
+                    "slotOccupation": 2,
+                    "width": 0.6
+                },
+                "K800G3-10G": {
+                    "depth": 1.2,
+                    "slotOccupation": 2,
+                    "width": 0.6
+                },
+                "S2PA": {
+                    "depth": 1.2,
+                    "slotOccupation": 4,
+                    "width": 0.6
+                },
+                "ThinkServer SD350X": {
+                    "depth": 1.2,
+                    "slotOccupation": 2,
+                    "width": 0.6
+                },
+                "ThinkServer RD452X": {
+                    "depth": 1.2,
+                    "slotOccupation": 2,
+                    "width": 0.6
+                },
+                "R2-1218R-TH": {
+                    "depth": 1.2,
+                    "slotOccupation": 2,
+                    "width": 0.6
+                },
+                "AliServer Thor02-12S": {
+                    "depth": 1.2,
+                    "slotOccupation": 2,
+                    "width": 0.6
+                },
+                "AliServer Thor04-2U": {
+                    "depth": 1.2,
+                    "slotOccupation": 2,
+                    "width": 0.6
+                },
+                "RH2288H V3": {
+                    "depth": 1.2,
+                    "slotOccupation": 2,
+                    "width": 0.6
+                },
+                "NF5280M4": {
+                    "depth": 1.2,
+                    "slotOccupation": 2,
+                    "width": 0.6
+                },
+                "S5BA3UPI": {
+                    "depth": 1.2,
+                    "slotOccupation": 2,
+                    "width": 0.6
+                }
+            },
+            "boxes": {
+                "partition": {
+                    "faces": {
+                        "top": true,
+                        "bottom": true,
+                        "rear": true,
+                        "front": true,
+                        "left": true,
+                        "right": true
+                    }
+                },
+                "pillar": {
+                    "faces": {
+                        "top": true,
+                        "bottom": true,
+                        "rear": true,
+                        "front": true,
+                        "left": true,
+                        "right": true
+                    }
+                },
+                "duct": {
+                    "faces": {
+                        "top": false,
+                        "bottom": false,
+                        "rear": true,
+                        "front": true,
+                        "left": true,
+                        "right": true
+                    }
+                }
+            }
+        },
+        "powerModels": {},
+        "coolingModels": {
+            "acus": {
+                "acu_model_1": {
+                    "coolingType": "DX",
+                    "coolingCapacity": 600.0
+                }
+            },
+            "servers": {
+                "Pokemon": {
+                    "fanType": "Fixed",
+                    "volumeFlowRate": 0.02
+                },
+                "AliServer Thor01-12U": {
+                    "fanType": "Fixed",
+                    "volumeFlowRate": 0.02
+                },
+                "AliServer Thor01-2U": {
+                    "fanType": "Fixed",
+                    "volumeFlowRate": 0.02
+                },
+                "SA5212M4": {
+                    "fanType": "Fixed",
+                    "volumeFlowRate": 0.02
+                },
+                "K800G3-10G": {
+                    "fanType": "Fixed",
+                    "volumeFlowRate": 0.02
+                },
+                "S2PA": {
+                    "fanType": "Fixed",
+                    "volumeFlowRate": 0.02
+                },
+                "ThinkServer SD350X": {
+                    "fanType": "Fixed",
+                    "volumeFlowRate": 0.02
+                },
+                "ThinkServer RD452X": {
+                    "fanType": "Fixed",
+                    "volumeFlowRate": 0.02
+                },
+                "R2-1218R-TH": {
+                    "fanType": "Fixed",
+                    "volumeFlowRate": 0.02
+                },
+                "AliServer Thor02-12S": {
+                    "fanType": "Fixed",
+                    "volumeFlowRate": 0.02
+                },
+                "AliServer Thor04-2U": {
+                    "fanType": "Fixed",
+                    "volumeFlowRate": 0.02
+                },
+                "RH2288H V3": {
+                    "fanType": "Fixed",
+                    "volumeFlowRate": 0.02
+                },
+                "NF5280M4": {
+                    "fanType": "Fixed",
+                    "volumeFlowRate": 0.02
+                },
+                "S5BA3UPI": {
+                    "fanType": "Fixed",
+                    "volumeFlowRate": 0.02
+                }
+            }
+        }
+    },
+    "geometry": {
+        "height": 4.0,
+        "plane": [
+            {
+                "x": 0.0,
+                "y": 12.6,
+                "z": 0.0
+            },
+            {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            {
+                "x": 6.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            {
+                "x": 6.0,
+                "y": 12.6,
+                "z": 0.0
+            }
+        ]
+    },
+    "constructions": {
+        "raisedFloor": {
+            "geometry": {
+                "height": 0.4,
+                "openings": {
+                    "opening_1": {
+                        "location": {
+                            "x": 0.6,
+                            "y": 4.2,
+                            "z": 0.0
+                        },
+                        "size": {
+                            "x": 0.6,
+                            "y": 6.0,
+                            "z": 0.0
+                        }
+                    },
+                    "opening_2": {
+                        "location": {
+                            "x": 4.8,
+                            "y": 4.2,
+                            "z": 0.0
+                        },
+                        "size": {
+                            "x": 0.6,
+                            "y": 6.0,
+                            "z": 0.0
+                        }
+                    }
+                }
+            }
+        },
+        "boxes": {},
+        "acus": {
+            "ACU1": {
+                "geometry": {
+                    "model": "acu_model_1",
+                    "orientation": 180,
+                    "location": {
+                        "x": 4.8,
+                        "y": 1.8,
+                        "z": 0.0
+                    }
+                },
+                "cooling": {
+                    "model": "acu_model_1"
+                }
+            }
+        },
+        "racks": {
+            "A01": {
+                "geometry": {
+                    "model": "rack_model_1",
+                    "location": {
+                        "x": 1.2,
+                        "y": 10.2,
+                        "z": 0.0
+                    },
+                    "orientation": -90,
+                    "hasBlankingPanel": true
+                },
+                "constructions": {
+                    "servers": {
+                        "A01_01": {
+                            "geometry": {
+                                "model": "Pokemon",
+                                "slotPosition": 1
+                            },
+                            "cooling": {
+                                "model": "Pokemon"
+                            }
+                        },
+                        "A01_06": {
+                            "geometry": {
+                                "model": "Pokemon",
+                                "slotPosition": 6
+                            },
+                            "cooling": {
+                                "model": "Pokemon"
+                            }
+                        },
+                        "A01_11": {
+                            "geometry": {
+                                "model": "AliServer Thor01-12U",
+                                "slotPosition": 11
+                            },
+                            "cooling": {
+                                "model": "AliServer Thor01-12U"
+                            }
+                        },
+                        "A01_13": {
+                            "geometry": {
+                                "model": "AliServer Thor01-2U",
+                                "slotPosition": 13
+                            },
+                            "cooling": {
+                                "model": "AliServer Thor01-2U"
+                            }
+                        },
+                        "A01_15": {
+                            "geometry": {
+                                "model": "AliServer Thor01-2U",
+                                "slotPosition": 15
+                            },
+                            "cooling": {
+                                "model": "AliServer Thor01-2U"
+                            }
+                        },
+                        "A01_17": {
+                            "geometry": {
+                                "model": "AliServer Thor01-2U",
+                                "slotPosition": 17
+                            },
+                            "cooling": {
+                                "model": "AliServer Thor01-2U"
+                            }
+                        },
+                        "A01_19": {
+                            "geometry": {
+                                "model": "SA5212M4",
+                                "slotPosition": 19
+                            },
+                            "cooling": {
+                                "model": "SA5212M4"
+                            }
+                        },
+                        "A01_21": {
+                            "geometry": {
+                                "model": "SA5212M4",
+                                "slotPosition": 21
+                            },
+                            "cooling": {
+                                "model": "SA5212M4"
+                            }
+                        },
+                        "A01_23": {
+                            "geometry": {
+                                "model": "AliServer Thor01-2U",
+                                "slotPosition": 23
+                            },
+                            "cooling": {
+                                "model": "AliServer Thor01-2U"
+                            }
+                        },
+                        "A01_25": {
+                            "geometry": {
+                                "model": "AliServer Thor01-2U",
+                                "slotPosition": 25
+                            },
+                            "cooling": {
+                                "model": "AliServer Thor01-2U"
+                            }
+                        },
+                        "A01_27": {
+                            "geometry": {
+                                "model": "K800G3-10G",
+                                "slotPosition": 27
+                            },
+                            "cooling": {
+                                "model": "K800G3-10G"
+                            }
+                        },
+                        "A01_29": {
+                            "geometry": {
+                                "model": "AliServer Thor01-2U",
+                                "slotPosition": 29
+                            },
+                            "cooling": {
+                                "model": "AliServer Thor01-2U"
+                            }
+                        },
+                        "A01_31": {
+                            "geometry": {
+                                "model": "AliServer Thor01-2U",
+                                "slotPosition": 31
+                            },
+                            "cooling": {
+                                "model": "AliServer Thor01-2U"
+                            }
+                        },
+                        "A01_33": {
+                            "geometry": {
+                                "model": "AliServer Thor01-2U",
+                                "slotPosition": 33
+                            },
+                            "cooling": {
+                                "model": "AliServer Thor01-2U"
+                            }
+                        },
+                        "A01_35": {
+                            "geometry": {
+                                "model": "SA5212M4",
+                                "slotPosition": 35
+                            },
+                            "cooling": {
+                                "model": "SA5212M4"
+                            }
+                        },
+                        "A01_37": {
+                            "geometry": {
+                                "model": "K800G3-10G",
+                                "slotPosition": 37
+                            },
+                            "cooling": {
+                                "model": "K800G3-10G"
+                            }
+                        }
+                    }
+                }
+            },
+            "A02": {
+                "geometry": {
+                    "model": "rack_model_1",
+                    "location": {
+                        "x": 1.2,
+                        "y": 9.6,
+                        "z": 0.0
+                    },
+                    "orientation": -90,
+                    "hasBlankingPanel": true
+                },
+                "constructions": {
+                    "servers": {
+                        "A02_01": {
+                            "geometry": {
+                                "model": "Pokemon",
+                                "slotPosition": 1
+                            },
+                            "cooling": {
+                                "model": "Pokemon"
+                            }
+                        },
+                        "A02_06": {
+                            "geometry": {
+                                "model": "S2PA",
+                                "slotPosition": 6
+                            },
+                            "cooling": {
+                                "model": "S2PA"
+                            }
+                        },
+                        "A02_11": {
+                            "geometry": {
+                                "model": "K800G3-10G",
+                                "slotPosition": 11
+                            },
+                            "cooling": {
+                                "model": "K800G3-10G"
+                            }
+                        },
+                        "A02_13": {
+                            "geometry": {
+                                "model": "K800G3-10G",
+                                "slotPosition": 13
+                            },
+                            "cooling": {
+                                "model": "K800G3-10G"
+                            }
+                        },
+                        "A02_15": {
+                            "geometry": {
+                                "model": "K800G3-10G",
+                                "slotPosition": 15
+                            },
+                            "cooling": {
+                                "model": "K800G3-10G"
+                            }
+                        },
+                        "A02_23": {
+                            "geometry": {
+                                "model": "ThinkServer SD350X",
+                                "slotPosition": 23
+                            },
+                            "cooling": {
+                                "model": "ThinkServer SD350X"
+                            }
+                        },
+                        "A02_25": {
+                            "geometry": {
+                                "model": "ThinkServer RD452X",
+                                "slotPosition": 25
+                            },
+                            "cooling": {
+                                "model": "ThinkServer RD452X"
+                            }
+                        },
+                        "A02_27": {
+                            "geometry": {
+                                "model": "ThinkServer RD452X",
+                                "slotPosition": 27
+                            },
+                            "cooling": {
+                                "model": "ThinkServer RD452X"
+                            }
+                        },
+                        "A02_29": {
+                            "geometry": {
+                                "model": "ThinkServer RD452X",
+                                "slotPosition": 29
+                            },
+                            "cooling": {
+                                "model": "ThinkServer RD452X"
+                            }
+                        },
+                        "A02_31": {
+                            "geometry": {
+                                "model": "ThinkServer RD452X",
+                                "slotPosition": 31
+                            },
+                            "cooling": {
+                                "model": "ThinkServer RD452X"
+                            }
+                        },
+                        "A02_33": {
+                            "geometry": {
+                                "model": "ThinkServer RD452X",
+                                "slotPosition": 33
+                            },
+                            "cooling": {
+                                "model": "ThinkServer RD452X"
+                            }
+                        },
+                        "A02_35": {
+                            "geometry": {
+                                "model": "ThinkServer RD452X",
+                                "slotPosition": 35
+                            },
+                            "cooling": {
+                                "model": "ThinkServer RD452X"
+                            }
+                        },
+                        "A02_37": {
+                            "geometry": {
+                                "model": "ThinkServer RD452X",
+                                "slotPosition": 37
+                            },
+                            "cooling": {
+                                "model": "ThinkServer RD452X"
+                            }
+                        }
+                    }
+                }
+            },
+            "A03": {
+                "geometry": {
+                    "model": "rack_model_1",
+                    "location": {
+                        "x": 1.2,
+                        "y": 9.0,
+                        "z": 0.0
+                    },
+                    "orientation": -90,
+                    "hasBlankingPanel": true
+                },
+                "constructions": {
+                    "servers": {
+                        "A03_01": {
+                            "geometry": {
+                                "model": "Pokemon",
+                                "slotPosition": 1
+                            },
+                            "cooling": {
+                                "model": "Pokemon"
+                            }
+                        },
+                        "A03_06": {
+                            "geometry": {
+                                "model": "S2PA",
+                                "slotPosition": 6
+                            },
+                            "cooling": {
+                                "model": "S2PA"
+                            }
+                        },
+                        "A03_11": {
+                            "geometry": {
+                                "model": "AliServer Thor01-2U",
+                                "slotPosition": 11
+                            },
+                            "cooling": {
+                                "model": "AliServer Thor01-2U"
+                            }
+                        },
+                        "A03_13": {
+                            "geometry": {
+                                "model": "AliServer Thor01-2U",
+                                "slotPosition": 13
+                            },
+                            "cooling": {
+                                "model": "AliServer Thor01-2U"
+                            }
+                        },
+                        "A03_15": {
+                            "geometry": {
+                                "model": "AliServer Thor01-2U",
+                                "slotPosition": 15
+                            },
+                            "cooling": {
+                                "model": "AliServer Thor01-2U"
+                            }
+                        },
+                        "A03_17": {
+                            "geometry": {
+                                "model": "AliServer Thor01-2U",
+                                "slotPosition": 17
+                            },
+                            "cooling": {
+                                "model": "AliServer Thor01-2U"
+                            }
+                        },
+                        "A03_19": {
+                            "geometry": {
+                                "model": "K800G3-10G",
+                                "slotPosition": 19
+                            },
+                            "cooling": {
+                                "model": "K800G3-10G"
+                            }
+                        },
+                        "A03_21": {
+                            "geometry": {
+                                "model": "R2-1218R-TH",
+                                "slotPosition": 21
+                            },
+                            "cooling": {
+                                "model": "R2-1218R-TH"
+                            }
+                        },
+                        "A03_23": {
+                            "geometry": {
+                                "model": "AliServer Thor01-2U",
+                                "slotPosition": 23
+                            },
+                            "cooling": {
+                                "model": "AliServer Thor01-2U"
+                            }
+                        },
+                        "A03_25": {
+                            "geometry": {
+                                "model": "AliServer Thor01-2U",
+                                "slotPosition": 25
+                            },
+                            "cooling": {
+                                "model": "AliServer Thor01-2U"
+                            }
+                        },
+                        "A03_27": {
+                            "geometry": {
+                                "model": "AliServer Thor01-2U",
+                                "slotPosition": 27
+                            },
+                            "cooling": {
+                                "model": "AliServer Thor01-2U"
+                            }
+                        },
+                        "A03_29": {
+                            "geometry": {
+                                "model": "AliServer Thor01-2U",
+                                "slotPosition": 29
+                            },
+                            "cooling": {
+                                "model": "AliServer Thor01-2U"
+                            }
+                        },
+                        "A03_31": {
+                            "geometry": {
+                                "model": "AliServer Thor01-2U",
+                                "slotPosition": 31
+                            },
+                            "cooling": {
+                                "model": "AliServer Thor01-2U"
+                            }
+                        },
+                        "A03_33": {
+                            "geometry": {
+                                "model": "AliServer Thor01-2U",
+                                "slotPosition": 33
+                            },
+                            "cooling": {
+                                "model": "AliServer Thor01-2U"
+                            }
+                        },
+                        "A03_35": {
+                            "geometry": {
+                                "model": "SA5212M4",
+                                "slotPosition": 35
+                            },
+                            "cooling": {
+                                "model": "SA5212M4"
+                            }
+                        },
+                        "A03_37": {
+                            "geometry": {
+                                "model": "AliServer Thor02-12S",
+                                "slotPosition": 37
+                            },
+                            "cooling": {
+                                "model": "AliServer Thor02-12S"
+                            }
+                        }
+                    }
+                }
+            },
+            "A04": {
+                "geometry": {
+                    "model": "rack_model_1",
+                    "location": {
+                        "x": 1.2,
+                        "y": 8.4,
+                        "z": 0.0
+                    },
+                    "orientation": -90,
+                    "hasBlankingPanel": true
+                },
+                "constructions": {
+                    "servers": {
+                        "A04_01": {
+                            "geometry": {
+                                "model": "Pokemon",
+                                "slotPosition": 1
+                            },
+                            "cooling": {
+                                "model": "Pokemon"
+                            }
+                        },
+                        "A04_06": {
+                            "geometry": {
+                                "model": "S2PA",
+                                "slotPosition": 6
+                            },
+                            "cooling": {
+                                "model": "S2PA"
+                            }
+                        },
+                        "A04_11": {
+                            "geometry": {
+                                "model": "AliServer Thor04-2U",
+                                "slotPosition": 11
+                            },
+                            "cooling": {
+                                "model": "AliServer Thor04-2U"
+                            }
+                        },
+                        "A04_13": {
+                            "geometry": {
+                                "model": "AliServer Thor04-2U",
+                                "slotPosition": 13
+                            },
+                            "cooling": {
+                                "model": "AliServer Thor04-2U"
+                            }
+                        },
+                        "A04_15": {
+                            "geometry": {
+                                "model": "AliServer Thor01-2U",
+                                "slotPosition": 15
+                            },
+                            "cooling": {
+                                "model": "AliServer Thor01-2U"
+                            }
+                        },
+                        "A04_17": {
+                            "geometry": {
+                                "model": "AliServer Thor01-2U",
+                                "slotPosition": 17
+                            },
+                            "cooling": {
+                                "model": "AliServer Thor01-2U"
+                            }
+                        },
+                        "A04_19": {
+                            "geometry": {
+                                "model": "K800G3-10G",
+                                "slotPosition": 19
+                            },
+                            "cooling": {
+                                "model": "K800G3-10G"
+                            }
+                        },
+                        "A04_21": {
+                            "geometry": {
+                                "model": "AliServer Thor01-2U",
+                                "slotPosition": 21
+                            },
+                            "cooling": {
+                                "model": "AliServer Thor01-2U"
+                            }
+                        },
+                        "A04_23": {
+                            "geometry": {
+                                "model": "K800G3-10G",
+                                "slotPosition": 23
+                            },
+                            "cooling": {
+                                "model": "K800G3-10G"
+                            }
+                        },
+                        "A04_25": {
+                            "geometry": {
+                                "model": "AliServer Thor01-2U",
+                                "slotPosition": 25
+                            },
+                            "cooling": {
+                                "model": "AliServer Thor01-2U"
+                            }
+                        },
+                        "A04_27": {
+                            "geometry": {
+                                "model": "AliServer Thor04-2U",
+                                "slotPosition": 27
+                            },
+                            "cooling": {
+                                "model": "AliServer Thor04-2U"
+                            }
+                        },
+                        "A04_31": {
+                            "geometry": {
+                                "model": "AliServer Thor01-2U",
+                                "slotPosition": 31
+                            },
+                            "cooling": {
+                                "model": "AliServer Thor01-2U"
+                            }
+                        },
+                        "A04_33": {
+                            "geometry": {
+                                "model": "AliServer Thor01-2U",
+                                "slotPosition": 33
+                            },
+                            "cooling": {
+                                "model": "AliServer Thor01-2U"
+                            }
+                        },
+                        "A04_35": {
+                            "geometry": {
+                                "model": "R2-1218R-TH",
+                                "slotPosition": 35
+                            },
+                            "cooling": {
+                                "model": "R2-1218R-TH"
+                            }
+                        },
+                        "A04_37": {
+                            "geometry": {
+                                "model": "AliServer Thor02-12S",
+                                "slotPosition": 37
+                            },
+                            "cooling": {
+                                "model": "AliServer Thor02-12S"
+                            }
+                        }
+                    }
+                }
+            },
+            "A05": {
+                "geometry": {
+                    "model": "rack_model_1",
+                    "location": {
+                        "x": 1.2,
+                        "y": 7.8,
+                        "z": 0.0
+                    },
+                    "orientation": -90,
+                    "hasBlankingPanel": true
+                },
+                "constructions": {
+                    "servers": {
+                        "A05_01": {
+                            "geometry": {
+                                "model": "Pokemon",
+                                "slotPosition": 1
+                            },
+                            "cooling": {
+                                "model": "Pokemon"
+                            }
+                        },
+                        "A05_06": {
+                            "geometry": {
+                                "model": "S2PA",
+                                "slotPosition": 6
+                            },
+                            "cooling": {
+                                "model": "S2PA"
+                            }
+                        },
+                        "A05_11": {
+                            "geometry": {
+                                "model": "K800G3-10G",
+                                "slotPosition": 11
+                            },
+                            "cooling": {
+                                "model": "K800G3-10G"
+                            }
+                        },
+                        "A05_13": {
+                            "geometry": {
+                                "model": "K800G3-10G",
+                                "slotPosition": 13
+                            },
+                            "cooling": {
+                                "model": "K800G3-10G"
+                            }
+                        },
+                        "A05_15": {
+                            "geometry": {
+                                "model": "K800G3-10G",
+                                "slotPosition": 15
+                            },
+                            "cooling": {
+                                "model": "K800G3-10G"
+                            }
+                        },
+                        "A05_23": {
+                            "geometry": {
+                                "model": "ThinkServer SD350X",
+                                "slotPosition": 23
+                            },
+                            "cooling": {
+                                "model": "ThinkServer SD350X"
+                            }
+                        },
+                        "A05_25": {
+                            "geometry": {
+                                "model": "ThinkServer RD452X",
+                                "slotPosition": 25
+                            },
+                            "cooling": {
+                                "model": "ThinkServer RD452X"
+                            }
+                        },
+                        "A05_27": {
+                            "geometry": {
+                                "model": "ThinkServer RD452X",
+                                "slotPosition": 27
+                            },
+                            "cooling": {
+                                "model": "ThinkServer RD452X"
+                            }
+                        },
+                        "A05_29": {
+                            "geometry": {
+                                "model": "ThinkServer RD452X",
+                                "slotPosition": 29
+                            },
+                            "cooling": {
+                                "model": "ThinkServer RD452X"
+                            }
+                        },
+                        "A05_31": {
+                            "geometry": {
+                                "model": "ThinkServer RD452X",
+                                "slotPosition": 31
+                            },
+                            "cooling": {
+                                "model": "ThinkServer RD452X"
+                            }
+                        },
+                        "A05_33": {
+                            "geometry": {
+                                "model": "ThinkServer RD452X",
+                                "slotPosition": 33
+                            },
+                            "cooling": {
+                                "model": "ThinkServer RD452X"
+                            }
+                        },
+                        "A05_35": {
+                            "geometry": {
+                                "model": "ThinkServer RD452X",
+                                "slotPosition": 35
+                            },
+                            "cooling": {
+                                "model": "ThinkServer RD452X"
+                            }
+                        },
+                        "A05_37": {
+                            "geometry": {
+                                "model": "ThinkServer RD452X",
+                                "slotPosition": 37
+                            },
+                            "cooling": {
+                                "model": "ThinkServer RD452X"
+                            }
+                        }
+                    }
+                }
+            },
+            "A06": {
+                "geometry": {
+                    "model": "rack_model_1",
+                    "location": {
+                        "x": 1.2,
+                        "y": 7.2,
+                        "z": 0.0
+                    },
+                    "orientation": -90,
+                    "hasBlankingPanel": true
+                },
+                "constructions": {
+                    "servers": {
+                        "A06_01": {
+                            "geometry": {
+                                "model": "Pokemon",
+                                "slotPosition": 1
+                            },
+                            "cooling": {
+                                "model": "Pokemon"
+                            }
+                        },
+                        "A06_06": {
+                            "geometry": {
+                                "model": "S2PA",
+                                "slotPosition": 6
+                            },
+                            "cooling": {
+                                "model": "S2PA"
+                            }
+                        },
+                        "A06_11": {
+                            "geometry": {
+                                "model": "AliServer Thor04-2U",
+                                "slotPosition": 11
+                            },
+                            "cooling": {
+                                "model": "AliServer Thor04-2U"
+                            }
+                        },
+                        "A06_13": {
+                            "geometry": {
+                                "model": "AliServer Thor04-2U",
+                                "slotPosition": 13
+                            },
+                            "cooling": {
+                                "model": "AliServer Thor04-2U"
+                            }
+                        },
+                        "A06_15": {
+                            "geometry": {
+                                "model": "AliServer Thor04-2U",
+                                "slotPosition": 15
+                            },
+                            "cooling": {
+                                "model": "AliServer Thor04-2U"
+                            }
+                        },
+                        "A06_17": {
+                            "geometry": {
+                                "model": "AliServer Thor04-2U",
+                                "slotPosition": 17
+                            },
+                            "cooling": {
+                                "model": "AliServer Thor04-2U"
+                            }
+                        },
+                        "A06_19": {
+                            "geometry": {
+                                "model": "AliServer Thor04-2U",
+                                "slotPosition": 19
+                            },
+                            "cooling": {
+                                "model": "AliServer Thor04-2U"
+                            }
+                        },
+                        "A06_21": {
+                            "geometry": {
+                                "model": "AliServer Thor04-2U",
+                                "slotPosition": 21
+                            },
+                            "cooling": {
+                                "model": "AliServer Thor04-2U"
+                            }
+                        },
+                        "A06_23": {
+                            "geometry": {
+                                "model": "AliServer Thor04-2U",
+                                "slotPosition": 23
+                            },
+                            "cooling": {
+                                "model": "AliServer Thor04-2U"
+                            }
+                        },
+                        "A06_25": {
+                            "geometry": {
+                                "model": "AliServer Thor04-2U",
+                                "slotPosition": 25
+                            },
+                            "cooling": {
+                                "model": "AliServer Thor04-2U"
+                            }
+                        },
+                        "A06_27": {
+                            "geometry": {
+                                "model": "AliServer Thor01-2U",
+                                "slotPosition": 27
+                            },
+                            "cooling": {
+                                "model": "AliServer Thor01-2U"
+                            }
+                        },
+                        "A06_29": {
+                            "geometry": {
+                                "model": "AliServer Thor04-2U",
+                                "slotPosition": 29
+                            },
+                            "cooling": {
+                                "model": "AliServer Thor04-2U"
+                            }
+                        },
+                        "A06_31": {
+                            "geometry": {
+                                "model": "K800G3-10G",
+                                "slotPosition": 31
+                            },
+                            "cooling": {
+                                "model": "K800G3-10G"
+                            }
+                        },
+                        "A06_33": {
+                            "geometry": {
+                                "model": "K800G3-10G",
+                                "slotPosition": 33
+                            },
+                            "cooling": {
+                                "model": "K800G3-10G"
+                            }
+                        },
+                        "A06_35": {
+                            "geometry": {
+                                "model": "R2-1218R-TH",
+                                "slotPosition": 35
+                            },
+                            "cooling": {
+                                "model": "R2-1218R-TH"
+                            }
+                        },
+                        "A06_37": {
+                            "geometry": {
+                                "model": "AliServer Thor02-12S",
+                                "slotPosition": 37
+                            },
+                            "cooling": {
+                                "model": "AliServer Thor02-12S"
+                            }
+                        }
+                    }
+                }
+            },
+            "A07": {
+                "geometry": {
+                    "model": "rack_model_1",
+                    "location": {
+                        "x": 1.2,
+                        "y": 6.6,
+                        "z": 0.0
+                    },
+                    "orientation": -90,
+                    "hasBlankingPanel": true
+                },
+                "constructions": {
+                    "servers": {
+                        "A07_01": {
+                            "geometry": {
+                                "model": "S2PA",
+                                "slotPosition": 1
+                            },
+                            "cooling": {
+                                "model": "S2PA"
+                            }
+                        },
+                        "A07_06": {
+                            "geometry": {
+                                "model": "S2PA",
+                                "slotPosition": 6
+                            },
+                            "cooling": {
+                                "model": "S2PA"
+                            }
+                        },
+                        "A07_11": {
+                            "geometry": {
+                                "model": "R2-1218R-TH",
+                                "slotPosition": 11
+                            },
+                            "cooling": {
+                                "model": "R2-1218R-TH"
+                            }
+                        },
+                        "A07_13": {
+                            "geometry": {
+                                "model": "R2-1218R-TH",
+                                "slotPosition": 13
+                            },
+                            "cooling": {
+                                "model": "R2-1218R-TH"
+                            }
+                        },
+                        "A07_15": {
+                            "geometry": {
+                                "model": "R2-1218R-TH",
+                                "slotPosition": 15
+                            },
+                            "cooling": {
+                                "model": "R2-1218R-TH"
+                            }
+                        },
+                        "A07_17": {
+                            "geometry": {
+                                "model": "R2-1218R-TH",
+                                "slotPosition": 17
+                            },
+                            "cooling": {
+                                "model": "R2-1218R-TH"
+                            }
+                        },
+                        "A07_19": {
+                            "geometry": {
+                                "model": "R2-1218R-TH",
+                                "slotPosition": 19
+                            },
+                            "cooling": {
+                                "model": "R2-1218R-TH"
+                            }
+                        },
+                        "A07_21": {
+                            "geometry": {
+                                "model": "AliServer Thor04-2U",
+                                "slotPosition": 21
+                            },
+                            "cooling": {
+                                "model": "AliServer Thor04-2U"
+                            }
+                        },
+                        "A07_23": {
+                            "geometry": {
+                                "model": "AliServer Thor04-2U",
+                                "slotPosition": 23
+                            },
+                            "cooling": {
+                                "model": "AliServer Thor04-2U"
+                            }
+                        },
+                        "A07_25": {
+                            "geometry": {
+                                "model": "AliServer Thor04-2U",
+                                "slotPosition": 25
+                            },
+                            "cooling": {
+                                "model": "AliServer Thor04-2U"
+                            }
+                        },
+                        "A07_27": {
+                            "geometry": {
+                                "model": "AliServer Thor04-2U",
+                                "slotPosition": 27
+                            },
+                            "cooling": {
+                                "model": "AliServer Thor04-2U"
+                            }
+                        },
+                        "A07_29": {
+                            "geometry": {
+                                "model": "AliServer Thor04-2U",
+                                "slotPosition": 29
+                            },
+                            "cooling": {
+                                "model": "AliServer Thor04-2U"
+                            }
+                        },
+                        "A07_31": {
+                            "geometry": {
+                                "model": "AliServer Thor04-2U",
+                                "slotPosition": 31
+                            },
+                            "cooling": {
+                                "model": "AliServer Thor04-2U"
+                            }
+                        },
+                        "A07_33": {
+                            "geometry": {
+                                "model": "AliServer Thor04-2U",
+                                "slotPosition": 33
+                            },
+                            "cooling": {
+                                "model": "AliServer Thor04-2U"
+                            }
+                        },
+                        "A07_35": {
+                            "geometry": {
+                                "model": "AliServer Thor04-2U",
+                                "slotPosition": 35
+                            },
+                            "cooling": {
+                                "model": "AliServer Thor04-2U"
+                            }
+                        },
+                        "A07_37": {
+                            "geometry": {
+                                "model": "ThinkServer RD452X",
+                                "slotPosition": 37
+                            },
+                            "cooling": {
+                                "model": "ThinkServer RD452X"
+                            }
+                        }
+                    }
+                }
+            },
+            "A08": {
+                "geometry": {
+                    "model": "rack_model_1",
+                    "location": {
+                        "x": 1.2,
+                        "y": 6.0,
+                        "z": 0.0
+                    },
+                    "orientation": -90,
+                    "hasBlankingPanel": true
+                },
+                "constructions": {
+                    "servers": {
+                        "A08_01": {
+                            "geometry": {
+                                "model": "S2PA",
+                                "slotPosition": 1
+                            },
+                            "cooling": {
+                                "model": "S2PA"
+                            }
+                        },
+                        "A08_06": {
+                            "geometry": {
+                                "model": "S2PA",
+                                "slotPosition": 6
+                            },
+                            "cooling": {
+                                "model": "S2PA"
+                            }
+                        },
+                        "A08_11": {
+                            "geometry": {
+                                "model": "K800G3-10G",
+                                "slotPosition": 11
+                            },
+                            "cooling": {
+                                "model": "K800G3-10G"
+                            }
+                        },
+                        "A08_13": {
+                            "geometry": {
+                                "model": "K800G3-10G",
+                                "slotPosition": 13
+                            },
+                            "cooling": {
+                                "model": "K800G3-10G"
+                            }
+                        },
+                        "A08_15": {
+                            "geometry": {
+                                "model": "K800G3-10G",
+                                "slotPosition": 15
+                            },
+                            "cooling": {
+                                "model": "K800G3-10G"
+                            }
+                        },
+                        "A08_17": {
+                            "geometry": {
+                                "model": "AliServer Thor01-2U",
+                                "slotPosition": 17
+                            },
+                            "cooling": {
+                                "model": "AliServer Thor01-2U"
+                            }
+                        },
+                        "A08_19": {
+                            "geometry": {
+                                "model": "RH2288H V3",
+                                "slotPosition": 19
+                            },
+                            "cooling": {
+                                "model": "RH2288H V3"
+                            }
+                        },
+                        "A08_27": {
+                            "geometry": {
+                                "model": "ThinkServer SD350X",
+                                "slotPosition": 27
+                            },
+                            "cooling": {
+                                "model": "ThinkServer SD350X"
+                            }
+                        },
+                        "A08_29": {
+                            "geometry": {
+                                "model": "ThinkServer RD452X",
+                                "slotPosition": 29
+                            },
+                            "cooling": {
+                                "model": "ThinkServer RD452X"
+                            }
+                        },
+                        "A08_31": {
+                            "geometry": {
+                                "model": "ThinkServer RD452X",
+                                "slotPosition": 31
+                            },
+                            "cooling": {
+                                "model": "ThinkServer RD452X"
+                            }
+                        },
+                        "A08_33": {
+                            "geometry": {
+                                "model": "ThinkServer RD452X",
+                                "slotPosition": 33
+                            },
+                            "cooling": {
+                                "model": "ThinkServer RD452X"
+                            }
+                        },
+                        "A08_35": {
+                            "geometry": {
+                                "model": "ThinkServer RD452X",
+                                "slotPosition": 35
+                            },
+                            "cooling": {
+                                "model": "ThinkServer RD452X"
+                            }
+                        },
+                        "A08_37": {
+                            "geometry": {
+                                "model": "ThinkServer RD452X",
+                                "slotPosition": 37
+                            },
+                            "cooling": {
+                                "model": "ThinkServer RD452X"
+                            }
+                        }
+                    }
+                }
+            },
+            "A09": {
+                "geometry": {
+                    "model": "rack_model_1",
+                    "location": {
+                        "x": 1.2,
+                        "y": 5.4,
+                        "z": 0.0
+                    },
+                    "orientation": -90,
+                    "hasBlankingPanel": true
+                },
+                "constructions": {
+                    "servers": {
+                        "A09_01": {
+                            "geometry": {
+                                "model": "S2PA",
+                                "slotPosition": 1
+                            },
+                            "cooling": {
+                                "model": "S2PA"
+                            }
+                        },
+                        "A09_06": {
+                            "geometry": {
+                                "model": "S2PA",
+                                "slotPosition": 6
+                            },
+                            "cooling": {
+                                "model": "S2PA"
+                            }
+                        },
+                        "A09_11": {
+                            "geometry": {
+                                "model": "R2-1218R-TH",
+                                "slotPosition": 11
+                            },
+                            "cooling": {
+                                "model": "R2-1218R-TH"
+                            }
+                        },
+                        "A09_13": {
+                            "geometry": {
+                                "model": "AliServer Thor04-2U",
+                                "slotPosition": 13
+                            },
+                            "cooling": {
+                                "model": "AliServer Thor04-2U"
+                            }
+                        },
+                        "A09_15": {
+                            "geometry": {
+                                "model": "AliServer Thor04-2U",
+                                "slotPosition": 15
+                            },
+                            "cooling": {
+                                "model": "AliServer Thor04-2U"
+                            }
+                        },
+                        "A09_17": {
+                            "geometry": {
+                                "model": "AliServer Thor04-2U",
+                                "slotPosition": 17
+                            },
+                            "cooling": {
+                                "model": "AliServer Thor04-2U"
+                            }
+                        },
+                        "A09_19": {
+                            "geometry": {
+                                "model": "AliServer Thor04-2U",
+                                "slotPosition": 19
+                            },
+                            "cooling": {
+                                "model": "AliServer Thor04-2U"
+                            }
+                        },
+                        "A09_21": {
+                            "geometry": {
+                                "model": "AliServer Thor01-2U",
+                                "slotPosition": 21
+                            },
+                            "cooling": {
+                                "model": "AliServer Thor01-2U"
+                            }
+                        },
+                        "A09_23": {
+                            "geometry": {
+                                "model": "AliServer Thor01-2U",
+                                "slotPosition": 23
+                            },
+                            "cooling": {
+                                "model": "AliServer Thor01-2U"
+                            }
+                        },
+                        "A09_25": {
+                            "geometry": {
+                                "model": "AliServer Thor04-2U",
+                                "slotPosition": 25
+                            },
+                            "cooling": {
+                                "model": "AliServer Thor04-2U"
+                            }
+                        },
+                        "A09_27": {
+                            "geometry": {
+                                "model": "AliServer Thor01-2U",
+                                "slotPosition": 27
+                            },
+                            "cooling": {
+                                "model": "AliServer Thor01-2U"
+                            }
+                        },
+                        "A09_29": {
+                            "geometry": {
+                                "model": "K800G3-10G",
+                                "slotPosition": 29
+                            },
+                            "cooling": {
+                                "model": "K800G3-10G"
+                            }
+                        },
+                        "A09_31": {
+                            "geometry": {
+                                "model": "AliServer Thor01-2U",
+                                "slotPosition": 31
+                            },
+                            "cooling": {
+                                "model": "AliServer Thor01-2U"
+                            }
+                        },
+                        "A09_33": {
+                            "geometry": {
+                                "model": "R2-1218R-TH",
+                                "slotPosition": 33
+                            },
+                            "cooling": {
+                                "model": "R2-1218R-TH"
+                            }
+                        },
+                        "A09_35": {
+                            "geometry": {
+                                "model": "AliServer Thor01-2U",
+                                "slotPosition": 35
+                            },
+                            "cooling": {
+                                "model": "AliServer Thor01-2U"
+                            }
+                        },
+                        "A09_37": {
+                            "geometry": {
+                                "model": "AliServer Thor02-12S",
+                                "slotPosition": 37
+                            },
+                            "cooling": {
+                                "model": "AliServer Thor02-12S"
+                            }
+                        }
+                    }
+                }
+            },
+            "A10": {
+                "geometry": {
+                    "model": "rack_model_1",
+                    "location": {
+                        "x": 1.2,
+                        "y": 4.8,
+                        "z": 0.0
+                    },
+                    "orientation": -90,
+                    "hasBlankingPanel": true
+                },
+                "constructions": {
+                    "servers": {
+                        "A10_01": {
+                            "geometry": {
+                                "model": "Pokemon",
+                                "slotPosition": 1
+                            },
+                            "cooling": {
+                                "model": "Pokemon"
+                            }
+                        },
+                        "A10_06": {
+                            "geometry": {
+                                "model": "S2PA",
+                                "slotPosition": 6
+                            },
+                            "cooling": {
+                                "model": "S2PA"
+                            }
+                        },
+                        "A10_11": {
+                            "geometry": {
+                                "model": "AliServer Thor01-2U",
+                                "slotPosition": 11
+                            },
+                            "cooling": {
+                                "model": "AliServer Thor01-2U"
+                            }
+                        },
+                        "A10_13": {
+                            "geometry": {
+                                "model": "AliServer Thor01-2U",
+                                "slotPosition": 13
+                            },
+                            "cooling": {
+                                "model": "AliServer Thor01-2U"
+                            }
+                        },
+                        "A10_15": {
+                            "geometry": {
+                                "model": "K800G3-10G",
+                                "slotPosition": 15
+                            },
+                            "cooling": {
+                                "model": "K800G3-10G"
+                            }
+                        },
+                        "A10_17": {
+                            "geometry": {
+                                "model": "SA5212M4",
+                                "slotPosition": 17
+                            },
+                            "cooling": {
+                                "model": "SA5212M4"
+                            }
+                        },
+                        "A10_19": {
+                            "geometry": {
+                                "model": "SA5212M4",
+                                "slotPosition": 19
+                            },
+                            "cooling": {
+                                "model": "SA5212M4"
+                            }
+                        },
+                        "A10_21": {
+                            "geometry": {
+                                "model": "AliServer Thor01-2U",
+                                "slotPosition": 21
+                            },
+                            "cooling": {
+                                "model": "AliServer Thor01-2U"
+                            }
+                        },
+                        "A10_23": {
+                            "geometry": {
+                                "model": "AliServer Thor01-2U",
+                                "slotPosition": 23
+                            },
+                            "cooling": {
+                                "model": "AliServer Thor01-2U"
+                            }
+                        },
+                        "A10_25": {
+                            "geometry": {
+                                "model": "K800G3-10G",
+                                "slotPosition": 25
+                            },
+                            "cooling": {
+                                "model": "K800G3-10G"
+                            }
+                        },
+                        "A10_27": {
+                            "geometry": {
+                                "model": "K800G3-10G",
+                                "slotPosition": 27
+                            },
+                            "cooling": {
+                                "model": "K800G3-10G"
+                            }
+                        },
+                        "A10_29": {
+                            "geometry": {
+                                "model": "R2-1218R-TH",
+                                "slotPosition": 29
+                            },
+                            "cooling": {
+                                "model": "R2-1218R-TH"
+                            }
+                        },
+                        "A10_31": {
+                            "geometry": {
+                                "model": "SA5212M4",
+                                "slotPosition": 31
+                            },
+                            "cooling": {
+                                "model": "SA5212M4"
+                            }
+                        },
+                        "A10_33": {
+                            "geometry": {
+                                "model": "AliServer Thor02-12S",
+                                "slotPosition": 33
+                            },
+                            "cooling": {
+                                "model": "AliServer Thor02-12S"
+                            }
+                        },
+                        "A10_35": {
+                            "geometry": {
+                                "model": "AliServer Thor01-12U",
+                                "slotPosition": 35
+                            },
+                            "cooling": {
+                                "model": "AliServer Thor01-12U"
+                            }
+                        },
+                        "A10_37": {
+                            "geometry": {
+                                "model": "NF5280M4",
+                                "slotPosition": 37
+                            },
+                            "cooling": {
+                                "model": "NF5280M4"
+                            }
+                        }
+                    }
+                }
+            },
+            "B01": {
+                "geometry": {
+                    "model": "rack_model_1",
+                    "location": {
+                        "x": 4.8,
+                        "y": 9.6,
+                        "z": 0.0
+                    },
+                    "orientation": 90,
+                    "hasBlankingPanel": true
+                },
+                "constructions": {
+                    "servers": {
+                        "B01_01": {
+                            "geometry": {
+                                "model": "Pokemon",
+                                "slotPosition": 1
+                            },
+                            "cooling": {
+                                "model": "Pokemon"
+                            }
+                        },
+                        "B01_06": {
+                            "geometry": {
+                                "model": "S2PA",
+                                "slotPosition": 6
+                            },
+                            "cooling": {
+                                "model": "S2PA"
+                            }
+                        },
+                        "B01_11": {
+                            "geometry": {
+                                "model": "AliServer Thor01-2U",
+                                "slotPosition": 11
+                            },
+                            "cooling": {
+                                "model": "AliServer Thor01-2U"
+                            }
+                        },
+                        "B01_13": {
+                            "geometry": {
+                                "model": "AliServer Thor01-2U",
+                                "slotPosition": 13
+                            },
+                            "cooling": {
+                                "model": "AliServer Thor01-2U"
+                            }
+                        },
+                        "B01_15": {
+                            "geometry": {
+                                "model": "SA5212M4",
+                                "slotPosition": 15
+                            },
+                            "cooling": {
+                                "model": "SA5212M4"
+                            }
+                        },
+                        "B01_17": {
+                            "geometry": {
+                                "model": "AliServer Thor01-2U",
+                                "slotPosition": 17
+                            },
+                            "cooling": {
+                                "model": "AliServer Thor01-2U"
+                            }
+                        },
+                        "B01_19": {
+                            "geometry": {
+                                "model": "AliServer Thor04-2U",
+                                "slotPosition": 19
+                            },
+                            "cooling": {
+                                "model": "AliServer Thor04-2U"
+                            }
+                        },
+                        "B01_21": {
+                            "geometry": {
+                                "model": "K800G3-10G",
+                                "slotPosition": 21
+                            },
+                            "cooling": {
+                                "model": "K800G3-10G"
+                            }
+                        },
+                        "B01_23": {
+                            "geometry": {
+                                "model": "K800G3-10G",
+                                "slotPosition": 23
+                            },
+                            "cooling": {
+                                "model": "K800G3-10G"
+                            }
+                        },
+                        "B01_25": {
+                            "geometry": {
+                                "model": "R2-1218R-TH",
+                                "slotPosition": 25
+                            },
+                            "cooling": {
+                                "model": "R2-1218R-TH"
+                            }
+                        },
+                        "B01_27": {
+                            "geometry": {
+                                "model": "AliServer Thor01-2U",
+                                "slotPosition": 27
+                            },
+                            "cooling": {
+                                "model": "AliServer Thor01-2U"
+                            }
+                        },
+                        "B01_29": {
+                            "geometry": {
+                                "model": "SA5212M4",
+                                "slotPosition": 29
+                            },
+                            "cooling": {
+                                "model": "SA5212M4"
+                            }
+                        },
+                        "B01_31": {
+                            "geometry": {
+                                "model": "K800G3-10G",
+                                "slotPosition": 31
+                            },
+                            "cooling": {
+                                "model": "K800G3-10G"
+                            }
+                        },
+                        "B01_33": {
+                            "geometry": {
+                                "model": "K800G3-10G",
+                                "slotPosition": 33
+                            },
+                            "cooling": {
+                                "model": "K800G3-10G"
+                            }
+                        },
+                        "B01_35": {
+                            "geometry": {
+                                "model": "SA5212M4",
+                                "slotPosition": 35
+                            },
+                            "cooling": {
+                                "model": "SA5212M4"
+                            }
+                        },
+                        "B01_37": {
+                            "geometry": {
+                                "model": "SA5212M4",
+                                "slotPosition": 37
+                            },
+                            "cooling": {
+                                "model": "SA5212M4"
+                            }
+                        }
+                    }
+                }
+            },
+            "B02": {
+                "geometry": {
+                    "model": "rack_model_1",
+                    "location": {
+                        "x": 4.8,
+                        "y": 9.0,
+                        "z": 0.0
+                    },
+                    "orientation": 90,
+                    "hasBlankingPanel": true
+                },
+                "constructions": {
+                    "servers": {
+                        "B02_01": {
+                            "geometry": {
+                                "model": "Pokemon",
+                                "slotPosition": 1
+                            },
+                            "cooling": {
+                                "model": "Pokemon"
+                            }
+                        },
+                        "B02_06": {
+                            "geometry": {
+                                "model": "S2PA",
+                                "slotPosition": 6
+                            },
+                            "cooling": {
+                                "model": "S2PA"
+                            }
+                        },
+                        "B02_11": {
+                            "geometry": {
+                                "model": "NF5280M4",
+                                "slotPosition": 11
+                            },
+                            "cooling": {
+                                "model": "NF5280M4"
+                            }
+                        },
+                        "B02_13": {
+                            "geometry": {
+                                "model": "NF5280M4",
+                                "slotPosition": 13
+                            },
+                            "cooling": {
+                                "model": "NF5280M4"
+                            }
+                        },
+                        "B02_15": {
+                            "geometry": {
+                                "model": "K800G3-10G",
+                                "slotPosition": 15
+                            },
+                            "cooling": {
+                                "model": "K800G3-10G"
+                            }
+                        },
+                        "B02_17": {
+                            "geometry": {
+                                "model": "K800G3-10G",
+                                "slotPosition": 17
+                            },
+                            "cooling": {
+                                "model": "K800G3-10G"
+                            }
+                        },
+                        "B02_19": {
+                            "geometry": {
+                                "model": "K800G3-10G",
+                                "slotPosition": 19
+                            },
+                            "cooling": {
+                                "model": "K800G3-10G"
+                            }
+                        },
+                        "B02_27": {
+                            "geometry": {
+                                "model": "ThinkServer SD350X",
+                                "slotPosition": 27
+                            },
+                            "cooling": {
+                                "model": "ThinkServer SD350X"
+                            }
+                        },
+                        "B02_29": {
+                            "geometry": {
+                                "model": "K800G3-10G",
+                                "slotPosition": 29
+                            },
+                            "cooling": {
+                                "model": "K800G3-10G"
+                            }
+                        },
+                        "B02_31": {
+                            "geometry": {
+                                "model": "K800G3-10G",
+                                "slotPosition": 31
+                            },
+                            "cooling": {
+                                "model": "K800G3-10G"
+                            }
+                        },
+                        "B02_33": {
+                            "geometry": {
+                                "model": "K800G3-10G",
+                                "slotPosition": 33
+                            },
+                            "cooling": {
+                                "model": "K800G3-10G"
+                            }
+                        },
+                        "B02_35": {
+                            "geometry": {
+                                "model": "K800G3-10G",
+                                "slotPosition": 35
+                            },
+                            "cooling": {
+                                "model": "K800G3-10G"
+                            }
+                        },
+                        "B02_37": {
+                            "geometry": {
+                                "model": "ThinkServer RD452X",
+                                "slotPosition": 37
+                            },
+                            "cooling": {
+                                "model": "ThinkServer RD452X"
+                            }
+                        }
+                    }
+                }
+            },
+            "B03": {
+                "geometry": {
+                    "model": "rack_model_1",
+                    "location": {
+                        "x": 4.8,
+                        "y": 8.4,
+                        "z": 0.0
+                    },
+                    "orientation": 90,
+                    "hasBlankingPanel": true
+                },
+                "constructions": {
+                    "servers": {
+                        "B03_01": {
+                            "geometry": {
+                                "model": "Pokemon",
+                                "slotPosition": 1
+                            },
+                            "cooling": {
+                                "model": "Pokemon"
+                            }
+                        },
+                        "B03_06": {
+                            "geometry": {
+                                "model": "S2PA",
+                                "slotPosition": 6
+                            },
+                            "cooling": {
+                                "model": "S2PA"
+                            }
+                        },
+                        "B03_11": {
+                            "geometry": {
+                                "model": "AliServer Thor01-2U",
+                                "slotPosition": 11
+                            },
+                            "cooling": {
+                                "model": "AliServer Thor01-2U"
+                            }
+                        },
+                        "B03_13": {
+                            "geometry": {
+                                "model": "AliServer Thor01-2U",
+                                "slotPosition": 13
+                            },
+                            "cooling": {
+                                "model": "AliServer Thor01-2U"
+                            }
+                        },
+                        "B03_15": {
+                            "geometry": {
+                                "model": "AliServer Thor01-2U",
+                                "slotPosition": 15
+                            },
+                            "cooling": {
+                                "model": "AliServer Thor01-2U"
+                            }
+                        },
+                        "B03_17": {
+                            "geometry": {
+                                "model": "AliServer Thor04-2U",
+                                "slotPosition": 17
+                            },
+                            "cooling": {
+                                "model": "AliServer Thor04-2U"
+                            }
+                        },
+                        "B03_19": {
+                            "geometry": {
+                                "model": "K800G3-10G",
+                                "slotPosition": 19
+                            },
+                            "cooling": {
+                                "model": "K800G3-10G"
+                            }
+                        },
+                        "B03_21": {
+                            "geometry": {
+                                "model": "K800G3-10G",
+                                "slotPosition": 21
+                            },
+                            "cooling": {
+                                "model": "K800G3-10G"
+                            }
+                        },
+                        "B03_23": {
+                            "geometry": {
+                                "model": "SA5212M4",
+                                "slotPosition": 23
+                            },
+                            "cooling": {
+                                "model": "SA5212M4"
+                            }
+                        },
+                        "B03_25": {
+                            "geometry": {
+                                "model": "R2-1218R-TH",
+                                "slotPosition": 25
+                            },
+                            "cooling": {
+                                "model": "R2-1218R-TH"
+                            }
+                        },
+                        "B03_27": {
+                            "geometry": {
+                                "model": "R2-1218R-TH",
+                                "slotPosition": 27
+                            },
+                            "cooling": {
+                                "model": "R2-1218R-TH"
+                            }
+                        },
+                        "B03_29": {
+                            "geometry": {
+                                "model": "AliServer Thor01-2U",
+                                "slotPosition": 29
+                            },
+                            "cooling": {
+                                "model": "AliServer Thor01-2U"
+                            }
+                        },
+                        "B03_31": {
+                            "geometry": {
+                                "model": "SA5212M4",
+                                "slotPosition": 31
+                            },
+                            "cooling": {
+                                "model": "SA5212M4"
+                            }
+                        },
+                        "B03_33": {
+                            "geometry": {
+                                "model": "S5BA3UPI",
+                                "slotPosition": 33
+                            },
+                            "cooling": {
+                                "model": "S5BA3UPI"
+                            }
+                        },
+                        "B03_35": {
+                            "geometry": {
+                                "model": "SA5212M4",
+                                "slotPosition": 35
+                            },
+                            "cooling": {
+                                "model": "SA5212M4"
+                            }
+                        },
+                        "B03_37": {
+                            "geometry": {
+                                "model": "SA5212M4",
+                                "slotPosition": 37
+                            },
+                            "cooling": {
+                                "model": "SA5212M4"
+                            }
+                        }
+                    }
+                }
+            },
+            "B04": {
+                "geometry": {
+                    "model": "rack_model_1",
+                    "location": {
+                        "x": 4.8,
+                        "y": 7.8,
+                        "z": 0.0
+                    },
+                    "orientation": 90,
+                    "hasBlankingPanel": true
+                },
+                "constructions": {
+                    "servers": {
+                        "B04_01": {
+                            "geometry": {
+                                "model": "Pokemon",
+                                "slotPosition": 1
+                            },
+                            "cooling": {
+                                "model": "Pokemon"
+                            }
+                        },
+                        "B04_06": {
+                            "geometry": {
+                                "model": "S2PA",
+                                "slotPosition": 6
+                            },
+                            "cooling": {
+                                "model": "S2PA"
+                            }
+                        },
+                        "B04_11": {
+                            "geometry": {
+                                "model": "AliServer Thor01-2U",
+                                "slotPosition": 11
+                            },
+                            "cooling": {
+                                "model": "AliServer Thor01-2U"
+                            }
+                        },
+                        "B04_13": {
+                            "geometry": {
+                                "model": "AliServer Thor01-2U",
+                                "slotPosition": 13
+                            },
+                            "cooling": {
+                                "model": "AliServer Thor01-2U"
+                            }
+                        },
+                        "B04_15": {
+                            "geometry": {
+                                "model": "AliServer Thor04-2U",
+                                "slotPosition": 15
+                            },
+                            "cooling": {
+                                "model": "AliServer Thor04-2U"
+                            }
+                        },
+                        "B04_17": {
+                            "geometry": {
+                                "model": "AliServer Thor04-2U",
+                                "slotPosition": 17
+                            },
+                            "cooling": {
+                                "model": "AliServer Thor04-2U"
+                            }
+                        },
+                        "B04_19": {
+                            "geometry": {
+                                "model": "K800G3-10G",
+                                "slotPosition": 19
+                            },
+                            "cooling": {
+                                "model": "K800G3-10G"
+                            }
+                        },
+                        "B04_21": {
+                            "geometry": {
+                                "model": "SA5212M4",
+                                "slotPosition": 21
+                            },
+                            "cooling": {
+                                "model": "SA5212M4"
+                            }
+                        },
+                        "B04_23": {
+                            "geometry": {
+                                "model": "ThinkServer RD452X",
+                                "slotPosition": 23
+                            },
+                            "cooling": {
+                                "model": "ThinkServer RD452X"
+                            }
+                        },
+                        "B04_25": {
+                            "geometry": {
+                                "model": "R2-1218R-TH",
+                                "slotPosition": 25
+                            },
+                            "cooling": {
+                                "model": "R2-1218R-TH"
+                            }
+                        },
+                        "B04_27": {
+                            "geometry": {
+                                "model": "R2-1218R-TH",
+                                "slotPosition": 27
+                            },
+                            "cooling": {
+                                "model": "R2-1218R-TH"
+                            }
+                        },
+                        "B04_29": {
+                            "geometry": {
+                                "model": "AliServer Thor01-2U",
+                                "slotPosition": 29
+                            },
+                            "cooling": {
+                                "model": "AliServer Thor01-2U"
+                            }
+                        },
+                        "B04_31": {
+                            "geometry": {
+                                "model": "SA5212M4",
+                                "slotPosition": 31
+                            },
+                            "cooling": {
+                                "model": "SA5212M4"
+                            }
+                        },
+                        "B04_33": {
+                            "geometry": {
+                                "model": "S5BA3UPI",
+                                "slotPosition": 33
+                            },
+                            "cooling": {
+                                "model": "S5BA3UPI"
+                            }
+                        },
+                        "B04_35": {
+                            "geometry": {
+                                "model": "SA5212M4",
+                                "slotPosition": 35
+                            },
+                            "cooling": {
+                                "model": "SA5212M4"
+                            }
+                        },
+                        "B04_37": {
+                            "geometry": {
+                                "model": "SA5212M4",
+                                "slotPosition": 37
+                            },
+                            "cooling": {
+                                "model": "SA5212M4"
+                            }
+                        }
+                    }
+                }
+            },
+            "B05": {
+                "geometry": {
+                    "model": "rack_model_1",
+                    "location": {
+                        "x": 4.8,
+                        "y": 7.2,
+                        "z": 0.0
+                    },
+                    "orientation": 90,
+                    "hasBlankingPanel": true
+                },
+                "constructions": {
+                    "servers": {
+                        "B05_01": {
+                            "geometry": {
+                                "model": "Pokemon",
+                                "slotPosition": 1
+                            },
+                            "cooling": {
+                                "model": "Pokemon"
+                            }
+                        },
+                        "B05_06": {
+                            "geometry": {
+                                "model": "S2PA",
+                                "slotPosition": 6
+                            },
+                            "cooling": {
+                                "model": "S2PA"
+                            }
+                        },
+                        "B05_11": {
+                            "geometry": {
+                                "model": "K800G3-10G",
+                                "slotPosition": 11
+                            },
+                            "cooling": {
+                                "model": "K800G3-10G"
+                            }
+                        },
+                        "B05_13": {
+                            "geometry": {
+                                "model": "K800G3-10G",
+                                "slotPosition": 13
+                            },
+                            "cooling": {
+                                "model": "K800G3-10G"
+                            }
+                        },
+                        "B05_15": {
+                            "geometry": {
+                                "model": "K800G3-10G",
+                                "slotPosition": 15
+                            },
+                            "cooling": {
+                                "model": "K800G3-10G"
+                            }
+                        },
+                        "B05_17": {
+                            "geometry": {
+                                "model": "NF5280M4",
+                                "slotPosition": 17
+                            },
+                            "cooling": {
+                                "model": "NF5280M4"
+                            }
+                        },
+                        "B05_19": {
+                            "geometry": {
+                                "model": "NF5280M4",
+                                "slotPosition": 19
+                            },
+                            "cooling": {
+                                "model": "NF5280M4"
+                            }
+                        },
+                        "B05_21": {
+                            "geometry": {
+                                "model": "NF5280M4",
+                                "slotPosition": 21
+                            },
+                            "cooling": {
+                                "model": "NF5280M4"
+                            }
+                        },
+                        "B05_23": {
+                            "geometry": {
+                                "model": "K800G3-10G",
+                                "slotPosition": 23
+                            },
+                            "cooling": {
+                                "model": "K800G3-10G"
+                            }
+                        },
+                        "B05_25": {
+                            "geometry": {
+                                "model": "K800G3-10G",
+                                "slotPosition": 25
+                            },
+                            "cooling": {
+                                "model": "K800G3-10G"
+                            }
+                        },
+                        "B05_27": {
+                            "geometry": {
+                                "model": "K800G3-10G",
+                                "slotPosition": 27
+                            },
+                            "cooling": {
+                                "model": "K800G3-10G"
+                            }
+                        },
+                        "B05_35": {
+                            "geometry": {
+                                "model": "ThinkServer SD350X",
+                                "slotPosition": 35
+                            },
+                            "cooling": {
+                                "model": "ThinkServer SD350X"
+                            }
+                        },
+                        "B05_37": {
+                            "geometry": {
+                                "model": "K800G3-10G",
+                                "slotPosition": 37
+                            },
+                            "cooling": {
+                                "model": "K800G3-10G"
+                            }
+                        }
+                    }
+                }
+            },
+            "B06": {
+                "geometry": {
+                    "model": "rack_model_1",
+                    "location": {
+                        "x": 4.8,
+                        "y": 6.6,
+                        "z": 0.0
+                    },
+                    "orientation": 90,
+                    "hasBlankingPanel": true
+                },
+                "constructions": {
+                    "servers": {
+                        "B06_01": {
+                            "geometry": {
+                                "model": "Pokemon",
+                                "slotPosition": 1
+                            },
+                            "cooling": {
+                                "model": "Pokemon"
+                            }
+                        },
+                        "B06_06": {
+                            "geometry": {
+                                "model": "S2PA",
+                                "slotPosition": 6
+                            },
+                            "cooling": {
+                                "model": "S2PA"
+                            }
+                        },
+                        "B06_11": {
+                            "geometry": {
+                                "model": "AliServer Thor01-2U",
+                                "slotPosition": 11
+                            },
+                            "cooling": {
+                                "model": "AliServer Thor01-2U"
+                            }
+                        },
+                        "B06_13": {
+                            "geometry": {
+                                "model": "AliServer Thor01-2U",
+                                "slotPosition": 13
+                            },
+                            "cooling": {
+                                "model": "AliServer Thor01-2U"
+                            }
+                        },
+                        "B06_15": {
+                            "geometry": {
+                                "model": "AliServer Thor04-2U",
+                                "slotPosition": 15
+                            },
+                            "cooling": {
+                                "model": "AliServer Thor04-2U"
+                            }
+                        },
+                        "B06_17": {
+                            "geometry": {
+                                "model": "AliServer Thor04-2U",
+                                "slotPosition": 17
+                            },
+                            "cooling": {
+                                "model": "AliServer Thor04-2U"
+                            }
+                        },
+                        "B06_19": {
+                            "geometry": {
+                                "model": "K800G3-10G",
+                                "slotPosition": 19
+                            },
+                            "cooling": {
+                                "model": "K800G3-10G"
+                            }
+                        },
+                        "B06_21": {
+                            "geometry": {
+                                "model": "K800G3-10G",
+                                "slotPosition": 21
+                            },
+                            "cooling": {
+                                "model": "K800G3-10G"
+                            }
+                        },
+                        "B06_23": {
+                            "geometry": {
+                                "model": "K800G3-10G",
+                                "slotPosition": 23
+                            },
+                            "cooling": {
+                                "model": "K800G3-10G"
+                            }
+                        },
+                        "B06_25": {
+                            "geometry": {
+                                "model": "R2-1218R-TH",
+                                "slotPosition": 25
+                            },
+                            "cooling": {
+                                "model": "R2-1218R-TH"
+                            }
+                        },
+                        "B06_27": {
+                            "geometry": {
+                                "model": "R2-1218R-TH",
+                                "slotPosition": 27
+                            },
+                            "cooling": {
+                                "model": "R2-1218R-TH"
+                            }
+                        },
+                        "B06_29": {
+                            "geometry": {
+                                "model": "SA5212M4",
+                                "slotPosition": 29
+                            },
+                            "cooling": {
+                                "model": "SA5212M4"
+                            }
+                        },
+                        "B06_31": {
+                            "geometry": {
+                                "model": "AliServer Thor01-2U",
+                                "slotPosition": 31
+                            },
+                            "cooling": {
+                                "model": "AliServer Thor01-2U"
+                            }
+                        },
+                        "B06_33": {
+                            "geometry": {
+                                "model": "S5BA3UPI",
+                                "slotPosition": 33
+                            },
+                            "cooling": {
+                                "model": "S5BA3UPI"
+                            }
+                        },
+                        "B06_35": {
+                            "geometry": {
+                                "model": "SA5212M4",
+                                "slotPosition": 35
+                            },
+                            "cooling": {
+                                "model": "SA5212M4"
+                            }
+                        },
+                        "B06_37": {
+                            "geometry": {
+                                "model": "SA5212M4",
+                                "slotPosition": 37
+                            },
+                            "cooling": {
+                                "model": "SA5212M4"
+                            }
+                        }
+                    }
+                }
+            },
+            "B07": {
+                "geometry": {
+                    "model": "rack_model_1",
+                    "location": {
+                        "x": 4.8,
+                        "y": 6.0,
+                        "z": 0.0
+                    },
+                    "orientation": 90,
+                    "hasBlankingPanel": true
+                },
+                "constructions": {
+                    "servers": {
+                        "B07_01": {
+                            "geometry": {
+                                "model": "Pokemon",
+                                "slotPosition": 1
+                            },
+                            "cooling": {
+                                "model": "Pokemon"
+                            }
+                        },
+                        "B07_06": {
+                            "geometry": {
+                                "model": "S2PA",
+                                "slotPosition": 6
+                            },
+                            "cooling": {
+                                "model": "S2PA"
+                            }
+                        },
+                        "B07_11": {
+                            "geometry": {
+                                "model": "AliServer Thor01-2U",
+                                "slotPosition": 11
+                            },
+                            "cooling": {
+                                "model": "AliServer Thor01-2U"
+                            }
+                        },
+                        "B07_13": {
+                            "geometry": {
+                                "model": "K800G3-10G",
+                                "slotPosition": 13
+                            },
+                            "cooling": {
+                                "model": "K800G3-10G"
+                            }
+                        },
+                        "B07_15": {
+                            "geometry": {
+                                "model": "AliServer Thor01-2U",
+                                "slotPosition": 15
+                            },
+                            "cooling": {
+                                "model": "AliServer Thor01-2U"
+                            }
+                        },
+                        "B07_17": {
+                            "geometry": {
+                                "model": "AliServer Thor01-2U",
+                                "slotPosition": 17
+                            },
+                            "cooling": {
+                                "model": "AliServer Thor01-2U"
+                            }
+                        },
+                        "B07_19": {
+                            "geometry": {
+                                "model": "K800G3-10G",
+                                "slotPosition": 19
+                            },
+                            "cooling": {
+                                "model": "K800G3-10G"
+                            }
+                        },
+                        "B07_21": {
+                            "geometry": {
+                                "model": "K800G3-10G",
+                                "slotPosition": 21
+                            },
+                            "cooling": {
+                                "model": "K800G3-10G"
+                            }
+                        },
+                        "B07_23": {
+                            "geometry": {
+                                "model": "K800G3-10G",
+                                "slotPosition": 23
+                            },
+                            "cooling": {
+                                "model": "K800G3-10G"
+                            }
+                        },
+                        "B07_25": {
+                            "geometry": {
+                                "model": "R2-1218R-TH",
+                                "slotPosition": 25
+                            },
+                            "cooling": {
+                                "model": "R2-1218R-TH"
+                            }
+                        },
+                        "B07_27": {
+                            "geometry": {
+                                "model": "AliServer Thor01-2U",
+                                "slotPosition": 27
+                            },
+                            "cooling": {
+                                "model": "AliServer Thor01-2U"
+                            }
+                        },
+                        "B07_29": {
+                            "geometry": {
+                                "model": "SA5212M4",
+                                "slotPosition": 29
+                            },
+                            "cooling": {
+                                "model": "SA5212M4"
+                            }
+                        },
+                        "B07_31": {
+                            "geometry": {
+                                "model": "K800G3-10G",
+                                "slotPosition": 31
+                            },
+                            "cooling": {
+                                "model": "K800G3-10G"
+                            }
+                        },
+                        "B07_33": {
+                            "geometry": {
+                                "model": "SA5212M4",
+                                "slotPosition": 33
+                            },
+                            "cooling": {
+                                "model": "SA5212M4"
+                            }
+                        },
+                        "B07_35": {
+                            "geometry": {
+                                "model": "SA5212M4",
+                                "slotPosition": 35
+                            },
+                            "cooling": {
+                                "model": "SA5212M4"
+                            }
+                        },
+                        "B07_37": {
+                            "geometry": {
+                                "model": "RH2288H V3",
+                                "slotPosition": 37
+                            },
+                            "cooling": {
+                                "model": "RH2288H V3"
+                            }
+                        }
+                    }
+                }
+            },
+            "B08": {
+                "geometry": {
+                    "model": "rack_model_1",
+                    "location": {
+                        "x": 4.8,
+                        "y": 5.4,
+                        "z": 0.0
+                    },
+                    "orientation": 90,
+                    "hasBlankingPanel": true
+                },
+                "constructions": {
+                    "servers": {
+                        "B08_01": {
+                            "geometry": {
+                                "model": "Pokemon",
+                                "slotPosition": 1
+                            },
+                            "cooling": {
+                                "model": "Pokemon"
+                            }
+                        },
+                        "B08_06": {
+                            "geometry": {
+                                "model": "S2PA",
+                                "slotPosition": 6
+                            },
+                            "cooling": {
+                                "model": "S2PA"
+                            }
+                        },
+                        "B08_11": {
+                            "geometry": {
+                                "model": "K800G3-10G",
+                                "slotPosition": 11
+                            },
+                            "cooling": {
+                                "model": "K800G3-10G"
+                            }
+                        },
+                        "B08_13": {
+                            "geometry": {
+                                "model": "K800G3-10G",
+                                "slotPosition": 13
+                            },
+                            "cooling": {
+                                "model": "K800G3-10G"
+                            }
+                        },
+                        "B08_15": {
+                            "geometry": {
+                                "model": "NF5280M4",
+                                "slotPosition": 15
+                            },
+                            "cooling": {
+                                "model": "NF5280M4"
+                            }
+                        },
+                        "B08_17": {
+                            "geometry": {
+                                "model": "NF5280M4",
+                                "slotPosition": 17
+                            },
+                            "cooling": {
+                                "model": "NF5280M4"
+                            }
+                        },
+                        "B08_19": {
+                            "geometry": {
+                                "model": "NF5280M4",
+                                "slotPosition": 19
+                            },
+                            "cooling": {
+                                "model": "NF5280M4"
+                            }
+                        },
+                        "B08_21": {
+                            "geometry": {
+                                "model": "NF5280M4",
+                                "slotPosition": 21
+                            },
+                            "cooling": {
+                                "model": "NF5280M4"
+                            }
+                        },
+                        "B08_23": {
+                            "geometry": {
+                                "model": "K800G3-10G",
+                                "slotPosition": 23
+                            },
+                            "cooling": {
+                                "model": "K800G3-10G"
+                            }
+                        },
+                        "B08_25": {
+                            "geometry": {
+                                "model": "K800G3-10G",
+                                "slotPosition": 25
+                            },
+                            "cooling": {
+                                "model": "K800G3-10G"
+                            }
+                        },
+                        "B08_27": {
+                            "geometry": {
+                                "model": "NF5280M4",
+                                "slotPosition": 27
+                            },
+                            "cooling": {
+                                "model": "NF5280M4"
+                            }
+                        },
+                        "B08_35": {
+                            "geometry": {
+                                "model": "ThinkServer SD350X",
+                                "slotPosition": 35
+                            },
+                            "cooling": {
+                                "model": "ThinkServer SD350X"
+                            }
+                        },
+                        "B08_37": {
+                            "geometry": {
+                                "model": "ThinkServer RD452X",
+                                "slotPosition": 37
+                            },
+                            "cooling": {
+                                "model": "ThinkServer RD452X"
+                            }
+                        }
+                    }
+                }
+            },
+            "B09": {
+                "geometry": {
+                    "model": "rack_model_1",
+                    "location": {
+                        "x": 4.8,
+                        "y": 4.8,
+                        "z": 0.0
+                    },
+                    "orientation": 90,
+                    "hasBlankingPanel": true
+                },
+                "constructions": {
+                    "servers": {
+                        "B09_01": {
+                            "geometry": {
+                                "model": "Pokemon",
+                                "slotPosition": 1
+                            },
+                            "cooling": {
+                                "model": "Pokemon"
+                            }
+                        },
+                        "B09_06": {
+                            "geometry": {
+                                "model": "S2PA",
+                                "slotPosition": 6
+                            },
+                            "cooling": {
+                                "model": "S2PA"
+                            }
+                        },
+                        "B09_11": {
+                            "geometry": {
+                                "model": "AliServer Thor01-2U",
+                                "slotPosition": 11
+                            },
+                            "cooling": {
+                                "model": "AliServer Thor01-2U"
+                            }
+                        },
+                        "B09_13": {
+                            "geometry": {
+                                "model": "AliServer Thor01-2U",
+                                "slotPosition": 13
+                            },
+                            "cooling": {
+                                "model": "AliServer Thor01-2U"
+                            }
+                        },
+                        "B09_15": {
+                            "geometry": {
+                                "model": "K800G3-10G",
+                                "slotPosition": 15
+                            },
+                            "cooling": {
+                                "model": "K800G3-10G"
+                            }
+                        },
+                        "B09_17": {
+                            "geometry": {
+                                "model": "K800G3-10G",
+                                "slotPosition": 17
+                            },
+                            "cooling": {
+                                "model": "K800G3-10G"
+                            }
+                        },
+                        "B09_19": {
+                            "geometry": {
+                                "model": "K800G3-10G",
+                                "slotPosition": 19
+                            },
+                            "cooling": {
+                                "model": "K800G3-10G"
+                            }
+                        },
+                        "B09_21": {
+                            "geometry": {
+                                "model": "ThinkServer RD452X",
+                                "slotPosition": 21
+                            },
+                            "cooling": {
+                                "model": "ThinkServer RD452X"
+                            }
+                        },
+                        "B09_23": {
+                            "geometry": {
+                                "model": "ThinkServer RD452X",
+                                "slotPosition": 23
+                            },
+                            "cooling": {
+                                "model": "ThinkServer RD452X"
+                            }
+                        },
+                        "B09_25": {
+                            "geometry": {
+                                "model": "R2-1218R-TH",
+                                "slotPosition": 25
+                            },
+                            "cooling": {
+                                "model": "R2-1218R-TH"
+                            }
+                        },
+                        "B09_27": {
+                            "geometry": {
+                                "model": "AliServer Thor01-2U",
+                                "slotPosition": 27
+                            },
+                            "cooling": {
+                                "model": "AliServer Thor01-2U"
+                            }
+                        },
+                        "B09_29": {
+                            "geometry": {
+                                "model": "S5BA3UPI",
+                                "slotPosition": 29
+                            },
+                            "cooling": {
+                                "model": "S5BA3UPI"
+                            }
+                        },
+                        "B09_35": {
+                            "geometry": {
+                                "model": "SA5212M4",
+                                "slotPosition": 35
+                            },
+                            "cooling": {
+                                "model": "SA5212M4"
+                            }
+                        },
+                        "B09_37": {
+                            "geometry": {
+                                "model": "SA5212M4",
+                                "slotPosition": 37
+                            },
+                            "cooling": {
+                                "model": "SA5212M4"
+                            }
+                        }
+                    }
+                }
+            },
+            "B10": {
+                "geometry": {
+                    "model": "rack_model_1",
+                    "location": {
+                        "x": 4.8,
+                        "y": 4.2,
+                        "z": 0.0
+                    },
+                    "orientation": 90,
+                    "hasBlankingPanel": true
+                },
+                "constructions": {
+                    "servers": {
+                        "B10_01": {
+                            "geometry": {
+                                "model": "Pokemon",
+                                "slotPosition": 1
+                            },
+                            "cooling": {
+                                "model": "Pokemon"
+                            }
+                        },
+                        "B10_06": {
+                            "geometry": {
+                                "model": "S2PA",
+                                "slotPosition": 6
+                            },
+                            "cooling": {
+                                "model": "S2PA"
+                            }
+                        },
+                        "B10_11": {
+                            "geometry": {
+                                "model": "AliServer Thor01-2U",
+                                "slotPosition": 11
+                            },
+                            "cooling": {
+                                "model": "AliServer Thor01-2U"
+                            }
+                        },
+                        "B10_13": {
+                            "geometry": {
+                                "model": "AliServer Thor01-2U",
+                                "slotPosition": 13
+                            },
+                            "cooling": {
+                                "model": "AliServer Thor01-2U"
+                            }
+                        },
+                        "B10_15": {
+                            "geometry": {
+                                "model": "K800G3-10G",
+                                "slotPosition": 15
+                            },
+                            "cooling": {
+                                "model": "K800G3-10G"
+                            }
+                        },
+                        "B10_17": {
+                            "geometry": {
+                                "model": "K800G3-10G",
+                                "slotPosition": 17
+                            },
+                            "cooling": {
+                                "model": "K800G3-10G"
+                            }
+                        },
+                        "B10_19": {
+                            "geometry": {
+                                "model": "ThinkServer RD452X",
+                                "slotPosition": 19
+                            },
+                            "cooling": {
+                                "model": "ThinkServer RD452X"
+                            }
+                        },
+                        "B10_21": {
+                            "geometry": {
+                                "model": "K800G3-10G",
+                                "slotPosition": 21
+                            },
+                            "cooling": {
+                                "model": "K800G3-10G"
+                            }
+                        },
+                        "B10_23": {
+                            "geometry": {
+                                "model": "K800G3-10G",
+                                "slotPosition": 23
+                            },
+                            "cooling": {
+                                "model": "K800G3-10G"
+                            }
+                        },
+                        "B10_25": {
+                            "geometry": {
+                                "model": "R2-1218R-TH",
+                                "slotPosition": 25
+                            },
+                            "cooling": {
+                                "model": "R2-1218R-TH"
+                            }
+                        },
+                        "B10_27": {
+                            "geometry": {
+                                "model": "AliServer Thor01-2U",
+                                "slotPosition": 27
+                            },
+                            "cooling": {
+                                "model": "AliServer Thor01-2U"
+                            }
+                        },
+                        "B10_29": {
+                            "geometry": {
+                                "model": "SA5212M4",
+                                "slotPosition": 29
+                            },
+                            "cooling": {
+                                "model": "SA5212M4"
+                            }
+                        },
+                        "B10_31": {
+                            "geometry": {
+                                "model": "K800G3-10G",
+                                "slotPosition": 31
+                            },
+                            "cooling": {
+                                "model": "K800G3-10G"
+                            }
+                        },
+                        "B10_33": {
+                            "geometry": {
+                                "model": "K800G3-10G",
+                                "slotPosition": 33
+                            },
+                            "cooling": {
+                                "model": "K800G3-10G"
+                            }
+                        },
+                        "B10_35": {
+                            "geometry": {
+                                "model": "SA5212M4",
+                                "slotPosition": 35
+                            },
+                            "cooling": {
+                                "model": "SA5212M4"
+                            }
+                        },
+                        "B10_37": {
+                            "geometry": {
+                                "model": "SA5212M4",
+                                "slotPosition": 37
+                            },
+                            "cooling": {
+                                "model": "SA5212M4"
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "sensors": {
+            "sensor_1": {
+                "geometry": {
+                    "location": {
+                        "x": 0.61,
+                        "y": 9.6,
+                        "z": 2.0
+                    }
+                }
+            },
+            "sensor_2": {
+                "geometry": {
+                    "location": {
+                        "x": 0.61,
+                        "y": 7.6,
+                        "z": 2.0
+                    }
+                }
+            },
+            "sensor_3": {
+                "geometry": {
+                    "location": {
+                        "x": 0.61,
+                        "y": 4.6,
+                        "z": 2.0
+                    }
+                }
+            },
+            "sensor_4": {
+                "geometry": {
+                    "location": {
+                        "x": 5.39,
+                        "y": 9.6,
+                        "z": 2.0
+                    }
+                }
+            },
+            "sensor_5": {
+                "geometry": {
+                    "location": {
+                        "x": 5.39,
+                        "y": 7.6,
+                        "z": 2.0
+                    }
+                }
+            },
+            "sensor_6": {
+                "geometry": {
+                    "location": {
+                        "x": 5.39,
+                        "y": 4.6,
+                        "z": 2.0
+                    }
+                }
+            }
+        },
+        "servers": {}
+    },
+    "inputs": {
+        "acus": {
+            "ACU1": {
+                "supplyAirTemperature": 23.0,
+                "supplyAirVolumeFlowRate": 19.0964
+            }
+        },
+        "servers": {
+            "A01_01": {
+                "inputPower": 1660.0
+            },
+            "A01_06": {
+                "inputPower": 1660.0
+            },
+            "A01_11": {
+                "inputPower": 624.0
+            },
+            "A01_13": {
+                "inputPower": 535.0
+            },
+            "A01_15": {
+                "inputPower": 535.0
+            },
+            "A01_17": {
+                "inputPower": 535.0
+            },
+            "A01_19": {
+                "inputPower": 445.0
+            },
+            "A01_21": {
+                "inputPower": 530.0
+            },
+            "A01_23": {
+                "inputPower": 535.0
+            },
+            "A01_25": {
+                "inputPower": 535.0
+            },
+            "A01_27": {
+                "inputPower": 511.0
+            },
+            "A01_29": {
+                "inputPower": 535.0
+            },
+            "A01_31": {
+                "inputPower": 535.0
+            },
+            "A01_33": {
+                "inputPower": 535.0
+            },
+            "A01_35": {
+                "inputPower": 530.0
+            },
+            "A01_37": {
+                "inputPower": 430.0
+            },
+            "A02_01": {
+                "inputPower": 1660.0
+            },
+            "A02_06": {
+                "inputPower": 1660.0
+            },
+            "A02_11": {
+                "inputPower": 430.0
+            },
+            "A02_13": {
+                "inputPower": 430.0
+            },
+            "A02_15": {
+                "inputPower": 430.0
+            },
+            "A02_23": {
+                "inputPower": 1492.0
+            },
+            "A02_25": {
+                "inputPower": 424.0
+            },
+            "A02_27": {
+                "inputPower": 449.0
+            },
+            "A02_29": {
+                "inputPower": 449.0
+            },
+            "A02_31": {
+                "inputPower": 424.0
+            },
+            "A02_33": {
+                "inputPower": 424.0
+            },
+            "A02_35": {
+                "inputPower": 424.0
+            },
+            "A02_37": {
+                "inputPower": 449.0
+            },
+            "A03_01": {
+                "inputPower": 1660.0
+            },
+            "A03_06": {
+                "inputPower": 1660.0
+            },
+            "A03_11": {
+                "inputPower": 535.0
+            },
+            "A03_13": {
+                "inputPower": 535.0
+            },
+            "A03_15": {
+                "inputPower": 535.0
+            },
+            "A03_17": {
+                "inputPower": 535.0
+            },
+            "A03_19": {
+                "inputPower": 430.0
+            },
+            "A03_21": {
+                "inputPower": 526.0
+            },
+            "A03_23": {
+                "inputPower": 535.0
+            },
+            "A03_25": {
+                "inputPower": 535.0
+            },
+            "A03_27": {
+                "inputPower": 535.0
+            },
+            "A03_29": {
+                "inputPower": 535.0
+            },
+            "A03_31": {
+                "inputPower": 535.0
+            },
+            "A03_33": {
+                "inputPower": 535.0
+            },
+            "A03_35": {
+                "inputPower": 376.0
+            },
+            "A03_37": {
+                "inputPower": 662.0
+            },
+            "A04_01": {
+                "inputPower": 1660.0
+            },
+            "A04_06": {
+                "inputPower": 1660.0
+            },
+            "A04_11": {
+                "inputPower": 535.0
+            },
+            "A04_13": {
+                "inputPower": 535.0
+            },
+            "A04_15": {
+                "inputPower": 535.0
+            },
+            "A04_17": {
+                "inputPower": 535.0
+            },
+            "A04_19": {
+                "inputPower": 430.0
+            },
+            "A04_21": {
+                "inputPower": 535.0
+            },
+            "A04_23": {
+                "inputPower": 511.0
+            },
+            "A04_25": {
+                "inputPower": 535.0
+            },
+            "A04_27": {
+                "inputPower": 535.0
+            },
+            "A04_31": {
+                "inputPower": 535.0
+            },
+            "A04_33": {
+                "inputPower": 535.0
+            },
+            "A04_35": {
+                "inputPower": 526.0
+            },
+            "A04_37": {
+                "inputPower": 662.0
+            },
+            "A05_01": {
+                "inputPower": 1660.0
+            },
+            "A05_06": {
+                "inputPower": 1660.0
+            },
+            "A05_11": {
+                "inputPower": 430.0
+            },
+            "A05_13": {
+                "inputPower": 430.0
+            },
+            "A05_15": {
+                "inputPower": 430.0
+            },
+            "A05_23": {
+                "inputPower": 1492.0
+            },
+            "A05_25": {
+                "inputPower": 449.0
+            },
+            "A05_27": {
+                "inputPower": 449.0
+            },
+            "A05_29": {
+                "inputPower": 424.0
+            },
+            "A05_31": {
+                "inputPower": 449.0
+            },
+            "A05_33": {
+                "inputPower": 424.0
+            },
+            "A05_35": {
+                "inputPower": 424.0
+            },
+            "A05_37": {
+                "inputPower": 424.0
+            },
+            "A06_01": {
+                "inputPower": 1660.0
+            },
+            "A06_06": {
+                "inputPower": 1660.0
+            },
+            "A06_11": {
+                "inputPower": 535.0
+            },
+            "A06_13": {
+                "inputPower": 535.0
+            },
+            "A06_15": {
+                "inputPower": 535.0
+            },
+            "A06_17": {
+                "inputPower": 535.0
+            },
+            "A06_19": {
+                "inputPower": 535.0
+            },
+            "A06_21": {
+                "inputPower": 535.0
+            },
+            "A06_23": {
+                "inputPower": 535.0
+            },
+            "A06_25": {
+                "inputPower": 535.0
+            },
+            "A06_27": {
+                "inputPower": 535.0
+            },
+            "A06_29": {
+                "inputPower": 535.0
+            },
+            "A06_31": {
+                "inputPower": 511.0
+            },
+            "A06_33": {
+                "inputPower": 430.0
+            },
+            "A06_35": {
+                "inputPower": 526.0
+            },
+            "A06_37": {
+                "inputPower": 662.0
+            },
+            "A07_01": {
+                "inputPower": 1660.0
+            },
+            "A07_06": {
+                "inputPower": 1660.0
+            },
+            "A07_11": {
+                "inputPower": 526.0
+            },
+            "A07_13": {
+                "inputPower": 526.0
+            },
+            "A07_15": {
+                "inputPower": 526.0
+            },
+            "A07_17": {
+                "inputPower": 526.0
+            },
+            "A07_19": {
+                "inputPower": 526.0
+            },
+            "A07_21": {
+                "inputPower": 535.0
+            },
+            "A07_23": {
+                "inputPower": 535.0
+            },
+            "A07_25": {
+                "inputPower": 535.0
+            },
+            "A07_27": {
+                "inputPower": 535.0
+            },
+            "A07_29": {
+                "inputPower": 535.0
+            },
+            "A07_31": {
+                "inputPower": 535.0
+            },
+            "A07_33": {
+                "inputPower": 535.0
+            },
+            "A07_35": {
+                "inputPower": 535.0
+            },
+            "A07_37": {
+                "inputPower": 424.0
+            },
+            "A08_01": {
+                "inputPower": 1660.0
+            },
+            "A08_06": {
+                "inputPower": 1660.0
+            },
+            "A08_11": {
+                "inputPower": 430.0
+            },
+            "A08_13": {
+                "inputPower": 430.0
+            },
+            "A08_15": {
+                "inputPower": 430.0
+            },
+            "A08_17": {
+                "inputPower": 528.0
+            },
+            "A08_19": {
+                "inputPower": 424.0
+            },
+            "A08_27": {
+                "inputPower": 1492.0
+            },
+            "A08_29": {
+                "inputPower": 424.0
+            },
+            "A08_31": {
+                "inputPower": 449.0
+            },
+            "A08_33": {
+                "inputPower": 424.0
+            },
+            "A08_35": {
+                "inputPower": 449.0
+            },
+            "A08_37": {
+                "inputPower": 449.0
+            },
+            "A09_01": {
+                "inputPower": 1660.0
+            },
+            "A09_06": {
+                "inputPower": 1660.0
+            },
+            "A09_11": {
+                "inputPower": 526.0
+            },
+            "A09_13": {
+                "inputPower": 535.0
+            },
+            "A09_15": {
+                "inputPower": 535.0
+            },
+            "A09_17": {
+                "inputPower": 535.0
+            },
+            "A09_19": {
+                "inputPower": 535.0
+            },
+            "A09_21": {
+                "inputPower": 535.0
+            },
+            "A09_23": {
+                "inputPower": 535.0
+            },
+            "A09_25": {
+                "inputPower": 535.0
+            },
+            "A09_27": {
+                "inputPower": 535.0
+            },
+            "A09_29": {
+                "inputPower": 430.0
+            },
+            "A09_31": {
+                "inputPower": 535.0
+            },
+            "A09_33": {
+                "inputPower": 526.0
+            },
+            "A09_35": {
+                "inputPower": 535.0
+            },
+            "A09_37": {
+                "inputPower": 662.0
+            },
+            "A10_01": {
+                "inputPower": 1660.0
+            },
+            "A10_06": {
+                "inputPower": 1660.0
+            },
+            "A10_11": {
+                "inputPower": 535.0
+            },
+            "A10_13": {
+                "inputPower": 535.0
+            },
+            "A10_15": {
+                "inputPower": 430.0
+            },
+            "A10_17": {
+                "inputPower": 511.0
+            },
+            "A10_19": {
+                "inputPower": 511.0
+            },
+            "A10_21": {
+                "inputPower": 535.0
+            },
+            "A10_23": {
+                "inputPower": 535.0
+            },
+            "A10_25": {
+                "inputPower": 530.0
+            },
+            "A10_27": {
+                "inputPower": 530.0
+            },
+            "A10_29": {
+                "inputPower": 526.0
+            },
+            "A10_31": {
+                "inputPower": 376.0
+            },
+            "A10_33": {
+                "inputPower": 662.0
+            },
+            "A10_35": {
+                "inputPower": 624.0
+            },
+            "A10_37": {
+                "inputPower": 424.0
+            },
+            "B01_01": {
+                "inputPower": 1660.0
+            },
+            "B01_06": {
+                "inputPower": 1660.0
+            },
+            "B01_11": {
+                "inputPower": 535.0
+            },
+            "B01_13": {
+                "inputPower": 535.0
+            },
+            "B01_15": {
+                "inputPower": 511.0
+            },
+            "B01_17": {
+                "inputPower": 535.0
+            },
+            "B01_19": {
+                "inputPower": 535.0
+            },
+            "B01_21": {
+                "inputPower": 530.0
+            },
+            "B01_23": {
+                "inputPower": 530.0
+            },
+            "B01_25": {
+                "inputPower": 526.0
+            },
+            "B01_27": {
+                "inputPower": 528.0
+            },
+            "B01_29": {
+                "inputPower": 376.0
+            },
+            "B01_31": {
+                "inputPower": 511.0
+            },
+            "B01_33": {
+                "inputPower": 511.0
+            },
+            "B01_35": {
+                "inputPower": 530.0
+            },
+            "B01_37": {
+                "inputPower": 530.0
+            },
+            "B02_01": {
+                "inputPower": 1660.0
+            },
+            "B02_06": {
+                "inputPower": 1660.0
+            },
+            "B02_11": {
+                "inputPower": 449.0
+            },
+            "B02_13": {
+                "inputPower": 449.0
+            },
+            "B02_15": {
+                "inputPower": 430.0
+            },
+            "B02_17": {
+                "inputPower": 430.0
+            },
+            "B02_19": {
+                "inputPower": 430.0
+            },
+            "B02_27": {
+                "inputPower": 1492.0
+            },
+            "B02_29": {
+                "inputPower": 424.0
+            },
+            "B02_31": {
+                "inputPower": 424.0
+            },
+            "B02_33": {
+                "inputPower": 424.0
+            },
+            "B02_35": {
+                "inputPower": 424.0
+            },
+            "B02_37": {
+                "inputPower": 449.0
+            },
+            "B03_01": {
+                "inputPower": 1660.0
+            },
+            "B03_06": {
+                "inputPower": 1660.0
+            },
+            "B03_11": {
+                "inputPower": 535.0
+            },
+            "B03_13": {
+                "inputPower": 535.0
+            },
+            "B03_15": {
+                "inputPower": 535.0
+            },
+            "B03_17": {
+                "inputPower": 535.0
+            },
+            "B03_19": {
+                "inputPower": 530.0
+            },
+            "B03_21": {
+                "inputPower": 530.0
+            },
+            "B03_23": {
+                "inputPower": 511.0
+            },
+            "B03_25": {
+                "inputPower": 226.0
+            },
+            "B03_27": {
+                "inputPower": 526.0
+            },
+            "B03_29": {
+                "inputPower": 528.0
+            },
+            "B03_31": {
+                "inputPower": 376.0
+            },
+            "B03_33": {
+                "inputPower": 528.0
+            },
+            "B03_35": {
+                "inputPower": 530.0
+            },
+            "B03_37": {
+                "inputPower": 530.0
+            },
+            "B04_01": {
+                "inputPower": 1660.0
+            },
+            "B04_06": {
+                "inputPower": 1660.0
+            },
+            "B04_11": {
+                "inputPower": 535.0
+            },
+            "B04_13": {
+                "inputPower": 535.0
+            },
+            "B04_15": {
+                "inputPower": 535.0
+            },
+            "B04_17": {
+                "inputPower": 535.0
+            },
+            "B04_19": {
+                "inputPower": 530.0
+            },
+            "B04_21": {
+                "inputPower": 511.0
+            },
+            "B04_23": {
+                "inputPower": 530.0
+            },
+            "B04_25": {
+                "inputPower": 226.0
+            },
+            "B04_27": {
+                "inputPower": 526.0
+            },
+            "B04_29": {
+                "inputPower": 528.0
+            },
+            "B04_31": {
+                "inputPower": 376.0
+            },
+            "B04_33": {
+                "inputPower": 528.0
+            },
+            "B04_35": {
+                "inputPower": 530.0
+            },
+            "B04_37": {
+                "inputPower": 530.0
+            },
+            "B05_01": {
+                "inputPower": 1660.0
+            },
+            "B05_06": {
+                "inputPower": 1660.0
+            },
+            "B05_11": {
+                "inputPower": 430.0
+            },
+            "B05_13": {
+                "inputPower": 430.0
+            },
+            "B05_15": {
+                "inputPower": 430.0
+            },
+            "B05_17": {
+                "inputPower": 449.0
+            },
+            "B05_19": {
+                "inputPower": 449.0
+            },
+            "B05_21": {
+                "inputPower": 449.0
+            },
+            "B05_23": {
+                "inputPower": 424.0
+            },
+            "B05_25": {
+                "inputPower": 424.0
+            },
+            "B05_27": {
+                "inputPower": 424.0
+            },
+            "B05_35": {
+                "inputPower": 1492.0
+            },
+            "B05_37": {
+                "inputPower": 424.0
+            },
+            "B06_01": {
+                "inputPower": 1660.0
+            },
+            "B06_06": {
+                "inputPower": 1660.0
+            },
+            "B06_11": {
+                "inputPower": 535.0
+            },
+            "B06_13": {
+                "inputPower": 535.0
+            },
+            "B06_15": {
+                "inputPower": 535.0
+            },
+            "B06_17": {
+                "inputPower": 535.0
+            },
+            "B06_19": {
+                "inputPower": 530.0
+            },
+            "B06_21": {
+                "inputPower": 530.0
+            },
+            "B06_23": {
+                "inputPower": 530.0
+            },
+            "B06_25": {
+                "inputPower": 226.0
+            },
+            "B06_27": {
+                "inputPower": 526.0
+            },
+            "B06_29": {
+                "inputPower": 376.0
+            },
+            "B06_31": {
+                "inputPower": 528.0
+            },
+            "B06_33": {
+                "inputPower": 528.0
+            },
+            "B06_35": {
+                "inputPower": 530.0
+            },
+            "B06_37": {
+                "inputPower": 530.0
+            },
+            "B07_01": {
+                "inputPower": 1660.0
+            },
+            "B07_06": {
+                "inputPower": 1660.0
+            },
+            "B07_11": {
+                "inputPower": 535.0
+            },
+            "B07_13": {
+                "inputPower": 511.0
+            },
+            "B07_15": {
+                "inputPower": 535.0
+            },
+            "B07_17": {
+                "inputPower": 535.0
+            },
+            "B07_19": {
+                "inputPower": 430.0
+            },
+            "B07_21": {
+                "inputPower": 530.0
+            },
+            "B07_23": {
+                "inputPower": 530.0
+            },
+            "B07_25": {
+                "inputPower": 526.0
+            },
+            "B07_27": {
+                "inputPower": 528.0
+            },
+            "B07_29": {
+                "inputPower": 376.0
+            },
+            "B07_31": {
+                "inputPower": 511.0
+            },
+            "B07_33": {
+                "inputPower": 530.0
+            },
+            "B07_35": {
+                "inputPower": 530.0
+            },
+            "B07_37": {
+                "inputPower": 511.0
+            },
+            "B08_01": {
+                "inputPower": 1660.0
+            },
+            "B08_06": {
+                "inputPower": 1660.0
+            },
+            "B08_11": {
+                "inputPower": 430.0
+            },
+            "B08_13": {
+                "inputPower": 430.0
+            },
+            "B08_15": {
+                "inputPower": 424.0
+            },
+            "B08_17": {
+                "inputPower": 449.0
+            },
+            "B08_19": {
+                "inputPower": 449.0
+            },
+            "B08_21": {
+                "inputPower": 449.0
+            },
+            "B08_23": {
+                "inputPower": 424.0
+            },
+            "B08_25": {
+                "inputPower": 430.0
+            },
+            "B08_27": {
+                "inputPower": 424.0
+            },
+            "B08_35": {
+                "inputPower": 1492.0
+            },
+            "B08_37": {
+                "inputPower": 424.0
+            },
+            "B09_01": {
+                "inputPower": 1660.0
+            },
+            "B09_06": {
+                "inputPower": 1660.0
+            },
+            "B09_11": {
+                "inputPower": 535.0
+            },
+            "B09_13": {
+                "inputPower": 535.0
+            },
+            "B09_15": {
+                "inputPower": 530.0
+            },
+            "B09_17": {
+                "inputPower": 530.0
+            },
+            "B09_19": {
+                "inputPower": 530.0
+            },
+            "B09_21": {
+                "inputPower": 530.0
+            },
+            "B09_23": {
+                "inputPower": 530.0
+            },
+            "B09_25": {
+                "inputPower": 526.0
+            },
+            "B09_27": {
+                "inputPower": 528.0
+            },
+            "B09_29": {
+                "inputPower": 528.0
+            },
+            "B09_35": {
+                "inputPower": 530.0
+            },
+            "B09_37": {
+                "inputPower": 530.0
+            },
+            "B10_01": {
+                "inputPower": 1660.0
+            },
+            "B10_06": {
+                "inputPower": 1660.0
+            },
+            "B10_11": {
+                "inputPower": 535.0
+            },
+            "B10_13": {
+                "inputPower": 535.0
+            },
+            "B10_15": {
+                "inputPower": 530.0
+            },
+            "B10_17": {
+                "inputPower": 530.0
+            },
+            "B10_19": {
+                "inputPower": 530.0
+            },
+            "B10_21": {
+                "inputPower": 530.0
+            },
+            "B10_23": {
+                "inputPower": 530.0
+            },
+            "B10_25": {
+                "inputPower": 526.0
+            },
+            "B10_27": {
+                "inputPower": 528.0
+            },
+            "B10_29": {
+                "inputPower": 376.0
+            },
+            "B10_31": {
+                "inputPower": 511.0
+            },
+            "B10_33": {
+                "inputPower": 511.0
+            },
+            "B10_35": {
+                "inputPower": 530.0
+            },
+            "B10_37": {
+                "inputPower": 530.0
+            }
+        }
+    }
+}

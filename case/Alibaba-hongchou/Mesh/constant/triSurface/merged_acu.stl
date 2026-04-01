@@ -1,0 +1,952 @@
+solid AHU1_Front_patch
+  facet normal 0.000000 -1.000000 0.000000
+    outer loop
+      vertex 1.900000 14.650000 1.700000
+      vertex 1.900000 14.650000 0.000000
+      vertex 4.900000 14.650000 0.000000
+    endloop
+  endfacet
+  facet normal 0.000000 -1.000000 0.000000
+    outer loop
+      vertex 4.900000 14.650000 0.000000
+      vertex 4.900000 14.650000 1.700000
+      vertex 1.900000 14.650000 1.700000
+    endloop
+  endfacet
+endsolid AHU1_Front_patch
+
+solid AHU1_Front_part1
+  facet normal 0.000000 -1.000000 0.000000
+    outer loop
+      vertex 1.900000 14.650000 3.000000
+      vertex 1.900000 14.650000 1.700000
+      vertex 4.900000 14.650000 1.700000
+    endloop
+  endfacet
+  facet normal 0.000000 -1.000000 0.000000
+    outer loop
+      vertex 4.900000 14.650000 1.700000
+      vertex 4.900000 14.650000 3.000000
+      vertex 1.900000 14.650000 3.000000
+    endloop
+  endfacet
+endsolid AHU1_Front_part1
+
+solid AHU1_Back_patch
+  facet normal 0.000000 1.000000 0.000000
+    outer loop
+      vertex 4.900000 15.550000 3.000000
+      vertex 4.900000 15.550000 0.000000
+      vertex 1.900000 15.550000 0.000000
+    endloop
+  endfacet
+  facet normal 0.000000 1.000000 0.000000
+    outer loop
+      vertex 1.900000 15.550000 0.000000
+      vertex 1.900000 15.550000 3.000000
+      vertex 4.900000 15.550000 3.000000
+    endloop
+  endfacet
+endsolid AHU1_Back_patch
+
+solid AHU1_Left
+  facet normal -1.000000 0.000000 0.000000
+    outer loop
+      vertex 1.900000 15.550000 3.000000
+      vertex 1.900000 15.550000 0.000000
+      vertex 1.900000 14.650000 0.000000
+    endloop
+  endfacet
+  facet normal -1.000000 0.000000 0.000000
+    outer loop
+      vertex 1.900000 14.650000 0.000000
+      vertex 1.900000 14.650000 3.000000
+      vertex 1.900000 15.550000 3.000000
+    endloop
+  endfacet
+endsolid AHU1_Left
+
+solid AHU1_Right
+  facet normal 1.000000 0.000000 0.000000
+    outer loop
+      vertex 4.900000 14.650000 3.000000
+      vertex 4.900000 14.650000 0.000000
+      vertex 4.900000 15.550000 0.000000
+    endloop
+  endfacet
+  facet normal 1.000000 0.000000 0.000000
+    outer loop
+      vertex 4.900000 15.550000 0.000000
+      vertex 4.900000 15.550000 3.000000
+      vertex 4.900000 14.650000 3.000000
+    endloop
+  endfacet
+endsolid AHU1_Right
+
+solid AHU1_Top
+  facet normal 0.000000 0.000000 1.000000
+    outer loop
+      vertex 1.900000 15.550000 3.000000
+      vertex 1.900000 14.650000 3.000000
+      vertex 4.900000 14.650000 3.000000
+    endloop
+  endfacet
+  facet normal 0.000000 0.000000 1.000000
+    outer loop
+      vertex 4.900000 14.650000 3.000000
+      vertex 4.900000 15.550000 3.000000
+      vertex 1.900000 15.550000 3.000000
+    endloop
+  endfacet
+endsolid AHU1_Top
+
+solid AHU1_Bottom
+  facet normal 0.000000 0.000000 -1.000000
+    outer loop
+      vertex 1.900000 14.650000 0.000000
+      vertex 1.900000 15.550000 0.000000
+      vertex 4.900000 15.550000 0.000000
+    endloop
+  endfacet
+  facet normal 0.000000 0.000000 -1.000000
+    outer loop
+      vertex 4.900000 15.550000 0.000000
+      vertex 4.900000 14.650000 0.000000
+      vertex 1.900000 14.650000 0.000000
+    endloop
+  endfacet
+endsolid AHU1_Bottom
+
+solid AHU2_Front_patch
+  facet normal 0.000000 -1.000000 0.000000
+    outer loop
+      vertex 7.600000 14.650000 1.700000
+      vertex 7.600000 14.650000 0.000000
+      vertex 10.600000 14.650000 0.000000
+    endloop
+  endfacet
+  facet normal 0.000000 -1.000000 0.000000
+    outer loop
+      vertex 10.600000 14.650000 0.000000
+      vertex 10.600000 14.650000 1.700000
+      vertex 7.600000 14.650000 1.700000
+    endloop
+  endfacet
+endsolid AHU2_Front_patch
+
+solid AHU2_Front_part1
+  facet normal 0.000000 -1.000000 0.000000
+    outer loop
+      vertex 7.600000 14.650000 3.000000
+      vertex 7.600000 14.650000 1.700000
+      vertex 10.600000 14.650000 1.700000
+    endloop
+  endfacet
+  facet normal 0.000000 -1.000000 0.000000
+    outer loop
+      vertex 10.600000 14.650000 1.700000
+      vertex 10.600000 14.650000 3.000000
+      vertex 7.600000 14.650000 3.000000
+    endloop
+  endfacet
+endsolid AHU2_Front_part1
+
+solid AHU2_Back_patch
+  facet normal 0.000000 1.000000 0.000000
+    outer loop
+      vertex 10.600000 15.550000 3.000000
+      vertex 10.600000 15.550000 0.000000
+      vertex 7.600000 15.550000 0.000000
+    endloop
+  endfacet
+  facet normal 0.000000 1.000000 0.000000
+    outer loop
+      vertex 7.600000 15.550000 0.000000
+      vertex 7.600000 15.550000 3.000000
+      vertex 10.600000 15.550000 3.000000
+    endloop
+  endfacet
+endsolid AHU2_Back_patch
+
+solid AHU2_Left
+  facet normal -1.000000 0.000000 0.000000
+    outer loop
+      vertex 7.600000 15.550000 3.000000
+      vertex 7.600000 15.550000 0.000000
+      vertex 7.600000 14.650000 0.000000
+    endloop
+  endfacet
+  facet normal -1.000000 0.000000 0.000000
+    outer loop
+      vertex 7.600000 14.650000 0.000000
+      vertex 7.600000 14.650000 3.000000
+      vertex 7.600000 15.550000 3.000000
+    endloop
+  endfacet
+endsolid AHU2_Left
+
+solid AHU2_Right
+  facet normal 1.000000 0.000000 0.000000
+    outer loop
+      vertex 10.600000 14.650000 3.000000
+      vertex 10.600000 14.650000 0.000000
+      vertex 10.600000 15.550000 0.000000
+    endloop
+  endfacet
+  facet normal 1.000000 0.000000 0.000000
+    outer loop
+      vertex 10.600000 15.550000 0.000000
+      vertex 10.600000 15.550000 3.000000
+      vertex 10.600000 14.650000 3.000000
+    endloop
+  endfacet
+endsolid AHU2_Right
+
+solid AHU2_Top
+  facet normal 0.000000 0.000000 1.000000
+    outer loop
+      vertex 7.600000 15.550000 3.000000
+      vertex 7.600000 14.650000 3.000000
+      vertex 10.600000 14.650000 3.000000
+    endloop
+  endfacet
+  facet normal 0.000000 0.000000 1.000000
+    outer loop
+      vertex 10.600000 14.650000 3.000000
+      vertex 10.600000 15.550000 3.000000
+      vertex 7.600000 15.550000 3.000000
+    endloop
+  endfacet
+endsolid AHU2_Top
+
+solid AHU2_Bottom
+  facet normal 0.000000 0.000000 -1.000000
+    outer loop
+      vertex 7.600000 14.650000 0.000000
+      vertex 7.600000 15.550000 0.000000
+      vertex 10.600000 15.550000 0.000000
+    endloop
+  endfacet
+  facet normal 0.000000 0.000000 -1.000000
+    outer loop
+      vertex 10.600000 15.550000 0.000000
+      vertex 10.600000 14.650000 0.000000
+      vertex 7.600000 14.650000 0.000000
+    endloop
+  endfacet
+endsolid AHU2_Bottom
+
+solid AHU3_Front_patch
+  facet normal 0.000000 -1.000000 0.000000
+    outer loop
+      vertex 11.300000 14.650000 1.700000
+      vertex 11.300000 14.650000 0.000000
+      vertex 14.300000 14.650000 0.000000
+    endloop
+  endfacet
+  facet normal 0.000000 -1.000000 0.000000
+    outer loop
+      vertex 14.300000 14.650000 0.000000
+      vertex 14.300000 14.650000 1.700000
+      vertex 11.300000 14.650000 1.700000
+    endloop
+  endfacet
+endsolid AHU3_Front_patch
+
+solid AHU3_Front_part1
+  facet normal 0.000000 -1.000000 0.000000
+    outer loop
+      vertex 11.300000 14.650000 3.000000
+      vertex 11.300000 14.650000 1.700000
+      vertex 14.300000 14.650000 1.700000
+    endloop
+  endfacet
+  facet normal 0.000000 -1.000000 0.000000
+    outer loop
+      vertex 14.300000 14.650000 1.700000
+      vertex 14.300000 14.650000 3.000000
+      vertex 11.300000 14.650000 3.000000
+    endloop
+  endfacet
+endsolid AHU3_Front_part1
+
+solid AHU3_Back_patch
+  facet normal 0.000000 1.000000 0.000000
+    outer loop
+      vertex 14.300000 15.550000 3.000000
+      vertex 14.300000 15.550000 0.000000
+      vertex 11.300000 15.550000 0.000000
+    endloop
+  endfacet
+  facet normal 0.000000 1.000000 0.000000
+    outer loop
+      vertex 11.300000 15.550000 0.000000
+      vertex 11.300000 15.550000 3.000000
+      vertex 14.300000 15.550000 3.000000
+    endloop
+  endfacet
+endsolid AHU3_Back_patch
+
+solid AHU3_Left
+  facet normal -1.000000 0.000000 0.000000
+    outer loop
+      vertex 11.300000 15.550000 3.000000
+      vertex 11.300000 15.550000 0.000000
+      vertex 11.300000 14.650000 0.000000
+    endloop
+  endfacet
+  facet normal -1.000000 0.000000 0.000000
+    outer loop
+      vertex 11.300000 14.650000 0.000000
+      vertex 11.300000 14.650000 3.000000
+      vertex 11.300000 15.550000 3.000000
+    endloop
+  endfacet
+endsolid AHU3_Left
+
+solid AHU3_Right
+  facet normal 1.000000 0.000000 0.000000
+    outer loop
+      vertex 14.300000 14.650000 3.000000
+      vertex 14.300000 14.650000 0.000000
+      vertex 14.300000 15.550000 0.000000
+    endloop
+  endfacet
+  facet normal 1.000000 0.000000 0.000000
+    outer loop
+      vertex 14.300000 15.550000 0.000000
+      vertex 14.300000 15.550000 3.000000
+      vertex 14.300000 14.650000 3.000000
+    endloop
+  endfacet
+endsolid AHU3_Right
+
+solid AHU3_Top
+  facet normal 0.000000 0.000000 1.000000
+    outer loop
+      vertex 11.300000 15.550000 3.000000
+      vertex 11.300000 14.650000 3.000000
+      vertex 14.300000 14.650000 3.000000
+    endloop
+  endfacet
+  facet normal 0.000000 0.000000 1.000000
+    outer loop
+      vertex 14.300000 14.650000 3.000000
+      vertex 14.300000 15.550000 3.000000
+      vertex 11.300000 15.550000 3.000000
+    endloop
+  endfacet
+endsolid AHU3_Top
+
+solid AHU3_Bottom
+  facet normal 0.000000 0.000000 -1.000000
+    outer loop
+      vertex 11.300000 14.650000 0.000000
+      vertex 11.300000 15.550000 0.000000
+      vertex 14.300000 15.550000 0.000000
+    endloop
+  endfacet
+  facet normal 0.000000 0.000000 -1.000000
+    outer loop
+      vertex 14.300000 15.550000 0.000000
+      vertex 14.300000 14.650000 0.000000
+      vertex 11.300000 14.650000 0.000000
+    endloop
+  endfacet
+endsolid AHU3_Bottom
+
+solid AHU4_Front_patch
+  facet normal 0.000000 -1.000000 0.000000
+    outer loop
+      vertex 16.900000 14.650000 1.700000
+      vertex 16.900000 14.650000 0.000000
+      vertex 19.900000 14.650000 0.000000
+    endloop
+  endfacet
+  facet normal 0.000000 -1.000000 0.000000
+    outer loop
+      vertex 19.900000 14.650000 0.000000
+      vertex 19.900000 14.650000 1.700000
+      vertex 16.900000 14.650000 1.700000
+    endloop
+  endfacet
+endsolid AHU4_Front_patch
+
+solid AHU4_Front_part1
+  facet normal 0.000000 -1.000000 0.000000
+    outer loop
+      vertex 16.900000 14.650000 3.000000
+      vertex 16.900000 14.650000 1.700000
+      vertex 19.900000 14.650000 1.700000
+    endloop
+  endfacet
+  facet normal 0.000000 -1.000000 0.000000
+    outer loop
+      vertex 19.900000 14.650000 1.700000
+      vertex 19.900000 14.650000 3.000000
+      vertex 16.900000 14.650000 3.000000
+    endloop
+  endfacet
+endsolid AHU4_Front_part1
+
+solid AHU4_Back_patch
+  facet normal 0.000000 1.000000 0.000000
+    outer loop
+      vertex 19.900000 15.550000 3.000000
+      vertex 19.900000 15.550000 0.000000
+      vertex 16.900000 15.550000 0.000000
+    endloop
+  endfacet
+  facet normal 0.000000 1.000000 0.000000
+    outer loop
+      vertex 16.900000 15.550000 0.000000
+      vertex 16.900000 15.550000 3.000000
+      vertex 19.900000 15.550000 3.000000
+    endloop
+  endfacet
+endsolid AHU4_Back_patch
+
+solid AHU4_Left
+  facet normal -1.000000 0.000000 0.000000
+    outer loop
+      vertex 16.900000 15.550000 3.000000
+      vertex 16.900000 15.550000 0.000000
+      vertex 16.900000 14.650000 0.000000
+    endloop
+  endfacet
+  facet normal -1.000000 0.000000 0.000000
+    outer loop
+      vertex 16.900000 14.650000 0.000000
+      vertex 16.900000 14.650000 3.000000
+      vertex 16.900000 15.550000 3.000000
+    endloop
+  endfacet
+endsolid AHU4_Left
+
+solid AHU4_Right
+  facet normal 1.000000 0.000000 0.000000
+    outer loop
+      vertex 19.900000 14.650000 3.000000
+      vertex 19.900000 14.650000 0.000000
+      vertex 19.900000 15.550000 0.000000
+    endloop
+  endfacet
+  facet normal 1.000000 0.000000 0.000000
+    outer loop
+      vertex 19.900000 15.550000 0.000000
+      vertex 19.900000 15.550000 3.000000
+      vertex 19.900000 14.650000 3.000000
+    endloop
+  endfacet
+endsolid AHU4_Right
+
+solid AHU4_Top
+  facet normal 0.000000 0.000000 1.000000
+    outer loop
+      vertex 16.900000 15.550000 3.000000
+      vertex 16.900000 14.650000 3.000000
+      vertex 19.900000 14.650000 3.000000
+    endloop
+  endfacet
+  facet normal 0.000000 0.000000 1.000000
+    outer loop
+      vertex 19.900000 14.650000 3.000000
+      vertex 19.900000 15.550000 3.000000
+      vertex 16.900000 15.550000 3.000000
+    endloop
+  endfacet
+endsolid AHU4_Top
+
+solid AHU4_Bottom
+  facet normal 0.000000 0.000000 -1.000000
+    outer loop
+      vertex 16.900000 14.650000 0.000000
+      vertex 16.900000 15.550000 0.000000
+      vertex 19.900000 15.550000 0.000000
+    endloop
+  endfacet
+  facet normal 0.000000 0.000000 -1.000000
+    outer loop
+      vertex 19.900000 15.550000 0.000000
+      vertex 19.900000 14.650000 0.000000
+      vertex 16.900000 14.650000 0.000000
+    endloop
+  endfacet
+endsolid AHU4_Bottom
+
+solid AHU5_Front_patch
+  facet normal 0.000000 -1.000000 0.000000
+    outer loop
+      vertex 20.700000 14.650000 1.700000
+      vertex 20.700000 14.650000 0.000000
+      vertex 23.700000 14.650000 0.000000
+    endloop
+  endfacet
+  facet normal 0.000000 -1.000000 0.000000
+    outer loop
+      vertex 23.700000 14.650000 0.000000
+      vertex 23.700000 14.650000 1.700000
+      vertex 20.700000 14.650000 1.700000
+    endloop
+  endfacet
+endsolid AHU5_Front_patch
+
+solid AHU5_Front_part1
+  facet normal 0.000000 -1.000000 0.000000
+    outer loop
+      vertex 20.700000 14.650000 3.000000
+      vertex 20.700000 14.650000 1.700000
+      vertex 23.700000 14.650000 1.700000
+    endloop
+  endfacet
+  facet normal 0.000000 -1.000000 0.000000
+    outer loop
+      vertex 23.700000 14.650000 1.700000
+      vertex 23.700000 14.650000 3.000000
+      vertex 20.700000 14.650000 3.000000
+    endloop
+  endfacet
+endsolid AHU5_Front_part1
+
+solid AHU5_Back_patch
+  facet normal 0.000000 1.000000 0.000000
+    outer loop
+      vertex 23.700000 15.550000 3.000000
+      vertex 23.700000 15.550000 0.000000
+      vertex 20.700000 15.550000 0.000000
+    endloop
+  endfacet
+  facet normal 0.000000 1.000000 0.000000
+    outer loop
+      vertex 20.700000 15.550000 0.000000
+      vertex 20.700000 15.550000 3.000000
+      vertex 23.700000 15.550000 3.000000
+    endloop
+  endfacet
+endsolid AHU5_Back_patch
+
+solid AHU5_Left
+  facet normal -1.000000 0.000000 0.000000
+    outer loop
+      vertex 20.700000 15.550000 3.000000
+      vertex 20.700000 15.550000 0.000000
+      vertex 20.700000 14.650000 0.000000
+    endloop
+  endfacet
+  facet normal -1.000000 0.000000 0.000000
+    outer loop
+      vertex 20.700000 14.650000 0.000000
+      vertex 20.700000 14.650000 3.000000
+      vertex 20.700000 15.550000 3.000000
+    endloop
+  endfacet
+endsolid AHU5_Left
+
+solid AHU5_Right
+  facet normal 1.000000 0.000000 0.000000
+    outer loop
+      vertex 23.700000 14.650000 3.000000
+      vertex 23.700000 14.650000 0.000000
+      vertex 23.700000 15.550000 0.000000
+    endloop
+  endfacet
+  facet normal 1.000000 0.000000 0.000000
+    outer loop
+      vertex 23.700000 15.550000 0.000000
+      vertex 23.700000 15.550000 3.000000
+      vertex 23.700000 14.650000 3.000000
+    endloop
+  endfacet
+endsolid AHU5_Right
+
+solid AHU5_Top
+  facet normal 0.000000 0.000000 1.000000
+    outer loop
+      vertex 20.700000 15.550000 3.000000
+      vertex 20.700000 14.650000 3.000000
+      vertex 23.700000 14.650000 3.000000
+    endloop
+  endfacet
+  facet normal 0.000000 0.000000 1.000000
+    outer loop
+      vertex 23.700000 14.650000 3.000000
+      vertex 23.700000 15.550000 3.000000
+      vertex 20.700000 15.550000 3.000000
+    endloop
+  endfacet
+endsolid AHU5_Top
+
+solid AHU5_Bottom
+  facet normal 0.000000 0.000000 -1.000000
+    outer loop
+      vertex 20.700000 14.650000 0.000000
+      vertex 20.700000 15.550000 0.000000
+      vertex 23.700000 15.550000 0.000000
+    endloop
+  endfacet
+  facet normal 0.000000 0.000000 -1.000000
+    outer loop
+      vertex 23.700000 15.550000 0.000000
+      vertex 23.700000 14.650000 0.000000
+      vertex 20.700000 14.650000 0.000000
+    endloop
+  endfacet
+endsolid AHU5_Bottom
+
+solid AHU6_Front_patch
+  facet normal 0.000000 -1.000000 0.000000
+    outer loop
+      vertex 26.200000 14.650000 1.700000
+      vertex 26.200000 14.650000 0.000000
+      vertex 29.200000 14.650000 0.000000
+    endloop
+  endfacet
+  facet normal 0.000000 -1.000000 0.000000
+    outer loop
+      vertex 29.200000 14.650000 0.000000
+      vertex 29.200000 14.650000 1.700000
+      vertex 26.200000 14.650000 1.700000
+    endloop
+  endfacet
+endsolid AHU6_Front_patch
+
+solid AHU6_Front_part1
+  facet normal 0.000000 -1.000000 0.000000
+    outer loop
+      vertex 26.200000 14.650000 3.000000
+      vertex 26.200000 14.650000 1.700000
+      vertex 29.200000 14.650000 1.700000
+    endloop
+  endfacet
+  facet normal 0.000000 -1.000000 0.000000
+    outer loop
+      vertex 29.200000 14.650000 1.700000
+      vertex 29.200000 14.650000 3.000000
+      vertex 26.200000 14.650000 3.000000
+    endloop
+  endfacet
+endsolid AHU6_Front_part1
+
+solid AHU6_Back_patch
+  facet normal 0.000000 1.000000 0.000000
+    outer loop
+      vertex 29.200000 15.550000 3.000000
+      vertex 29.200000 15.550000 0.000000
+      vertex 26.200000 15.550000 0.000000
+    endloop
+  endfacet
+  facet normal 0.000000 1.000000 0.000000
+    outer loop
+      vertex 26.200000 15.550000 0.000000
+      vertex 26.200000 15.550000 3.000000
+      vertex 29.200000 15.550000 3.000000
+    endloop
+  endfacet
+endsolid AHU6_Back_patch
+
+solid AHU6_Left
+  facet normal -1.000000 0.000000 0.000000
+    outer loop
+      vertex 26.200000 15.550000 3.000000
+      vertex 26.200000 15.550000 0.000000
+      vertex 26.200000 14.650000 0.000000
+    endloop
+  endfacet
+  facet normal -1.000000 0.000000 0.000000
+    outer loop
+      vertex 26.200000 14.650000 0.000000
+      vertex 26.200000 14.650000 3.000000
+      vertex 26.200000 15.550000 3.000000
+    endloop
+  endfacet
+endsolid AHU6_Left
+
+solid AHU6_Right
+  facet normal 1.000000 0.000000 0.000000
+    outer loop
+      vertex 29.200000 14.650000 3.000000
+      vertex 29.200000 14.650000 0.000000
+      vertex 29.200000 15.550000 0.000000
+    endloop
+  endfacet
+  facet normal 1.000000 0.000000 0.000000
+    outer loop
+      vertex 29.200000 15.550000 0.000000
+      vertex 29.200000 15.550000 3.000000
+      vertex 29.200000 14.650000 3.000000
+    endloop
+  endfacet
+endsolid AHU6_Right
+
+solid AHU6_Top
+  facet normal 0.000000 0.000000 1.000000
+    outer loop
+      vertex 26.200000 15.550000 3.000000
+      vertex 26.200000 14.650000 3.000000
+      vertex 29.200000 14.650000 3.000000
+    endloop
+  endfacet
+  facet normal 0.000000 0.000000 1.000000
+    outer loop
+      vertex 29.200000 14.650000 3.000000
+      vertex 29.200000 15.550000 3.000000
+      vertex 26.200000 15.550000 3.000000
+    endloop
+  endfacet
+endsolid AHU6_Top
+
+solid AHU6_Bottom
+  facet normal 0.000000 0.000000 -1.000000
+    outer loop
+      vertex 26.200000 14.650000 0.000000
+      vertex 26.200000 15.550000 0.000000
+      vertex 29.200000 15.550000 0.000000
+    endloop
+  endfacet
+  facet normal 0.000000 0.000000 -1.000000
+    outer loop
+      vertex 29.200000 15.550000 0.000000
+      vertex 29.200000 14.650000 0.000000
+      vertex 26.200000 14.650000 0.000000
+    endloop
+  endfacet
+endsolid AHU6_Bottom
+
+solid AHU7_Front_patch
+  facet normal 0.000000 -1.000000 0.000000
+    outer loop
+      vertex 30.000000 14.650000 1.700000
+      vertex 30.000000 14.650000 0.000000
+      vertex 33.000000 14.650000 0.000000
+    endloop
+  endfacet
+  facet normal 0.000000 -1.000000 0.000000
+    outer loop
+      vertex 33.000000 14.650000 0.000000
+      vertex 33.000000 14.650000 1.700000
+      vertex 30.000000 14.650000 1.700000
+    endloop
+  endfacet
+endsolid AHU7_Front_patch
+
+solid AHU7_Front_part1
+  facet normal 0.000000 -1.000000 0.000000
+    outer loop
+      vertex 30.000000 14.650000 3.000000
+      vertex 30.000000 14.650000 1.700000
+      vertex 33.000000 14.650000 1.700000
+    endloop
+  endfacet
+  facet normal 0.000000 -1.000000 0.000000
+    outer loop
+      vertex 33.000000 14.650000 1.700000
+      vertex 33.000000 14.650000 3.000000
+      vertex 30.000000 14.650000 3.000000
+    endloop
+  endfacet
+endsolid AHU7_Front_part1
+
+solid AHU7_Back_patch
+  facet normal 0.000000 1.000000 0.000000
+    outer loop
+      vertex 33.000000 15.550000 3.000000
+      vertex 33.000000 15.550000 0.000000
+      vertex 30.000000 15.550000 0.000000
+    endloop
+  endfacet
+  facet normal 0.000000 1.000000 0.000000
+    outer loop
+      vertex 30.000000 15.550000 0.000000
+      vertex 30.000000 15.550000 3.000000
+      vertex 33.000000 15.550000 3.000000
+    endloop
+  endfacet
+endsolid AHU7_Back_patch
+
+solid AHU7_Left
+  facet normal -1.000000 0.000000 0.000000
+    outer loop
+      vertex 30.000000 15.550000 3.000000
+      vertex 30.000000 15.550000 0.000000
+      vertex 30.000000 14.650000 0.000000
+    endloop
+  endfacet
+  facet normal -1.000000 0.000000 0.000000
+    outer loop
+      vertex 30.000000 14.650000 0.000000
+      vertex 30.000000 14.650000 3.000000
+      vertex 30.000000 15.550000 3.000000
+    endloop
+  endfacet
+endsolid AHU7_Left
+
+solid AHU7_Right
+  facet normal 1.000000 0.000000 0.000000
+    outer loop
+      vertex 33.000000 14.650000 3.000000
+      vertex 33.000000 14.650000 0.000000
+      vertex 33.000000 15.550000 0.000000
+    endloop
+  endfacet
+  facet normal 1.000000 0.000000 0.000000
+    outer loop
+      vertex 33.000000 15.550000 0.000000
+      vertex 33.000000 15.550000 3.000000
+      vertex 33.000000 14.650000 3.000000
+    endloop
+  endfacet
+endsolid AHU7_Right
+
+solid AHU7_Top
+  facet normal 0.000000 0.000000 1.000000
+    outer loop
+      vertex 30.000000 15.550000 3.000000
+      vertex 30.000000 14.650000 3.000000
+      vertex 33.000000 14.650000 3.000000
+    endloop
+  endfacet
+  facet normal 0.000000 0.000000 1.000000
+    outer loop
+      vertex 33.000000 14.650000 3.000000
+      vertex 33.000000 15.550000 3.000000
+      vertex 30.000000 15.550000 3.000000
+    endloop
+  endfacet
+endsolid AHU7_Top
+
+solid AHU7_Bottom
+  facet normal 0.000000 0.000000 -1.000000
+    outer loop
+      vertex 30.000000 14.650000 0.000000
+      vertex 30.000000 15.550000 0.000000
+      vertex 33.000000 15.550000 0.000000
+    endloop
+  endfacet
+  facet normal 0.000000 0.000000 -1.000000
+    outer loop
+      vertex 33.000000 15.550000 0.000000
+      vertex 33.000000 14.650000 0.000000
+      vertex 30.000000 14.650000 0.000000
+    endloop
+  endfacet
+endsolid AHU7_Bottom
+
+solid AHU8_Front_patch
+  facet normal 0.000000 -1.000000 0.000000
+    outer loop
+      vertex 35.600000 14.650000 1.700000
+      vertex 35.600000 14.650000 0.000000
+      vertex 38.600000 14.650000 0.000000
+    endloop
+  endfacet
+  facet normal 0.000000 -1.000000 0.000000
+    outer loop
+      vertex 38.600000 14.650000 0.000000
+      vertex 38.600000 14.650000 1.700000
+      vertex 35.600000 14.650000 1.700000
+    endloop
+  endfacet
+endsolid AHU8_Front_patch
+
+solid AHU8_Front_part1
+  facet normal 0.000000 -1.000000 0.000000
+    outer loop
+      vertex 35.600000 14.650000 3.000000
+      vertex 35.600000 14.650000 1.700000
+      vertex 38.600000 14.650000 1.700000
+    endloop
+  endfacet
+  facet normal 0.000000 -1.000000 0.000000
+    outer loop
+      vertex 38.600000 14.650000 1.700000
+      vertex 38.600000 14.650000 3.000000
+      vertex 35.600000 14.650000 3.000000
+    endloop
+  endfacet
+endsolid AHU8_Front_part1
+
+solid AHU8_Back_patch
+  facet normal 0.000000 1.000000 0.000000
+    outer loop
+      vertex 38.600000 15.550000 3.000000
+      vertex 38.600000 15.550000 0.000000
+      vertex 35.600000 15.550000 0.000000
+    endloop
+  endfacet
+  facet normal 0.000000 1.000000 0.000000
+    outer loop
+      vertex 35.600000 15.550000 0.000000
+      vertex 35.600000 15.550000 3.000000
+      vertex 38.600000 15.550000 3.000000
+    endloop
+  endfacet
+endsolid AHU8_Back_patch
+
+solid AHU8_Left
+  facet normal -1.000000 0.000000 0.000000
+    outer loop
+      vertex 35.600000 15.550000 3.000000
+      vertex 35.600000 15.550000 0.000000
+      vertex 35.600000 14.650000 0.000000
+    endloop
+  endfacet
+  facet normal -1.000000 0.000000 0.000000
+    outer loop
+      vertex 35.600000 14.650000 0.000000
+      vertex 35.600000 14.650000 3.000000
+      vertex 35.600000 15.550000 3.000000
+    endloop
+  endfacet
+endsolid AHU8_Left
+
+solid AHU8_Right
+  facet normal 1.000000 0.000000 0.000000
+    outer loop
+      vertex 38.600000 14.650000 3.000000
+      vertex 38.600000 14.650000 0.000000
+      vertex 38.600000 15.550000 0.000000
+    endloop
+  endfacet
+  facet normal 1.000000 0.000000 0.000000
+    outer loop
+      vertex 38.600000 15.550000 0.000000
+      vertex 38.600000 15.550000 3.000000
+      vertex 38.600000 14.650000 3.000000
+    endloop
+  endfacet
+endsolid AHU8_Right
+
+solid AHU8_Top
+  facet normal 0.000000 0.000000 1.000000
+    outer loop
+      vertex 35.600000 15.550000 3.000000
+      vertex 35.600000 14.650000 3.000000
+      vertex 38.600000 14.650000 3.000000
+    endloop
+  endfacet
+  facet normal 0.000000 0.000000 1.000000
+    outer loop
+      vertex 38.600000 14.650000 3.000000
+      vertex 38.600000 15.550000 3.000000
+      vertex 35.600000 15.550000 3.000000
+    endloop
+  endfacet
+endsolid AHU8_Top
+
+solid AHU8_Bottom
+  facet normal 0.000000 0.000000 -1.000000
+    outer loop
+      vertex 35.600000 14.650000 0.000000
+      vertex 35.600000 15.550000 0.000000
+      vertex 38.600000 15.550000 0.000000
+    endloop
+  endfacet
+  facet normal 0.000000 0.000000 -1.000000
+    outer loop
+      vertex 38.600000 15.550000 0.000000
+      vertex 38.600000 14.650000 0.000000
+      vertex 35.600000 14.650000 0.000000
+    endloop
+  endfacet
+endsolid AHU8_Bottom
+

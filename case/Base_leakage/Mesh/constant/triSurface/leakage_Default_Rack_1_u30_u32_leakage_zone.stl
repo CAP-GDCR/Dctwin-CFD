@@ -1,0 +1,86 @@
+solid leakage_Default_Rack_1_u30_u32_leakage_zone
+  facet normal 1.000000 0.000000 0.000000
+    outer loop
+      vertex 3.432183 4.278933 1.589050
+      vertex 3.432183 4.758933 1.589050
+      vertex 3.432183 4.758933 1.722400
+    endloop
+  endfacet
+  facet normal 1.000000 0.000000 0.000000
+    outer loop
+      vertex 3.432183 4.278933 1.589050
+      vertex 3.432183 4.758933 1.722400
+      vertex 3.432183 4.278933 1.722400
+    endloop
+  endfacet
+  facet normal -1.000000 0.000000 0.000000
+    outer loop
+      vertex 2.432183 4.278933 1.589050
+      vertex 2.432183 4.278933 1.722400
+      vertex 2.432183 4.758933 1.722400
+    endloop
+  endfacet
+  facet normal -1.000000 0.000000 0.000000
+    outer loop
+      vertex 2.432183 4.278933 1.589050
+      vertex 2.432183 4.758933 1.722400
+      vertex 2.432183 4.758933 1.589050
+    endloop
+  endfacet
+  facet normal -0.000000 -1.000000 0.000000
+    outer loop
+      vertex 3.432183 4.278933 1.589050
+      vertex 3.432183 4.278933 1.722400
+      vertex 2.432183 4.278933 1.722400
+    endloop
+  endfacet
+  facet normal -0.000000 -1.000000 0.000000
+    outer loop
+      vertex 3.432183 4.278933 1.589050
+      vertex 2.432183 4.278933 1.722400
+      vertex 2.432183 4.278933 1.589050
+    endloop
+  endfacet
+  facet normal 0.000000 1.000000 0.000000
+    outer loop
+      vertex 3.432183 4.758933 1.589050
+      vertex 2.432183 4.758933 1.589050
+      vertex 2.432183 4.758933 1.722400
+    endloop
+  endfacet
+  facet normal 0.000000 1.000000 0.000000
+    outer loop
+      vertex 3.432183 4.758933 1.589050
+      vertex 2.432183 4.758933 1.722400
+      vertex 3.432183 4.758933 1.722400
+    endloop
+  endfacet
+  facet normal 0.000000 0.000000 -1.000000
+    outer loop
+      vertex 3.432183 4.278933 1.589050
+      vertex 2.432183 4.278933 1.589050
+      vertex 2.432183 4.758933 1.589050
+    endloop
+  endfacet
+  facet normal 0.000000 0.000000 -1.000000
+    outer loop
+      vertex 3.432183 4.278933 1.589050
+      vertex 2.432183 4.758933 1.589050
+      vertex 3.432183 4.758933 1.589050
+    endloop
+  endfacet
+  facet normal 0.000000 0.000000 1.000000
+    outer loop
+      vertex 3.432183 4.278933 1.722400
+      vertex 3.432183 4.758933 1.722400
+      vertex 2.432183 4.758933 1.722400
+    endloop
+  endfacet
+  facet normal 0.000000 0.000000 1.000000
+    outer loop
+      vertex 3.432183 4.278933 1.722400
+      vertex 2.432183 4.758933 1.722400
+      vertex 2.432183 4.278933 1.722400
+    endloop
+  endfacet
+endsolid leakage_Default_Rack_1_u30_u32_leakage_zone

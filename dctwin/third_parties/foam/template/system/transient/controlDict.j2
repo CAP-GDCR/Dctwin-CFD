@@ -1,0 +1,85 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  v1912                                 |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       dictionary;
+    location    "system";
+    object      controlDict;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+application     buoyantBoussinesqPimpleFoam;
+
+startFrom       latestTime;
+
+startTime       0;
+
+stopAt          endTime;
+
+endTime         {{ end_time }};
+
+deltaT          {{ delta_t }};
+
+writeControl    adjustableRunTime;
+
+writeInterval   {{ write_interval }};
+
+purgeWrite      0;
+
+writeFormat     ascii;
+
+writePrecision  6;
+
+writeCompression off;
+
+timeFormat      general;
+
+timePrecision   6;
+
+runTimeModifiable true;
+
+adjustTimeStep  yes;
+
+maxCo           1;
+
+{% if probes|length > 0 %}
+functions
+{
+	probes
+	{
+		// Where to load it from
+		libs ( "libsampling.so" );
+		type probes;
+		enabled true;
+		// Name of the directory for probe data
+		name probes;
+		// Write control
+		writeControl adjustableRunTime;
+		writeInterval {{ write_interval }};
+		// Fields to be probed
+		fields
+		(
+			T
+			rho
+            p
+            p_rgh
+            U
+		);
+        probeLocations
+        (
+            {% for probe in probes %}
+                ({{ probe.x }} {{ probe.y }} {{ probe.z }})
+            {% endfor %}
+        );
+   }
+}
+{% endif %}
+
+// ************************************************************************* //

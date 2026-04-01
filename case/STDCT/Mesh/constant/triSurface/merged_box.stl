@@ -1,0 +1,306 @@
+solid pillar_Front
+  facet normal 0.000000 -1.000000 0.000000
+    outer loop
+      vertex 11.000000 3.400000 3.800000
+      vertex 11.000000 3.400000 0.000000
+      vertex 11.200000 3.400000 0.000000
+    endloop
+  endfacet
+  facet normal 0.000000 -1.000000 0.000000
+    outer loop
+      vertex 11.200000 3.400000 0.000000
+      vertex 11.200000 3.400000 3.800000
+      vertex 11.000000 3.400000 3.800000
+    endloop
+  endfacet
+endsolid pillar_Front
+
+solid pillar_Back
+  facet normal 0.000000 1.000000 0.000000
+    outer loop
+      vertex 11.200000 3.600000 3.800000
+      vertex 11.200000 3.600000 0.000000
+      vertex 11.000000 3.600000 0.000000
+    endloop
+  endfacet
+  facet normal 0.000000 1.000000 0.000000
+    outer loop
+      vertex 11.000000 3.600000 0.000000
+      vertex 11.000000 3.600000 3.800000
+      vertex 11.200000 3.600000 3.800000
+    endloop
+  endfacet
+endsolid pillar_Back
+
+solid pillar_Left
+  facet normal -1.000000 0.000000 0.000000
+    outer loop
+      vertex 11.000000 3.600000 3.800000
+      vertex 11.000000 3.600000 0.000000
+      vertex 11.000000 3.400000 0.000000
+    endloop
+  endfacet
+  facet normal -1.000000 0.000000 0.000000
+    outer loop
+      vertex 11.000000 3.400000 0.000000
+      vertex 11.000000 3.400000 3.800000
+      vertex 11.000000 3.600000 3.800000
+    endloop
+  endfacet
+endsolid pillar_Left
+
+solid pillar_Right
+  facet normal 1.000000 0.000000 0.000000
+    outer loop
+      vertex 11.200000 3.400000 3.800000
+      vertex 11.200000 3.400000 0.000000
+      vertex 11.200000 3.600000 0.000000
+    endloop
+  endfacet
+  facet normal 1.000000 0.000000 0.000000
+    outer loop
+      vertex 11.200000 3.600000 0.000000
+      vertex 11.200000 3.600000 3.800000
+      vertex 11.200000 3.400000 3.800000
+    endloop
+  endfacet
+endsolid pillar_Right
+
+solid pillar_Top
+  facet normal 0.000000 0.000000 1.000000
+    outer loop
+      vertex 11.000000 3.600000 3.800000
+      vertex 11.000000 3.400000 3.800000
+      vertex 11.200000 3.400000 3.800000
+    endloop
+  endfacet
+  facet normal 0.000000 0.000000 1.000000
+    outer loop
+      vertex 11.200000 3.400000 3.800000
+      vertex 11.200000 3.600000 3.800000
+      vertex 11.000000 3.600000 3.800000
+    endloop
+  endfacet
+endsolid pillar_Top
+
+solid pillar_Bottom
+  facet normal 0.000000 0.000000 -1.000000
+    outer loop
+      vertex 11.000000 3.400000 0.000000
+      vertex 11.000000 3.600000 0.000000
+      vertex 11.200000 3.600000 0.000000
+    endloop
+  endfacet
+  facet normal 0.000000 0.000000 -1.000000
+    outer loop
+      vertex 11.200000 3.600000 0.000000
+      vertex 11.200000 3.400000 0.000000
+      vertex 11.000000 3.400000 0.000000
+    endloop
+  endfacet
+endsolid pillar_Bottom
+
+solid XDUA_Front
+  facet normal 0.000000 -1.000000 0.000000
+    outer loop
+      vertex 4.400000 1.600000 2.400000
+      vertex 4.400000 1.600000 0.000000
+      vertex 5.000000 1.600000 0.000000
+    endloop
+  endfacet
+  facet normal 0.000000 -1.000000 0.000000
+    outer loop
+      vertex 5.000000 1.600000 0.000000
+      vertex 5.000000 1.600000 2.400000
+      vertex 4.400000 1.600000 2.400000
+    endloop
+  endfacet
+endsolid XDUA_Front
+
+solid XDUA_Back
+  facet normal 0.000000 1.000000 0.000000
+    outer loop
+      vertex 5.000000 2.600000 2.400000
+      vertex 5.000000 2.600000 0.000000
+      vertex 4.400000 2.600000 0.000000
+    endloop
+  endfacet
+  facet normal 0.000000 1.000000 0.000000
+    outer loop
+      vertex 4.400000 2.600000 0.000000
+      vertex 4.400000 2.600000 2.400000
+      vertex 5.000000 2.600000 2.400000
+    endloop
+  endfacet
+endsolid XDUA_Back
+
+solid XDUA_Left
+  facet normal -1.000000 0.000000 0.000000
+    outer loop
+      vertex 4.400000 2.600000 2.400000
+      vertex 4.400000 2.600000 0.000000
+      vertex 4.400000 1.600000 0.000000
+    endloop
+  endfacet
+  facet normal -1.000000 0.000000 0.000000
+    outer loop
+      vertex 4.400000 1.600000 0.000000
+      vertex 4.400000 1.600000 2.400000
+      vertex 4.400000 2.600000 2.400000
+    endloop
+  endfacet
+endsolid XDUA_Left
+
+solid XDUA_Right
+  facet normal 1.000000 0.000000 0.000000
+    outer loop
+      vertex 5.000000 1.600000 2.400000
+      vertex 5.000000 1.600000 0.000000
+      vertex 5.000000 2.600000 0.000000
+    endloop
+  endfacet
+  facet normal 1.000000 0.000000 0.000000
+    outer loop
+      vertex 5.000000 2.600000 0.000000
+      vertex 5.000000 2.600000 2.400000
+      vertex 5.000000 1.600000 2.400000
+    endloop
+  endfacet
+endsolid XDUA_Right
+
+solid XDUA_Top
+  facet normal 0.000000 0.000000 1.000000
+    outer loop
+      vertex 4.400000 2.600000 2.400000
+      vertex 4.400000 1.600000 2.400000
+      vertex 5.000000 1.600000 2.400000
+    endloop
+  endfacet
+  facet normal 0.000000 0.000000 1.000000
+    outer loop
+      vertex 5.000000 1.600000 2.400000
+      vertex 5.000000 2.600000 2.400000
+      vertex 4.400000 2.600000 2.400000
+    endloop
+  endfacet
+endsolid XDUA_Top
+
+solid XDUA_Bottom
+  facet normal 0.000000 0.000000 -1.000000
+    outer loop
+      vertex 4.400000 1.600000 0.000000
+      vertex 4.400000 2.600000 0.000000
+      vertex 5.000000 2.600000 0.000000
+    endloop
+  endfacet
+  facet normal 0.000000 0.000000 -1.000000
+    outer loop
+      vertex 5.000000 2.600000 0.000000
+      vertex 5.000000 1.600000 0.000000
+      vertex 4.400000 1.600000 0.000000
+    endloop
+  endfacet
+endsolid XDUA_Bottom
+
+solid XDUB_Front
+  facet normal 0.000000 -1.000000 0.000000
+    outer loop
+      vertex 16.650000 4.201000 2.400000
+      vertex 16.650000 4.201000 0.000000
+      vertex 17.250000 4.201000 0.000000
+    endloop
+  endfacet
+  facet normal 0.000000 -1.000000 0.000000
+    outer loop
+      vertex 17.250000 4.201000 0.000000
+      vertex 17.250000 4.201000 2.400000
+      vertex 16.650000 4.201000 2.400000
+    endloop
+  endfacet
+endsolid XDUB_Front
+
+solid XDUB_Back
+  facet normal 0.000000 1.000000 0.000000
+    outer loop
+      vertex 17.250000 5.201000 2.400000
+      vertex 17.250000 5.201000 0.000000
+      vertex 16.650000 5.201000 0.000000
+    endloop
+  endfacet
+  facet normal 0.000000 1.000000 0.000000
+    outer loop
+      vertex 16.650000 5.201000 0.000000
+      vertex 16.650000 5.201000 2.400000
+      vertex 17.250000 5.201000 2.400000
+    endloop
+  endfacet
+endsolid XDUB_Back
+
+solid XDUB_Left
+  facet normal -1.000000 0.000000 0.000000
+    outer loop
+      vertex 16.650000 5.201000 2.400000
+      vertex 16.650000 5.201000 0.000000
+      vertex 16.650000 4.201000 0.000000
+    endloop
+  endfacet
+  facet normal -1.000000 0.000000 0.000000
+    outer loop
+      vertex 16.650000 4.201000 0.000000
+      vertex 16.650000 4.201000 2.400000
+      vertex 16.650000 5.201000 2.400000
+    endloop
+  endfacet
+endsolid XDUB_Left
+
+solid XDUB_Right
+  facet normal 1.000000 0.000000 0.000000
+    outer loop
+      vertex 17.250000 4.201000 2.400000
+      vertex 17.250000 4.201000 0.000000
+      vertex 17.250000 5.201000 0.000000
+    endloop
+  endfacet
+  facet normal 1.000000 0.000000 0.000000
+    outer loop
+      vertex 17.250000 5.201000 0.000000
+      vertex 17.250000 5.201000 2.400000
+      vertex 17.250000 4.201000 2.400000
+    endloop
+  endfacet
+endsolid XDUB_Right
+
+solid XDUB_Top
+  facet normal 0.000000 0.000000 1.000000
+    outer loop
+      vertex 16.650000 5.201000 2.400000
+      vertex 16.650000 4.201000 2.400000
+      vertex 17.250000 4.201000 2.400000
+    endloop
+  endfacet
+  facet normal 0.000000 0.000000 1.000000
+    outer loop
+      vertex 17.250000 4.201000 2.400000
+      vertex 17.250000 5.201000 2.400000
+      vertex 16.650000 5.201000 2.400000
+    endloop
+  endfacet
+endsolid XDUB_Top
+
+solid XDUB_Bottom
+  facet normal 0.000000 0.000000 -1.000000
+    outer loop
+      vertex 16.650000 4.201000 0.000000
+      vertex 16.650000 5.201000 0.000000
+      vertex 17.250000 5.201000 0.000000
+    endloop
+  endfacet
+  facet normal 0.000000 0.000000 -1.000000
+    outer loop
+      vertex 17.250000 5.201000 0.000000
+      vertex 17.250000 4.201000 0.000000
+      vertex 16.650000 4.201000 0.000000
+    endloop
+  endfacet
+endsolid XDUB_Bottom
+

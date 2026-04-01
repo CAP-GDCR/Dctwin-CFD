@@ -1,0 +1,170 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  v2406                                 |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version 2.0;
+    format ascii;
+    class dictionary;
+    location system;
+    object snappyHexMeshDict;
+}
+
+castellatedMesh on;
+{% if snap_enabled is defined and snap_enabled %}
+snap on;
+{% else %}
+snap off;
+{% endif %}
+addLayers off;
+
+geometry
+{
+    {{ geometry_cmd }}
+{% if room_wall_geometry_cmd is defined and room_wall_geometry_cmd %}
+    {{ room_wall_geometry_cmd }}
+{% endif %}
+{% if baffles_geometry_cmd is defined and baffles_geometry_cmd %}
+    {{ baffles_geometry_cmd }}
+{% endif %}
+}
+
+castellatedMeshControls
+{
+    // Feature edge files for preserving sharp edges (right angles)
+    features
+    (
+        {{ features_cmd }}
+{% if room_wall_features_cmd is defined and room_wall_features_cmd %}
+        // Room wall feature edges
+        {{ room_wall_features_cmd }}
+{% endif %}
+{% if baffle_features_cmd is defined and baffle_features_cmd %}
+        // Baffle feature edges for right-angle preservation
+        {{ baffle_features_cmd }}
+{% endif %}
+    );
+
+    refinementSurfaces
+    {
+        {{ refinement_surfaces_cmd }}
+{% if room_wall_refinement_cmd is defined and room_wall_refinement_cmd %}
+        // Room wall surfaces for cell removal
+        {{ room_wall_refinement_cmd }}
+{% endif %}
+{% if baffle_refinement_cmd is defined and baffle_refinement_cmd %}
+        // Baffle surfaces with faceZone mode (no space splitting)
+        {{ baffle_refinement_cmd }}
+{% endif %}
+    }
+
+    refinementRegions
+    {
+        {{ refinement_regions_cmd }}
+    }
+
+    // Use locationsInMesh with explicit cell zone assignment
+    locationsInMesh
+    (
+        (( {{ location.x }} {{ location.y }} {{ location.z }} ) none)
+        {{ locations_inside_cmd }}
+    );
+
+    // Exclude solid geometry interiors (ACUs, etc.) from mesh
+    {% if locations_outside_cmd %}
+    locationsOutsideMesh
+    (
+        {{ locations_outside_cmd }}
+    );
+    {% endif %}
+
+    maxLocalCells {{ max_local_cells | default(8000000) }};
+    maxGlobalCells {{ max_global_cells | default(24000000) }};
+    minRefinementCells 0;
+    nCellsBetweenLevels {{ n_cells_between_levels | default(3) }};
+    // Use 30 degrees to resolve feature edges properly
+    resolveFeatureAngle {{ resolve_feature_angle | default(30) }};
+    allowFreeStandingZoneFaces true;
+    planarAngle 30.0;
+    maxLoadUnbalance 0.1;
+
+    // Allow cells to be marked for deletion if they are fully inside closed surfaces
+    useLeakClosure false;
+}
+
+snapControls
+{
+    // Settings optimized for preserving sharp edges on axis-aligned box geometries
+    nSolveIter {{ snap_n_solve_iter | default(100) }};
+    nSmoothPatch {{ snap_n_smooth_patch | default(3) }};
+    tolerance {{ snap_tolerance | default(2.0) }};
+    nRelaxIter {{ snap_n_relax_iter | default(5) }};
+    
+    // Feature edge snapping - critical for preserving right angles
+    nFeatureSnapIter {{ snap_n_feature_snap_iter | default(10) }};
+    implicitFeatureSnap {{ implicit_feature_snap | default('false') }};
+    explicitFeatureSnap {{ explicit_feature_snap | default('true') }};
+    multiRegionFeatureSnap false;
+}
+
+addLayersControls
+{
+    layers
+    {
+    }
+
+    relativeSizes true;
+    expansionRatio 1.0;
+    finalLayerThickness 0.3;
+    minThickness 0.25;
+    nGrow 0;
+    featureAngle 130.0;
+    slipFeatureAngle 30.0;
+    nRelaxIter 5;
+    nSmoothSurfaceNormals 1;
+    nSmoothNormals 3;
+    nSmoothThickness 10;
+    maxFaceThicknessRatio 0.5;
+    maxThicknessToMedialRatio 0.3;
+    minMedialAxisAngle 90;
+    nBufferCellsNoExtrude 0;
+    nLayerIter 50;
+    nRelaxedIter 20;
+    writeVTK false;
+    noErrors false;
+    layerRecovery 1;
+    growZoneLayers false;
+    projectGrownUp 0.0;
+}
+
+meshQualityControls
+{
+    // Conservative settings for axis-aligned box geometries
+    maxNonOrtho {{ max_non_ortho | default(65) }};
+    maxBoundarySkewness {{ max_boundary_skewness | default(20) }};
+    maxInternalSkewness 4;
+    maxConcave 80.0;
+    minFlatness 0.5;
+    minVol 1.0E-13;
+    minTetQuality 1.0E-15;
+    minArea -1.0;
+    minTwist 0.02;
+    minDeterminant 0.001;
+    minFaceWeight 0.05;
+    minVolRatio 0.01;
+    minTriangleTwist -1.0;
+    nSmoothScale 4;
+    errorReduction 0.75;
+    relaxed
+    {
+        maxNonOrtho {{ max_non_ortho_relaxed | default(75) }};
+    }
+}
+
+debug 0;
+mergeTolerance 1.0E-6;
+autoBlockMesh false;

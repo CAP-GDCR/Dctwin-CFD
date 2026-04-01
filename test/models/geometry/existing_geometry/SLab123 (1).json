@@ -1,0 +1,1384 @@
+{
+    "meta": {
+        "name": "SLab",
+        "version": "1.1.1"
+    },
+    "models": {
+        "geometryModels": {
+            "acus": {
+                "PCU": {
+                    "size": {
+                        "x": 1.82,
+                        "y": 1.02,
+                        "z": 1.98
+                    },
+                    "supplyFace": {
+                        "length": 1.02,
+                        "width": 1.82,
+                        "offset": {
+                            "x": 0,
+                            "y": 0,
+                            "z": 0
+                        },
+                        "side": "bottom"
+                    },
+                    "returnFace": {
+                        "length": 1.02,
+                        "width": 1.82,
+                        "offset": {
+                            "x": 0,
+                            "y": 0,
+                            "z": 0
+                        },
+                        "side": "top"
+                    }
+                }
+            },
+            "racks": {
+                "RACK1": {
+                    "firstSlotOffset": 0,
+                    "size": {
+                        "x": 0.6,
+                        "y": 1.2,
+                        "z": 2.35
+                    },
+                    "slot": 45
+                }
+            },
+            "servers": {
+                "1U_Server": {
+                    "slotOccupation": 1,
+                    "depth": 1.05,
+                    "width": 0.6
+                },
+                "2U_Server": {
+                    "slotOccupation": 2,
+                    "depth": 1.05,
+                    "width": 0.6
+                },
+                "3U_Server": {
+                    "slotOccupation": 3,
+                    "depth": 1.05,
+                    "width": 0.6
+                },
+                "4U_Server": {
+                    "slotOccupation": 4,
+                    "depth": 1.05,
+                    "width": 0.6
+                },
+                "5U_Server": {
+                    "slotOccupation": 5,
+                    "depth": 1.05,
+                    "width": 0.6
+                }
+            },
+            "boxes": {
+                "partition": {
+                    "faces": {
+                        "top": true,
+                        "bottom": true,
+                        "rear": true,
+                        "front": true,
+                        "left": true,
+                        "right": true
+                    }
+                },
+                "pillar": {
+                    "faces": {
+                        "top": true,
+                        "bottom": true,
+                        "rear": true,
+                        "front": true,
+                        "left": true,
+                        "right": true
+                    }
+                },
+                "duct": {
+                    "faces": {
+                        "top": false,
+                        "bottom": false,
+                        "rear": true,
+                        "front": true,
+                        "left": true,
+                        "right": true
+                    }
+                },
+                "containment": {
+                    "faces": {
+                        "top": true,
+                        "bottom": false,
+                        "rear": false,
+                        "front": false,
+                        "left": true,
+                        "right": true
+                    }
+                }
+            }
+        },
+        "coolingModels": {
+            "acus": {
+                "CANATAL_ME_Series_080": {
+                    "coolingType": "CW",
+                    "coolingCapacity": 85.5
+                }
+            },
+            "servers": {
+                "GPU_1": {
+                    "fanType": "Fixed",
+                    "volumeFlowRate": 0.02
+                }
+            }
+        },
+        "powerModels": {
+            "servers": {
+                "server_power_1": {
+                    "ratedPower": 2000
+                }
+            }
+        }
+    },
+    "geometry": {
+        "height": 3.4,
+        "plane": [
+            {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            },
+            {
+                "x": 10.45,
+                "y": 0,
+                "z": 0
+            },
+            {
+                "x": 10.45,
+                "y": 2.98,
+                "z": 0
+            },
+            {
+                "x": 9.75,
+                "y": 2.98,
+                "z": 0
+            },
+            {
+                "x": 9.75,
+                "y": 3.612,
+                "z": 0
+            },
+            {
+                "x": 0,
+                "y": 3.612,
+                "z": 0
+            }
+        ]
+    },
+    "constructions": {
+        "raisedFloor": {
+            "geometry": {
+                "height": 0.4,
+                "openings": {
+                    "opening_1": {
+                        "location": {
+                            "x": 2.22,
+                            "y": 0.6,
+                            "z": 0
+                        },
+                        "size": {
+                            "x": 6,
+                            "y": 0.6,
+                            "z": 0
+                        }
+                    }
+                }
+            }
+        },
+        "boxes": {
+            "containment_1": {
+                "geometry": {
+                    "model": "containment",
+                    "size": {
+                        "x": 6.25,
+                        "y": 1.25,
+                        "z": 2.4
+                    },
+                    "location": {
+                        "x": 2.07,
+                        "y": 0,
+                        "z": 0.4
+                    }
+                }
+            },
+            "partition_1": {
+                "geometry": {
+                    "model": "partition",
+                    "size": {
+                        "x": 1.45,
+                        "y": 0.1,
+                        "z": 2.4
+                    },
+                    "location": {
+                        "x": 4.47,
+                        "y": 1.25,
+                        "z": 0.4
+                    }
+                }
+            },
+            "pillar_1": {
+                "geometry": {
+                    "model": "pillar",
+                    "size": {
+                        "x": 0.9,
+                        "y": 0.632,
+                        "z": 3.4
+                    },
+                    "location": {
+                        "x": 2.82,
+                        "y": 2.98,
+                        "z": 0
+                    }
+                }
+            }
+        },
+        "acus": {
+            "PCU_1": {
+                "geometry": {
+                    "model": "PCU",
+                    "orientation": 90,
+                    "location": {
+                        "x": 1.02,
+                        "y": 0.6,
+                        "z": 0.4
+                    }
+                },
+                "cooling": {
+                    "model": "CANATAL_ME_Series_080"
+                }
+            },
+            "PCU_2": {
+                "geometry": {
+                    "model": "PCU",
+                    "orientation": 270,
+                    "location": {
+                        "x": 9.43,
+                        "y": 2.42,
+                        "z": 0.4
+                    }
+                },
+                "cooling": {
+                    "model": "CANATAL_ME_Series_080"
+                }
+            }
+        },
+        "rows": {
+            "row_1": {
+                "geometry": {
+                    "location": {
+                        "x": 2.0,
+                        "y": 1.2,
+                        "z": 0.4
+                    },
+                    "size": {
+                        "x": 2.4,
+                        "y": 1.2,
+                        "z": 2.4
+                    },
+                    "orientation": 0
+                },
+                "constructions": {
+                    "racks": {
+                        "R1": {
+                            "geometry": {
+                                "model": "RACK1",
+                                "location": {
+                                    "x": 2.0,
+                                    "y": 1.2,
+                                    "z": 0.4
+                                },
+                                "orientation": 0,
+                                "hasBlankingPanel": true
+                            },
+                            "constructions": {
+                                "servers": {
+                                    "R1_slot_11": {
+                                        "geometry": {
+                                            "model": "2U_Server",
+                                            "slotPosition": 11,
+                                            "orientation": 0
+                                        },
+                                        "cooling": {
+                                            "model": "GPU_1"
+                                        }
+                                    },
+                                    "R1_slot_22": {
+                                        "geometry": {
+                                            "model": "5U_Server",
+                                            "slotPosition": 22,
+                                            "orientation": 0
+                                        },
+                                        "cooling": {
+                                            "model": "GPU_1"
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "R2": {
+                            "geometry": {
+                                "model": "RACK1",
+                                "location": {
+                                    "x": 2.6,
+                                    "y": 1.2,
+                                    "z": 0.4
+                                },
+                                "orientation": 0,
+                                "hasBlankingPanel": true
+                            },
+                            "constructions": {
+                                "servers": {
+                                    "R2_slot_11": {
+                                        "geometry": {
+                                            "model": "4U_Server",
+                                            "slotPosition": 11,
+                                            "orientation": 0
+                                        },
+                                        "cooling": {
+                                            "model": "GPU_1"
+                                        },
+                                        "power": {
+                                            "model": "server_power_1"
+                                        }
+                                    },
+                                    "R2_slot_16": {
+                                        "geometry": {
+                                            "model": "4U_Server",
+                                            "slotPosition": 16,
+                                            "orientation": 0
+                                        },
+                                        "cooling": {
+                                            "model": "GPU_1"
+                                        }
+                                    },
+                                    "R2_slot_21": {
+                                        "geometry": {
+                                            "model": "4U_Server",
+                                            "slotPosition": 21,
+                                            "orientation": 0
+                                        },
+                                        "cooling": {
+                                            "model": "GPU_1"
+                                        }
+                                    },
+                                    "R2_slot_26": {
+                                        "geometry": {
+                                            "model": "4U_Server",
+                                            "slotPosition": 26,
+                                            "orientation": 0
+                                        },
+                                        "cooling": {
+                                            "model": "GPU_1"
+                                        }
+                                    },
+                                    "R2_slot_31": {
+                                        "geometry": {
+                                            "model": "4U_Server",
+                                            "slotPosition": 31,
+                                            "orientation": 0
+                                        },
+                                        "cooling": {
+                                            "model": "GPU_1"
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "R3": {
+                            "geometry": {
+                                "model": "RACK1",
+                                "location": {
+                                    "x": 3.2,
+                                    "y": 1.2,
+                                    "z": 0.4
+                                },
+                                "orientation": 0,
+                                "hasBlankingPanel": true
+                            },
+                            "constructions": {
+                                "servers": {
+                                    "R3_slot_11": {
+                                        "geometry": {
+                                            "model": "4U_Server",
+                                            "slotPosition": 11,
+                                            "orientation": 0
+                                        },
+                                        "cooling": {
+                                            "model": "GPU_1"
+                                        }
+                                    },
+                                    "R3_slot_16": {
+                                        "geometry": {
+                                            "model": "4U_Server",
+                                            "slotPosition": 16,
+                                            "orientation": 0
+                                        },
+                                        "cooling": {
+                                            "model": "GPU_1"
+                                        }
+                                    },
+                                    "R3_slot_21": {
+                                        "geometry": {
+                                            "model": "4U_Server",
+                                            "slotPosition": 21,
+                                            "orientation": 0
+                                        },
+                                        "cooling": {
+                                            "model": "GPU_1"
+                                        }
+                                    },
+                                    "R3_slot_26": {
+                                        "geometry": {
+                                            "model": "4U_Server",
+                                            "slotPosition": 26,
+                                            "orientation": 0
+                                        },
+                                        "cooling": {
+                                            "model": "GPU_1"
+                                        }
+                                    },
+                                    "R3_slot_31": {
+                                        "geometry": {
+                                            "model": "4U_Server",
+                                            "slotPosition": 31,
+                                            "orientation": 0
+                                        },
+                                        "cooling": {
+                                            "model": "GPU_1"
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "R4": {
+                    "geometry": {
+                        "model": "RACK1",
+                        "location": {
+                            "x": 3.8,
+                            "y": 1.2,
+                            "z": 0.4
+                        },
+                        "orientation": 0,
+                        "hasBlankingPanel": true
+                    },
+                    "constructions": {
+                        "servers": {
+                            "R4_slot_6": {
+                                "geometry": {
+                                    "model": "4U_Server",
+                                    "slotPosition": 6,
+                                    "orientation": 0
+                                },
+                                "cooling": {
+                                    "model": "GPU_1"
+                                }
+                            },
+                            "R4_slot_11": {
+                                "geometry": {
+                                    "model": "4U_Server",
+                                    "slotPosition": 11,
+                                    "orientation": 0
+                                },
+                                "cooling": {
+                                    "model": "GPU_1"
+                                }
+                            },
+                            "R4_slot_16": {
+                                "geometry": {
+                                    "model": "4U_Server",
+                                    "slotPosition": 16,
+                                    "orientation": 0
+                                },
+                                "cooling": {
+                                    "model": "GPU_1"
+                                }
+                            },
+                            "R4_slot_21": {
+                                "geometry": {
+                                    "model": "4U_Server",
+                                    "slotPosition": 21,
+                                    "orientation": 0
+                                },
+                                "cooling": {
+                                    "model": "GPU_1"
+                                }
+                            },
+                            "R4_slot_26": {
+                                "geometry": {
+                                    "model": "4U_Server",
+                                    "slotPosition": 26,
+                                    "orientation": 0
+                                },
+                                "cooling": {
+                                    "model": "GPU_1"
+                                }
+                            },
+                            "R4_slot_31": {
+                                "geometry": {
+                                    "model": "4U_Server",
+                                    "slotPosition": 31,
+                                    "orientation": 0
+                                },
+                                "cooling": {
+                                    "model": "GPU_1"
+                                }
+                            }
+                        }
+                    }
+                }
+                    }
+                }
+            },
+            "row_2": {
+                "geometry": {
+                    "location": {
+                        "x": 5.8,
+                        "y": 1.2,
+                        "z": 0.4
+                    },
+                    "size": {
+                        "x": 2.4,
+                        "y": 1.2,
+                        "z": 2.4
+                    },
+                    "orientation": 0
+                },
+                "constructions": {
+                    "racks": {
+                        "R5": {
+                            "geometry": {
+                                "model": "RACK1",
+                                "location": {
+                                    "x": 5.8,
+                                    "y": 1.2,
+                                    "z": 0.4
+                                },
+                                "orientation": 0,
+                                "hasBlankingPanel": true
+                            },
+                            "constructions": {
+                                "servers": {
+                                    "R5_slot_11": {
+                                        "geometry": {
+                                            "model": "4U_Server",
+                                            "slotPosition": 11,
+                                            "orientation": 0
+                                        },
+                                        "cooling": {
+                                            "model": "GPU_1"
+                                        }
+                                    },
+                                    "R5_slot_16": {
+                                        "geometry": {
+                                            "model": "4U_Server",
+                                            "slotPosition": 16,
+                                            "orientation": 0
+                                        },
+                                        "cooling": {
+                                            "model": "GPU_1"
+                                        }
+                                    },
+                                    "R5_slot_21": {
+                                        "geometry": {
+                                            "model": "4U_Server",
+                                            "slotPosition": 21,
+                                            "orientation": 0
+                                        },
+                                        "cooling": {
+                                            "model": "GPU_1"
+                                        }
+                                    },
+                                    "R5_slot_26": {
+                                        "geometry": {
+                                            "model": "4U_Server",
+                                            "slotPosition": 26,
+                                            "orientation": 0
+                                        },
+                                        "cooling": {
+                                            "model": "GPU_1"
+                                        }
+                                    },
+                                    "R5_slot_31": {
+                                        "geometry": {
+                                            "model": "4U_Server",
+                                            "slotPosition": 31,
+                                            "orientation": 0
+                                        },
+                                        "cooling": {
+                                            "model": "GPU_1"
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "R6": {
+                            "geometry": {
+                                "model": "RACK1",
+                                "location": {
+                                    "x": 6.4,
+                                    "y": 1.2,
+                                    "z": 0.4
+                                },
+                                "orientation": 0,
+                                "hasBlankingPanel": true
+                            },
+                            "constructions": {
+                                "servers": {
+                                    "R6_slot_11": {
+                                        "geometry": {
+                                            "model": "5U_Server",
+                                            "slotPosition": 11,
+                                            "orientation": 0
+                                        },
+                                        "cooling": {
+                                            "model": "GPU_1"
+                                        }
+                                    },
+                                    "R6_slot_21": {
+                                        "geometry": {
+                                            "model": "4U_Server",
+                                            "slotPosition": 21,
+                                            "orientation": 0
+                                        },
+                                        "cooling": {
+                                            "model": "GPU_1"
+                                        }
+                                    },
+                                    "R6_slot_26": {
+                                        "geometry": {
+                                            "model": "4U_Server",
+                                            "slotPosition": 26,
+                                            "orientation": 0
+                                        },
+                                        "cooling": {
+                                            "model": "GPU_1"
+                                        }
+                                    },
+                                    "R6_slot_31": {
+                                        "geometry": {
+                                            "model": "4U_Server",
+                                            "slotPosition": 31,
+                                            "orientation": 0
+                                        },
+                                        "cooling": {
+                                            "model": "GPU_1"
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "R7": {
+                            "geometry": {
+                                "model": "RACK1",
+                                "location": {
+                                    "x": 7.0,
+                                    "y": 1.2,
+                                    "z": 0.4
+                                },
+                                "orientation": 0,
+                                "hasBlankingPanel": true
+                            },
+                            "constructions": {
+                                "servers": {
+                                    "R7_slot_11": {
+                                        "geometry": {
+                                            "model": "5U_Server",
+                                            "slotPosition": 11,
+                                            "orientation": 0
+                                        },
+                                        "cooling": {
+                                            "model": "GPU_1"
+                                        }
+                                    },
+                                    "R7_slot_21": {
+                                        "geometry": {
+                                            "model": "4U_Server",
+                                            "slotPosition": 21,
+                                            "orientation": 0
+                                        },
+                                        "cooling": {
+                                            "model": "GPU_1"
+                                        }
+                                    },
+                                    "R7_slot_26": {
+                                        "geometry": {
+                                            "model": "4U_Server",
+                                            "slotPosition": 26,
+                                            "orientation": 0
+                                        },
+                                        "cooling": {
+                                            "model": "GPU_1"
+                                        }
+                                    },
+                                    "R7_slot_31": {
+                                        "geometry": {
+                                            "model": "4U_Server",
+                                            "slotPosition": 31,
+                                            "orientation": 0
+                                        },
+                                        "cooling": {
+                                            "model": "GPU_1"
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "R8": {
+                            "geometry": {
+                                "model": "RACK1",
+                                "location": {
+                                    "x": 7.6,
+                                    "y": 1.2,
+                                    "z": 0.4
+                                },
+                                "orientation": 0,
+                                "hasBlankingPanel": true
+                            },
+                            "constructions": {
+                                "servers": {
+                                    "R8_slot_11": {
+                                        "geometry": {
+                                            "model": "5U_Server",
+                                            "slotPosition": 11,
+                                            "orientation": 0
+                                        },
+                                        "cooling": {
+                                            "model": "GPU_1"
+                                        }
+                                    },
+                                    "R8_slot_21": {
+                                        "geometry": {
+                                            "model": "4U_Server",
+                                            "slotPosition": 21,
+                                            "orientation": 0
+                                        },
+                                        "cooling": {
+                                            "model": "GPU_1"
+                                        }
+                                    },
+                                    "R8_slot_26": {
+                                        "geometry": {
+                                            "model": "4U_Server",
+                                            "slotPosition": 26,
+                                            "orientation": 0
+                                        },
+                                        "cooling": {
+                                            "model": "GPU_1"
+                                        }
+                                    },
+                                    "R8_slot_31": {
+                                        "geometry": {
+                                            "model": "4U_Server",
+                                            "slotPosition": 31,
+                                            "orientation": 0
+                                        },
+                                        "cooling": {
+                                            "model": "GPU_1"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "sensors": {
+            "R1_inlet_sensor_bottom": {
+                "geometry": {
+                    "location": {
+                        "x": 2.3,
+                        "y": 1.15,
+                        "z": 0.925
+                    }
+                }
+            },
+            "R1_outlet_sensor_bottom": {
+                "geometry": {
+                    "location": {
+                        "x": 2.3,
+                        "y": 2.4499999999999997,
+                        "z": 0.925
+                    }
+                }
+            },
+            "R1_inlet_sensor_middle": {
+                "geometry": {
+                    "location": {
+                        "x": 2.3,
+                        "y": 1.15,
+                        "z": 1.675
+                    }
+                }
+            },
+            "R1_outlet_sensor_middle": {
+                "geometry": {
+                    "location": {
+                        "x": 2.3,
+                        "y": 2.4499999999999997,
+                        "z": 1.675
+                    }
+                }
+            },
+            "R1_inlet_sensor_top": {
+                "geometry": {
+                    "location": {
+                        "x": 2.3,
+                        "y": 1.15,
+                        "z": 2.425
+                    }
+                }
+            },
+            "R1_outlet_sensor_top": {
+                "geometry": {
+                    "location": {
+                        "x": 2.3,
+                        "y": 2.4499999999999997,
+                        "z": 2.425
+                    }
+                }
+            },
+            "R2_inlet_sensor_bottom": {
+                "geometry": {
+                    "location": {
+                        "x": 2.9,
+                        "y": 1.15,
+                        "z": 0.925
+                    }
+                }
+            },
+            "R2_outlet_sensor_bottom": {
+                "geometry": {
+                    "location": {
+                        "x": 2.9,
+                        "y": 2.4499999999999997,
+                        "z": 0.925
+                    }
+                }
+            },
+            "R2_inlet_sensor_middle": {
+                "geometry": {
+                    "location": {
+                        "x": 2.9,
+                        "y": 1.15,
+                        "z": 1.675
+                    }
+                }
+            },
+            "R2_outlet_sensor_middle": {
+                "geometry": {
+                    "location": {
+                        "x": 2.9,
+                        "y": 2.4499999999999997,
+                        "z": 1.675
+                    }
+                }
+            },
+            "R2_inlet_sensor_top": {
+                "geometry": {
+                    "location": {
+                        "x": 2.9,
+                        "y": 1.15,
+                        "z": 2.425
+                    }
+                }
+            },
+            "R2_outlet_sensor_top": {
+                "geometry": {
+                    "location": {
+                        "x": 2.9,
+                        "y": 2.4499999999999997,
+                        "z": 2.425
+                    }
+                }
+            },
+            "R3_inlet_sensor_bottom": {
+                "geometry": {
+                    "location": {
+                        "x": 3.5,
+                        "y": 1.15,
+                        "z": 0.925
+                    }
+                }
+            },
+            "R3_outlet_sensor_bottom": {
+                "geometry": {
+                    "location": {
+                        "x": 3.5,
+                        "y": 2.4499999999999997,
+                        "z": 0.925
+                    }
+                }
+            },
+            "R3_inlet_sensor_middle": {
+                "geometry": {
+                    "location": {
+                        "x": 3.5,
+                        "y": 1.15,
+                        "z": 1.675
+                    }
+                }
+            },
+            "R3_outlet_sensor_middle": {
+                "geometry": {
+                    "location": {
+                        "x": 3.5,
+                        "y": 2.4499999999999997,
+                        "z": 1.675
+                    }
+                }
+            },
+            "R3_inlet_sensor_top": {
+                "geometry": {
+                    "location": {
+                        "x": 3.5,
+                        "y": 1.15,
+                        "z": 2.425
+                    }
+                }
+            },
+            "R3_outlet_sensor_top": {
+                "geometry": {
+                    "location": {
+                        "x": 3.5,
+                        "y": 2.4499999999999997,
+                        "z": 2.425
+                    }
+                }
+            },
+            "R4_inlet_sensor_bottom": {
+                "geometry": {
+                    "location": {
+                        "x": 4.1,
+                        "y": 1.15,
+                        "z": 0.925
+                    }
+                }
+            },
+            "R4_outlet_sensor_bottom": {
+                "geometry": {
+                    "location": {
+                        "x": 4.1,
+                        "y": 2.4499999999999997,
+                        "z": 0.925
+                    }
+                }
+            },
+            "R4_inlet_sensor_middle": {
+                "geometry": {
+                    "location": {
+                        "x": 4.1,
+                        "y": 1.15,
+                        "z": 1.675
+                    }
+                }
+            },
+            "R4_outlet_sensor_middle": {
+                "geometry": {
+                    "location": {
+                        "x": 4.1,
+                        "y": 2.4499999999999997,
+                        "z": 1.675
+                    }
+                }
+            },
+            "R4_inlet_sensor_top": {
+                "geometry": {
+                    "location": {
+                        "x": 4.1,
+                        "y": 1.15,
+                        "z": 2.425
+                    }
+                }
+            },
+            "R4_outlet_sensor_top": {
+                "geometry": {
+                    "location": {
+                        "x": 4.1,
+                        "y": 2.4499999999999997,
+                        "z": 2.425
+                    }
+                }
+            },
+            "R5_inlet_sensor_bottom": {
+                "geometry": {
+                    "location": {
+                        "x": 6.1,
+                        "y": 1.15,
+                        "z": 0.925
+                    }
+                }
+            },
+            "R5_outlet_sensor_bottom": {
+                "geometry": {
+                    "location": {
+                        "x": 6.1,
+                        "y": 2.4499999999999997,
+                        "z": 0.925
+                    }
+                }
+            },
+            "R5_inlet_sensor_middle": {
+                "geometry": {
+                    "location": {
+                        "x": 6.1,
+                        "y": 1.15,
+                        "z": 1.675
+                    }
+                }
+            },
+            "R5_outlet_sensor_middle": {
+                "geometry": {
+                    "location": {
+                        "x": 6.1,
+                        "y": 2.4499999999999997,
+                        "z": 1.675
+                    }
+                }
+            },
+            "R5_inlet_sensor_top": {
+                "geometry": {
+                    "location": {
+                        "x": 6.1,
+                        "y": 1.15,
+                        "z": 2.425
+                    }
+                }
+            },
+            "R5_outlet_sensor_top": {
+                "geometry": {
+                    "location": {
+                        "x": 6.1,
+                        "y": 2.4499999999999997,
+                        "z": 2.425
+                    }
+                }
+            },
+            "R6_inlet_sensor_bottom": {
+                "geometry": {
+                    "location": {
+                        "x": 6.7,
+                        "y": 1.15,
+                        "z": 0.925
+                    }
+                }
+            },
+            "R6_outlet_sensor_bottom": {
+                "geometry": {
+                    "location": {
+                        "x": 6.7,
+                        "y": 2.4499999999999997,
+                        "z": 0.925
+                    }
+                }
+            },
+            "R6_inlet_sensor_middle": {
+                "geometry": {
+                    "location": {
+                        "x": 6.7,
+                        "y": 1.15,
+                        "z": 1.675
+                    }
+                }
+            },
+            "R6_outlet_sensor_middle": {
+                "geometry": {
+                    "location": {
+                        "x": 6.7,
+                        "y": 2.4499999999999997,
+                        "z": 1.675
+                    }
+                }
+            },
+            "R6_inlet_sensor_top": {
+                "geometry": {
+                    "location": {
+                        "x": 6.7,
+                        "y": 1.15,
+                        "z": 2.425
+                    }
+                }
+            },
+            "R6_outlet_sensor_top": {
+                "geometry": {
+                    "location": {
+                        "x": 6.7,
+                        "y": 2.4499999999999997,
+                        "z": 2.425
+                    }
+                }
+            },
+            "R7_inlet_sensor_bottom": {
+                "geometry": {
+                    "location": {
+                        "x": 7.3,
+                        "y": 1.15,
+                        "z": 0.925
+                    }
+                }
+            },
+            "R7_outlet_sensor_bottom": {
+                "geometry": {
+                    "location": {
+                        "x": 7.3,
+                        "y": 2.4499999999999997,
+                        "z": 0.925
+                    }
+                }
+            },
+            "R7_inlet_sensor_middle": {
+                "geometry": {
+                    "location": {
+                        "x": 7.3,
+                        "y": 1.15,
+                        "z": 1.675
+                    }
+                }
+            },
+            "R7_outlet_sensor_middle": {
+                "geometry": {
+                    "location": {
+                        "x": 7.3,
+                        "y": 2.4499999999999997,
+                        "z": 1.675
+                    }
+                }
+            },
+            "R7_inlet_sensor_top": {
+                "geometry": {
+                    "location": {
+                        "x": 7.3,
+                        "y": 1.15,
+                        "z": 2.425
+                    }
+                }
+            },
+            "R7_outlet_sensor_top": {
+                "geometry": {
+                    "location": {
+                        "x": 7.3,
+                        "y": 2.4499999999999997,
+                        "z": 2.425
+                    }
+                }
+            },
+            "R8_inlet_sensor_bottom": {
+                "geometry": {
+                    "location": {
+                        "x": 7.8999999999999995,
+                        "y": 1.15,
+                        "z": 0.925
+                    }
+                }
+            },
+            "R8_outlet_sensor_bottom": {
+                "geometry": {
+                    "location": {
+                        "x": 7.8999999999999995,
+                        "y": 2.4499999999999997,
+                        "z": 0.925
+                    }
+                }
+            },
+            "R8_inlet_sensor_middle": {
+                "geometry": {
+                    "location": {
+                        "x": 7.8999999999999995,
+                        "y": 1.15,
+                        "z": 1.675
+                    }
+                }
+            },
+            "R8_outlet_sensor_middle": {
+                "geometry": {
+                    "location": {
+                        "x": 7.8999999999999995,
+                        "y": 2.4499999999999997,
+                        "z": 1.675
+                    }
+                }
+            },
+            "R8_inlet_sensor_top": {
+                "geometry": {
+                    "location": {
+                        "x": 7.8999999999999995,
+                        "y": 1.15,
+                        "z": 2.425
+                    }
+                }
+            },
+            "R8_outlet_sensor_top": {
+                "geometry": {
+                    "location": {
+                        "x": 7.8999999999999995,
+                        "y": 2.4499999999999997,
+                        "z": 2.425
+                    }
+                }
+            }
+        }
+    },
+    "inputs": {
+        "servers": {
+            "R1_slot_11": {
+                "inputPower": 1882.6699106481963,
+                "airVolumeFlowRate": 0.096019136190478,
+                "serverSwitch": false
+            },
+            "R1_slot_22": {
+                "inputPower": 4577.495690484341,
+                "airVolumeFlowRate": 0.23345950324590595
+            },
+            "R2_slot_11": {
+                "inputPowerPercentage": 50,
+                "airVolumeFlowRate": 0.024395125479559448
+            },
+            "R2_slot_16": {
+                "inputPower": 3460.6510449855637,
+                "airVolumeFlowRate": 0.1764986640073209
+            },
+            "R2_slot_21": {
+                "inputPower": 1408.7701788353015,
+                "airVolumeFlowRate": 0.0718495020808498
+            },
+            "R2_slot_26": {
+                "inputPower": 275.3727875160207,
+                "airVolumeFlowRate": 0.014044446686115462
+            },
+            "R2_slot_31": {
+                "inputPower": 4361.646668696071,
+                "airVolumeFlowRate": 0.22245086253706625
+            },
+            "R3_slot_11": {
+                "inputPower": 2298.667939314629,
+                "airVolumeFlowRate": 0.11723569207399988
+            },
+            "R3_slot_16": {
+                "inputPower": 130.25848204091963,
+                "airVolumeFlowRate": 0.00664338812465844
+            },
+            "R3_slot_21": {
+                "inputPower": 4348.561266583536,
+                "airVolumeFlowRate": 0.22178348638129708
+            },
+            "R3_slot_26": {
+                "inputPower": 2997.9563347002545,
+                "airVolumeFlowRate": 0.15290050367649444
+            },
+            "R3_slot_31": {
+                "inputPower": 2495.396188747883,
+                "airVolumeFlowRate": 0.12726914322122848
+            },
+            "R4_slot_6": {
+                "inputPower": 4366.33076872227,
+                "airVolumeFlowRate": 0.22268975902964921
+            },
+            "R4_slot_11": {
+                "inputPower": 361.4834786188947,
+                "airVolumeFlowRate": 0.01843622781019807
+            },
+            "R4_slot_16": {
+                "inputPower": 4316.00484928977,
+                "airVolumeFlowRate": 0.22012305772711635
+            },
+            "R4_slot_21": {
+                "inputPower": 275.05691515290425,
+                "airVolumeFlowRate": 0.014028336697167666
+            },
+            "R4_slot_26": {
+                "inputPower": 3183.720090241203,
+                "airVolumeFlowRate": 0.16237474833385968
+            },
+            "R4_slot_31": {
+                "inputPower": 4432.925800741893,
+                "airVolumeFlowRate": 0.22608621074587174
+            },
+            "R5_slot_11": {
+                "inputPower": 2925.0527201548584,
+                "airVolumeFlowRate": 0.14918230429686852
+            },
+            "R5_slot_16": {
+                "inputPower": 2631.6694631584514,
+                "airVolumeFlowRate": 0.13421929524774368
+            },
+            "R5_slot_21": {
+                "inputPower": 380.2955296440564,
+                "airVolumeFlowRate": 0.019395672096841666
+            },
+            "R5_slot_26": {
+                "inputPower": 1180.7970832462827,
+                "airVolumeFlowRate": 0.060222514477064115
+            },
+            "R5_slot_31": {
+                "inputPower": 3710.579936488531,
+                "airVolumeFlowRate": 0.18924543184773124
+            },
+            "R6_slot_11": {
+                "inputPower": 3408.1855516268897,
+                "airVolumeFlowRate": 0.17382284105842558
+            },
+            "R6_slot_21": {
+                "inputPower": 1801.044139448185,
+                "airVolumeFlowRate": 0.0918560930583932
+            },
+            "R6_slot_26": {
+                "inputPower": 2577.8777744338704,
+                "airVolumeFlowRate": 0.1314758342425253
+            },
+            "R6_slot_31": {
+                "inputPower": 3764.388292871069,
+                "airVolumeFlowRate": 0.19198974292980606
+            },
+            "R7_slot_11": {
+                "inputPower": 1487.5855438185574,
+                "airVolumeFlowRate": 0.07586921006121684
+            },
+            "R7_slot_21": {
+                "inputPower": 1967.052912588269,
+                "airVolumeFlowRate": 0.10032280244106125
+            },
+            "R7_slot_26": {
+                "inputPower": 3464.758913738294,
+                "airVolumeFlowRate": 0.1767081717956964
+            },
+            "R7_slot_31": {
+                "inputPower": 1098.8636452602836,
+                "airVolumeFlowRate": 0.05604377985341302
+            },
+            "R8_slot_11": {
+                "inputPower": 3020.218216614903,
+                "airVolumeFlowRate": 0.15403589478214133
+            },
+            "R8_slot_21": {
+                "inputPower": 4196.741792295689,
+                "airVolumeFlowRate": 0.21404045363001012
+            },
+            "R8_slot_26": {
+                "inputPower": 442.6796473846385,
+                "airVolumeFlowRate": 0.022577360540246706
+            },
+            "R8_slot_31": {
+                "inputPower": 1501.183975359078,
+                "airVolumeFlowRate": 0.0765627515273449
+            }
+        },
+        "acus": {
+            "PCU_1": {
+                "supplyAirTemperature": 16.301504275539397,
+                "supplyAirVolumeFlowRate": 4.155835929510114,
+                "acuSwitch": false
+            },
+            "PCU_2": {
+                "supplyAirTemperature": 17.999169232168256,
+                "supplyAirVolumeFlowRate": 4.5358799663606195
+            }
+        }
+    }
+}

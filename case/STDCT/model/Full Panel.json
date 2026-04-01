@@ -1,0 +1,6811 @@
+{
+  "meta": {
+    "name": "stdct test 0717 0430am",
+    "version": "1.1.1",
+    "isComplete": true
+  },
+  "models": {
+    "geometryModels": {
+      "acus": {
+        "PCU": {
+          "supplyFace": {
+            "side": "rear",
+            "width": 1.9,
+            "length": 1.9,
+            "offset": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            }
+          },
+          "returnFace": {
+            "side": "top",
+            "width": 1.82,
+            "length": 1.02,
+            "offset": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            }
+          },
+          "size": {
+            "x": 3.11,
+            "y": 1.07,
+            "z": 1.98
+          }
+        },
+        "FWUB": {
+          "supplyFace": {
+            "side": "front",
+            "width": 1.9,
+            "length": 1.9,
+            "offset": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            }
+          },
+          "returnFace": {
+            "side": "top",
+            "width": 1.82,
+            "length": 1.02,
+            "offset": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            }
+          },
+          "size": {
+            "x": 5,
+            "y": 1.7,
+            "z": 1.98
+          }
+        }
+      },
+      "racks": {
+        "RACK1": {
+          "firstSlotOffset": 0,
+          "slot": 45,
+          "size": {
+            "x": 0.75,
+            "y": 1.2,
+            "z": 2.35
+          }
+        },
+        "RACK2": {
+          "firstSlotOffset": 0,
+          "slot": 45,
+          "size": {
+            "x": 0.8,
+            "y": 1.2,
+            "z": 2.35
+          }
+        }
+      },
+      "servers": {
+        "4U_Server": {
+          "depth": 1.05,
+          "slotOccupation": 4,
+          "width": 0.75
+        },
+        "2U_Server": {
+          "depth": 1.05,
+          "slotOccupation": 2,
+          "width": 0.75
+        },
+        "1U_Server": {
+          "depth": 1.05,
+          "slotOccupation": 1,
+          "width": 0.75
+        }
+      },
+      "boxes": {
+        "partition": {
+          "faces": {
+            "top": true,
+            "bottom": true,
+            "rear": true,
+            "front": true,
+            "left": true,
+            "right": true
+          }
+        },
+        "pillar": {
+          "faces": {
+            "top": true,
+            "bottom": true,
+            "rear": true,
+            "front": true,
+            "left": true,
+            "right": true
+          }
+        },
+        "duct": {
+          "faces": {
+            "top": false,
+            "bottom": false,
+            "rear": true,
+            "front": true,
+            "left": true,
+            "right": true
+          }
+        },
+        "containment": {
+          "faces": {
+            "top": false,
+            "bottom": false,
+            "rear": false,
+            "front": false,
+            "left": true,
+            "right": true
+          }
+        }
+      }
+    },
+    "coolingModels": {
+      "acus": {
+        "CANATAL_ME_Series_080": {
+          "coolingType": "CW",
+          "coolingCapacity": 152
+        }
+      },
+      "servers": {
+        "GPU_1": {
+          "fanType": "Fixed",
+          "volumeFlowRate": 0.06
+        }
+      }
+    },
+    "powerModels": {
+      "servers": {
+        "default": {
+          "ratedPower": 1900
+        }
+      }
+    }
+  },
+  "geometry": {
+    "height": 3.72,
+    "plane": [
+      {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      {
+        "x": 21.5,
+        "y": 0,
+        "z": 0
+      },
+      {
+        "x": 21.5,
+        "y": 6.75,
+        "z": 0
+      },
+      {
+        "x": 0,
+        "y": 6.75,
+        "z": 0
+      }
+    ]
+  },
+  "constructions": {
+    "falseCeiling": {
+      "geometry": {
+        "openings": {
+          "celling_opening_1": {
+            "location": {
+              "x": 5.05,
+              "y": 2.85,
+              "z": 3
+            },
+            "size": {
+              "x": 5.25,
+              "y": 1.2,
+              "z": 0.001
+            }
+          },
+          "celling_opening_2": {
+            "location": {
+              "x": 11.8,
+              "y": 2.85,
+              "z": 3
+            },
+            "size": {
+              "x": 4.8,
+              "y": 1.2,
+              "z": 0.001
+            }
+          },
+          "celling_opening_4": {
+            "location": {
+              "x": 0,
+              "y": 0,
+              "z": 3
+            },
+            "size": {
+              "x": 2.782,
+              "y": 6.75,
+              "z": 0.001
+            }
+          },
+          "celling_opening_5": {
+            "location": {
+              "x": 18.5,
+              "y": 0,
+              "z": 3
+            },
+            "size": {
+              "x": 3.2,
+              "y": 6.75,
+              "z": 0.001
+            }
+          }
+        },
+        "height": 3
+      }
+    },
+    "boxes": {
+      "containment1": {
+        "geometry": {
+          "model": "containment",
+          "size": {
+            "x": 5.25,
+            "y": 1.2,
+            "z": 2.35
+          },
+          "location": {
+            "x": 5.05,
+            "y": 2.85,
+            "z": 0
+          },
+          "orientation": 0
+        }
+      },
+      "containment2": {
+        "geometry": {
+          "model": "containment",
+          "size": {
+            "x": 4.8,
+            "y": 1.2,
+            "z": 2.35
+          },
+          "location": {
+            "x": 11.8,
+            "y": 2.85,
+            "z": 0
+          },
+          "orientation": 0
+        }
+      },
+      "pillar": {
+        "geometry": {
+          "model": "pillar",
+          "size": {
+            "x": 0.28,
+            "y": 0.28,
+            "z": 3.75
+          },
+          "location": {
+            "x": 10.91,
+            "y": 3.31,
+            "z": 0
+          },
+          "orientation": 0
+        }
+      },
+      "duct1": {
+        "geometry": {
+          "model": "duct",
+          "size": {
+            "x": 5.25,
+            "y": 1.2,
+            "z": 0.65
+          },
+          "location": {
+            "x": 5.05,
+            "y": 2.85,
+            "z": 2.35
+          },
+          "orientation": 0
+        }
+      },
+      "duct2": {
+        "geometry": {
+          "model": "duct",
+          "size": {
+            "x": 4.8,
+            "y": 1.2,
+            "z": 0.65
+          },
+          "location": {
+            "x": 11.8,
+            "y": 2.85,
+            "z": 2.35
+          },
+          "orientation": 0
+        }
+      },
+      "partition1": {
+        "geometry": {
+          "model": "partition",
+          "size": {
+            "x": 0.018,
+            "y": 6.75,
+            "z": 3
+          },
+          "location": {
+            "x": 2.782,
+            "y": 0,
+            "z": 0
+          },
+          "openingsSide": "left",
+          "orientation": 0,
+          "openings": {
+            "supply_1": {
+              "location": {
+                "x": 0,
+                "y": 1.215,
+                "z": 0.48
+              },
+              "size": {
+                "x": 0,
+                "y": 1.02,
+                "z": 1.82
+              }
+            },
+            "return_1": {
+              "location": {
+                "x": 0,
+                "y": 1.215,
+                "z": 2
+              },
+              "size": {
+                "x": 0,
+                "y": 1.02,
+                "z": 1.82
+              }
+            },
+            "supply_2": {
+              "location": {
+                "x": 0,
+                "y": 4.565,
+                "z": 0.48
+              },
+              "size": {
+                "x": 0,
+                "y": 1.02,
+                "z": 1.82
+              }
+            },
+            "return_2": {
+              "location": {
+                "x": 0,
+                "y": 4.565,
+                "z": 2
+              },
+              "size": {
+                "x": 0,
+                "y": 1.02,
+                "z": 1.82
+              }
+            }
+          }
+        }
+      },
+      "partition2": {
+        "geometry": {
+          "model": "partition",
+          "size": {
+            "x": 0.018,
+            "y": 6.75,
+            "z": 3
+          },
+          "location": {
+            "x": 18.5,
+            "y": 0,
+            "z": 0
+          },
+          "openingsSide": "left",
+          "orientation": 0,
+          "openings": {
+            "opening_1": {
+              "location": {
+                "x": 0,
+                "y": 3.6,
+                "z": 0.48
+              },
+              "size": {
+                "x": 0,
+                "y": 1.02,
+                "z": 1.82
+              }
+            }
+          }
+        }
+      },
+      "XDUA": {
+        "geometry": {
+          "model": "partition",
+          "size": {
+            "x": 0.6,
+            "y": 1.078,
+            "z": 2.4
+          },
+          "location": {
+            "x": 4.45,
+            "y": 1.65,
+            "z": 0
+          },
+          "orientation": 0
+        }
+      },
+      "XDUB": {
+        "geometry": {
+          "model": "partition",
+          "size": {
+            "x": 0.6,
+            "y": 1.078,
+            "z": 2.4
+          },
+          "location": {
+            "x": 16.7,
+            "y": 4.172,
+            "z": 0
+          },
+          "orientation": 0
+        }
+      },
+      "Partition_005": {
+        "geometry": {
+          "model": "partition",
+          "size": {
+            "x": 0.01,
+            "y": 0.75,
+            "z": 2.4
+          },
+          "location": {
+            "x": 5.05,
+            "y": 2.85,
+            "z": 0
+          },
+          "orientation": 270
+        }
+      },
+      "Partition_006": {
+        "geometry": {
+          "model": "partition",
+          "size": {
+            "x": 0.01,
+            "y": 0.6,
+            "z": 2.4
+          },
+          "location": {
+            "x": 15.85,
+            "y": 2.85,
+            "z": 0
+          },
+          "orientation": 270
+        }
+      }
+    },
+    "acus": {
+      "PCU_1": {
+        "geometry": {
+          "model": "PCU",
+          "orientation": 270,
+          "location": {
+            "x": 1.78,
+            "y": 3.28,
+            "z": 0
+          }
+        },
+        "cooling": {
+          "model": "CANATAL_ME_Series_080"
+        }
+      },
+      "PCU_2": {
+        "geometry": {
+          "model": "PCU",
+          "orientation": 270,
+          "location": {
+            "x": 1.78,
+            "y": 6.58,
+            "z": 0
+          }
+        },
+        "cooling": {
+          "model": "CANATAL_ME_Series_080"
+        }
+      },
+      "PCU_3": {
+        "geometry": {
+          "model": "FWUB",
+          "orientation": 270,
+          "location": {
+            "x": 18.45,
+            "y": 6.6,
+            "z": 0
+          }
+        },
+        "cooling": {
+          "model": "CANATAL_ME_Series_080"
+        }
+      }
+    },
+    "racks": {
+      "SR1": {
+        "geometry": {
+          "model": "RACK1",
+          "location": {
+            "x": 5.7,
+            "y": 5.2,
+            "z": 0
+          },
+          "orientation": 180,
+          "hasBlankingPanel": true,
+          "customBlankingPanel": [
+            1,
+            2,
+            3,
+            4,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39,
+            41,
+            42,
+            43,
+            44,
+            45
+          ]
+        },
+        "constructions": {
+          "servers": {
+            "SR1_5": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 5,
+                "orientation": 180,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "SR1_7": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 7,
+                "orientation": 180,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "SR1_9": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 9,
+                "orientation": 180,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "SR1_11": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 11,
+                "orientation": 180,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "SR1_13": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 13,
+                "orientation": 180,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "SR1_15": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 15,
+                "orientation": 180,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "SR1_17": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 17,
+                "orientation": 180,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "SR1_19": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 19,
+                "orientation": 180,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "SR1_21": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 21,
+                "orientation": 180,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "SR1_23": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 23,
+                "orientation": 180,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "SR1_25": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 25,
+                "orientation": 180,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "SR1_27": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 27,
+                "orientation": 180,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "SR1_40": {
+              "geometry": {
+                "model": "1U_Server",
+                "slotPosition": 40,
+                "orientation": 180,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            }
+          }
+        }
+      },
+      "SR2": {
+        "geometry": {
+          "model": "RACK1",
+          "location": {
+            "x": 6.45,
+            "y": 5.2,
+            "z": 0
+          },
+          "orientation": 180,
+          "hasBlankingPanel": true,
+          "customBlankingPanel": [
+            1,
+            2,
+            3,
+            4,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            41,
+            42,
+            43,
+            44,
+            45
+          ]
+        },
+        "constructions": {
+          "servers": {
+            "SR2_5": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 5,
+                "orientation": 180,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "SR2_7": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 7,
+                "orientation": 180,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "SR2_9": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 9,
+                "orientation": 180,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "SR2_11": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 11,
+                "orientation": 180,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "SR2_13": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 13,
+                "orientation": 180,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "SR2_15": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 15,
+                "orientation": 180,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "SR2_17": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 17,
+                "orientation": 180,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "SR2_19": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 19,
+                "orientation": 180,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "SR2_21": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 21,
+                "orientation": 180,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "SR2_23": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 23,
+                "orientation": 180,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "SR2_25": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 25,
+                "orientation": 180,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "SR2_39": {
+              "geometry": {
+                "model": "1U_Server",
+                "slotPosition": 39,
+                "orientation": 180,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "SR2_40": {
+              "geometry": {
+                "model": "1U_Server",
+                "slotPosition": 40,
+                "orientation": 180,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            }
+          }
+        }
+      },
+      "SR3": {
+        "geometry": {
+          "model": "RACK1",
+          "location": {
+            "x": 7.2,
+            "y": 5.2,
+            "z": 0
+          },
+          "orientation": 180,
+          "hasBlankingPanel": true,
+          "customBlankingPanel": [
+            1,
+            2,
+            3,
+            4,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39,
+            41,
+            42,
+            43,
+            44,
+            45
+          ]
+        },
+        "constructions": {
+          "servers": {
+            "SR3_5": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 5,
+                "orientation": 180,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "SR3_7": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 7,
+                "orientation": 180,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "SR3_9": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 9,
+                "orientation": 180,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "SR3_11": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 11,
+                "orientation": 180,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "SR3_13": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 13,
+                "orientation": 180,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "SR3_15": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 15,
+                "orientation": 180,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "SR3_17": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 17,
+                "orientation": 180,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "SR3_19": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 19,
+                "orientation": 180,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "SR3_21": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 21,
+                "orientation": 180,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "SR3_23": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 23,
+                "orientation": 180,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "SR3_25": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 25,
+                "orientation": 180,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "SR3_40": {
+              "geometry": {
+                "model": "1U_Server",
+                "slotPosition": 40,
+                "orientation": 180,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            }
+          }
+        }
+      },
+      "SR4": {
+        "geometry": {
+          "model": "RACK1",
+          "location": {
+            "x": 7.95,
+            "y": 5.2,
+            "z": 0
+          },
+          "orientation": 180,
+          "hasBlankingPanel": true,
+          "customBlankingPanel": [
+            1,
+            2,
+            3,
+            4,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            41,
+            42,
+            43,
+            44,
+            45
+          ]
+        },
+        "constructions": {
+          "servers": {
+            "SR4_5": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 5,
+                "orientation": 180,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "SR4_7": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 7,
+                "orientation": 180,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "SR4_9": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 9,
+                "orientation": 180,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "SR4_11": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 11,
+                "orientation": 180,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "SR4_13": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 13,
+                "orientation": 180,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "SR4_15": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 15,
+                "orientation": 180,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "SR4_17": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 17,
+                "orientation": 180,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "SR4_19": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 19,
+                "orientation": 180,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "SR4_21": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 21,
+                "orientation": 180,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "SR4_23": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 23,
+                "orientation": 180,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "SR4_25": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 25,
+                "orientation": 180,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "SR4_39": {
+              "geometry": {
+                "model": "1U_Server",
+                "slotPosition": 39,
+                "orientation": 180,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "SR4_40": {
+              "geometry": {
+                "model": "1U_Server",
+                "slotPosition": 40,
+                "orientation": 180,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            }
+          }
+        }
+      },
+      "SR5": {
+        "geometry": {
+          "model": "RACK1",
+          "location": {
+            "x": 8.7,
+            "y": 5.2,
+            "z": 0
+          },
+          "orientation": 180,
+          "hasBlankingPanel": true,
+          "customBlankingPanel": [
+            1,
+            2,
+            3,
+            4,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            41,
+            42,
+            43,
+            44,
+            45
+          ]
+        },
+        "constructions": {
+          "servers": {
+            "SR5_5": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 5,
+                "orientation": 180,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "SR5_7": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 7,
+                "orientation": 180,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "SR5_9": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 9,
+                "orientation": 180,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "SR5_11": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 11,
+                "orientation": 180,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "SR5_13": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 13,
+                "orientation": 180,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "SR5_15": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 15,
+                "orientation": 180,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "SR5_17": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 17,
+                "orientation": 180,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "SR5_19": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 19,
+                "orientation": 180,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "SR5_21": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 21,
+                "orientation": 180,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "SR5_23": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 23,
+                "orientation": 180,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "SR5_25": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 25,
+                "orientation": 180,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "SR5_39": {
+              "geometry": {
+                "model": "1U_Server",
+                "slotPosition": 39,
+                "orientation": 180,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "SR5_40": {
+              "geometry": {
+                "model": "1U_Server",
+                "slotPosition": 40,
+                "orientation": 180,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            }
+          }
+        }
+      },
+      "SR6": {
+        "geometry": {
+          "model": "RACK1",
+          "location": {
+            "x": 9.45,
+            "y": 5.2,
+            "z": 0
+          },
+          "orientation": 180,
+          "hasBlankingPanel": true,
+          "customBlankingPanel": [
+            1,
+            2,
+            3,
+            4,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39,
+            41,
+            42,
+            43,
+            44,
+            45
+          ]
+        },
+        "constructions": {
+          "servers": {
+            "SR6_5": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 5,
+                "orientation": 180,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "SR6_7": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 7,
+                "orientation": 180,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "SR6_9": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 9,
+                "orientation": 180,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "SR6_11": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 11,
+                "orientation": 180,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "SR6_13": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 13,
+                "orientation": 180,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "SR6_15": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 15,
+                "orientation": 180,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "SR6_17": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 17,
+                "orientation": 180,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "SR6_19": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 19,
+                "orientation": 180,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "SR6_21": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 21,
+                "orientation": 180,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "SR6_23": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 23,
+                "orientation": 180,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "SR6_25": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 25,
+                "orientation": 180,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "SR6_40": {
+              "geometry": {
+                "model": "1U_Server",
+                "slotPosition": 40,
+                "orientation": 180,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            }
+          }
+        }
+      },
+      "SR7": {
+        "geometry": {
+          "model": "RACK1",
+          "location": {
+            "x": 10.2,
+            "y": 5.2,
+            "z": 0
+          },
+          "orientation": 180,
+          "hasBlankingPanel": true,
+          "customBlankingPanel": [
+            1,
+            2,
+            3,
+            4,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            41,
+            42,
+            43,
+            44,
+            45
+          ]
+        },
+        "constructions": {
+          "servers": {
+            "SR7_5": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 5,
+                "orientation": 180,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "SR7_7": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 7,
+                "orientation": 180,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "SR7_9": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 9,
+                "orientation": 180,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "SR7_11": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 11,
+                "orientation": 180,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "SR7_13": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 13,
+                "orientation": 180,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "SR7_15": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 15,
+                "orientation": 180,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "SR7_17": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 17,
+                "orientation": 180,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "SR7_19": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 19,
+                "orientation": 180,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "SR7_21": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 21,
+                "orientation": 180,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "SR7_23": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 23,
+                "orientation": 180,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "SR7_25": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 25,
+                "orientation": 180,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "SR7_39": {
+              "geometry": {
+                "model": "1U_Server",
+                "slotPosition": 39,
+                "orientation": 180,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "SR7_40": {
+              "geometry": {
+                "model": "1U_Server",
+                "slotPosition": 40,
+                "orientation": 180,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            }
+          }
+        }
+      },
+      "SR8": {
+        "geometry": {
+          "model": "RACK1",
+          "location": {
+            "x": 7.3,
+            "y": 1.7,
+            "z": 0
+          },
+          "orientation": 0,
+          "hasBlankingPanel": true,
+          "customBlankingPanel": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            37,
+            38,
+            39,
+            40,
+            41,
+            42,
+            43,
+            44,
+            45
+          ]
+        },
+        "constructions": {
+          "servers": {
+            "SR8_7": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 7,
+                "orientation": 0,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "SR8_9": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 9,
+                "orientation": 0,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "SR8_11": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 11,
+                "orientation": 0,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "SR8_13": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 13,
+                "orientation": 0,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "SR8_15": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 15,
+                "orientation": 0,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "SR8_17": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 17,
+                "orientation": 0,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "SR8_19": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 19,
+                "orientation": 0,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "SR8_21": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 21,
+                "orientation": 0,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "SR8_23": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 23,
+                "orientation": 0,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "SR8_33": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 33,
+                "orientation": 0,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "SR8_35": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 35,
+                "orientation": 0,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            }
+          }
+        }
+      },
+      "SR9": {
+        "geometry": {
+          "model": "RACK1",
+          "location": {
+            "x": 8.05,
+            "y": 1.7,
+            "z": 0
+          },
+          "orientation": 0,
+          "hasBlankingPanel": true,
+          "customBlankingPanel": [
+            1,
+            2,
+            3,
+            4,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35,
+            41,
+            42,
+            43,
+            44,
+            45
+          ]
+        },
+        "constructions": {
+          "servers": {
+            "SR9_5": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 5,
+                "orientation": 0,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "SR9_7": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 7,
+                "orientation": 0,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "SR9_9": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 9,
+                "orientation": 0,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "SR9_11": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 11,
+                "orientation": 0,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "SR9_13": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 13,
+                "orientation": 0,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "SR9_15": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 15,
+                "orientation": 0,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "SR9_36": {
+              "geometry": {
+                "model": "1U_Server",
+                "slotPosition": 36,
+                "orientation": 0,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "SR9_37": {
+              "geometry": {
+                "model": "1U_Server",
+                "slotPosition": 37,
+                "orientation": 0,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "SR9_38": {
+              "geometry": {
+                "model": "1U_Server",
+                "slotPosition": 38,
+                "orientation": 0,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "SR9_39": {
+              "geometry": {
+                "model": "1U_Server",
+                "slotPosition": 39,
+                "orientation": 0,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "SR9_40": {
+              "geometry": {
+                "model": "1U_Server",
+                "slotPosition": 40,
+                "orientation": 0,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            }
+          }
+        }
+      },
+      "SR10": {
+        "geometry": {
+          "model": "RACK1",
+          "location": {
+            "x": 8.7,
+            "y": 1.7,
+            "z": 0
+          },
+          "orientation": 0,
+          "hasBlankingPanel": true,
+          "customBlankingPanel": [
+            1,
+            2,
+            3,
+            4,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39,
+            40,
+            41,
+            42,
+            43,
+            44,
+            45
+          ]
+        },
+        "constructions": {
+          "servers": {
+            "SR10_5": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 5,
+                "orientation": 0,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "SR10_7": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 7,
+                "orientation": 0,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "SR10_9": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 9,
+                "orientation": 0,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "SR10_11": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 11,
+                "orientation": 0,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "SR10_13": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 13,
+                "orientation": 0,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "SR10_15": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 15,
+                "orientation": 0,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "SR10_17": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 17,
+                "orientation": 0,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "SR10_19": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 19,
+                "orientation": 0,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "SR10_21": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 21,
+                "orientation": 0,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "SR10_23": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 23,
+                "orientation": 0,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "SR10_25": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 25,
+                "orientation": 0,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "SR10_27": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 27,
+                "orientation": 0,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            }
+          }
+        }
+      },
+      "SR11": {
+        "geometry": {
+          "model": "RACK1",
+          "location": {
+            "x": 9.45,
+            "y": 1.7,
+            "z": 0
+          },
+          "orientation": 0,
+          "hasBlankingPanel": true,
+          "customBlankingPanel": [
+            1,
+            2,
+            3,
+            4,
+            15,
+            16,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            41,
+            42,
+            43,
+            44,
+            45
+          ]
+        },
+        "constructions": {
+          "servers": {
+            "SR11_5": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 5,
+                "orientation": 0,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "SR11_7": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 7,
+                "orientation": 0,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "SR11_9": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 9,
+                "orientation": 0,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "SR11_11": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 11,
+                "orientation": 0,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "SR11_13": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 13,
+                "orientation": 0,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "SR11_17": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 17,
+                "orientation": 0,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "SR11_19": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 19,
+                "orientation": 0,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "SR11_21": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 21,
+                "orientation": 0,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "SR11_23": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 23,
+                "orientation": 0,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "SR11_25": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 25,
+                "orientation": 0,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "SR11_27": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 27,
+                "orientation": 0,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "SR11_39": {
+              "geometry": {
+                "model": "1U_Server",
+                "slotPosition": 39,
+                "orientation": 0,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "SR11_40": {
+              "geometry": {
+                "model": "1U_Server",
+                "slotPosition": 40,
+                "orientation": 0,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            }
+          }
+        }
+      },
+      "BMS": {
+        "geometry": {
+          "model": "RACK1",
+          "location": {
+            "x": 5.8,
+            "y": 1.7,
+            "z": 0
+          },
+          "orientation": 0,
+          "hasBlankingPanel": true,
+          "customBlankingPanel": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39,
+            40,
+            41,
+            42,
+            43,
+            44,
+            45
+          ]
+        },
+        "constructions": {
+          "servers": {}
+        }
+      },
+      "NETWORK": {
+        "geometry": {
+          "model": "RACK1",
+          "location": {
+            "x": 6.55,
+            "y": 1.7,
+            "z": 0
+          },
+          "orientation": 0,
+          "hasBlankingPanel": true,
+          "customBlankingPanel": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39,
+            40,
+            41,
+            42,
+            43,
+            44,
+            45
+          ]
+        },
+        "constructions": {
+          "servers": {}
+        }
+      },
+      "VR1": {
+        "geometry": {
+          "model": "RACK2",
+          "location": {
+            "x": 16.65,
+            "y": 5.2,
+            "z": 0
+          },
+          "orientation": 180,
+          "hasBlankingPanel": true,
+          "customBlankingPanel": [
+            1,
+            2,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            35,
+            36,
+            37,
+            38,
+            39,
+            40,
+            41,
+            42,
+            43,
+            44,
+            45
+          ]
+        },
+        "constructions": {
+          "servers": {
+            "VR1_3": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 3,
+                "orientation": 180,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "VR1_5": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 5,
+                "orientation": 180,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "VR1_7": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 7,
+                "orientation": 180,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "VR1_9": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 9,
+                "orientation": 180,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "VR1_11": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 11,
+                "orientation": 180,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "VR1_13": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 13,
+                "orientation": 180,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "VR1_15": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 15,
+                "orientation": 180,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "VR1_17": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 17,
+                "orientation": 180,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "VR1_25": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 25,
+                "orientation": 180,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "VR1_27": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 27,
+                "orientation": 180,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "VR1_29": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 29,
+                "orientation": 180,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "VR1_31": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 31,
+                "orientation": 180,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "VR1_33": {
+              "geometry": {
+                "model": "1U_Server",
+                "slotPosition": 33,
+                "orientation": 180,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "VR1_34": {
+              "geometry": {
+                "model": "1U_Server",
+                "slotPosition": 34,
+                "orientation": 180,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            }
+          }
+        }
+      },
+      "VR2": {
+        "geometry": {
+          "model": "RACK2",
+          "location": {
+            "x": 15.85,
+            "y": 5.2,
+            "z": 0
+          },
+          "orientation": 180,
+          "hasBlankingPanel": true,
+          "customBlankingPanel": [
+            1,
+            2,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39,
+            41,
+            42,
+            43,
+            44,
+            45
+          ]
+        },
+        "constructions": {
+          "servers": {
+            "VR2_3": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 3,
+                "orientation": 180,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "VR2_5": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 5,
+                "orientation": 180,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "VR2_7": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 7,
+                "orientation": 180,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "VR2_9": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 9,
+                "orientation": 180,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "VR2_11": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 11,
+                "orientation": 180,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "VR2_13": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 13,
+                "orientation": 180,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "VR2_15": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 15,
+                "orientation": 180,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "VR2_17": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 17,
+                "orientation": 180,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "VR2_19": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 19,
+                "orientation": 180,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "VR2_21": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 21,
+                "orientation": 180,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "VR2_23": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 23,
+                "orientation": 180,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "VR2_25": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 25,
+                "orientation": 180,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "VR2_27": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 27,
+                "orientation": 180,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "VR2_40": {
+              "geometry": {
+                "model": "1U_Server",
+                "slotPosition": 40,
+                "orientation": 180,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            }
+          }
+        }
+      },
+      "VR3": {
+        "geometry": {
+          "model": "RACK2",
+          "location": {
+            "x": 15.05,
+            "y": 5.2,
+            "z": 0
+          },
+          "orientation": 180,
+          "hasBlankingPanel": true,
+          "customBlankingPanel": [
+            1,
+            2,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39,
+            41,
+            42,
+            43,
+            44,
+            45
+          ]
+        },
+        "constructions": {
+          "servers": {
+            "VR3_3": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 3,
+                "orientation": 180,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "VR3_5": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 5,
+                "orientation": 180,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "VR3_7": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 7,
+                "orientation": 180,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "VR3_9": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 9,
+                "orientation": 180,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "VR3_11": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 11,
+                "orientation": 180,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "VR3_13": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 13,
+                "orientation": 180,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "VR3_15": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 15,
+                "orientation": 180,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "VR3_17": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 17,
+                "orientation": 180,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "VR3_19": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 19,
+                "orientation": 180,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "VR3_21": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 21,
+                "orientation": 180,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "VR3_23": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 23,
+                "orientation": 180,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "VR3_25": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 25,
+                "orientation": 180,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "VR3_27": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 27,
+                "orientation": 180,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "VR3_29": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 29,
+                "orientation": 180,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "VR3_31": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 31,
+                "orientation": 180,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "VR3_40": {
+              "geometry": {
+                "model": "1U_Server",
+                "slotPosition": 40,
+                "orientation": 180,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            }
+          }
+        }
+      },
+      "VR4": {
+        "geometry": {
+          "model": "RACK2",
+          "location": {
+            "x": 14.25,
+            "y": 5.2,
+            "z": 0
+          },
+          "orientation": 180,
+          "hasBlankingPanel": true,
+          "customBlankingPanel": [
+            1,
+            2,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            41,
+            42,
+            43,
+            44,
+            45
+          ]
+        },
+        "constructions": {
+          "servers": {
+            "VR4_3": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 3,
+                "orientation": 180,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "VR4_5": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 5,
+                "orientation": 180,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "VR4_7": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 7,
+                "orientation": 180,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "VR4_9": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 9,
+                "orientation": 180,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "VR4_11": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 11,
+                "orientation": 180,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "VR4_13": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 13,
+                "orientation": 180,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "VR4_15": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 15,
+                "orientation": 180,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "VR4_17": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 17,
+                "orientation": 180,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "VR4_19": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 19,
+                "orientation": 180,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "VR4_21": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 21,
+                "orientation": 180,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "VR4_23": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 23,
+                "orientation": 180,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "VR4_25": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 25,
+                "orientation": 180,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "VR4_27": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 27,
+                "orientation": 180,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "VR4_29": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 29,
+                "orientation": 180,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "VR4_31": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 31,
+                "orientation": 180,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "VR4_39": {
+              "geometry": {
+                "model": "1U_Server",
+                "slotPosition": 39,
+                "orientation": 180,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "VR4_40": {
+              "geometry": {
+                "model": "1U_Server",
+                "slotPosition": 40,
+                "orientation": 180,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            }
+          }
+        }
+      },
+      "VR5": {
+        "geometry": {
+          "model": "RACK2",
+          "location": {
+            "x": 13.45,
+            "y": 5.2,
+            "z": 0
+          },
+          "orientation": 180,
+          "hasBlankingPanel": true,
+          "customBlankingPanel": [
+            1,
+            2,
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            41,
+            42,
+            43,
+            44,
+            45
+          ]
+        },
+        "constructions": {
+          "servers": {
+            "VR5_3": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 3,
+                "orientation": 180,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "VR5_5": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 5,
+                "orientation": 180,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "VR5_7": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 7,
+                "orientation": 180,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "VR5_9": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 9,
+                "orientation": 180,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "VR5_11": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 11,
+                "orientation": 180,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "VR5_13": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 13,
+                "orientation": 180,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "VR5_15": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 15,
+                "orientation": 180,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "VR5_17": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 17,
+                "orientation": 180,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "VR5_19": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 19,
+                "orientation": 180,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "VR5_21": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 21,
+                "orientation": 180,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "VR5_23": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 23,
+                "orientation": 180,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "VR5_25": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 25,
+                "orientation": 180,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "VR5_27": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 27,
+                "orientation": 180,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "VR5_29": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 29,
+                "orientation": 180,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "VR5_39": {
+              "geometry": {
+                "model": "1U_Server",
+                "slotPosition": 39,
+                "orientation": 180,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "VR5_40": {
+              "geometry": {
+                "model": "1U_Server",
+                "slotPosition": 40,
+                "orientation": 180,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            }
+          }
+        }
+      },
+      "VR6": {
+        "geometry": {
+          "model": "RACK2",
+          "location": {
+            "x": 12.65,
+            "y": 5.2,
+            "z": 0
+          },
+          "orientation": 180,
+          "hasBlankingPanel": true,
+          "customBlankingPanel": [
+            1,
+            2,
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            41,
+            42,
+            43,
+            44,
+            45
+          ]
+        },
+        "constructions": {
+          "servers": {
+            "VR6_3": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 3,
+                "orientation": 180,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "VR6_5": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 5,
+                "orientation": 180,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "VR6_7": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 7,
+                "orientation": 180,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "VR6_9": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 9,
+                "orientation": 180,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "VR6_11": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 11,
+                "orientation": 180,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "VR6_13": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 13,
+                "orientation": 180,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "VR6_15": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 15,
+                "orientation": 180,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "VR6_17": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 17,
+                "orientation": 180,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "VR6_19": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 19,
+                "orientation": 180,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "VR6_21": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 21,
+                "orientation": 180,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "VR6_23": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 23,
+                "orientation": 180,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "VR6_25": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 25,
+                "orientation": 180,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "VR6_27": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 27,
+                "orientation": 180,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "VR6_29": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 29,
+                "orientation": 180,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "VR6_39": {
+              "geometry": {
+                "model": "1U_Server",
+                "slotPosition": 39,
+                "orientation": 180,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "VR6_40": {
+              "geometry": {
+                "model": "1U_Server",
+                "slotPosition": 40,
+                "orientation": 180,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            }
+          }
+        }
+      },
+      "VR7": {
+        "geometry": {
+          "model": "RACK2",
+          "location": {
+            "x": 15.05,
+            "y": 1.7,
+            "z": 0
+          },
+          "orientation": 0,
+          "hasBlankingPanel": true,
+          "customBlankingPanel": [
+            1,
+            2,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39,
+            41,
+            42,
+            43,
+            44,
+            45
+          ]
+        },
+        "constructions": {
+          "servers": {
+            "VR7_3": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 3,
+                "orientation": 0,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "VR7_5": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 5,
+                "orientation": 0,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "VR7_7": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 7,
+                "orientation": 0,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "VR7_9": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 9,
+                "orientation": 0,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "VR7_11": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 11,
+                "orientation": 0,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "VR7_13": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 13,
+                "orientation": 0,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "VR7_15": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 15,
+                "orientation": 0,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "VR7_17": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 17,
+                "orientation": 0,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "VR7_19": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 19,
+                "orientation": 0,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "VR7_21": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 21,
+                "orientation": 0,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "VR7_23": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 23,
+                "orientation": 0,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "VR7_25": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 25,
+                "orientation": 0,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "VR7_27": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 27,
+                "orientation": 0,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "VR7_29": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 29,
+                "orientation": 0,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "VR7_31": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 31,
+                "orientation": 0,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "VR7_40": {
+              "geometry": {
+                "model": "1U_Server",
+                "slotPosition": 40,
+                "orientation": 0,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            }
+          }
+        }
+      },
+      "VR8": {
+        "geometry": {
+          "model": "RACK2",
+          "location": {
+            "x": 14.25,
+            "y": 1.7,
+            "z": 0
+          },
+          "orientation": 0,
+          "hasBlankingPanel": true,
+          "customBlankingPanel": [
+            1,
+            2,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39,
+            41,
+            42,
+            43,
+            44,
+            45
+          ]
+        },
+        "constructions": {
+          "servers": {
+            "VR8_3": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 3,
+                "orientation": 0,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "VR8_5": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 5,
+                "orientation": 0,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "VR8_7": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 7,
+                "orientation": 0,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "VR8_9": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 9,
+                "orientation": 0,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "VR8_11": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 11,
+                "orientation": 0,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "VR8_13": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 13,
+                "orientation": 0,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "VR8_15": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 15,
+                "orientation": 0,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "VR8_17": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 17,
+                "orientation": 0,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "VR8_19": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 19,
+                "orientation": 0,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "VR8_21": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 21,
+                "orientation": 0,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "VR8_23": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 23,
+                "orientation": 0,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "VR8_25": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 25,
+                "orientation": 0,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "VR8_27": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 27,
+                "orientation": 0,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "VR8_29": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 29,
+                "orientation": 0,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "VR8_31": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 31,
+                "orientation": 0,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "VR8_40": {
+              "geometry": {
+                "model": "1U_Server",
+                "slotPosition": 40,
+                "orientation": 0,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            }
+          }
+        }
+      },
+      "VR9": {
+        "geometry": {
+          "model": "RACK2",
+          "location": {
+            "x": 13.45,
+            "y": 1.7,
+            "z": 0
+          },
+          "orientation": 0,
+          "hasBlankingPanel": true,
+          "customBlankingPanel": [
+            1,
+            2,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39,
+            41,
+            42,
+            43,
+            44,
+            45
+          ]
+        },
+        "constructions": {
+          "servers": {
+            "VR9_3": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 3,
+                "orientation": 0,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "VR9_5": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 5,
+                "orientation": 0,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "VR9_7": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 7,
+                "orientation": 0,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "VR9_9": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 9,
+                "orientation": 0,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "VR9_11": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 11,
+                "orientation": 0,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "VR9_13": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 13,
+                "orientation": 0,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "VR9_15": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 15,
+                "orientation": 0,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "VR9_17": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 17,
+                "orientation": 0,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "VR9_19": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 19,
+                "orientation": 0,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "VR9_21": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 21,
+                "orientation": 0,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "VR9_23": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 23,
+                "orientation": 0,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "VR9_25": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 25,
+                "orientation": 0,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "VR9_27": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 27,
+                "orientation": 0,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "VR9_29": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 29,
+                "orientation": 0,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "VR9_31": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 31,
+                "orientation": 0,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "VR9_40": {
+              "geometry": {
+                "model": "1U_Server",
+                "slotPosition": 40,
+                "orientation": 0,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            }
+          }
+        }
+      },
+      "VR10": {
+        "geometry": {
+          "model": "RACK2",
+          "location": {
+            "x": 12.65,
+            "y": 1.7,
+            "z": 0
+          },
+          "orientation": 0,
+          "hasBlankingPanel": true,
+          "customBlankingPanel": [
+            1,
+            2,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39,
+            41,
+            42,
+            43,
+            44,
+            45
+          ]
+        },
+        "constructions": {
+          "servers": {
+            "VR10_3": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 3,
+                "orientation": 0,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "VR10_5": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 5,
+                "orientation": 0,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "VR10_7": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 7,
+                "orientation": 0,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "VR10_9": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 9,
+                "orientation": 0,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "VR10_11": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 11,
+                "orientation": 0,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "VR10_13": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 13,
+                "orientation": 0,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "VR10_15": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 15,
+                "orientation": 0,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "VR10_17": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 17,
+                "orientation": 0,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "VR10_19": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 19,
+                "orientation": 0,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "VR10_21": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 21,
+                "orientation": 0,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "VR10_23": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 23,
+                "orientation": 0,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "VR10_25": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 25,
+                "orientation": 0,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "VR10_27": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 27,
+                "orientation": 0,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "VR10_29": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 29,
+                "orientation": 0,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "VR10_31": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 31,
+                "orientation": 0,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "VR10_40": {
+              "geometry": {
+                "model": "1U_Server",
+                "slotPosition": 40,
+                "orientation": 0,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            }
+          }
+        }
+      },
+      "VR11": {
+        "geometry": {
+          "model": "RACK2",
+          "location": {
+            "x": 11.85,
+            "y": 1.7,
+            "z": 0
+          },
+          "orientation": 0,
+          "hasBlankingPanel": true,
+          "customBlankingPanel": [
+            1,
+            2,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39,
+            41,
+            42,
+            43,
+            44,
+            45
+          ]
+        },
+        "constructions": {
+          "servers": {
+            "VR11_3": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 3,
+                "orientation": 0,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "VR11_5": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 5,
+                "orientation": 0,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "VR11_7": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 7,
+                "orientation": 0,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "VR11_9": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 9,
+                "orientation": 0,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "VR11_11": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 11,
+                "orientation": 0,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "VR11_13": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 13,
+                "orientation": 0,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "VR11_15": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 15,
+                "orientation": 0,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "VR11_17": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 17,
+                "orientation": 0,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "VR11_19": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 19,
+                "orientation": 0,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "VR11_21": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 21,
+                "orientation": 0,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "VR11_23": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 23,
+                "orientation": 0,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "VR11_25": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 25,
+                "orientation": 0,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "VR11_27": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 27,
+                "orientation": 0,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "VR11_29": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 29,
+                "orientation": 0,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "VR11_31": {
+              "geometry": {
+                "model": "2U_Server",
+                "slotPosition": 31,
+                "orientation": 0,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            },
+            "VR11_40": {
+              "geometry": {
+                "model": "1U_Server",
+                "slotPosition": 40,
+                "orientation": 0,
+                "offsetFromLeft": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              },
+              "power": {
+                "model": "default"
+              }
+            }
+          }
+        }
+      }
+    },
+    "sensors": {
+      "Sensor_1": {
+        "geometry": {
+          "location": {
+            "x": 6,
+            "y": 3,
+            "z": 2
+          }
+        }
+      },
+      "Sensor_2": {
+        "geometry": {
+          "location": {
+            "x": 6,
+            "y": 4,
+            "z": 2
+          }
+        }
+      },
+      "Sensor_3": {
+        "geometry": {
+          "location": {
+            "x": 9,
+            "y": 3,
+            "z": 2
+          }
+        }
+      },
+      "Sensor_4": {
+        "geometry": {
+          "location": {
+            "x": 9,
+            "y": 4,
+            "z": 2
+          }
+        }
+      },
+      "Sensor_5": {
+        "geometry": {
+          "location": {
+            "x": 13,
+            "y": 3,
+            "z": 2
+          }
+        }
+      },
+      "Sensor_6": {
+        "geometry": {
+          "location": {
+            "x": 13,
+            "y": 4,
+            "z": 2
+          }
+        }
+      },
+      "Sensor_7": {
+        "geometry": {
+          "location": {
+            "x": 16,
+            "y": 3,
+            "z": 2
+          }
+        }
+      },
+      "Sensor_8": {
+        "geometry": {
+          "location": {
+            "x": 16,
+            "y": 4,
+            "z": 2
+          }
+        }
+      }
+    },
+    "rows": {}
+  },
+  "inputs": {
+    "acus": {
+      "PCU_1": {
+        "supplyAirVolumeFlowRate": 23,
+        "supplyAirTemperature": 21
+      },
+      "PCU_2": {
+        "supplyAirVolumeFlowRate": 23,
+        "supplyAirTemperature": 21
+      },
+      "PCU_3": {
+        "supplyAirVolumeFlowRate": 23,
+        "supplyAirTemperature": 21
+      }
+    },
+    "servers": {
+      "SR1_5": {
+        "inputPower": 1500
+      },
+      "SR1_7": {
+        "inputPower": 1500
+      },
+      "SR1_9": {
+        "inputPower": 1500
+      },
+      "SR1_11": {
+        "inputPower": 1500
+      },
+      "SR1_13": {
+        "inputPower": 1500
+      },
+      "SR1_15": {
+        "inputPower": 1500
+      },
+      "SR1_17": {
+        "inputPower": 1500
+      },
+      "SR1_19": {
+        "inputPower": 1500
+      },
+      "SR1_21": {
+        "inputPower": 1500
+      },
+      "SR1_23": {
+        "inputPower": 1500
+      },
+      "SR1_25": {
+        "inputPower": 1500
+      },
+      "SR1_27": {
+        "inputPower": 1500
+      },
+      "SR1_40": {
+        "inputPower": 1500
+      },
+      "SR2_5": {
+        "inputPower": 1500
+      },
+      "SR2_7": {
+        "inputPower": 1500
+      },
+      "SR2_9": {
+        "inputPower": 1500
+      },
+      "SR2_11": {
+        "inputPower": 1500
+      },
+      "SR2_13": {
+        "inputPower": 1500
+      },
+      "SR2_15": {
+        "inputPower": 1500
+      },
+      "SR2_17": {
+        "inputPower": 1500
+      },
+      "SR2_19": {
+        "inputPower": 1500
+      },
+      "SR2_21": {
+        "inputPower": 1500
+      },
+      "SR2_23": {
+        "inputPower": 1500
+      },
+      "SR2_25": {
+        "inputPower": 1500
+      },
+      "SR2_39": {
+        "inputPower": 1500
+      },
+      "SR2_40": {
+        "inputPower": 1500
+      },
+      "SR3_5": {
+        "inputPower": 1500
+      },
+      "SR3_7": {
+        "inputPower": 1500
+      },
+      "SR3_9": {
+        "inputPower": 1500
+      },
+      "SR3_11": {
+        "inputPower": 1500
+      },
+      "SR3_13": {
+        "inputPower": 1500
+      },
+      "SR3_15": {
+        "inputPower": 1500
+      },
+      "SR3_17": {
+        "inputPower": 1500
+      },
+      "SR3_19": {
+        "inputPower": 1500
+      },
+      "SR3_21": {
+        "inputPower": 1500
+      },
+      "SR3_23": {
+        "inputPower": 1500
+      },
+      "SR3_25": {
+        "inputPower": 1500
+      },
+      "SR3_40": {
+        "inputPower": 1500
+      },
+      "SR4_5": {
+        "inputPower": 1500
+      },
+      "SR4_7": {
+        "inputPower": 1500
+      },
+      "SR4_9": {
+        "inputPower": 1500
+      },
+      "SR4_11": {
+        "inputPower": 1500
+      },
+      "SR4_13": {
+        "inputPower": 1500
+      },
+      "SR4_15": {
+        "inputPower": 1500
+      },
+      "SR4_17": {
+        "inputPower": 1500
+      },
+      "SR4_19": {
+        "inputPower": 1500
+      },
+      "SR4_21": {
+        "inputPower": 1500
+      },
+      "SR4_23": {
+        "inputPower": 1500
+      },
+      "SR4_25": {
+        "inputPower": 1500
+      },
+      "SR4_39": {
+        "inputPower": 1500
+      },
+      "SR4_40": {
+        "inputPower": 1500
+      },
+      "SR5_5": {
+        "inputPower": 1500
+      },
+      "SR5_7": {
+        "inputPower": 1500
+      },
+      "SR5_9": {
+        "inputPower": 1500
+      },
+      "SR5_11": {
+        "inputPower": 1500
+      },
+      "SR5_13": {
+        "inputPower": 1500
+      },
+      "SR5_15": {
+        "inputPower": 1500
+      },
+      "SR5_17": {
+        "inputPower": 1500
+      },
+      "SR5_19": {
+        "inputPower": 1500
+      },
+      "SR5_21": {
+        "inputPower": 1500
+      },
+      "SR5_23": {
+        "inputPower": 1500
+      },
+      "SR5_25": {
+        "inputPower": 1500
+      },
+      "SR5_39": {
+        "inputPower": 1500
+      },
+      "SR5_40": {
+        "inputPower": 1500
+      },
+      "SR6_5": {
+        "inputPower": 1500
+      },
+      "SR6_7": {
+        "inputPower": 1500
+      },
+      "SR6_9": {
+        "inputPower": 1500
+      },
+      "SR6_11": {
+        "inputPower": 1500
+      },
+      "SR6_13": {
+        "inputPower": 1500
+      },
+      "SR6_15": {
+        "inputPower": 1500
+      },
+      "SR6_17": {
+        "inputPower": 1500
+      },
+      "SR6_19": {
+        "inputPower": 1500
+      },
+      "SR6_21": {
+        "inputPower": 1500
+      },
+      "SR6_23": {
+        "inputPower": 1500
+      },
+      "SR6_25": {
+        "inputPower": 1500
+      },
+      "SR6_40": {
+        "inputPower": 1500
+      },
+      "SR7_5": {
+        "inputPower": 1500
+      },
+      "SR7_7": {
+        "inputPower": 1500
+      },
+      "SR7_9": {
+        "inputPower": 1500
+      },
+      "SR7_11": {
+        "inputPower": 1500
+      },
+      "SR7_13": {
+        "inputPower": 1500
+      },
+      "SR7_15": {
+        "inputPower": 1500
+      },
+      "SR7_17": {
+        "inputPower": 1500
+      },
+      "SR7_19": {
+        "inputPower": 1500
+      },
+      "SR7_21": {
+        "inputPower": 1500
+      },
+      "SR7_23": {
+        "inputPower": 1500
+      },
+      "SR7_25": {
+        "inputPower": 1500
+      },
+      "SR7_39": {
+        "inputPower": 1500
+      },
+      "SR7_40": {
+        "inputPower": 1500
+      },
+      "SR8_7": {
+        "inputPower": 1500
+      },
+      "SR8_9": {
+        "inputPower": 1500
+      },
+      "SR8_11": {
+        "inputPower": 1500
+      },
+      "SR8_13": {
+        "inputPower": 1500
+      },
+      "SR8_15": {
+        "inputPower": 1500
+      },
+      "SR8_17": {
+        "inputPower": 1500
+      },
+      "SR8_19": {
+        "inputPower": 1500
+      },
+      "SR8_21": {
+        "inputPower": 1500
+      },
+      "SR8_23": {
+        "inputPower": 1500
+      },
+      "SR8_33": {
+        "inputPower": 1500
+      },
+      "SR8_35": {
+        "inputPower": 1500
+      },
+      "SR9_5": {
+        "inputPower": 1500
+      },
+      "SR9_7": {
+        "inputPower": 1500
+      },
+      "SR9_9": {
+        "inputPower": 1500
+      },
+      "SR9_11": {
+        "inputPower": 1500
+      },
+      "SR9_13": {
+        "inputPower": 1500
+      },
+      "SR9_15": {
+        "inputPower": 1500
+      },
+      "SR9_36": {
+        "inputPower": 1500
+      },
+      "SR9_37": {
+        "inputPower": 1500
+      },
+      "SR9_38": {
+        "inputPower": 1500
+      },
+      "SR9_39": {
+        "inputPower": 1500
+      },
+      "SR9_40": {
+        "inputPower": 1500
+      },
+      "SR10_5": {
+        "inputPower": 1500
+      },
+      "SR10_7": {
+        "inputPower": 1500
+      },
+      "SR10_9": {
+        "inputPower": 1500
+      },
+      "SR10_11": {
+        "inputPower": 1500
+      },
+      "SR10_13": {
+        "inputPower": 1500
+      },
+      "SR10_15": {
+        "inputPower": 1500
+      },
+      "SR10_17": {
+        "inputPower": 1500
+      },
+      "SR10_19": {
+        "inputPower": 1500
+      },
+      "SR10_21": {
+        "inputPower": 1500
+      },
+      "SR10_23": {
+        "inputPower": 1500
+      },
+      "SR10_25": {
+        "inputPower": 1500
+      },
+      "SR10_27": {
+        "inputPower": 1500
+      },
+      "SR11_5": {
+        "inputPower": 1500
+      },
+      "SR11_7": {
+        "inputPower": 1500
+      },
+      "SR11_9": {
+        "inputPower": 1500
+      },
+      "SR11_11": {
+        "inputPower": 1500
+      },
+      "SR11_13": {
+        "inputPower": 1500
+      },
+      "SR11_17": {
+        "inputPower": 1500
+      },
+      "SR11_19": {
+        "inputPower": 1500
+      },
+      "SR11_21": {
+        "inputPower": 1500
+      },
+      "SR11_23": {
+        "inputPower": 1500
+      },
+      "SR11_25": {
+        "inputPower": 1500
+      },
+      "SR11_27": {
+        "inputPower": 1500
+      },
+      "SR11_39": {
+        "inputPower": 1500
+      },
+      "SR11_40": {
+        "inputPower": 1500
+      },
+      "VR1_3": {
+        "inputPower": 1500
+      },
+      "VR1_5": {
+        "inputPower": 1500
+      },
+      "VR1_7": {
+        "inputPower": 1500
+      },
+      "VR1_9": {
+        "inputPower": 1500
+      },
+      "VR1_11": {
+        "inputPower": 1500
+      },
+      "VR1_13": {
+        "inputPower": 1500
+      },
+      "VR1_15": {
+        "inputPower": 1500
+      },
+      "VR1_17": {
+        "inputPower": 1500
+      },
+      "VR1_25": {
+        "inputPower": 1500
+      },
+      "VR1_27": {
+        "inputPower": 1500
+      },
+      "VR1_29": {
+        "inputPower": 1500
+      },
+      "VR1_31": {
+        "inputPower": 1500
+      },
+      "VR1_33": {
+        "inputPower": 1500
+      },
+      "VR1_34": {
+        "inputPower": 1500
+      },
+      "VR2_3": {
+        "inputPower": 1500
+      },
+      "VR2_5": {
+        "inputPower": 1500
+      },
+      "VR2_7": {
+        "inputPower": 1500
+      },
+      "VR2_9": {
+        "inputPower": 1500
+      },
+      "VR2_11": {
+        "inputPower": 1500
+      },
+      "VR2_13": {
+        "inputPower": 1500
+      },
+      "VR2_15": {
+        "inputPower": 1500
+      },
+      "VR2_17": {
+        "inputPower": 1500
+      },
+      "VR2_19": {
+        "inputPower": 1500
+      },
+      "VR2_21": {
+        "inputPower": 1500
+      },
+      "VR2_23": {
+        "inputPower": 1500
+      },
+      "VR2_25": {
+        "inputPower": 1500
+      },
+      "VR2_27": {
+        "inputPower": 1500
+      },
+      "VR2_40": {
+        "inputPower": 1500
+      },
+      "VR3_3": {
+        "inputPower": 1500
+      },
+      "VR3_5": {
+        "inputPower": 1500
+      },
+      "VR3_7": {
+        "inputPower": 1500
+      },
+      "VR3_9": {
+        "inputPower": 1500
+      },
+      "VR3_11": {
+        "inputPower": 1500
+      },
+      "VR3_13": {
+        "inputPower": 1500
+      },
+      "VR3_15": {
+        "inputPower": 1500
+      },
+      "VR3_17": {
+        "inputPower": 1500
+      },
+      "VR3_19": {
+        "inputPower": 1500
+      },
+      "VR3_21": {
+        "inputPower": 1500
+      },
+      "VR3_23": {
+        "inputPower": 1500
+      },
+      "VR3_25": {
+        "inputPower": 1500
+      },
+      "VR3_27": {
+        "inputPower": 1500
+      },
+      "VR3_29": {
+        "inputPower": 1500
+      },
+      "VR3_31": {
+        "inputPower": 1500
+      },
+      "VR3_40": {
+        "inputPower": 1500
+      },
+      "VR4_3": {
+        "inputPower": 1500
+      },
+      "VR4_5": {
+        "inputPower": 1500
+      },
+      "VR4_7": {
+        "inputPower": 1500
+      },
+      "VR4_9": {
+        "inputPower": 1500
+      },
+      "VR4_11": {
+        "inputPower": 1500
+      },
+      "VR4_13": {
+        "inputPower": 1500
+      },
+      "VR4_15": {
+        "inputPower": 1500
+      },
+      "VR4_17": {
+        "inputPower": 1500
+      },
+      "VR4_19": {
+        "inputPower": 1500
+      },
+      "VR4_21": {
+        "inputPower": 1500
+      },
+      "VR4_23": {
+        "inputPower": 1500
+      },
+      "VR4_25": {
+        "inputPower": 1500
+      },
+      "VR4_27": {
+        "inputPower": 1500
+      },
+      "VR4_29": {
+        "inputPower": 1500
+      },
+      "VR4_31": {
+        "inputPower": 1500
+      },
+      "VR4_39": {
+        "inputPower": 1500
+      },
+      "VR4_40": {
+        "inputPower": 1500
+      },
+      "VR5_3": {
+        "inputPower": 1500
+      },
+      "VR5_5": {
+        "inputPower": 1500
+      },
+      "VR5_7": {
+        "inputPower": 1500
+      },
+      "VR5_9": {
+        "inputPower": 1500
+      },
+      "VR5_11": {
+        "inputPower": 1500
+      },
+      "VR5_13": {
+        "inputPower": 1500
+      },
+      "VR5_15": {
+        "inputPower": 1500
+      },
+      "VR5_17": {
+        "inputPower": 1500
+      },
+      "VR5_19": {
+        "inputPower": 1500
+      },
+      "VR5_21": {
+        "inputPower": 1500
+      },
+      "VR5_23": {
+        "inputPower": 1500
+      },
+      "VR5_25": {
+        "inputPower": 1500
+      },
+      "VR5_27": {
+        "inputPower": 1500
+      },
+      "VR5_29": {
+        "inputPower": 1500
+      },
+      "VR5_39": {
+        "inputPower": 1500
+      },
+      "VR5_40": {
+        "inputPower": 1500
+      },
+      "VR6_3": {
+        "inputPower": 1500
+      },
+      "VR6_5": {
+        "inputPower": 1500
+      },
+      "VR6_7": {
+        "inputPower": 1500
+      },
+      "VR6_9": {
+        "inputPower": 1500
+      },
+      "VR6_11": {
+        "inputPower": 1500
+      },
+      "VR6_13": {
+        "inputPower": 1500
+      },
+      "VR6_15": {
+        "inputPower": 1500
+      },
+      "VR6_17": {
+        "inputPower": 1500
+      },
+      "VR6_19": {
+        "inputPower": 1500
+      },
+      "VR6_21": {
+        "inputPower": 1500
+      },
+      "VR6_23": {
+        "inputPower": 1500
+      },
+      "VR6_25": {
+        "inputPower": 1500
+      },
+      "VR6_27": {
+        "inputPower": 1500
+      },
+      "VR6_29": {
+        "inputPower": 1500
+      },
+      "VR6_39": {
+        "inputPower": 1500
+      },
+      "VR6_40": {
+        "inputPower": 1500
+      },
+      "VR7_3": {
+        "inputPower": 1500
+      },
+      "VR7_5": {
+        "inputPower": 1500
+      },
+      "VR7_7": {
+        "inputPower": 1500
+      },
+      "VR7_9": {
+        "inputPower": 1500
+      },
+      "VR7_11": {
+        "inputPower": 1500
+      },
+      "VR7_13": {
+        "inputPower": 1500
+      },
+      "VR7_15": {
+        "inputPower": 1500
+      },
+      "VR7_17": {
+        "inputPower": 1500
+      },
+      "VR7_19": {
+        "inputPower": 1500
+      },
+      "VR7_21": {
+        "inputPower": 1500
+      },
+      "VR7_23": {
+        "inputPower": 1500
+      },
+      "VR7_25": {
+        "inputPower": 1500
+      },
+      "VR7_27": {
+        "inputPower": 1500
+      },
+      "VR7_29": {
+        "inputPower": 1500
+      },
+      "VR7_31": {
+        "inputPower": 1500
+      },
+      "VR7_40": {
+        "inputPower": 1500
+      },
+      "VR8_3": {
+        "inputPower": 1500
+      },
+      "VR8_5": {
+        "inputPower": 1500
+      },
+      "VR8_7": {
+        "inputPower": 1500
+      },
+      "VR8_9": {
+        "inputPower": 1500
+      },
+      "VR8_11": {
+        "inputPower": 1500
+      },
+      "VR8_13": {
+        "inputPower": 1500
+      },
+      "VR8_15": {
+        "inputPower": 1500
+      },
+      "VR8_17": {
+        "inputPower": 1500
+      },
+      "VR8_19": {
+        "inputPower": 1500
+      },
+      "VR8_21": {
+        "inputPower": 1500
+      },
+      "VR8_23": {
+        "inputPower": 1500
+      },
+      "VR8_25": {
+        "inputPower": 1500
+      },
+      "VR8_27": {
+        "inputPower": 1500
+      },
+      "VR8_29": {
+        "inputPower": 1500
+      },
+      "VR8_31": {
+        "inputPower": 1500
+      },
+      "VR8_40": {
+        "inputPower": 1500
+      },
+      "VR9_3": {
+        "inputPower": 1500
+      },
+      "VR9_5": {
+        "inputPower": 1500
+      },
+      "VR9_7": {
+        "inputPower": 1500
+      },
+      "VR9_9": {
+        "inputPower": 1500
+      },
+      "VR9_11": {
+        "inputPower": 1500
+      },
+      "VR9_13": {
+        "inputPower": 1500
+      },
+      "VR9_15": {
+        "inputPower": 1500
+      },
+      "VR9_17": {
+        "inputPower": 1500
+      },
+      "VR9_19": {
+        "inputPower": 1500
+      },
+      "VR9_21": {
+        "inputPower": 1500
+      },
+      "VR9_23": {
+        "inputPower": 1500
+      },
+      "VR9_25": {
+        "inputPower": 1500
+      },
+      "VR9_27": {
+        "inputPower": 1500
+      },
+      "VR9_29": {
+        "inputPower": 1500
+      },
+      "VR9_31": {
+        "inputPower": 1500
+      },
+      "VR9_40": {
+        "inputPower": 1500
+      },
+      "VR10_3": {
+        "inputPower": 1500
+      },
+      "VR10_5": {
+        "inputPower": 1500
+      },
+      "VR10_7": {
+        "inputPower": 1500
+      },
+      "VR10_9": {
+        "inputPower": 1500
+      },
+      "VR10_11": {
+        "inputPower": 1500
+      },
+      "VR10_13": {
+        "inputPower": 1500
+      },
+      "VR10_15": {
+        "inputPower": 1500
+      },
+      "VR10_17": {
+        "inputPower": 1500
+      },
+      "VR10_19": {
+        "inputPower": 1500
+      },
+      "VR10_21": {
+        "inputPower": 1500
+      },
+      "VR10_23": {
+        "inputPower": 1500
+      },
+      "VR10_25": {
+        "inputPower": 1500
+      },
+      "VR10_27": {
+        "inputPower": 1500
+      },
+      "VR10_29": {
+        "inputPower": 1500
+      },
+      "VR10_31": {
+        "inputPower": 1500
+      },
+      "VR10_40": {
+        "inputPower": 1500
+      },
+      "VR11_3": {
+        "inputPower": 1500
+      },
+      "VR11_5": {
+        "inputPower": 1500
+      },
+      "VR11_7": {
+        "inputPower": 1500
+      },
+      "VR11_9": {
+        "inputPower": 1500
+      },
+      "VR11_11": {
+        "inputPower": 1500
+      },
+      "VR11_13": {
+        "inputPower": 1500
+      },
+      "VR11_15": {
+        "inputPower": 1500
+      },
+      "VR11_17": {
+        "inputPower": 1500
+      },
+      "VR11_19": {
+        "inputPower": 1500
+      },
+      "VR11_21": {
+        "inputPower": 1500
+      },
+      "VR11_23": {
+        "inputPower": 1500
+      },
+      "VR11_25": {
+        "inputPower": 1500
+      },
+      "VR11_27": {
+        "inputPower": 1500
+      },
+      "VR11_29": {
+        "inputPower": 1500
+      },
+      "VR11_31": {
+        "inputPower": 1500
+      },
+      "VR11_40": {
+        "inputPower": 1500
+      }
+    }
+  },
+  "screen": "/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAFoAoADASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDxKiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiuis/BOr6hoCavZiCeN9xECviXau7JwQAfu4wCSSwwD2wZ4Jra4kt7iJ4pomKSRyKVZGBwQQeQQe1AEdFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRW1oPhybX4bswXCRywbMLIDht2e46Yx6GgDFoq3qWmXmkXf2W+h8qbar43BgQRkEEEg/0IIPIIqpQB7r4QtDZ+EdMi3790IlzjH3yXx+G7H4VoappGl63bCDVLGK4UDako+SaLr9yQc4G5iFOUyclTTdGgltND0+2mXZLDbRxuuQcMFAIyKu0AeY678LbyDfPoM/2+EZP2WTCXCjk4H8MmBgfLhmJ4QVwM8E1tcSW9xE8U0TFJI5FKsjA4IIPIIPavozmsrWfDWka/wDNqFrmXgfaITsmAG0fewd3yoFG4MACcAUAeCUV2es/DbV7D95p/wDxM4eBthTEwPyj/V5O7LMQNpY4Ukha4ygAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACu3+Ht1Ba/bzPKsYkeJFLHALYc4z+BrjIIJrm4jt7eJ5ZpWCRxxqWZ2JwAAOSSe1du/gLWdE0CG/1jRrm2SXfI0p52JiPZvAJ2HLNw2DnjHFAHbXlla6hbmC7gSaI/wuM4OMZHoeTyOa4jWvh/O928ujGLy5ZPltXfZ5eSMAOxwQMnliMAcknmotK1zUtJUxhDParyY3PK9jtPbke474rtdO1iz1Rf9HkIkChjE4wwB747jkcjjmgDpgc4x0NH86zYJ2gbIAYYI2tnHI68dx1/CrsE6zbuilRkhmAzzjj169P8KAJe9FHXij+dABzisrWfDWka/wDNqFrmXgfaITsmAG0fewc/KgUbgwAJwBWr3qZbWQojuPKif7sj8KQCAceuM84yaAPIta+F+r2OZdIb+17f+7DHtuB0HMWSTyT9wvgDLba4avpzzLW2/wBUn2mUf8tJBhAfZe/1bg91r5x1q/8A7V17UdR+b/S7mSf5gAfmYtyBxnmgCjRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRR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r2i3AttYsXEgQCUYkbgBScMMfQnk1l2063MSTKSCfujOSD3HoKm4ZSV+VCfmwfun3NenpKPqcmqZb1O3W11W7t8MiLMwQHOUGeOT0BGKqdAwYAJ0cdB9fU1Nd3Ut9O9zcN5kzYEhK4BwMAgDrULHA3SOAyjIJxkr/IU1dLUHvoHKN03NjuPvD2FNkdbcGV3wFGQ2eSPQms251lYwYrdM4PDZ4Hrz37+lZE08s5zI5bHQdh9BXPUxMY6LVmkaTe5p3Ws/wWqlVHIJ7H29fx/KsqSR5ZGkkbczHJNNorinUlPc6IxUdgoooqCgooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKALdhdfZrj5v9U+A2ScD349P8a6MPkB2YFSOe+R2KiuRqQzymFYt58teijjvnn15roo1+RWZlOnzO5uXOqxWxIgYSSDow5yPc/4fpWLPdS3B+dvlzkIOgqGioqVpT3KjBRCiiisiwooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooA//2Q=="
+}

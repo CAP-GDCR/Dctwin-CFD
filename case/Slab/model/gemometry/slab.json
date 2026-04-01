@@ -1,0 +1,408 @@
+{
+  "meta": {
+    "name": "SLab",
+    "version": "0.1.1"
+  },
+  "models": {
+    "geometryModels": {
+      "acus": {
+        "PCU": {
+          "size": {
+            "x": 1.82,
+            "y": 1.02,
+            "z": 1.98
+          },
+          "supplyFace": {
+            "length": 1.02,
+            "width": 1.82,
+            "offset": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "side": "bottom"
+          },
+          "returnFace": {
+            "length": 1.02,
+            "width": 1.82,
+            "offset": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "side": "top"
+          }
+        }
+      },
+      "racks": {
+        "RACK1": {
+          "firstSlotOffset": 0,
+          "size": {
+            "x": 0.6,
+            "y": 1.2,
+            "z": 2.35
+          },
+          "slot": 45
+        }
+      },
+      "servers": {
+        "4U_Server": {
+          "slotOccupation": 4,
+          "depth": 1.05,
+          "width": 0.6
+        }
+      },
+      "boxes": {
+        "partition": {
+          "faces": {
+            "top": true,
+            "bottom": true,
+            "rear": true,
+            "front": true,
+            "left": true,
+            "right": true
+          }
+        },
+        "pillar": {
+          "faces": {
+            "top": true,
+            "bottom": true,
+            "rear": true,
+            "front": true,
+            "left": true,
+            "right": true
+          }
+        },
+        "duct": {
+          "faces": {
+            "top": false,
+            "bottom": false,
+            "rear": true,
+            "front": true,
+            "left": true,
+            "right": true
+          }
+        },
+        "containment": {
+          "faces": {
+            "top": true,
+            "bottom": false,
+            "rear": false,
+            "front": false,
+            "left": true,
+            "right": true
+          }
+        }
+      }
+    },
+    "coolingModels": {
+      "acus": {
+        "CANATAL_ME_Series_080": {
+          "coolingType": "CW",
+          "coolingCapacity": 85.5
+        }
+      },
+      "servers": {
+        "GPU_1": {
+          "fanType": "Fixed",
+          "volumeFlowRate": 0.02
+        }
+      }
+    },
+    "powerModels": {}
+  },
+  "geometry": {
+    "height": 3.4,
+    "plane": [
+      {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      {
+        "x": 10.45,
+        "y": 0,
+        "z": 0
+      },
+      {
+        "x": 10.45,
+        "y": 2.98,
+        "z": 0
+      },
+      {
+        "x": 9.75,
+        "y": 2.98,
+        "z": 0
+      },
+      {
+        "x": 9.75,
+        "y": 3.612,
+        "z": 0
+      },
+      {
+        "x": 0,
+        "y": 3.612,
+        "z": 0
+      }
+    ]
+  },
+  "constructions": {
+    "raisedFloor": {
+      "geometry": {
+        "height": 0.4,
+        "openings": {
+          "opening_1": {
+            "location": {
+              "x": 2.22,
+              "y": 0.6,
+              "z": 0
+            },
+            "size": {
+              "x": 6,
+              "y": 0.6,
+              "z": 0
+            }
+          }
+        }
+      }
+    },
+    "boxes": {
+      "containment_1": {
+        "geometry": {
+          "model": "containment",
+          "size": {
+            "x": 6.25,
+            "y": 1.25,
+            "z": 2.4
+          },
+          "location": {
+            "x": 2.07,
+            "y": 0,
+            "z": 0.4
+          }
+        }
+      },
+      "partition_1": {
+        "geometry": {
+          "model": "partition",
+          "size": {
+            "x": 1.45,
+            "y": 0.1,
+            "z": 2.4
+          },
+          "location": {
+            "x": 4.47,
+            "y": 1.25,
+            "z": 0.4
+          }
+        }
+      },
+      "pillar_1": {
+        "geometry": {
+          "model": "pillar",
+          "size": {
+            "x": 0.9,
+            "y": 0.632,
+            "z": 3.4
+          },
+          "location": {
+            "x": 2.82,
+            "y": 2.98,
+            "z": 0
+          }
+        }
+      }
+    },
+    "acus": {
+      "PCU_1": {
+        "geometry": {
+          "model": "PCU",
+          "orientation": 90,
+          "location": {
+            "x": 1.02,
+            "y": 0.6,
+            "z": 0.4
+          }
+        },
+        "cooling": {
+          "model": "CANATAL_ME_Series_080"
+        }
+      },
+      "PCU_2": {
+        "geometry": {
+          "model": "PCU",
+          "orientation": 270,
+          "location": {
+            "x": 9.43,
+            "y": 2.42,
+            "z": 0.4
+          }
+        },
+        "cooling": {
+          "model": "CANATAL_ME_Series_080"
+        }
+      }
+    },
+    "racks": {
+      "R1": {
+        "geometry": {
+          "model": "RACK1",
+          "location": {
+            "x": 2.07,
+            "y": 1.25,
+            "z": 0.4
+          },
+          "orientation": 0,
+          "hasBlankingPanel": true
+        },
+        "constructions": {
+          "servers": {
+            "R1_30": {
+              "geometry": {
+                "model": "4U_Server",
+                "slotPosition": 30,
+                "orientation": 0
+              },
+              "cooling": {
+                "model": "GPU_1"
+              }
+            }
+          }
+        }
+      },
+      "R2": {
+        "geometry": {
+          "model": "RACK1",
+          "location": {
+            "x": 2.67,
+            "y": 1.25,
+            "z": 0.4
+          },
+          "orientation": 0,
+          "hasBlankingPanel": false
+        },
+        "constructions": {
+          "servers": {}
+        }
+      },
+      "R3": {
+        "geometry": {
+          "model": "RACK1",
+          "location": {
+            "x": 3.27,
+            "y": 1.25,
+            "z": 0.4
+          },
+          "orientation": 0,
+          "hasBlankingPanel": false
+        },
+        "constructions": {
+          "servers": {}
+        }
+      },
+      "R4": {
+        "geometry": {
+          "model": "RACK1",
+          "location": {
+            "x": 3.87,
+            "y": 1.25,
+            "z": 0.4
+          },
+          "orientation": 0,
+          "hasBlankingPanel": false
+        },
+        "constructions": {
+          "servers": {}
+        }
+      },
+      "R5": {
+        "geometry": {
+          "model": "RACK1",
+          "location": {
+            "x": 5.8,
+            "y": 1.25,
+            "z": 0.4
+          },
+          "orientation": 0,
+          "hasBlankingPanel": false
+        },
+        "constructions": {
+          "servers": {}
+        }
+      },
+      "R6": {
+        "geometry": {
+          "model": "RACK1",
+          "location": {
+            "x": 6.4,
+            "y": 1.25,
+            "z": 0.4
+          },
+          "orientation": 0,
+          "hasBlankingPanel": false
+        },
+        "constructions": {
+          "servers": {}
+        }
+      },
+      "R7": {
+        "geometry": {
+          "model": "RACK1",
+          "location": {
+            "x": 7.0,
+            "y": 1.25,
+            "z": 0.4
+          },
+          "orientation": 0,
+          "hasBlankingPanel": false
+        },
+        "constructions": {
+          "servers": {}
+        }
+      },
+      "R8": {
+        "geometry": {
+          "model": "RACK1",
+          "location": {
+            "x": 7.6,
+            "y": 1.25,
+            "z": 0.4
+          },
+          "orientation": 0,
+          "hasBlankingPanel": false
+        },
+        "constructions": {
+          "servers": {}
+        }
+      }
+    },
+    "sensors": {
+      "sensor_1": {
+        "geometry": {
+          "location": {
+            "x": 2.07,
+            "y": 0.6,
+            "z": 2.4
+          }
+        }
+      }
+    }
+  },
+  "inputs": {
+    "acus": {
+      "PCU_1": {
+        "supplyAirTemperature": 15,
+        "supplyAirVolumeFlowRate": 4
+      },
+      "PCU_2": {
+        "supplyAirTemperature": 15,
+        "supplyAirVolumeFlowRate": 4
+      }
+    },
+    "servers": {
+      "R1_30": {
+        "inputPower": 150
+      }
+    }
+  }
+}

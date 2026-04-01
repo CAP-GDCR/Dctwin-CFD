@@ -1,0 +1,44 @@
+solid Baffle_6_copy_Front
+  facet normal 1.000000 0.000000 0.000000
+    outer loop
+      vertex 18.400000 -0.557521 3.152651
+      vertex 18.400000 -0.557521 0.000000
+      vertex 18.400000 1.600000 0.000000
+    endloop
+  endfacet
+  facet normal 1.000000 -0.000000 0.000000
+    outer loop
+      vertex 18.400000 6.600000 2.000000
+      vertex 18.400000 6.600000 0.000000
+      vertex 18.400000 7.699394 0.000000
+    endloop
+  endfacet
+  facet normal 1.000000 0.000000 0.000000
+    outer loop
+      vertex 18.400000 -0.557521 3.152651
+      vertex 18.400000 1.600000 0.000000
+      vertex 18.400000 1.600000 2.000000
+    endloop
+  endfacet
+  facet normal 1.000000 -0.000000 0.000000
+    outer loop
+      vertex 18.400000 6.600000 2.000000
+      vertex 18.400000 7.699394 0.000000
+      vertex 18.400000 7.699394 3.152651
+    endloop
+  endfacet
+  facet normal 1.000000 -0.000000 -0.000000
+    outer loop
+      vertex 18.400000 7.699394 3.152651
+      vertex 18.400000 -0.557521 3.152651
+      vertex 18.400000 1.600000 2.000000
+    endloop
+  endfacet
+  facet normal 1.000000 0.000000 -0.000000
+    outer loop
+      vertex 18.400000 1.600000 2.000000
+      vertex 18.400000 6.600000 2.000000
+      vertex 18.400000 7.699394 3.152651
+    endloop
+  endfacet
+endsolid Baffle_6_copy_Front

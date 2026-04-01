@@ -1,0 +1,3060 @@
+solid R1_Left
+  facet normal -1.000000 0.000000 0.000000
+    outer loop
+      vertex 2.070000 2.450000 2.750000
+      vertex 2.070000 2.450000 0.400000
+      vertex 2.070000 1.250000 0.400000
+    endloop
+  endfacet
+  facet normal -1.000000 0.000000 0.000000
+    outer loop
+      vertex 2.070000 1.250000 0.400000
+      vertex 2.070000 1.250000 2.750000
+      vertex 2.070000 2.450000 2.750000
+    endloop
+  endfacet
+endsolid R1_Left
+
+solid R1_Right
+  facet normal 1.000000 0.000000 0.000000
+    outer loop
+      vertex 2.670000 1.250000 2.750000
+      vertex 2.670000 1.250000 0.400000
+      vertex 2.670000 2.450000 0.400000
+    endloop
+  endfacet
+  facet normal 1.000000 0.000000 0.000000
+    outer loop
+      vertex 2.670000 2.450000 0.400000
+      vertex 2.670000 2.450000 2.750000
+      vertex 2.670000 1.250000 2.750000
+    endloop
+  endfacet
+endsolid R1_Right
+
+solid R1_Top
+  facet normal 0.000000 0.000000 1.000000
+    outer loop
+      vertex 2.070000 2.450000 2.750000
+      vertex 2.070000 1.250000 2.750000
+      vertex 2.670000 1.250000 2.750000
+    endloop
+  endfacet
+  facet normal 0.000000 0.000000 1.000000
+    outer loop
+      vertex 2.670000 1.250000 2.750000
+      vertex 2.670000 2.450000 2.750000
+      vertex 2.070000 2.450000 2.750000
+    endloop
+  endfacet
+endsolid R1_Top
+
+solid R1_Bottom
+  facet normal 0.000000 0.000000 -1.000000
+    outer loop
+      vertex 2.070000 1.250000 0.400000
+      vertex 2.070000 2.450000 0.400000
+      vertex 2.670000 2.450000 0.400000
+    endloop
+  endfacet
+  facet normal 0.000000 0.000000 -1.000000
+    outer loop
+      vertex 2.670000 2.450000 0.400000
+      vertex 2.670000 1.250000 0.400000
+      vertex 2.070000 1.250000 0.400000
+    endloop
+  endfacet
+endsolid R1_Bottom
+
+solid R1_inlet_safe_bottom
+  facet normal 0.000000 -1.000000 0.000000
+    outer loop
+      vertex 2.070000 1.250000 0.452222
+      vertex 2.070000 1.250000 0.400000
+      vertex 2.670000 1.250000 0.400000
+    endloop
+  endfacet
+  facet normal 0.000000 -1.000000 0.000000
+    outer loop
+      vertex 2.670000 1.250000 0.400000
+      vertex 2.670000 1.250000 0.452222
+      vertex 2.070000 1.250000 0.452222
+    endloop
+  endfacet
+endsolid R1_inlet_safe_bottom
+
+solid R1_inlet_safe_top
+  facet normal 0.000000 -1.000000 0.000000
+    outer loop
+      vertex 2.070000 1.250000 2.750000
+      vertex 2.070000 1.250000 2.697778
+      vertex 2.670000 1.250000 2.697778
+    endloop
+  endfacet
+  facet normal 0.000000 -1.000000 0.000000
+    outer loop
+      vertex 2.670000 1.250000 2.697778
+      vertex 2.670000 1.250000 2.750000
+      vertex 2.070000 1.250000 2.750000
+    endloop
+  endfacet
+endsolid R1_inlet_safe_top
+
+solid R1_inlet_frame_left
+  facet normal 0.000000 -1.000000 0.000000
+    outer loop
+      vertex 2.070000 1.250000 2.697778
+      vertex 2.070000 1.250000 0.452222
+      vertex 2.130000 1.250000 0.452222
+    endloop
+  endfacet
+  facet normal 0.000000 -1.000000 0.000000
+    outer loop
+      vertex 2.130000 1.250000 0.452222
+      vertex 2.130000 1.250000 2.697778
+      vertex 2.070000 1.250000 2.697778
+    endloop
+  endfacet
+endsolid R1_inlet_frame_left
+
+solid R1_inlet_frame_right
+  facet normal 0.000000 -1.000000 0.000000
+    outer loop
+      vertex 2.610000 1.250000 2.697778
+      vertex 2.610000 1.250000 0.452222
+      vertex 2.670000 1.250000 0.452222
+    endloop
+  endfacet
+  facet normal 0.000000 -1.000000 0.000000
+    outer loop
+      vertex 2.670000 1.250000 0.452222
+      vertex 2.670000 1.250000 2.697778
+      vertex 2.610000 1.250000 2.697778
+    endloop
+  endfacet
+endsolid R1_inlet_frame_right
+
+solid R1_inlet_u2_u30
+  facet normal 0.000000 -1.000000 0.000000
+    outer loop
+      vertex 2.130000 1.250000 1.966667
+      vertex 2.130000 1.250000 0.452222
+      vertex 2.610000 1.250000 0.452222
+    endloop
+  endfacet
+  facet normal 0.000000 -1.000000 0.000000
+    outer loop
+      vertex 2.610000 1.250000 0.452222
+      vertex 2.610000 1.250000 1.966667
+      vertex 2.130000 1.250000 1.966667
+    endloop
+  endfacet
+endsolid R1_inlet_u2_u30
+
+solid R1_inlet_u35_u44
+  facet normal 0.000000 -1.000000 0.000000
+    outer loop
+      vertex 2.130000 1.250000 2.697778
+      vertex 2.130000 1.250000 2.175556
+      vertex 2.610000 1.250000 2.175556
+    endloop
+  endfacet
+  facet normal 0.000000 -1.000000 0.000000
+    outer loop
+      vertex 2.610000 1.250000 2.175556
+      vertex 2.610000 1.250000 2.697778
+      vertex 2.130000 1.250000 2.697778
+    endloop
+  endfacet
+endsolid R1_inlet_u35_u44
+
+solid R1_outlet_safe_bottom
+  facet normal 0.000000 1.000000 0.000000
+    outer loop
+      vertex 2.670000 2.450000 0.452222
+      vertex 2.670000 2.450000 0.400000
+      vertex 2.070000 2.450000 0.400000
+    endloop
+  endfacet
+  facet normal 0.000000 1.000000 0.000000
+    outer loop
+      vertex 2.070000 2.450000 0.400000
+      vertex 2.070000 2.450000 0.452222
+      vertex 2.670000 2.450000 0.452222
+    endloop
+  endfacet
+endsolid R1_outlet_safe_bottom
+
+solid R1_outlet_safe_top
+  facet normal 0.000000 1.000000 0.000000
+    outer loop
+      vertex 2.670000 2.450000 2.750000
+      vertex 2.670000 2.450000 2.697778
+      vertex 2.070000 2.450000 2.697778
+    endloop
+  endfacet
+  facet normal 0.000000 1.000000 0.000000
+    outer loop
+      vertex 2.070000 2.450000 2.697778
+      vertex 2.070000 2.450000 2.750000
+      vertex 2.670000 2.450000 2.750000
+    endloop
+  endfacet
+endsolid R1_outlet_safe_top
+
+solid R1_outlet_frame_left
+  facet normal 0.000000 1.000000 0.000000
+    outer loop
+      vertex 2.670000 2.450000 2.697778
+      vertex 2.670000 2.450000 0.452222
+      vertex 2.610000 2.450000 0.452222
+    endloop
+  endfacet
+  facet normal 0.000000 1.000000 0.000000
+    outer loop
+      vertex 2.610000 2.450000 0.452222
+      vertex 2.610000 2.450000 2.697778
+      vertex 2.670000 2.450000 2.697778
+    endloop
+  endfacet
+endsolid R1_outlet_frame_left
+
+solid R1_outlet_frame_right
+  facet normal 0.000000 1.000000 0.000000
+    outer loop
+      vertex 2.130000 2.450000 2.697778
+      vertex 2.130000 2.450000 0.452222
+      vertex 2.070000 2.450000 0.452222
+    endloop
+  endfacet
+  facet normal 0.000000 1.000000 0.000000
+    outer loop
+      vertex 2.070000 2.450000 0.452222
+      vertex 2.070000 2.450000 2.697778
+      vertex 2.130000 2.450000 2.697778
+    endloop
+  endfacet
+endsolid R1_outlet_frame_right
+
+solid R1_outlet_u2_u30
+  facet normal 0.000000 1.000000 0.000000
+    outer loop
+      vertex 2.610000 2.450000 1.966667
+      vertex 2.610000 2.450000 0.452222
+      vertex 2.130000 2.450000 0.452222
+    endloop
+  endfacet
+  facet normal 0.000000 1.000000 0.000000
+    outer loop
+      vertex 2.130000 2.450000 0.452222
+      vertex 2.130000 2.450000 1.966667
+      vertex 2.610000 2.450000 1.966667
+    endloop
+  endfacet
+endsolid R1_outlet_u2_u30
+
+solid R1_outlet_u35_u44
+  facet normal 0.000000 1.000000 0.000000
+    outer loop
+      vertex 2.610000 2.450000 2.697778
+      vertex 2.610000 2.450000 2.175556
+      vertex 2.130000 2.450000 2.175556
+    endloop
+  endfacet
+  facet normal 0.000000 1.000000 0.000000
+    outer loop
+      vertex 2.130000 2.450000 2.175556
+      vertex 2.130000 2.450000 2.697778
+      vertex 2.610000 2.450000 2.697778
+    endloop
+  endfacet
+endsolid R1_outlet_u35_u44
+
+solid R1_inner_left
+  facet normal 1.000000 0.000000 0.000000
+    outer loop
+      vertex 2.130000 1.250000 2.697778
+      vertex 2.130000 1.250000 0.452222
+      vertex 2.130000 2.450000 0.452222
+    endloop
+  endfacet
+  facet normal 1.000000 0.000000 0.000000
+    outer loop
+      vertex 2.130000 2.450000 0.452222
+      vertex 2.130000 2.450000 2.697778
+      vertex 2.130000 1.250000 2.697778
+    endloop
+  endfacet
+endsolid R1_inner_left
+
+solid R1_inner_right
+  facet normal -1.000000 0.000000 0.000000
+    outer loop
+      vertex 2.610000 2.450000 0.452222
+      vertex 2.610000 1.250000 0.452222
+      vertex 2.610000 1.250000 2.697778
+    endloop
+  endfacet
+  facet normal -1.000000 0.000000 0.000000
+    outer loop
+      vertex 2.610000 1.250000 2.697778
+      vertex 2.610000 2.450000 2.697778
+      vertex 2.610000 2.450000 0.452222
+    endloop
+  endfacet
+endsolid R1_inner_right
+
+solid R1_R1_30_inlet_patch
+  facet normal 0.000000 -1.000000 0.000000
+    outer loop
+      vertex 2.130000 1.250000 2.175556
+      vertex 2.130000 1.250000 1.966667
+      vertex 2.610000 1.250000 1.966667
+    endloop
+  endfacet
+  facet normal 0.000000 -1.000000 0.000000
+    outer loop
+      vertex 2.610000 1.250000 1.966667
+      vertex 2.610000 1.250000 2.175556
+      vertex 2.130000 1.250000 2.175556
+    endloop
+  endfacet
+endsolid R1_R1_30_inlet_patch
+
+solid R1_R1_30_outlet_patch
+  facet normal 0.000000 1.000000 0.000000
+    outer loop
+      vertex 2.610000 2.450000 2.175556
+      vertex 2.610000 2.450000 1.966667
+      vertex 2.130000 2.450000 1.966667
+    endloop
+  endfacet
+  facet normal 0.000000 1.000000 0.000000
+    outer loop
+      vertex 2.130000 2.450000 1.966667
+      vertex 2.130000 2.450000 2.175556
+      vertex 2.610000 2.450000 2.175556
+    endloop
+  endfacet
+endsolid R1_R1_30_outlet_patch
+
+solid R1_R1_30_bottom
+  facet normal 0.000000 0.000000 1.000000
+    outer loop
+      vertex 2.130000 2.450000 1.966667
+      vertex 2.130000 1.250000 1.966667
+      vertex 2.610000 1.250000 1.966667
+    endloop
+  endfacet
+  facet normal 0.000000 0.000000 1.000000
+    outer loop
+      vertex 2.610000 1.250000 1.966667
+      vertex 2.610000 2.450000 1.966667
+      vertex 2.130000 2.450000 1.966667
+    endloop
+  endfacet
+endsolid R1_R1_30_bottom
+
+solid R1_R1_30_top
+  facet normal 0.000000 0.000000 -1.000000
+    outer loop
+      vertex 2.130000 1.250000 2.175556
+      vertex 2.130000 2.450000 2.175556
+      vertex 2.610000 2.450000 2.175556
+    endloop
+  endfacet
+  facet normal 0.000000 0.000000 -1.000000
+    outer loop
+      vertex 2.610000 2.450000 2.175556
+      vertex 2.610000 1.250000 2.175556
+      vertex 2.130000 1.250000 2.175556
+    endloop
+  endfacet
+endsolid R1_R1_30_top
+
+solid R1_u1_partition
+  facet normal 0.000000 0.000000 1.000000
+    outer loop
+      vertex 2.130000 2.450000 0.452222
+      vertex 2.130000 1.250000 0.452222
+      vertex 2.610000 1.250000 0.452222
+    endloop
+  endfacet
+  facet normal 0.000000 0.000000 1.000000
+    outer loop
+      vertex 2.610000 1.250000 0.452222
+      vertex 2.610000 2.450000 0.452222
+      vertex 2.130000 2.450000 0.452222
+    endloop
+  endfacet
+endsolid R1_u1_partition
+
+solid R1_u44_partition
+  facet normal 0.000000 0.000000 1.000000
+    outer loop
+      vertex 2.130000 2.450000 2.697778
+      vertex 2.130000 1.250000 2.697778
+      vertex 2.610000 1.250000 2.697778
+    endloop
+  endfacet
+  facet normal 0.000000 0.000000 1.000000
+    outer loop
+      vertex 2.610000 1.250000 2.697778
+      vertex 2.610000 2.450000 2.697778
+      vertex 2.130000 2.450000 2.697778
+    endloop
+  endfacet
+endsolid R1_u44_partition
+
+solid R2_Left
+  facet normal -1.000000 0.000000 0.000000
+    outer loop
+      vertex 2.670000 2.450000 2.750000
+      vertex 2.670000 2.450000 0.400000
+      vertex 2.670000 1.250000 0.400000
+    endloop
+  endfacet
+  facet normal -1.000000 0.000000 0.000000
+    outer loop
+      vertex 2.670000 1.250000 0.400000
+      vertex 2.670000 1.250000 2.750000
+      vertex 2.670000 2.450000 2.750000
+    endloop
+  endfacet
+endsolid R2_Left
+
+solid R2_Right
+  facet normal 1.000000 0.000000 0.000000
+    outer loop
+      vertex 3.270000 1.250000 2.750000
+      vertex 3.270000 1.250000 0.400000
+      vertex 3.270000 2.450000 0.400000
+    endloop
+  endfacet
+  facet normal 1.000000 0.000000 0.000000
+    outer loop
+      vertex 3.270000 2.450000 0.400000
+      vertex 3.270000 2.450000 2.750000
+      vertex 3.270000 1.250000 2.750000
+    endloop
+  endfacet
+endsolid R2_Right
+
+solid R2_Top
+  facet normal 0.000000 0.000000 1.000000
+    outer loop
+      vertex 2.670000 2.450000 2.750000
+      vertex 2.670000 1.250000 2.750000
+      vertex 3.270000 1.250000 2.750000
+    endloop
+  endfacet
+  facet normal 0.000000 0.000000 1.000000
+    outer loop
+      vertex 3.270000 1.250000 2.750000
+      vertex 3.270000 2.450000 2.750000
+      vertex 2.670000 2.450000 2.750000
+    endloop
+  endfacet
+endsolid R2_Top
+
+solid R2_Bottom
+  facet normal 0.000000 0.000000 -1.000000
+    outer loop
+      vertex 2.670000 1.250000 0.400000
+      vertex 2.670000 2.450000 0.400000
+      vertex 3.270000 2.450000 0.400000
+    endloop
+  endfacet
+  facet normal 0.000000 0.000000 -1.000000
+    outer loop
+      vertex 3.270000 2.450000 0.400000
+      vertex 3.270000 1.250000 0.400000
+      vertex 2.670000 1.250000 0.400000
+    endloop
+  endfacet
+endsolid R2_Bottom
+
+solid R2_inlet_safe_bottom
+  facet normal 0.000000 -1.000000 0.000000
+    outer loop
+      vertex 2.670000 1.250000 0.452222
+      vertex 2.670000 1.250000 0.400000
+      vertex 3.270000 1.250000 0.400000
+    endloop
+  endfacet
+  facet normal 0.000000 -1.000000 0.000000
+    outer loop
+      vertex 3.270000 1.250000 0.400000
+      vertex 3.270000 1.250000 0.452222
+      vertex 2.670000 1.250000 0.452222
+    endloop
+  endfacet
+endsolid R2_inlet_safe_bottom
+
+solid R2_inlet_safe_top
+  facet normal 0.000000 -1.000000 0.000000
+    outer loop
+      vertex 2.670000 1.250000 2.750000
+      vertex 2.670000 1.250000 2.697778
+      vertex 3.270000 1.250000 2.697778
+    endloop
+  endfacet
+  facet normal 0.000000 -1.000000 0.000000
+    outer loop
+      vertex 3.270000 1.250000 2.697778
+      vertex 3.270000 1.250000 2.750000
+      vertex 2.670000 1.250000 2.750000
+    endloop
+  endfacet
+endsolid R2_inlet_safe_top
+
+solid R2_inlet_frame_left
+  facet normal 0.000000 -1.000000 0.000000
+    outer loop
+      vertex 2.670000 1.250000 2.697778
+      vertex 2.670000 1.250000 0.452222
+      vertex 2.730000 1.250000 0.452222
+    endloop
+  endfacet
+  facet normal 0.000000 -1.000000 0.000000
+    outer loop
+      vertex 2.730000 1.250000 0.452222
+      vertex 2.730000 1.250000 2.697778
+      vertex 2.670000 1.250000 2.697778
+    endloop
+  endfacet
+endsolid R2_inlet_frame_left
+
+solid R2_inlet_frame_right
+  facet normal 0.000000 -1.000000 0.000000
+    outer loop
+      vertex 3.210000 1.250000 2.697778
+      vertex 3.210000 1.250000 0.452222
+      vertex 3.270000 1.250000 0.452222
+    endloop
+  endfacet
+  facet normal 0.000000 -1.000000 0.000000
+    outer loop
+      vertex 3.270000 1.250000 0.452222
+      vertex 3.270000 1.250000 2.697778
+      vertex 3.210000 1.250000 2.697778
+    endloop
+  endfacet
+endsolid R2_inlet_frame_right
+
+solid R2_inlet_u2_u17
+  facet normal 0.000000 -1.000000 0.000000
+    outer loop
+      vertex 2.730000 1.250000 1.287778
+      vertex 2.730000 1.250000 0.452222
+      vertex 3.210000 1.250000 0.452222
+    endloop
+  endfacet
+  facet normal 0.000000 -1.000000 0.000000
+    outer loop
+      vertex 3.210000 1.250000 0.452222
+      vertex 3.210000 1.250000 1.287778
+      vertex 2.730000 1.250000 1.287778
+    endloop
+  endfacet
+endsolid R2_inlet_u2_u17
+
+solid R2_inlet_u24_u44
+  facet normal 0.000000 -1.000000 0.000000
+    outer loop
+      vertex 2.730000 1.250000 2.697778
+      vertex 2.730000 1.250000 1.601111
+      vertex 3.210000 1.250000 1.601111
+    endloop
+  endfacet
+  facet normal 0.000000 -1.000000 0.000000
+    outer loop
+      vertex 3.210000 1.250000 1.601111
+      vertex 3.210000 1.250000 2.697778
+      vertex 2.730000 1.250000 2.697778
+    endloop
+  endfacet
+endsolid R2_inlet_u24_u44
+
+solid R2_outlet_safe_bottom
+  facet normal 0.000000 1.000000 0.000000
+    outer loop
+      vertex 3.270000 2.450000 0.452222
+      vertex 3.270000 2.450000 0.400000
+      vertex 2.670000 2.450000 0.400000
+    endloop
+  endfacet
+  facet normal 0.000000 1.000000 0.000000
+    outer loop
+      vertex 2.670000 2.450000 0.400000
+      vertex 2.670000 2.450000 0.452222
+      vertex 3.270000 2.450000 0.452222
+    endloop
+  endfacet
+endsolid R2_outlet_safe_bottom
+
+solid R2_outlet_safe_top
+  facet normal 0.000000 1.000000 0.000000
+    outer loop
+      vertex 3.270000 2.450000 2.750000
+      vertex 3.270000 2.450000 2.697778
+      vertex 2.670000 2.450000 2.697778
+    endloop
+  endfacet
+  facet normal 0.000000 1.000000 0.000000
+    outer loop
+      vertex 2.670000 2.450000 2.697778
+      vertex 2.670000 2.450000 2.750000
+      vertex 3.270000 2.450000 2.750000
+    endloop
+  endfacet
+endsolid R2_outlet_safe_top
+
+solid R2_outlet_frame_left
+  facet normal 0.000000 1.000000 0.000000
+    outer loop
+      vertex 3.270000 2.450000 2.697778
+      vertex 3.270000 2.450000 0.452222
+      vertex 3.210000 2.450000 0.452222
+    endloop
+  endfacet
+  facet normal 0.000000 1.000000 0.000000
+    outer loop
+      vertex 3.210000 2.450000 0.452222
+      vertex 3.210000 2.450000 2.697778
+      vertex 3.270000 2.450000 2.697778
+    endloop
+  endfacet
+endsolid R2_outlet_frame_left
+
+solid R2_outlet_frame_right
+  facet normal 0.000000 1.000000 0.000000
+    outer loop
+      vertex 2.730000 2.450000 2.697778
+      vertex 2.730000 2.450000 0.452222
+      vertex 2.670000 2.450000 0.452222
+    endloop
+  endfacet
+  facet normal 0.000000 1.000000 0.000000
+    outer loop
+      vertex 2.670000 2.450000 0.452222
+      vertex 2.670000 2.450000 2.697778
+      vertex 2.730000 2.450000 2.697778
+    endloop
+  endfacet
+endsolid R2_outlet_frame_right
+
+solid R2_outlet_u2_u17
+  facet normal 0.000000 1.000000 0.000000
+    outer loop
+      vertex 3.210000 2.450000 1.287778
+      vertex 3.210000 2.450000 0.452222
+      vertex 2.730000 2.450000 0.452222
+    endloop
+  endfacet
+  facet normal 0.000000 1.000000 0.000000
+    outer loop
+      vertex 2.730000 2.450000 0.452222
+      vertex 2.730000 2.450000 1.287778
+      vertex 3.210000 2.450000 1.287778
+    endloop
+  endfacet
+endsolid R2_outlet_u2_u17
+
+solid R2_outlet_u24_u44
+  facet normal 0.000000 1.000000 0.000000
+    outer loop
+      vertex 3.210000 2.450000 2.697778
+      vertex 3.210000 2.450000 1.601111
+      vertex 2.730000 2.450000 1.601111
+    endloop
+  endfacet
+  facet normal 0.000000 1.000000 0.000000
+    outer loop
+      vertex 2.730000 2.450000 1.601111
+      vertex 2.730000 2.450000 2.697778
+      vertex 3.210000 2.450000 2.697778
+    endloop
+  endfacet
+endsolid R2_outlet_u24_u44
+
+solid R2_inner_left
+  facet normal 1.000000 0.000000 0.000000
+    outer loop
+      vertex 2.730000 1.250000 2.697778
+      vertex 2.730000 1.250000 0.452222
+      vertex 2.730000 2.450000 0.452222
+    endloop
+  endfacet
+  facet normal 1.000000 0.000000 0.000000
+    outer loop
+      vertex 2.730000 2.450000 0.452222
+      vertex 2.730000 2.450000 2.697778
+      vertex 2.730000 1.250000 2.697778
+    endloop
+  endfacet
+endsolid R2_inner_left
+
+solid R2_inner_right
+  facet normal -1.000000 0.000000 0.000000
+    outer loop
+      vertex 3.210000 2.450000 0.452222
+      vertex 3.210000 1.250000 0.452222
+      vertex 3.210000 1.250000 2.697778
+    endloop
+  endfacet
+  facet normal -1.000000 0.000000 0.000000
+    outer loop
+      vertex 3.210000 1.250000 2.697778
+      vertex 3.210000 2.450000 2.697778
+      vertex 3.210000 2.450000 0.452222
+    endloop
+  endfacet
+endsolid R2_inner_right
+
+solid R2_fan_server_1_inlet_patch
+  facet normal 0.000000 -1.000000 0.000000
+    outer loop
+      vertex 2.730000 1.250000 1.601111
+      vertex 2.730000 1.250000 1.287778
+      vertex 3.210000 1.250000 1.287778
+    endloop
+  endfacet
+  facet normal 0.000000 -1.000000 0.000000
+    outer loop
+      vertex 3.210000 1.250000 1.287778
+      vertex 3.210000 1.250000 1.601111
+      vertex 2.730000 1.250000 1.601111
+    endloop
+  endfacet
+endsolid R2_fan_server_1_inlet_patch
+
+solid R2_fan_server_1_outlet_patch
+  facet normal 0.000000 1.000000 0.000000
+    outer loop
+      vertex 3.210000 2.450000 1.601111
+      vertex 3.210000 2.450000 1.287778
+      vertex 2.730000 2.450000 1.287778
+    endloop
+  endfacet
+  facet normal 0.000000 1.000000 0.000000
+    outer loop
+      vertex 2.730000 2.450000 1.287778
+      vertex 2.730000 2.450000 1.601111
+      vertex 3.210000 2.450000 1.601111
+    endloop
+  endfacet
+endsolid R2_fan_server_1_outlet_patch
+
+solid R2_fan_server_1_bottom
+  facet normal 0.000000 0.000000 1.000000
+    outer loop
+      vertex 2.730000 2.450000 1.287778
+      vertex 2.730000 1.250000 1.287778
+      vertex 3.210000 1.250000 1.287778
+    endloop
+  endfacet
+  facet normal 0.000000 0.000000 1.000000
+    outer loop
+      vertex 3.210000 1.250000 1.287778
+      vertex 3.210000 2.450000 1.287778
+      vertex 2.730000 2.450000 1.287778
+    endloop
+  endfacet
+endsolid R2_fan_server_1_bottom
+
+solid R2_fan_server_1_top
+  facet normal 0.000000 0.000000 -1.000000
+    outer loop
+      vertex 2.730000 1.250000 1.601111
+      vertex 2.730000 2.450000 1.601111
+      vertex 3.210000 2.450000 1.601111
+    endloop
+  endfacet
+  facet normal 0.000000 0.000000 -1.000000
+    outer loop
+      vertex 3.210000 2.450000 1.601111
+      vertex 3.210000 1.250000 1.601111
+      vertex 2.730000 1.250000 1.601111
+    endloop
+  endfacet
+endsolid R2_fan_server_1_top
+
+solid R2_u1_partition
+  facet normal 0.000000 0.000000 1.000000
+    outer loop
+      vertex 2.730000 2.450000 0.452222
+      vertex 2.730000 1.250000 0.452222
+      vertex 3.210000 1.250000 0.452222
+    endloop
+  endfacet
+  facet normal 0.000000 0.000000 1.000000
+    outer loop
+      vertex 3.210000 1.250000 0.452222
+      vertex 3.210000 2.450000 0.452222
+      vertex 2.730000 2.450000 0.452222
+    endloop
+  endfacet
+endsolid R2_u1_partition
+
+solid R2_u44_partition
+  facet normal 0.000000 0.000000 1.000000
+    outer loop
+      vertex 2.730000 2.450000 2.697778
+      vertex 2.730000 1.250000 2.697778
+      vertex 3.210000 1.250000 2.697778
+    endloop
+  endfacet
+  facet normal 0.000000 0.000000 1.000000
+    outer loop
+      vertex 3.210000 1.250000 2.697778
+      vertex 3.210000 2.450000 2.697778
+      vertex 2.730000 2.450000 2.697778
+    endloop
+  endfacet
+endsolid R2_u44_partition
+
+solid R3_Left
+  facet normal -1.000000 0.000000 0.000000
+    outer loop
+      vertex 3.270000 2.450000 2.750000
+      vertex 3.270000 2.450000 0.400000
+      vertex 3.270000 1.250000 0.400000
+    endloop
+  endfacet
+  facet normal -1.000000 0.000000 0.000000
+    outer loop
+      vertex 3.270000 1.250000 0.400000
+      vertex 3.270000 1.250000 2.750000
+      vertex 3.270000 2.450000 2.750000
+    endloop
+  endfacet
+endsolid R3_Left
+
+solid R3_Right
+  facet normal 1.000000 0.000000 0.000000
+    outer loop
+      vertex 3.870000 1.250000 2.750000
+      vertex 3.870000 1.250000 0.400000
+      vertex 3.870000 2.450000 0.400000
+    endloop
+  endfacet
+  facet normal 1.000000 0.000000 0.000000
+    outer loop
+      vertex 3.870000 2.450000 0.400000
+      vertex 3.870000 2.450000 2.750000
+      vertex 3.870000 1.250000 2.750000
+    endloop
+  endfacet
+endsolid R3_Right
+
+solid R3_Top
+  facet normal 0.000000 0.000000 1.000000
+    outer loop
+      vertex 3.270000 2.450000 2.750000
+      vertex 3.270000 1.250000 2.750000
+      vertex 3.870000 1.250000 2.750000
+    endloop
+  endfacet
+  facet normal 0.000000 0.000000 1.000000
+    outer loop
+      vertex 3.870000 1.250000 2.750000
+      vertex 3.870000 2.450000 2.750000
+      vertex 3.270000 2.450000 2.750000
+    endloop
+  endfacet
+endsolid R3_Top
+
+solid R3_Bottom
+  facet normal 0.000000 0.000000 -1.000000
+    outer loop
+      vertex 3.270000 1.250000 0.400000
+      vertex 3.270000 2.450000 0.400000
+      vertex 3.870000 2.450000 0.400000
+    endloop
+  endfacet
+  facet normal 0.000000 0.000000 -1.000000
+    outer loop
+      vertex 3.870000 2.450000 0.400000
+      vertex 3.870000 1.250000 0.400000
+      vertex 3.270000 1.250000 0.400000
+    endloop
+  endfacet
+endsolid R3_Bottom
+
+solid R3_inlet_safe_bottom
+  facet normal 0.000000 -1.000000 0.000000
+    outer loop
+      vertex 3.270000 1.250000 0.452222
+      vertex 3.270000 1.250000 0.400000
+      vertex 3.870000 1.250000 0.400000
+    endloop
+  endfacet
+  facet normal 0.000000 -1.000000 0.000000
+    outer loop
+      vertex 3.870000 1.250000 0.400000
+      vertex 3.870000 1.250000 0.452222
+      vertex 3.270000 1.250000 0.452222
+    endloop
+  endfacet
+endsolid R3_inlet_safe_bottom
+
+solid R3_inlet_safe_top
+  facet normal 0.000000 -1.000000 0.000000
+    outer loop
+      vertex 3.270000 1.250000 2.750000
+      vertex 3.270000 1.250000 2.697778
+      vertex 3.870000 1.250000 2.697778
+    endloop
+  endfacet
+  facet normal 0.000000 -1.000000 0.000000
+    outer loop
+      vertex 3.870000 1.250000 2.697778
+      vertex 3.870000 1.250000 2.750000
+      vertex 3.270000 1.250000 2.750000
+    endloop
+  endfacet
+endsolid R3_inlet_safe_top
+
+solid R3_inlet_frame_left
+  facet normal 0.000000 -1.000000 0.000000
+    outer loop
+      vertex 3.270000 1.250000 2.697778
+      vertex 3.270000 1.250000 0.452222
+      vertex 3.330000 1.250000 0.452222
+    endloop
+  endfacet
+  facet normal 0.000000 -1.000000 0.000000
+    outer loop
+      vertex 3.330000 1.250000 0.452222
+      vertex 3.330000 1.250000 2.697778
+      vertex 3.270000 1.250000 2.697778
+    endloop
+  endfacet
+endsolid R3_inlet_frame_left
+
+solid R3_inlet_frame_right
+  facet normal 0.000000 -1.000000 0.000000
+    outer loop
+      vertex 3.810000 1.250000 2.697778
+      vertex 3.810000 1.250000 0.452222
+      vertex 3.870000 1.250000 0.452222
+    endloop
+  endfacet
+  facet normal 0.000000 -1.000000 0.000000
+    outer loop
+      vertex 3.870000 1.250000 0.452222
+      vertex 3.870000 1.250000 2.697778
+      vertex 3.810000 1.250000 2.697778
+    endloop
+  endfacet
+endsolid R3_inlet_frame_right
+
+solid R3_inlet_u2_u31
+  facet normal 0.000000 -1.000000 0.000000
+    outer loop
+      vertex 3.330000 1.250000 2.018889
+      vertex 3.330000 1.250000 0.452222
+      vertex 3.810000 1.250000 0.452222
+    endloop
+  endfacet
+  facet normal 0.000000 -1.000000 0.000000
+    outer loop
+      vertex 3.810000 1.250000 0.452222
+      vertex 3.810000 1.250000 2.018889
+      vertex 3.330000 1.250000 2.018889
+    endloop
+  endfacet
+endsolid R3_inlet_u2_u31
+
+solid R3_inlet_u36_u44
+  facet normal 0.000000 -1.000000 0.000000
+    outer loop
+      vertex 3.330000 1.250000 2.697778
+      vertex 3.330000 1.250000 2.227778
+      vertex 3.810000 1.250000 2.227778
+    endloop
+  endfacet
+  facet normal 0.000000 -1.000000 0.000000
+    outer loop
+      vertex 3.810000 1.250000 2.227778
+      vertex 3.810000 1.250000 2.697778
+      vertex 3.330000 1.250000 2.697778
+    endloop
+  endfacet
+endsolid R3_inlet_u36_u44
+
+solid R3_outlet_safe_bottom
+  facet normal 0.000000 1.000000 0.000000
+    outer loop
+      vertex 3.870000 2.450000 0.452222
+      vertex 3.870000 2.450000 0.400000
+      vertex 3.270000 2.450000 0.400000
+    endloop
+  endfacet
+  facet normal 0.000000 1.000000 0.000000
+    outer loop
+      vertex 3.270000 2.450000 0.400000
+      vertex 3.270000 2.450000 0.452222
+      vertex 3.870000 2.450000 0.452222
+    endloop
+  endfacet
+endsolid R3_outlet_safe_bottom
+
+solid R3_outlet_safe_top
+  facet normal 0.000000 1.000000 0.000000
+    outer loop
+      vertex 3.870000 2.450000 2.750000
+      vertex 3.870000 2.450000 2.697778
+      vertex 3.270000 2.450000 2.697778
+    endloop
+  endfacet
+  facet normal 0.000000 1.000000 0.000000
+    outer loop
+      vertex 3.270000 2.450000 2.697778
+      vertex 3.270000 2.450000 2.750000
+      vertex 3.870000 2.450000 2.750000
+    endloop
+  endfacet
+endsolid R3_outlet_safe_top
+
+solid R3_outlet_frame_left
+  facet normal 0.000000 1.000000 0.000000
+    outer loop
+      vertex 3.870000 2.450000 2.697778
+      vertex 3.870000 2.450000 0.452222
+      vertex 3.810000 2.450000 0.452222
+    endloop
+  endfacet
+  facet normal 0.000000 1.000000 0.000000
+    outer loop
+      vertex 3.810000 2.450000 0.452222
+      vertex 3.810000 2.450000 2.697778
+      vertex 3.870000 2.450000 2.697778
+    endloop
+  endfacet
+endsolid R3_outlet_frame_left
+
+solid R3_outlet_frame_right
+  facet normal 0.000000 1.000000 0.000000
+    outer loop
+      vertex 3.330000 2.450000 2.697778
+      vertex 3.330000 2.450000 0.452222
+      vertex 3.270000 2.450000 0.452222
+    endloop
+  endfacet
+  facet normal 0.000000 1.000000 0.000000
+    outer loop
+      vertex 3.270000 2.450000 0.452222
+      vertex 3.270000 2.450000 2.697778
+      vertex 3.330000 2.450000 2.697778
+    endloop
+  endfacet
+endsolid R3_outlet_frame_right
+
+solid R3_outlet_u2_u31
+  facet normal 0.000000 1.000000 0.000000
+    outer loop
+      vertex 3.810000 2.450000 2.018889
+      vertex 3.810000 2.450000 0.452222
+      vertex 3.330000 2.450000 0.452222
+    endloop
+  endfacet
+  facet normal 0.000000 1.000000 0.000000
+    outer loop
+      vertex 3.330000 2.450000 0.452222
+      vertex 3.330000 2.450000 2.018889
+      vertex 3.810000 2.450000 2.018889
+    endloop
+  endfacet
+endsolid R3_outlet_u2_u31
+
+solid R3_outlet_u36_u44
+  facet normal 0.000000 1.000000 0.000000
+    outer loop
+      vertex 3.810000 2.450000 2.697778
+      vertex 3.810000 2.450000 2.227778
+      vertex 3.330000 2.450000 2.227778
+    endloop
+  endfacet
+  facet normal 0.000000 1.000000 0.000000
+    outer loop
+      vertex 3.330000 2.450000 2.227778
+      vertex 3.330000 2.450000 2.697778
+      vertex 3.810000 2.450000 2.697778
+    endloop
+  endfacet
+endsolid R3_outlet_u36_u44
+
+solid R3_inner_left
+  facet normal 1.000000 0.000000 0.000000
+    outer loop
+      vertex 3.330000 1.250000 2.697778
+      vertex 3.330000 1.250000 0.452222
+      vertex 3.330000 2.450000 0.452222
+    endloop
+  endfacet
+  facet normal 1.000000 0.000000 0.000000
+    outer loop
+      vertex 3.330000 2.450000 0.452222
+      vertex 3.330000 2.450000 2.697778
+      vertex 3.330000 1.250000 2.697778
+    endloop
+  endfacet
+endsolid R3_inner_left
+
+solid R3_inner_right
+  facet normal -1.000000 0.000000 0.000000
+    outer loop
+      vertex 3.810000 2.450000 0.452222
+      vertex 3.810000 1.250000 0.452222
+      vertex 3.810000 1.250000 2.697778
+    endloop
+  endfacet
+  facet normal -1.000000 0.000000 0.000000
+    outer loop
+      vertex 3.810000 1.250000 2.697778
+      vertex 3.810000 2.450000 2.697778
+      vertex 3.810000 2.450000 0.452222
+    endloop
+  endfacet
+endsolid R3_inner_right
+
+solid R3_fan_server_1_inlet_patch
+  facet normal 0.000000 -1.000000 0.000000
+    outer loop
+      vertex 3.330000 1.250000 2.227778
+      vertex 3.330000 1.250000 2.018889
+      vertex 3.810000 1.250000 2.018889
+    endloop
+  endfacet
+  facet normal 0.000000 -1.000000 0.000000
+    outer loop
+      vertex 3.810000 1.250000 2.018889
+      vertex 3.810000 1.250000 2.227778
+      vertex 3.330000 1.250000 2.227778
+    endloop
+  endfacet
+endsolid R3_fan_server_1_inlet_patch
+
+solid R3_fan_server_1_outlet_patch
+  facet normal 0.000000 1.000000 0.000000
+    outer loop
+      vertex 3.810000 2.450000 2.227778
+      vertex 3.810000 2.450000 2.018889
+      vertex 3.330000 2.450000 2.018889
+    endloop
+  endfacet
+  facet normal 0.000000 1.000000 0.000000
+    outer loop
+      vertex 3.330000 2.450000 2.018889
+      vertex 3.330000 2.450000 2.227778
+      vertex 3.810000 2.450000 2.227778
+    endloop
+  endfacet
+endsolid R3_fan_server_1_outlet_patch
+
+solid R3_fan_server_1_bottom
+  facet normal 0.000000 0.000000 1.000000
+    outer loop
+      vertex 3.330000 2.450000 2.018889
+      vertex 3.330000 1.250000 2.018889
+      vertex 3.810000 1.250000 2.018889
+    endloop
+  endfacet
+  facet normal 0.000000 0.000000 1.000000
+    outer loop
+      vertex 3.810000 1.250000 2.018889
+      vertex 3.810000 2.450000 2.018889
+      vertex 3.330000 2.450000 2.018889
+    endloop
+  endfacet
+endsolid R3_fan_server_1_bottom
+
+solid R3_fan_server_1_top
+  facet normal 0.000000 0.000000 -1.000000
+    outer loop
+      vertex 3.330000 1.250000 2.227778
+      vertex 3.330000 2.450000 2.227778
+      vertex 3.810000 2.450000 2.227778
+    endloop
+  endfacet
+  facet normal 0.000000 0.000000 -1.000000
+    outer loop
+      vertex 3.810000 2.450000 2.227778
+      vertex 3.810000 1.250000 2.227778
+      vertex 3.330000 1.250000 2.227778
+    endloop
+  endfacet
+endsolid R3_fan_server_1_top
+
+solid R3_u1_partition
+  facet normal 0.000000 0.000000 1.000000
+    outer loop
+      vertex 3.330000 2.450000 0.452222
+      vertex 3.330000 1.250000 0.452222
+      vertex 3.810000 1.250000 0.452222
+    endloop
+  endfacet
+  facet normal 0.000000 0.000000 1.000000
+    outer loop
+      vertex 3.810000 1.250000 0.452222
+      vertex 3.810000 2.450000 0.452222
+      vertex 3.330000 2.450000 0.452222
+    endloop
+  endfacet
+endsolid R3_u1_partition
+
+solid R3_u44_partition
+  facet normal 0.000000 0.000000 1.000000
+    outer loop
+      vertex 3.330000 2.450000 2.697778
+      vertex 3.330000 1.250000 2.697778
+      vertex 3.810000 1.250000 2.697778
+    endloop
+  endfacet
+  facet normal 0.000000 0.000000 1.000000
+    outer loop
+      vertex 3.810000 1.250000 2.697778
+      vertex 3.810000 2.450000 2.697778
+      vertex 3.330000 2.450000 2.697778
+    endloop
+  endfacet
+endsolid R3_u44_partition
+
+solid R4_Left
+  facet normal -1.000000 0.000000 0.000000
+    outer loop
+      vertex 3.870000 2.450000 2.750000
+      vertex 3.870000 2.450000 0.400000
+      vertex 3.870000 1.250000 0.400000
+    endloop
+  endfacet
+  facet normal -1.000000 0.000000 0.000000
+    outer loop
+      vertex 3.870000 1.250000 0.400000
+      vertex 3.870000 1.250000 2.750000
+      vertex 3.870000 2.450000 2.750000
+    endloop
+  endfacet
+endsolid R4_Left
+
+solid R4_Right
+  facet normal 1.000000 0.000000 0.000000
+    outer loop
+      vertex 4.470000 1.250000 2.750000
+      vertex 4.470000 1.250000 0.400000
+      vertex 4.470000 2.450000 0.400000
+    endloop
+  endfacet
+  facet normal 1.000000 0.000000 0.000000
+    outer loop
+      vertex 4.470000 2.450000 0.400000
+      vertex 4.470000 2.450000 2.750000
+      vertex 4.470000 1.250000 2.750000
+    endloop
+  endfacet
+endsolid R4_Right
+
+solid R4_Top
+  facet normal 0.000000 0.000000 1.000000
+    outer loop
+      vertex 3.870000 2.450000 2.750000
+      vertex 3.870000 1.250000 2.750000
+      vertex 4.470000 1.250000 2.750000
+    endloop
+  endfacet
+  facet normal 0.000000 0.000000 1.000000
+    outer loop
+      vertex 4.470000 1.250000 2.750000
+      vertex 4.470000 2.450000 2.750000
+      vertex 3.870000 2.450000 2.750000
+    endloop
+  endfacet
+endsolid R4_Top
+
+solid R4_Bottom
+  facet normal 0.000000 0.000000 -1.000000
+    outer loop
+      vertex 3.870000 1.250000 0.400000
+      vertex 3.870000 2.450000 0.400000
+      vertex 4.470000 2.450000 0.400000
+    endloop
+  endfacet
+  facet normal 0.000000 0.000000 -1.000000
+    outer loop
+      vertex 4.470000 2.450000 0.400000
+      vertex 4.470000 1.250000 0.400000
+      vertex 3.870000 1.250000 0.400000
+    endloop
+  endfacet
+endsolid R4_Bottom
+
+solid R4_inlet_safe_bottom
+  facet normal 0.000000 -1.000000 0.000000
+    outer loop
+      vertex 3.870000 1.250000 0.452222
+      vertex 3.870000 1.250000 0.400000
+      vertex 4.470000 1.250000 0.400000
+    endloop
+  endfacet
+  facet normal 0.000000 -1.000000 0.000000
+    outer loop
+      vertex 4.470000 1.250000 0.400000
+      vertex 4.470000 1.250000 0.452222
+      vertex 3.870000 1.250000 0.452222
+    endloop
+  endfacet
+endsolid R4_inlet_safe_bottom
+
+solid R4_inlet_safe_top
+  facet normal 0.000000 -1.000000 0.000000
+    outer loop
+      vertex 3.870000 1.250000 2.750000
+      vertex 3.870000 1.250000 2.697778
+      vertex 4.470000 1.250000 2.697778
+    endloop
+  endfacet
+  facet normal 0.000000 -1.000000 0.000000
+    outer loop
+      vertex 4.470000 1.250000 2.697778
+      vertex 4.470000 1.250000 2.750000
+      vertex 3.870000 1.250000 2.750000
+    endloop
+  endfacet
+endsolid R4_inlet_safe_top
+
+solid R4_inlet_frame_left
+  facet normal 0.000000 -1.000000 0.000000
+    outer loop
+      vertex 3.870000 1.250000 2.697778
+      vertex 3.870000 1.250000 0.452222
+      vertex 3.930000 1.250000 0.452222
+    endloop
+  endfacet
+  facet normal 0.000000 -1.000000 0.000000
+    outer loop
+      vertex 3.930000 1.250000 0.452222
+      vertex 3.930000 1.250000 2.697778
+      vertex 3.870000 1.250000 2.697778
+    endloop
+  endfacet
+endsolid R4_inlet_frame_left
+
+solid R4_inlet_frame_right
+  facet normal 0.000000 -1.000000 0.000000
+    outer loop
+      vertex 4.410000 1.250000 2.697778
+      vertex 4.410000 1.250000 0.452222
+      vertex 4.470000 1.250000 0.452222
+    endloop
+  endfacet
+  facet normal 0.000000 -1.000000 0.000000
+    outer loop
+      vertex 4.470000 1.250000 0.452222
+      vertex 4.470000 1.250000 2.697778
+      vertex 4.410000 1.250000 2.697778
+    endloop
+  endfacet
+endsolid R4_inlet_frame_right
+
+solid R4_inlet_u2_u44
+  facet normal 0.000000 -1.000000 0.000000
+    outer loop
+      vertex 3.930000 1.250000 2.697778
+      vertex 3.930000 1.250000 0.452222
+      vertex 4.410000 1.250000 0.452222
+    endloop
+  endfacet
+  facet normal 0.000000 -1.000000 0.000000
+    outer loop
+      vertex 4.410000 1.250000 0.452222
+      vertex 4.410000 1.250000 2.697778
+      vertex 3.930000 1.250000 2.697778
+    endloop
+  endfacet
+endsolid R4_inlet_u2_u44
+
+solid R4_outlet_safe_bottom
+  facet normal 0.000000 1.000000 0.000000
+    outer loop
+      vertex 4.470000 2.450000 0.452222
+      vertex 4.470000 2.450000 0.400000
+      vertex 3.870000 2.450000 0.400000
+    endloop
+  endfacet
+  facet normal 0.000000 1.000000 0.000000
+    outer loop
+      vertex 3.870000 2.450000 0.400000
+      vertex 3.870000 2.450000 0.452222
+      vertex 4.470000 2.450000 0.452222
+    endloop
+  endfacet
+endsolid R4_outlet_safe_bottom
+
+solid R4_outlet_safe_top
+  facet normal 0.000000 1.000000 0.000000
+    outer loop
+      vertex 4.470000 2.450000 2.750000
+      vertex 4.470000 2.450000 2.697778
+      vertex 3.870000 2.450000 2.697778
+    endloop
+  endfacet
+  facet normal 0.000000 1.000000 0.000000
+    outer loop
+      vertex 3.870000 2.450000 2.697778
+      vertex 3.870000 2.450000 2.750000
+      vertex 4.470000 2.450000 2.750000
+    endloop
+  endfacet
+endsolid R4_outlet_safe_top
+
+solid R4_outlet_frame_left
+  facet normal 0.000000 1.000000 0.000000
+    outer loop
+      vertex 4.470000 2.450000 2.697778
+      vertex 4.470000 2.450000 0.452222
+      vertex 4.410000 2.450000 0.452222
+    endloop
+  endfacet
+  facet normal 0.000000 1.000000 0.000000
+    outer loop
+      vertex 4.410000 2.450000 0.452222
+      vertex 4.410000 2.450000 2.697778
+      vertex 4.470000 2.450000 2.697778
+    endloop
+  endfacet
+endsolid R4_outlet_frame_left
+
+solid R4_outlet_frame_right
+  facet normal 0.000000 1.000000 0.000000
+    outer loop
+      vertex 3.930000 2.450000 2.697778
+      vertex 3.930000 2.450000 0.452222
+      vertex 3.870000 2.450000 0.452222
+    endloop
+  endfacet
+  facet normal 0.000000 1.000000 0.000000
+    outer loop
+      vertex 3.870000 2.450000 0.452222
+      vertex 3.870000 2.450000 2.697778
+      vertex 3.930000 2.450000 2.697778
+    endloop
+  endfacet
+endsolid R4_outlet_frame_right
+
+solid R4_outlet_u2_u44
+  facet normal 0.000000 1.000000 0.000000
+    outer loop
+      vertex 4.410000 2.450000 2.697778
+      vertex 4.410000 2.450000 0.452222
+      vertex 3.930000 2.450000 0.452222
+    endloop
+  endfacet
+  facet normal 0.000000 1.000000 0.000000
+    outer loop
+      vertex 3.930000 2.450000 0.452222
+      vertex 3.930000 2.450000 2.697778
+      vertex 4.410000 2.450000 2.697778
+    endloop
+  endfacet
+endsolid R4_outlet_u2_u44
+
+solid R4_inner_left
+  facet normal 1.000000 0.000000 0.000000
+    outer loop
+      vertex 3.930000 1.250000 2.697778
+      vertex 3.930000 1.250000 0.452222
+      vertex 3.930000 2.450000 0.452222
+    endloop
+  endfacet
+  facet normal 1.000000 0.000000 0.000000
+    outer loop
+      vertex 3.930000 2.450000 0.452222
+      vertex 3.930000 2.450000 2.697778
+      vertex 3.930000 1.250000 2.697778
+    endloop
+  endfacet
+endsolid R4_inner_left
+
+solid R4_inner_right
+  facet normal -1.000000 0.000000 0.000000
+    outer loop
+      vertex 4.410000 2.450000 0.452222
+      vertex 4.410000 1.250000 0.452222
+      vertex 4.410000 1.250000 2.697778
+    endloop
+  endfacet
+  facet normal -1.000000 0.000000 0.000000
+    outer loop
+      vertex 4.410000 1.250000 2.697778
+      vertex 4.410000 2.450000 2.697778
+      vertex 4.410000 2.450000 0.452222
+    endloop
+  endfacet
+endsolid R4_inner_right
+
+solid R4_u1_partition
+  facet normal 0.000000 0.000000 1.000000
+    outer loop
+      vertex 3.930000 2.450000 0.452222
+      vertex 3.930000 1.250000 0.452222
+      vertex 4.410000 1.250000 0.452222
+    endloop
+  endfacet
+  facet normal 0.000000 0.000000 1.000000
+    outer loop
+      vertex 4.410000 1.250000 0.452222
+      vertex 4.410000 2.450000 0.452222
+      vertex 3.930000 2.450000 0.452222
+    endloop
+  endfacet
+endsolid R4_u1_partition
+
+solid R4_u44_partition
+  facet normal 0.000000 0.000000 1.000000
+    outer loop
+      vertex 3.930000 2.450000 2.697778
+      vertex 3.930000 1.250000 2.697778
+      vertex 4.410000 1.250000 2.697778
+    endloop
+  endfacet
+  facet normal 0.000000 0.000000 1.000000
+    outer loop
+      vertex 4.410000 1.250000 2.697778
+      vertex 4.410000 2.450000 2.697778
+      vertex 3.930000 2.450000 2.697778
+    endloop
+  endfacet
+endsolid R4_u44_partition
+
+solid R5_Left
+  facet normal -1.000000 0.000000 0.000000
+    outer loop
+      vertex 5.800000 2.450000 2.750000
+      vertex 5.800000 2.450000 0.400000
+      vertex 5.800000 1.250000 0.400000
+    endloop
+  endfacet
+  facet normal -1.000000 0.000000 0.000000
+    outer loop
+      vertex 5.800000 1.250000 0.400000
+      vertex 5.800000 1.250000 2.750000
+      vertex 5.800000 2.450000 2.750000
+    endloop
+  endfacet
+endsolid R5_Left
+
+solid R5_Right
+  facet normal 1.000000 0.000000 0.000000
+    outer loop
+      vertex 6.400000 1.250000 2.750000
+      vertex 6.400000 1.250000 0.400000
+      vertex 6.400000 2.450000 0.400000
+    endloop
+  endfacet
+  facet normal 1.000000 0.000000 0.000000
+    outer loop
+      vertex 6.400000 2.450000 0.400000
+      vertex 6.400000 2.450000 2.750000
+      vertex 6.400000 1.250000 2.750000
+    endloop
+  endfacet
+endsolid R5_Right
+
+solid R5_Top
+  facet normal 0.000000 0.000000 1.000000
+    outer loop
+      vertex 5.800000 2.450000 2.750000
+      vertex 5.800000 1.250000 2.750000
+      vertex 6.400000 1.250000 2.750000
+    endloop
+  endfacet
+  facet normal 0.000000 0.000000 1.000000
+    outer loop
+      vertex 6.400000 1.250000 2.750000
+      vertex 6.400000 2.450000 2.750000
+      vertex 5.800000 2.450000 2.750000
+    endloop
+  endfacet
+endsolid R5_Top
+
+solid R5_Bottom
+  facet normal 0.000000 0.000000 -1.000000
+    outer loop
+      vertex 5.800000 1.250000 0.400000
+      vertex 5.800000 2.450000 0.400000
+      vertex 6.400000 2.450000 0.400000
+    endloop
+  endfacet
+  facet normal 0.000000 0.000000 -1.000000
+    outer loop
+      vertex 6.400000 2.450000 0.400000
+      vertex 6.400000 1.250000 0.400000
+      vertex 5.800000 1.250000 0.400000
+    endloop
+  endfacet
+endsolid R5_Bottom
+
+solid R5_inlet_safe_bottom
+  facet normal 0.000000 -1.000000 0.000000
+    outer loop
+      vertex 5.800000 1.250000 0.452222
+      vertex 5.800000 1.250000 0.400000
+      vertex 6.400000 1.250000 0.400000
+    endloop
+  endfacet
+  facet normal 0.000000 -1.000000 0.000000
+    outer loop
+      vertex 6.400000 1.250000 0.400000
+      vertex 6.400000 1.250000 0.452222
+      vertex 5.800000 1.250000 0.452222
+    endloop
+  endfacet
+endsolid R5_inlet_safe_bottom
+
+solid R5_inlet_safe_top
+  facet normal 0.000000 -1.000000 0.000000
+    outer loop
+      vertex 5.800000 1.250000 2.750000
+      vertex 5.800000 1.250000 2.697778
+      vertex 6.400000 1.250000 2.697778
+    endloop
+  endfacet
+  facet normal 0.000000 -1.000000 0.000000
+    outer loop
+      vertex 6.400000 1.250000 2.697778
+      vertex 6.400000 1.250000 2.750000
+      vertex 5.800000 1.250000 2.750000
+    endloop
+  endfacet
+endsolid R5_inlet_safe_top
+
+solid R5_inlet_frame_left
+  facet normal 0.000000 -1.000000 0.000000
+    outer loop
+      vertex 5.800000 1.250000 2.697778
+      vertex 5.800000 1.250000 0.452222
+      vertex 5.860000 1.250000 0.452222
+    endloop
+  endfacet
+  facet normal 0.000000 -1.000000 0.000000
+    outer loop
+      vertex 5.860000 1.250000 0.452222
+      vertex 5.860000 1.250000 2.697778
+      vertex 5.800000 1.250000 2.697778
+    endloop
+  endfacet
+endsolid R5_inlet_frame_left
+
+solid R5_inlet_frame_right
+  facet normal 0.000000 -1.000000 0.000000
+    outer loop
+      vertex 6.340000 1.250000 2.697778
+      vertex 6.340000 1.250000 0.452222
+      vertex 6.400000 1.250000 0.452222
+    endloop
+  endfacet
+  facet normal 0.000000 -1.000000 0.000000
+    outer loop
+      vertex 6.400000 1.250000 0.452222
+      vertex 6.400000 1.250000 2.697778
+      vertex 6.340000 1.250000 2.697778
+    endloop
+  endfacet
+endsolid R5_inlet_frame_right
+
+solid R5_inlet_u2_u31
+  facet normal 0.000000 -1.000000 0.000000
+    outer loop
+      vertex 5.860000 1.250000 2.018889
+      vertex 5.860000 1.250000 0.452222
+      vertex 6.340000 1.250000 0.452222
+    endloop
+  endfacet
+  facet normal 0.000000 -1.000000 0.000000
+    outer loop
+      vertex 6.340000 1.250000 0.452222
+      vertex 6.340000 1.250000 2.018889
+      vertex 5.860000 1.250000 2.018889
+    endloop
+  endfacet
+endsolid R5_inlet_u2_u31
+
+solid R5_inlet_u39_u44
+  facet normal 0.000000 -1.000000 0.000000
+    outer loop
+      vertex 5.860000 1.250000 2.697778
+      vertex 5.860000 1.250000 2.384444
+      vertex 6.340000 1.250000 2.384444
+    endloop
+  endfacet
+  facet normal 0.000000 -1.000000 0.000000
+    outer loop
+      vertex 6.340000 1.250000 2.384444
+      vertex 6.340000 1.250000 2.697778
+      vertex 5.860000 1.250000 2.697778
+    endloop
+  endfacet
+endsolid R5_inlet_u39_u44
+
+solid R5_outlet_safe_bottom
+  facet normal 0.000000 1.000000 0.000000
+    outer loop
+      vertex 6.400000 2.450000 0.452222
+      vertex 6.400000 2.450000 0.400000
+      vertex 5.800000 2.450000 0.400000
+    endloop
+  endfacet
+  facet normal 0.000000 1.000000 0.000000
+    outer loop
+      vertex 5.800000 2.450000 0.400000
+      vertex 5.800000 2.450000 0.452222
+      vertex 6.400000 2.450000 0.452222
+    endloop
+  endfacet
+endsolid R5_outlet_safe_bottom
+
+solid R5_outlet_safe_top
+  facet normal 0.000000 1.000000 0.000000
+    outer loop
+      vertex 6.400000 2.450000 2.750000
+      vertex 6.400000 2.450000 2.697778
+      vertex 5.800000 2.450000 2.697778
+    endloop
+  endfacet
+  facet normal 0.000000 1.000000 0.000000
+    outer loop
+      vertex 5.800000 2.450000 2.697778
+      vertex 5.800000 2.450000 2.750000
+      vertex 6.400000 2.450000 2.750000
+    endloop
+  endfacet
+endsolid R5_outlet_safe_top
+
+solid R5_outlet_frame_left
+  facet normal 0.000000 1.000000 0.000000
+    outer loop
+      vertex 6.400000 2.450000 2.697778
+      vertex 6.400000 2.450000 0.452222
+      vertex 6.340000 2.450000 0.452222
+    endloop
+  endfacet
+  facet normal 0.000000 1.000000 0.000000
+    outer loop
+      vertex 6.340000 2.450000 0.452222
+      vertex 6.340000 2.450000 2.697778
+      vertex 6.400000 2.450000 2.697778
+    endloop
+  endfacet
+endsolid R5_outlet_frame_left
+
+solid R5_outlet_frame_right
+  facet normal 0.000000 1.000000 0.000000
+    outer loop
+      vertex 5.860000 2.450000 2.697778
+      vertex 5.860000 2.450000 0.452222
+      vertex 5.800000 2.450000 0.452222
+    endloop
+  endfacet
+  facet normal 0.000000 1.000000 0.000000
+    outer loop
+      vertex 5.800000 2.450000 0.452222
+      vertex 5.800000 2.450000 2.697778
+      vertex 5.860000 2.450000 2.697778
+    endloop
+  endfacet
+endsolid R5_outlet_frame_right
+
+solid R5_outlet_u2_u31
+  facet normal 0.000000 1.000000 0.000000
+    outer loop
+      vertex 6.340000 2.450000 2.018889
+      vertex 6.340000 2.450000 0.452222
+      vertex 5.860000 2.450000 0.452222
+    endloop
+  endfacet
+  facet normal 0.000000 1.000000 0.000000
+    outer loop
+      vertex 5.860000 2.450000 0.452222
+      vertex 5.860000 2.450000 2.018889
+      vertex 6.340000 2.450000 2.018889
+    endloop
+  endfacet
+endsolid R5_outlet_u2_u31
+
+solid R5_outlet_u39_u44
+  facet normal 0.000000 1.000000 0.000000
+    outer loop
+      vertex 6.340000 2.450000 2.697778
+      vertex 6.340000 2.450000 2.384444
+      vertex 5.860000 2.450000 2.384444
+    endloop
+  endfacet
+  facet normal 0.000000 1.000000 0.000000
+    outer loop
+      vertex 5.860000 2.450000 2.384444
+      vertex 5.860000 2.450000 2.697778
+      vertex 6.340000 2.450000 2.697778
+    endloop
+  endfacet
+endsolid R5_outlet_u39_u44
+
+solid R5_inner_left
+  facet normal 1.000000 0.000000 0.000000
+    outer loop
+      vertex 5.860000 1.250000 2.697778
+      vertex 5.860000 1.250000 0.452222
+      vertex 5.860000 2.450000 0.452222
+    endloop
+  endfacet
+  facet normal 1.000000 0.000000 0.000000
+    outer loop
+      vertex 5.860000 2.450000 0.452222
+      vertex 5.860000 2.450000 2.697778
+      vertex 5.860000 1.250000 2.697778
+    endloop
+  endfacet
+endsolid R5_inner_left
+
+solid R5_inner_right
+  facet normal -1.000000 0.000000 0.000000
+    outer loop
+      vertex 6.340000 2.450000 0.452222
+      vertex 6.340000 1.250000 0.452222
+      vertex 6.340000 1.250000 2.697778
+    endloop
+  endfacet
+  facet normal -1.000000 0.000000 0.000000
+    outer loop
+      vertex 6.340000 1.250000 2.697778
+      vertex 6.340000 2.450000 2.697778
+      vertex 6.340000 2.450000 0.452222
+    endloop
+  endfacet
+endsolid R5_inner_right
+
+solid R5_fan_server_1_inlet_patch
+  facet normal 0.000000 -1.000000 0.000000
+    outer loop
+      vertex 5.860000 1.250000 2.384444
+      vertex 5.860000 1.250000 2.018889
+      vertex 6.340000 1.250000 2.018889
+    endloop
+  endfacet
+  facet normal 0.000000 -1.000000 0.000000
+    outer loop
+      vertex 6.340000 1.250000 2.018889
+      vertex 6.340000 1.250000 2.384444
+      vertex 5.860000 1.250000 2.384444
+    endloop
+  endfacet
+endsolid R5_fan_server_1_inlet_patch
+
+solid R5_fan_server_1_outlet_patch
+  facet normal 0.000000 1.000000 0.000000
+    outer loop
+      vertex 6.340000 2.450000 2.384444
+      vertex 6.340000 2.450000 2.018889
+      vertex 5.860000 2.450000 2.018889
+    endloop
+  endfacet
+  facet normal 0.000000 1.000000 0.000000
+    outer loop
+      vertex 5.860000 2.450000 2.018889
+      vertex 5.860000 2.450000 2.384444
+      vertex 6.340000 2.450000 2.384444
+    endloop
+  endfacet
+endsolid R5_fan_server_1_outlet_patch
+
+solid R5_fan_server_1_bottom
+  facet normal 0.000000 0.000000 1.000000
+    outer loop
+      vertex 5.860000 2.450000 2.018889
+      vertex 5.860000 1.250000 2.018889
+      vertex 6.340000 1.250000 2.018889
+    endloop
+  endfacet
+  facet normal 0.000000 0.000000 1.000000
+    outer loop
+      vertex 6.340000 1.250000 2.018889
+      vertex 6.340000 2.450000 2.018889
+      vertex 5.860000 2.450000 2.018889
+    endloop
+  endfacet
+endsolid R5_fan_server_1_bottom
+
+solid R5_fan_server_1_top
+  facet normal 0.000000 0.000000 -1.000000
+    outer loop
+      vertex 5.860000 1.250000 2.384444
+      vertex 5.860000 2.450000 2.384444
+      vertex 6.340000 2.450000 2.384444
+    endloop
+  endfacet
+  facet normal 0.000000 0.000000 -1.000000
+    outer loop
+      vertex 6.340000 2.450000 2.384444
+      vertex 6.340000 1.250000 2.384444
+      vertex 5.860000 1.250000 2.384444
+    endloop
+  endfacet
+endsolid R5_fan_server_1_top
+
+solid R5_u1_partition
+  facet normal 0.000000 0.000000 1.000000
+    outer loop
+      vertex 5.860000 2.450000 0.452222
+      vertex 5.860000 1.250000 0.452222
+      vertex 6.340000 1.250000 0.452222
+    endloop
+  endfacet
+  facet normal 0.000000 0.000000 1.000000
+    outer loop
+      vertex 6.340000 1.250000 0.452222
+      vertex 6.340000 2.450000 0.452222
+      vertex 5.860000 2.450000 0.452222
+    endloop
+  endfacet
+endsolid R5_u1_partition
+
+solid R5_u44_partition
+  facet normal 0.000000 0.000000 1.000000
+    outer loop
+      vertex 5.860000 2.450000 2.697778
+      vertex 5.860000 1.250000 2.697778
+      vertex 6.340000 1.250000 2.697778
+    endloop
+  endfacet
+  facet normal 0.000000 0.000000 1.000000
+    outer loop
+      vertex 6.340000 1.250000 2.697778
+      vertex 6.340000 2.450000 2.697778
+      vertex 5.860000 2.450000 2.697778
+    endloop
+  endfacet
+endsolid R5_u44_partition
+
+solid R6_Left
+  facet normal -1.000000 0.000000 0.000000
+    outer loop
+      vertex 6.400000 2.450000 2.750000
+      vertex 6.400000 2.450000 0.400000
+      vertex 6.400000 1.250000 0.400000
+    endloop
+  endfacet
+  facet normal -1.000000 0.000000 0.000000
+    outer loop
+      vertex 6.400000 1.250000 0.400000
+      vertex 6.400000 1.250000 2.750000
+      vertex 6.400000 2.450000 2.750000
+    endloop
+  endfacet
+endsolid R6_Left
+
+solid R6_Right
+  facet normal 1.000000 0.000000 0.000000
+    outer loop
+      vertex 7.000000 1.250000 2.750000
+      vertex 7.000000 1.250000 0.400000
+      vertex 7.000000 2.450000 0.400000
+    endloop
+  endfacet
+  facet normal 1.000000 0.000000 0.000000
+    outer loop
+      vertex 7.000000 2.450000 0.400000
+      vertex 7.000000 2.450000 2.750000
+      vertex 7.000000 1.250000 2.750000
+    endloop
+  endfacet
+endsolid R6_Right
+
+solid R6_Top
+  facet normal 0.000000 0.000000 1.000000
+    outer loop
+      vertex 6.400000 2.450000 2.750000
+      vertex 6.400000 1.250000 2.750000
+      vertex 7.000000 1.250000 2.750000
+    endloop
+  endfacet
+  facet normal 0.000000 0.000000 1.000000
+    outer loop
+      vertex 7.000000 1.250000 2.750000
+      vertex 7.000000 2.450000 2.750000
+      vertex 6.400000 2.450000 2.750000
+    endloop
+  endfacet
+endsolid R6_Top
+
+solid R6_Bottom
+  facet normal 0.000000 0.000000 -1.000000
+    outer loop
+      vertex 6.400000 1.250000 0.400000
+      vertex 6.400000 2.450000 0.400000
+      vertex 7.000000 2.450000 0.400000
+    endloop
+  endfacet
+  facet normal 0.000000 0.000000 -1.000000
+    outer loop
+      vertex 7.000000 2.450000 0.400000
+      vertex 7.000000 1.250000 0.400000
+      vertex 6.400000 1.250000 0.400000
+    endloop
+  endfacet
+endsolid R6_Bottom
+
+solid R6_inlet_safe_bottom
+  facet normal 0.000000 -1.000000 0.000000
+    outer loop
+      vertex 6.400000 1.250000 0.452222
+      vertex 6.400000 1.250000 0.400000
+      vertex 7.000000 1.250000 0.400000
+    endloop
+  endfacet
+  facet normal 0.000000 -1.000000 0.000000
+    outer loop
+      vertex 7.000000 1.250000 0.400000
+      vertex 7.000000 1.250000 0.452222
+      vertex 6.400000 1.250000 0.452222
+    endloop
+  endfacet
+endsolid R6_inlet_safe_bottom
+
+solid R6_inlet_safe_top
+  facet normal 0.000000 -1.000000 0.000000
+    outer loop
+      vertex 6.400000 1.250000 2.750000
+      vertex 6.400000 1.250000 2.697778
+      vertex 7.000000 1.250000 2.697778
+    endloop
+  endfacet
+  facet normal 0.000000 -1.000000 0.000000
+    outer loop
+      vertex 7.000000 1.250000 2.697778
+      vertex 7.000000 1.250000 2.750000
+      vertex 6.400000 1.250000 2.750000
+    endloop
+  endfacet
+endsolid R6_inlet_safe_top
+
+solid R6_inlet_frame_left
+  facet normal 0.000000 -1.000000 0.000000
+    outer loop
+      vertex 6.400000 1.250000 2.697778
+      vertex 6.400000 1.250000 0.452222
+      vertex 6.460000 1.250000 0.452222
+    endloop
+  endfacet
+  facet normal 0.000000 -1.000000 0.000000
+    outer loop
+      vertex 6.460000 1.250000 0.452222
+      vertex 6.460000 1.250000 2.697778
+      vertex 6.400000 1.250000 2.697778
+    endloop
+  endfacet
+endsolid R6_inlet_frame_left
+
+solid R6_inlet_frame_right
+  facet normal 0.000000 -1.000000 0.000000
+    outer loop
+      vertex 6.940000 1.250000 2.697778
+      vertex 6.940000 1.250000 0.452222
+      vertex 7.000000 1.250000 0.452222
+    endloop
+  endfacet
+  facet normal 0.000000 -1.000000 0.000000
+    outer loop
+      vertex 7.000000 1.250000 0.452222
+      vertex 7.000000 1.250000 2.697778
+      vertex 6.940000 1.250000 2.697778
+    endloop
+  endfacet
+endsolid R6_inlet_frame_right
+
+solid R6_inlet_u2_u19
+  facet normal 0.000000 -1.000000 0.000000
+    outer loop
+      vertex 6.460000 1.250000 1.392222
+      vertex 6.460000 1.250000 0.452222
+      vertex 6.940000 1.250000 0.452222
+    endloop
+  endfacet
+  facet normal 0.000000 -1.000000 0.000000
+    outer loop
+      vertex 6.940000 1.250000 0.452222
+      vertex 6.940000 1.250000 1.392222
+      vertex 6.460000 1.250000 1.392222
+    endloop
+  endfacet
+endsolid R6_inlet_u2_u19
+
+solid R6_inlet_u26_u44
+  facet normal 0.000000 -1.000000 0.000000
+    outer loop
+      vertex 6.460000 1.250000 2.697778
+      vertex 6.460000 1.250000 1.705556
+      vertex 6.940000 1.250000 1.705556
+    endloop
+  endfacet
+  facet normal 0.000000 -1.000000 0.000000
+    outer loop
+      vertex 6.940000 1.250000 1.705556
+      vertex 6.940000 1.250000 2.697778
+      vertex 6.460000 1.250000 2.697778
+    endloop
+  endfacet
+endsolid R6_inlet_u26_u44
+
+solid R6_outlet_safe_bottom
+  facet normal 0.000000 1.000000 0.000000
+    outer loop
+      vertex 7.000000 2.450000 0.452222
+      vertex 7.000000 2.450000 0.400000
+      vertex 6.400000 2.450000 0.400000
+    endloop
+  endfacet
+  facet normal 0.000000 1.000000 0.000000
+    outer loop
+      vertex 6.400000 2.450000 0.400000
+      vertex 6.400000 2.450000 0.452222
+      vertex 7.000000 2.450000 0.452222
+    endloop
+  endfacet
+endsolid R6_outlet_safe_bottom
+
+solid R6_outlet_safe_top
+  facet normal 0.000000 1.000000 0.000000
+    outer loop
+      vertex 7.000000 2.450000 2.750000
+      vertex 7.000000 2.450000 2.697778
+      vertex 6.400000 2.450000 2.697778
+    endloop
+  endfacet
+  facet normal 0.000000 1.000000 0.000000
+    outer loop
+      vertex 6.400000 2.450000 2.697778
+      vertex 6.400000 2.450000 2.750000
+      vertex 7.000000 2.450000 2.750000
+    endloop
+  endfacet
+endsolid R6_outlet_safe_top
+
+solid R6_outlet_frame_left
+  facet normal 0.000000 1.000000 0.000000
+    outer loop
+      vertex 7.000000 2.450000 2.697778
+      vertex 7.000000 2.450000 0.452222
+      vertex 6.940000 2.450000 0.452222
+    endloop
+  endfacet
+  facet normal 0.000000 1.000000 0.000000
+    outer loop
+      vertex 6.940000 2.450000 0.452222
+      vertex 6.940000 2.450000 2.697778
+      vertex 7.000000 2.450000 2.697778
+    endloop
+  endfacet
+endsolid R6_outlet_frame_left
+
+solid R6_outlet_frame_right
+  facet normal 0.000000 1.000000 0.000000
+    outer loop
+      vertex 6.460000 2.450000 2.697778
+      vertex 6.460000 2.450000 0.452222
+      vertex 6.400000 2.450000 0.452222
+    endloop
+  endfacet
+  facet normal 0.000000 1.000000 0.000000
+    outer loop
+      vertex 6.400000 2.450000 0.452222
+      vertex 6.400000 2.450000 2.697778
+      vertex 6.460000 2.450000 2.697778
+    endloop
+  endfacet
+endsolid R6_outlet_frame_right
+
+solid R6_outlet_u2_u19
+  facet normal 0.000000 1.000000 0.000000
+    outer loop
+      vertex 6.940000 2.450000 1.392222
+      vertex 6.940000 2.450000 0.452222
+      vertex 6.460000 2.450000 0.452222
+    endloop
+  endfacet
+  facet normal 0.000000 1.000000 0.000000
+    outer loop
+      vertex 6.460000 2.450000 0.452222
+      vertex 6.460000 2.450000 1.392222
+      vertex 6.940000 2.450000 1.392222
+    endloop
+  endfacet
+endsolid R6_outlet_u2_u19
+
+solid R6_outlet_u26_u44
+  facet normal 0.000000 1.000000 0.000000
+    outer loop
+      vertex 6.940000 2.450000 2.697778
+      vertex 6.940000 2.450000 1.705556
+      vertex 6.460000 2.450000 1.705556
+    endloop
+  endfacet
+  facet normal 0.000000 1.000000 0.000000
+    outer loop
+      vertex 6.460000 2.450000 1.705556
+      vertex 6.460000 2.450000 2.697778
+      vertex 6.940000 2.450000 2.697778
+    endloop
+  endfacet
+endsolid R6_outlet_u26_u44
+
+solid R6_inner_left
+  facet normal 1.000000 0.000000 0.000000
+    outer loop
+      vertex 6.460000 1.250000 2.697778
+      vertex 6.460000 1.250000 0.452222
+      vertex 6.460000 2.450000 0.452222
+    endloop
+  endfacet
+  facet normal 1.000000 0.000000 0.000000
+    outer loop
+      vertex 6.460000 2.450000 0.452222
+      vertex 6.460000 2.450000 2.697778
+      vertex 6.460000 1.250000 2.697778
+    endloop
+  endfacet
+endsolid R6_inner_left
+
+solid R6_inner_right
+  facet normal -1.000000 0.000000 0.000000
+    outer loop
+      vertex 6.940000 2.450000 0.452222
+      vertex 6.940000 1.250000 0.452222
+      vertex 6.940000 1.250000 2.697778
+    endloop
+  endfacet
+  facet normal -1.000000 0.000000 0.000000
+    outer loop
+      vertex 6.940000 1.250000 2.697778
+      vertex 6.940000 2.450000 2.697778
+      vertex 6.940000 2.450000 0.452222
+    endloop
+  endfacet
+endsolid R6_inner_right
+
+solid R6_fan_server_1_inlet_patch
+  facet normal 0.000000 -1.000000 0.000000
+    outer loop
+      vertex 6.460000 1.250000 1.705556
+      vertex 6.460000 1.250000 1.392222
+      vertex 6.940000 1.250000 1.392222
+    endloop
+  endfacet
+  facet normal 0.000000 -1.000000 0.000000
+    outer loop
+      vertex 6.940000 1.250000 1.392222
+      vertex 6.940000 1.250000 1.705556
+      vertex 6.460000 1.250000 1.705556
+    endloop
+  endfacet
+endsolid R6_fan_server_1_inlet_patch
+
+solid R6_fan_server_1_outlet_patch
+  facet normal 0.000000 1.000000 0.000000
+    outer loop
+      vertex 6.940000 2.450000 1.705556
+      vertex 6.940000 2.450000 1.392222
+      vertex 6.460000 2.450000 1.392222
+    endloop
+  endfacet
+  facet normal 0.000000 1.000000 0.000000
+    outer loop
+      vertex 6.460000 2.450000 1.392222
+      vertex 6.460000 2.450000 1.705556
+      vertex 6.940000 2.450000 1.705556
+    endloop
+  endfacet
+endsolid R6_fan_server_1_outlet_patch
+
+solid R6_fan_server_1_bottom
+  facet normal 0.000000 0.000000 1.000000
+    outer loop
+      vertex 6.460000 2.450000 1.392222
+      vertex 6.460000 1.250000 1.392222
+      vertex 6.940000 1.250000 1.392222
+    endloop
+  endfacet
+  facet normal 0.000000 0.000000 1.000000
+    outer loop
+      vertex 6.940000 1.250000 1.392222
+      vertex 6.940000 2.450000 1.392222
+      vertex 6.460000 2.450000 1.392222
+    endloop
+  endfacet
+endsolid R6_fan_server_1_bottom
+
+solid R6_fan_server_1_top
+  facet normal 0.000000 0.000000 -1.000000
+    outer loop
+      vertex 6.460000 1.250000 1.705556
+      vertex 6.460000 2.450000 1.705556
+      vertex 6.940000 2.450000 1.705556
+    endloop
+  endfacet
+  facet normal 0.000000 0.000000 -1.000000
+    outer loop
+      vertex 6.940000 2.450000 1.705556
+      vertex 6.940000 1.250000 1.705556
+      vertex 6.460000 1.250000 1.705556
+    endloop
+  endfacet
+endsolid R6_fan_server_1_top
+
+solid R6_u1_partition
+  facet normal 0.000000 0.000000 1.000000
+    outer loop
+      vertex 6.460000 2.450000 0.452222
+      vertex 6.460000 1.250000 0.452222
+      vertex 6.940000 1.250000 0.452222
+    endloop
+  endfacet
+  facet normal 0.000000 0.000000 1.000000
+    outer loop
+      vertex 6.940000 1.250000 0.452222
+      vertex 6.940000 2.450000 0.452222
+      vertex 6.460000 2.450000 0.452222
+    endloop
+  endfacet
+endsolid R6_u1_partition
+
+solid R6_u44_partition
+  facet normal 0.000000 0.000000 1.000000
+    outer loop
+      vertex 6.460000 2.450000 2.697778
+      vertex 6.460000 1.250000 2.697778
+      vertex 6.940000 1.250000 2.697778
+    endloop
+  endfacet
+  facet normal 0.000000 0.000000 1.000000
+    outer loop
+      vertex 6.940000 1.250000 2.697778
+      vertex 6.940000 2.450000 2.697778
+      vertex 6.460000 2.450000 2.697778
+    endloop
+  endfacet
+endsolid R6_u44_partition
+
+solid R7_Left
+  facet normal -1.000000 0.000000 0.000000
+    outer loop
+      vertex 7.000000 2.450000 2.750000
+      vertex 7.000000 2.450000 0.400000
+      vertex 7.000000 1.250000 0.400000
+    endloop
+  endfacet
+  facet normal -1.000000 0.000000 0.000000
+    outer loop
+      vertex 7.000000 1.250000 0.400000
+      vertex 7.000000 1.250000 2.750000
+      vertex 7.000000 2.450000 2.750000
+    endloop
+  endfacet
+endsolid R7_Left
+
+solid R7_Right
+  facet normal 1.000000 0.000000 0.000000
+    outer loop
+      vertex 7.600000 1.250000 2.750000
+      vertex 7.600000 1.250000 0.400000
+      vertex 7.600000 2.450000 0.400000
+    endloop
+  endfacet
+  facet normal 1.000000 0.000000 0.000000
+    outer loop
+      vertex 7.600000 2.450000 0.400000
+      vertex 7.600000 2.450000 2.750000
+      vertex 7.600000 1.250000 2.750000
+    endloop
+  endfacet
+endsolid R7_Right
+
+solid R7_Top
+  facet normal 0.000000 0.000000 1.000000
+    outer loop
+      vertex 7.000000 2.450000 2.750000
+      vertex 7.000000 1.250000 2.750000
+      vertex 7.600000 1.250000 2.750000
+    endloop
+  endfacet
+  facet normal 0.000000 0.000000 1.000000
+    outer loop
+      vertex 7.600000 1.250000 2.750000
+      vertex 7.600000 2.450000 2.750000
+      vertex 7.000000 2.450000 2.750000
+    endloop
+  endfacet
+endsolid R7_Top
+
+solid R7_Bottom
+  facet normal 0.000000 0.000000 -1.000000
+    outer loop
+      vertex 7.000000 1.250000 0.400000
+      vertex 7.000000 2.450000 0.400000
+      vertex 7.600000 2.450000 0.400000
+    endloop
+  endfacet
+  facet normal 0.000000 0.000000 -1.000000
+    outer loop
+      vertex 7.600000 2.450000 0.400000
+      vertex 7.600000 1.250000 0.400000
+      vertex 7.000000 1.250000 0.400000
+    endloop
+  endfacet
+endsolid R7_Bottom
+
+solid R7_inlet_safe_bottom
+  facet normal 0.000000 -1.000000 0.000000
+    outer loop
+      vertex 7.000000 1.250000 0.452222
+      vertex 7.000000 1.250000 0.400000
+      vertex 7.600000 1.250000 0.400000
+    endloop
+  endfacet
+  facet normal 0.000000 -1.000000 0.000000
+    outer loop
+      vertex 7.600000 1.250000 0.400000
+      vertex 7.600000 1.250000 0.452222
+      vertex 7.000000 1.250000 0.452222
+    endloop
+  endfacet
+endsolid R7_inlet_safe_bottom
+
+solid R7_inlet_safe_top
+  facet normal 0.000000 -1.000000 0.000000
+    outer loop
+      vertex 7.000000 1.250000 2.750000
+      vertex 7.000000 1.250000 2.697778
+      vertex 7.600000 1.250000 2.697778
+    endloop
+  endfacet
+  facet normal 0.000000 -1.000000 0.000000
+    outer loop
+      vertex 7.600000 1.250000 2.697778
+      vertex 7.600000 1.250000 2.750000
+      vertex 7.000000 1.250000 2.750000
+    endloop
+  endfacet
+endsolid R7_inlet_safe_top
+
+solid R7_inlet_frame_left
+  facet normal 0.000000 -1.000000 0.000000
+    outer loop
+      vertex 7.000000 1.250000 2.697778
+      vertex 7.000000 1.250000 0.452222
+      vertex 7.060000 1.250000 0.452222
+    endloop
+  endfacet
+  facet normal 0.000000 -1.000000 0.000000
+    outer loop
+      vertex 7.060000 1.250000 0.452222
+      vertex 7.060000 1.250000 2.697778
+      vertex 7.000000 1.250000 2.697778
+    endloop
+  endfacet
+endsolid R7_inlet_frame_left
+
+solid R7_inlet_frame_right
+  facet normal 0.000000 -1.000000 0.000000
+    outer loop
+      vertex 7.540000 1.250000 2.697778
+      vertex 7.540000 1.250000 0.452222
+      vertex 7.600000 1.250000 0.452222
+    endloop
+  endfacet
+  facet normal 0.000000 -1.000000 0.000000
+    outer loop
+      vertex 7.600000 1.250000 0.452222
+      vertex 7.600000 1.250000 2.697778
+      vertex 7.540000 1.250000 2.697778
+    endloop
+  endfacet
+endsolid R7_inlet_frame_right
+
+solid R7_inlet_u2_u21
+  facet normal 0.000000 -1.000000 0.000000
+    outer loop
+      vertex 7.060000 1.250000 1.496667
+      vertex 7.060000 1.250000 0.452222
+      vertex 7.540000 1.250000 0.452222
+    endloop
+  endfacet
+  facet normal 0.000000 -1.000000 0.000000
+    outer loop
+      vertex 7.540000 1.250000 0.452222
+      vertex 7.540000 1.250000 1.496667
+      vertex 7.060000 1.250000 1.496667
+    endloop
+  endfacet
+endsolid R7_inlet_u2_u21
+
+solid R7_inlet_u25_u44
+  facet normal 0.000000 -1.000000 0.000000
+    outer loop
+      vertex 7.060000 1.250000 2.697778
+      vertex 7.060000 1.250000 1.653333
+      vertex 7.540000 1.250000 1.653333
+    endloop
+  endfacet
+  facet normal 0.000000 -1.000000 0.000000
+    outer loop
+      vertex 7.540000 1.250000 1.653333
+      vertex 7.540000 1.250000 2.697778
+      vertex 7.060000 1.250000 2.697778
+    endloop
+  endfacet
+endsolid R7_inlet_u25_u44
+
+solid R7_outlet_safe_bottom
+  facet normal 0.000000 1.000000 0.000000
+    outer loop
+      vertex 7.600000 2.450000 0.452222
+      vertex 7.600000 2.450000 0.400000
+      vertex 7.000000 2.450000 0.400000
+    endloop
+  endfacet
+  facet normal 0.000000 1.000000 0.000000
+    outer loop
+      vertex 7.000000 2.450000 0.400000
+      vertex 7.000000 2.450000 0.452222
+      vertex 7.600000 2.450000 0.452222
+    endloop
+  endfacet
+endsolid R7_outlet_safe_bottom
+
+solid R7_outlet_safe_top
+  facet normal 0.000000 1.000000 0.000000
+    outer loop
+      vertex 7.600000 2.450000 2.750000
+      vertex 7.600000 2.450000 2.697778
+      vertex 7.000000 2.450000 2.697778
+    endloop
+  endfacet
+  facet normal 0.000000 1.000000 0.000000
+    outer loop
+      vertex 7.000000 2.450000 2.697778
+      vertex 7.000000 2.450000 2.750000
+      vertex 7.600000 2.450000 2.750000
+    endloop
+  endfacet
+endsolid R7_outlet_safe_top
+
+solid R7_outlet_frame_left
+  facet normal 0.000000 1.000000 0.000000
+    outer loop
+      vertex 7.600000 2.450000 2.697778
+      vertex 7.600000 2.450000 0.452222
+      vertex 7.540000 2.450000 0.452222
+    endloop
+  endfacet
+  facet normal 0.000000 1.000000 0.000000
+    outer loop
+      vertex 7.540000 2.450000 0.452222
+      vertex 7.540000 2.450000 2.697778
+      vertex 7.600000 2.450000 2.697778
+    endloop
+  endfacet
+endsolid R7_outlet_frame_left
+
+solid R7_outlet_frame_right
+  facet normal 0.000000 1.000000 0.000000
+    outer loop
+      vertex 7.060000 2.450000 2.697778
+      vertex 7.060000 2.450000 0.452222
+      vertex 7.000000 2.450000 0.452222
+    endloop
+  endfacet
+  facet normal 0.000000 1.000000 0.000000
+    outer loop
+      vertex 7.000000 2.450000 0.452222
+      vertex 7.000000 2.450000 2.697778
+      vertex 7.060000 2.450000 2.697778
+    endloop
+  endfacet
+endsolid R7_outlet_frame_right
+
+solid R7_outlet_u2_u21
+  facet normal 0.000000 1.000000 0.000000
+    outer loop
+      vertex 7.540000 2.450000 1.496667
+      vertex 7.540000 2.450000 0.452222
+      vertex 7.060000 2.450000 0.452222
+    endloop
+  endfacet
+  facet normal 0.000000 1.000000 0.000000
+    outer loop
+      vertex 7.060000 2.450000 0.452222
+      vertex 7.060000 2.450000 1.496667
+      vertex 7.540000 2.450000 1.496667
+    endloop
+  endfacet
+endsolid R7_outlet_u2_u21
+
+solid R7_outlet_u25_u44
+  facet normal 0.000000 1.000000 0.000000
+    outer loop
+      vertex 7.540000 2.450000 2.697778
+      vertex 7.540000 2.450000 1.653333
+      vertex 7.060000 2.450000 1.653333
+    endloop
+  endfacet
+  facet normal 0.000000 1.000000 0.000000
+    outer loop
+      vertex 7.060000 2.450000 1.653333
+      vertex 7.060000 2.450000 2.697778
+      vertex 7.540000 2.450000 2.697778
+    endloop
+  endfacet
+endsolid R7_outlet_u25_u44
+
+solid R7_inner_left
+  facet normal 1.000000 0.000000 0.000000
+    outer loop
+      vertex 7.060000 1.250000 2.697778
+      vertex 7.060000 1.250000 0.452222
+      vertex 7.060000 2.450000 0.452222
+    endloop
+  endfacet
+  facet normal 1.000000 0.000000 0.000000
+    outer loop
+      vertex 7.060000 2.450000 0.452222
+      vertex 7.060000 2.450000 2.697778
+      vertex 7.060000 1.250000 2.697778
+    endloop
+  endfacet
+endsolid R7_inner_left
+
+solid R7_inner_right
+  facet normal -1.000000 0.000000 0.000000
+    outer loop
+      vertex 7.540000 2.450000 0.452222
+      vertex 7.540000 1.250000 0.452222
+      vertex 7.540000 1.250000 2.697778
+    endloop
+  endfacet
+  facet normal -1.000000 0.000000 0.000000
+    outer loop
+      vertex 7.540000 1.250000 2.697778
+      vertex 7.540000 2.450000 2.697778
+      vertex 7.540000 2.450000 0.452222
+    endloop
+  endfacet
+endsolid R7_inner_right
+
+solid R7_fan_server_1_inlet_patch
+  facet normal 0.000000 -1.000000 0.000000
+    outer loop
+      vertex 7.060000 1.250000 1.653333
+      vertex 7.060000 1.250000 1.496667
+      vertex 7.540000 1.250000 1.496667
+    endloop
+  endfacet
+  facet normal 0.000000 -1.000000 0.000000
+    outer loop
+      vertex 7.540000 1.250000 1.496667
+      vertex 7.540000 1.250000 1.653333
+      vertex 7.060000 1.250000 1.653333
+    endloop
+  endfacet
+endsolid R7_fan_server_1_inlet_patch
+
+solid R7_fan_server_1_outlet_patch
+  facet normal 0.000000 1.000000 0.000000
+    outer loop
+      vertex 7.540000 2.450000 1.653333
+      vertex 7.540000 2.450000 1.496667
+      vertex 7.060000 2.450000 1.496667
+    endloop
+  endfacet
+  facet normal 0.000000 1.000000 0.000000
+    outer loop
+      vertex 7.060000 2.450000 1.496667
+      vertex 7.060000 2.450000 1.653333
+      vertex 7.540000 2.450000 1.653333
+    endloop
+  endfacet
+endsolid R7_fan_server_1_outlet_patch
+
+solid R7_fan_server_1_bottom
+  facet normal 0.000000 0.000000 1.000000
+    outer loop
+      vertex 7.060000 2.450000 1.496667
+      vertex 7.060000 1.250000 1.496667
+      vertex 7.540000 1.250000 1.496667
+    endloop
+  endfacet
+  facet normal 0.000000 0.000000 1.000000
+    outer loop
+      vertex 7.540000 1.250000 1.496667
+      vertex 7.540000 2.450000 1.496667
+      vertex 7.060000 2.450000 1.496667
+    endloop
+  endfacet
+endsolid R7_fan_server_1_bottom
+
+solid R7_fan_server_1_top
+  facet normal 0.000000 0.000000 -1.000000
+    outer loop
+      vertex 7.060000 1.250000 1.653333
+      vertex 7.060000 2.450000 1.653333
+      vertex 7.540000 2.450000 1.653333
+    endloop
+  endfacet
+  facet normal 0.000000 0.000000 -1.000000
+    outer loop
+      vertex 7.540000 2.450000 1.653333
+      vertex 7.540000 1.250000 1.653333
+      vertex 7.060000 1.250000 1.653333
+    endloop
+  endfacet
+endsolid R7_fan_server_1_top
+
+solid R7_u1_partition
+  facet normal 0.000000 0.000000 1.000000
+    outer loop
+      vertex 7.060000 2.450000 0.452222
+      vertex 7.060000 1.250000 0.452222
+      vertex 7.540000 1.250000 0.452222
+    endloop
+  endfacet
+  facet normal 0.000000 0.000000 1.000000
+    outer loop
+      vertex 7.540000 1.250000 0.452222
+      vertex 7.540000 2.450000 0.452222
+      vertex 7.060000 2.450000 0.452222
+    endloop
+  endfacet
+endsolid R7_u1_partition
+
+solid R7_u44_partition
+  facet normal 0.000000 0.000000 1.000000
+    outer loop
+      vertex 7.060000 2.450000 2.697778
+      vertex 7.060000 1.250000 2.697778
+      vertex 7.540000 1.250000 2.697778
+    endloop
+  endfacet
+  facet normal 0.000000 0.000000 1.000000
+    outer loop
+      vertex 7.540000 1.250000 2.697778
+      vertex 7.540000 2.450000 2.697778
+      vertex 7.060000 2.450000 2.697778
+    endloop
+  endfacet
+endsolid R7_u44_partition
+
+solid R8_Left
+  facet normal -1.000000 0.000000 0.000000
+    outer loop
+      vertex 7.600000 2.450000 2.750000
+      vertex 7.600000 2.450000 0.400000
+      vertex 7.600000 1.250000 0.400000
+    endloop
+  endfacet
+  facet normal -1.000000 0.000000 0.000000
+    outer loop
+      vertex 7.600000 1.250000 0.400000
+      vertex 7.600000 1.250000 2.750000
+      vertex 7.600000 2.450000 2.750000
+    endloop
+  endfacet
+endsolid R8_Left
+
+solid R8_Right
+  facet normal 1.000000 0.000000 0.000000
+    outer loop
+      vertex 8.200000 1.250000 2.750000
+      vertex 8.200000 1.250000 0.400000
+      vertex 8.200000 2.450000 0.400000
+    endloop
+  endfacet
+  facet normal 1.000000 0.000000 0.000000
+    outer loop
+      vertex 8.200000 2.450000 0.400000
+      vertex 8.200000 2.450000 2.750000
+      vertex 8.200000 1.250000 2.750000
+    endloop
+  endfacet
+endsolid R8_Right
+
+solid R8_Top
+  facet normal 0.000000 0.000000 1.000000
+    outer loop
+      vertex 7.600000 2.450000 2.750000
+      vertex 7.600000 1.250000 2.750000
+      vertex 8.200000 1.250000 2.750000
+    endloop
+  endfacet
+  facet normal 0.000000 0.000000 1.000000
+    outer loop
+      vertex 8.200000 1.250000 2.750000
+      vertex 8.200000 2.450000 2.750000
+      vertex 7.600000 2.450000 2.750000
+    endloop
+  endfacet
+endsolid R8_Top
+
+solid R8_Bottom
+  facet normal 0.000000 0.000000 -1.000000
+    outer loop
+      vertex 7.600000 1.250000 0.400000
+      vertex 7.600000 2.450000 0.400000
+      vertex 8.200000 2.450000 0.400000
+    endloop
+  endfacet
+  facet normal 0.000000 0.000000 -1.000000
+    outer loop
+      vertex 8.200000 2.450000 0.400000
+      vertex 8.200000 1.250000 0.400000
+      vertex 7.600000 1.250000 0.400000
+    endloop
+  endfacet
+endsolid R8_Bottom
+
+solid R8_inlet_safe_bottom
+  facet normal 0.000000 -1.000000 0.000000
+    outer loop
+      vertex 7.600000 1.250000 0.452222
+      vertex 7.600000 1.250000 0.400000
+      vertex 8.200000 1.250000 0.400000
+    endloop
+  endfacet
+  facet normal 0.000000 -1.000000 0.000000
+    outer loop
+      vertex 8.200000 1.250000 0.400000
+      vertex 8.200000 1.250000 0.452222
+      vertex 7.600000 1.250000 0.452222
+    endloop
+  endfacet
+endsolid R8_inlet_safe_bottom
+
+solid R8_inlet_safe_top
+  facet normal 0.000000 -1.000000 0.000000
+    outer loop
+      vertex 7.600000 1.250000 2.750000
+      vertex 7.600000 1.250000 2.697778
+      vertex 8.200000 1.250000 2.697778
+    endloop
+  endfacet
+  facet normal 0.000000 -1.000000 0.000000
+    outer loop
+      vertex 8.200000 1.250000 2.697778
+      vertex 8.200000 1.250000 2.750000
+      vertex 7.600000 1.250000 2.750000
+    endloop
+  endfacet
+endsolid R8_inlet_safe_top
+
+solid R8_inlet_frame_left
+  facet normal 0.000000 -1.000000 0.000000
+    outer loop
+      vertex 7.600000 1.250000 2.697778
+      vertex 7.600000 1.250000 0.452222
+      vertex 7.660000 1.250000 0.452222
+    endloop
+  endfacet
+  facet normal 0.000000 -1.000000 0.000000
+    outer loop
+      vertex 7.660000 1.250000 0.452222
+      vertex 7.660000 1.250000 2.697778
+      vertex 7.600000 1.250000 2.697778
+    endloop
+  endfacet
+endsolid R8_inlet_frame_left
+
+solid R8_inlet_frame_right
+  facet normal 0.000000 -1.000000 0.000000
+    outer loop
+      vertex 8.140000 1.250000 2.697778
+      vertex 8.140000 1.250000 0.452222
+      vertex 8.200000 1.250000 0.452222
+    endloop
+  endfacet
+  facet normal 0.000000 -1.000000 0.000000
+    outer loop
+      vertex 8.200000 1.250000 0.452222
+      vertex 8.200000 1.250000 2.697778
+      vertex 8.140000 1.250000 2.697778
+    endloop
+  endfacet
+endsolid R8_inlet_frame_right
+
+solid R8_inlet_u2_u44
+  facet normal 0.000000 -1.000000 0.000000
+    outer loop
+      vertex 7.660000 1.250000 2.697778
+      vertex 7.660000 1.250000 0.452222
+      vertex 8.140000 1.250000 0.452222
+    endloop
+  endfacet
+  facet normal 0.000000 -1.000000 0.000000
+    outer loop
+      vertex 8.140000 1.250000 0.452222
+      vertex 8.140000 1.250000 2.697778
+      vertex 7.660000 1.250000 2.697778
+    endloop
+  endfacet
+endsolid R8_inlet_u2_u44
+
+solid R8_outlet_safe_bottom
+  facet normal 0.000000 1.000000 0.000000
+    outer loop
+      vertex 8.200000 2.450000 0.452222
+      vertex 8.200000 2.450000 0.400000
+      vertex 7.600000 2.450000 0.400000
+    endloop
+  endfacet
+  facet normal 0.000000 1.000000 0.000000
+    outer loop
+      vertex 7.600000 2.450000 0.400000
+      vertex 7.600000 2.450000 0.452222
+      vertex 8.200000 2.450000 0.452222
+    endloop
+  endfacet
+endsolid R8_outlet_safe_bottom
+
+solid R8_outlet_safe_top
+  facet normal 0.000000 1.000000 0.000000
+    outer loop
+      vertex 8.200000 2.450000 2.750000
+      vertex 8.200000 2.450000 2.697778
+      vertex 7.600000 2.450000 2.697778
+    endloop
+  endfacet
+  facet normal 0.000000 1.000000 0.000000
+    outer loop
+      vertex 7.600000 2.450000 2.697778
+      vertex 7.600000 2.450000 2.750000
+      vertex 8.200000 2.450000 2.750000
+    endloop
+  endfacet
+endsolid R8_outlet_safe_top
+
+solid R8_outlet_frame_left
+  facet normal 0.000000 1.000000 0.000000
+    outer loop
+      vertex 8.200000 2.450000 2.697778
+      vertex 8.200000 2.450000 0.452222
+      vertex 8.140000 2.450000 0.452222
+    endloop
+  endfacet
+  facet normal 0.000000 1.000000 0.000000
+    outer loop
+      vertex 8.140000 2.450000 0.452222
+      vertex 8.140000 2.450000 2.697778
+      vertex 8.200000 2.450000 2.697778
+    endloop
+  endfacet
+endsolid R8_outlet_frame_left
+
+solid R8_outlet_frame_right
+  facet normal 0.000000 1.000000 0.000000
+    outer loop
+      vertex 7.660000 2.450000 2.697778
+      vertex 7.660000 2.450000 0.452222
+      vertex 7.600000 2.450000 0.452222
+    endloop
+  endfacet
+  facet normal 0.000000 1.000000 0.000000
+    outer loop
+      vertex 7.600000 2.450000 0.452222
+      vertex 7.600000 2.450000 2.697778
+      vertex 7.660000 2.450000 2.697778
+    endloop
+  endfacet
+endsolid R8_outlet_frame_right
+
+solid R8_outlet_u2_u44
+  facet normal 0.000000 1.000000 0.000000
+    outer loop
+      vertex 8.140000 2.450000 2.697778
+      vertex 8.140000 2.450000 0.452222
+      vertex 7.660000 2.450000 0.452222
+    endloop
+  endfacet
+  facet normal 0.000000 1.000000 0.000000
+    outer loop
+      vertex 7.660000 2.450000 0.452222
+      vertex 7.660000 2.450000 2.697778
+      vertex 8.140000 2.450000 2.697778
+    endloop
+  endfacet
+endsolid R8_outlet_u2_u44
+
+solid R8_inner_left
+  facet normal 1.000000 0.000000 0.000000
+    outer loop
+      vertex 7.660000 1.250000 2.697778
+      vertex 7.660000 1.250000 0.452222
+      vertex 7.660000 2.450000 0.452222
+    endloop
+  endfacet
+  facet normal 1.000000 0.000000 0.000000
+    outer loop
+      vertex 7.660000 2.450000 0.452222
+      vertex 7.660000 2.450000 2.697778
+      vertex 7.660000 1.250000 2.697778
+    endloop
+  endfacet
+endsolid R8_inner_left
+
+solid R8_inner_right
+  facet normal -1.000000 0.000000 0.000000
+    outer loop
+      vertex 8.140000 2.450000 0.452222
+      vertex 8.140000 1.250000 0.452222
+      vertex 8.140000 1.250000 2.697778
+    endloop
+  endfacet
+  facet normal -1.000000 0.000000 0.000000
+    outer loop
+      vertex 8.140000 1.250000 2.697778
+      vertex 8.140000 2.450000 2.697778
+      vertex 8.140000 2.450000 0.452222
+    endloop
+  endfacet
+endsolid R8_inner_right
+
+solid R8_u1_partition
+  facet normal 0.000000 0.000000 1.000000
+    outer loop
+      vertex 7.660000 2.450000 0.452222
+      vertex 7.660000 1.250000 0.452222
+      vertex 8.140000 1.250000 0.452222
+    endloop
+  endfacet
+  facet normal 0.000000 0.000000 1.000000
+    outer loop
+      vertex 8.140000 1.250000 0.452222
+      vertex 8.140000 2.450000 0.452222
+      vertex 7.660000 2.450000 0.452222
+    endloop
+  endfacet
+endsolid R8_u1_partition
+
+solid R8_u44_partition
+  facet normal 0.000000 0.000000 1.000000
+    outer loop
+      vertex 7.660000 2.450000 2.697778
+      vertex 7.660000 1.250000 2.697778
+      vertex 8.140000 1.250000 2.697778
+    endloop
+  endfacet
+  facet normal 0.000000 0.000000 1.000000
+    outer loop
+      vertex 8.140000 1.250000 2.697778
+      vertex 8.140000 2.450000 2.697778
+      vertex 7.660000 2.450000 2.697778
+    endloop
+  endfacet
+endsolid R8_u44_partition
+

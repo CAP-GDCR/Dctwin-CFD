@@ -1,0 +1,16 @@
+solid Baffle_1_Front
+  facet normal 0.000000 -1.000000 0.000000
+    outer loop
+      vertex 4.470000 1.249000 2.750000
+      vertex 4.470000 1.249000 0.400000
+      vertex 5.800000 1.249000 0.400000
+    endloop
+  endfacet
+  facet normal 0.000000 -1.000000 0.000000
+    outer loop
+      vertex 5.800000 1.249000 0.400000
+      vertex 5.800000 1.249000 2.750000
+      vertex 4.470000 1.249000 2.750000
+    endloop
+  endfacet
+endsolid Baffle_1_Front

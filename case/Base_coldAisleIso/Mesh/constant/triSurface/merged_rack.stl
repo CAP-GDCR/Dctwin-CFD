@@ -1,0 +1,816 @@
+solid Rack_1_Left
+  facet normal 0.000000 -1.000000 0.000000
+    outer loop
+      vertex 4.000000 2.200000 2.400000
+      vertex 4.000000 2.200000 0.200000
+      vertex 5.200000 2.200000 0.200000
+    endloop
+  endfacet
+  facet normal 0.000000 -1.000000 0.000000
+    outer loop
+      vertex 5.200000 2.200000 0.200000
+      vertex 5.200000 2.200000 2.400000
+      vertex 4.000000 2.200000 2.400000
+    endloop
+  endfacet
+endsolid Rack_1_Left
+
+solid Rack_1_Right
+  facet normal -0.000000 1.000000 0.000000
+    outer loop
+      vertex 5.200000 3.000000 2.400000
+      vertex 5.200000 3.000000 0.200000
+      vertex 4.000000 3.000000 0.200000
+    endloop
+  endfacet
+  facet normal -0.000000 1.000000 0.000000
+    outer loop
+      vertex 4.000000 3.000000 0.200000
+      vertex 4.000000 3.000000 2.400000
+      vertex 5.200000 3.000000 2.400000
+    endloop
+  endfacet
+endsolid Rack_1_Right
+
+solid Rack_1_Top
+  facet normal 0.000000 0.000000 1.000000
+    outer loop
+      vertex 4.000000 2.200000 2.400000
+      vertex 5.200000 2.200000 2.400000
+      vertex 5.200000 3.000000 2.400000
+    endloop
+  endfacet
+  facet normal 0.000000 0.000000 1.000000
+    outer loop
+      vertex 5.200000 3.000000 2.400000
+      vertex 4.000000 3.000000 2.400000
+      vertex 4.000000 2.200000 2.400000
+    endloop
+  endfacet
+endsolid Rack_1_Top
+
+solid Rack_1_Bottom
+  facet normal 0.000000 0.000000 -1.000000
+    outer loop
+      vertex 5.200000 2.200000 0.200000
+      vertex 4.000000 2.200000 0.200000
+      vertex 4.000000 3.000000 0.200000
+    endloop
+  endfacet
+  facet normal 0.000000 0.000000 -1.000000
+    outer loop
+      vertex 4.000000 3.000000 0.200000
+      vertex 5.200000 3.000000 0.200000
+      vertex 5.200000 2.200000 0.200000
+    endloop
+  endfacet
+endsolid Rack_1_Bottom
+
+solid Rack_1_inlet_safe_bottom
+  facet normal 1.000000 0.000000 0.000000
+    outer loop
+      vertex 5.200000 2.200000 0.248889
+      vertex 5.200000 2.200000 0.200000
+      vertex 5.200000 3.000000 0.200000
+    endloop
+  endfacet
+  facet normal 1.000000 0.000000 0.000000
+    outer loop
+      vertex 5.200000 3.000000 0.200000
+      vertex 5.200000 3.000000 0.248889
+      vertex 5.200000 2.200000 0.248889
+    endloop
+  endfacet
+endsolid Rack_1_inlet_safe_bottom
+
+solid Rack_1_inlet_safe_top
+  facet normal 1.000000 0.000000 0.000000
+    outer loop
+      vertex 5.200000 2.200000 2.400000
+      vertex 5.200000 2.200000 2.351111
+      vertex 5.200000 3.000000 2.351111
+    endloop
+  endfacet
+  facet normal 1.000000 0.000000 0.000000
+    outer loop
+      vertex 5.200000 3.000000 2.351111
+      vertex 5.200000 3.000000 2.400000
+      vertex 5.200000 2.200000 2.400000
+    endloop
+  endfacet
+endsolid Rack_1_inlet_safe_top
+
+solid Rack_1_inlet_frame_left
+  facet normal 1.000000 0.000000 0.000000
+    outer loop
+      vertex 5.200000 2.200000 2.351111
+      vertex 5.200000 2.200000 0.248889
+      vertex 5.200000 2.280000 0.248889
+    endloop
+  endfacet
+  facet normal 1.000000 0.000000 0.000000
+    outer loop
+      vertex 5.200000 2.280000 0.248889
+      vertex 5.200000 2.280000 2.351111
+      vertex 5.200000 2.200000 2.351111
+    endloop
+  endfacet
+endsolid Rack_1_inlet_frame_left
+
+solid Rack_1_inlet_frame_right
+  facet normal 1.000000 0.000000 0.000000
+    outer loop
+      vertex 5.200000 2.920000 2.351111
+      vertex 5.200000 2.920000 0.248889
+      vertex 5.200000 3.000000 0.248889
+    endloop
+  endfacet
+  facet normal 1.000000 0.000000 0.000000
+    outer loop
+      vertex 5.200000 3.000000 0.248889
+      vertex 5.200000 3.000000 2.351111
+      vertex 5.200000 2.920000 2.351111
+    endloop
+  endfacet
+endsolid Rack_1_inlet_frame_right
+
+solid Rack_1_inlet_u2_u29
+  facet normal 1.000000 0.000000 0.000000
+    outer loop
+      vertex 5.200000 2.280000 1.617778
+      vertex 5.200000 2.280000 0.248889
+      vertex 5.200000 2.920000 0.248889
+    endloop
+  endfacet
+  facet normal 1.000000 0.000000 0.000000
+    outer loop
+      vertex 5.200000 2.920000 0.248889
+      vertex 5.200000 2.920000 1.617778
+      vertex 5.200000 2.280000 1.617778
+    endloop
+  endfacet
+endsolid Rack_1_inlet_u2_u29
+
+solid Rack_1_inlet_u35_u44
+  facet normal 1.000000 0.000000 0.000000
+    outer loop
+      vertex 5.200000 2.280000 2.351111
+      vertex 5.200000 2.280000 1.862222
+      vertex 5.200000 2.920000 1.862222
+    endloop
+  endfacet
+  facet normal 1.000000 0.000000 0.000000
+    outer loop
+      vertex 5.200000 2.920000 1.862222
+      vertex 5.200000 2.920000 2.351111
+      vertex 5.200000 2.280000 2.351111
+    endloop
+  endfacet
+endsolid Rack_1_inlet_u35_u44
+
+solid Rack_1_outlet_safe_bottom
+  facet normal -1.000000 -0.000000 0.000000
+    outer loop
+      vertex 4.000000 3.000000 0.248889
+      vertex 4.000000 3.000000 0.200000
+      vertex 4.000000 2.200000 0.200000
+    endloop
+  endfacet
+  facet normal -1.000000 -0.000000 0.000000
+    outer loop
+      vertex 4.000000 2.200000 0.200000
+      vertex 4.000000 2.200000 0.248889
+      vertex 4.000000 3.000000 0.248889
+    endloop
+  endfacet
+endsolid Rack_1_outlet_safe_bottom
+
+solid Rack_1_outlet_safe_top
+  facet normal -1.000000 -0.000000 0.000000
+    outer loop
+      vertex 4.000000 3.000000 2.400000
+      vertex 4.000000 3.000000 2.351111
+      vertex 4.000000 2.200000 2.351111
+    endloop
+  endfacet
+  facet normal -1.000000 -0.000000 0.000000
+    outer loop
+      vertex 4.000000 2.200000 2.351111
+      vertex 4.000000 2.200000 2.400000
+      vertex 4.000000 3.000000 2.400000
+    endloop
+  endfacet
+endsolid Rack_1_outlet_safe_top
+
+solid Rack_1_outlet_frame_left
+  facet normal -1.000000 0.000000 0.000000
+    outer loop
+      vertex 4.000000 3.000000 2.351111
+      vertex 4.000000 3.000000 0.248889
+      vertex 4.000000 2.920000 0.248889
+    endloop
+  endfacet
+  facet normal -1.000000 0.000000 0.000000
+    outer loop
+      vertex 4.000000 2.920000 0.248889
+      vertex 4.000000 2.920000 2.351111
+      vertex 4.000000 3.000000 2.351111
+    endloop
+  endfacet
+endsolid Rack_1_outlet_frame_left
+
+solid Rack_1_outlet_frame_right
+  facet normal -1.000000 0.000000 0.000000
+    outer loop
+      vertex 4.000000 2.280000 2.351111
+      vertex 4.000000 2.280000 0.248889
+      vertex 4.000000 2.200000 0.248889
+    endloop
+  endfacet
+  facet normal -1.000000 0.000000 0.000000
+    outer loop
+      vertex 4.000000 2.200000 0.248889
+      vertex 4.000000 2.200000 2.351111
+      vertex 4.000000 2.280000 2.351111
+    endloop
+  endfacet
+endsolid Rack_1_outlet_frame_right
+
+solid Rack_1_outlet_u2_u29
+  facet normal -1.000000 -0.000000 0.000000
+    outer loop
+      vertex 4.000000 2.920000 1.617778
+      vertex 4.000000 2.920000 0.248889
+      vertex 4.000000 2.280000 0.248889
+    endloop
+  endfacet
+  facet normal -1.000000 -0.000000 0.000000
+    outer loop
+      vertex 4.000000 2.280000 0.248889
+      vertex 4.000000 2.280000 1.617778
+      vertex 4.000000 2.920000 1.617778
+    endloop
+  endfacet
+endsolid Rack_1_outlet_u2_u29
+
+solid Rack_1_outlet_u35_u44
+  facet normal -1.000000 -0.000000 0.000000
+    outer loop
+      vertex 4.000000 2.920000 2.351111
+      vertex 4.000000 2.920000 1.862222
+      vertex 4.000000 2.280000 1.862222
+    endloop
+  endfacet
+  facet normal -1.000000 -0.000000 0.000000
+    outer loop
+      vertex 4.000000 2.280000 1.862222
+      vertex 4.000000 2.280000 2.351111
+      vertex 4.000000 2.920000 2.351111
+    endloop
+  endfacet
+endsolid Rack_1_outlet_u35_u44
+
+solid Rack_1_inner_left
+  facet normal -0.000000 1.000000 0.000000
+    outer loop
+      vertex 5.200000 2.280000 2.351111
+      vertex 5.200000 2.280000 0.248889
+      vertex 4.000000 2.280000 0.248889
+    endloop
+  endfacet
+  facet normal -0.000000 1.000000 0.000000
+    outer loop
+      vertex 4.000000 2.280000 0.248889
+      vertex 4.000000 2.280000 2.351111
+      vertex 5.200000 2.280000 2.351111
+    endloop
+  endfacet
+endsolid Rack_1_inner_left
+
+solid Rack_1_inner_right
+  facet normal 0.000000 -1.000000 0.000000
+    outer loop
+      vertex 4.000000 2.920000 0.248889
+      vertex 5.200000 2.920000 0.248889
+      vertex 5.200000 2.920000 2.351111
+    endloop
+  endfacet
+  facet normal 0.000000 -1.000000 0.000000
+    outer loop
+      vertex 5.200000 2.920000 2.351111
+      vertex 4.000000 2.920000 2.351111
+      vertex 4.000000 2.920000 0.248889
+    endloop
+  endfacet
+endsolid Rack_1_inner_right
+
+solid Rack_1_fan_server_1_inlet_patch
+  facet normal 1.000000 0.000000 0.000000
+    outer loop
+      vertex 5.200000 2.280000 1.862222
+      vertex 5.200000 2.280000 1.617778
+      vertex 5.200000 2.920000 1.617778
+    endloop
+  endfacet
+  facet normal 1.000000 0.000000 0.000000
+    outer loop
+      vertex 5.200000 2.920000 1.617778
+      vertex 5.200000 2.920000 1.862222
+      vertex 5.200000 2.280000 1.862222
+    endloop
+  endfacet
+endsolid Rack_1_fan_server_1_inlet_patch
+
+solid Rack_1_fan_server_1_outlet_patch
+  facet normal -1.000000 -0.000000 0.000000
+    outer loop
+      vertex 4.000000 2.920000 1.862222
+      vertex 4.000000 2.920000 1.617778
+      vertex 4.000000 2.280000 1.617778
+    endloop
+  endfacet
+  facet normal -1.000000 -0.000000 0.000000
+    outer loop
+      vertex 4.000000 2.280000 1.617778
+      vertex 4.000000 2.280000 1.862222
+      vertex 4.000000 2.920000 1.862222
+    endloop
+  endfacet
+endsolid Rack_1_fan_server_1_outlet_patch
+
+solid Rack_1_fan_server_1_bottom
+  facet normal 0.000000 0.000000 1.000000
+    outer loop
+      vertex 4.000000 2.280000 1.617778
+      vertex 5.200000 2.280000 1.617778
+      vertex 5.200000 2.920000 1.617778
+    endloop
+  endfacet
+  facet normal 0.000000 0.000000 1.000000
+    outer loop
+      vertex 5.200000 2.920000 1.617778
+      vertex 4.000000 2.920000 1.617778
+      vertex 4.000000 2.280000 1.617778
+    endloop
+  endfacet
+endsolid Rack_1_fan_server_1_bottom
+
+solid Rack_1_fan_server_1_top
+  facet normal 0.000000 0.000000 -1.000000
+    outer loop
+      vertex 5.200000 2.280000 1.862222
+      vertex 4.000000 2.280000 1.862222
+      vertex 4.000000 2.920000 1.862222
+    endloop
+  endfacet
+  facet normal 0.000000 0.000000 -1.000000
+    outer loop
+      vertex 4.000000 2.920000 1.862222
+      vertex 5.200000 2.920000 1.862222
+      vertex 5.200000 2.280000 1.862222
+    endloop
+  endfacet
+endsolid Rack_1_fan_server_1_top
+
+solid Rack_1_u1_partition
+  facet normal 0.000000 0.000000 1.000000
+    outer loop
+      vertex 4.000000 2.280000 0.248889
+      vertex 5.200000 2.280000 0.248889
+      vertex 5.200000 2.920000 0.248889
+    endloop
+  endfacet
+  facet normal 0.000000 0.000000 1.000000
+    outer loop
+      vertex 5.200000 2.920000 0.248889
+      vertex 4.000000 2.920000 0.248889
+      vertex 4.000000 2.280000 0.248889
+    endloop
+  endfacet
+endsolid Rack_1_u1_partition
+
+solid Rack_1_u44_partition
+  facet normal 0.000000 0.000000 1.000000
+    outer loop
+      vertex 4.000000 2.280000 2.351111
+      vertex 5.200000 2.280000 2.351111
+      vertex 5.200000 2.920000 2.351111
+    endloop
+  endfacet
+  facet normal 0.000000 0.000000 1.000000
+    outer loop
+      vertex 5.200000 2.920000 2.351111
+      vertex 4.000000 2.920000 2.351111
+      vertex 4.000000 2.280000 2.351111
+    endloop
+  endfacet
+endsolid Rack_1_u44_partition
+
+solid Rack_2_Left
+  facet normal 0.000000 -1.000000 0.000000
+    outer loop
+      vertex 4.000000 3.000000 2.400000
+      vertex 4.000000 3.000000 0.200000
+      vertex 5.200000 3.000000 0.200000
+    endloop
+  endfacet
+  facet normal 0.000000 -1.000000 0.000000
+    outer loop
+      vertex 5.200000 3.000000 0.200000
+      vertex 5.200000 3.000000 2.400000
+      vertex 4.000000 3.000000 2.400000
+    endloop
+  endfacet
+endsolid Rack_2_Left
+
+solid Rack_2_Right
+  facet normal -0.000000 1.000000 0.000000
+    outer loop
+      vertex 5.200000 3.800000 2.400000
+      vertex 5.200000 3.800000 0.200000
+      vertex 4.000000 3.800000 0.200000
+    endloop
+  endfacet
+  facet normal -0.000000 1.000000 0.000000
+    outer loop
+      vertex 4.000000 3.800000 0.200000
+      vertex 4.000000 3.800000 2.400000
+      vertex 5.200000 3.800000 2.400000
+    endloop
+  endfacet
+endsolid Rack_2_Right
+
+solid Rack_2_Top
+  facet normal 0.000000 0.000000 1.000000
+    outer loop
+      vertex 4.000000 3.000000 2.400000
+      vertex 5.200000 3.000000 2.400000
+      vertex 5.200000 3.800000 2.400000
+    endloop
+  endfacet
+  facet normal 0.000000 0.000000 1.000000
+    outer loop
+      vertex 5.200000 3.800000 2.400000
+      vertex 4.000000 3.800000 2.400000
+      vertex 4.000000 3.000000 2.400000
+    endloop
+  endfacet
+endsolid Rack_2_Top
+
+solid Rack_2_Bottom
+  facet normal 0.000000 0.000000 -1.000000
+    outer loop
+      vertex 5.200000 3.000000 0.200000
+      vertex 4.000000 3.000000 0.200000
+      vertex 4.000000 3.800000 0.200000
+    endloop
+  endfacet
+  facet normal 0.000000 0.000000 -1.000000
+    outer loop
+      vertex 4.000000 3.800000 0.200000
+      vertex 5.200000 3.800000 0.200000
+      vertex 5.200000 3.000000 0.200000
+    endloop
+  endfacet
+endsolid Rack_2_Bottom
+
+solid Rack_2_inlet_safe_bottom
+  facet normal 1.000000 0.000000 0.000000
+    outer loop
+      vertex 5.200000 3.000000 0.248889
+      vertex 5.200000 3.000000 0.200000
+      vertex 5.200000 3.800000 0.200000
+    endloop
+  endfacet
+  facet normal 1.000000 0.000000 0.000000
+    outer loop
+      vertex 5.200000 3.800000 0.200000
+      vertex 5.200000 3.800000 0.248889
+      vertex 5.200000 3.000000 0.248889
+    endloop
+  endfacet
+endsolid Rack_2_inlet_safe_bottom
+
+solid Rack_2_inlet_safe_top
+  facet normal 1.000000 0.000000 0.000000
+    outer loop
+      vertex 5.200000 3.000000 2.400000
+      vertex 5.200000 3.000000 2.351111
+      vertex 5.200000 3.800000 2.351111
+    endloop
+  endfacet
+  facet normal 1.000000 0.000000 0.000000
+    outer loop
+      vertex 5.200000 3.800000 2.351111
+      vertex 5.200000 3.800000 2.400000
+      vertex 5.200000 3.000000 2.400000
+    endloop
+  endfacet
+endsolid Rack_2_inlet_safe_top
+
+solid Rack_2_inlet_frame_left
+  facet normal 1.000000 0.000000 0.000000
+    outer loop
+      vertex 5.200000 3.000000 2.351111
+      vertex 5.200000 3.000000 0.248889
+      vertex 5.200000 3.080000 0.248889
+    endloop
+  endfacet
+  facet normal 1.000000 0.000000 0.000000
+    outer loop
+      vertex 5.200000 3.080000 0.248889
+      vertex 5.200000 3.080000 2.351111
+      vertex 5.200000 3.000000 2.351111
+    endloop
+  endfacet
+endsolid Rack_2_inlet_frame_left
+
+solid Rack_2_inlet_frame_right
+  facet normal 1.000000 0.000000 0.000000
+    outer loop
+      vertex 5.200000 3.720000 2.351111
+      vertex 5.200000 3.720000 0.248889
+      vertex 5.200000 3.800000 0.248889
+    endloop
+  endfacet
+  facet normal 1.000000 0.000000 0.000000
+    outer loop
+      vertex 5.200000 3.800000 0.248889
+      vertex 5.200000 3.800000 2.351111
+      vertex 5.200000 3.720000 2.351111
+    endloop
+  endfacet
+endsolid Rack_2_inlet_frame_right
+
+solid Rack_2_inlet_u2_u17
+  facet normal 1.000000 0.000000 0.000000
+    outer loop
+      vertex 5.200000 3.080000 1.031111
+      vertex 5.200000 3.080000 0.248889
+      vertex 5.200000 3.720000 0.248889
+    endloop
+  endfacet
+  facet normal 1.000000 0.000000 0.000000
+    outer loop
+      vertex 5.200000 3.720000 0.248889
+      vertex 5.200000 3.720000 1.031111
+      vertex 5.200000 3.080000 1.031111
+    endloop
+  endfacet
+endsolid Rack_2_inlet_u2_u17
+
+solid Rack_2_inlet_u22_u44
+  facet normal 1.000000 0.000000 0.000000
+    outer loop
+      vertex 5.200000 3.080000 2.351111
+      vertex 5.200000 3.080000 1.226667
+      vertex 5.200000 3.720000 1.226667
+    endloop
+  endfacet
+  facet normal 1.000000 0.000000 0.000000
+    outer loop
+      vertex 5.200000 3.720000 1.226667
+      vertex 5.200000 3.720000 2.351111
+      vertex 5.200000 3.080000 2.351111
+    endloop
+  endfacet
+endsolid Rack_2_inlet_u22_u44
+
+solid Rack_2_outlet_safe_bottom
+  facet normal -1.000000 -0.000000 0.000000
+    outer loop
+      vertex 4.000000 3.800000 0.248889
+      vertex 4.000000 3.800000 0.200000
+      vertex 4.000000 3.000000 0.200000
+    endloop
+  endfacet
+  facet normal -1.000000 -0.000000 0.000000
+    outer loop
+      vertex 4.000000 3.000000 0.200000
+      vertex 4.000000 3.000000 0.248889
+      vertex 4.000000 3.800000 0.248889
+    endloop
+  endfacet
+endsolid Rack_2_outlet_safe_bottom
+
+solid Rack_2_outlet_safe_top
+  facet normal -1.000000 -0.000000 0.000000
+    outer loop
+      vertex 4.000000 3.800000 2.400000
+      vertex 4.000000 3.800000 2.351111
+      vertex 4.000000 3.000000 2.351111
+    endloop
+  endfacet
+  facet normal -1.000000 -0.000000 0.000000
+    outer loop
+      vertex 4.000000 3.000000 2.351111
+      vertex 4.000000 3.000000 2.400000
+      vertex 4.000000 3.800000 2.400000
+    endloop
+  endfacet
+endsolid Rack_2_outlet_safe_top
+
+solid Rack_2_outlet_frame_left
+  facet normal -1.000000 0.000000 0.000000
+    outer loop
+      vertex 4.000000 3.800000 2.351111
+      vertex 4.000000 3.800000 0.248889
+      vertex 4.000000 3.720000 0.248889
+    endloop
+  endfacet
+  facet normal -1.000000 0.000000 0.000000
+    outer loop
+      vertex 4.000000 3.720000 0.248889
+      vertex 4.000000 3.720000 2.351111
+      vertex 4.000000 3.800000 2.351111
+    endloop
+  endfacet
+endsolid Rack_2_outlet_frame_left
+
+solid Rack_2_outlet_frame_right
+  facet normal -1.000000 0.000000 0.000000
+    outer loop
+      vertex 4.000000 3.080000 2.351111
+      vertex 4.000000 3.080000 0.248889
+      vertex 4.000000 3.000000 0.248889
+    endloop
+  endfacet
+  facet normal -1.000000 0.000000 0.000000
+    outer loop
+      vertex 4.000000 3.000000 0.248889
+      vertex 4.000000 3.000000 2.351111
+      vertex 4.000000 3.080000 2.351111
+    endloop
+  endfacet
+endsolid Rack_2_outlet_frame_right
+
+solid Rack_2_outlet_u2_u17
+  facet normal -1.000000 -0.000000 0.000000
+    outer loop
+      vertex 4.000000 3.720000 1.031111
+      vertex 4.000000 3.720000 0.248889
+      vertex 4.000000 3.080000 0.248889
+    endloop
+  endfacet
+  facet normal -1.000000 -0.000000 0.000000
+    outer loop
+      vertex 4.000000 3.080000 0.248889
+      vertex 4.000000 3.080000 1.031111
+      vertex 4.000000 3.720000 1.031111
+    endloop
+  endfacet
+endsolid Rack_2_outlet_u2_u17
+
+solid Rack_2_outlet_u22_u44
+  facet normal -1.000000 -0.000000 0.000000
+    outer loop
+      vertex 4.000000 3.720000 2.351111
+      vertex 4.000000 3.720000 1.226667
+      vertex 4.000000 3.080000 1.226667
+    endloop
+  endfacet
+  facet normal -1.000000 -0.000000 0.000000
+    outer loop
+      vertex 4.000000 3.080000 1.226667
+      vertex 4.000000 3.080000 2.351111
+      vertex 4.000000 3.720000 2.351111
+    endloop
+  endfacet
+endsolid Rack_2_outlet_u22_u44
+
+solid Rack_2_inner_left
+  facet normal -0.000000 1.000000 0.000000
+    outer loop
+      vertex 5.200000 3.080000 2.351111
+      vertex 5.200000 3.080000 0.248889
+      vertex 4.000000 3.080000 0.248889
+    endloop
+  endfacet
+  facet normal -0.000000 1.000000 0.000000
+    outer loop
+      vertex 4.000000 3.080000 0.248889
+      vertex 4.000000 3.080000 2.351111
+      vertex 5.200000 3.080000 2.351111
+    endloop
+  endfacet
+endsolid Rack_2_inner_left
+
+solid Rack_2_inner_right
+  facet normal 0.000000 -1.000000 0.000000
+    outer loop
+      vertex 4.000000 3.720000 0.248889
+      vertex 5.200000 3.720000 0.248889
+      vertex 5.200000 3.720000 2.351111
+    endloop
+  endfacet
+  facet normal 0.000000 -1.000000 0.000000
+    outer loop
+      vertex 5.200000 3.720000 2.351111
+      vertex 4.000000 3.720000 2.351111
+      vertex 4.000000 3.720000 0.248889
+    endloop
+  endfacet
+endsolid Rack_2_inner_right
+
+solid Rack_2_Rack_2_Server_1_inlet_patch
+  facet normal 1.000000 0.000000 0.000000
+    outer loop
+      vertex 5.200000 3.080000 1.226667
+      vertex 5.200000 3.080000 1.031111
+      vertex 5.200000 3.720000 1.031111
+    endloop
+  endfacet
+  facet normal 1.000000 0.000000 0.000000
+    outer loop
+      vertex 5.200000 3.720000 1.031111
+      vertex 5.200000 3.720000 1.226667
+      vertex 5.200000 3.080000 1.226667
+    endloop
+  endfacet
+endsolid Rack_2_Rack_2_Server_1_inlet_patch
+
+solid Rack_2_Rack_2_Server_1_outlet_patch
+  facet normal -1.000000 -0.000000 0.000000
+    outer loop
+      vertex 4.000000 3.720000 1.226667
+      vertex 4.000000 3.720000 1.031111
+      vertex 4.000000 3.080000 1.031111
+    endloop
+  endfacet
+  facet normal -1.000000 -0.000000 0.000000
+    outer loop
+      vertex 4.000000 3.080000 1.031111
+      vertex 4.000000 3.080000 1.226667
+      vertex 4.000000 3.720000 1.226667
+    endloop
+  endfacet
+endsolid Rack_2_Rack_2_Server_1_outlet_patch
+
+solid Rack_2_Rack_2_Server_1_bottom
+  facet normal 0.000000 0.000000 1.000000
+    outer loop
+      vertex 4.000000 3.080000 1.031111
+      vertex 5.200000 3.080000 1.031111
+      vertex 5.200000 3.720000 1.031111
+    endloop
+  endfacet
+  facet normal 0.000000 0.000000 1.000000
+    outer loop
+      vertex 5.200000 3.720000 1.031111
+      vertex 4.000000 3.720000 1.031111
+      vertex 4.000000 3.080000 1.031111
+    endloop
+  endfacet
+endsolid Rack_2_Rack_2_Server_1_bottom
+
+solid Rack_2_Rack_2_Server_1_top
+  facet normal 0.000000 0.000000 -1.000000
+    outer loop
+      vertex 5.200000 3.080000 1.226667
+      vertex 4.000000 3.080000 1.226667
+      vertex 4.000000 3.720000 1.226667
+    endloop
+  endfacet
+  facet normal 0.000000 0.000000 -1.000000
+    outer loop
+      vertex 4.000000 3.720000 1.226667
+      vertex 5.200000 3.720000 1.226667
+      vertex 5.200000 3.080000 1.226667
+    endloop
+  endfacet
+endsolid Rack_2_Rack_2_Server_1_top
+
+solid Rack_2_u1_partition
+  facet normal 0.000000 0.000000 1.000000
+    outer loop
+      vertex 4.000000 3.080000 0.248889
+      vertex 5.200000 3.080000 0.248889
+      vertex 5.200000 3.720000 0.248889
+    endloop
+  endfacet
+  facet normal 0.000000 0.000000 1.000000
+    outer loop
+      vertex 5.200000 3.720000 0.248889
+      vertex 4.000000 3.720000 0.248889
+      vertex 4.000000 3.080000 0.248889
+    endloop
+  endfacet
+endsolid Rack_2_u1_partition
+
+solid Rack_2_u44_partition
+  facet normal 0.000000 0.000000 1.000000
+    outer loop
+      vertex 4.000000 3.080000 2.351111
+      vertex 5.200000 3.080000 2.351111
+      vertex 5.200000 3.720000 2.351111
+    endloop
+  endfacet
+  facet normal 0.000000 0.000000 1.000000
+    outer loop
+      vertex 5.200000 3.720000 2.351111
+      vertex 4.000000 3.720000 2.351111
+      vertex 4.000000 3.080000 2.351111
+    endloop
+  endfacet
+endsolid Rack_2_u44_partition
+

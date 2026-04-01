@@ -1,0 +1,116 @@
+solid Ground_floor_Top
+  facet normal 0.000000 0.000000 1.000000
+    outer loop
+      vertex 0.000000 -1.875127 0.000000
+      vertex 2.820000 2.980000 0.000000
+      vertex 2.820000 3.612000 0.000000
+    endloop
+  endfacet
+  facet normal 0.000000 0.000000 1.000000
+    outer loop
+      vertex 3.720000 2.980000 0.000000
+      vertex 2.820000 2.980000 0.000000
+      vertex 0.000000 -1.875127 0.000000
+    endloop
+  endfacet
+  facet normal 0.000000 0.000000 1.000000
+    outer loop
+      vertex 0.000000 -1.875127 0.000000
+      vertex 10.450000 -1.875127 0.000000
+      vertex 10.450000 5.000000 0.000000
+    endloop
+  endfacet
+  facet normal 0.000000 0.000000 1.000000
+    outer loop
+      vertex 0.000000 5.000000 0.000000
+      vertex 0.000000 -1.875127 0.000000
+      vertex 2.820000 3.612000 0.000000
+    endloop
+  endfacet
+  facet normal 0.000000 0.000000 1.000000
+    outer loop
+      vertex 3.720000 2.980000 0.000000
+      vertex 0.000000 -1.875127 0.000000
+      vertex 10.450000 5.000000 0.000000
+    endloop
+  endfacet
+  facet normal 0.000000 0.000000 1.000000
+    outer loop
+      vertex 10.450000 5.000000 0.000000
+      vertex 0.000000 5.000000 0.000000
+      vertex 2.820000 3.612000 0.000000
+    endloop
+  endfacet
+  facet normal 0.000000 0.000000 1.000000
+    outer loop
+      vertex 3.720000 3.612000 0.000000
+      vertex 3.720000 2.980000 0.000000
+      vertex 10.450000 5.000000 0.000000
+    endloop
+  endfacet
+  facet normal 0.000000 0.000000 1.000000
+    outer loop
+      vertex 10.450000 5.000000 0.000000
+      vertex 2.820000 3.612000 0.000000
+      vertex 3.720000 3.612000 0.000000
+    endloop
+  endfacet
+endsolid Ground_floor_Top
+solid Ceiling_Top
+  facet normal 0.000000 0.000000 1.000000
+    outer loop
+      vertex 0.000000 -1.875127 3.400000
+      vertex 2.820000 2.980000 3.400000
+      vertex 2.820000 3.612000 3.400000
+    endloop
+  endfacet
+  facet normal 0.000000 0.000000 1.000000
+    outer loop
+      vertex 3.720000 2.980000 3.400000
+      vertex 2.820000 2.980000 3.400000
+      vertex 0.000000 -1.875127 3.400000
+    endloop
+  endfacet
+  facet normal 0.000000 0.000000 1.000000
+    outer loop
+      vertex 0.000000 -1.875127 3.400000
+      vertex 10.450000 -1.875127 3.400000
+      vertex 10.450000 5.000000 3.400000
+    endloop
+  endfacet
+  facet normal 0.000000 0.000000 1.000000
+    outer loop
+      vertex 0.000000 5.000000 3.400000
+      vertex 0.000000 -1.875127 3.400000
+      vertex 2.820000 3.612000 3.400000
+    endloop
+  endfacet
+  facet normal 0.000000 0.000000 1.000000
+    outer loop
+      vertex 3.720000 2.980000 3.400000
+      vertex 0.000000 -1.875127 3.400000
+      vertex 10.450000 5.000000 3.400000
+    endloop
+  endfacet
+  facet normal 0.000000 0.000000 1.000000
+    outer loop
+      vertex 10.450000 5.000000 3.400000
+      vertex 0.000000 5.000000 3.400000
+      vertex 2.820000 3.612000 3.400000
+    endloop
+  endfacet
+  facet normal 0.000000 0.000000 1.000000
+    outer loop
+      vertex 3.720000 3.612000 3.400000
+      vertex 3.720000 2.980000 3.400000
+      vertex 10.450000 5.000000 3.400000
+    endloop
+  endfacet
+  facet normal 0.000000 0.000000 1.000000
+    outer loop
+      vertex 10.450000 5.000000 3.400000
+      vertex 2.820000 3.612000 3.400000
+      vertex 3.720000 3.612000 3.400000
+    endloop
+  endfacet
+endsolid Ceiling_Top

@@ -1,0 +1,35 @@
+name: Bandit Scan (python code)
+
+on:
+  pull_request:
+    branches: ["main","dev"]
+    paths: 
+      - '**.py'
+
+jobs:
+  bandit:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Run bandit again (to upload)
+        if: '!cancelled()'
+        run: |
+          pip install bandit
+          bandit . -r -o CI_bandit_report.txt -f txt
+        continue-on-error: true
+
+      - name: Comment with bandit results
+        uses: mshick/add-pr-comment@v2.8.2
+        if: '!cancelled()'
+        with:
+          message-path: CI_bandit_report.txt
+          message-id: 10
+
+      - name: Upload artifacts
+        if: '!cancelled()'
+        uses: actions/upload-artifact@v4
+        with:
+          name: Bandit vuln report
+          path: CI_bandit_report.txt

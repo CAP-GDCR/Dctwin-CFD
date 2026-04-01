@@ -1,0 +1,16 @@
+solid Raising_floor_Top_patch
+  facet normal 0.000000 0.000000 1.000000
+    outer loop
+      vertex 2.070000 1.249000 0.400000
+      vertex 2.070000 -0.249410 0.400000
+      vertex 8.200000 -0.249410 0.400000
+    endloop
+  endfacet
+  facet normal 0.000000 0.000000 1.000000
+    outer loop
+      vertex 8.200000 -0.249410 0.400000
+      vertex 8.200000 1.249000 0.400000
+      vertex 2.070000 1.249000 0.400000
+    endloop
+  endfacet
+endsolid Raising_floor_Top_patch

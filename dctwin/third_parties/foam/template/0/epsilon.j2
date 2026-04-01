@@ -1,0 +1,115 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  7
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       volScalarField;
+    location    "0";
+    object      epsilon;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+dimensions      [0 2 -3 0 0 0 0];
+
+internalField   uniform 9.5e-2;
+
+boundaryField
+{
+
+    "room_wall_.*"
+    {
+        type            epsilonWallFunction;
+        value           uniform {{ acu_epsilon }};
+    }
+
+    "raised_floor_.*"
+    {
+        type            epsilonWallFunction;
+        value           uniform {{ acu_epsilon }};
+    }
+
+    "opening_raised_floor_.*"
+    {
+        type           cyclic;
+    }
+
+    "false_ceiling_.*"
+    {
+        type            epsilonWallFunction;
+        value           uniform {{ acu_epsilon }};
+    }
+
+    "opening_false_ceiling_.*"
+    {
+        type           cyclic;
+    }
+
+    "box_.*"
+    {
+        type            epsilonWallFunction;
+        value           uniform {{ acu_epsilon }};
+    }
+
+    "opening_box_.*"
+    {
+        type           cyclic;
+    }
+
+    "acu_wall_.*"
+    {
+        type            epsilonWallFunction;
+        value           uniform {{ acu_epsilon }};
+    }
+
+    "acu_supply_.*"
+    {
+        type            inletOutlet;
+        inletValue      uniform {{ acu_epsilon }};
+        value           uniform {{ acu_epsilon }};
+    }
+
+    "acu_return_.*"
+    {
+        type            inletOutlet;
+        inletValue      uniform {{ acu_epsilon }};
+        value           uniform {{ acu_epsilon }};
+    }
+
+    "rack_wall_.*"
+    {
+        type            epsilonWallFunction;
+        value           uniform {{ acu_epsilon }};
+    }
+
+    "rack_cyclic_.*"
+    {
+        type            cyclic;
+    }
+
+    "rack_air_leak_.*"
+    {
+        type           cyclic;
+    }
+
+    "server_inlet_.*"
+    {
+        type            inletOutlet;
+        inletValue      uniform {{ server_epsilon }};
+        value           uniform {{ server_epsilon }};
+    }
+
+    "server_outlet_.*"
+    {
+        type            inletOutlet;
+        inletValue      uniform {{ server_epsilon }};
+        value           uniform {{ server_epsilon }};
+    }
+}
+
+// ************************************************************************* //

@@ -1,0 +1,5234 @@
+{
+  "PCU_1_Back_patch": {
+    "bc_type": "acu_supply",
+    "temperature": 21.0,
+    "flow_rate": 23.0,
+    "power": null,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "PCU_1_Top_patch": {
+    "bc_type": "acu_return",
+    "temperature": null,
+    "flow_rate": 23.0,
+    "power": null,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "PCU_2_Back_patch": {
+    "bc_type": "acu_supply",
+    "temperature": 21.0,
+    "flow_rate": 23.0,
+    "power": null,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "PCU_2_Top_patch": {
+    "bc_type": "acu_return",
+    "temperature": null,
+    "flow_rate": 23.0,
+    "power": null,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "PCU_3_Front_patch": {
+    "bc_type": "acu_supply",
+    "temperature": 21.0,
+    "flow_rate": 23.0,
+    "power": null,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "PCU_3_Top_patch": {
+    "bc_type": "acu_return",
+    "temperature": null,
+    "flow_rate": 23.0,
+    "power": null,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR1_SR1_5_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR1_SR1_5_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR1_SR1_7_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR1_SR1_7_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR1_SR1_9_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR1_SR1_9_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR1_SR1_11_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR1_SR1_11_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR1_SR1_13_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR1_SR1_13_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR1_SR1_15_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR1_SR1_15_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR1_SR1_17_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR1_SR1_17_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR1_SR1_19_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR1_SR1_19_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR1_SR1_21_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR1_SR1_21_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR1_SR1_23_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR1_SR1_23_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR1_SR1_25_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR1_SR1_25_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR1_SR1_27_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR1_SR1_27_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR1_SR1_40_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR1_SR1_40_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR2_SR2_5_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR2_SR2_5_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR2_SR2_7_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR2_SR2_7_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR2_SR2_9_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR2_SR2_9_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR2_SR2_11_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR2_SR2_11_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR2_SR2_13_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR2_SR2_13_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR2_SR2_15_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR2_SR2_15_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR2_SR2_17_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR2_SR2_17_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR2_SR2_19_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR2_SR2_19_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR2_SR2_21_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR2_SR2_21_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR2_SR2_23_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR2_SR2_23_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR2_SR2_25_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR2_SR2_25_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR2_SR2_39_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR2_SR2_39_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR2_SR2_40_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR2_SR2_40_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR3_SR3_5_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR3_SR3_5_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR3_SR3_7_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR3_SR3_7_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR3_SR3_9_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR3_SR3_9_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR3_SR3_11_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR3_SR3_11_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR3_SR3_13_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR3_SR3_13_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR3_SR3_15_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR3_SR3_15_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR3_SR3_17_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR3_SR3_17_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR3_SR3_19_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR3_SR3_19_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR3_SR3_21_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR3_SR3_21_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR3_SR3_23_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR3_SR3_23_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR3_SR3_25_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR3_SR3_25_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR3_SR3_40_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR3_SR3_40_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR4_SR4_5_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR4_SR4_5_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR4_SR4_7_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR4_SR4_7_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR4_SR4_9_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR4_SR4_9_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR4_SR4_11_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR4_SR4_11_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR4_SR4_13_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR4_SR4_13_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR4_SR4_15_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR4_SR4_15_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR4_SR4_17_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR4_SR4_17_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR4_SR4_19_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR4_SR4_19_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR4_SR4_21_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR4_SR4_21_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR4_SR4_23_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR4_SR4_23_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR4_SR4_25_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR4_SR4_25_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR4_SR4_39_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR4_SR4_39_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR4_SR4_40_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR4_SR4_40_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR5_SR5_5_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR5_SR5_5_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR5_SR5_7_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR5_SR5_7_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR5_SR5_9_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR5_SR5_9_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR5_SR5_11_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR5_SR5_11_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR5_SR5_13_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR5_SR5_13_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR5_SR5_15_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR5_SR5_15_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR5_SR5_17_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR5_SR5_17_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR5_SR5_19_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR5_SR5_19_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR5_SR5_21_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR5_SR5_21_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR5_SR5_23_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR5_SR5_23_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR5_SR5_25_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR5_SR5_25_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR5_SR5_39_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR5_SR5_39_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR5_SR5_40_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR5_SR5_40_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR6_SR6_5_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR6_SR6_5_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR6_SR6_7_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR6_SR6_7_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR6_SR6_9_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR6_SR6_9_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR6_SR6_11_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR6_SR6_11_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR6_SR6_13_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR6_SR6_13_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR6_SR6_15_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR6_SR6_15_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR6_SR6_17_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR6_SR6_17_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR6_SR6_19_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR6_SR6_19_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR6_SR6_21_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR6_SR6_21_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR6_SR6_23_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR6_SR6_23_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR6_SR6_25_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR6_SR6_25_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR6_SR6_40_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR6_SR6_40_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR7_SR7_5_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR7_SR7_5_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR7_SR7_7_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR7_SR7_7_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR7_SR7_9_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR7_SR7_9_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR7_SR7_11_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR7_SR7_11_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR7_SR7_13_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR7_SR7_13_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR7_SR7_15_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR7_SR7_15_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR7_SR7_17_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR7_SR7_17_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR7_SR7_19_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR7_SR7_19_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR7_SR7_21_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR7_SR7_21_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR7_SR7_23_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR7_SR7_23_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR7_SR7_25_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR7_SR7_25_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR7_SR7_39_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR7_SR7_39_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR7_SR7_40_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR7_SR7_40_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR8_SR8_7_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR8_SR8_7_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR8_SR8_9_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR8_SR8_9_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR8_SR8_11_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR8_SR8_11_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR8_SR8_13_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR8_SR8_13_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR8_SR8_15_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR8_SR8_15_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR8_SR8_17_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR8_SR8_17_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR8_SR8_19_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR8_SR8_19_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR8_SR8_21_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR8_SR8_21_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR8_SR8_23_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR8_SR8_23_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR8_SR8_33_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR8_SR8_33_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR8_SR8_35_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR8_SR8_35_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR9_SR9_5_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR9_SR9_5_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR9_SR9_7_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR9_SR9_7_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR9_SR9_9_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR9_SR9_9_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR9_SR9_11_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR9_SR9_11_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR9_SR9_13_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR9_SR9_13_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR9_SR9_15_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR9_SR9_15_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR9_SR9_36_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR9_SR9_36_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR9_SR9_37_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR9_SR9_37_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR9_SR9_38_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR9_SR9_38_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR9_SR9_39_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR9_SR9_39_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR9_SR9_40_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR9_SR9_40_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR10_SR10_5_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR10_SR10_5_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR10_SR10_7_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR10_SR10_7_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR10_SR10_9_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR10_SR10_9_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR10_SR10_11_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR10_SR10_11_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR10_SR10_13_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR10_SR10_13_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR10_SR10_15_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR10_SR10_15_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR10_SR10_17_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR10_SR10_17_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR10_SR10_19_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR10_SR10_19_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR10_SR10_21_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR10_SR10_21_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR10_SR10_23_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR10_SR10_23_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR10_SR10_25_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR10_SR10_25_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR10_SR10_27_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR10_SR10_27_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR11_SR11_5_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR11_SR11_5_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR11_SR11_7_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR11_SR11_7_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR11_SR11_9_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR11_SR11_9_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR11_SR11_11_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR11_SR11_11_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR11_SR11_13_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR11_SR11_13_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR11_SR11_17_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR11_SR11_17_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR11_SR11_19_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR11_SR11_19_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR11_SR11_21_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR11_SR11_21_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR11_SR11_23_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR11_SR11_23_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR11_SR11_25_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR11_SR11_25_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR11_SR11_27_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR11_SR11_27_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR11_SR11_39_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR11_SR11_39_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR11_SR11_40_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "SR11_SR11_40_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR1_VR1_3_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR1_VR1_3_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR1_VR1_5_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR1_VR1_5_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR1_VR1_7_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR1_VR1_7_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR1_VR1_9_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR1_VR1_9_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR1_VR1_11_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR1_VR1_11_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR1_VR1_13_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR1_VR1_13_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR1_VR1_15_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR1_VR1_15_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR1_VR1_17_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR1_VR1_17_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR1_VR1_25_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR1_VR1_25_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR1_VR1_27_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR1_VR1_27_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR1_VR1_29_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR1_VR1_29_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR1_VR1_31_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR1_VR1_31_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR1_VR1_33_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR1_VR1_33_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR1_VR1_34_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR1_VR1_34_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR2_VR2_3_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR2_VR2_3_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR2_VR2_5_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR2_VR2_5_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR2_VR2_7_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR2_VR2_7_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR2_VR2_9_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR2_VR2_9_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR2_VR2_11_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR2_VR2_11_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR2_VR2_13_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR2_VR2_13_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR2_VR2_15_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR2_VR2_15_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR2_VR2_17_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR2_VR2_17_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR2_VR2_19_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR2_VR2_19_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR2_VR2_21_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR2_VR2_21_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR2_VR2_23_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR2_VR2_23_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR2_VR2_25_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR2_VR2_25_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR2_VR2_27_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR2_VR2_27_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR2_VR2_40_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR2_VR2_40_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR3_VR3_3_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR3_VR3_3_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR3_VR3_5_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR3_VR3_5_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR3_VR3_7_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR3_VR3_7_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR3_VR3_9_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR3_VR3_9_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR3_VR3_11_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR3_VR3_11_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR3_VR3_13_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR3_VR3_13_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR3_VR3_15_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR3_VR3_15_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR3_VR3_17_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR3_VR3_17_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR3_VR3_19_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR3_VR3_19_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR3_VR3_21_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR3_VR3_21_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR3_VR3_23_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR3_VR3_23_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR3_VR3_25_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR3_VR3_25_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR3_VR3_27_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR3_VR3_27_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR3_VR3_29_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR3_VR3_29_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR3_VR3_31_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR3_VR3_31_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR3_VR3_40_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR3_VR3_40_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR4_VR4_3_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR4_VR4_3_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR4_VR4_5_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR4_VR4_5_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR4_VR4_7_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR4_VR4_7_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR4_VR4_9_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR4_VR4_9_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR4_VR4_11_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR4_VR4_11_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR4_VR4_13_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR4_VR4_13_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR4_VR4_15_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR4_VR4_15_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR4_VR4_17_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR4_VR4_17_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR4_VR4_19_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR4_VR4_19_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR4_VR4_21_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR4_VR4_21_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR4_VR4_23_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR4_VR4_23_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR4_VR4_25_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR4_VR4_25_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR4_VR4_27_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR4_VR4_27_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR4_VR4_29_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR4_VR4_29_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR4_VR4_31_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR4_VR4_31_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR4_VR4_39_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR4_VR4_39_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR4_VR4_40_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR4_VR4_40_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR5_VR5_3_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR5_VR5_3_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR5_VR5_5_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR5_VR5_5_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR5_VR5_7_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR5_VR5_7_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR5_VR5_9_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR5_VR5_9_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR5_VR5_11_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR5_VR5_11_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR5_VR5_13_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR5_VR5_13_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR5_VR5_15_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR5_VR5_15_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR5_VR5_17_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR5_VR5_17_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR5_VR5_19_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR5_VR5_19_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR5_VR5_21_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR5_VR5_21_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR5_VR5_23_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR5_VR5_23_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR5_VR5_25_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR5_VR5_25_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR5_VR5_27_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR5_VR5_27_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR5_VR5_29_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR5_VR5_29_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR5_VR5_39_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR5_VR5_39_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR5_VR5_40_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR5_VR5_40_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR6_VR6_3_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR6_VR6_3_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR6_VR6_5_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR6_VR6_5_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR6_VR6_7_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR6_VR6_7_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR6_VR6_9_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR6_VR6_9_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR6_VR6_11_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR6_VR6_11_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR6_VR6_13_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR6_VR6_13_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR6_VR6_15_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR6_VR6_15_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR6_VR6_17_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR6_VR6_17_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR6_VR6_19_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR6_VR6_19_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR6_VR6_21_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR6_VR6_21_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR6_VR6_23_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR6_VR6_23_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR6_VR6_25_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR6_VR6_25_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR6_VR6_27_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR6_VR6_27_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR6_VR6_29_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR6_VR6_29_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR6_VR6_39_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR6_VR6_39_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR6_VR6_40_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR6_VR6_40_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR7_VR7_3_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR7_VR7_3_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR7_VR7_5_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR7_VR7_5_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR7_VR7_7_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR7_VR7_7_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR7_VR7_9_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR7_VR7_9_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR7_VR7_11_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR7_VR7_11_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR7_VR7_13_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR7_VR7_13_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR7_VR7_15_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR7_VR7_15_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR7_VR7_17_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR7_VR7_17_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR7_VR7_19_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR7_VR7_19_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR7_VR7_21_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR7_VR7_21_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR7_VR7_23_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR7_VR7_23_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR7_VR7_25_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR7_VR7_25_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR7_VR7_27_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR7_VR7_27_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR7_VR7_29_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR7_VR7_29_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR7_VR7_31_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR7_VR7_31_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR7_VR7_40_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR7_VR7_40_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR8_VR8_3_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR8_VR8_3_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR8_VR8_5_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR8_VR8_5_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR8_VR8_7_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR8_VR8_7_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR8_VR8_9_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR8_VR8_9_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR8_VR8_11_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR8_VR8_11_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR8_VR8_13_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR8_VR8_13_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR8_VR8_15_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR8_VR8_15_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR8_VR8_17_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR8_VR8_17_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR8_VR8_19_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR8_VR8_19_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR8_VR8_21_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR8_VR8_21_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR8_VR8_23_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR8_VR8_23_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR8_VR8_25_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR8_VR8_25_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR8_VR8_27_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR8_VR8_27_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR8_VR8_29_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR8_VR8_29_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR8_VR8_31_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR8_VR8_31_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR8_VR8_40_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR8_VR8_40_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR9_VR9_3_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR9_VR9_3_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR9_VR9_5_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR9_VR9_5_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR9_VR9_7_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR9_VR9_7_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR9_VR9_9_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR9_VR9_9_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR9_VR9_11_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR9_VR9_11_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR9_VR9_13_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR9_VR9_13_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR9_VR9_15_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR9_VR9_15_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR9_VR9_17_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR9_VR9_17_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR9_VR9_19_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR9_VR9_19_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR9_VR9_21_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR9_VR9_21_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR9_VR9_23_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR9_VR9_23_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR9_VR9_25_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR9_VR9_25_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR9_VR9_27_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR9_VR9_27_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR9_VR9_29_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR9_VR9_29_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR9_VR9_31_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR9_VR9_31_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR9_VR9_40_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR9_VR9_40_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR10_VR10_3_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR10_VR10_3_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR10_VR10_5_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR10_VR10_5_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR10_VR10_7_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR10_VR10_7_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR10_VR10_9_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR10_VR10_9_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR10_VR10_11_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR10_VR10_11_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR10_VR10_13_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR10_VR10_13_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR10_VR10_15_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR10_VR10_15_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR10_VR10_17_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR10_VR10_17_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR10_VR10_19_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR10_VR10_19_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR10_VR10_21_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR10_VR10_21_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR10_VR10_23_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR10_VR10_23_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR10_VR10_25_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR10_VR10_25_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR10_VR10_27_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR10_VR10_27_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR10_VR10_29_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR10_VR10_29_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR10_VR10_31_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR10_VR10_31_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR10_VR10_40_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR10_VR10_40_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR11_VR11_3_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR11_VR11_3_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR11_VR11_5_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR11_VR11_5_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR11_VR11_7_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR11_VR11_7_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR11_VR11_9_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR11_VR11_9_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR11_VR11_11_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR11_VR11_11_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR11_VR11_13_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR11_VR11_13_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR11_VR11_15_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR11_VR11_15_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR11_VR11_17_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR11_VR11_17_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR11_VR11_19_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR11_VR11_19_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR11_VR11_21_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR11_VR11_21_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR11_VR11_23_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR11_VR11_23_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR11_VR11_25_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR11_VR11_25_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR11_VR11_27_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR11_VR11_27_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR11_VR11_29_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR11_VR11_29_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR11_VR11_31_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR11_VR11_31_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR11_VR11_40_inlet_patch": {
+    "bc_type": "fan_inlet",
+    "temperature": null,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "VR11_VR11_40_outlet_patch": {
+    "bc_type": "fan_outlet",
+    "temperature": 45.7090788601723,
+    "flow_rate": 0.06,
+    "power": 1500.0,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "ceiling_Top_patch_1_master": {
+    "bc_type": "perforated_baffle",
+    "temperature": null,
+    "flow_rate": null,
+    "power": null,
+    "sigma": 0.9,
+    "heat_flux": null
+  },
+  "ceiling_Top_patch_1_slave": {
+    "bc_type": "perforated_baffle",
+    "temperature": null,
+    "flow_rate": null,
+    "power": null,
+    "sigma": 0.9,
+    "heat_flux": null
+  },
+  "ceiling_Top_patch_2_master": {
+    "bc_type": "perforated_baffle",
+    "temperature": null,
+    "flow_rate": null,
+    "power": null,
+    "sigma": 1.0,
+    "heat_flux": null
+  },
+  "ceiling_Top_patch_2_slave": {
+    "bc_type": "perforated_baffle",
+    "temperature": null,
+    "flow_rate": null,
+    "power": null,
+    "sigma": 1.0,
+    "heat_flux": null
+  },
+  "opening_p_9_master": {
+    "bc_type": "perforated_baffle",
+    "temperature": null,
+    "flow_rate": null,
+    "power": null,
+    "sigma": 1.0,
+    "heat_flux": null
+  },
+  "opening_p_9_slave": {
+    "bc_type": "perforated_baffle",
+    "temperature": null,
+    "flow_rate": null,
+    "power": null,
+    "sigma": 1.0,
+    "heat_flux": null
+  },
+  "opening_p_7_master": {
+    "bc_type": "perforated_baffle",
+    "temperature": null,
+    "flow_rate": null,
+    "power": null,
+    "sigma": 1.0,
+    "heat_flux": null
+  },
+  "opening_p_7_slave": {
+    "bc_type": "perforated_baffle",
+    "temperature": null,
+    "flow_rate": null,
+    "power": null,
+    "sigma": 1.0,
+    "heat_flux": null
+  },
+  "opening_p_8_master": {
+    "bc_type": "perforated_baffle",
+    "temperature": null,
+    "flow_rate": null,
+    "power": null,
+    "sigma": 1.0,
+    "heat_flux": null
+  },
+  "opening_p_8_slave": {
+    "bc_type": "perforated_baffle",
+    "temperature": null,
+    "flow_rate": null,
+    "power": null,
+    "sigma": 1.0,
+    "heat_flux": null
+  },
+  "ceiling_Top_part1_master": {
+    "bc_type": "wall_baffle",
+    "temperature": null,
+    "flow_rate": null,
+    "power": null,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "ceiling_Top_part1_slave": {
+    "bc_type": "wall_baffle",
+    "temperature": null,
+    "flow_rate": null,
+    "power": null,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "Baffle_1_Front_master": {
+    "bc_type": "wall_baffle",
+    "temperature": null,
+    "flow_rate": null,
+    "power": null,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "Baffle_1_Front_slave": {
+    "bc_type": "wall_baffle",
+    "temperature": null,
+    "flow_rate": null,
+    "power": null,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "Baffle_1_copy_Front_master": {
+    "bc_type": "wall_baffle",
+    "temperature": null,
+    "flow_rate": null,
+    "power": null,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "Baffle_1_copy_Front_slave": {
+    "bc_type": "wall_baffle",
+    "temperature": null,
+    "flow_rate": null,
+    "power": null,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "Baffle_3_Front_master": {
+    "bc_type": "wall_baffle",
+    "temperature": null,
+    "flow_rate": null,
+    "power": null,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "Baffle_3_Front_slave": {
+    "bc_type": "wall_baffle",
+    "temperature": null,
+    "flow_rate": null,
+    "power": null,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "Baffle_3_copy_Front_master": {
+    "bc_type": "wall_baffle",
+    "temperature": null,
+    "flow_rate": null,
+    "power": null,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "Baffle_3_copy_Front_slave": {
+    "bc_type": "wall_baffle",
+    "temperature": null,
+    "flow_rate": null,
+    "power": null,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "Baffle_5_Front_master": {
+    "bc_type": "wall_baffle",
+    "temperature": null,
+    "flow_rate": null,
+    "power": null,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "Baffle_5_Front_slave": {
+    "bc_type": "wall_baffle",
+    "temperature": null,
+    "flow_rate": null,
+    "power": null,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "Baffle_6_Front_master": {
+    "bc_type": "wall_baffle",
+    "temperature": null,
+    "flow_rate": null,
+    "power": null,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "Baffle_6_Front_slave": {
+    "bc_type": "wall_baffle",
+    "temperature": null,
+    "flow_rate": null,
+    "power": null,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "Baffle_6_copy_Front_master": {
+    "bc_type": "wall_baffle",
+    "temperature": null,
+    "flow_rate": null,
+    "power": null,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "Baffle_6_copy_Front_slave": {
+    "bc_type": "wall_baffle",
+    "temperature": null,
+    "flow_rate": null,
+    "power": null,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "Wall_1_Front": {
+    "bc_type": "wall",
+    "temperature": null,
+    "flow_rate": null,
+    "power": null,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "Wall_1_copy_Front": {
+    "bc_type": "wall",
+    "temperature": null,
+    "flow_rate": null,
+    "power": null,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "Wall_1_copy_copy_Front": {
+    "bc_type": "wall",
+    "temperature": null,
+    "flow_rate": null,
+    "power": null,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "Wall_1_copy_copy_copy_Front": {
+    "bc_type": "wall",
+    "temperature": null,
+    "flow_rate": null,
+    "power": null,
+    "sigma": null,
+    "heat_flux": null
+  }
+}

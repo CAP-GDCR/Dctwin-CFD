@@ -1,0 +1,680 @@
+{
+    "meta": {
+        "name": "K2 Heat Emitting Box Project",
+        "version": "2.0",
+        "isContainer": true
+    },
+    "models": {
+        "geometryModels": {
+            "acus": {
+                "acu_model_1": {
+                    "supplyFace": {
+                        "side": "rear",
+                        "width": 0.4,
+                        "length": 0.8,
+                        "offset": {
+                            "x": 0,
+                            "y": 0,
+                            "z": 0
+                        }
+                    },
+                    "returnFace": {
+                        "side": "top",
+                        "width": 0.4,
+                        "length": 0.4,
+                        "offset": {
+                            "x": 0,
+                            "y": 0,
+                            "z": 0
+                        }
+                    },
+                    "size": {
+                        "x": 0.6,
+                        "y": 0.4,
+                        "z": 2
+                    }
+                }
+            },
+            "heatEmittingBoxes": {
+                "ups": {
+                    "size": {
+                        "x": 0.6,
+                        "y": 0.4,
+                        "z": 2
+                    },
+                    "returnFace": {
+                        "length": 0.4,
+                        "offset": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "side": "top",
+                        "width": 0.4
+                    },
+                    "supplyFace": {
+                        "length": 0.8,
+                        "offset": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "side": "rear",
+                        "width": 0.4
+                    }
+                },
+                "battery": {
+                    "size": {
+                        "x": 0.6,
+                        "y": 0.4,
+                        "z": 2.0
+                    },
+                    "returnFace": {
+                        "length": 0.4,
+                        "offset": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "side": "top",
+                        "width": 0.4
+                    },
+                    "supplyFace": {
+                        "length": 0.8,
+                        "offset": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "side": "rear",
+                        "width": 0.4
+                    }
+                },
+                "switchGear": {
+                    "size": {
+                        "x": 0.4,
+                        "y": 0.4,
+                        "z": 2.0
+                    },
+                    "returnFace": {
+                        "length": 0.4,
+                        "offset": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "side": "top",
+                        "width": 0.4
+                    },
+                    "supplyFace": {
+                        "length": 0.8,
+                        "offset": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "side": "rear",
+                        "width": 0.4
+                    }
+                },
+                "ELV_Box": {
+                    "size": {
+                        "x": 0.3,
+                        "y": 0.3,
+                        "z": 0.3
+                    },
+                    "returnFace": {
+                        "length": 0.2,
+                        "offset": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "side": "top",
+                        "width": 0.2
+                    },
+                    "supplyFace": {
+                        "length": 0.2,
+                        "offset": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "side": "rear",
+                        "width": 0.2
+                    }
+                }
+            },
+            "racks": {
+                "rack_model_1": {
+                    "firstSlotOffset": 0.1,
+                    "slot": 42,
+                    "size": {
+                        "x": 0.4,
+                        "y": 0.4,
+                        "z": 2
+                    }
+                }
+            },
+            "servers": {
+                "Pokemon": {
+                    "depth": 0.4,
+                    "slotOccupation": 4,
+                    "width": 0.4
+                },
+                "AliServer Thor01-12U": {
+                    "depth": 0.3,
+                    "slotOccupation": 2,
+                    "width": 0.3
+                },
+                "AliServer Thor01-2U": {
+                    "depth": 0.3,
+                    "slotOccupation": 2,
+                    "width": 0.3
+                },
+                "SA5212M4": {
+                    "depth": 0.3,
+                    "slotOccupation": 2,
+                    "width": 0.3
+                },
+                "K800G3-10G": {
+                    "depth": 0.3,
+                    "slotOccupation": 2,
+                    "width": 0.3
+                },
+                "S2PA": {
+                    "depth": 0.3,
+                    "slotOccupation": 4,
+                    "width": 0.3
+                },
+                "ThinkServer SD350X": {
+                    "depth": 0.3,
+                    "slotOccupation": 2,
+                    "width": 0.3
+                },
+                "ThinkServer RD452X": {
+                    "depth": 0.3,
+                    "slotOccupation": 2,
+                    "width": 0.3
+                },
+                "R2-1218R-TH": {
+                    "depth": 0.3,
+                    "slotOccupation": 2,
+                    "width": 0.3
+                },
+                "AliServer Thor02-12S": {
+                    "depth": 0.3,
+                    "slotOccupation": 2,
+                    "width": 0.3
+                },
+                "AliServer Thor04-2U": {
+                    "depth": 0.3,
+                    "slotOccupation": 2,
+                    "width": 0.3
+                },
+                "RH2288H V3": {
+                    "depth": 0.3,
+                    "slotOccupation": 2,
+                    "width": 0.3
+                },
+                "NF5280M4": {
+                    "depth": 0.3,
+                    "slotOccupation": 2,
+                    "width": 0.3
+                },
+                "S5BA3UPI": {
+                    "depth": 0.3,
+                    "slotOccupation": 2,
+                    "width": 0.3
+                }
+            },
+            "boxes": {
+                "partition": {
+                    "faces": {
+                        "top": true,
+                        "bottom": true,
+                        "rear": true,
+                        "front": true,
+                        "left": true,
+                        "right": true
+                    }
+                },
+                "pillar": {
+                    "faces": {
+                        "top": true,
+                        "bottom": true,
+                        "rear": true,
+                        "front": true,
+                        "left": true,
+                        "right": true
+                    }
+                },
+                "duct": {
+                    "faces": {
+                        "top": false,
+                        "bottom": false,
+                        "rear": true,
+                        "front": true,
+                        "left": true,
+                        "right": true
+                    }
+                }
+            }
+        },
+        "coolingModels": {
+            "acus": {
+                "acu_model_1": {
+                    "coolingType": "DX",
+                    "coolingCapacity": 600
+                }
+            },
+            "servers": {
+                "Pokemon": {
+                    "fanType": "Fixed",
+                    "volumeFlowRate": 0.02
+                },
+                "AliServer Thor01-12U": {
+                    "fanType": "Fixed",
+                    "volumeFlowRate": 0.02
+                },
+                "AliServer Thor01-2U": {
+                    "fanType": "Fixed",
+                    "volumeFlowRate": 0.02
+                },
+                "SA5212M4": {
+                    "fanType": "Fixed",
+                    "volumeFlowRate": 0.02
+                },
+                "K800G3-10G": {
+                    "fanType": "Fixed",
+                    "volumeFlowRate": 0.02
+                },
+                "S2PA": {
+                    "fanType": "Fixed",
+                    "volumeFlowRate": 0.02
+                },
+                "ThinkServer SD350X": {
+                    "fanType": "Fixed",
+                    "volumeFlowRate": 0.02
+                },
+                "ThinkServer RD452X": {
+                    "fanType": "Fixed",
+                    "volumeFlowRate": 0.02
+                },
+                "R2-1218R-TH": {
+                    "fanType": "Fixed",
+                    "volumeFlowRate": 0.02
+                },
+                "AliServer Thor02-12S": {
+                    "fanType": "Fixed",
+                    "volumeFlowRate": 0.02
+                },
+                "AliServer Thor04-2U": {
+                    "fanType": "Fixed",
+                    "volumeFlowRate": 0.02
+                },
+                "RH2288H V3": {
+                    "fanType": "Fixed",
+                    "volumeFlowRate": 0.02
+                },
+                "NF5280M4": {
+                    "fanType": "Fixed",
+                    "volumeFlowRate": 0.02
+                },
+                "S5BA3UPI": {
+                    "fanType": "Fixed",
+                    "volumeFlowRate": 0.02
+                }
+            }
+        },
+        "powerModels": {
+            "acus": {}
+        }
+    },
+    "geometry": {
+        "height": 2.6,
+        "plane": [
+            {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            },
+            {
+                "x": 6,
+                "y": 0,
+                "z": 0
+            },
+            {
+                "x": 6,
+                "y": 2.4,
+                "z": 0
+            },
+            {
+                "x": 0,
+                "y": 2.4,
+                "z": 0
+            }
+        ]
+    },
+    "constructions": {
+        "boxes": {},
+        "acus": {
+            "ACU1": {
+                "geometry": {
+                    "model": "acu_model_1",
+                    "orientation": 180,
+                    "location": {
+                        "x": 1.8,
+                        "y": 2,
+                        "z": 0
+                    }
+                },
+                "cooling": {
+                    "model": "acu_model_1"
+                },
+                "power":{}
+            },
+            "ACU2": {
+                "geometry": {
+                    "model": "acu_model_1",
+                    "orientation": 180,
+                    "location": {
+                        "x": 2.4,
+                        "y": 2,
+                        "z": 0
+                    }
+                },
+                "cooling": {
+                    "model": "acu_model_1"
+                },
+                "power":{}
+            }
+        },
+        "heatEmittingBoxes": {
+            "UPS-01": {
+                "geometry": {
+                    "model": "ups",
+                    "location": {
+                        "x": 0.6,
+                        "y": 2,
+                        "z": 0
+                    },
+                    "orientation": 180
+                }
+            },
+            "UPS-02": {
+                "geometry": {
+                    "model": "ups",
+                    "location": {
+                        "x": 1.2,
+                        "y": 2,
+                        "z": 0
+                    },
+                    "orientation": 180
+                }
+            },
+            "Battery-01": {
+                "geometry": {
+                    "model": "battery",
+                    "location": {
+                        "x": 4.2,
+                        "y": 2,
+                        "z": 0
+                    },
+                    "orientation": 180
+                }
+            },
+            "Battery-02": {
+                "geometry": {
+                    "model": "battery",
+                    "location": {
+                        "x": 4.8,
+                        "y": 2,
+                        "z": 0
+                    },
+                    "orientation": 180
+                }
+            },
+            "Battery-03": {
+                "geometry": {
+                    "model": "battery",
+                    "location": {
+                        "x": 5.4,
+                        "y": 2,
+                        "z": 0
+                    },
+                    "orientation": 180
+                }
+            },
+            "Battery-04": {
+                "geometry": {
+                    "model": "battery",
+                    "location": {
+                        "x": 6,
+                        "y": 2,
+                        "z": 0
+                    },
+                    "orientation": 180
+                }
+            },
+            "Battery-05": {
+                "geometry": {
+                    "model": "battery",
+                    "location": {
+                        "x": 5.4,
+                        "y": 0.25,
+                        "z": 0
+                    },
+                    "orientation": 0
+                }
+            },
+            "Battery-06": {
+                "geometry": {
+                    "model": "battery",
+                    "location": {
+                        "x": 4.8,
+                        "y": 0.25,
+                        "z": 0
+                    },
+                    "orientation": 0
+                }
+            },
+            "Battery-07": {
+                "geometry": {
+                    "model": "battery",
+                    "location": {
+                        "x": 4.2,
+                        "y": 0.25,
+                        "z": 0
+                    },
+                    "orientation": 0
+                }
+            },
+            "Battery-08": {
+                "geometry": {
+                    "model": "battery",
+                    "location": {
+                        "x": 3.6,
+                        "y": 0.25,
+                        "z": 0
+                    },
+                    "orientation": 0
+                }
+            },
+            "Switch-Gear-01": {
+                "geometry": {
+                    "model": "switchGear",
+                    "location": {
+                        "x": 1.2,
+                        "y": 0.25,
+                        "z": 0
+                    },
+                    "orientation": 0
+                }
+            },
+            "Switch-Gear-02": {
+                "geometry": {
+                    "model": "switchGear",
+                    "location": {
+                        "x": 1.6,
+                        "y": 0.25,
+                        "z": 0
+                    },
+                    "orientation": 0
+                }
+            },
+            "Switch-Gear-03": {
+                "geometry": {
+                    "model": "switchGear",
+                    "location": {
+                        "x": 2,
+                        "y": 0.25,
+                        "z": 0
+                    },
+                    "orientation": 0
+                }
+            },
+            "ELV-Box-01": {
+                "geometry": {
+                    "model": "ELV_Box",
+                    "location": {
+                        "x": 0.1,
+                        "y": 0.5,
+                        "z": 1.76
+                    },
+                    "orientation": 270
+                }
+            }
+        },
+        "racks": {
+            "A01": {
+                "geometry": {
+                    "model": "rack_model_1",
+                    "location": {
+                        "x": 2.4,
+                        "y": 1.6,
+                        "z": 0.0
+                    },
+                    "orientation": 0,
+                    "hasBlankingPanel": true
+                },
+                "constructions": {
+                    "servers": {
+                        "A01_01": {
+                            "geometry": {
+                                "model": "Pokemon",
+                                "slotPosition": 1,
+                                "orientation": 0,
+                                "offsetFromLeft": 0
+                            },
+                            "cooling": {
+                                "model": "Pokemon"
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "sensors": {
+            "Sensor-01": {
+                "geometry": {
+                    "location": {
+                        "x": 1.2,
+                        "y": 1,
+                        "z": 2.4
+                    }
+                }
+            },
+            "Sensor-02": {
+                "geometry": {
+                    "location": {
+                        "x": 2.4,
+                        "y": 1,
+                        "z": 2.4
+                    }
+                }
+            },
+            "Sensor-03": {
+                "geometry": {
+                    "location": {
+                        "x": 3.6,
+                        "y": 1,
+                        "z": 2.4
+                    }
+                }
+            },
+            "Sensor-04": {
+                "geometry": {
+                    "location": {
+                        "x": 4.8,
+                        "y": 1,
+                        "z": 2.4
+                    }
+                }
+            }
+        },
+        "rows": {}
+    },
+    "inputs": {
+        "heatEmittingBoxes": {
+            "UPS-01": {
+                "inputPower": 1500
+            },
+            "UPS-02": {
+                "inputPower": 1500
+            },
+            "Battery-01": {
+                "inputPower": 1500
+            },
+            "Battery-02": {
+                "inputPower": 1500
+            },
+            "Battery-03": {
+                "inputPower": 1500
+            },
+            "Battery-04": {
+                "inputPower": 1500
+            },
+            "Battery-05": {
+                "inputPower": 1500
+            },
+            "Battery-06": {
+                "inputPower": 1500
+            },
+            "Battery-07": {
+                "inputPower": 1500
+            },
+            "Battery-08": {
+                "inputPower": 1500
+            },
+            "Switch-Gear-01": {
+                "inputPower": 500
+            },
+            "Switch-Gear-02": {
+                "inputPower": 500
+            },
+            "Switch-Gear-03": {
+                "inputPower": 500
+            },
+            "ELV-Box-01": {
+                "inputPower": 100
+            }
+        },
+        "acus": {
+            "ACU1": {
+                "supplyAirVolumeFlowRate": 3,
+                "supplyAirTemperature": 23
+            },
+            "ACU2": {
+                "supplyAirVolumeFlowRate": 3,
+                "supplyAirTemperature": 23
+            }
+        },
+        "servers": {
+            "A01_01": {
+                "inputPower": 5
+            }
+        }
+    },
+    "screen": "/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAFoAoADASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDxKiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiren6XqOr3DW+m2F1ezKu9o7aFpGC5AyQoJxkjn3FdbcfCPxlaxRmawtY5XZh5L38CuqjGGOXxg5IGCT8pyBxkA4eitrXfCPiDwy7LrGk3VogYJ5rJuiZiNwAkGVY4zwCeh9DWLQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRU9lY3eo3aWljaz3VzJnZDBGXdsDJwo5PAJ/Cu80n4OeJLtI59Wa10W1cI4N5KDKyHltsa5O5R/C205IHrgA88q3p+l6jq9w1vpthdXsyrvaO2haRguQMkKCcZI59xXtOm/DXwXpS/6Z9u16cKVcu5toDk5DKF+cEDAwWIPJ9Mdeus3MFollYR2+nWaAhYLKIRKvzbiRjpkk5xSuB5VpnwR16TbLr97Y6JBuYESyCaYgLnKoh2tyQMbgevHTPY6X4B8C6CUd7S6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CT8mAAeASOuMjOc5OR2pSkoq7BJvRFy4kMKt5oVRFzsVcKM9wMcK3qeckYArKudWkMbwQHEbH5mIB3gdDyM7hz83Xp0qlcXUtyV8xshBhV9BnP1P1PNQ1x1K7lpE3jTS3Ciiiuc1CiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKANnR51kjNrJuZly6KFLb1x8ygZxnuM8D5u9aJfGVRsKxALgkl/wC45YcsexA4560UV3UJNw1OeoveHRZlAiGEfcfK5xskHVOOx/ur68mni2SAbpwy4UlYFwH29WUnpGASD1zRRXRYyJEukkVreXYLSQDcqr8qj+GUA9e2Wbj2qtLDLHO0TjEu/nI3Zfs2P4gRwc4UEUUVIxyFISWZd/BV4i2Rj+JHbuR1CjsKjuXETAySHaFGxs7Ts7Y7Ky+nLHFFFKTsmxpXZkTarKSPs5MWDuDJ8pVsfNtweM9+pOOvas6iivOlNyd2dSSWwUUUVIwooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooA/9k="
+}

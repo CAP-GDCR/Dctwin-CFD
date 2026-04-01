@@ -1,0 +1,2599 @@
+{
+    "meta": {
+        "name": "TDC"
+    },
+    "models": {
+        "geometryModels": {
+            "acus": {
+                "PCU": {
+                    "size": {
+                        "x": 2.172,
+                        "y": 0.867,
+                        "z": 2
+                    },
+                    "supplyFace": {
+                        "length": 0.867,
+                        "offset": {
+                            "x": 0,
+                            "y": 0,
+                            "z": 0
+                        },
+                        "side": "bottom",
+                        "width": 2.172
+                    },
+                    "returnFace": {
+                        "length": 0.867,
+                        "offset": {
+                            "x": 0,
+                            "y": 0,
+                            "z": 0
+                        },
+                        "side": "top",
+                        "width": 2.172
+                    }
+                }
+            },
+            "racks": {
+                "RACK1": {
+                    "firstSlotOffset": 0.1,
+                    "size": {
+                        "x": 0.6,
+                        "y": 1.2,
+                        "z": 2.35
+                    },
+                    "slot": 45
+                }
+            },
+            "servers": {
+                "1U_server": {
+                    "depth": 1.2,
+                    "slotOccupation": 1,
+                    "width": 0.6
+                },
+                "network_device": {
+                    "depth": 1.2,
+                    "slotOccupation": 1,
+                    "width": 0.6
+                },
+                "blade_server": {
+                    "depth": 1.2,
+                    "slotOccupation": 3,
+                    "width": 0.6
+                },
+                "2U_server": {
+                    "depth": 1.2,
+                    "slotOccupation": 2,
+                    "width": 0.6
+                },
+                "2U_storage_server": {
+                    "depth": 1.2,
+                    "slotOccupation": 2,
+                    "width": 0.6
+                },
+                "4U_network_device": {
+                    "depth": 1.2,
+                    "slotOccupation": 2,
+                    "width": 0.6
+                }
+            },
+            "boxes": {
+                "partition": {
+                    "faces": {
+                        "top": true,
+                        "bottom": true,
+                        "rear": true,
+                        "front": true,
+                        "left": true,
+                        "right": true
+                    }
+                },
+                "pillar": {
+                    "faces": {
+                        "top": true,
+                        "bottom": true,
+                        "rear": true,
+                        "front": true,
+                        "left": true,
+                        "right": true
+                    }
+                },
+                "duct": {
+                    "faces": {
+                        "top": false,
+                        "bottom": false,
+                        "rear": true,
+                        "front": true,
+                        "left": true,
+                        "right": true
+                    }
+                }
+            }
+        }
+    },
+    "geometry": {
+        "height": 3.4,
+        "plane": [
+            {
+                "x": 0,
+                "y": 8.23,
+                "z": 0
+            },
+            {
+                "x": 0,
+                "y": 0.0,
+                "z": 0
+            },
+            {
+                "x": 9.68,
+                "y": 0.0,
+                "z": 0
+            },
+            {
+                "x": 9.68,
+                "y": 8.23,
+                "z": 0
+            }
+        ]
+    },
+    "constructions": {
+        "falseCeiling": null,
+        "raisedFloor": {
+            "geometry": {
+                "height": 0.4
+            },
+            "constructions": {
+                "openings": {
+                    "opening_1": {
+                        "location": {
+                            "x": 8.658,
+                            "y": 5.46,
+                            "z": 0
+                        },
+                        "size": {
+                            "x": 0.867,
+                            "y": 2.172,
+                            "z": 0
+                        },
+                        "velocity": {
+                            "x": 0,
+                            "y": 0,
+                            "z": 1
+                        }
+                    },
+                    "opening_2": {
+                        "location": {
+                            "x": 8.658,
+                            "y": 3.06,
+                            "z": 0
+                        },
+                        "size": {
+                            "x": 0.867,
+                            "y": 2.172,
+                            "z": 0
+                        }
+                    },
+                    "opening_3": {
+                        "location": {
+                            "x": 4.3,
+                            "y": 7.03,
+                            "z": 0
+                        },
+                        "size": {
+                            "x": 3,
+                            "y": 0.6,
+                            "z": 0
+                        }
+                    },
+                    "opening_4": {
+                        "location": {
+                            "x": 4.3,
+                            "y": 2.83,
+                            "z": 0
+                        },
+                        "size": {
+                            "x": 3,
+                            "y": 0.6,
+                            "z": 0
+                        }
+                    }
+                }
+            }
+        },
+        "boxes": {
+            "Pillar_1": {
+                "geometry": {
+                    "model": "pillar",
+                    "size": {
+                        "x": 0.79,
+                        "y": 0.46,
+                        "z": 3.4
+                    },
+                    "location": {
+                        "x": 8.89,
+                        "y": 7.77,
+                        "z": 0
+                    }
+                }
+            },
+            "Pillar_2": {
+                "geometry": {
+                    "model": "pillar",
+                    "size": {
+                        "x": 0.79,
+                        "y": 0.31,
+                        "z": 3.4
+                    },
+                    "location": {
+                        "x": 8.89,
+                        "y": 0.0,
+                        "z": 0
+                    }
+                }
+            },
+            "Pillar_3": {
+                "geometry": {
+                    "model": "pillar",
+                    "size": {
+                        "x": 0.96,
+                        "y": 0.46,
+                        "z": 3.4
+                    },
+                    "location": {
+                        "x": 0,
+                        "y": 7.77,
+                        "z": 0
+                    }
+                }
+            },
+            "Pillar_4": {
+                "geometry": {
+                    "model": "pillar",
+                    "size": {
+                        "x": 0.96,
+                        "y": 0.31,
+                        "z": 3.4
+                    },
+                    "location": {
+                        "x": 0,
+                        "y": 0.0,
+                        "z": 0
+                    }
+                }
+            }
+        },
+        "acus": {
+            "PCU_4": {
+                "geometry": {
+                    "model": "PCU",
+                    "orientation": -90,
+                    "location": {
+                        "x": 8.658,
+                        "y": 7.63,
+                        "z": 0.4
+                    }
+                }
+            },
+            "PCU_5": {
+                "geometry": {
+                    "model": "PCU",
+                    "orientation": -90,
+                    "location": {
+                        "x": 8.658,
+                        "y": 5.23,
+                        "z": 0.4
+                    }
+                }
+            }
+        },
+        "racks": {
+            "R0501": {
+                "geometry": {
+                    "model": "RACK1",
+                    "location": {
+                        "x": 7.9,
+                        "y": 7.03,
+                        "z": 0.4
+                    },
+                    "orientation": 180,
+                    "hasBlankingPanel": false
+                },
+                "constructions": {
+                    "servers": {
+                        "R0501_45": {
+                            "geometry": {
+                                "model": "network_device",
+                                "slotPosition": 45
+                            }
+                        }
+                    }
+                }
+            },
+            "R0502": {
+                "geometry": {
+                    "model": "RACK1",
+                    "location": {
+                        "x": 7.3,
+                        "y": 7.03,
+                        "z": 0.4
+                    },
+                    "orientation": 180,
+                    "hasBlankingPanel": false
+                },
+                "constructions": {
+                    "servers": {
+                        "R0502_29": {
+                            "geometry": {
+                                "model": "1U_server",
+                                "slotPosition": 29
+                            }
+                        },
+                        "R0502_30": {
+                            "geometry": {
+                                "model": "1U_server",
+                                "slotPosition": 30
+                            }
+                        },
+                        "R0502_31": {
+                            "geometry": {
+                                "model": "1U_server",
+                                "slotPosition": 31
+                            }
+                        },
+                        "R0502_32": {
+                            "geometry": {
+                                "model": "1U_server",
+                                "slotPosition": 32
+                            }
+                        },
+                        "R0502_33": {
+                            "geometry": {
+                                "model": "1U_server",
+                                "slotPosition": 33
+                            }
+                        },
+                        "R0502_34": {
+                            "geometry": {
+                                "model": "1U_server",
+                                "slotPosition": 34
+                            }
+                        },
+                        "R0502_35": {
+                            "geometry": {
+                                "model": "1U_server",
+                                "slotPosition": 35
+                            }
+                        },
+                        "R0502_36": {
+                            "geometry": {
+                                "model": "1U_server",
+                                "slotPosition": 36
+                            }
+                        },
+                        "R0502_37": {
+                            "geometry": {
+                                "model": "1U_server",
+                                "slotPosition": 37
+                            }
+                        },
+                        "R0502_38": {
+                            "geometry": {
+                                "model": "1U_server",
+                                "slotPosition": 38
+                            }
+                        },
+                        "R0502_39": {
+                            "geometry": {
+                                "model": "1U_server",
+                                "slotPosition": 39
+                            }
+                        },
+                        "R0502_40": {
+                            "geometry": {
+                                "model": "1U_server",
+                                "slotPosition": 40
+                            }
+                        },
+                        "R0502_22": {
+                            "geometry": {
+                                "model": "network_device",
+                                "slotPosition": 22
+                            }
+                        },
+                        "R0502_23": {
+                            "geometry": {
+                                "model": "network_device",
+                                "slotPosition": 23
+                            }
+                        },
+                        "R0502_24": {
+                            "geometry": {
+                                "model": "network_device",
+                                "slotPosition": 24
+                            }
+                        },
+                        "R0502_25": {
+                            "geometry": {
+                                "model": "network_device",
+                                "slotPosition": 25
+                            }
+                        },
+                        "R0502_14": {
+                            "geometry": {
+                                "model": "1U_server",
+                                "slotPosition": 14
+                            }
+                        },
+                        "R0502_15": {
+                            "geometry": {
+                                "model": "1U_server",
+                                "slotPosition": 15
+                            }
+                        },
+                        "R0502_16": {
+                            "geometry": {
+                                "model": "1U_server",
+                                "slotPosition": 16
+                            }
+                        },
+                        "R0502_17": {
+                            "geometry": {
+                                "model": "1U_server",
+                                "slotPosition": 17
+                            }
+                        },
+                        "R0502_18": {
+                            "geometry": {
+                                "model": "1U_server",
+                                "slotPosition": 18
+                            }
+                        },
+                        "R0502_19": {
+                            "geometry": {
+                                "model": "1U_server",
+                                "slotPosition": 19
+                            }
+                        },
+                        "R0502_20": {
+                            "geometry": {
+                                "model": "1U_server",
+                                "slotPosition": 20
+                            }
+                        }
+                    }
+                }
+            },
+            "R0503": {
+                "geometry": {
+                    "model": "RACK1",
+                    "location": {
+                        "x": 6.7,
+                        "y": 7.03,
+                        "z": 0.4
+                    },
+                    "orientation": 180,
+                    "hasBlankingPanel": false
+                },
+                "constructions": {
+                    "servers": {
+                        "R0503_01": {
+                            "geometry": {
+                                "model": "blade_server",
+                                "slotPosition": 1
+                            }
+                        },
+                        "R0503_04": {
+                            "geometry": {
+                                "model": "blade_server",
+                                "slotPosition": 4
+                            }
+                        },
+                        "R0503_07": {
+                            "geometry": {
+                                "model": "blade_server",
+                                "slotPosition": 7
+                            }
+                        },
+                        "R0503_10": {
+                            "geometry": {
+                                "model": "blade_server",
+                                "slotPosition": 10
+                            }
+                        },
+                        "R0503_13": {
+                            "geometry": {
+                                "model": "blade_server",
+                                "slotPosition": 13
+                            }
+                        },
+                        "R0503_16": {
+                            "geometry": {
+                                "model": "blade_server",
+                                "slotPosition": 16
+                            }
+                        },
+                        "R0503_19": {
+                            "geometry": {
+                                "model": "blade_server",
+                                "slotPosition": 19
+                            }
+                        },
+                        "R0503_22": {
+                            "geometry": {
+                                "model": "blade_server",
+                                "slotPosition": 22
+                            }
+                        },
+                        "R0503_25": {
+                            "geometry": {
+                                "model": "blade_server",
+                                "slotPosition": 25
+                            }
+                        }
+                    }
+                }
+            },
+            "R0504": {
+                "geometry": {
+                    "model": "RACK1",
+                    "location": {
+                        "x": 6.1,
+                        "y": 7.03,
+                        "z": 0.4
+                    },
+                    "orientation": 180,
+                    "hasBlankingPanel": false
+                },
+                "constructions": {
+                    "servers": {
+                        "R0504_39": {
+                            "geometry": {
+                                "model": "network_device",
+                                "slotPosition": 39
+                            }
+                        },
+                        "R0504_02": {
+                            "geometry": {
+                                "model": "blade_server",
+                                "slotPosition": 2
+                            }
+                        },
+                        "R0504_05": {
+                            "geometry": {
+                                "model": "blade_server",
+                                "slotPosition": 5
+                            }
+                        },
+                        "R0504_08": {
+                            "geometry": {
+                                "model": "blade_server",
+                                "slotPosition": 8
+                            }
+                        },
+                        "R0504_11": {
+                            "geometry": {
+                                "model": "blade_server",
+                                "slotPosition": 11
+                            }
+                        },
+                        "R0504_14": {
+                            "geometry": {
+                                "model": "blade_server",
+                                "slotPosition": 14
+                            }
+                        },
+                        "R0504_17": {
+                            "geometry": {
+                                "model": "blade_server",
+                                "slotPosition": 17
+                            }
+                        },
+                        "R0504_20": {
+                            "geometry": {
+                                "model": "blade_server",
+                                "slotPosition": 20
+                            }
+                        },
+                        "R0504_23": {
+                            "geometry": {
+                                "model": "blade_server",
+                                "slotPosition": 23
+                            }
+                        },
+                        "R0504_26": {
+                            "geometry": {
+                                "model": "blade_server",
+                                "slotPosition": 26
+                            }
+                        }
+                    }
+                }
+            },
+            "R0505": {
+                "geometry": {
+                    "model": "RACK1",
+                    "location": {
+                        "x": 5.5,
+                        "y": 7.03,
+                        "z": 0.4
+                    },
+                    "orientation": 180,
+                    "hasBlankingPanel": false
+                },
+                "constructions": {
+                    "servers": {
+                        "R0505_39": {
+                            "geometry": {
+                                "model": "2U_server",
+                                "slotPosition": 39
+                            }
+                        },
+                        "R0505_24": {
+                            "geometry": {
+                                "model": "blade_server",
+                                "slotPosition": 24
+                            }
+                        },
+                        "R0505_27": {
+                            "geometry": {
+                                "model": "blade_server",
+                                "slotPosition": 27
+                            }
+                        },
+                        "R0505_30": {
+                            "geometry": {
+                                "model": "blade_server",
+                                "slotPosition": 30
+                            }
+                        },
+                        "R0505_33": {
+                            "geometry": {
+                                "model": "blade_server",
+                                "slotPosition": 33
+                            }
+                        },
+                        "R0505_36": {
+                            "geometry": {
+                                "model": "blade_server",
+                                "slotPosition": 36
+                            }
+                        },
+                        "R0505_18": {
+                            "geometry": {
+                                "model": "network_device",
+                                "slotPosition": 18
+                            }
+                        },
+                        "R0505_19": {
+                            "geometry": {
+                                "model": "network_device",
+                                "slotPosition": 19
+                            }
+                        },
+                        "R0505_20": {
+                            "geometry": {
+                                "model": "network_device",
+                                "slotPosition": 20
+                            }
+                        },
+                        "R0505_02": {
+                            "geometry": {
+                                "model": "blade_server",
+                                "slotPosition": 2
+                            }
+                        },
+                        "R0505_05": {
+                            "geometry": {
+                                "model": "blade_server",
+                                "slotPosition": 5
+                            }
+                        },
+                        "R0505_08": {
+                            "geometry": {
+                                "model": "blade_server",
+                                "slotPosition": 8
+                            }
+                        },
+                        "R0505_11": {
+                            "geometry": {
+                                "model": "blade_server",
+                                "slotPosition": 11
+                            }
+                        },
+                        "R0505_14": {
+                            "geometry": {
+                                "model": "blade_server",
+                                "slotPosition": 14
+                            }
+                        }
+                    }
+                }
+            },
+            "R0506": {
+                "geometry": {
+                    "model": "RACK1",
+                    "location": {
+                        "x": 4.9,
+                        "y": 7.03,
+                        "z": 0.4
+                    },
+                    "orientation": 180,
+                    "hasBlankingPanel": false
+                },
+                "constructions": {
+                    "servers": {
+                        "R0506_39": {
+                            "geometry": {
+                                "model": "2U_server",
+                                "slotPosition": 39
+                            }
+                        },
+                        "R0506_24": {
+                            "geometry": {
+                                "model": "blade_server",
+                                "slotPosition": 24
+                            }
+                        },
+                        "R0506_27": {
+                            "geometry": {
+                                "model": "blade_server",
+                                "slotPosition": 27
+                            }
+                        },
+                        "R0506_30": {
+                            "geometry": {
+                                "model": "blade_server",
+                                "slotPosition": 30
+                            }
+                        },
+                        "R0506_33": {
+                            "geometry": {
+                                "model": "blade_server",
+                                "slotPosition": 33
+                            }
+                        },
+                        "R0506_36": {
+                            "geometry": {
+                                "model": "blade_server",
+                                "slotPosition": 36
+                            }
+                        },
+                        "R0506_18": {
+                            "geometry": {
+                                "model": "network_device",
+                                "slotPosition": 18
+                            }
+                        },
+                        "R0506_19": {
+                            "geometry": {
+                                "model": "network_device",
+                                "slotPosition": 19
+                            }
+                        },
+                        "R0506_20": {
+                            "geometry": {
+                                "model": "network_device",
+                                "slotPosition": 20
+                            }
+                        },
+                        "R0506_02": {
+                            "geometry": {
+                                "model": "blade_server",
+                                "slotPosition": 2
+                            }
+                        },
+                        "R0506_05": {
+                            "geometry": {
+                                "model": "blade_server",
+                                "slotPosition": 5
+                            }
+                        },
+                        "R0506_08": {
+                            "geometry": {
+                                "model": "blade_server",
+                                "slotPosition": 8
+                            }
+                        },
+                        "R0506_11": {
+                            "geometry": {
+                                "model": "blade_server",
+                                "slotPosition": 11
+                            }
+                        },
+                        "R0506_14": {
+                            "geometry": {
+                                "model": "blade_server",
+                                "slotPosition": 14
+                            }
+                        }
+                    }
+                }
+            },
+            "R0601": {
+                "geometry": {
+                    "model": "RACK1",
+                    "location": {
+                        "x": 7.3,
+                        "y": 3.43,
+                        "z": 0.4
+                    },
+                    "orientation": 0,
+                    "hasBlankingPanel": false
+                },
+                "constructions": {
+                    "servers": {
+                        "R0601_43": {
+                            "geometry": {
+                                "model": "network_device",
+                                "slotPosition": 43
+                            }
+                        },
+                        "R0601_44": {
+                            "geometry": {
+                                "model": "network_device",
+                                "slotPosition": 44
+                            }
+                        }
+                    }
+                }
+            },
+            "R0602": {
+                "geometry": {
+                    "model": "RACK1",
+                    "location": {
+                        "x": 6.7,
+                        "y": 3.43,
+                        "z": 0.4
+                    },
+                    "orientation": 0,
+                    "hasBlankingPanel": false
+                },
+                "constructions": {
+                    "servers": {
+                        "R0602_39": {
+                            "geometry": {
+                                "model": "2U_server",
+                                "slotPosition": 39
+                            }
+                        },
+                        "R0602_24": {
+                            "geometry": {
+                                "model": "blade_server",
+                                "slotPosition": 24
+                            }
+                        },
+                        "R0602_27": {
+                            "geometry": {
+                                "model": "blade_server",
+                                "slotPosition": 27
+                            }
+                        },
+                        "R0602_30": {
+                            "geometry": {
+                                "model": "blade_server",
+                                "slotPosition": 30
+                            }
+                        },
+                        "R0602_33": {
+                            "geometry": {
+                                "model": "blade_server",
+                                "slotPosition": 33
+                            }
+                        },
+                        "R0602_36": {
+                            "geometry": {
+                                "model": "blade_server",
+                                "slotPosition": 36
+                            }
+                        },
+                        "R0602_18": {
+                            "geometry": {
+                                "model": "network_device",
+                                "slotPosition": 18
+                            }
+                        },
+                        "R0602_19": {
+                            "geometry": {
+                                "model": "network_device",
+                                "slotPosition": 19
+                            }
+                        },
+                        "R0602_20": {
+                            "geometry": {
+                                "model": "network_device",
+                                "slotPosition": 20
+                            }
+                        },
+                        "R0602_02": {
+                            "geometry": {
+                                "model": "blade_server",
+                                "slotPosition": 2
+                            }
+                        },
+                        "R0602_05": {
+                            "geometry": {
+                                "model": "blade_server",
+                                "slotPosition": 5
+                            }
+                        },
+                        "R0602_08": {
+                            "geometry": {
+                                "model": "blade_server",
+                                "slotPosition": 8
+                            }
+                        },
+                        "R0602_11": {
+                            "geometry": {
+                                "model": "blade_server",
+                                "slotPosition": 11
+                            }
+                        },
+                        "R0602_14": {
+                            "geometry": {
+                                "model": "blade_server",
+                                "slotPosition": 14
+                            }
+                        }
+                    }
+                }
+            },
+            "R0603": {
+                "geometry": {
+                    "model": "RACK1",
+                    "location": {
+                        "x": 6.1,
+                        "y": 3.43,
+                        "z": 0.4
+                    },
+                    "orientation": 0,
+                    "hasBlankingPanel": false
+                },
+                "constructions": {
+                    "servers": {
+                        "R0603_31": {
+                            "geometry": {
+                                "model": "1U_server",
+                                "slotPosition": 31
+                            }
+                        },
+                        "R0603_32": {
+                            "geometry": {
+                                "model": "1U_server",
+                                "slotPosition": 32
+                            }
+                        },
+                        "R0603_33": {
+                            "geometry": {
+                                "model": "1U_server",
+                                "slotPosition": 33
+                            }
+                        },
+                        "R0603_34": {
+                            "geometry": {
+                                "model": "1U_server",
+                                "slotPosition": 34
+                            }
+                        },
+                        "R0603_35": {
+                            "geometry": {
+                                "model": "1U_server",
+                                "slotPosition": 35
+                            }
+                        },
+                        "R0603_36": {
+                            "geometry": {
+                                "model": "1U_server",
+                                "slotPosition": 36
+                            }
+                        },
+                        "R0603_37": {
+                            "geometry": {
+                                "model": "1U_server",
+                                "slotPosition": 37
+                            }
+                        },
+                        "R0603_38": {
+                            "geometry": {
+                                "model": "1U_server",
+                                "slotPosition": 38
+                            }
+                        },
+                        "R0603_39": {
+                            "geometry": {
+                                "model": "1U_server",
+                                "slotPosition": 39
+                            }
+                        },
+                        "R0603_06": {
+                            "geometry": {
+                                "model": "blade_server",
+                                "slotPosition": 6
+                            }
+                        },
+                        "R0603_09": {
+                            "geometry": {
+                                "model": "blade_server",
+                                "slotPosition": 9
+                            }
+                        },
+                        "R0603_02": {
+                            "geometry": {
+                                "model": "2U_storage_server",
+                                "slotPosition": 2
+                            }
+                        },
+                        "R0603_04": {
+                            "geometry": {
+                                "model": "2U_storage_server",
+                                "slotPosition": 4
+                            }
+                        }
+                    }
+                }
+            },
+            "R0604": {
+                "geometry": {
+                    "model": "RACK1",
+                    "location": {
+                        "x": 5.5,
+                        "y": 3.43,
+                        "z": 0.4
+                    },
+                    "orientation": 0,
+                    "hasBlankingPanel": false
+                },
+                "constructions": {
+                    "servers": {
+                        "R0604_25": {
+                            "geometry": {
+                                "model": "1U_server",
+                                "slotPosition": 25
+                            }
+                        },
+                        "R0604_26": {
+                            "geometry": {
+                                "model": "1U_server",
+                                "slotPosition": 26
+                            }
+                        },
+                        "R0604_27": {
+                            "geometry": {
+                                "model": "1U_server",
+                                "slotPosition": 27
+                            }
+                        },
+                        "R0604_28": {
+                            "geometry": {
+                                "model": "1U_server",
+                                "slotPosition": 28
+                            }
+                        },
+                        "R0604_29": {
+                            "geometry": {
+                                "model": "1U_server",
+                                "slotPosition": 29
+                            }
+                        },
+                        "R0604_30": {
+                            "geometry": {
+                                "model": "1U_server",
+                                "slotPosition": 30
+                            }
+                        },
+                        "R0604_31": {
+                            "geometry": {
+                                "model": "1U_server",
+                                "slotPosition": 31
+                            }
+                        },
+                        "R0604_32": {
+                            "geometry": {
+                                "model": "1U_server",
+                                "slotPosition": 32
+                            }
+                        },
+                        "R0604_33": {
+                            "geometry": {
+                                "model": "1U_server",
+                                "slotPosition": 33
+                            }
+                        },
+                        "R0604_34": {
+                            "geometry": {
+                                "model": "1U_server",
+                                "slotPosition": 34
+                            }
+                        },
+                        "R0604_35": {
+                            "geometry": {
+                                "model": "1U_server",
+                                "slotPosition": 35
+                            }
+                        },
+                        "R0604_36": {
+                            "geometry": {
+                                "model": "1U_server",
+                                "slotPosition": 36
+                            }
+                        },
+                        "R0604_37": {
+                            "geometry": {
+                                "model": "1U_server",
+                                "slotPosition": 37
+                            }
+                        },
+                        "R0604_23": {
+                            "geometry": {
+                                "model": "network_device",
+                                "slotPosition": 23
+                            }
+                        },
+                        "R0604_14": {
+                            "geometry": {
+                                "model": "1U_server",
+                                "slotPosition": 14
+                            }
+                        },
+                        "R0604_15": {
+                            "geometry": {
+                                "model": "1U_server",
+                                "slotPosition": 15
+                            }
+                        },
+                        "R0604_16": {
+                            "geometry": {
+                                "model": "1U_server",
+                                "slotPosition": 16
+                            }
+                        },
+                        "R0604_17": {
+                            "geometry": {
+                                "model": "1U_server",
+                                "slotPosition": 17
+                            }
+                        },
+                        "R0604_18": {
+                            "geometry": {
+                                "model": "1U_server",
+                                "slotPosition": 18
+                            }
+                        },
+                        "R0604_19": {
+                            "geometry": {
+                                "model": "1U_server",
+                                "slotPosition": 19
+                            }
+                        },
+                        "R0604_20": {
+                            "geometry": {
+                                "model": "1U_server",
+                                "slotPosition": 20
+                            }
+                        },
+                        "R0604_21": {
+                            "geometry": {
+                                "model": "1U_server",
+                                "slotPosition": 21
+                            }
+                        },
+                        "R0604_03": {
+                            "geometry": {
+                                "model": "2U_server",
+                                "slotPosition": 3
+                            }
+                        },
+                        "R0604_05": {
+                            "geometry": {
+                                "model": "2U_server",
+                                "slotPosition": 5
+                            }
+                        },
+                        "R0604_07": {
+                            "geometry": {
+                                "model": "2U_server",
+                                "slotPosition": 7
+                            }
+                        },
+                        "R0604_09": {
+                            "geometry": {
+                                "model": "2U_server",
+                                "slotPosition": 9
+                            }
+                        },
+                        "R0604_11": {
+                            "geometry": {
+                                "model": "2U_server",
+                                "slotPosition": 11
+                            }
+                        }
+                    }
+                }
+            },
+            "R0605": {
+                "geometry": {
+                    "model": "RACK1",
+                    "location": {
+                        "x": 4.9,
+                        "y": 3.43,
+                        "z": 0.4
+                    },
+                    "orientation": 0,
+                    "hasBlankingPanel": false
+                },
+                "constructions": {
+                    "servers": {
+                        "R0605_35": {
+                            "geometry": {
+                                "model": "1U_server",
+                                "slotPosition": 35
+                            }
+                        },
+                        "R0605_36": {
+                            "geometry": {
+                                "model": "1U_server",
+                                "slotPosition": 36
+                            }
+                        },
+                        "R0605_37": {
+                            "geometry": {
+                                "model": "1U_server",
+                                "slotPosition": 37
+                            }
+                        },
+                        "R0605_38": {
+                            "geometry": {
+                                "model": "1U_server",
+                                "slotPosition": 38
+                            }
+                        },
+                        "R0605_39": {
+                            "geometry": {
+                                "model": "1U_server",
+                                "slotPosition": 39
+                            }
+                        },
+                        "R0605_40": {
+                            "geometry": {
+                                "model": "1U_server",
+                                "slotPosition": 40
+                            }
+                        },
+                        "R0605_41": {
+                            "geometry": {
+                                "model": "1U_server",
+                                "slotPosition": 41
+                            }
+                        },
+                        "R0605_42": {
+                            "geometry": {
+                                "model": "1U_server",
+                                "slotPosition": 42
+                            }
+                        },
+                        "R0605_22": {
+                            "geometry": {
+                                "model": "network_device",
+                                "slotPosition": 22
+                            }
+                        },
+                        "R0605_02": {
+                            "geometry": {
+                                "model": "2U_storage_server",
+                                "slotPosition": 2
+                            }
+                        },
+                        "R0605_04": {
+                            "geometry": {
+                                "model": "2U_storage_server",
+                                "slotPosition": 4
+                            }
+                        },
+                        "R0605_06": {
+                            "geometry": {
+                                "model": "2U_storage_server",
+                                "slotPosition": 6
+                            }
+                        }
+                    }
+                }
+            },
+            "R0606": {
+                "geometry": {
+                    "model": "RACK1",
+                    "location": {
+                        "x": 4.3,
+                        "y": 3.43,
+                        "z": 0.4
+                    },
+                    "orientation": 0,
+                    "hasBlankingPanel": false
+                },
+                "constructions": {
+                    "servers": {
+                        "R0606_20": {
+                            "geometry": {
+                                "model": "network_device",
+                                "slotPosition": 20
+                            }
+                        },
+                        "R0606_21": {
+                            "geometry": {
+                                "model": "network_device",
+                                "slotPosition": 21
+                            }
+                        },
+                        "R0606_12": {
+                            "geometry": {
+                                "model": "network_device",
+                                "slotPosition": 12
+                            }
+                        },
+                        "R0606_13": {
+                            "geometry": {
+                                "model": "network_device",
+                                "slotPosition": 13
+                            }
+                        },
+                        "R0606_02": {
+                            "geometry": {
+                                "model": "4U_network_device",
+                                "slotPosition": 2
+                            }
+                        },
+                        "R0606_06": {
+                            "geometry": {
+                                "model": "4U_network_device",
+                                "slotPosition": 6
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "sensors": {
+            "R0501_THFB": {
+                "geometry": {
+                    "location": {
+                        "x": 7.6,
+                        "y": 7.03,
+                        "z": 0.55
+                    }
+                }
+            },
+            "R0501_THFM": {
+                "geometry": {
+                    "location": {
+                        "x": 7.6,
+                        "y": 7.03,
+                        "z": 1.55
+                    }
+                }
+            },
+            "R0501_THFT": {
+                "geometry": {
+                    "location": {
+                        "x": 7.6,
+                        "y": 7.03,
+                        "z": 2.5
+                    }
+                }
+            },
+            "R0501_THBB": {
+                "geometry": {
+                    "location": {
+                        "x": 7.6,
+                        "y": 5.83,
+                        "z": 0.55
+                    }
+                }
+            },
+            "R0501_THBM": {
+                "geometry": {
+                    "location": {
+                        "x": 7.6,
+                        "y": 5.83,
+                        "z": 1.55
+                    }
+                }
+            },
+            "R0501_THBT": {
+                "geometry": {
+                    "location": {
+                        "x": 7.6,
+                        "y": 5.83,
+                        "z": 2.5
+                    }
+                }
+            },
+            "R0502_THFB": {
+                "geometry": {
+                    "location": {
+                        "x": 7,
+                        "y": 7.03,
+                        "z": 0.55
+                    }
+                }
+            },
+            "R0502_THFM": {
+                "geometry": {
+                    "location": {
+                        "x": 7,
+                        "y": 7.03,
+                        "z": 1.55
+                    }
+                }
+            },
+            "R0502_THFT": {
+                "geometry": {
+                    "location": {
+                        "x": 7,
+                        "y": 7.03,
+                        "z": 2.5
+                    }
+                }
+            },
+            "R0502_THBB": {
+                "geometry": {
+                    "location": {
+                        "x": 7,
+                        "y": 5.83,
+                        "z": 0.55
+                    }
+                }
+            },
+            "R0502_THBM": {
+                "geometry": {
+                    "location": {
+                        "x": 7,
+                        "y": 5.83,
+                        "z": 1.55
+                    }
+                }
+            },
+            "R0502_THBT": {
+                "geometry": {
+                    "location": {
+                        "x": 7,
+                        "y": 5.83,
+                        "z": 2.5
+                    }
+                }
+            },
+            "R0503_THFB": {
+                "geometry": {
+                    "location": {
+                        "x": 6.4,
+                        "y": 7.03,
+                        "z": 0.55
+                    }
+                }
+            },
+            "R0503_THFM": {
+                "geometry": {
+                    "location": {
+                        "x": 6.4,
+                        "y": 7.03,
+                        "z": 1.55
+                    }
+                }
+            },
+            "R0503_THFT": {
+                "geometry": {
+                    "location": {
+                        "x": 6.4,
+                        "y": 7.03,
+                        "z": 2.5
+                    }
+                }
+            },
+            "R0503_THBB": {
+                "geometry": {
+                    "location": {
+                        "x": 6.4,
+                        "y": 5.83,
+                        "z": 0.55
+                    }
+                }
+            },
+            "R0503_THBM": {
+                "geometry": {
+                    "location": {
+                        "x": 6.4,
+                        "y": 5.83,
+                        "z": 1.55
+                    }
+                }
+            },
+            "R0503_THBT": {
+                "geometry": {
+                    "location": {
+                        "x": 6.4,
+                        "y": 5.83,
+                        "z": 2.5
+                    }
+                }
+            },
+            "R0504_THFB": {
+                "geometry": {
+                    "location": {
+                        "x": 5.8,
+                        "y": 7.03,
+                        "z": 0.55
+                    }
+                }
+            },
+            "R0504_THFM": {
+                "geometry": {
+                    "location": {
+                        "x": 5.8,
+                        "y": 7.03,
+                        "z": 1.55
+                    }
+                }
+            },
+            "R0504_THFT": {
+                "geometry": {
+                    "location": {
+                        "x": 5.8,
+                        "y": 7.03,
+                        "z": 2.5
+                    }
+                }
+            },
+            "R0504_THBB": {
+                "geometry": {
+                    "location": {
+                        "x": 5.8,
+                        "y": 5.83,
+                        "z": 0.55
+                    }
+                }
+            },
+            "R0504_THBM": {
+                "geometry": {
+                    "location": {
+                        "x": 5.8,
+                        "y": 5.83,
+                        "z": 1.55
+                    }
+                }
+            },
+            "R0504_THBT": {
+                "geometry": {
+                    "location": {
+                        "x": 5.8,
+                        "y": 5.83,
+                        "z": 2.5
+                    }
+                }
+            },
+            "R0505_THFB": {
+                "geometry": {
+                    "location": {
+                        "x": 5.2,
+                        "y": 7.03,
+                        "z": 0.55
+                    }
+                }
+            },
+            "R0505_THFM": {
+                "geometry": {
+                    "location": {
+                        "x": 5.2,
+                        "y": 7.03,
+                        "z": 1.55
+                    }
+                }
+            },
+            "R0505_THFT": {
+                "geometry": {
+                    "location": {
+                        "x": 5.2,
+                        "y": 7.03,
+                        "z": 2.5
+                    }
+                }
+            },
+            "R0505_THBB": {
+                "geometry": {
+                    "location": {
+                        "x": 5.2,
+                        "y": 5.83,
+                        "z": 0.55
+                    }
+                }
+            },
+            "R0505_THBM": {
+                "geometry": {
+                    "location": {
+                        "x": 5.2,
+                        "y": 5.83,
+                        "z": 1.55
+                    }
+                }
+            },
+            "R0505_THBT": {
+                "geometry": {
+                    "location": {
+                        "x": 5.2,
+                        "y": 5.83,
+                        "z": 2.5
+                    }
+                }
+            },
+            "R0506_THFB": {
+                "geometry": {
+                    "location": {
+                        "x": 4.6,
+                        "y": 7.03,
+                        "z": 0.55
+                    }
+                }
+            },
+            "R0506_THFM": {
+                "geometry": {
+                    "location": {
+                        "x": 4.6,
+                        "y": 7.03,
+                        "z": 1.55
+                    }
+                }
+            },
+            "R0506_THFT": {
+                "geometry": {
+                    "location": {
+                        "x": 4.6,
+                        "y": 7.03,
+                        "z": 2.5
+                    }
+                }
+            },
+            "R0506_THBB": {
+                "geometry": {
+                    "location": {
+                        "x": 4.6,
+                        "y": 5.83,
+                        "z": 0.55
+                    }
+                }
+            },
+            "R0506_THBM": {
+                "geometry": {
+                    "location": {
+                        "x": 4.6,
+                        "y": 5.83,
+                        "z": 1.55
+                    }
+                }
+            },
+            "R0506_THBT": {
+                "geometry": {
+                    "location": {
+                        "x": 4.6,
+                        "y": 5.83,
+                        "z": 2.5
+                    }
+                }
+            },
+            "R0601_THFB": {
+                "geometry": {
+                    "location": {
+                        "x": 7.6,
+                        "y": 3.43,
+                        "z": 0.55
+                    }
+                }
+            },
+            "R0601_THFM": {
+                "geometry": {
+                    "location": {
+                        "x": 7.6,
+                        "y": 3.43,
+                        "z": 1.55
+                    }
+                }
+            },
+            "R0601_THFT": {
+                "geometry": {
+                    "location": {
+                        "x": 7.6,
+                        "y": 3.43,
+                        "z": 2.5
+                    }
+                }
+            },
+            "R0601_THBB": {
+                "geometry": {
+                    "location": {
+                        "x": 7.6,
+                        "y": 4.63,
+                        "z": 0.55
+                    }
+                }
+            },
+            "R0601_THBM": {
+                "geometry": {
+                    "location": {
+                        "x": 7.6,
+                        "y": 4.63,
+                        "z": 1.55
+                    }
+                }
+            },
+            "R0601_THBT": {
+                "geometry": {
+                    "location": {
+                        "x": 7.6,
+                        "y": 4.63,
+                        "z": 2.5
+                    }
+                }
+            },
+            "R0602_THFB": {
+                "geometry": {
+                    "location": {
+                        "x": 7,
+                        "y": 3.43,
+                        "z": 0.55
+                    }
+                }
+            },
+            "R0602_THFM": {
+                "geometry": {
+                    "location": {
+                        "x": 7,
+                        "y": 3.43,
+                        "z": 1.55
+                    }
+                }
+            },
+            "R0602_THFT": {
+                "geometry": {
+                    "location": {
+                        "x": 7,
+                        "y": 3.43,
+                        "z": 2.5
+                    }
+                }
+            },
+            "R0602_THBB": {
+                "geometry": {
+                    "location": {
+                        "x": 7,
+                        "y": 4.63,
+                        "z": 0.55
+                    }
+                }
+            },
+            "R0602_THBM": {
+                "geometry": {
+                    "location": {
+                        "x": 7,
+                        "y": 4.63,
+                        "z": 1.55
+                    }
+                }
+            },
+            "R0602_THBT": {
+                "geometry": {
+                    "location": {
+                        "x": 7,
+                        "y": 4.63,
+                        "z": 2.5
+                    }
+                }
+            },
+            "R0603_THFB": {
+                "geometry": {
+                    "location": {
+                        "x": 6.4,
+                        "y": 3.43,
+                        "z": 0.55
+                    }
+                }
+            },
+            "R0603_THFM": {
+                "geometry": {
+                    "location": {
+                        "x": 6.4,
+                        "y": 3.43,
+                        "z": 1.55
+                    }
+                }
+            },
+            "R0603_THFT": {
+                "geometry": {
+                    "location": {
+                        "x": 6.4,
+                        "y": 3.43,
+                        "z": 2.5
+                    }
+                }
+            },
+            "R0603_THBB": {
+                "geometry": {
+                    "location": {
+                        "x": 6.4,
+                        "y": 4.63,
+                        "z": 0.55
+                    }
+                }
+            },
+            "R0603_THBM": {
+                "geometry": {
+                    "location": {
+                        "x": 6.4,
+                        "y": 4.63,
+                        "z": 1.55
+                    }
+                }
+            },
+            "R0603_THBT": {
+                "geometry": {
+                    "location": {
+                        "x": 6.4,
+                        "y": 4.63,
+                        "z": 2.5
+                    }
+                }
+            },
+            "R0604_THFB": {
+                "geometry": {
+                    "location": {
+                        "x": 5.8,
+                        "y": 3.43,
+                        "z": 0.55
+                    }
+                }
+            },
+            "R0604_THFM": {
+                "geometry": {
+                    "location": {
+                        "x": 5.8,
+                        "y": 3.43,
+                        "z": 1.55
+                    }
+                }
+            },
+            "R0604_THFT": {
+                "geometry": {
+                    "location": {
+                        "x": 5.8,
+                        "y": 3.43,
+                        "z": 2.5
+                    }
+                }
+            },
+            "R0604_THBB": {
+                "geometry": {
+                    "location": {
+                        "x": 5.8,
+                        "y": 4.63,
+                        "z": 0.55
+                    }
+                }
+            },
+            "R0604_THBM": {
+                "geometry": {
+                    "location": {
+                        "x": 5.8,
+                        "y": 4.63,
+                        "z": 1.55
+                    }
+                }
+            },
+            "R0604_THBT": {
+                "geometry": {
+                    "location": {
+                        "x": 5.8,
+                        "y": 4.63,
+                        "z": 2.5
+                    }
+                }
+            },
+            "R0605_THFB": {
+                "geometry": {
+                    "location": {
+                        "x": 5.2,
+                        "y": 3.43,
+                        "z": 0.55
+                    }
+                }
+            },
+            "R0605_THFM": {
+                "geometry": {
+                    "location": {
+                        "x": 5.2,
+                        "y": 3.43,
+                        "z": 1.55
+                    }
+                }
+            },
+            "R0605_THFT": {
+                "geometry": {
+                    "location": {
+                        "x": 5.2,
+                        "y": 3.43,
+                        "z": 2.5
+                    }
+                }
+            },
+            "R0605_THBB": {
+                "geometry": {
+                    "location": {
+                        "x": 5.2,
+                        "y": 4.63,
+                        "z": 0.55
+                    }
+                }
+            },
+            "R0605_THBM": {
+                "geometry": {
+                    "location": {
+                        "x": 5.2,
+                        "y": 4.63,
+                        "z": 1.55
+                    }
+                }
+            },
+            "R0605_THBT": {
+                "geometry": {
+                    "location": {
+                        "x": 5.2,
+                        "y": 4.63,
+                        "z": 2.5
+                    }
+                }
+            },
+            "R0606_THFB": {
+                "geometry": {
+                    "location": {
+                        "x": 4.6,
+                        "y": 3.43,
+                        "z": 0.55
+                    }
+                }
+            },
+            "R0606_THFM": {
+                "geometry": {
+                    "location": {
+                        "x": 4.6,
+                        "y": 3.43,
+                        "z": 1.55
+                    }
+                }
+            },
+            "R0606_THFT": {
+                "geometry": {
+                    "location": {
+                        "x": 4.6,
+                        "y": 3.43,
+                        "z": 2.5
+                    }
+                }
+            },
+            "R0606_THBB": {
+                "geometry": {
+                    "location": {
+                        "x": 4.6,
+                        "y": 4.63,
+                        "z": 0.55
+                    }
+                }
+            },
+            "R0606_THBM": {
+                "geometry": {
+                    "location": {
+                        "x": 4.6,
+                        "y": 4.63,
+                        "z": 1.55
+                    }
+                }
+            },
+            "R0606_THBT": {
+                "geometry": {
+                    "location": {
+                        "x": 4.6,
+                        "y": 4.63,
+                        "z": 2.5
+                    }
+                }
+            }
+        }
+    },
+    "inputs": {
+        "acus": {
+            "PCU_4": {
+                "supplyAirVolumeFlowRate": 3.1799999999999997,
+                "supplyAirTemperature": 42.1,
+                "coolingCapacity": 900
+            },
+            "PCU_5": {
+                "supplyAirVolumeFlowRate": 0.732,
+                "supplyAirTemperature": 42,
+                "coolingCapacity": 900
+            }
+        },
+        "servers": {
+            "R0501_45": {
+                "volumeFlowRate": 0.0009145080877954277,
+                "inputPower": 7
+            },
+            "R0502_29": {
+                "volumeFlowRate": 0.0054984827490596935,
+                "inputPower": 37.82608695652174
+            },
+            "R0502_30": {
+                "volumeFlowRate": 0.0054984827490596935,
+                "inputPower": 37.82608695652174
+            },
+            "R0502_31": {
+                "volumeFlowRate": 0.0054984827490596935,
+                "inputPower": 37.82608695652174
+            },
+            "R0502_32": {
+                "volumeFlowRate": 0.0054984827490596935,
+                "inputPower": 37.82608695652174
+            },
+            "R0502_33": {
+                "volumeFlowRate": 0.0054984827490596935,
+                "inputPower": 37.82608695652174
+            },
+            "R0502_34": {
+                "volumeFlowRate": 0.0054984827490596935,
+                "inputPower": 37.82608695652174
+            },
+            "R0502_35": {
+                "volumeFlowRate": 0.0054984827490596935,
+                "inputPower": 37.82608695652174
+            },
+            "R0502_36": {
+                "volumeFlowRate": 0.0054984827490596935,
+                "inputPower": 37.82608695652174
+            },
+            "R0502_37": {
+                "volumeFlowRate": 0.0054984827490596935,
+                "inputPower": 37.82608695652174
+            },
+            "R0502_38": {
+                "volumeFlowRate": 0.0054984827490596935,
+                "inputPower": 37.82608695652174
+            },
+            "R0502_39": {
+                "volumeFlowRate": 0.0054984827490596935,
+                "inputPower": 37.82608695652174
+            },
+            "R0502_40": {
+                "volumeFlowRate": 0.0054984827490596935,
+                "inputPower": 37.82608695652174
+            },
+            "R0502_22": {
+                "volumeFlowRate": 0.004941751778770324,
+                "inputPower": 37.82608695652174
+            },
+            "R0502_23": {
+                "volumeFlowRate": 0.004941751778770324,
+                "inputPower": 37.82608695652174
+            },
+            "R0502_24": {
+                "volumeFlowRate": 0.004941751778770324,
+                "inputPower": 37.82608695652174
+            },
+            "R0502_25": {
+                "volumeFlowRate": 0.004941751778770324,
+                "inputPower": 37.82608695652174
+            },
+            "R0502_14": {
+                "volumeFlowRate": 0.0054984827490596935,
+                "inputPower": 37.82608695652174
+            },
+            "R0502_15": {
+                "volumeFlowRate": 0.0054984827490596935,
+                "inputPower": 37.82608695652174
+            },
+            "R0502_16": {
+                "volumeFlowRate": 0.0054984827490596935,
+                "inputPower": 37.82608695652174
+            },
+            "R0502_17": {
+                "volumeFlowRate": 0.0054984827490596935,
+                "inputPower": 37.82608695652174
+            },
+            "R0502_18": {
+                "volumeFlowRate": 0.0054984827490596935,
+                "inputPower": 37.82608695652174
+            },
+            "R0502_19": {
+                "volumeFlowRate": 0.0054984827490596935,
+                "inputPower": 37.82608695652174
+            },
+            "R0502_20": {
+                "volumeFlowRate": 0.0054984827490596935,
+                "inputPower": 37.82608695652174
+            },
+            "R0503_01": {
+                "volumeFlowRate": 0.020043744230286216,
+                "inputPower": 168.99999999999997
+            },
+            "R0503_04": {
+                "volumeFlowRate": 0.020043744230286216,
+                "inputPower": 168.99999999999997
+            },
+            "R0503_07": {
+                "volumeFlowRate": 0.020043744230286216,
+                "inputPower": 168.99999999999997
+            },
+            "R0503_10": {
+                "volumeFlowRate": 0.020043744230286216,
+                "inputPower": 168.99999999999997
+            },
+            "R0503_13": {
+                "volumeFlowRate": 0.020043744230286216,
+                "inputPower": 168.99999999999997
+            },
+            "R0503_16": {
+                "volumeFlowRate": 0.020043744230286216,
+                "inputPower": 168.99999999999997
+            },
+            "R0503_19": {
+                "volumeFlowRate": 0.020043744230286216,
+                "inputPower": 168.99999999999997
+            },
+            "R0503_22": {
+                "volumeFlowRate": 0.020043744230286216,
+                "inputPower": 168.99999999999997
+            },
+            "R0503_25": {
+                "volumeFlowRate": 0.020043744230286216,
+                "inputPower": 168.99999999999997
+            },
+            "R0504_39": {
+                "volumeFlowRate": 0.025567033254509316,
+                "inputPower": 195.70000000000002
+            },
+            "R0504_02": {
+                "volumeFlowRate": 0.023210418614597713,
+                "inputPower": 195.70000000000002
+            },
+            "R0504_05": {
+                "volumeFlowRate": 0.023210418614597713,
+                "inputPower": 195.70000000000002
+            },
+            "R0504_08": {
+                "volumeFlowRate": 0.023210418614597713,
+                "inputPower": 195.70000000000002
+            },
+            "R0504_11": {
+                "volumeFlowRate": 0.023210418614597713,
+                "inputPower": 195.70000000000002
+            },
+            "R0504_14": {
+                "volumeFlowRate": 0.023210418614597713,
+                "inputPower": 195.70000000000002
+            },
+            "R0504_17": {
+                "volumeFlowRate": 0.023210418614597713,
+                "inputPower": 195.70000000000002
+            },
+            "R0504_20": {
+                "volumeFlowRate": 0.023210418614597713,
+                "inputPower": 195.70000000000002
+            },
+            "R0504_23": {
+                "volumeFlowRate": 0.023210418614597713,
+                "inputPower": 195.70000000000002
+            },
+            "R0504_26": {
+                "volumeFlowRate": 0.023210418614597713,
+                "inputPower": 195.70000000000002
+            },
+            "R0505_39": {
+                "volumeFlowRate": 0.018944266643186377,
+                "inputPower": 132.2142857142857
+            },
+            "R0505_24": {
+                "volumeFlowRate": 0.015680883588444543,
+                "inputPower": 132.2142857142857
+            },
+            "R0505_27": {
+                "volumeFlowRate": 0.015680883588444543,
+                "inputPower": 132.2142857142857
+            },
+            "R0505_30": {
+                "volumeFlowRate": 0.015680883588444543,
+                "inputPower": 132.2142857142857
+            },
+            "R0505_33": {
+                "volumeFlowRate": 0.015680883588444543,
+                "inputPower": 132.2142857142857
+            },
+            "R0505_36": {
+                "volumeFlowRate": 0.015680883588444543,
+                "inputPower": 132.2142857142857
+            },
+            "R0505_18": {
+                "volumeFlowRate": 0.017273004801115675,
+                "inputPower": 132.2142857142857
+            },
+            "R0505_19": {
+                "volumeFlowRate": 0.017273004801115675,
+                "inputPower": 132.2142857142857
+            },
+            "R0505_20": {
+                "volumeFlowRate": 0.017273004801115675,
+                "inputPower": 132.2142857142857
+            },
+            "R0505_02": {
+                "volumeFlowRate": 0.015680883588444543,
+                "inputPower": 132.2142857142857
+            },
+            "R0505_05": {
+                "volumeFlowRate": 0.015680883588444543,
+                "inputPower": 132.2142857142857
+            },
+            "R0505_08": {
+                "volumeFlowRate": 0.015680883588444543,
+                "inputPower": 132.2142857142857
+            },
+            "R0505_11": {
+                "volumeFlowRate": 0.015680883588444543,
+                "inputPower": 132.2142857142857
+            },
+            "R0505_14": {
+                "volumeFlowRate": 0.015680883588444543,
+                "inputPower": 132.2142857142857
+            },
+            "R0506_39": {
+                "volumeFlowRate": 0.019005674314639173,
+                "inputPower": 132.64285714285714
+            },
+            "R0506_24": {
+                "volumeFlowRate": 0.015731713032815516,
+                "inputPower": 132.64285714285714
+            },
+            "R0506_27": {
+                "volumeFlowRate": 0.015731713032815516,
+                "inputPower": 132.64285714285714
+            },
+            "R0506_30": {
+                "volumeFlowRate": 0.015731713032815516,
+                "inputPower": 132.64285714285714
+            },
+            "R0506_33": {
+                "volumeFlowRate": 0.015731713032815516,
+                "inputPower": 132.64285714285714
+            },
+            "R0506_36": {
+                "volumeFlowRate": 0.015731713032815516,
+                "inputPower": 132.64285714285714
+            },
+            "R0506_18": {
+                "volumeFlowRate": 0.017328995092205195,
+                "inputPower": 132.64285714285714
+            },
+            "R0506_19": {
+                "volumeFlowRate": 0.017328995092205195,
+                "inputPower": 132.64285714285714
+            },
+            "R0506_20": {
+                "volumeFlowRate": 0.017328995092205195,
+                "inputPower": 132.64285714285714
+            },
+            "R0506_02": {
+                "volumeFlowRate": 0.015731713032815516,
+                "inputPower": 132.64285714285714
+            },
+            "R0506_05": {
+                "volumeFlowRate": 0.015731713032815516,
+                "inputPower": 132.64285714285714
+            },
+            "R0506_08": {
+                "volumeFlowRate": 0.015731713032815516,
+                "inputPower": 132.64285714285714
+            },
+            "R0506_11": {
+                "volumeFlowRate": 0.015731713032815516,
+                "inputPower": 132.64285714285714
+            },
+            "R0506_14": {
+                "volumeFlowRate": 0.015731713032815516,
+                "inputPower": 132.64285714285714
+            },
+            "R0601_43": {
+                "volumeFlowRate": 0.0005225760501688158,
+                "inputPower": 4
+            },
+            "R0601_44": {
+                "volumeFlowRate": 0.0005225760501688158,
+                "inputPower": 4
+            },
+            "R0602_39": {
+                "volumeFlowRate": 0.01379113954710624,
+                "inputPower": 96.25
+            },
+            "R0602_24": {
+                "volumeFlowRate": 0.011415446048313897,
+                "inputPower": 96.25
+            },
+            "R0602_27": {
+                "volumeFlowRate": 0.011415446048313897,
+                "inputPower": 96.25
+            },
+            "R0602_30": {
+                "volumeFlowRate": 0.011415446048313897,
+                "inputPower": 96.25
+            },
+            "R0602_33": {
+                "volumeFlowRate": 0.011415446048313897,
+                "inputPower": 96.25
+            },
+            "R0602_36": {
+                "volumeFlowRate": 0.011415446048313897,
+                "inputPower": 96.25
+            },
+            "R0602_18": {
+                "volumeFlowRate": 0.01257448620718713,
+                "inputPower": 96.25
+            },
+            "R0602_19": {
+                "volumeFlowRate": 0.01257448620718713,
+                "inputPower": 96.25
+            },
+            "R0602_20": {
+                "volumeFlowRate": 0.01257448620718713,
+                "inputPower": 96.25
+            },
+            "R0602_02": {
+                "volumeFlowRate": 0.011415446048313897,
+                "inputPower": 96.25
+            },
+            "R0602_05": {
+                "volumeFlowRate": 0.011415446048313897,
+                "inputPower": 96.25
+            },
+            "R0602_08": {
+                "volumeFlowRate": 0.011415446048313897,
+                "inputPower": 96.25
+            },
+            "R0602_11": {
+                "volumeFlowRate": 0.011415446048313897,
+                "inputPower": 96.25
+            },
+            "R0602_14": {
+                "volumeFlowRate": 0.011415446048313897,
+                "inputPower": 96.25
+            },
+            "R0603_31": {
+                "volumeFlowRate": 0.003477510796111758,
+                "inputPower": 23.923076923076923
+            },
+            "R0603_32": {
+                "volumeFlowRate": 0.003477510796111758,
+                "inputPower": 23.923076923076923
+            },
+            "R0603_33": {
+                "volumeFlowRate": 0.003477510796111758,
+                "inputPower": 23.923076923076923
+            },
+            "R0603_34": {
+                "volumeFlowRate": 0.003477510796111758,
+                "inputPower": 23.923076923076923
+            },
+            "R0603_35": {
+                "volumeFlowRate": 0.003477510796111758,
+                "inputPower": 23.923076923076923
+            },
+            "R0603_36": {
+                "volumeFlowRate": 0.003477510796111758,
+                "inputPower": 23.923076923076923
+            },
+            "R0603_37": {
+                "volumeFlowRate": 0.003477510796111758,
+                "inputPower": 23.923076923076923
+            },
+            "R0603_38": {
+                "volumeFlowRate": 0.003477510796111758,
+                "inputPower": 23.923076923076923
+            },
+            "R0603_39": {
+                "volumeFlowRate": 0.003477510796111758,
+                "inputPower": 23.923076923076923
+            },
+            "R0603_06": {
+                "volumeFlowRate": 0.0028373256511693284,
+                "inputPower": 23.923076923076923
+            },
+            "R0603_09": {
+                "volumeFlowRate": 0.0028373256511693284,
+                "inputPower": 23.923076923076923
+            },
+            "R0603_02": {
+                "volumeFlowRate": 0.0026615951436219742,
+                "inputPower": 23.923076923076923
+            },
+            "R0603_04": {
+                "volumeFlowRate": 0.0026615951436219742,
+                "inputPower": 23.923076923076923
+            },
+            "R0604_25": {
+                "volumeFlowRate": 0.010982920842310805,
+                "inputPower": 75.55555555555556
+            },
+            "R0604_26": {
+                "volumeFlowRate": 0.010982920842310805,
+                "inputPower": 75.55555555555556
+            },
+            "R0604_27": {
+                "volumeFlowRate": 0.010982920842310805,
+                "inputPower": 75.55555555555556
+            },
+            "R0604_28": {
+                "volumeFlowRate": 0.010982920842310805,
+                "inputPower": 75.55555555555556
+            },
+            "R0604_29": {
+                "volumeFlowRate": 0.010982920842310805,
+                "inputPower": 75.55555555555556
+            },
+            "R0604_30": {
+                "volumeFlowRate": 0.010982920842310805,
+                "inputPower": 75.55555555555556
+            },
+            "R0604_31": {
+                "volumeFlowRate": 0.010982920842310805,
+                "inputPower": 75.55555555555556
+            },
+            "R0604_32": {
+                "volumeFlowRate": 0.010982920842310805,
+                "inputPower": 75.55555555555556
+            },
+            "R0604_33": {
+                "volumeFlowRate": 0.010982920842310805,
+                "inputPower": 75.55555555555556
+            },
+            "R0604_34": {
+                "volumeFlowRate": 0.010982920842310805,
+                "inputPower": 75.55555555555556
+            },
+            "R0604_35": {
+                "volumeFlowRate": 0.010982920842310805,
+                "inputPower": 75.55555555555556
+            },
+            "R0604_36": {
+                "volumeFlowRate": 0.010982920842310805,
+                "inputPower": 75.55555555555556
+            },
+            "R0604_37": {
+                "volumeFlowRate": 0.010982920842310805,
+                "inputPower": 75.55555555555556
+            },
+            "R0604_23": {
+                "volumeFlowRate": 0.009870880947633187,
+                "inputPower": 75.55555555555556
+            },
+            "R0604_14": {
+                "volumeFlowRate": 0.010982920842310805,
+                "inputPower": 75.55555555555556
+            },
+            "R0604_15": {
+                "volumeFlowRate": 0.010982920842310805,
+                "inputPower": 75.55555555555556
+            },
+            "R0604_16": {
+                "volumeFlowRate": 0.010982920842310805,
+                "inputPower": 75.55555555555556
+            },
+            "R0604_17": {
+                "volumeFlowRate": 0.010982920842310805,
+                "inputPower": 75.55555555555556
+            },
+            "R0604_18": {
+                "volumeFlowRate": 0.010982920842310805,
+                "inputPower": 75.55555555555556
+            },
+            "R0604_19": {
+                "volumeFlowRate": 0.010982920842310805,
+                "inputPower": 75.55555555555556
+            },
+            "R0604_20": {
+                "volumeFlowRate": 0.010982920842310805,
+                "inputPower": 75.55555555555556
+            },
+            "R0604_21": {
+                "volumeFlowRate": 0.010982920842310805,
+                "inputPower": 75.55555555555556
+            },
+            "R0604_03": {
+                "volumeFlowRate": 0.010825945041307062,
+                "inputPower": 75.55555555555556
+            },
+            "R0604_05": {
+                "volumeFlowRate": 0.010825945041307062,
+                "inputPower": 75.55555555555556
+            },
+            "R0604_07": {
+                "volumeFlowRate": 0.010825945041307062,
+                "inputPower": 75.55555555555556
+            },
+            "R0604_09": {
+                "volumeFlowRate": 0.010825945041307062,
+                "inputPower": 75.55555555555556
+            },
+            "R0604_11": {
+                "volumeFlowRate": 0.010825945041307062,
+                "inputPower": 75.55555555555556
+            },
+            "R0605_35": {
+                "volumeFlowRate": 0.01214985618180633,
+                "inputPower": 83.58333333333334
+            },
+            "R0605_36": {
+                "volumeFlowRate": 0.01214985618180633,
+                "inputPower": 83.58333333333334
+            },
+            "R0605_37": {
+                "volumeFlowRate": 0.01214985618180633,
+                "inputPower": 83.58333333333334
+            },
+            "R0605_38": {
+                "volumeFlowRate": 0.01214985618180633,
+                "inputPower": 83.58333333333334
+            },
+            "R0605_39": {
+                "volumeFlowRate": 0.01214985618180633,
+                "inputPower": 83.58333333333334
+            },
+            "R0605_40": {
+                "volumeFlowRate": 0.01214985618180633,
+                "inputPower": 83.58333333333334
+            },
+            "R0605_41": {
+                "volumeFlowRate": 0.01214985618180633,
+                "inputPower": 83.58333333333334
+            },
+            "R0605_42": {
+                "volumeFlowRate": 0.01214985618180633,
+                "inputPower": 83.58333333333334
+            },
+            "R0605_22": {
+                "volumeFlowRate": 0.010919662048319215,
+                "inputPower": 83.58333333333334
+            },
+            "R0605_02": {
+                "volumeFlowRate": 0.009299179817172274,
+                "inputPower": 83.58333333333334
+            },
+            "R0605_04": {
+                "volumeFlowRate": 0.009299179817172274,
+                "inputPower": 83.58333333333334
+            },
+            "R0605_06": {
+                "volumeFlowRate": 0.009299179817172274,
+                "inputPower": 83.58333333333334
+            },
+            "R0606_20": {
+                "volumeFlowRate": 0.03969400581073964,
+                "inputPower": 303.83333333333337
+            },
+            "R0606_21": {
+                "volumeFlowRate": 0.03969400581073964,
+                "inputPower": 303.83333333333337
+            },
+            "R0606_12": {
+                "volumeFlowRate": 0.03969400581073964,
+                "inputPower": 303.83333333333337
+            },
+            "R0606_13": {
+                "volumeFlowRate": 0.03969400581073964,
+                "inputPower": 303.83333333333337
+            },
+            "R0606_02": {
+                "volumeFlowRate": 0.01724400361118548,
+                "inputPower": 303.83333333333337
+            },
+            "R0606_06": {
+                "volumeFlowRate": 0.01724400361118548,
+                "inputPower": 303.83333333333337
+            }
+        }
+    }
+}

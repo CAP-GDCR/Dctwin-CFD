@@ -1,0 +1,108 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  v1912                                 |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       dictionary;
+    location    "system";
+    object      fvSolution;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+solvers
+{
+    p_rgh
+    {
+        solver          PCG;
+        preconditioner
+        {
+        	preconditioner GAMG;
+        	tolerance       1e-08;
+        	relTol          0.01;
+        	nVcycles	2;
+        	smoother DICGaussSeidel;
+        	nPreSweeps	2;
+        }
+        tolerance       1e-08;
+        relTol          0.01;
+        maxIter 	100;
+    }
+
+    p_rghFinal
+    {
+        solver          PCG;
+        preconditioner
+        {
+        	preconditioner GAMG;
+        	tolerance       2e-09;
+        	relTol          0;
+        	nVcycles	2;
+        	smoother DICGaussSeidel;
+        	nPreSweeps	2;
+        }
+        tolerance       1e-09;
+        relTol          0;
+        maxIter 	100;
+    }
+
+    "(U|T|k|epsilon)"
+    {
+        solver          PBiCGStab;
+        // Changed from DILU to diagonal for better numerical stability
+        // DILU can fail with floating point exception on ill-conditioned matrices
+        preconditioner  diagonal;
+        tolerance       1e-06;
+        relTol          0.01;
+    }
+
+    cellDisplacement
+    {
+        $p_rgh;
+        relTol          0;
+    }
+}
+
+SIMPLE
+{
+    nNonOrthogonalCorrectors 2;  // 增加非正交修正次数，对cyclic patch关键
+    pRefCell    0;
+    pRefValue    0;
+
+    // 使用SIMPLEC算法，比SIMPLE有更好的压力-速度耦合
+    consistent  yes;
+
+    residualControl
+    {
+        p_rgh           1e-2;
+        U               1e-4;
+        T               1e-3;
+
+        // possibly check turbulence fields
+        "(k|epsilon|omega)" 1e-3;
+    }
+}
+
+relaxationFactors
+{
+    fields
+    {
+        // 超低压力松弛因子，处理I项带来的压力跳变
+        p_rgh           0.5;
+    }
+    equations
+    {
+        // 超低松弛因子，防止速度-压力振荡
+        U               0.5;
+        T               0.5;
+        "(k|epsilon)"   0.5;  // 湍流场也要低松弛，防止k发散
+    }
+}
+
+
+// ************************************************************************* //

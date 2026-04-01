@@ -1,0 +1,16 @@
+solid GTC_Ceiling_Top_patch_2
+  facet normal 0.000000 0.000000 1.000000
+    outer loop
+      vertex 28.106989 14.399000 3.600000
+      vertex 28.106989 4.799000 3.600000
+      vertex 31.000000 4.799000 3.600000
+    endloop
+  endfacet
+  facet normal 0.000000 0.000000 1.000000
+    outer loop
+      vertex 31.000000 4.799000 3.600000
+      vertex 31.000000 14.399000 3.600000
+      vertex 28.106989 14.399000 3.600000
+    endloop
+  endfacet
+endsolid GTC_Ceiling_Top_patch_2

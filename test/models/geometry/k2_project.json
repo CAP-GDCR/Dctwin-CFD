@@ -1,0 +1,1108 @@
+{
+    "meta": {
+        "name": "test_room",
+        "version": "1.0"
+    },
+    "models": {
+        "geometryModels": {
+            "acus": {
+                "acu_model_1": {
+                    "size": {
+                        "x": 0.6,
+                        "y": 0.4,
+                        "z": 2.0
+                    },
+                    "supplyFace": {
+                        "length": 0.8,
+                        "offset": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "side": "rear",
+                        "width": 0.4
+                    },
+                    "returnFace": {
+                        "length": 0.4,
+                        "offset": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "side": "top",
+                        "width": 0.4
+                    }
+                }
+            },
+            "heatEmittingBoxes": {
+                "ups": {
+                    "size": {
+                        "x": 0.6,
+                        "y": 0.4,
+                        "z": 2.0
+                    },
+                    "returnFace": {
+                        "length": 0.4,
+                        "offset": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "side": "top",
+                        "width": 0.4
+                    },
+                    "supplyFace": {
+                        "length": 0.8,
+                        "offset": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "side": "rear",
+                        "width": 0.4
+                    }
+                },
+                "battery": {
+                    "size": {
+                        "x": 0.6,
+                        "y": 0.4,
+                        "z": 2.0
+                    },
+                    "returnFace": {
+                        "length": 0.4,
+                        "offset": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "side": "top",
+                        "width": 0.4
+                    },
+                    "supplyFace": {
+                        "length": 0.8,
+                        "offset": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "side": "rear",
+                        "width": 0.4
+                    }
+                },
+                "switchGear": {
+                    "size": {
+                        "x": 0.4,
+                        "y": 0.4,
+                        "z": 2.0
+                    },
+                    "returnFace": {
+                        "length": 0.4,
+                        "offset": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "side": "top",
+                        "width": 0.4
+                    },
+                    "supplyFace": {
+                        "length": 0.8,
+                        "offset": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "side": "rear",
+                        "width": 0.4
+                    }
+                }
+
+            },
+
+
+            "racks": {
+                "rack_model_1": {
+                    "firstSlotOffset": 0.1,
+                    "size": {
+                        "x": 0.6,
+                        "y": 0.4,
+                        "z": 2.0
+                    },
+                    "slot": 42
+                }
+            },
+            "servers": {
+                "Pokemon": {
+                    "depth": 0.3,
+                    "slotOccupation": 4,
+                    "width": 0.3
+                },
+                "AliServer Thor01-12U": {
+                    "depth": 0.3,
+                    "slotOccupation": 2,
+                    "width": 0.3
+                },
+                "AliServer Thor01-2U": {
+                    "depth": 0.3,
+                    "slotOccupation": 2,
+                    "width": 0.3
+                },
+                "SA5212M4": {
+                    "depth": 0.3,
+                    "slotOccupation": 2,
+                    "width": 0.3
+                },
+                "K800G3-10G": {
+                    "depth": 0.3,
+                    "slotOccupation": 2,
+                    "width": 0.3
+                },
+                "S2PA": {
+                    "depth": 0.3,
+                    "slotOccupation": 4,
+                    "width": 0.3
+                },
+                "ThinkServer SD350X": {
+                    "depth": 0.3,
+                    "slotOccupation": 2,
+                    "width": 0.3
+                },
+                "ThinkServer RD452X": {
+                    "depth": 0.3,
+                    "slotOccupation": 2,
+                    "width": 0.3
+                },
+                "R2-1218R-TH": {
+                    "depth": 0.3,
+                    "slotOccupation": 2,
+                    "width": 0.3
+                },
+                "AliServer Thor02-12S": {
+                    "depth": 0.3,
+                    "slotOccupation": 2,
+                    "width": 0.3
+                },
+                "AliServer Thor04-2U": {
+                    "depth": 0.3,
+                    "slotOccupation": 2,
+                    "width": 0.3
+                },
+                "RH2288H V3": {
+                    "depth": 0.3,
+                    "slotOccupation": 2,
+                    "width": 0.3
+                },
+                "NF5280M4": {
+                    "depth": 0.3,
+                    "slotOccupation": 2,
+                    "width": 0.3
+                },
+                "S5BA3UPI": {
+                    "depth": 0.3,
+                    "slotOccupation": 2,
+                    "width": 0.3
+                }
+            },
+            "boxes": {
+                "partition": {
+                    "faces": {
+                        "top": true,
+                        "bottom": true,
+                        "rear": true,
+                        "front": true,
+                        "left": true,
+                        "right": true
+                    }
+                },
+                "pillar": {
+                    "faces": {
+                        "top": true,
+                        "bottom": true,
+                        "rear": true,
+                        "front": true,
+                        "left": true,
+                        "right": true
+                    }
+                },
+                "duct": {
+                    "faces": {
+                        "top": false,
+                        "bottom": false,
+                        "rear": true,
+                        "front": true,
+                        "left": true,
+                        "right": true
+                    }
+                }
+            }
+        },
+        "powerModels": {
+            "acus": {}
+        },
+        "coolingModels": {
+            "acus": {
+                "acu_model_1": {
+                    "coolingType": "DX",
+                    "coolingCapacity": 600.0
+                }
+            },
+            "servers": {
+                "Pokemon": {
+                    "fanType": "Fixed",
+                    "volumeFlowRate": 0.02
+                },
+                "AliServer Thor01-12U": {
+                    "fanType": "Fixed",
+                    "volumeFlowRate": 0.02
+                },
+                "AliServer Thor01-2U": {
+                    "fanType": "Fixed",
+                    "volumeFlowRate": 0.02
+                },
+                "SA5212M4": {
+                    "fanType": "Fixed",
+                    "volumeFlowRate": 0.02
+                },
+                "K800G3-10G": {
+                    "fanType": "Fixed",
+                    "volumeFlowRate": 0.02
+                },
+                "S2PA": {
+                    "fanType": "Fixed",
+                    "volumeFlowRate": 0.02
+                },
+                "ThinkServer SD350X": {
+                    "fanType": "Fixed",
+                    "volumeFlowRate": 0.02
+                },
+                "ThinkServer RD452X": {
+                    "fanType": "Fixed",
+                    "volumeFlowRate": 0.02
+                },
+                "R2-1218R-TH": {
+                    "fanType": "Fixed",
+                    "volumeFlowRate": 0.02
+                },
+                "AliServer Thor02-12S": {
+                    "fanType": "Fixed",
+                    "volumeFlowRate": 0.02
+                },
+                "AliServer Thor04-2U": {
+                    "fanType": "Fixed",
+                    "volumeFlowRate": 0.02
+                },
+                "RH2288H V3": {
+                    "fanType": "Fixed",
+                    "volumeFlowRate": 0.02
+                },
+                "NF5280M4": {
+                    "fanType": "Fixed",
+                    "volumeFlowRate": 0.02
+                },
+                "S5BA3UPI": {
+                    "fanType": "Fixed",
+                    "volumeFlowRate": 0.02
+                }
+            }
+        }
+    },
+    "geometry": {
+        "height": 2.6,
+        "plane": [
+
+            {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            {
+                "x": 6.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            {
+                "x": 6.0,
+                "y": 2.4,
+                "z": 0.0
+            },
+            {
+                "x": 0.0,
+                "y": 2.4,
+                "z": 0.0
+            }
+        ]
+    },
+    "constructions": {
+        "heatEmittingBoxes": {
+            "ups1": {
+                "geometry": {
+                    "model": "ups",
+                    "orientation": 180,
+                    "location": {
+                        "x": 0.6,
+                        "y": 2.0,
+                        "z": 0
+                    }
+                }
+            },
+            "ups2": {
+                "geometry": {
+                    "model": "ups",
+                    "orientation": 180,
+                    "location": {
+                        "x": 1.2,
+                        "y": 2.0,
+                        "z": 0
+                    }
+                }
+            },
+            "battery1": {
+                "geometry": {
+                    "model": "battery",
+                    "orientation": 180,
+                    "location": {
+                        "x": 4.2,
+                        "y": 2.0,
+                        "z": 0
+                    }
+                }
+            },
+            "battery2": {
+                "geometry": {
+                    "model": "battery",
+                    "orientation": 180,
+                    "location": {
+                        "x": 4.8,
+                        "y": 2.0,
+                        "z": 0
+                    }
+                }
+            },
+           "battery3": {
+                "geometry": {
+                    "model": "battery",
+                    "orientation": 180,
+                    "location": {
+                        "x": 5.4,
+                        "y": 2.0,
+                        "z": 0
+                    }
+                }
+            },
+           "battery4": {
+                "geometry": {
+                    "model": "battery",
+                    "orientation": 180,
+                    "location": {
+                        "x": 6.0,
+                        "y": 2.0,
+                        "z": 0
+                    }
+                }
+            },
+
+            "battery5": {
+                "geometry": {
+                    "model": "battery",
+                    "orientation": 0,
+                    "location": {
+                        "x": 5.4,
+                        "y": 0.25,
+                        "z": 0
+                    }
+                }
+            },
+            "battery6": {
+                "geometry": {
+                    "model": "battery",
+                    "orientation": 0,
+                    "location": {
+                        "x": 4.8,
+                        "y": 0.25,
+                        "z": 0
+                    }
+                }
+            },
+            "battery7": {
+                "geometry": {
+                    "model": "battery",
+                    "orientation": 0,
+                    "location": {
+                        "x": 4.2,
+                        "y": 0.25,
+                        "z": 0
+                    }
+                }
+            },
+            "battery8": {
+                "geometry": {
+                    "model": "battery",
+                    "orientation": 0,
+                    "location": {
+                        "x": 3.6,
+                        "y": 0.25,
+                        "z": 0
+                    }
+                }
+            },
+            "switchGear1": {
+                "geometry": {
+                    "model": "switchGear",
+                    "orientation": 0,
+                    "location": {
+                        "x": 1.2,
+                        "y": 0.25,
+                        "z": 0
+                    }
+                }
+            },
+            "switchGear2": {
+                "geometry": {
+                    "model": "switchGear",
+                    "orientation": 0,
+                    "location": {
+                        "x": 1.6,
+                        "y": 0.25,
+                        "z": 0
+                    }
+                }
+            },
+            "switchGear3": {
+                "geometry": {
+                    "model": "switchGear",
+                    "orientation": 0,
+                    "location": {
+                        "x": 2.0,
+                        "y": 0.25,
+                        "z": 0
+                    }
+                }
+            }
+
+
+        },
+        "boxes": {},
+        "acus": {
+            "ACU1": {
+                "geometry": {
+                    "model": "acu_model_1",
+                    "orientation": 180,
+                    "location": {
+                        "x": 1.8,
+                        "y": 2.0,
+                        "z": 0.0
+                    }
+                },
+                "cooling": {
+                    "model": "acu_model_1"
+                },
+                "power": {}
+            },
+            "ACU2": {
+                "geometry": {
+                    "model": "acu_model_1",
+                    "orientation": 180,
+                    "location": {
+                        "x": 2.4,
+                        "y": 2.0,
+                        "z": 0.0
+                    }
+                },
+                "cooling": {
+                    "model": "acu_model_1"
+                },
+                "power": {}
+            }
+
+        },
+        "racks": {
+            "A01": {
+                "geometry": {
+                    "model": "rack_model_1",
+                    "location": {
+                        "x": 3.0,
+                        "y": 2.0,
+                        "z": 0.0
+                    },
+                    "orientation": 270,
+                    "hasBlankingPanel": true
+                },
+                "constructions": {
+                    "servers": {
+                        "A01_01": {
+                            "geometry": {
+                                "model": "Pokemon",
+                                "slotPosition": 1
+                            },
+                            "cooling": {
+                                "model": "Pokemon"
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "sensors": {
+            "sensor_1": {
+                "geometry": {
+                    "location": {
+                        "x": 0.61,
+                        "y": 2.0,
+                        "z": 2.0
+                    }
+                }
+            },
+            "sensor_2": {
+                "geometry": {
+                    "location": {
+                        "x": 0.61,
+                        "y": 2.0,
+                        "z": 2.0
+                    }
+                }
+            },
+            "sensor_3": {
+                "geometry": {
+                    "location": {
+                        "x": 0.61,
+                        "y": 2.0,
+                        "z": 2.0
+                    }
+                }
+            },
+            "sensor_4": {
+                "geometry": {
+                    "location": {
+                        "x": 5.39,
+                        "y": 2.0,
+                        "z": 2.0
+                    }
+                }
+            },
+            "sensor_5": {
+                "geometry": {
+                    "location": {
+                        "x": 5.39,
+                        "y": 2.0,
+                        "z": 2.0
+                    }
+                }
+            },
+            "sensor_6": {
+                "geometry": {
+                    "location": {
+                        "x": 5.39,
+                        "y": 2.0,
+                        "z": 2.0
+                    }
+                }
+            }
+        },
+        "servers": {}
+    },
+    "inputs": {
+        "acus": {
+            "ACU1": {
+                "supplyAirTemperature": 23.0,
+                "supplyAirVolumeFlowRate": 2.0964
+            },
+            "ACU2": {
+                "supplyAirTemperature": 23.0,
+                "supplyAirVolumeFlowRate": 2.0964
+            }
+        },
+        "servers": {
+            "A01_01": {
+                "inputPower": 5.0
+            },
+            "A01_06": {
+                "inputPower": 1660.0
+            },
+            "A01_11": {
+                "inputPower": 624.0
+            },
+            "A01_13": {
+                "inputPower": 535.0
+            },
+            "A01_15": {
+                "inputPower": 535.0
+            },
+            "A01_17": {
+                "inputPower": 535.0
+            },
+            "A01_19": {
+                "inputPower": 445.0
+            },
+            "A01_21": {
+                "inputPower": 530.0
+            },
+            "A01_23": {
+                "inputPower": 535.0
+            },
+            "A01_25": {
+                "inputPower": 535.0
+            },
+            "A01_27": {
+                "inputPower": 511.0
+            },
+            "A01_29": {
+                "inputPower": 535.0
+            },
+            "A01_31": {
+                "inputPower": 535.0
+            },
+            "A01_33": {
+                "inputPower": 535.0
+            },
+            "A01_35": {
+                "inputPower": 530.0
+            },
+            "A01_37": {
+                "inputPower": 430.0
+            },
+            "A02_01": {
+                "inputPower": 1660.0
+            },
+            "A02_06": {
+                "inputPower": 1660.0
+            },
+            "A02_11": {
+                "inputPower": 430.0
+            },
+            "A02_13": {
+                "inputPower": 430.0
+            },
+            "A02_15": {
+                "inputPower": 430.0
+            },
+            "A02_23": {
+                "inputPower": 1492.0
+            },
+            "A02_25": {
+                "inputPower": 424.0
+            },
+            "A02_27": {
+                "inputPower": 449.0
+            },
+            "A02_29": {
+                "inputPower": 449.0
+            },
+            "A02_31": {
+                "inputPower": 424.0
+            },
+            "A02_33": {
+                "inputPower": 424.0
+            },
+            "A02_35": {
+                "inputPower": 424.0
+            },
+            "A02_37": {
+                "inputPower": 449.0
+            },
+            "A03_01": {
+                "inputPower": 1660.0
+            },
+            "A03_06": {
+                "inputPower": 1660.0
+            },
+            "A03_11": {
+                "inputPower": 535.0
+            },
+            "A03_13": {
+                "inputPower": 535.0
+            },
+            "A03_15": {
+                "inputPower": 535.0
+            },
+            "A03_17": {
+                "inputPower": 535.0
+            },
+            "A03_19": {
+                "inputPower": 430.0
+            },
+            "A03_21": {
+                "inputPower": 526.0
+            },
+            "A03_23": {
+                "inputPower": 535.0
+            },
+            "A03_25": {
+                "inputPower": 535.0
+            },
+            "A03_27": {
+                "inputPower": 535.0
+            },
+            "A03_29": {
+                "inputPower": 535.0
+            },
+            "A03_31": {
+                "inputPower": 535.0
+            },
+            "A03_33": {
+                "inputPower": 535.0
+            },
+            "A03_35": {
+                "inputPower": 376.0
+            },
+            "A03_37": {
+                "inputPower": 662.0
+            },
+            "A04_01": {
+                "inputPower": 1660.0
+            },
+            "A04_06": {
+                "inputPower": 1660.0
+            },
+            "A04_11": {
+                "inputPower": 535.0
+            },
+            "A04_13": {
+                "inputPower": 535.0
+            },
+            "A04_15": {
+                "inputPower": 535.0
+            },
+            "A04_17": {
+                "inputPower": 535.0
+            },
+            "A04_19": {
+                "inputPower": 430.0
+            },
+            "A04_21": {
+                "inputPower": 535.0
+            },
+            "A04_23": {
+                "inputPower": 511.0
+            },
+            "A04_25": {
+                "inputPower": 535.0
+            },
+            "A04_27": {
+                "inputPower": 535.0
+            },
+            "A04_31": {
+                "inputPower": 535.0
+            },
+            "A04_33": {
+                "inputPower": 535.0
+            },
+            "A04_35": {
+                "inputPower": 526.0
+            },
+            "A04_37": {
+                "inputPower": 662.0
+            },
+            "A05_01": {
+                "inputPower": 1660.0
+            },
+            "A05_06": {
+                "inputPower": 1660.0
+            },
+            "A05_11": {
+                "inputPower": 430.0
+            },
+            "A05_13": {
+                "inputPower": 430.0
+            },
+            "A05_15": {
+                "inputPower": 430.0
+            },
+            "A05_23": {
+                "inputPower": 1492.0
+            },
+            "A05_25": {
+                "inputPower": 449.0
+            },
+            "A05_27": {
+                "inputPower": 449.0
+            },
+            "A05_29": {
+                "inputPower": 424.0
+            },
+            "A05_31": {
+                "inputPower": 449.0
+            },
+            "A05_33": {
+                "inputPower": 424.0
+            },
+            "A05_35": {
+                "inputPower": 424.0
+            },
+            "A05_37": {
+                "inputPower": 424.0
+            },
+            "A06_01": {
+                "inputPower": 1660.0
+            },
+            "A06_06": {
+                "inputPower": 1660.0
+            },
+            "A06_11": {
+                "inputPower": 535.0
+            },
+            "A06_13": {
+                "inputPower": 535.0
+            },
+            "A06_15": {
+                "inputPower": 535.0
+            },
+            "A06_17": {
+                "inputPower": 535.0
+            },
+            "A06_19": {
+                "inputPower": 535.0
+            },
+            "A06_21": {
+                "inputPower": 535.0
+            },
+            "A06_23": {
+                "inputPower": 535.0
+            },
+            "A06_25": {
+                "inputPower": 535.0
+            },
+            "A06_27": {
+                "inputPower": 535.0
+            },
+            "A06_29": {
+                "inputPower": 535.0
+            },
+            "A06_31": {
+                "inputPower": 511.0
+            },
+            "A06_33": {
+                "inputPower": 430.0
+            },
+            "A06_35": {
+                "inputPower": 526.0
+            },
+            "A06_37": {
+                "inputPower": 662.0
+            },
+            "A07_01": {
+                "inputPower": 1660.0
+            },
+            "A07_06": {
+                "inputPower": 1660.0
+            },
+            "A07_11": {
+                "inputPower": 526.0
+            },
+            "A07_13": {
+                "inputPower": 526.0
+            },
+            "A07_15": {
+                "inputPower": 526.0
+            },
+            "A07_17": {
+                "inputPower": 526.0
+            },
+            "A07_19": {
+                "inputPower": 526.0
+            },
+            "A07_21": {
+                "inputPower": 535.0
+            },
+            "A07_23": {
+                "inputPower": 535.0
+            },
+            "A07_25": {
+                "inputPower": 535.0
+            },
+            "A07_27": {
+                "inputPower": 535.0
+            },
+            "A07_29": {
+                "inputPower": 535.0
+            },
+            "A07_31": {
+                "inputPower": 535.0
+            },
+            "A07_33": {
+                "inputPower": 535.0
+            },
+            "A07_35": {
+                "inputPower": 535.0
+            },
+            "A07_37": {
+                "inputPower": 424.0
+            },
+            "A08_01": {
+                "inputPower": 1660.0
+            },
+            "A08_06": {
+                "inputPower": 1660.0
+            },
+            "A08_11": {
+                "inputPower": 430.0
+            },
+            "A08_13": {
+                "inputPower": 430.0
+            },
+            "A08_15": {
+                "inputPower": 430.0
+            },
+            "A08_17": {
+                "inputPower": 528.0
+            },
+            "A08_19": {
+                "inputPower": 424.0
+            },
+            "A08_27": {
+                "inputPower": 1492.0
+            },
+            "A08_29": {
+                "inputPower": 424.0
+            },
+            "A08_31": {
+                "inputPower": 449.0
+            },
+            "A08_33": {
+                "inputPower": 424.0
+            },
+            "A08_35": {
+                "inputPower": 449.0
+            },
+            "A08_37": {
+                "inputPower": 449.0
+            },
+            "A09_01": {
+                "inputPower": 1660.0
+            },
+            "A09_06": {
+                "inputPower": 1660.0
+            },
+            "A09_11": {
+                "inputPower": 526.0
+            },
+            "A09_13": {
+                "inputPower": 535.0
+            },
+            "A09_15": {
+                "inputPower": 535.0
+            },
+            "A09_17": {
+                "inputPower": 535.0
+            },
+            "A09_19": {
+                "inputPower": 535.0
+            },
+            "A09_21": {
+                "inputPower": 535.0
+            },
+            "A09_23": {
+                "inputPower": 535.0
+            },
+            "A09_25": {
+                "inputPower": 535.0
+            },
+            "A09_27": {
+                "inputPower": 535.0
+            },
+            "A09_29": {
+                "inputPower": 430.0
+            },
+            "A09_31": {
+                "inputPower": 535.0
+            },
+            "A09_33": {
+                "inputPower": 526.0
+            },
+            "A09_35": {
+                "inputPower": 535.0
+            },
+            "A09_37": {
+                "inputPower": 662.0
+            },
+            "A10_01": {
+                "inputPower": 1660.0
+            },
+            "A10_06": {
+                "inputPower": 1660.0
+            },
+            "A10_11": {
+                "inputPower": 535.0
+            },
+            "A10_13": {
+                "inputPower": 535.0
+            },
+            "A10_15": {
+                "inputPower": 430.0
+            },
+            "A10_17": {
+                "inputPower": 511.0
+            },
+            "A10_19": {
+                "inputPower": 511.0
+            },
+            "A10_21": {
+                "inputPower": 535.0
+            },
+            "A10_23": {
+                "inputPower": 535.0
+            },
+            "A10_25": {
+                "inputPower": 530.0
+            },
+            "A10_27": {
+                "inputPower": 530.0
+            },
+            "A10_29": {
+                "inputPower": 526.0
+            },
+            "A10_31": {
+                "inputPower": 376.0
+            },
+            "A10_33": {
+                "inputPower": 662.0
+            },
+            "A10_35": {
+                "inputPower": 624.0
+            },
+            "A10_37": {
+                "inputPower": 424.0
+            }
+        },
+        "heatEmittingBoxes": {
+            "ups1": {
+                "inputPower": 300
+            },
+            "ups2": {
+                "inputPower": 300
+            },
+            "battery1": {
+                "inputPower": 300
+            },
+            "battery2": {
+                "inputPower": 300
+            },
+            "battery3": {
+                "inputPower": 300
+            },
+            "battery4": {
+                "inputPower": 300
+            },
+            "battery5": {
+                "inputPower": 300
+            },
+            "battery6": {
+                "inputPower": 300
+            },
+            "battery7": {
+                "inputPower": 300
+            },
+            "battery8": {
+                "inputPower": 300
+            },
+            "switchGear1": {
+                "inputPower": 300
+            },
+            "switchGear2": {
+                "inputPower": 300
+            },
+            "switchGear3": {
+                "inputPower": 300
+            }
+        }
+    }
+}

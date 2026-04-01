@@ -1,0 +1,16 @@
+solid AHU_partition_copy_copy_Front_patch_14
+  facet normal 0.000000 -1.000000 0.000000
+    outer loop
+      vertex 26.200001 13.720587 6.500000
+      vertex 26.200001 13.720587 3.753823
+      vertex 29.200001 13.720587 3.753823
+    endloop
+  endfacet
+  facet normal 0.000000 -1.000000 0.000000
+    outer loop
+      vertex 29.200001 13.720587 3.753823
+      vertex 29.200001 13.720587 6.500000
+      vertex 26.200001 13.720587 6.500000
+    endloop
+  endfacet
+endsolid AHU_partition_copy_copy_Front_patch_14

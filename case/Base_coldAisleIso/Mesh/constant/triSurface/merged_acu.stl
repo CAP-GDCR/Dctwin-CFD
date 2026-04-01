@@ -1,0 +1,102 @@
+solid ACU_1_Front
+  facet normal 1.000000 0.000000 0.000000
+    outer loop
+      vertex 2.144670 2.100881 2.200000
+      vertex 2.144670 2.100881 0.200000
+      vertex 2.144670 3.900881 0.200000
+    endloop
+  endfacet
+  facet normal 1.000000 0.000000 0.000000
+    outer loop
+      vertex 2.144670 3.900881 0.200000
+      vertex 2.144670 3.900881 2.200000
+      vertex 2.144670 2.100881 2.200000
+    endloop
+  endfacet
+endsolid ACU_1_Front
+
+solid ACU_1_Back
+  facet normal -1.000000 -0.000000 0.000000
+    outer loop
+      vertex 1.144670 3.900881 2.200000
+      vertex 1.144670 3.900881 0.200000
+      vertex 1.144670 2.100881 0.200000
+    endloop
+  endfacet
+  facet normal -1.000000 -0.000000 0.000000
+    outer loop
+      vertex 1.144670 2.100881 0.200000
+      vertex 1.144670 2.100881 2.200000
+      vertex 1.144670 3.900881 2.200000
+    endloop
+  endfacet
+endsolid ACU_1_Back
+
+solid ACU_1_Left
+  facet normal 0.000000 -1.000000 0.000000
+    outer loop
+      vertex 1.144670 2.100881 2.200000
+      vertex 1.144670 2.100881 0.200000
+      vertex 2.144670 2.100881 0.200000
+    endloop
+  endfacet
+  facet normal 0.000000 -1.000000 0.000000
+    outer loop
+      vertex 2.144670 2.100881 0.200000
+      vertex 2.144670 2.100881 2.200000
+      vertex 1.144670 2.100881 2.200000
+    endloop
+  endfacet
+endsolid ACU_1_Left
+
+solid ACU_1_Right
+  facet normal -0.000000 1.000000 0.000000
+    outer loop
+      vertex 2.144670 3.900881 2.200000
+      vertex 2.144670 3.900881 0.200000
+      vertex 1.144670 3.900881 0.200000
+    endloop
+  endfacet
+  facet normal -0.000000 1.000000 0.000000
+    outer loop
+      vertex 1.144670 3.900881 0.200000
+      vertex 1.144670 3.900881 2.200000
+      vertex 2.144670 3.900881 2.200000
+    endloop
+  endfacet
+endsolid ACU_1_Right
+
+solid ACU_1_Top_patch
+  facet normal 0.000000 0.000000 1.000000
+    outer loop
+      vertex 1.144670 2.100881 2.200000
+      vertex 2.144670 2.100881 2.200000
+      vertex 2.144670 3.900881 2.200000
+    endloop
+  endfacet
+  facet normal 0.000000 0.000000 1.000000
+    outer loop
+      vertex 2.144670 3.900881 2.200000
+      vertex 1.144670 3.900881 2.200000
+      vertex 1.144670 2.100881 2.200000
+    endloop
+  endfacet
+endsolid ACU_1_Top_patch
+
+solid ACU_1_Bottom_patch
+  facet normal 0.000000 0.000000 -1.000000
+    outer loop
+      vertex 2.144670 2.100881 0.200000
+      vertex 1.144670 2.100881 0.200000
+      vertex 1.144670 3.900881 0.200000
+    endloop
+  endfacet
+  facet normal 0.000000 0.000000 -1.000000
+    outer loop
+      vertex 1.144670 3.900881 0.200000
+      vertex 2.144670 3.900881 0.200000
+      vertex 2.144670 2.100881 0.200000
+    endloop
+  endfacet
+endsolid ACU_1_Bottom_patch
+

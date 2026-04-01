@@ -1,0 +1,44 @@
+solid Baffle_7_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_Front
+  facet normal -1.000000 0.000000 0.000000
+    outer loop
+      vertex 29.200000 19.540569 4.000000
+      vertex 29.200000 19.540569 0.005855
+      vertex 29.200000 15.550000 0.005855
+    endloop
+  endfacet
+  facet normal -1.000000 0.000000 0.000000
+    outer loop
+      vertex 29.200000 14.650000 3.005855
+      vertex 29.200000 14.650000 0.005855
+      vertex 29.200000 13.720587 0.005855
+    endloop
+  endfacet
+  facet normal -1.000000 0.000000 0.000000
+    outer loop
+      vertex 29.200000 19.540569 4.000000
+      vertex 29.200000 15.550000 0.005855
+      vertex 29.200000 15.550000 3.005855
+    endloop
+  endfacet
+  facet normal -1.000000 0.000000 0.000000
+    outer loop
+      vertex 29.200000 14.650000 3.005855
+      vertex 29.200000 13.720587 0.005855
+      vertex 29.200000 13.720587 4.000000
+    endloop
+  endfacet
+  facet normal -1.000000 0.000000 -0.000000
+    outer loop
+      vertex 29.200000 13.720587 4.000000
+      vertex 29.200000 19.540569 4.000000
+      vertex 29.200000 15.550000 3.005855
+    endloop
+  endfacet
+  facet normal -1.000000 0.000000 0.000000
+    outer loop
+      vertex 29.200000 15.550000 3.005855
+      vertex 29.200000 14.650000 3.005855
+      vertex 29.200000 13.720587 4.000000
+    endloop
+  endfacet
+endsolid Baffle_7_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_Front

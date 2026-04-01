@@ -1,0 +1,148 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  v2406                                 |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       dictionary;
+    object      surfaceFeatureExtractDict;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+{% if has_rack | default(true) %}
+// Extract edge features from merged RACK STL (only RACK hollow geometries)
+merged_rack.stl
+{
+    extractionMethod    extractFromSurface;
+
+    extractFromSurfaceCoeffs
+    {
+        // Mark edges with angle > includedAngle as features
+        // 150 degrees captures right-angle edges (box corners)
+        includedAngle   {{ included_angle | default(150) }};
+        
+        // CRITICAL: Also extract edges between different solid regions
+        // This captures server inlet/outlet boundaries within rack_hollow.stl
+        // Without this, co-planar region boundaries are not detected as features
+        nonManifoldEdges    true;
+    }
+
+    // Include edges between different regions in the same STL
+    subsetFeatures
+    {
+        // Include non-manifold edges (region boundaries)
+        nonManifoldEdges    true;
+        
+        // Include open edges (boundary of surface)
+        openEdges           true;
+    }
+
+    // Write options
+    writeObj    no;
+}
+{% endif %}
+
+
+{% if independent_equipment_stl_files is defined and independent_equipment_stl_files %}
+// Extract edge features from independent equipment STL files (ACU, Pillar, Box, etc.)
+// These are kept separate from merged_rack.stl for watertight handling
+{% for stl_file in independent_equipment_stl_files %}
+{{ stl_file }}
+{
+    extractionMethod    extractFromSurface;
+
+    extractFromSurfaceCoeffs
+    {
+        includedAngle   {{ included_angle | default(150) }};
+        nonManifoldEdges    true;
+    }
+
+    subsetFeatures
+    {
+        nonManifoldEdges    true;
+        openEdges           true;
+    }
+
+    writeObj    no;
+}
+{% endfor %}
+{% endif %}
+
+{% if has_room_wall | default(false) %}
+// Extract edge features from room wall STL (polygon room outer walls)
+room_wall.stl
+{
+    extractionMethod    extractFromSurface;
+
+    extractFromSurfaceCoeffs
+    {
+        // Capture right-angle edges for room boundaries
+        includedAngle   {{ included_angle | default(150) }};
+        nonManifoldEdges    true;
+    }
+
+    subsetFeatures
+    {
+        nonManifoldEdges    true;
+        openEdges           true;
+    }
+
+    writeObj    no;
+}
+{% endif %}
+
+{% if has_wall_baffles | default(false) %}
+// Extract edge features from wall baffle STL (containment, raised floor panel, etc.)
+// Wall baffles become single-face wall boundary patches
+merged_wall_baffles.stl
+{
+    extractionMethod    extractFromSurface;
+
+    extractFromSurfaceCoeffs
+    {
+        includedAngle   {{ baffle_included_angle | default(150) }};
+        nonManifoldEdges    true;
+    }
+
+    subsetFeatures
+    {
+        nonManifoldEdges    true;
+        openEdges           true;
+    }
+
+    writeObj    no;
+}
+{% endif %}
+
+{% if perforated_baffle_stl_files is defined and perforated_baffle_stl_files %}
+// Extract edge features from perforated baffle STL files
+// These use faceZone + faceType baffle in snappyHexMesh
+// Feature extraction helps snappyHexMesh snap mesh to STL edges for smooth baffles
+{% for stl_file in perforated_baffle_stl_files %}
+{{ stl_file }}
+{
+    extractionMethod    extractFromSurface;
+
+    extractFromSurfaceCoeffs
+    {
+        includedAngle   {{ baffle_included_angle | default(150) }};
+        nonManifoldEdges    true;
+    }
+
+    subsetFeatures
+    {
+        nonManifoldEdges    true;
+        openEdges           true;
+    }
+
+    writeObj    no;
+}
+{% endfor %}
+{% endif %}
+
+// ************************************************************************* //

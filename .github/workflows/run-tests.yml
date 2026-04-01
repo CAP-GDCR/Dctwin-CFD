@@ -1,0 +1,28 @@
+name: Run tests
+
+on:
+  pull_request:
+    branches: ["main"]
+
+jobs:
+  run-cfd:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: Install Poetry
+        run: curl -sSL https://install.python-poetry.org | python3 -
+
+      - name: Install dependencies
+        run: |
+          poetry env use 3.10
+          poetry install
+
+      - name: Run CFD tests
+        run: cd test && poetry run python test_cfd.py

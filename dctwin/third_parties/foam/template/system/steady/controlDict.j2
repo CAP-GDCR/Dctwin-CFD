@@ -1,0 +1,103 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  v1912                                 |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       dictionary;
+    location    "system";
+    object      controlDict;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+application     buoyantBoussinesqSimpleFoam;
+
+startFrom       latestTime;
+
+startTime       0;
+
+stopAt          endTime;
+
+endTime         {{ end_time }};
+
+deltaT          {{ delta_t }};
+
+writeControl    timeStep;
+
+writeInterval   {{ write_interval }};
+
+purgeWrite      0;
+
+writeFormat     ascii;
+
+writePrecision  6;
+
+writeCompression off;
+
+timeFormat      general;
+
+timePrecision   6;
+
+runTimeModifiable true;
+
+{% set surface_field_values = surface_field_values|default([]) %}
+{% if probes|length > 0 or surface_field_values|length > 0 %}
+functions
+{
+{% if probes|length > 0 %}
+	probes
+	{
+		// Where to load it from
+		libs ( "libsampling.so" );
+		type probes;
+		enabled true;
+		// Name of the directory for probe data
+		name probes;
+		// Write control
+		writeControl timeStep;
+		writeInterval 10;
+		// Fields to be probed
+		fields
+		(
+			T
+			rho
+            p
+            p_rgh
+            U
+		);
+        probeLocations
+        (
+            {% for probe in probes %}
+                ({{ probe.x }} {{ probe.y }} {{ probe.z }})
+            {% endfor %}
+        );
+   }
+{% endif %}
+{% for fo in surface_field_values %}
+    {{ fo.name }}
+    {
+        type            surfaceFieldValue;
+        libs            ("libfieldFunctionObjects.so");
+        enabled         true;
+        writeControl    timeStep;
+        writeInterval   1;
+        log             true;
+        writeFields     false;
+        regionType      patch;
+        name            {{ fo.patch }};
+        operation       areaAverage;
+        fields          (T);
+    }
+{% endfor %}
+}
+{% endif %}
+
+// ************************************************************************* //
+
+// Note: petscFoam is only needed when using PETSc solvers (fvSolution_gpu)
+// libs       (petscFoam);

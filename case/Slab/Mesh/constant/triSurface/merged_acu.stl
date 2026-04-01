@@ -1,0 +1,204 @@
+solid PCU_1_Front
+  facet normal 1.000000 0.000000 0.000000
+    outer loop
+      vertex 1.020000 0.600000 2.380000
+      vertex 1.020000 0.600000 0.400000
+      vertex 1.020000 2.420000 0.400000
+    endloop
+  endfacet
+  facet normal 1.000000 0.000000 0.000000
+    outer loop
+      vertex 1.020000 2.420000 0.400000
+      vertex 1.020000 2.420000 2.380000
+      vertex 1.020000 0.600000 2.380000
+    endloop
+  endfacet
+endsolid PCU_1_Front
+
+solid PCU_1_Back
+  facet normal -1.000000 -0.000000 0.000000
+    outer loop
+      vertex 0.000000 2.420000 2.380000
+      vertex 0.000000 2.420000 0.400000
+      vertex 0.000000 0.600000 0.400000
+    endloop
+  endfacet
+  facet normal -1.000000 -0.000000 0.000000
+    outer loop
+      vertex 0.000000 0.600000 0.400000
+      vertex 0.000000 0.600000 2.380000
+      vertex 0.000000 2.420000 2.380000
+    endloop
+  endfacet
+endsolid PCU_1_Back
+
+solid PCU_1_Left
+  facet normal 0.000000 -1.000000 0.000000
+    outer loop
+      vertex 0.000000 0.600000 2.380000
+      vertex 0.000000 0.600000 0.400000
+      vertex 1.020000 0.600000 0.400000
+    endloop
+  endfacet
+  facet normal 0.000000 -1.000000 0.000000
+    outer loop
+      vertex 1.020000 0.600000 0.400000
+      vertex 1.020000 0.600000 2.380000
+      vertex 0.000000 0.600000 2.380000
+    endloop
+  endfacet
+endsolid PCU_1_Left
+
+solid PCU_1_Right
+  facet normal -0.000000 1.000000 0.000000
+    outer loop
+      vertex 1.020000 2.420000 2.380000
+      vertex 1.020000 2.420000 0.400000
+      vertex 0.000000 2.420000 0.400000
+    endloop
+  endfacet
+  facet normal -0.000000 1.000000 0.000000
+    outer loop
+      vertex 0.000000 2.420000 0.400000
+      vertex 0.000000 2.420000 2.380000
+      vertex 1.020000 2.420000 2.380000
+    endloop
+  endfacet
+endsolid PCU_1_Right
+
+solid PCU_1_Top_patch
+  facet normal 0.000000 0.000000 1.000000
+    outer loop
+      vertex 0.000000 0.600000 2.380000
+      vertex 1.020000 0.600000 2.380000
+      vertex 1.020000 2.420000 2.380000
+    endloop
+  endfacet
+  facet normal 0.000000 0.000000 1.000000
+    outer loop
+      vertex 1.020000 2.420000 2.380000
+      vertex 0.000000 2.420000 2.380000
+      vertex 0.000000 0.600000 2.380000
+    endloop
+  endfacet
+endsolid PCU_1_Top_patch
+
+solid PCU_1_Bottom_patch
+  facet normal 0.000000 0.000000 -1.000000
+    outer loop
+      vertex 1.020000 0.600000 0.400000
+      vertex 0.000000 0.600000 0.400000
+      vertex 0.000000 2.420000 0.400000
+    endloop
+  endfacet
+  facet normal 0.000000 0.000000 -1.000000
+    outer loop
+      vertex 0.000000 2.420000 0.400000
+      vertex 1.020000 2.420000 0.400000
+      vertex 1.020000 0.600000 0.400000
+    endloop
+  endfacet
+endsolid PCU_1_Bottom_patch
+
+solid PCU_2_Front
+  facet normal -1.000000 0.000000 0.000000
+    outer loop
+      vertex 9.430000 2.420000 2.380000
+      vertex 9.430000 2.420000 0.400000
+      vertex 9.430000 0.600000 0.400000
+    endloop
+  endfacet
+  facet normal -1.000000 0.000000 0.000000
+    outer loop
+      vertex 9.430000 0.600000 0.400000
+      vertex 9.430000 0.600000 2.380000
+      vertex 9.430000 2.420000 2.380000
+    endloop
+  endfacet
+endsolid PCU_2_Front
+
+solid PCU_2_Back
+  facet normal 1.000000 0.000000 0.000000
+    outer loop
+      vertex 10.450000 0.600000 2.380000
+      vertex 10.450000 0.600000 0.400000
+      vertex 10.450000 2.420000 0.400000
+    endloop
+  endfacet
+  facet normal 1.000000 0.000000 0.000000
+    outer loop
+      vertex 10.450000 2.420000 0.400000
+      vertex 10.450000 2.420000 2.380000
+      vertex 10.450000 0.600000 2.380000
+    endloop
+  endfacet
+endsolid PCU_2_Back
+
+solid PCU_2_Left
+  facet normal 0.000000 1.000000 0.000000
+    outer loop
+      vertex 10.450000 2.420000 2.380000
+      vertex 10.450000 2.420000 0.400000
+      vertex 9.430000 2.420000 0.400000
+    endloop
+  endfacet
+  facet normal 0.000000 1.000000 0.000000
+    outer loop
+      vertex 9.430000 2.420000 0.400000
+      vertex 9.430000 2.420000 2.380000
+      vertex 10.450000 2.420000 2.380000
+    endloop
+  endfacet
+endsolid PCU_2_Left
+
+solid PCU_2_Right
+  facet normal -0.000000 -1.000000 0.000000
+    outer loop
+      vertex 9.430000 0.600000 2.380000
+      vertex 9.430000 0.600000 0.400000
+      vertex 10.450000 0.600000 0.400000
+    endloop
+  endfacet
+  facet normal -0.000000 -1.000000 0.000000
+    outer loop
+      vertex 10.450000 0.600000 0.400000
+      vertex 10.450000 0.600000 2.380000
+      vertex 9.430000 0.600000 2.380000
+    endloop
+  endfacet
+endsolid PCU_2_Right
+
+solid PCU_2_Top_patch
+  facet normal 0.000000 0.000000 1.000000
+    outer loop
+      vertex 10.450000 2.420000 2.380000
+      vertex 9.430000 2.420000 2.380000
+      vertex 9.430000 0.600000 2.380000
+    endloop
+  endfacet
+  facet normal 0.000000 0.000000 1.000000
+    outer loop
+      vertex 9.430000 0.600000 2.380000
+      vertex 10.450000 0.600000 2.380000
+      vertex 10.450000 2.420000 2.380000
+    endloop
+  endfacet
+endsolid PCU_2_Top_patch
+
+solid PCU_2_Bottom_patch
+  facet normal 0.000000 0.000000 -1.000000
+    outer loop
+      vertex 9.430000 2.420000 0.400000
+      vertex 10.450000 2.420000 0.400000
+      vertex 10.450000 0.600000 0.400000
+    endloop
+  endfacet
+  facet normal 0.000000 0.000000 -1.000000
+    outer loop
+      vertex 10.450000 0.600000 0.400000
+      vertex 9.430000 0.600000 0.400000
+      vertex 9.430000 2.420000 0.400000
+    endloop
+  endfacet
+endsolid PCU_2_Bottom_patch
+

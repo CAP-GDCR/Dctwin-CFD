@@ -1,0 +1,43 @@
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       dictionary;
+    object      createBafflesDict;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+// All internal baffles use faceType internal + createBaffles with type cyclic.
+// Wall baffles are converted from cyclic to wall type in the boundary file
+// AFTER createBaffles runs, via post-processing.
+// Only regular walls (patchInfo wall in snappyHexMesh) use type wall directly.
+internalFacesOnly true;
+
+baffles
+{
+{% for baffle in baffles %}
+    // Baffle: {{ baffle.zone_name }}
+    {{ baffle.zone_name }}
+    {
+        type        faceZone;
+        zoneName    {{ baffle.zone_name }};
+
+        patches
+        {
+            master
+            {
+                name            {{ baffle.master_name }};
+                type            cyclic;
+                neighbourPatch  {{ baffle.slave_name }};
+            }
+            slave
+            {
+                name            {{ baffle.slave_name }};
+                type            cyclic;
+                neighbourPatch  {{ baffle.master_name }};
+            }
+        }
+    }
+
+{% endfor %}
+}

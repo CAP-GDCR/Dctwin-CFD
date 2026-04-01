@@ -1,0 +1,64 @@
+{
+  "meta": {
+    "name": "stlgen_stub",
+    "version": "0.0.1"
+  },
+  "geometry": {
+    "height": 3.8,
+    "plane": [
+      {
+        "x": 1.7999999999999972,
+        "y": -0.5790248166398071,
+        "z": 0
+      },
+      {
+        "x": 20.00000076293945,
+        "y": -0.5790248166398071,
+        "z": 0
+      },
+      {
+        "x": 20.00000076293945,
+        "y": 7.6993937243147865,
+        "z": 0
+      },
+      {
+        "x": 1.7999999999999972,
+        "y": 7.6993937243147865,
+        "z": 0
+      }
+    ]
+  },
+  "models": {
+    "geometryModels": {
+      "acus": {},
+      "racks": {},
+      "servers": {},
+      "boxes": {}
+    },
+    "coolingModels": {
+      "acus": {},
+      "servers": {}
+    },
+    "powerModels": {
+      "servers": {}
+    }
+  },
+  "constructions": {
+    "falseCeiling": {
+      "geometry": {
+        "height": 3.8,
+        "openings": {}
+      }
+    },
+    "boxes": {},
+    "acus": {},
+    "racks": {},
+    "sensors": {}
+  },
+  "inputs": {
+    "acus": {},
+    "servers": {},
+    "dehumidifiers": {},
+    "cdus": {}
+  }
+}
