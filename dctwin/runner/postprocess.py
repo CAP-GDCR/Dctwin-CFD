@@ -1795,23 +1795,30 @@ class CachedPostProcessor:
         if source is None:
             return fields
 
-        for name in source.point_data.keys():
-            if name in seen:
-                continue
-            arr = source.point_data[name]
-            if arr.ndim == 1:
-                fields.append({"name": name, "type": "scalar", "label": name})
-                seen.add(name)
-            elif arr.ndim == 2 and arr.shape[1] == 3:
-                fields.append({
-                    "name": name, "type": "vector", "label": name,
-                    "components": [f"{name}x", f"{name}y", f"{name}z"],
-                })
-                seen.add(name)
-                for suffix in ("mag", "x", "y", "z"):
-                    derived = f"{name}{suffix}"
-                    if derived not in seen:
-                        seen.add(derived)
+        data_sources = []
+        if hasattr(source, "point_data"):
+            data_sources.append(source.point_data)
+        if hasattr(source, "cell_data"):
+            data_sources.append(source.cell_data)
+
+        for data_store in data_sources:
+            for name in data_store.keys():
+                if name in seen:
+                    continue
+                arr = data_store[name]
+                if arr.ndim == 1:
+                    fields.append({"name": name, "type": "scalar", "label": name})
+                    seen.add(name)
+                elif arr.ndim == 2 and arr.shape[1] == 3:
+                    fields.append({
+                        "name": name, "type": "vector", "label": name,
+                        "components": [f"{name}x", f"{name}y", f"{name}z"],
+                    })
+                    seen.add(name)
+                    for suffix in ("mag", "x", "y", "z"):
+                        derived = f"{name}{suffix}"
+                        if derived not in seen:
+                            seen.add(derived)
         return fields
 
     def get_mesh(self) -> Tuple[bytes, List[dict]]:
@@ -2073,6 +2080,33 @@ class CachedPostProcessor:
 
         payload = struct.pack("<I", len(header_bytes)) + header_bytes + scalars.tobytes()
         return payload, header_dict
+
+    def inject_internal_fields(self, fields: Dict[str, np.ndarray]) -> List[dict]:
+        """Attach AI or custom fields to the internal mesh and refresh discovery state."""
+        if self._internal is None:
+            raise RuntimeError("No internal mesh loaded")
+
+        expected_cells = int(self._internal.n_cells)
+        for field_name, values in fields.items():
+            arr = np.asarray(values, dtype=np.float32)
+            if arr.ndim == 1:
+                if arr.shape[0] != expected_cells:
+                    raise ValueError(
+                        f"Field {field_name} expects {expected_cells} cells, got {arr.shape[0]}"
+                    )
+            elif arr.ndim == 2:
+                if arr.shape[0] != expected_cells:
+                    raise ValueError(
+                        f"Field {field_name} expects {expected_cells} cells, got {arr.shape[0]}"
+                    )
+            else:
+                raise ValueError(f"Unsupported field shape for {field_name}: {arr.shape}")
+            self._internal.cell_data[field_name] = arr
+
+        self._field_cache.clear()
+        self._field_info.clear()
+        self._available_fields = self._discover_fields()
+        return self._available_fields
 
     def invalidate(self) -> None:
         """Clear all caches."""
