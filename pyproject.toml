@@ -28,8 +28,6 @@ pyvista = "^0.47.1"
 tqdm = "^4.64.1"
 requests = ">2.32"
 reportlab = "^4.3.0"
-fluidfoam = "^0.2.3"
-coolprop = "^6.6.0"
 
 [tool.poetry.group.dev.dependencies]
 pytest = "^7.2.0"

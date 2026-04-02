@@ -1,8 +1,8 @@
 <div align="center">
 
-<img src="docs/_static/images/cap_gdcr_logo.png" alt="CAP-GDCR" width="120"/>
+<img src="docs/_static/images/cap_banner.png" alt="Cloud Application and Platform Group — NTU Singapore" width="500"/>
 
-# DCTwin
+# DCTwin — Data Center Twin
 
 **Automated CFD Simulation Framework for Data Center Thermal Analysis**
 
