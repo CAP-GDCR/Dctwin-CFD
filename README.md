@@ -2,7 +2,7 @@
 
 <img src="docs/_static/images/cap_banner.png" alt="Cloud Application and Platform Group — NTU Singapore" width="500"/>
 
-# DCTwin — Data Center Twin
+# DCTwin — Data Center Digital Twin CFD Toolbox
 
 **Automated CFD Simulation Framework for Data Center Thermal Analysis**
 
