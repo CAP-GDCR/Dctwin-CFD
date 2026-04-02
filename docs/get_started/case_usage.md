@@ -10,10 +10,10 @@ DCTwin ships with 6 ready-to-run demo cases under `case/`:
 |------|-------------|-----------|-------|------|-------------|
 | `Base_coldAisleIso` | Cold aisle containment | 9m x 8m x 3.8m | 14 | 4 | Baffle partitions for aisle isolation |
 | `Base_leakage` | Air leakage modeling | 4m x 6m x 2.6m | 4 | 2 | Porous media leakage through empty U-slots |
-| `Alibaba-hongchou` | Large-scale facility | 41m x 21m x 7m | Many | Multiple | Real facility layout at scale |
-| `GTC` | Multi-zone data center | 31m x 19m x 24m | Many | Multiple | Large room with raised floor |
-| `STDCT` | Standard data center | 18m x 8m x 3.8m | Multiple | Multiple | Typical medium facility |
-| `Slab` | Raised floor with tiles | 10m x 8m x 3.4m | Multiple | 2 | Perforated raised floor openings |
+| `Large_facility` | Large-scale facility | 41m x 21m x 7m | Many | Multiple | Real facility layout at scale |
+| `Highrise_hall` | High-ceiling data hall | 31m x 19m x 24m | Many | Multiple | Large room with raised floor |
+| `Medium_room` | Standard data center | 18m x 8m x 3.8m | Multiple | Multiple | Typical medium facility |
+| `Raised_floor` | Raised floor with tiles | 10m x 8m x 3.4m | Multiple | 2 | Perforated raised floor openings |
 
 ## Running a Demo Case
 

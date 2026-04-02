@@ -77,10 +77,10 @@ python -m dctwin.runner.run_cfd --config config.toml --solve-only  # Solve only
 |------|-------------|
 | `case/Base_coldAisleIso/` | 2 racks, 1 ACU, cold aisle containment |
 | `case/Base_leakage/` | Air leakage modeling through unoccupied rack U-slots |
-| `case/Alibaba-hongchou/` | Real facility layout with multiple racks and ACUs |
-| `case/GTC/` | GTC data center configuration |
-| `case/STDCT/` | Standard data center topology |
-| `case/Slab/` | Slab floor configuration |
+| `case/Large_facility/` | Large-scale facility with multiple racks and ACUs |
+| `case/Highrise_hall/` | High-ceiling data hall configuration |
+| `case/Medium_room/` | Medium-sized standard data center |
+| `case/Raised_floor/` | Raised floor with perforated tile openings |
 
 ## Architecture
 
