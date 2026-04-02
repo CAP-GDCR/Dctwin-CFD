@@ -35,12 +35,14 @@ nav:
       - get_started/index.md
       - Installation: get_started/installation.md
       - CFD Tutorial: get_started/cfd_tutorial.md
-  - For Developers:
-      - for_developers/index.md
-      - Development Guide: for_developers/development_guide.md
+      - Case Usage Guide: get_started/case_usage.md
   - Concepts:
       - concepts/index.md
       - Architecture: concepts/architecture.md
+      - JSON Schema Reference: concepts/json_schema.md
+  - For Developers:
+      - for_developers/index.md
+      - Development Guide: for_developers/development_guide.md
   - Reference: reference/
 
 markdown_extensions:
