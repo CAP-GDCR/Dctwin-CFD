@@ -5,8 +5,7 @@ from dclib.models.base import BaseModel
 
 class SizingPlant(BaseModel):
     """
-    Object that store the chiller plant sizing information. Please refer to the EnergyPlus 9.5 Input Output Reference for
-    more information.
+    Object that store the chiller plant sizing information. See documentation for parameter details.
     https://bigladdersoftware.com/epx/docs/9-5/input-output-reference/group-design-objects.html#sizingplant
 
     :param loop_type: The type of the loop. Default to "Water".

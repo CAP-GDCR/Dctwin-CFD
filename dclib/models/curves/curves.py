@@ -14,7 +14,7 @@ class CurveType(str, Enum):
 
 class CurveModel(BaseModel):
     """
-    Parametric curve model in EnergyPlus. The coefficients are in the order of [c0, c1, c2, c3, c4, ...].
+    Parametric curve model for equipment performance. The coefficients are in the order of [c0, c1, c2, c3, c4, ...].
     Min and max are the minimum and maximum values of the input variable. The input type is the type of the
     input variable. The output type is the type of the dependent variable. For more information, please refer to
     https://bigladdersoftware.com/epx/docs/9-5/input-output-reference/group-performance-curves.html#group---performance-curves

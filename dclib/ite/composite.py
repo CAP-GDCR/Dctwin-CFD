@@ -8,11 +8,11 @@ from dclib.models.heat_gains.ite import ITEModel
 
 class ITE(ITEModel):
     """
-    Composite ITE model for a zone. It is an EneryPlus object that is used to model the heat gains from the ITEs in a
+    Composite ITE model for a zone. It is used to model the heat gains from the ITEs in a
     zone. Here in our library, as we model the fine-grained server configurations and their heat gains, we use this
-    object to serve as a "composite" ITE model for a zone. The heat gains from the servers in a zone are modeled as a
-    "ElectricEquipmentITE:AirCooled" object in EnergyPlus. The parameters of this object are defined in this class. This
-    class inherits from the ITEModel class, which defines the detailed parameters of the "ElectricEquipmentITE:AirCooled"
+    object to serve as a "composite" ITE model for a zone. The heat gains from the servers in a zone are modeled as an
+    "Air-cooled IT equipment thermal model". The parameters of this object are defined in this class. This
+    class inherits from the ITEModel class, which defines the detailed parameters of the air-cooled ITE
     object. In this class, we define the key parameters only.
 
     :param watts_per_unit: The power consumption of a single server in the zone. Unit: W
@@ -20,11 +20,9 @@ class ITE(ITEModel):
     :param number_of_units: The number of servers in the zone
     :param model: The name of the ITE model. It should be defined in the ITEModel class. If not defined, the default
     values defined in the input file will be used.
-    :param supply_air_node_name: The name of the supply air node of the zone in the EnergyPlus model.
-    :param air_inlet_room_air_model_node_name: The name of the air inlet room air model node of the zone in the
-    EnergyPlus model.
-    :param air_outlet_room_air_model_node_name: The name of the air outlet room air model node of the zone in the
-    EnergyPlus model.
+    :param supply_air_node_name: The name of the supply air node of the zone.
+    :param air_inlet_room_air_model_node_name: The name of the air inlet room air model node of the zone.
+    :param air_outlet_room_air_model_node_name: The name of the air outlet room air model node of the zone.
     """
     uid: Optional[str] = ""
     zone: str

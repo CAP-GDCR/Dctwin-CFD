@@ -4,7 +4,7 @@ from dclib.models.base import BaseModel
 
 class ChillerCoolingModel(BaseModel):
     """
-    Please refer to the EnergyPlus Chiller documentation for more information.
+    See documentation for parameter details.
     https://bigladdersoftware.com/epx/docs/9-5/input-output-reference/group-plant-equipment.html#chillerelectriceir
     """
     reference_capacity: Optional[float | str] = None  # required

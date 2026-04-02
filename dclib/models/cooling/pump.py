@@ -4,7 +4,7 @@ from dclib.models.base import BaseModel
 
 class PumpCoolingModel(BaseModel):
     """
-    Please refer to the EnergyPlus Pump documentation for more information.
+    See documentation for parameter details.
     https://bigladdersoftware.com/epx/docs/9-5/input-output-reference/group-pumps.html
     """
 

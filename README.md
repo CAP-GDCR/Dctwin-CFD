@@ -24,7 +24,7 @@
 ### Using Conda + Poetry (recommended)
 
 ```bash
-git clone git@github.com:CAP-GDCR/Dctwin-CFD.git
+git clone https://github.com/CAP-GDCR/Dctwin-CFD.git
 cd Dctwin-CFD
 bash setup_env.sh
 conda activate dctwin
@@ -33,7 +33,7 @@ conda activate dctwin
 ### Using Poetry only
 
 ```bash
-git clone git@github.com:CAP-GDCR/Dctwin-CFD.git
+git clone https://github.com/CAP-GDCR/Dctwin-CFD.git
 cd Dctwin-CFD
 poetry install
 ```
@@ -119,7 +119,6 @@ dctwin/
 ├── dclib/                     # Data center domain models (Pydantic v2)
 ├── case/                      # Example simulation cases
 ├── test/                      # Test suite
-├── tutorials/                 # Usage tutorials
 └── docs/                      # Documentation (MkDocs)
 ```
 

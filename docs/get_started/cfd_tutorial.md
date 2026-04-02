@@ -21,17 +21,17 @@ cd case/Base_coldAisleIso/
 ### Step 2: Generate STL geometry and mesh dictionaries
 
 ```bash
-python -m dctwin.runner.run_cfd --from-stlgen model/cfd_export.json --stl-only
+python -m dctwin.runner.run_cfd --config config.toml --stl-only
 ```
 
-This reads the `cfd_export.json` layout definition and generates:
+This reads the `config.toml` configuration and generates:
 - Multi-solid ASCII STL files in `Mesh/constant/triSurface/`
 - OpenFOAM mesh dictionaries (`blockMeshDict`, `snappyHexMeshDict`, etc.) in `Mesh/system/`
 
 ### Step 3: Generate the mesh
 
 ```bash
-python -m dctwin.runner.run_cfd --from-stlgen model/cfd_export.json --mesh-only
+python -m dctwin.runner.run_cfd --config config.toml --mesh-only
 ```
 
 This runs the full meshing pipeline:
@@ -44,7 +44,7 @@ This runs the full meshing pipeline:
 ### Step 4: Run the solver
 
 ```bash
-python -m dctwin.runner.run_cfd --from-stlgen model/cfd_export.json --solve-only
+python -m dctwin.runner.run_cfd --config config.toml --solve-only
 ```
 
 This runs `buoyantBoussinesqSimpleFoam` (steady-state RANS k-epsilon with buoyancy).

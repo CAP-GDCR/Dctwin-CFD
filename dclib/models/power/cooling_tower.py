@@ -4,7 +4,7 @@ from dclib.models.base import BaseModel
 
 class CoolingTowerPowerModel(BaseModel):
     """
-    Please refer to the EnergyPlus CoolingTower documentation for more information.
+    See documentation for parameter details.
     https://bigladdersoftware.com/epx/docs/9-5/input-output-reference/group-condenser-equipment.html#coolingtowervariablespeed
     """
     design_fan_power: Optional[float | str] = "autosize"  # unit(W)

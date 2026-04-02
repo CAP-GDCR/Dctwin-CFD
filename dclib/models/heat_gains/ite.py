@@ -4,7 +4,7 @@ from dclib.models.base import BaseModel
 
 class ITEModel(BaseModel):
     """
-    ITEModel is a model for Information Technology Equipment (ITE) in EnergyPlus. For more information, please refer to
+    ITEModel is a model for Information Technology Equipment (ITE) for thermal simulation. For more information, please refer to
     https://bigladdersoftware.com/epx/docs/9-5/input-output-reference/group-internal-gains-people-lights-other.html#electricequipmentiteaircooled
     """
     air_flow_calculation_method: Optional[str] = "FlowFromSystem"

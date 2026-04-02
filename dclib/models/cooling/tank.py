@@ -13,8 +13,8 @@ class Indicator(str, Enum):
 
 class TankCoolingModel(BaseModel):
     """
-    Storage Tank Model based on EnergyPlus input fields.
-    This class is a simplified representation and may not include all features of EnergyPlus tanks.
+    Storage Tank Model.
+    This class is a simplified representation and may not include all features of physical storage tanks.
     """
     tank_volume: str | float = 4.0
     deadband_temperature_difference: Optional[str | float] = 3.5

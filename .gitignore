@@ -110,8 +110,6 @@ dmypy.json
 
 # Test artifacts
 /test/log
-/tutorials/cfd/log/
-/tutorials/cfd/staging/
 
 # Secrets
 .secrets

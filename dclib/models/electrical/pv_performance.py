@@ -5,7 +5,7 @@ from dclib.models.base import BaseModel
 
 class PhotovoltaicPerformanceModel(BaseModel):
     """
-    Photovoltaic performance model in EnergyPlus. For more information, please refer to
+    Photovoltaic performance model for thermal simulation. For more information, please refer to
     https://bigladdersoftware.com/epx/docs/9-5/input-output-reference/group-electric-load-center-generator.html#photovoltaicperformanceequivalentone-diode
     """
     cell_type: Optional[str] = "CrystallineSilicon"

@@ -4,7 +4,7 @@ from dclib.models.base import BaseModel
 
 class CoolingTowerCoolingModel(BaseModel):
     """
-    Please refer to the EnergyPlus CoolingTower documentation for more information.
+    See documentation for parameter details.
     https://bigladdersoftware.com/epx/docs/9-5/input-output-reference/group-condenser-equipment.html#coolingtowervariablespeed
     """
     model_type: Optional[str] = "YorkCalcUserDefined"

@@ -9,7 +9,7 @@ from dclib.models.base import BaseModel
 
 class MaterialModel(BaseModel):
     """
-    Material model. For more information, please refer to EnergyPlus documentation.
+    Material model. See documentation for parameter details.
     https://bigladdersoftware.com/epx/docs/9-5/input-output-reference/group-surface-construction-elements.html#material
     """
     roughness: Optional[str] = ""

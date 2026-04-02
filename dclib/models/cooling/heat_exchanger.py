@@ -4,7 +4,7 @@ from typing import Optional
 
 class HeatExchangerCoolingModel(BaseModel):
     """
-    Please refer to the EnergyPlus Heat Exchanger documentation for more information.
+    See documentation for parameter details.
     https://bigladdersoftware.com/epx/docs/9-5/input-output-reference/group-condenser-equipment.html#heatexchangerfluidtofluid
     """
     loop_demand_side_design_flow_rate: float | str = "autosize"

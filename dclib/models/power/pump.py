@@ -6,7 +6,7 @@ class PumpPowerCoolingModel(BaseModel):
 
 class PumpPowerModel(BaseModel):
     """
-    Please refer to the EnergyPlus Pump documentation for more information.
+    See documentation for parameter details.
     https://bigladdersoftware.com/epx/docs/9-5/input-output-reference/group-pumps.html
     """
     design_power_consumption: Optional[str | float] = "autosize"

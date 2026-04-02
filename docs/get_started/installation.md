@@ -9,7 +9,7 @@
 ## Option 1: Conda + Poetry (recommended)
 
 ```bash
-git clone git@github.com:CAP-GDCR/Dctwin-CFD.git
+git clone https://github.com/CAP-GDCR/Dctwin-CFD.git
 cd Dctwin-CFD
 bash setup_env.sh
 conda activate dctwin
@@ -18,7 +18,7 @@ conda activate dctwin
 ## Option 2: Poetry only
 
 ```bash
-git clone git@github.com:CAP-GDCR/Dctwin-CFD.git
+git clone https://github.com/CAP-GDCR/Dctwin-CFD.git
 cd Dctwin-CFD
 pip install poetry
 poetry install
@@ -27,7 +27,7 @@ poetry install
 ## Option 3: pip
 
 ```bash
-git clone git@github.com:CAP-GDCR/Dctwin-CFD.git
+git clone https://github.com/CAP-GDCR/Dctwin-CFD.git
 cd Dctwin-CFD
 pip install -e .
 ```

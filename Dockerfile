@@ -1,3 +1,7 @@
+# NOTE: This image provides the Python environment for DCTwin.
+# OpenFOAM v2312+ must be installed separately or mounted from the host.
+# See: https://www.openfoam.com/download/
+
 FROM python:3.10 as builder
 
 ENV PYTHONUNBUFFERED=1 \
