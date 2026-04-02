@@ -1,17 +1,36 @@
+<div align="center">
+
+<img src="docs/_static/images/cap_gdcr_logo.png" alt="CAP-GDCR" width="120"/>
+
 # DCTwin
 
-**DCTwin** is an open-source Python framework for automated CFD (Computational Fluid Dynamics) simulation of data center thermal environments. It uses [OpenFOAM](https://openfoam.org/) as the solver backend and turns a simple JSON room layout definition into a complete thermal simulation.
+**Automated CFD Simulation Framework for Data Center Thermal Analysis**
+
+[![Python 3.10+](https://img.shields.io/badge/python-3.10%2B-blue.svg?logo=python&logoColor=white)](https://www.python.org/downloads/)
+[![License: Apache 2.0](https://img.shields.io/badge/license-Apache%202.0-green.svg)](LICENSE)
+[![OpenFOAM v2312](https://img.shields.io/badge/OpenFOAM-v2312-red.svg)](https://www.openfoam.com/)
+[![Poetry](https://img.shields.io/badge/packaging-Poetry-blue.svg?logo=poetry)](https://python-poetry.org/)
+[![Code style: Black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+[![Tests](https://github.com/CAP-GDCR/Dctwin-CFD/actions/workflows/run-tests.yml/badge.svg)](https://github.com/CAP-GDCR/Dctwin-CFD/actions/workflows/run-tests.yml)
+[![Security: Bandit](https://img.shields.io/badge/security-bandit-yellow.svg)](https://github.com/PyCQA/bandit)
+[![Pydantic v2](https://img.shields.io/badge/pydantic-v2-E92063.svg?logo=pydantic)](https://docs.pydantic.dev/)
+
+</div>
+
+---
+
+**DCTwin** is an open-source Python framework that turns a simple JSON room layout definition into a complete [OpenFOAM](https://openfoam.org/) thermal simulation for data center environments.
 
 ## Key Features
 
-- **JSON-driven workflow**: Define your data center layout (racks, servers, ACUs, raised floor, containment) in a `room.json` file
-- **Automated CFD pipeline**: STL geometry generation -> blockMesh -> snappyHexMesh -> boundary conditions -> buoyantBoussinesqSimpleFoam -> post-processing
+- **JSON-driven workflow** -- Define your data center layout (racks, servers, ACUs, raised floor, containment) in a `room.json` file
+- **Automated CFD pipeline** -- STL geometry generation -> blockMesh -> snappyHexMesh -> boundary conditions -> buoyantBoussinesqSimpleFoam -> post-processing
 - **Domain-specific automation**:
   - Automatic U-slot server positioning and inlet/outlet face generation
   - Air leakage modeling with auto-computed Darcy-Forchheimer porous media
   - Raised floor with perforated tile openings
   - Cold/hot aisle containment support
-- **Modular pipeline**: Run STL-only, mesh-only, or solve-only stages independently
+- **Modular pipeline** -- Run STL-only, mesh-only, or solve-only stages independently
 
 ## Prerequisites
 
@@ -130,8 +149,12 @@ mkdocs serve
 
 ## Contributing
 
-Contributions are welcome! Please feel free to submit issues and pull requests.
+Contributions are welcome! Please read the [Contributing Guide](CONTRIBUTING.md) before submitting a pull request.
 
 ## License
 
 This project is licensed under the Apache License 2.0. See the [LICENSE](LICENSE) file for details.
+
+## Acknowledgments
+
+Developed by the [CAP-GDCR](https://github.com/CAP-GDCR) research group at [Nanyang Technological University](https://www.ntu.edu.sg/), Singapore.
