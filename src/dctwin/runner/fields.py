@@ -1,6 +1,7 @@
 """
 OpenFOAM field file generation for CFD cases.
 """
+import math
 import re
 from pathlib import Path
 from typing import Any, Dict, List, Optional, Tuple
@@ -26,12 +27,17 @@ class FieldGenerator:
     - Turbulence fields (k, epsilon, omega, nut, alphat)
     """
     
+    # Turbulence inlet BC constants (standard HVAC values)
+    TURBULENCE_INTENSITY = 0.05  # 5% — typical for HVAC supply diffusers
+    C_MU = 0.09                  # k-epsilon model constant
+
     def __init__(
         self,
         *,
         case_dir: Path,
         simulation_config: Optional[Dict[str, Any]] = None,
         room_config: Optional[Dict[str, Any]] = None,
+        patch_areas: Optional[Dict[str, float]] = None,
     ):
         """
         Initialize field generator.
@@ -40,10 +46,12 @@ class FieldGenerator:
             case_dir: Case directory path
             simulation_config: Simulation configuration dict from cfd_export.json
             room_config: Room configuration dict override
+            patch_areas: Dict mapping patch name → area in m² (from STL triangles)
         """
         self.case_dir = Path(case_dir).resolve()
         self._simulation_config = simulation_config
         self._room_config = room_config
+        self._patch_areas = patch_areas or {}
         
         # Collect boundary data
         self._server_data: Dict[str, Dict[str, float]] = {}
@@ -53,6 +61,34 @@ class FieldGenerator:
         self._imported_bc_data: Dict[str, Dict[str, Any]] = {}
 
         self._data_collected = False
+
+    def _compute_turbulence_bc(self, patch_name: str) -> Optional[Tuple[float, float]]:
+        """Compute k and epsilon for an inlet patch from flow rate and STL area.
+
+        Returns (k, epsilon) or None if data is insufficient.
+        Uses standard CFD inlet turbulence estimation:
+            k = 1.5 * (I * U)^2
+            epsilon = C_mu^0.75 * k^1.5 / (0.07 * D_h)
+        """
+        bc_info = self._imported_bc_data.get(patch_name, {})
+        flow_rate = bc_info.get("flow_rate") or 0.0
+        if flow_rate <= 0:
+            return None
+        area = self._patch_areas.get(patch_name, 0.0)
+        if area <= 1e-8:
+            return None
+        U = flow_rate / area
+        I = self.TURBULENCE_INTENSITY
+        k = 1.5 * (I * U) ** 2
+        D_h = 2.0 * math.sqrt(area / math.pi)
+        length_scale = max(0.07 * D_h, 1e-6)
+        epsilon = self.C_MU ** 0.75 * k ** 1.5 / length_scale
+        # Clamp to prevent extreme values from tiny patches
+        k = min(k, 100.0)
+        epsilon = min(epsilon, 100000.0)
+        logger.debug(f"Turbulence BC {patch_name}: U={U:.2f} m/s, k={k:.4f}, eps={epsilon:.4f} "
+                     f"(A={area:.4f} m², Q={flow_rate:.4f} m³/s)")
+        return (k, epsilon)
 
     @property
     def simulation_config(self) -> Dict[str, Any]:
@@ -315,9 +351,10 @@ class FieldGenerator:
         self._write_p_field(field_dir / "p", patches)
         self._write_p_rgh_field(field_dir / "p_rgh", patches)
         
-        # Turbulence fields
-        self._write_simple_scalar_field(field_dir / "k", patches, "0.001", "volScalarField", "[0 2 -2 0 0 0 0]")
-        self._write_simple_scalar_field(field_dir / "epsilon", patches, "0.001", "volScalarField", "[0 2 -3 0 0 0 0]")
+        # Turbulence fields — compute physically-based k/epsilon from flow rates + patch areas
+        k_avg, eps_avg = self._compute_average_inlet_turbulence(patches)
+        self._write_turbulence_field(field_dir / "k", patches, k_avg, "volScalarField", "[0 2 -2 0 0 0 0]", "k")
+        self._write_turbulence_field(field_dir / "epsilon", patches, eps_avg, "volScalarField", "[0 2 -3 0 0 0 0]", "epsilon")
         self._write_simple_scalar_field(field_dir / "omega", patches, "1.0", "volScalarField", "[0 0 -1 0 0 0 0]")
         self._write_simple_scalar_field(field_dir / "nut", patches, "0", "volScalarField", "[0 2 -1 0 0 0 0]")
         self._write_simple_scalar_field(field_dir / "alphat", patches, "0", "volScalarField", "[0 2 -1 0 0 0 0]")
@@ -980,6 +1017,14 @@ class FieldGenerator:
         "acu_supply", "acu_return", "fan_inlet", "fan_outlet",
     })
 
+    # Subset: domain-outlet flow types (air exits the CFD domain).
+    # These need inletOutlet (not fixedValue) for k/epsilon to avoid
+    # fighting the internal solution and causing turbulence blow-up.
+    _DOMAIN_OUTLET_BC_TYPES = frozenset({
+        "acu_return",   # hot air flows OUT of room to ACU
+        "fan_inlet",    # air flows OUT of room into server
+    })
+
     def _is_flow_patch(self, patch_name: str) -> bool:
         """Return True if patch_name is a flow patch per the bridge BC registry.
 
@@ -1014,6 +1059,82 @@ class FieldGenerator:
             else:
                 return "porous"
         return "wall"
+
+    def _compute_average_inlet_turbulence(self, patches: List[Tuple[str, str]]) -> Tuple[float, float]:
+        """Compute average k and epsilon across all flow-rate inlets for internal field init."""
+        k_values = []
+        eps_values = []
+        for patch_name, _ in patches:
+            result = self._compute_turbulence_bc(patch_name)
+            if result:
+                k_values.append(result[0])
+                eps_values.append(result[1])
+        if k_values:
+            k_avg = sum(k_values) / len(k_values)
+            eps_avg = sum(eps_values) / len(eps_values)
+            logger.info(f"Auto-computed turbulence: k_avg={k_avg:.4f}, eps_avg={eps_avg:.4f} "
+                        f"from {len(k_values)} flow patches")
+            return k_avg, eps_avg
+        return 0.001, 0.001  # fallback
+
+    def _write_turbulence_field(self, path: Path, patches: List[Tuple[str, str]],
+                                internal_value: float, field_class: str, dimensions: str,
+                                field_name: str) -> None:
+        """Write k or epsilon field with per-patch computed values for flow inlets."""
+        lines = self._write_field_header(path, field_class, dimensions, f"{internal_value:.6g}")
+
+        wall_type = "kqRWallFunction" if field_name == "k" else "epsilonWallFunction"
+
+        for patch_name, patch_type in patches:
+            if self._is_cyclic_patch_type(patch_type):
+                lines.extend([f"    {patch_name}", "    {",
+                              f"        type            {patch_type.lower()};", "    }"])
+                continue
+
+            # Flow patches: use computed k/epsilon if available
+            if self._is_flow_patch(patch_name):
+                result = self._compute_turbulence_bc(patch_name)
+                if result:
+                    val = result[0] if field_name == "k" else result[1]
+                else:
+                    val = internal_value
+
+                # Domain outlets: inletOutlet (zeroGradient for outflow,
+                # fixedValue only on backflow) — avoids fighting the
+                # internal turbulence field and prevents k/epsilon blow-up.
+                bc_type = self._imported_bc_data.get(patch_name, {}).get("bc_type", "")
+                if bc_type in self._DOMAIN_OUTLET_BC_TYPES:
+                    lines.extend([f"    {patch_name}", "    {",
+                                  "        type            inletOutlet;",
+                                  f"        inletValue      uniform {val:.6g};",
+                                  f"        value           uniform {val:.6g};", "    }"])
+                else:
+                    # Domain inlets: fixedValue (specify incoming turbulence)
+                    lines.extend([f"    {patch_name}", "    {",
+                                  "        type            fixedValue;",
+                                  f"        value           uniform {val:.6g};", "    }"])
+                continue
+
+            # Baffle patches
+            bc_info = self._imported_bc_data.get(patch_name, {})
+            if bc_info.get("bc_type") in ("perforated_baffle", "wall_baffle"):
+                eff = self._resolve_baffle_bc(bc_info)
+                if eff == "wall":
+                    lines.extend([f"    {patch_name}", "    {",
+                                  f"        type            {wall_type};",
+                                  f"        value           uniform {internal_value:.6g};", "    }"])
+                else:
+                    lines.extend([f"    {patch_name}", "    {",
+                                  "        type            cyclic;", "    }"])
+                continue
+
+            # Wall patches (default)
+            lines.extend([f"    {patch_name}", "    {",
+                          f"        type            {wall_type};",
+                          f"        value           uniform {internal_value:.6g};", "    }"])
+
+        lines.extend(["}", "", "// ************************************************************************* //"])
+        path.write_text("\n".join(lines), encoding="utf-8")
 
     def _write_simple_scalar_field(self, path: Path, patches: List[Tuple[str, str]],
                                    internal_value: str, field_class: str, dimensions: str) -> None:

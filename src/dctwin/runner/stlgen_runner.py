@@ -516,12 +516,36 @@ class STLGenRunner:
                 room_json_path.unlink()
                 logger.info(f"Removed stale STLGen compatibility file: {room_json_path}")
 
+    def _compute_patch_areas(self) -> Dict[str, float]:
+        """Compute total surface area for each STL solid from triSurface files.
+
+        Returns dict mapping sanitized solid name → area in m².
+        Used by FieldGenerator to compute physically-based k/epsilon inlet BCs.
+        """
+        areas: Dict[str, float] = {}
+        for stl_file in sorted(self.tri_surface_dir.glob("*.stl")):
+            try:
+                solids = _read_ascii_stl_triangles(stl_file)
+            except Exception as exc:
+                logger.warning(f"Could not read {stl_file.name} for patch areas: {exc}")
+                continue
+            for solid_name, triangles in solids.items():
+                total_area = 0.0
+                for tri in triangles:
+                    a, _ = _triangle_area_and_normal(tri)
+                    if a > _GEOM_EPS:
+                        total_area += a
+                if total_area > _GEOM_EPS:
+                    areas[_sanitize(solid_name)] = total_area
+        return areas
+
     def _build_field_generator(self) -> FieldGenerator:
         """Build a field generator for STLGen that does not depend on CaseConfig."""
         return FieldGenerator(
             case_dir=self.case_dir,
             simulation_config=self._data.get("simulationConfig", {}),
             room_config={},
+            patch_areas=self._compute_patch_areas(),
         )
 
     def _extract_sensor_points(self) -> List[Dict[str, float]]:
