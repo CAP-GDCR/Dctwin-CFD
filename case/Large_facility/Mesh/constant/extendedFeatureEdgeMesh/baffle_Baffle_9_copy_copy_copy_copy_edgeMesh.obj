@@ -1,19 +1,3 @@
-# Wavefront OBJ file written 2026-04-09T01:03:30
-o baffle_Baffle_9_copy_copy_copy_copy_edgeMesh
-
-# points : 4
-# lines  : 4
-
-# <points count="4">
-v 20.7 19.5406 4
-v 20.7 19.5406 0.005855
-v 23.7 19.5406 0.005855
-v 23.7 19.5406 4
-# </points>
-
-# <edges count="4">
-l 1 2
-l 2 3
-l 3 4
-l 4 1
-# </edges>
+version https://git-lfs.github.com/spec/v1
+oid sha256:78c34f8adf42ea8410061a4825e6601d3c147f5492e76c184d6662fc392243af
+size 295

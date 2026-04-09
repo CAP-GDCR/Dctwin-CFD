@@ -1,28 +1,3 @@
-/*--------------------------------*- C++ -*----------------------------------*\
-| =========                 |                                                 |
-| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
-|  \\    /   O peration     | Version:  2406                                  |
-|   \\  /    A nd           | Website:  www.openfoam.com                      |
-|    \\/     M anipulation  |                                                 |
-\*---------------------------------------------------------------------------*/
-FoamFile
-{
-    version     2.0;
-    format      ascii;
-    arch        "LSB;label=32;scalar=64";
-    class       featureEdgeMesh;
-    location    "constant/triSurface";
-    object      baffle_Default_Rack_3_inlet_u7_u13_wallBaffle.eMesh;
-}
-// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
-
-
-// points:
-4((4.63318 3.67893 0.87785) (4.63318 4.15893 0.5667) (4.63318 3.67893 0.5667) (4.63318 4.15893 0.87785))
-
-// edges:
-4((1 2) (2 0) (0 3) (3 1))
-// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
-
-
-// ************************************************************************* //
+version https://git-lfs.github.com/spec/v1
+oid sha256:907c7f50475ff933d450621efd46d8106359ec293a50596040e1ab07cb97e776
+size 1198

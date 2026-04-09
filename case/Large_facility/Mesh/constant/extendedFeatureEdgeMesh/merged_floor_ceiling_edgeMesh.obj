@@ -1,27 +1,3 @@
-# Wavefront OBJ file written 2026-04-09T01:03:30
-o merged_floor_ceiling_edgeMesh
-
-# points : 8
-# lines  : 8
-
-# <points count="8">
-v 0 20.6853 0
-v 41.2923 0 0
-v 0 0 0
-v 41.2923 20.6853 0
-v 0 20.6853 7
-v 0 0 7
-v 41.2923 0 7
-v 41.2923 20.6853 7
-# </points>
-
-# <edges count="8">
-l 2 3
-l 3 1
-l 1 4
-l 4 2
-l 5 6
-l 6 7
-l 7 8
-l 8 5
-# </edges>
+version https://git-lfs.github.com/spec/v1
+oid sha256:e65662dc9270ce104e3cf5ed77dfa13952c50c1203b974417fff638dec849a1d
+size 334
