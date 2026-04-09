@@ -1,32 +1,3 @@
-solid Ground_floor
-  facet normal 0 0 -1
-    outer loop
-      vertex 0.0 6.0 0.0
-      vertex 10.0 0.0 0.0
-      vertex 0.0 0.0 0.0
-    endloop
-  endfacet
-  facet normal 0 0 -1
-    outer loop
-      vertex 0.0 6.0 0.0
-      vertex 10.0 6.0 0.0
-      vertex 10.0 0.0 0.0
-    endloop
-  endfacet
-endsolid Ground_floor
-solid Room_top
-  facet normal 0 0 1
-    outer loop
-      vertex 0.0 6.0 2.849703
-      vertex 0.0 0.0 2.849703
-      vertex 10.0 0.0 2.849703
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex 0.0 6.0 2.849703
-      vertex 10.0 0.0 2.849703
-      vertex 10.0 6.0 2.849703
-    endloop
-  endfacet
-endsolid Room_top
+version https://git-lfs.github.com/spec/v1
+oid sha256:f156d0711955b62601b51155f5dbe79354d8e8d7a2d1ea09204f9a42fcf185e4
+size 648

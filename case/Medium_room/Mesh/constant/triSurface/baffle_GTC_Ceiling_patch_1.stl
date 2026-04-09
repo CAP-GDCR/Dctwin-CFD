@@ -1,16 +1,3 @@
-solid GTC_Ceiling_patch_1
-  facet normal 0.000000 0.000000 1.000000
-    outer loop
-      vertex 0.000000 14.401000 3.600000
-      vertex 0.000000 4.801000 3.600000
-      vertex 3.049122 4.801000 3.600000
-    endloop
-  endfacet
-  facet normal 0.000000 0.000000 1.000000
-    outer loop
-      vertex 3.049122 4.801000 3.600000
-      vertex 3.049122 14.401000 3.600000
-      vertex 0.000000 14.401000 3.600000
-    endloop
-  endfacet
-endsolid GTC_Ceiling_patch_1
+version https://git-lfs.github.com/spec/v1
+oid sha256:c241db42363fb17f0be5248a518c15c7480db926de27855e3c5ad7b77f9d68b4
+size 458

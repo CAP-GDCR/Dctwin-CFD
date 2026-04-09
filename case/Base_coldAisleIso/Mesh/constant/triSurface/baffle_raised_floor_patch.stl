@@ -1,16 +1,3 @@
-solid raised_floor_patch
-  facet normal 0.000000 0.000000 1.000000
-    outer loop
-      vertex 5.201000 3.800000 0.200000
-      vertex 5.201000 2.200000 0.200000
-      vertex 6.401000 2.200000 0.200000
-    endloop
-  endfacet
-  facet normal 0.000000 0.000000 1.000000
-    outer loop
-      vertex 6.401000 2.200000 0.200000
-      vertex 6.401000 3.800000 0.200000
-      vertex 5.201000 3.800000 0.200000
-    endloop
-  endfacet
-endsolid raised_floor_patch
+version https://git-lfs.github.com/spec/v1
+oid sha256:94382969baf14f0fced8c7fc447684737c457f63825ee901fbebde070ae47717
+size 453

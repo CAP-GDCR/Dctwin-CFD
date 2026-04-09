@@ -1,16 +1,3 @@
-solid Baffle_1
-  facet normal 0.000000 -0.000000 -1.000000
-    outer loop
-      vertex 3.432183 3.618933 2.167000
-      vertex 3.432183 4.818933 2.167000
-      vertex 4.632183 4.818933 2.167000
-    endloop
-  endfacet
-  facet normal 0.000000 -0.000000 -1.000000
-    outer loop
-      vertex 4.632183 4.818933 2.167000
-      vertex 4.632183 3.618933 2.167000
-      vertex 3.432183 3.618933 2.167000
-    endloop
-  endfacet
-endsolid Baffle_1
+version https://git-lfs.github.com/spec/v1
+oid sha256:594d57f175b50b210e0c64631d5eff705d56f07103f8e746b55dcd980dd163fa
+size 437

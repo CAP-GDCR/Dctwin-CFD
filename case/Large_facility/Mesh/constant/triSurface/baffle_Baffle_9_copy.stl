@@ -1,16 +1,3 @@
-solid Baffle_9_copy
-  facet normal 0.000000 -1.000000 0.000000
-    outer loop
-      vertex 7.600000 19.540569 4.000000
-      vertex 7.600000 19.540569 0.005855
-      vertex 10.600000 19.540569 0.005855
-    endloop
-  endfacet
-  facet normal 0.000000 -1.000000 0.000000
-    outer loop
-      vertex 10.600000 19.540569 0.005855
-      vertex 10.600000 19.540569 4.000000
-      vertex 7.600000 19.540569 4.000000
-    endloop
-  endfacet
-endsolid Baffle_9_copy
+version https://git-lfs.github.com/spec/v1
+oid sha256:d000b36db380fba9db2370180f55f5ef2b5dd983094555a37f051ce34b20a1fd
+size 454

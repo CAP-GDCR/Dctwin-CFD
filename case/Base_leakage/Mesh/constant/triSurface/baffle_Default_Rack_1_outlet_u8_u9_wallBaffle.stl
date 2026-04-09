@@ -1,16 +1,3 @@
-solid Default_Rack_1_outlet_u8_u9_wallBaffle
-  facet normal -1.000000 0.000000 0.000000
-    outer loop
-      vertex 2.432183 4.758933 0.700050
-      vertex 2.432183 4.758933 0.611150
-      vertex 2.432183 4.278933 0.611150
-    endloop
-  endfacet
-  facet normal -1.000000 0.000000 0.000000
-    outer loop
-      vertex 2.432183 4.278933 0.611150
-      vertex 2.432183 4.278933 0.700050
-      vertex 2.432183 4.758933 0.700050
-    endloop
-  endfacet
-endsolid Default_Rack_1_outlet_u8_u9_wallBaffle
+version https://git-lfs.github.com/spec/v1
+oid sha256:3fcc051e9edc36f900e32b71f38e6205cf9cde2743d646ecf1b8484835dbb96d
+size 495

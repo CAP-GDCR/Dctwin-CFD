@@ -1,16 +1,3 @@
-solid AHU_partition_copy_copy_patch_15
-  facet normal 0.000000 -1.000000 0.000000
-    outer loop
-      vertex 30.000000 13.720587 6.431453
-      vertex 30.000000 13.720587 4.000000
-      vertex 33.000000 13.720587 4.000000
-    endloop
-  endfacet
-  facet normal 0.000000 -1.000000 0.000000
-    outer loop
-      vertex 33.000000 13.720587 4.000000
-      vertex 33.000000 13.720587 6.431453
-      vertex 30.000000 13.720587 6.431453
-    endloop
-  endfacet
-endsolid AHU_partition_copy_copy_patch_15
+version https://git-lfs.github.com/spec/v1
+oid sha256:77ef2b367acd94870d46ac13384c78ffb7f993fd07e120b36138b5500ac54d76
+size 495

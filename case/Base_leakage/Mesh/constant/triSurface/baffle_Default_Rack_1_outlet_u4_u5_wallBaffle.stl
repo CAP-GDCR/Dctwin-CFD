@@ -1,16 +1,3 @@
-solid Default_Rack_1_outlet_u4_u5_wallBaffle
-  facet normal -1.000000 0.000000 0.000000
-    outer loop
-      vertex 2.432183 4.758933 0.522250
-      vertex 2.432183 4.758933 0.433350
-      vertex 2.432183 4.278933 0.433350
-    endloop
-  endfacet
-  facet normal -1.000000 0.000000 0.000000
-    outer loop
-      vertex 2.432183 4.278933 0.433350
-      vertex 2.432183 4.278933 0.522250
-      vertex 2.432183 4.758933 0.522250
-    endloop
-  endfacet
-endsolid Default_Rack_1_outlet_u4_u5_wallBaffle
+version https://git-lfs.github.com/spec/v1
+oid sha256:27a5354d697be7495ead85b92e2989e1910040ab84c99b5686e700250c3c031a
+size 495
