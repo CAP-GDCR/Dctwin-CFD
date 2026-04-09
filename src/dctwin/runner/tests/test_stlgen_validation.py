@@ -101,6 +101,21 @@ class TestRoomHeightFloorValidation:
         runner = _setup_case(tmp_path, data)
         runner.validate_geometry()
 
+    def test_sub_mm_floating_point_rounding_passes(self, tmp_path):
+        """Sub-mm JS export rounding (e.g. z=3.4000000953) should be tolerated."""
+        data = _make_cfd_export(
+            room_height=3.4,
+            floors={
+                "Ceiling": {
+                    "stlFile": "merged_floor_ceiling.stl",
+                    "geometry": {"anchor": {"x": 0, "y": 0, "z": 3.4000000953674316}, "size": {"W": 10, "D": 10}},
+                    "defaultBC": "wall",
+                },
+            },
+        )
+        runner = _setup_case(tmp_path, data)
+        runner.validate_geometry()  # should not raise
+
     def test_error_message_includes_fix_hint(self, tmp_path):
         """Error message should suggest updating room height in 2D floor plan."""
         data = _make_cfd_export(

@@ -454,9 +454,10 @@ class STLGenRunner:
         if self._data is None:
             self._load_cfd_json_only()
         room_height = self._data.get("room", {}).get("height", 0)
+        _TOLERANCE = 1e-3  # allow sub-mm floating-point rounding from JS export
         for name, floor in self._data.get("floors", {}).items():
             z = floor.get("geometry", {}).get("anchor", {}).get("z", 0)
-            if z > room_height:
+            if z > room_height + _TOLERANCE:
                 raise RuntimeError(
                     f"floor '{name}' z={z} exceeds room.height={room_height}. "
                     f"The room enclosure (walls) only extends to z={room_height}, "

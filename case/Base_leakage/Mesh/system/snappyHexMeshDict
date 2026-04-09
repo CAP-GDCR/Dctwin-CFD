@@ -565,7 +565,7 @@ castellatedMeshControls
             }
             Default_Rack_1_inlet_u2_u3
             {
-                level (2 3);
+                level (1 1);
                 patchInfo { type patch; }
             }
             Default_Rack_1_inlet_u10_u15
@@ -595,7 +595,7 @@ castellatedMeshControls
             }
             Default_Rack_1_outlet_u2_u3
             {
-                level (2 3);
+                level (1 1);
                 patchInfo { type patch; }
             }
             Default_Rack_1_outlet_u10_u15
@@ -730,7 +730,7 @@ castellatedMeshControls
             }
             Default_Rack_2_inlet_u2_u3
             {
-                level (2 3);
+                level (1 1);
                 patchInfo { type patch; }
             }
             Default_Rack_2_inlet_u10_u15
@@ -765,7 +765,7 @@ castellatedMeshControls
             }
             Default_Rack_2_outlet_u2_u3
             {
-                level (2 3);
+                level (1 1);
                 patchInfo { type patch; }
             }
             Default_Rack_2_outlet_u10_u15

@@ -529,12 +529,12 @@ castellatedMeshControls
             }
             Rack_2_fan_server_1_inlet_patch
             {
-                level (3 4);
+                level (1 1);
                 patchInfo { type patch; }
             }
             Rack_2_fan_server_1_outlet_patch
             {
-                level (3 4);
+                level (1 1);
                 patchInfo { type patch; }
             }
             Rack_2_fan_server_1_bottom
