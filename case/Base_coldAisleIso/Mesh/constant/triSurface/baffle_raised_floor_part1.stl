@@ -1,0 +1,107 @@
+solid raised_floor_part1
+  facet normal 0.000000 0.000000 1.000000
+    outer loop
+      vertex 6.401000 2.200000 0.200000
+      vertex 3.999000 2.200000 0.200000
+      vertex 2.144670 2.100881 0.200000
+    endloop
+  endfacet
+  facet normal 0.000000 0.000000 1.000000
+    outer loop
+      vertex 2.144670 2.100881 0.200000
+      vertex 1.144670 2.100881 0.200000
+      vertex 0.000000 0.000000 0.200000
+    endloop
+  endfacet
+  facet normal 0.000000 0.000000 1.000000
+    outer loop
+      vertex 0.000000 6.000000 0.200000
+      vertex 0.000000 0.000000 0.200000
+      vertex 1.144670 2.100881 0.200000
+    endloop
+  endfacet
+  facet normal 0.000000 0.000000 1.000000
+    outer loop
+      vertex 2.144670 3.900881 0.200000
+      vertex 2.144670 2.100881 0.200000
+      vertex 3.999000 2.200000 0.200000
+    endloop
+  endfacet
+  facet normal 0.000000 0.000000 1.000000
+    outer loop
+      vertex 6.401000 2.200000 0.200000
+      vertex 2.144670 2.100881 0.200000
+      vertex 0.000000 0.000000 0.200000
+    endloop
+  endfacet
+  facet normal 0.000000 0.000000 1.000000
+    outer loop
+      vertex 0.000000 6.000000 0.200000
+      vertex 1.144670 2.100881 0.200000
+      vertex 1.144670 3.900881 0.200000
+    endloop
+  endfacet
+  facet normal 0.000000 0.000000 1.000000
+    outer loop
+      vertex 2.144670 3.900881 0.200000
+      vertex 3.999000 2.200000 0.200000
+      vertex 3.999000 3.800000 0.200000
+    endloop
+  endfacet
+  facet normal 0.000000 0.000000 1.000000
+    outer loop
+      vertex 6.401000 2.200000 0.200000
+      vertex 0.000000 0.000000 0.200000
+      vertex 10.000000 0.000000 0.200000
+    endloop
+  endfacet
+  facet normal 0.000000 0.000000 1.000000
+    outer loop
+      vertex 10.000000 6.000000 0.200000
+      vertex 0.000000 6.000000 0.200000
+      vertex 1.144670 3.900881 0.200000
+    endloop
+  endfacet
+  facet normal 0.000000 0.000000 1.000000
+    outer loop
+      vertex 2.144670 3.900881 0.200000
+      vertex 3.999000 3.800000 0.200000
+      vertex 5.201000 3.800000 0.200000
+    endloop
+  endfacet
+  facet normal 0.000000 0.000000 1.000000
+    outer loop
+      vertex 6.401000 3.800000 0.200000
+      vertex 6.401000 2.200000 0.200000
+      vertex 10.000000 0.000000 0.200000
+    endloop
+  endfacet
+  facet normal 0.000000 0.000000 1.000000
+    outer loop
+      vertex 10.000000 6.000000 0.200000
+      vertex 1.144670 3.900881 0.200000
+      vertex 2.144670 3.900881 0.200000
+    endloop
+  endfacet
+  facet normal 0.000000 0.000000 1.000000
+    outer loop
+      vertex 2.144670 3.900881 0.200000
+      vertex 5.201000 3.800000 0.200000
+      vertex 6.401000 3.800000 0.200000
+    endloop
+  endfacet
+  facet normal 0.000000 0.000000 1.000000
+    outer loop
+      vertex 6.401000 3.800000 0.200000
+      vertex 10.000000 0.000000 0.200000
+      vertex 10.000000 6.000000 0.200000
+    endloop
+  endfacet
+  facet normal 0.000000 0.000000 1.000000
+    outer loop
+      vertex 10.000000 6.000000 0.200000
+      vertex 2.144670 3.900881 0.200000
+      vertex 6.401000 3.800000 0.200000
+    endloop
+  endfacet
+endsolid raised_floor_part1

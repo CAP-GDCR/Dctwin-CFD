@@ -1,0 +1,110 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version 2.0;
+    format ascii;
+    class dictionary;
+    location system;
+    object surfaceFeatureExtractDict;
+}
+
+    baffle_Baffle_1.stl
+    {
+        extractionMethod    extractFromSurface;
+        extractFromSurfaceCoeffs { includedAngle 150; }
+        writeObj yes;
+    }
+    baffle_Baffle_2.stl
+    {
+        extractionMethod    extractFromSurface;
+        extractFromSurfaceCoeffs { includedAngle 150; }
+        writeObj yes;
+    }
+    baffle_Baffle_3.stl
+    {
+        extractionMethod    extractFromSurface;
+        extractFromSurfaceCoeffs { includedAngle 150; }
+        writeObj yes;
+    }
+    baffle_Default_Rack_1_outlet_u4_u5_wallBaffle.stl
+    {
+        extractionMethod    extractFromSurface;
+        extractFromSurfaceCoeffs { includedAngle 150; }
+        writeObj yes;
+    }
+    baffle_Default_Rack_1_outlet_u8_u9_wallBaffle.stl
+    {
+        extractionMethod    extractFromSurface;
+        extractFromSurfaceCoeffs { includedAngle 150; }
+        writeObj yes;
+    }
+    baffle_Default_Rack_2_outlet_u4_u9_wallBaffle.stl
+    {
+        extractionMethod    extractFromSurface;
+        extractFromSurfaceCoeffs { includedAngle 150; }
+        writeObj yes;
+    }
+    baffle_Default_Rack_3_inlet_u7_u13_wallBaffle.stl
+    {
+        extractionMethod    extractFromSurface;
+        extractFromSurfaceCoeffs { includedAngle 150; }
+        writeObj yes;
+    }
+    baffle_Room_Raising_floor_part1.stl
+    {
+        extractionMethod    extractFromSurface;
+        extractFromSurfaceCoeffs { includedAngle 150; }
+        writeObj yes;
+    }
+    baffle_Room_Raising_floor_patch.stl
+    {
+        extractionMethod    extractFromSurface;
+        extractFromSurfaceCoeffs { includedAngle 150; }
+        writeObj yes;
+    }
+    leakage_Default_Rack_1_u30_u32_leakage_zone.stl
+    {
+        extractionMethod    extractFromSurface;
+        extractFromSurfaceCoeffs { includedAngle 150; }
+        writeObj yes;
+    }
+    leakage_Default_Rack_1_u39_u41_leakage_zone.stl
+    {
+        extractionMethod    extractFromSurface;
+        extractFromSurfaceCoeffs { includedAngle 150; }
+        writeObj yes;
+    }
+    leakage_Default_Rack_1_u4_u9_leakage_zone.stl
+    {
+        extractionMethod    extractFromSurface;
+        extractFromSurfaceCoeffs { includedAngle 150; }
+        writeObj yes;
+    }
+    merged_acu.stl
+    {
+        extractionMethod    extractFromSurface;
+        extractFromSurfaceCoeffs { includedAngle 150; }
+        writeObj yes;
+    }
+    merged_floor_ceiling.stl
+    {
+        extractionMethod    extractFromSurface;
+        extractFromSurfaceCoeffs { includedAngle 150; }
+        writeObj yes;
+    }
+    merged_rack.stl
+    {
+        extractionMethod    extractFromSurface;
+        extractFromSurfaceCoeffs { includedAngle 150; }
+        writeObj yes;
+    }
+    room_wall.stl
+    {
+        extractionMethod    extractFromSurface;
+        extractFromSurfaceCoeffs { includedAngle 150; }
+        writeObj yes;
+    }

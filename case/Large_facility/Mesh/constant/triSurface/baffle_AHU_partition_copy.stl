@@ -1,0 +1,16 @@
+solid AHU_partition_copy
+  facet normal 0.000000 -1.000000 0.000000
+    outer loop
+      vertex 1.951000 14.650000 4.000000
+      vertex 1.951000 14.650000 3.000000
+      vertex 4.900000 14.650000 3.000000
+    endloop
+  endfacet
+  facet normal 0.000000 -1.000000 0.000000
+    outer loop
+      vertex 4.900000 14.650000 3.000000
+      vertex 4.900000 14.650000 4.000000
+      vertex 1.951000 14.650000 4.000000
+    endloop
+  endfacet
+endsolid AHU_partition_copy

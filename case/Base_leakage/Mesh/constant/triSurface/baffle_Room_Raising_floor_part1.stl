@@ -1,0 +1,254 @@
+solid Room_Raising_floor_part1
+  facet normal 0.000000 0.000000 1.000000
+    outer loop
+      vertex 4.632183 3.618933 0.300000
+      vertex 2.432183 3.618933 0.300000
+      vertex 1.990600 1.041100 0.300000
+    endloop
+  endfacet
+  facet normal 0.000000 0.000000 1.000000
+    outer loop
+      vertex 1.990600 1.041100 0.300000
+      vertex 3.432183 1.816210 0.300000
+      vertex 3.432183 2.416210 0.300000
+    endloop
+  endfacet
+  facet normal 0.000000 0.000000 1.000000
+    outer loop
+      vertex 4.632183 1.816210 0.300000
+      vertex 3.432183 1.816210 0.300000
+      vertex 1.990600 1.041100 0.300000
+    endloop
+  endfacet
+  facet normal 0.000000 0.000000 1.000000
+    outer loop
+      vertex 1.990600 7.426100 0.300000
+      vertex 1.990600 1.041100 0.300000
+      vertex 2.432183 4.218934 0.300000
+    endloop
+  endfacet
+  facet normal 0.000000 0.000000 1.000000
+    outer loop
+      vertex 2.432183 4.818933 0.300000
+      vertex 3.432183 5.860618 0.300000
+      vertex 3.432183 6.460618 0.300000
+    endloop
+  endfacet
+  facet normal 0.000000 0.000000 1.000000
+    outer loop
+      vertex 1.990600 1.041100 0.300000
+      vertex 2.432183 3.618933 0.300000
+      vertex 2.432183 4.218933 0.300000
+    endloop
+  endfacet
+  facet normal 0.000000 0.000000 1.000000
+    outer loop
+      vertex 3.432183 4.218933 0.300000
+      vertex 3.432183 3.618933 0.300000
+      vertex 3.433183 3.618933 0.300000
+    endloop
+  endfacet
+  facet normal 0.000000 0.000000 1.000000
+    outer loop
+      vertex 4.632183 4.818933 0.300000
+      vertex 4.632183 3.618933 0.300000
+      vertex 4.633183 3.618933 0.300000
+    endloop
+  endfacet
+  facet normal 0.000000 0.000000 1.000000
+    outer loop
+      vertex 4.632183 3.618933 0.300000
+      vertex 1.990600 1.041100 0.300000
+      vertex 3.432183 2.416210 0.300000
+    endloop
+  endfacet
+  facet normal 0.000000 0.000000 1.000000
+    outer loop
+      vertex 4.632183 1.816210 0.300000
+      vertex 1.990600 1.041100 0.300000
+      vertex 6.014200 1.041100 0.300000
+    endloop
+  endfacet
+  facet normal 0.000000 0.000000 1.000000
+    outer loop
+      vertex 1.990600 7.426100 0.300000
+      vertex 2.432183 4.218934 0.300000
+      vertex 2.432183 4.818933 0.300000
+    endloop
+  endfacet
+  facet normal 0.000000 0.000000 1.000000
+    outer loop
+      vertex 4.632183 5.860618 0.300000
+      vertex 3.432183 5.860618 0.300000
+      vertex 2.432183 4.818933 0.300000
+    endloop
+  endfacet
+  facet normal 0.000000 0.000000 1.000000
+    outer loop
+      vertex 2.432183 4.218934 0.300000
+      vertex 1.990600 1.041100 0.300000
+      vertex 2.432183 4.218933 0.300000
+    endloop
+  endfacet
+  facet normal 0.000000 0.000000 1.000000
+    outer loop
+      vertex 3.432183 4.218933 0.300000
+      vertex 3.433183 3.618933 0.300000
+      vertex 3.433183 4.818933 0.300000
+    endloop
+  endfacet
+  facet normal 0.000000 0.000000 1.000000
+    outer loop
+      vertex 4.632183 4.818933 0.300000
+      vertex 4.633183 3.618933 0.300000
+      vertex 4.633183 4.218934 0.300000
+    endloop
+  endfacet
+  facet normal 0.000000 0.000000 1.000000
+    outer loop
+      vertex 5.633183 3.618933 0.300000
+      vertex 4.632183 3.618933 0.300000
+      vertex 3.432183 2.416210 0.300000
+    endloop
+  endfacet
+  facet normal 0.000000 0.000000 1.000000
+    outer loop
+      vertex 4.632183 2.416210 0.300000
+      vertex 4.632183 1.816210 0.300000
+      vertex 6.014200 1.041100 0.300000
+    endloop
+  endfacet
+  facet normal 0.000000 0.000000 1.000000
+    outer loop
+      vertex 1.990600 7.426100 0.300000
+      vertex 2.432183 4.818933 0.300000
+      vertex 3.432183 6.460618 0.300000
+    endloop
+  endfacet
+  facet normal 0.000000 0.000000 1.000000
+    outer loop
+      vertex 4.632183 5.860618 0.300000
+      vertex 2.432183 4.818933 0.300000
+      vertex 3.432183 4.818933 0.300000
+    endloop
+  endfacet
+  facet normal 0.000000 0.000000 1.000000
+    outer loop
+      vertex 3.432183 4.218934 0.300000
+      vertex 2.432183 4.218934 0.300000
+      vertex 2.432183 4.218933 0.300000
+    endloop
+  endfacet
+  facet normal 0.000000 0.000000 1.000000
+    outer loop
+      vertex 4.632183 4.818933 0.300000
+      vertex 4.633183 4.218934 0.300000
+      vertex 4.633183 4.818933 0.300000
+    endloop
+  endfacet
+  facet normal 0.000000 0.000000 1.000000
+    outer loop
+      vertex 5.633183 3.618933 0.300000
+      vertex 3.432183 2.416210 0.300000
+      vertex 4.632183 2.416210 0.300000
+    endloop
+  endfacet
+  facet normal 0.000000 0.000000 1.000000
+    outer loop
+      vertex 6.014200 7.426100 0.300000
+      vertex 1.990600 7.426100 0.300000
+      vertex 3.432183 6.460618 0.300000
+    endloop
+  endfacet
+  facet normal 0.000000 0.000000 1.000000
+    outer loop
+      vertex 3.432183 4.218934 0.300000
+      vertex 2.432183 4.218933 0.300000
+      vertex 3.432183 4.218933 0.300000
+    endloop
+  endfacet
+  facet normal 0.000000 0.000000 1.000000
+    outer loop
+      vertex 5.633183 3.618933 0.300000
+      vertex 4.632183 2.416210 0.300000
+      vertex 6.014200 1.041100 0.300000
+    endloop
+  endfacet
+  facet normal 0.000000 0.000000 1.000000
+    outer loop
+      vertex 6.014200 7.426100 0.300000
+      vertex 3.432183 6.460618 0.300000
+      vertex 4.632183 6.460618 0.300000
+    endloop
+  endfacet
+  facet normal 0.000000 0.000000 1.000000
+    outer loop
+      vertex 3.432183 4.218934 0.300000
+      vertex 3.432183 4.218933 0.300000
+      vertex 3.433183 4.818933 0.300000
+    endloop
+  endfacet
+  facet normal 0.000000 0.000000 1.000000
+    outer loop
+      vertex 5.633183 4.218934 0.300000
+      vertex 5.633183 3.618933 0.300000
+      vertex 6.014200 1.041100 0.300000
+    endloop
+  endfacet
+  facet normal 0.000000 0.000000 1.000000
+    outer loop
+      vertex 6.014200 7.426100 0.300000
+      vertex 4.632183 6.460618 0.300000
+      vertex 4.632183 5.860618 0.300000
+    endloop
+  endfacet
+  facet normal 0.000000 0.000000 1.000000
+    outer loop
+      vertex 3.432183 4.818933 0.300000
+      vertex 3.432183 4.218934 0.300000
+      vertex 3.433183 4.818933 0.300000
+    endloop
+  endfacet
+  facet normal 0.000000 0.000000 1.000000
+    outer loop
+      vertex 5.633183 4.818933 0.300000
+      vertex 5.633183 4.218934 0.300000
+      vertex 6.014200 1.041100 0.300000
+    endloop
+  endfacet
+  facet normal 0.000000 0.000000 1.000000
+    outer loop
+      vertex 4.632183 5.860618 0.300000
+      vertex 3.432183 4.818933 0.300000
+      vertex 3.433183 4.818933 0.300000
+    endloop
+  endfacet
+  facet normal 0.000000 0.000000 1.000000
+    outer loop
+      vertex 5.633183 4.818933 0.300000
+      vertex 6.014200 1.041100 0.300000
+      vertex 6.014200 7.426100 0.300000
+    endloop
+  endfacet
+  facet normal 0.000000 0.000000 1.000000
+    outer loop
+      vertex 4.632183 5.860618 0.300000
+      vertex 3.433183 4.818933 0.300000
+      vertex 4.632183 4.818933 0.300000
+    endloop
+  endfacet
+  facet normal 0.000000 0.000000 1.000000
+    outer loop
+      vertex 4.632183 4.818933 0.300000
+      vertex 5.633183 4.818933 0.300000
+      vertex 6.014200 7.426100 0.300000
+    endloop
+  endfacet
+  facet normal 0.000000 0.000000 1.000000
+    outer loop
+      vertex 6.014200 7.426100 0.300000
+      vertex 4.632183 5.860618 0.300000
+      vertex 4.632183 4.818933 0.300000
+    endloop
+  endfacet
+endsolid Room_Raising_floor_part1

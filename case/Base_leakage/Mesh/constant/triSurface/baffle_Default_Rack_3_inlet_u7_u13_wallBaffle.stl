@@ -1,0 +1,16 @@
+solid Default_Rack_3_inlet_u7_u13_wallBaffle
+  facet normal -1.000000 0.000000 0.000000
+    outer loop
+      vertex 4.633183 3.678933 0.877850
+      vertex 4.633183 4.158933 0.566700
+      vertex 4.633183 3.678933 0.566700
+    endloop
+  endfacet
+  facet normal -1.000000 0.000000 0.000000
+    outer loop
+      vertex 4.633183 4.158933 0.566700
+      vertex 4.633183 3.678933 0.877850
+      vertex 4.633183 4.158933 0.877850
+    endloop
+  endfacet
+endsolid Default_Rack_3_inlet_u7_u13_wallBaffle

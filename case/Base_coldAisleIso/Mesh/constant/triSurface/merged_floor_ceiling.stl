@@ -1,32 +1,32 @@
-solid Ground_floor_Top
-  facet normal 0.000000 0.000000 1.000000
+solid Ground_floor
+  facet normal 0 0 -1
     outer loop
-      vertex -0.000000 6.000000 0.000000
-      vertex -0.000000 -0.000000 0.000000
-      vertex 10.000000 -0.000000 0.000000
+      vertex 0.0 6.0 0.0
+      vertex 10.0 0.0 0.0
+      vertex 0.0 0.0 0.0
     endloop
   endfacet
-  facet normal 0.000000 0.000000 1.000000
+  facet normal 0 0 -1
     outer loop
-      vertex 10.000000 -0.000000 0.000000
-      vertex 10.000000 6.000000 0.000000
-      vertex -0.000000 6.000000 0.000000
+      vertex 0.0 6.0 0.0
+      vertex 10.0 6.0 0.0
+      vertex 10.0 0.0 0.0
     endloop
   endfacet
-endsolid Ground_floor_Top
-solid Room_top_Top
-  facet normal 0.000000 0.000000 1.000000
+endsolid Ground_floor
+solid Room_top
+  facet normal 0 0 1
     outer loop
-      vertex 0.000000 6.000000 2.849703
-      vertex 0.000000 0.000000 2.849703
-      vertex 10.000000 0.000000 2.849703
+      vertex 0.0 6.0 2.849703
+      vertex 0.0 0.0 2.849703
+      vertex 10.0 0.0 2.849703
     endloop
   endfacet
-  facet normal 0.000000 0.000000 1.000000
+  facet normal 0 0 1
     outer loop
-      vertex 10.000000 0.000000 2.849703
-      vertex 10.000000 6.000000 2.849703
-      vertex 0.000000 6.000000 2.849703
+      vertex 0.0 6.0 2.849703
+      vertex 10.0 0.0 2.849703
+      vertex 10.0 6.0 2.849703
     endloop
   endfacet
-endsolid Room_top_Top
+endsolid Room_top

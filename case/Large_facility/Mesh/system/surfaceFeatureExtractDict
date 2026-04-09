@@ -1,0 +1,482 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version 2.0;
+    format ascii;
+    class dictionary;
+    location system;
+    object surfaceFeatureExtractDict;
+}
+
+    baffle_AHU_partition_copy.stl
+    {
+        extractionMethod    extractFromSurface;
+        extractFromSurfaceCoeffs { includedAngle 150; }
+        writeObj yes;
+    }
+    baffle_AHU_partition_copy_copy2.stl
+    {
+        extractionMethod    extractFromSurface;
+        extractFromSurfaceCoeffs { includedAngle 150; }
+        writeObj yes;
+    }
+    baffle_AHU_partition_copy_copy2_copy.stl
+    {
+        extractionMethod    extractFromSurface;
+        extractFromSurfaceCoeffs { includedAngle 150; }
+        writeObj yes;
+    }
+    baffle_AHU_partition_copy_copy2_copy_copy.stl
+    {
+        extractionMethod    extractFromSurface;
+        extractFromSurfaceCoeffs { includedAngle 150; }
+        writeObj yes;
+    }
+    baffle_AHU_partition_copy_copy2_copy_copy_copy.stl
+    {
+        extractionMethod    extractFromSurface;
+        extractFromSurfaceCoeffs { includedAngle 150; }
+        writeObj yes;
+    }
+    baffle_AHU_partition_copy_copy2_copy_copy_copy_copy.stl
+    {
+        extractionMethod    extractFromSurface;
+        extractFromSurfaceCoeffs { includedAngle 150; }
+        writeObj yes;
+    }
+    baffle_AHU_partition_copy_copy2_copy_copy_copy_copy_copy.stl
+    {
+        extractionMethod    extractFromSurface;
+        extractFromSurfaceCoeffs { includedAngle 150; }
+        writeObj yes;
+    }
+    baffle_AHU_partition_copy_copy2_copy_copy_copy_copy_copy_copy.stl
+    {
+        extractionMethod    extractFromSurface;
+        extractFromSurfaceCoeffs { includedAngle 150; }
+        writeObj yes;
+    }
+    baffle_AHU_partition_copy_copy_part1.stl
+    {
+        extractionMethod    extractFromSurface;
+        extractFromSurfaceCoeffs { includedAngle 150; }
+        writeObj yes;
+    }
+    baffle_AHU_partition_copy_copy_patch_1.stl
+    {
+        extractionMethod    extractFromSurface;
+        extractFromSurfaceCoeffs { includedAngle 150; }
+        writeObj yes;
+    }
+    baffle_AHU_partition_copy_copy_patch_10.stl
+    {
+        extractionMethod    extractFromSurface;
+        extractFromSurfaceCoeffs { includedAngle 150; }
+        writeObj yes;
+    }
+    baffle_AHU_partition_copy_copy_patch_11.stl
+    {
+        extractionMethod    extractFromSurface;
+        extractFromSurfaceCoeffs { includedAngle 150; }
+        writeObj yes;
+    }
+    baffle_AHU_partition_copy_copy_patch_12.stl
+    {
+        extractionMethod    extractFromSurface;
+        extractFromSurfaceCoeffs { includedAngle 150; }
+        writeObj yes;
+    }
+    baffle_AHU_partition_copy_copy_patch_13.stl
+    {
+        extractionMethod    extractFromSurface;
+        extractFromSurfaceCoeffs { includedAngle 150; }
+        writeObj yes;
+    }
+    baffle_AHU_partition_copy_copy_patch_14.stl
+    {
+        extractionMethod    extractFromSurface;
+        extractFromSurfaceCoeffs { includedAngle 150; }
+        writeObj yes;
+    }
+    baffle_AHU_partition_copy_copy_patch_15.stl
+    {
+        extractionMethod    extractFromSurface;
+        extractFromSurfaceCoeffs { includedAngle 150; }
+        writeObj yes;
+    }
+    baffle_AHU_partition_copy_copy_patch_16.stl
+    {
+        extractionMethod    extractFromSurface;
+        extractFromSurfaceCoeffs { includedAngle 150; }
+        writeObj yes;
+    }
+    baffle_AHU_partition_copy_copy_patch_2.stl
+    {
+        extractionMethod    extractFromSurface;
+        extractFromSurfaceCoeffs { includedAngle 150; }
+        writeObj yes;
+    }
+    baffle_AHU_partition_copy_copy_patch_3.stl
+    {
+        extractionMethod    extractFromSurface;
+        extractFromSurfaceCoeffs { includedAngle 150; }
+        writeObj yes;
+    }
+    baffle_AHU_partition_copy_copy_patch_4.stl
+    {
+        extractionMethod    extractFromSurface;
+        extractFromSurfaceCoeffs { includedAngle 150; }
+        writeObj yes;
+    }
+    baffle_AHU_partition_copy_copy_patch_5.stl
+    {
+        extractionMethod    extractFromSurface;
+        extractFromSurfaceCoeffs { includedAngle 150; }
+        writeObj yes;
+    }
+    baffle_AHU_partition_copy_copy_patch_6.stl
+    {
+        extractionMethod    extractFromSurface;
+        extractFromSurfaceCoeffs { includedAngle 150; }
+        writeObj yes;
+    }
+    baffle_AHU_partition_copy_copy_patch_7.stl
+    {
+        extractionMethod    extractFromSurface;
+        extractFromSurfaceCoeffs { includedAngle 150; }
+        writeObj yes;
+    }
+    baffle_AHU_partition_copy_copy_patch_8.stl
+    {
+        extractionMethod    extractFromSurface;
+        extractFromSurfaceCoeffs { includedAngle 150; }
+        writeObj yes;
+    }
+    baffle_AHU_partition_copy_copy_patch_9.stl
+    {
+        extractionMethod    extractFromSurface;
+        extractFromSurfaceCoeffs { includedAngle 150; }
+        writeObj yes;
+    }
+    baffle_Baffle_3.stl
+    {
+        extractionMethod    extractFromSurface;
+        extractFromSurfaceCoeffs { includedAngle 150; }
+        writeObj yes;
+    }
+    baffle_Baffle_3_copy.stl
+    {
+        extractionMethod    extractFromSurface;
+        extractFromSurfaceCoeffs { includedAngle 150; }
+        writeObj yes;
+    }
+    baffle_Baffle_3_copy_copy.stl
+    {
+        extractionMethod    extractFromSurface;
+        extractFromSurfaceCoeffs { includedAngle 150; }
+        writeObj yes;
+    }
+    baffle_Baffle_3_copy_copy2.stl
+    {
+        extractionMethod    extractFromSurface;
+        extractFromSurfaceCoeffs { includedAngle 150; }
+        writeObj yes;
+    }
+    baffle_Baffle_3_copy_copy2_copy.stl
+    {
+        extractionMethod    extractFromSurface;
+        extractFromSurfaceCoeffs { includedAngle 150; }
+        writeObj yes;
+    }
+    baffle_Baffle_3_copy_copy2_copy2.stl
+    {
+        extractionMethod    extractFromSurface;
+        extractFromSurfaceCoeffs { includedAngle 150; }
+        writeObj yes;
+    }
+    baffle_Baffle_3_copy_copy2_copy_copy.stl
+    {
+        extractionMethod    extractFromSurface;
+        extractFromSurfaceCoeffs { includedAngle 150; }
+        writeObj yes;
+    }
+    baffle_Baffle_3_copy_copy2_copy_copy2.stl
+    {
+        extractionMethod    extractFromSurface;
+        extractFromSurfaceCoeffs { includedAngle 150; }
+        writeObj yes;
+    }
+    baffle_Baffle_3_copy_copy2_copy_copy_copy.stl
+    {
+        extractionMethod    extractFromSurface;
+        extractFromSurfaceCoeffs { includedAngle 150; }
+        writeObj yes;
+    }
+    baffle_Baffle_3_copy_copy2_copy_copy_copy2.stl
+    {
+        extractionMethod    extractFromSurface;
+        extractFromSurfaceCoeffs { includedAngle 150; }
+        writeObj yes;
+    }
+    baffle_Baffle_3_copy_copy2_copy_copy_copy_copy.stl
+    {
+        extractionMethod    extractFromSurface;
+        extractFromSurfaceCoeffs { includedAngle 150; }
+        writeObj yes;
+    }
+    baffle_Baffle_4.stl
+    {
+        extractionMethod    extractFromSurface;
+        extractFromSurfaceCoeffs { includedAngle 150; }
+        writeObj yes;
+    }
+    baffle_Baffle_4_copy.stl
+    {
+        extractionMethod    extractFromSurface;
+        extractFromSurfaceCoeffs { includedAngle 150; }
+        writeObj yes;
+    }
+    baffle_Baffle_4_copy_copy.stl
+    {
+        extractionMethod    extractFromSurface;
+        extractFromSurfaceCoeffs { includedAngle 150; }
+        writeObj yes;
+    }
+    baffle_Baffle_4_copy_copy_copy.stl
+    {
+        extractionMethod    extractFromSurface;
+        extractFromSurfaceCoeffs { includedAngle 150; }
+        writeObj yes;
+    }
+    baffle_Baffle_4_copy_copy_copy2.stl
+    {
+        extractionMethod    extractFromSurface;
+        extractFromSurfaceCoeffs { includedAngle 150; }
+        writeObj yes;
+    }
+    baffle_Baffle_4_copy_copy_copy2_copy.stl
+    {
+        extractionMethod    extractFromSurface;
+        extractFromSurfaceCoeffs { includedAngle 150; }
+        writeObj yes;
+    }
+    baffle_Baffle_4_copy_copy_copy2_copy_copy.stl
+    {
+        extractionMethod    extractFromSurface;
+        extractFromSurfaceCoeffs { includedAngle 150; }
+        writeObj yes;
+    }
+    baffle_Baffle_4_copy_copy_copy2_copy_copy_copy.stl
+    {
+        extractionMethod    extractFromSurface;
+        extractFromSurfaceCoeffs { includedAngle 150; }
+        writeObj yes;
+    }
+    baffle_Baffle_4_copy_copy_copy2_copy_copy_copy_copy.stl
+    {
+        extractionMethod    extractFromSurface;
+        extractFromSurfaceCoeffs { includedAngle 150; }
+        writeObj yes;
+    }
+    baffle_Baffle_4_copy_copy_copy2_copy_copy_copy_copy_copy.stl
+    {
+        extractionMethod    extractFromSurface;
+        extractFromSurfaceCoeffs { includedAngle 150; }
+        writeObj yes;
+    }
+    baffle_Baffle_4_copy_copy_copy2_copy_copy_copy_copy_copy_copy.stl
+    {
+        extractionMethod    extractFromSurface;
+        extractFromSurfaceCoeffs { includedAngle 150; }
+        writeObj yes;
+    }
+    baffle_Baffle_4_copy_copy_copy2_copy_copy_copy_copy_copy_copy_copy.stl
+    {
+        extractionMethod    extractFromSurface;
+        extractFromSurfaceCoeffs { includedAngle 150; }
+        writeObj yes;
+    }
+    baffle_Baffle_6.stl
+    {
+        extractionMethod    extractFromSurface;
+        extractFromSurfaceCoeffs { includedAngle 150; }
+        writeObj yes;
+    }
+    baffle_Baffle_7.stl
+    {
+        extractionMethod    extractFromSurface;
+        extractFromSurfaceCoeffs { includedAngle 150; }
+        writeObj yes;
+    }
+    baffle_Baffle_7_copy.stl
+    {
+        extractionMethod    extractFromSurface;
+        extractFromSurfaceCoeffs { includedAngle 150; }
+        writeObj yes;
+    }
+    baffle_Baffle_7_copy_copy.stl
+    {
+        extractionMethod    extractFromSurface;
+        extractFromSurfaceCoeffs { includedAngle 150; }
+        writeObj yes;
+    }
+    baffle_Baffle_7_copy_copy_copy.stl
+    {
+        extractionMethod    extractFromSurface;
+        extractFromSurfaceCoeffs { includedAngle 150; }
+        writeObj yes;
+    }
+    baffle_Baffle_7_copy_copy_copy_copy.stl
+    {
+        extractionMethod    extractFromSurface;
+        extractFromSurfaceCoeffs { includedAngle 150; }
+        writeObj yes;
+    }
+    baffle_Baffle_7_copy_copy_copy_copy_copy.stl
+    {
+        extractionMethod    extractFromSurface;
+        extractFromSurfaceCoeffs { includedAngle 150; }
+        writeObj yes;
+    }
+    baffle_Baffle_7_copy_copy_copy_copy_copy_copy.stl
+    {
+        extractionMethod    extractFromSurface;
+        extractFromSurfaceCoeffs { includedAngle 150; }
+        writeObj yes;
+    }
+    baffle_Baffle_7_copy_copy_copy_copy_copy_copy_copy.stl
+    {
+        extractionMethod    extractFromSurface;
+        extractFromSurfaceCoeffs { includedAngle 150; }
+        writeObj yes;
+    }
+    baffle_Baffle_7_copy_copy_copy_copy_copy_copy_copy_copy.stl
+    {
+        extractionMethod    extractFromSurface;
+        extractFromSurfaceCoeffs { includedAngle 150; }
+        writeObj yes;
+    }
+    baffle_Baffle_7_copy_copy_copy_copy_copy_copy_copy_copy_copy.stl
+    {
+        extractionMethod    extractFromSurface;
+        extractFromSurfaceCoeffs { includedAngle 150; }
+        writeObj yes;
+    }
+    baffle_Baffle_7_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy.stl
+    {
+        extractionMethod    extractFromSurface;
+        extractFromSurfaceCoeffs { includedAngle 150; }
+        writeObj yes;
+    }
+    baffle_Baffle_7_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy.stl
+    {
+        extractionMethod    extractFromSurface;
+        extractFromSurfaceCoeffs { includedAngle 150; }
+        writeObj yes;
+    }
+    baffle_Baffle_7_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy.stl
+    {
+        extractionMethod    extractFromSurface;
+        extractFromSurfaceCoeffs { includedAngle 150; }
+        writeObj yes;
+    }
+    baffle_Baffle_7_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy.stl
+    {
+        extractionMethod    extractFromSurface;
+        extractFromSurfaceCoeffs { includedAngle 150; }
+        writeObj yes;
+    }
+    baffle_Baffle_7_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy.stl
+    {
+        extractionMethod    extractFromSurface;
+        extractFromSurfaceCoeffs { includedAngle 150; }
+        writeObj yes;
+    }
+    baffle_Baffle_7_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy.stl
+    {
+        extractionMethod    extractFromSurface;
+        extractFromSurfaceCoeffs { includedAngle 150; }
+        writeObj yes;
+    }
+    baffle_Baffle_9.stl
+    {
+        extractionMethod    extractFromSurface;
+        extractFromSurfaceCoeffs { includedAngle 150; }
+        writeObj yes;
+    }
+    baffle_Baffle_9_copy.stl
+    {
+        extractionMethod    extractFromSurface;
+        extractFromSurfaceCoeffs { includedAngle 150; }
+        writeObj yes;
+    }
+    baffle_Baffle_9_copy_copy.stl
+    {
+        extractionMethod    extractFromSurface;
+        extractFromSurfaceCoeffs { includedAngle 150; }
+        writeObj yes;
+    }
+    baffle_Baffle_9_copy_copy_copy.stl
+    {
+        extractionMethod    extractFromSurface;
+        extractFromSurfaceCoeffs { includedAngle 150; }
+        writeObj yes;
+    }
+    baffle_Baffle_9_copy_copy_copy_copy.stl
+    {
+        extractionMethod    extractFromSurface;
+        extractFromSurfaceCoeffs { includedAngle 150; }
+        writeObj yes;
+    }
+    baffle_Baffle_9_copy_copy_copy_copy_copy.stl
+    {
+        extractionMethod    extractFromSurface;
+        extractFromSurfaceCoeffs { includedAngle 150; }
+        writeObj yes;
+    }
+    baffle_Baffle_9_copy_copy_copy_copy_copy_copy.stl
+    {
+        extractionMethod    extractFromSurface;
+        extractFromSurfaceCoeffs { includedAngle 150; }
+        writeObj yes;
+    }
+    baffle_Baffle_9_copy_copy_copy_copy_copy_copy_copy.stl
+    {
+        extractionMethod    extractFromSurface;
+        extractFromSurfaceCoeffs { includedAngle 150; }
+        writeObj yes;
+    }
+    merged_acu.stl
+    {
+        extractionMethod    extractFromSurface;
+        extractFromSurfaceCoeffs { includedAngle 150; }
+        writeObj yes;
+    }
+    merged_box.stl
+    {
+        extractionMethod    extractFromSurface;
+        extractFromSurfaceCoeffs { includedAngle 150; }
+        writeObj yes;
+    }
+    merged_floor_ceiling.stl
+    {
+        extractionMethod    extractFromSurface;
+        extractFromSurfaceCoeffs { includedAngle 150; }
+        writeObj yes;
+    }
+    merged_rack.stl
+    {
+        extractionMethod    extractFromSurface;
+        extractFromSurfaceCoeffs { includedAngle 150; }
+        writeObj yes;
+    }
+    room_wall.stl
+    {
+        extractionMethod    extractFromSurface;
+        extractFromSurfaceCoeffs { includedAngle 150; }
+        writeObj yes;
+    }

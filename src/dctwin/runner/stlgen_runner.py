@@ -444,10 +444,42 @@ class STLGenRunner:
     # Public API
     # ------------------------------------------------------------------
 
+    def validate_geometry(self) -> None:
+        """Pre-flight check: ensure room.height is consistent with floor z-coordinates.
+
+        Raises RuntimeError if any floor's anchor z exceeds room.height, which would
+        cause the room enclosure walls to be shorter than the geometry, leading to
+        unclosed mesh domains and baffle seed placement failures.
+        """
+        if self._data is None:
+            self._load_cfd_json_only()
+        room_height = self._data.get("room", {}).get("height", 0)
+        for name, floor in self._data.get("floors", {}).items():
+            z = floor.get("geometry", {}).get("anchor", {}).get("z", 0)
+            if z > room_height:
+                raise RuntimeError(
+                    f"floor '{name}' z={z} exceeds room.height={room_height}. "
+                    f"The room enclosure (walls) only extends to z={room_height}, "
+                    f"but this floor is placed above it. "
+                    f"Update the room height in the 2D floor plan (房间 2D 平面设计 → 房间高度) "
+                    f"to at least {z}."
+                )
+
+    def _load_cfd_json_only(self) -> None:
+        """Load and validate cfd_export.json without requiring STL files."""
+        if not self.cfd_export_path.exists():
+            raise FileNotFoundError(f"cfd_export.json not found: {self.cfd_export_path}")
+        with open(self.cfd_export_path, encoding="utf-8") as fh:
+            raw = json.load(fh)
+        from dctwin.runner.cfdproj_schema import CFDExport
+        validated = CFDExport.model_validate(raw)
+        self._data = validated.model_dump(mode="json")
+
     def run_mesh_only(self) -> Path:
         """Generate mesh + complete OpenFOAM case in Mesh/ directory."""
         logger.info("=== STLGen: Mesh-Only Mode ===")
         self._load()
+        self.validate_geometry()
         self._ensure_watertight_room_enclosure()
         self._prepare_runtime_metadata()
         self._generate_mesh_dicts()
@@ -482,6 +514,7 @@ class STLGenRunner:
         """Run mesh + solve."""
         logger.info("=== STLGen: Full Simulation Mode ===")
         self._load()
+        self.validate_geometry()
         self._prepare_runtime_metadata()
         self._generate_mesh_dicts()
         self._run_serial_mesh_pipeline()

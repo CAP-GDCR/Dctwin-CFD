@@ -1,0 +1,1222 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version 2.0;
+    format ascii;
+    class dictionary;
+    location system;
+    object snappyHexMeshDict;
+}
+
+castellatedMesh on;
+snap on;
+addLayers off;
+
+geometry
+{
+    baffle_Baffle_1.stl
+    {
+        type triSurfaceMesh;
+        name baffle_Baffle_1;
+    }
+
+    baffle_Baffle_2.stl
+    {
+        type triSurfaceMesh;
+        name baffle_Baffle_2;
+    }
+
+    baffle_Baffle_3.stl
+    {
+        type triSurfaceMesh;
+        name baffle_Baffle_3;
+    }
+
+    baffle_Default_Rack_1_outlet_u4_u5_wallBaffle.stl
+    {
+        type triSurfaceMesh;
+        name baffle_Default_Rack_1_outlet_u4_u5_wallBaffle;
+    }
+
+    baffle_Default_Rack_1_outlet_u8_u9_wallBaffle.stl
+    {
+        type triSurfaceMesh;
+        name baffle_Default_Rack_1_outlet_u8_u9_wallBaffle;
+    }
+
+    baffle_Default_Rack_2_outlet_u4_u9_wallBaffle.stl
+    {
+        type triSurfaceMesh;
+        name baffle_Default_Rack_2_outlet_u4_u9_wallBaffle;
+    }
+
+    baffle_Default_Rack_3_inlet_u7_u13_wallBaffle.stl
+    {
+        type triSurfaceMesh;
+        name baffle_Default_Rack_3_inlet_u7_u13_wallBaffle;
+    }
+
+    baffle_Room_Raising_floor_part1.stl
+    {
+        type triSurfaceMesh;
+        name baffle_Room_Raising_floor_part1;
+    }
+
+    baffle_Room_Raising_floor_patch.stl
+    {
+        type triSurfaceMesh;
+        name baffle_Room_Raising_floor_patch;
+    }
+
+    leakage_Default_Rack_1_u30_u32_leakage_zone.stl
+    {
+        type triSurfaceMesh;
+        name leakage_Default_Rack_1_u30_u32_leakage_zone;
+    }
+
+    leakage_Default_Rack_1_u39_u41_leakage_zone.stl
+    {
+        type triSurfaceMesh;
+        name leakage_Default_Rack_1_u39_u41_leakage_zone;
+    }
+
+    leakage_Default_Rack_1_u4_u9_leakage_zone.stl
+    {
+        type triSurfaceMesh;
+        name leakage_Default_Rack_1_u4_u9_leakage_zone;
+    }
+
+    merged_acu.stl
+    {
+        type triSurfaceMesh;
+        name merged_acu;
+        regions
+        {
+            ACU_1_Front { name ACU_1_Front; }
+            ACU_1_Back { name ACU_1_Back; }
+            ACU_1_Left { name ACU_1_Left; }
+            ACU_1_Right { name ACU_1_Right; }
+            ACU_1_Top_patch { name ACU_1_Top_patch; }
+            ACU_1_Bottom_patch { name ACU_1_Bottom_patch; }
+            ACU_1_copy_Front { name ACU_1_copy_Front; }
+            ACU_1_copy_Back { name ACU_1_copy_Back; }
+            ACU_1_copy_Left { name ACU_1_copy_Left; }
+            ACU_1_copy_Right { name ACU_1_copy_Right; }
+            ACU_1_copy_Top_patch { name ACU_1_copy_Top_patch; }
+            ACU_1_copy_Bottom_patch { name ACU_1_copy_Bottom_patch; }
+        }
+    }
+
+    merged_floor_ceiling.stl
+    {
+        type triSurfaceMesh;
+        name merged_floor_ceiling;
+        regions
+        {
+            Room_Floor { name Room_Floor; }
+            Room_Ceiling { name Room_Ceiling; }
+        }
+    }
+
+    merged_rack.stl
+    {
+        type triSurfaceMesh;
+        name merged_rack;
+        regions
+        {
+            Default_Rack_1_Left { name Default_Rack_1_Left; }
+            Default_Rack_1_Right { name Default_Rack_1_Right; }
+            Default_Rack_1_Top { name Default_Rack_1_Top; }
+            Default_Rack_1_Bottom { name Default_Rack_1_Bottom; }
+            Default_Rack_1_inlet_safe_bottom { name Default_Rack_1_inlet_safe_bottom; }
+            Default_Rack_1_inlet_safe_top { name Default_Rack_1_inlet_safe_top; }
+            Default_Rack_1_inlet_frame_left { name Default_Rack_1_inlet_frame_left; }
+            Default_Rack_1_inlet_frame_right { name Default_Rack_1_inlet_frame_right; }
+            Default_Rack_1_inlet_u2_u3 { name Default_Rack_1_inlet_u2_u3; }
+            Default_Rack_1_inlet_u10_u15 { name Default_Rack_1_inlet_u10_u15; }
+            Default_Rack_1_outlet_safe_bottom { name Default_Rack_1_outlet_safe_bottom; }
+            Default_Rack_1_outlet_safe_top { name Default_Rack_1_outlet_safe_top; }
+            Default_Rack_1_outlet_frame_left { name Default_Rack_1_outlet_frame_left; }
+            Default_Rack_1_outlet_frame_right { name Default_Rack_1_outlet_frame_right; }
+            Default_Rack_1_outlet_u2_u3 { name Default_Rack_1_outlet_u2_u3; }
+            Default_Rack_1_outlet_u10_u15 { name Default_Rack_1_outlet_u10_u15; }
+            Default_Rack_1_inner_left { name Default_Rack_1_inner_left; }
+            Default_Rack_1_inner_right { name Default_Rack_1_inner_right; }
+            Default_Rack_1_fan_server_1_inlet_patch { name Default_Rack_1_fan_server_1_inlet_patch; }
+            Default_Rack_1_fan_server_1_outlet_patch { name Default_Rack_1_fan_server_1_outlet_patch; }
+            Default_Rack_1_fan_server_1_bottom { name Default_Rack_1_fan_server_1_bottom; }
+            Default_Rack_1_fan_server_1_top { name Default_Rack_1_fan_server_1_top; }
+            Default_Rack_1_non_fan_equipment_2_front { name Default_Rack_1_non_fan_equipment_2_front; }
+            Default_Rack_1_non_fan_equipment_2_back { name Default_Rack_1_non_fan_equipment_2_back; }
+            Default_Rack_1_non_fan_equipment_2_bottom { name Default_Rack_1_non_fan_equipment_2_bottom; }
+            Default_Rack_1_non_fan_equipment_2_top { name Default_Rack_1_non_fan_equipment_2_top; }
+            Default_Rack_1_u1_partition { name Default_Rack_1_u1_partition; }
+            Default_Rack_1_u3_partition { name Default_Rack_1_u3_partition; }
+            Default_Rack_1_u9_partition { name Default_Rack_1_u9_partition; }
+            Default_Rack_1_u29_partition { name Default_Rack_1_u29_partition; }
+            Default_Rack_1_u32_partition { name Default_Rack_1_u32_partition; }
+            Default_Rack_1_u38_partition { name Default_Rack_1_u38_partition; }
+            Default_Rack_1_u41_partition { name Default_Rack_1_u41_partition; }
+            Default_Rack_2_Left { name Default_Rack_2_Left; }
+            Default_Rack_2_Right { name Default_Rack_2_Right; }
+            Default_Rack_2_Top { name Default_Rack_2_Top; }
+            Default_Rack_2_Bottom { name Default_Rack_2_Bottom; }
+            Default_Rack_2_inlet_safe_bottom { name Default_Rack_2_inlet_safe_bottom; }
+            Default_Rack_2_inlet_safe_top { name Default_Rack_2_inlet_safe_top; }
+            Default_Rack_2_inlet_frame_left { name Default_Rack_2_inlet_frame_left; }
+            Default_Rack_2_inlet_frame_right { name Default_Rack_2_inlet_frame_right; }
+            Default_Rack_2_inlet_u2_u3 { name Default_Rack_2_inlet_u2_u3; }
+            Default_Rack_2_inlet_u10_u15 { name Default_Rack_2_inlet_u10_u15; }
+            Default_Rack_2_inlet_u30_u41 { name Default_Rack_2_inlet_u30_u41; }
+            Default_Rack_2_outlet_safe_bottom { name Default_Rack_2_outlet_safe_bottom; }
+            Default_Rack_2_outlet_safe_top { name Default_Rack_2_outlet_safe_top; }
+            Default_Rack_2_outlet_frame_left { name Default_Rack_2_outlet_frame_left; }
+            Default_Rack_2_outlet_frame_right { name Default_Rack_2_outlet_frame_right; }
+            Default_Rack_2_outlet_u2_u3 { name Default_Rack_2_outlet_u2_u3; }
+            Default_Rack_2_outlet_u10_u15 { name Default_Rack_2_outlet_u10_u15; }
+            Default_Rack_2_outlet_u30_u41 { name Default_Rack_2_outlet_u30_u41; }
+            Default_Rack_2_inner_left { name Default_Rack_2_inner_left; }
+            Default_Rack_2_inner_right { name Default_Rack_2_inner_right; }
+            Default_Rack_2_fan_server_1_inlet_patch { name Default_Rack_2_fan_server_1_inlet_patch; }
+            Default_Rack_2_fan_server_1_outlet_patch { name Default_Rack_2_fan_server_1_outlet_patch; }
+            Default_Rack_2_fan_server_1_bottom { name Default_Rack_2_fan_server_1_bottom; }
+            Default_Rack_2_fan_server_1_top { name Default_Rack_2_fan_server_1_top; }
+            Default_Rack_2_u1_partition { name Default_Rack_2_u1_partition; }
+            Default_Rack_2_u3_partition { name Default_Rack_2_u3_partition; }
+            Default_Rack_2_u9_partition { name Default_Rack_2_u9_partition; }
+            Default_Rack_2_u41_partition { name Default_Rack_2_u41_partition; }
+            Default_Rack_3_Left { name Default_Rack_3_Left; }
+            Default_Rack_3_Right { name Default_Rack_3_Right; }
+            Default_Rack_3_Top { name Default_Rack_3_Top; }
+            Default_Rack_3_Bottom { name Default_Rack_3_Bottom; }
+            Default_Rack_3_inlet_safe_bottom { name Default_Rack_3_inlet_safe_bottom; }
+            Default_Rack_3_inlet_safe_top { name Default_Rack_3_inlet_safe_top; }
+            Default_Rack_3_inlet_frame_left { name Default_Rack_3_inlet_frame_left; }
+            Default_Rack_3_inlet_frame_right { name Default_Rack_3_inlet_frame_right; }
+            Default_Rack_3_inlet_u2_u6 { name Default_Rack_3_inlet_u2_u6; }
+            Default_Rack_3_inlet_u14_u24 { name Default_Rack_3_inlet_u14_u24; }
+            Default_Rack_3_inlet_u37_u41 { name Default_Rack_3_inlet_u37_u41; }
+            Default_Rack_3_outlet_safe_bottom { name Default_Rack_3_outlet_safe_bottom; }
+            Default_Rack_3_outlet_safe_top { name Default_Rack_3_outlet_safe_top; }
+            Default_Rack_3_outlet_frame_left { name Default_Rack_3_outlet_frame_left; }
+            Default_Rack_3_outlet_frame_right { name Default_Rack_3_outlet_frame_right; }
+            Default_Rack_3_outlet_u2_u6 { name Default_Rack_3_outlet_u2_u6; }
+            Default_Rack_3_outlet_u14_u24 { name Default_Rack_3_outlet_u14_u24; }
+            Default_Rack_3_outlet_u37_u41 { name Default_Rack_3_outlet_u37_u41; }
+            Default_Rack_3_inner_left { name Default_Rack_3_inner_left; }
+            Default_Rack_3_inner_right { name Default_Rack_3_inner_right; }
+            Default_Rack_3_fan_server_1_inlet_patch { name Default_Rack_3_fan_server_1_inlet_patch; }
+            Default_Rack_3_fan_server_1_outlet_patch { name Default_Rack_3_fan_server_1_outlet_patch; }
+            Default_Rack_3_fan_server_1_bottom { name Default_Rack_3_fan_server_1_bottom; }
+            Default_Rack_3_fan_server_1_top { name Default_Rack_3_fan_server_1_top; }
+            Default_Rack_3_u1_partition { name Default_Rack_3_u1_partition; }
+            Default_Rack_3_u6_partition { name Default_Rack_3_u6_partition; }
+            Default_Rack_3_u13_partition { name Default_Rack_3_u13_partition; }
+            Default_Rack_3_u41_partition { name Default_Rack_3_u41_partition; }
+            Default_Rack_4_Left { name Default_Rack_4_Left; }
+            Default_Rack_4_Right { name Default_Rack_4_Right; }
+            Default_Rack_4_Top { name Default_Rack_4_Top; }
+            Default_Rack_4_Bottom { name Default_Rack_4_Bottom; }
+            Default_Rack_4_inlet_safe_bottom { name Default_Rack_4_inlet_safe_bottom; }
+            Default_Rack_4_inlet_safe_top { name Default_Rack_4_inlet_safe_top; }
+            Default_Rack_4_inlet_frame_left { name Default_Rack_4_inlet_frame_left; }
+            Default_Rack_4_inlet_frame_right { name Default_Rack_4_inlet_frame_right; }
+            Default_Rack_4_inlet_u2_u24 { name Default_Rack_4_inlet_u2_u24; }
+            Default_Rack_4_inlet_u37_u41 { name Default_Rack_4_inlet_u37_u41; }
+            Default_Rack_4_outlet_safe_bottom { name Default_Rack_4_outlet_safe_bottom; }
+            Default_Rack_4_outlet_safe_top { name Default_Rack_4_outlet_safe_top; }
+            Default_Rack_4_outlet_frame_left { name Default_Rack_4_outlet_frame_left; }
+            Default_Rack_4_outlet_frame_right { name Default_Rack_4_outlet_frame_right; }
+            Default_Rack_4_outlet_u2_u24 { name Default_Rack_4_outlet_u2_u24; }
+            Default_Rack_4_outlet_u37_u41 { name Default_Rack_4_outlet_u37_u41; }
+            Default_Rack_4_inner_left { name Default_Rack_4_inner_left; }
+            Default_Rack_4_inner_right { name Default_Rack_4_inner_right; }
+            Default_Rack_4_fan_server_1_inlet_patch { name Default_Rack_4_fan_server_1_inlet_patch; }
+            Default_Rack_4_fan_server_1_outlet_patch { name Default_Rack_4_fan_server_1_outlet_patch; }
+            Default_Rack_4_fan_server_1_bottom { name Default_Rack_4_fan_server_1_bottom; }
+            Default_Rack_4_fan_server_1_top { name Default_Rack_4_fan_server_1_top; }
+            Default_Rack_4_u1_partition { name Default_Rack_4_u1_partition; }
+            Default_Rack_4_u41_partition { name Default_Rack_4_u41_partition; }
+        }
+    }
+
+    room_wall.stl
+    {
+        type triSurfaceMesh;
+        name room_wall;
+        regions
+        {
+            Room_Wall_1 { name Room_Wall_1; }
+            Room_Wall_2 { name Room_Wall_2; }
+            Room_Wall_3 { name Room_Wall_3; }
+            Room_Wall_4 { name Room_Wall_4; }
+        }
+    }
+
+    RefineZone_1
+    {
+        type searchableBox;
+        min (1.6986391325387236 0.8103701083071697 0);
+        max (6.2617529986413745 7.587933940503769 0.31);
+    }
+}
+
+castellatedMeshControls
+{
+    maxLocalCells   5000000;
+    maxGlobalCells  5000000;
+    minRefinementCells 5;
+    nCellsBetweenLevels 3;
+    maxLoadUnbalance 0.10;
+    allowFreeStandingZoneFaces true;
+    resolveFeatureAngle 30;
+
+    features
+    (
+    {
+        file "baffle_Baffle_1.eMesh";
+        level 2;
+    }
+    {
+        file "baffle_Baffle_2.eMesh";
+        level 2;
+    }
+    {
+        file "baffle_Baffle_3.eMesh";
+        level 2;
+    }
+    {
+        file "baffle_Default_Rack_1_outlet_u4_u5_wallBaffle.eMesh";
+        level 2;
+    }
+    {
+        file "baffle_Default_Rack_1_outlet_u8_u9_wallBaffle.eMesh";
+        level 2;
+    }
+    {
+        file "baffle_Default_Rack_2_outlet_u4_u9_wallBaffle.eMesh";
+        level 2;
+    }
+    {
+        file "baffle_Default_Rack_3_inlet_u7_u13_wallBaffle.eMesh";
+        level 2;
+    }
+    {
+        file "baffle_Room_Raising_floor_part1.eMesh";
+        level 2;
+    }
+    {
+        file "baffle_Room_Raising_floor_patch.eMesh";
+        level 2;
+    }
+    {
+        file "leakage_Default_Rack_1_u30_u32_leakage_zone.eMesh";
+        level 2;
+    }
+    {
+        file "leakage_Default_Rack_1_u39_u41_leakage_zone.eMesh";
+        level 2;
+    }
+    {
+        file "leakage_Default_Rack_1_u4_u9_leakage_zone.eMesh";
+        level 2;
+    }
+    {
+        file "merged_acu.eMesh";
+        level 2;
+    }
+    {
+        file "merged_floor_ceiling.eMesh";
+        level 2;
+    }
+    {
+        file "merged_rack.eMesh";
+        level 4;
+    }
+    {
+        file "room_wall.eMesh";
+        level 2;
+    }
+    );
+
+    refinementSurfaces
+    {
+    baffle_Baffle_1
+    {
+        level (1 1);
+        faceType internal;
+        faceZone Baffle_1;
+    }
+
+    baffle_Baffle_2
+    {
+        level (1 1);
+        faceType internal;
+        faceZone Baffle_2;
+    }
+
+    baffle_Baffle_3
+    {
+        level (1 1);
+        faceType internal;
+        faceZone Baffle_3;
+    }
+
+    baffle_Default_Rack_1_outlet_u4_u5_wallBaffle
+    {
+        level (1 1);
+        faceType internal;
+        faceZone Default_Rack_1_outlet_u4_u5_wallBaffle;
+    }
+
+    baffle_Default_Rack_1_outlet_u8_u9_wallBaffle
+    {
+        level (1 1);
+        faceType internal;
+        faceZone Default_Rack_1_outlet_u8_u9_wallBaffle;
+    }
+
+    baffle_Default_Rack_2_outlet_u4_u9_wallBaffle
+    {
+        level (1 1);
+        faceType internal;
+        faceZone Default_Rack_2_outlet_u4_u9_wallBaffle;
+    }
+
+    baffle_Default_Rack_3_inlet_u7_u13_wallBaffle
+    {
+        level (1 1);
+        faceType internal;
+        faceZone Default_Rack_3_inlet_u7_u13_wallBaffle;
+    }
+
+    baffle_Room_Raising_floor_part1
+    {
+        level (1 1);
+        faceType internal;
+        faceZone Room_Raising_floor_part1;
+    }
+
+    baffle_Room_Raising_floor_patch
+    {
+        level (1 1);
+        faceType internal;
+        faceZone Room_Raising_floor_patch;
+    }
+
+    leakage_Default_Rack_1_u30_u32_leakage_zone
+    {
+        level (2 3);
+        faceType internal;
+        cellZone leakage_Default_Rack_1_u30_u32_leakage_zone;
+        cellZoneInside inside;
+    }
+
+    leakage_Default_Rack_1_u39_u41_leakage_zone
+    {
+        level (2 3);
+        faceType internal;
+        cellZone leakage_Default_Rack_1_u39_u41_leakage_zone;
+        cellZoneInside inside;
+    }
+
+    leakage_Default_Rack_1_u4_u9_leakage_zone
+    {
+        level (2 3);
+        faceType internal;
+        cellZone leakage_Default_Rack_1_u4_u9_leakage_zone;
+        cellZoneInside inside;
+    }
+
+    merged_acu
+    {
+        level (1 1);
+        regions
+        {
+            ACU_1_Front
+            {
+                level (1 1);
+                patchInfo { type wall; inGroups (wall); }
+            }
+            ACU_1_Back
+            {
+                level (1 1);
+                patchInfo { type wall; inGroups (wall); }
+            }
+            ACU_1_Left
+            {
+                level (1 1);
+                patchInfo { type wall; inGroups (wall); }
+            }
+            ACU_1_Right
+            {
+                level (1 1);
+                patchInfo { type wall; inGroups (wall); }
+            }
+            ACU_1_Top_patch
+            {
+                level (1 1);
+                patchInfo { type patch; }
+            }
+            ACU_1_Bottom_patch
+            {
+                level (1 1);
+                patchInfo { type patch; }
+            }
+            ACU_1_copy_Front
+            {
+                level (1 1);
+                patchInfo { type wall; inGroups (wall); }
+            }
+            ACU_1_copy_Back
+            {
+                level (1 1);
+                patchInfo { type wall; inGroups (wall); }
+            }
+            ACU_1_copy_Left
+            {
+                level (1 1);
+                patchInfo { type wall; inGroups (wall); }
+            }
+            ACU_1_copy_Right
+            {
+                level (1 1);
+                patchInfo { type wall; inGroups (wall); }
+            }
+            ACU_1_copy_Top_patch
+            {
+                level (1 1);
+                patchInfo { type patch; }
+            }
+            ACU_1_copy_Bottom_patch
+            {
+                level (1 1);
+                patchInfo { type patch; }
+            }
+        }
+    }
+
+    merged_floor_ceiling
+    {
+        level (1 1);
+        regions
+        {
+            Room_Floor
+            {
+                level (1 1);
+                patchInfo { type wall; inGroups (wall); }
+            }
+            Room_Ceiling
+            {
+                level (1 1);
+                patchInfo { type wall; inGroups (wall); }
+            }
+        }
+    }
+
+    merged_rack
+    {
+        level (1 1);
+        regions
+        {
+            Default_Rack_1_Left
+            {
+                level (1 1);
+                patchInfo { type wall; inGroups (wall); }
+            }
+            Default_Rack_1_Right
+            {
+                level (1 1);
+                patchInfo { type wall; inGroups (wall); }
+            }
+            Default_Rack_1_Top
+            {
+                level (1 1);
+                patchInfo { type wall; inGroups (wall); }
+            }
+            Default_Rack_1_Bottom
+            {
+                level (1 1);
+                patchInfo { type wall; inGroups (wall); }
+            }
+            Default_Rack_1_inlet_safe_bottom
+            {
+                level (1 1);
+                patchInfo { type patch; }
+            }
+            Default_Rack_1_inlet_safe_top
+            {
+                level (1 1);
+                patchInfo { type patch; }
+            }
+            Default_Rack_1_inlet_frame_left
+            {
+                level (1 1);
+                patchInfo { type patch; }
+            }
+            Default_Rack_1_inlet_frame_right
+            {
+                level (1 1);
+                patchInfo { type patch; }
+            }
+            Default_Rack_1_inlet_u2_u3
+            {
+                level (2 3);
+                patchInfo { type patch; }
+            }
+            Default_Rack_1_inlet_u10_u15
+            {
+                level (1 1);
+                patchInfo { type patch; }
+            }
+            Default_Rack_1_outlet_safe_bottom
+            {
+                level (1 1);
+                patchInfo { type patch; }
+            }
+            Default_Rack_1_outlet_safe_top
+            {
+                level (1 1);
+                patchInfo { type patch; }
+            }
+            Default_Rack_1_outlet_frame_left
+            {
+                level (1 1);
+                patchInfo { type patch; }
+            }
+            Default_Rack_1_outlet_frame_right
+            {
+                level (1 1);
+                patchInfo { type patch; }
+            }
+            Default_Rack_1_outlet_u2_u3
+            {
+                level (2 3);
+                patchInfo { type patch; }
+            }
+            Default_Rack_1_outlet_u10_u15
+            {
+                level (1 1);
+                patchInfo { type patch; }
+            }
+            Default_Rack_1_inner_left
+            {
+                level (1 1);
+                patchInfo { type wall; inGroups (wall); }
+            }
+            Default_Rack_1_inner_right
+            {
+                level (1 1);
+                patchInfo { type wall; inGroups (wall); }
+            }
+            Default_Rack_1_fan_server_1_inlet_patch
+            {
+                level (1 2);
+                patchInfo { type patch; }
+            }
+            Default_Rack_1_fan_server_1_outlet_patch
+            {
+                level (1 2);
+                patchInfo { type patch; }
+            }
+            Default_Rack_1_fan_server_1_bottom
+            {
+                level (1 1);
+                patchInfo { type wall; inGroups (wall); }
+            }
+            Default_Rack_1_fan_server_1_top
+            {
+                level (1 1);
+                patchInfo { type wall; inGroups (wall); }
+            }
+            Default_Rack_1_non_fan_equipment_2_front
+            {
+                level (1 2);
+                patchInfo { type wall; inGroups (wall); }
+            }
+            Default_Rack_1_non_fan_equipment_2_back
+            {
+                level (1 2);
+                patchInfo { type wall; inGroups (wall); }
+            }
+            Default_Rack_1_non_fan_equipment_2_bottom
+            {
+                level (1 2);
+                patchInfo { type wall; inGroups (wall); }
+            }
+            Default_Rack_1_non_fan_equipment_2_top
+            {
+                level (1 2);
+                patchInfo { type wall; inGroups (wall); }
+            }
+            Default_Rack_1_u1_partition
+            {
+                level (1 1);
+                patchInfo { type wall; inGroups (wall); }
+            }
+            Default_Rack_1_u3_partition
+            {
+                level (1 1);
+                patchInfo { type wall; inGroups (wall); }
+            }
+            Default_Rack_1_u9_partition
+            {
+                level (1 1);
+                patchInfo { type wall; inGroups (wall); }
+            }
+            Default_Rack_1_u29_partition
+            {
+                level (1 1);
+                patchInfo { type wall; inGroups (wall); }
+            }
+            Default_Rack_1_u32_partition
+            {
+                level (1 1);
+                patchInfo { type wall; inGroups (wall); }
+            }
+            Default_Rack_1_u38_partition
+            {
+                level (1 1);
+                patchInfo { type wall; inGroups (wall); }
+            }
+            Default_Rack_1_u41_partition
+            {
+                level (1 1);
+                patchInfo { type wall; inGroups (wall); }
+            }
+            Default_Rack_2_Left
+            {
+                level (1 1);
+                patchInfo { type wall; inGroups (wall); }
+            }
+            Default_Rack_2_Right
+            {
+                level (1 1);
+                patchInfo { type wall; inGroups (wall); }
+            }
+            Default_Rack_2_Top
+            {
+                level (1 1);
+                patchInfo { type wall; inGroups (wall); }
+            }
+            Default_Rack_2_Bottom
+            {
+                level (1 1);
+                patchInfo { type wall; inGroups (wall); }
+            }
+            Default_Rack_2_inlet_safe_bottom
+            {
+                level (1 1);
+                patchInfo { type patch; }
+            }
+            Default_Rack_2_inlet_safe_top
+            {
+                level (1 1);
+                patchInfo { type patch; }
+            }
+            Default_Rack_2_inlet_frame_left
+            {
+                level (1 1);
+                patchInfo { type patch; }
+            }
+            Default_Rack_2_inlet_frame_right
+            {
+                level (1 1);
+                patchInfo { type patch; }
+            }
+            Default_Rack_2_inlet_u2_u3
+            {
+                level (2 3);
+                patchInfo { type patch; }
+            }
+            Default_Rack_2_inlet_u10_u15
+            {
+                level (1 1);
+                patchInfo { type patch; }
+            }
+            Default_Rack_2_inlet_u30_u41
+            {
+                level (1 1);
+                patchInfo { type patch; }
+            }
+            Default_Rack_2_outlet_safe_bottom
+            {
+                level (1 1);
+                patchInfo { type patch; }
+            }
+            Default_Rack_2_outlet_safe_top
+            {
+                level (1 1);
+                patchInfo { type patch; }
+            }
+            Default_Rack_2_outlet_frame_left
+            {
+                level (1 1);
+                patchInfo { type patch; }
+            }
+            Default_Rack_2_outlet_frame_right
+            {
+                level (1 1);
+                patchInfo { type patch; }
+            }
+            Default_Rack_2_outlet_u2_u3
+            {
+                level (2 3);
+                patchInfo { type patch; }
+            }
+            Default_Rack_2_outlet_u10_u15
+            {
+                level (1 1);
+                patchInfo { type patch; }
+            }
+            Default_Rack_2_outlet_u30_u41
+            {
+                level (1 1);
+                patchInfo { type patch; }
+            }
+            Default_Rack_2_inner_left
+            {
+                level (1 1);
+                patchInfo { type wall; inGroups (wall); }
+            }
+            Default_Rack_2_inner_right
+            {
+                level (1 1);
+                patchInfo { type wall; inGroups (wall); }
+            }
+            Default_Rack_2_fan_server_1_inlet_patch
+            {
+                level (1 2);
+                patchInfo { type patch; }
+            }
+            Default_Rack_2_fan_server_1_outlet_patch
+            {
+                level (1 2);
+                patchInfo { type patch; }
+            }
+            Default_Rack_2_fan_server_1_bottom
+            {
+                level (1 1);
+                patchInfo { type wall; inGroups (wall); }
+            }
+            Default_Rack_2_fan_server_1_top
+            {
+                level (1 1);
+                patchInfo { type wall; inGroups (wall); }
+            }
+            Default_Rack_2_u1_partition
+            {
+                level (1 1);
+                patchInfo { type wall; inGroups (wall); }
+            }
+            Default_Rack_2_u3_partition
+            {
+                level (1 1);
+                patchInfo { type wall; inGroups (wall); }
+            }
+            Default_Rack_2_u9_partition
+            {
+                level (1 1);
+                patchInfo { type wall; inGroups (wall); }
+            }
+            Default_Rack_2_u41_partition
+            {
+                level (1 1);
+                patchInfo { type wall; inGroups (wall); }
+            }
+            Default_Rack_3_Left
+            {
+                level (1 1);
+                patchInfo { type wall; inGroups (wall); }
+            }
+            Default_Rack_3_Right
+            {
+                level (1 1);
+                patchInfo { type wall; inGroups (wall); }
+            }
+            Default_Rack_3_Top
+            {
+                level (1 1);
+                patchInfo { type wall; inGroups (wall); }
+            }
+            Default_Rack_3_Bottom
+            {
+                level (1 1);
+                patchInfo { type wall; inGroups (wall); }
+            }
+            Default_Rack_3_inlet_safe_bottom
+            {
+                level (1 1);
+                patchInfo { type patch; }
+            }
+            Default_Rack_3_inlet_safe_top
+            {
+                level (1 1);
+                patchInfo { type patch; }
+            }
+            Default_Rack_3_inlet_frame_left
+            {
+                level (1 1);
+                patchInfo { type patch; }
+            }
+            Default_Rack_3_inlet_frame_right
+            {
+                level (1 1);
+                patchInfo { type patch; }
+            }
+            Default_Rack_3_inlet_u2_u6
+            {
+                level (1 1);
+                patchInfo { type patch; }
+            }
+            Default_Rack_3_inlet_u14_u24
+            {
+                level (1 1);
+                patchInfo { type patch; }
+            }
+            Default_Rack_3_inlet_u37_u41
+            {
+                level (1 1);
+                patchInfo { type patch; }
+            }
+            Default_Rack_3_outlet_safe_bottom
+            {
+                level (1 1);
+                patchInfo { type patch; }
+            }
+            Default_Rack_3_outlet_safe_top
+            {
+                level (1 1);
+                patchInfo { type patch; }
+            }
+            Default_Rack_3_outlet_frame_left
+            {
+                level (1 1);
+                patchInfo { type patch; }
+            }
+            Default_Rack_3_outlet_frame_right
+            {
+                level (1 1);
+                patchInfo { type patch; }
+            }
+            Default_Rack_3_outlet_u2_u6
+            {
+                level (1 1);
+                patchInfo { type patch; }
+            }
+            Default_Rack_3_outlet_u14_u24
+            {
+                level (1 1);
+                patchInfo { type patch; }
+            }
+            Default_Rack_3_outlet_u37_u41
+            {
+                level (1 1);
+                patchInfo { type patch; }
+            }
+            Default_Rack_3_inner_left
+            {
+                level (1 1);
+                patchInfo { type wall; inGroups (wall); }
+            }
+            Default_Rack_3_inner_right
+            {
+                level (1 1);
+                patchInfo { type wall; inGroups (wall); }
+            }
+            Default_Rack_3_fan_server_1_inlet_patch
+            {
+                level (1 2);
+                patchInfo { type patch; }
+            }
+            Default_Rack_3_fan_server_1_outlet_patch
+            {
+                level (1 2);
+                patchInfo { type patch; }
+            }
+            Default_Rack_3_fan_server_1_bottom
+            {
+                level (1 1);
+                patchInfo { type wall; inGroups (wall); }
+            }
+            Default_Rack_3_fan_server_1_top
+            {
+                level (1 1);
+                patchInfo { type wall; inGroups (wall); }
+            }
+            Default_Rack_3_u1_partition
+            {
+                level (1 1);
+                patchInfo { type wall; inGroups (wall); }
+            }
+            Default_Rack_3_u6_partition
+            {
+                level (1 1);
+                patchInfo { type wall; inGroups (wall); }
+            }
+            Default_Rack_3_u13_partition
+            {
+                level (1 1);
+                patchInfo { type wall; inGroups (wall); }
+            }
+            Default_Rack_3_u41_partition
+            {
+                level (1 1);
+                patchInfo { type wall; inGroups (wall); }
+            }
+            Default_Rack_4_Left
+            {
+                level (1 1);
+                patchInfo { type wall; inGroups (wall); }
+            }
+            Default_Rack_4_Right
+            {
+                level (1 1);
+                patchInfo { type wall; inGroups (wall); }
+            }
+            Default_Rack_4_Top
+            {
+                level (1 1);
+                patchInfo { type wall; inGroups (wall); }
+            }
+            Default_Rack_4_Bottom
+            {
+                level (1 1);
+                patchInfo { type wall; inGroups (wall); }
+            }
+            Default_Rack_4_inlet_safe_bottom
+            {
+                level (1 1);
+                patchInfo { type patch; }
+            }
+            Default_Rack_4_inlet_safe_top
+            {
+                level (1 1);
+                patchInfo { type patch; }
+            }
+            Default_Rack_4_inlet_frame_left
+            {
+                level (1 1);
+                patchInfo { type patch; }
+            }
+            Default_Rack_4_inlet_frame_right
+            {
+                level (1 1);
+                patchInfo { type patch; }
+            }
+            Default_Rack_4_inlet_u2_u24
+            {
+                level (1 1);
+                patchInfo { type patch; }
+            }
+            Default_Rack_4_inlet_u37_u41
+            {
+                level (1 1);
+                patchInfo { type patch; }
+            }
+            Default_Rack_4_outlet_safe_bottom
+            {
+                level (1 1);
+                patchInfo { type patch; }
+            }
+            Default_Rack_4_outlet_safe_top
+            {
+                level (1 1);
+                patchInfo { type patch; }
+            }
+            Default_Rack_4_outlet_frame_left
+            {
+                level (1 1);
+                patchInfo { type patch; }
+            }
+            Default_Rack_4_outlet_frame_right
+            {
+                level (1 1);
+                patchInfo { type patch; }
+            }
+            Default_Rack_4_outlet_u2_u24
+            {
+                level (1 1);
+                patchInfo { type patch; }
+            }
+            Default_Rack_4_outlet_u37_u41
+            {
+                level (1 1);
+                patchInfo { type patch; }
+            }
+            Default_Rack_4_inner_left
+            {
+                level (1 1);
+                patchInfo { type wall; inGroups (wall); }
+            }
+            Default_Rack_4_inner_right
+            {
+                level (1 1);
+                patchInfo { type wall; inGroups (wall); }
+            }
+            Default_Rack_4_fan_server_1_inlet_patch
+            {
+                level (1 2);
+                patchInfo { type patch; }
+            }
+            Default_Rack_4_fan_server_1_outlet_patch
+            {
+                level (1 2);
+                patchInfo { type patch; }
+            }
+            Default_Rack_4_fan_server_1_bottom
+            {
+                level (1 1);
+                patchInfo { type wall; inGroups (wall); }
+            }
+            Default_Rack_4_fan_server_1_top
+            {
+                level (1 1);
+                patchInfo { type wall; inGroups (wall); }
+            }
+            Default_Rack_4_u1_partition
+            {
+                level (1 1);
+                patchInfo { type wall; inGroups (wall); }
+            }
+            Default_Rack_4_u41_partition
+            {
+                level (1 1);
+                patchInfo { type wall; inGroups (wall); }
+            }
+        }
+    }
+
+    room_wall
+    {
+        level (1 1);
+        regions
+        {
+            Room_Wall_1
+            {
+                level (1 1);
+                patchInfo { type wall; inGroups (wall); }
+            }
+            Room_Wall_2
+            {
+                level (1 1);
+                patchInfo { type wall; inGroups (wall); }
+            }
+            Room_Wall_3
+            {
+                level (1 1);
+                patchInfo { type wall; inGroups (wall); }
+            }
+            Room_Wall_4
+            {
+                level (1 1);
+                patchInfo { type wall; inGroups (wall); }
+            }
+        }
+    }
+    }
+
+    refinementRegions
+    {
+        RefineZone_1
+        {
+            mode inside;
+            levels ((1e15 2));
+        }
+    }
+
+    // Use locationsInMesh with explicit cell zone assignment
+    locationsInMesh
+    (
+        (( 3.970000 4.130000 1.300000 ) none)
+        (( 4.032683 4.218933 0.350000 ) none)
+        (( 4.032683 4.218933 0.250000 ) none)
+        (( 3.994604 4.243073 0.350000 ) none)
+        (( 3.994604 4.243073 0.250000 ) none)
+        (( 2.382183 4.518933 0.477800 ) none)
+        (( 2.482183 4.518933 0.477800 ) none)
+        (( 2.382183 4.518933 0.655600 ) none)
+        (( 2.482183 4.518933 0.655600 ) none)
+        (( 2.382183 3.918933 0.566700 ) none)
+        (( 2.482183 3.918933 0.566700 ) none)
+        (( 4.583183 3.918933 0.722275 ) none)
+        (( 4.683183 3.918933 0.722275 ) none)
+        (( 4.032183 4.218933 2.117000 ) none)
+        (( 4.032183 4.218933 2.217000 ) none)
+        (( 4.032183 4.768933 1.233500 ) none)
+        (( 4.032183 4.868933 1.233500 ) none)
+        (( 4.032183 3.568933 1.233500 ) none)
+        (( 4.032183 3.668933 1.233500 ) none)
+        (( 2.932183 4.518933 0.566700 ) leakage_Default_Rack_1_u4_u9_leakage_zone)
+        (( 2.932183 4.518933 1.655725 ) leakage_Default_Rack_1_u30_u32_leakage_zone)
+        (( 2.932183 4.518933 2.055775 ) leakage_Default_Rack_1_u39_u41_leakage_zone)
+    );
+}
+
+snapControls
+{
+    nSmoothPatch 3;
+    tolerance 2.0;
+    nSolveIter 30;
+    nRelaxIter 5;
+    nFeatureSnapIter 10;
+    implicitFeatureSnap false;
+    explicitFeatureSnap true;
+    multiRegionFeatureSnap false;
+}
+
+addLayersControls
+{
+    relativeSizes true;
+    expansionRatio 1.0;
+    finalLayerThickness 0.3;
+    minThickness 0.1;
+    nGrow 0;
+    featureAngle 60;
+    nRelaxIter 3;
+    nSmoothSurfaceNormals 1;
+    nSmoothNormals 3;
+    nSmoothThickness 10;
+    maxFaceThicknessRatio 0.5;
+    maxThicknessToMedialRatio 0.3;
+    minMedianAxisAngle 90;
+    nBufferCellsNoExtrude 0;
+    nLayerIter 50;
+    layers
+    {
+    }
+}
+
+meshQualityControls
+{
+    maxNonOrtho 65;
+    maxBoundarySkewness 20;
+    maxInternalSkewness 4;
+    maxConcave 80;
+    minFlatness 0.5;
+    minVol 1e-13;
+    minTetQuality 1e-15;
+    minArea -1;
+    minTwist 0.02;
+    minDeterminant 0.001;
+    minFaceWeight 0.05;
+    minVolRatio 0.01;
+    minTriangleTwist -1;
+    nSmoothScale 4;
+    errorReduction 0.75;
+    relaxed
+    {
+        maxNonOrtho 75;
+    }
+}
+
+writeFlags
+(
+    scalarLevels
+);
+
+mergeTolerance 1e-6;

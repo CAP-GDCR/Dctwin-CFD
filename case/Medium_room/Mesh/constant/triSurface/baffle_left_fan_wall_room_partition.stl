@@ -1,0 +1,100 @@
+solid left_fan_wall_room_partition
+  facet normal 1.000000 0.000000 0.000000
+    outer loop
+      vertex 3.400000 0.000000 3.600000
+      vertex 3.400000 0.000000 0.000000
+      vertex 3.400000 2.400000 0.000000
+    endloop
+  endfacet
+  facet normal 1.000000 0.000000 0.000000
+    outer loop
+      vertex 3.400000 5.200000 3.200000
+      vertex 3.400000 5.200000 0.000000
+      vertex 3.400000 7.200000 0.000000
+    endloop
+  endfacet
+  facet normal 1.000000 0.000000 0.000000
+    outer loop
+      vertex 3.400000 10.000000 3.200000
+      vertex 3.400000 10.000000 0.000000
+      vertex 3.400000 12.200000 0.000000
+    endloop
+  endfacet
+  facet normal 1.000000 0.000000 0.000000
+    outer loop
+      vertex 3.400000 15.000000 3.200000
+      vertex 3.400000 15.000000 0.000000
+      vertex 3.400000 19.200001 0.000000
+    endloop
+  endfacet
+  facet normal 1.000000 0.000000 0.000000
+    outer loop
+      vertex 3.400000 0.000000 3.600000
+      vertex 3.400000 2.400000 0.000000
+      vertex 3.400000 2.400000 3.200000
+    endloop
+  endfacet
+  facet normal 1.000000 0.000000 0.000000
+    outer loop
+      vertex 3.400000 5.200000 3.200000
+      vertex 3.400000 7.200000 0.000000
+      vertex 3.400000 7.200000 3.200000
+    endloop
+  endfacet
+  facet normal 1.000000 0.000000 0.000000
+    outer loop
+      vertex 3.400000 10.000000 3.200000
+      vertex 3.400000 12.200000 0.000000
+      vertex 3.400000 12.200000 3.200000
+    endloop
+  endfacet
+  facet normal 1.000000 0.000000 0.000000
+    outer loop
+      vertex 3.400000 15.000000 3.200000
+      vertex 3.400000 19.200001 0.000000
+      vertex 3.400000 19.200001 3.600000
+    endloop
+  endfacet
+  facet normal 1.000000 0.000000 0.000000
+    outer loop
+      vertex 3.400000 19.200001 3.600000
+      vertex 3.400000 0.000000 3.600000
+      vertex 3.400000 2.400000 3.200000
+    endloop
+  endfacet
+  facet normal 1.000000 0.000000 -0.000000
+    outer loop
+      vertex 3.400000 12.200000 3.200000
+      vertex 3.400000 15.000000 3.200000
+      vertex 3.400000 19.200001 3.600000
+    endloop
+  endfacet
+  facet normal 1.000000 0.000000 -0.000000
+    outer loop
+      vertex 3.400000 19.200001 3.600000
+      vertex 3.400000 2.400000 3.200000
+      vertex 3.400000 5.200000 3.200000
+    endloop
+  endfacet
+  facet normal 1.000000 0.000000 0.000000
+    outer loop
+      vertex 3.400000 10.000000 3.200000
+      vertex 3.400000 12.200000 3.200000
+      vertex 3.400000 19.200001 3.600000
+    endloop
+  endfacet
+  facet normal 1.000000 0.000000 -0.000000
+    outer loop
+      vertex 3.400000 19.200001 3.600000
+      vertex 3.400000 5.200000 3.200000
+      vertex 3.400000 7.200000 3.200000
+    endloop
+  endfacet
+  facet normal 1.000000 0.000000 -0.000000
+    outer loop
+      vertex 3.400000 7.200000 3.200000
+      vertex 3.400000 10.000000 3.200000
+      vertex 3.400000 19.200001 3.600000
+    endloop
+  endfacet
+endsolid left_fan_wall_room_partition

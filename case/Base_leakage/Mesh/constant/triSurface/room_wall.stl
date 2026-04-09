@@ -1,0 +1,64 @@
+solid Room_Wall_1
+  facet normal -0.0 1.0 0.0
+    outer loop
+      vertex 1.9906 1.0411 0.0
+      vertex 6.0142 1.0411 0.0
+      vertex 6.0142 1.0411 3.018
+    endloop
+  endfacet
+  facet normal -0.0 1.0 0.0
+    outer loop
+      vertex 1.9906 1.0411 0.0
+      vertex 6.0142 1.0411 3.018
+      vertex 1.9906 1.0411 3.018
+    endloop
+  endfacet
+endsolid Room_Wall_1
+solid Room_Wall_2
+  facet normal -1.0 0.0 0.0
+    outer loop
+      vertex 6.0142 1.0411 0.0
+      vertex 6.0142 7.4261 0.0
+      vertex 6.0142 7.4261 3.018
+    endloop
+  endfacet
+  facet normal -1.0 0.0 0.0
+    outer loop
+      vertex 6.0142 1.0411 0.0
+      vertex 6.0142 7.4261 3.018
+      vertex 6.0142 1.0411 3.018
+    endloop
+  endfacet
+endsolid Room_Wall_2
+solid Room_Wall_3
+  facet normal -0.0 -1.0 0.0
+    outer loop
+      vertex 6.0142 7.4261 0.0
+      vertex 1.9906 7.4261 0.0
+      vertex 1.9906 7.4261 3.018
+    endloop
+  endfacet
+  facet normal -0.0 -1.0 0.0
+    outer loop
+      vertex 6.0142 7.4261 0.0
+      vertex 1.9906 7.4261 3.018
+      vertex 6.0142 7.4261 3.018
+    endloop
+  endfacet
+endsolid Room_Wall_3
+solid Room_Wall_4
+  facet normal 1.0 0.0 0.0
+    outer loop
+      vertex 1.9906 7.4261 0.0
+      vertex 1.9906 1.0411 0.0
+      vertex 1.9906 1.0411 3.018
+    endloop
+  endfacet
+  facet normal 1.0 0.0 0.0
+    outer loop
+      vertex 1.9906 7.4261 0.0
+      vertex 1.9906 1.0411 3.018
+      vertex 1.9906 7.4261 3.018
+    endloop
+  endfacet
+endsolid Room_Wall_4

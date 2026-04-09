@@ -1,0 +1,31 @@
+# Wavefront OBJ file written 2026-04-09T01:10:32
+o room_wall_edgeMesh
+
+# points : 8
+# lines  : 12
+
+# <points count="8">
+v 0 -1.8751 0
+v 10.45 -1.8751 0
+v 10.45 -1.8751 3.4
+v 0 -1.8751 3.4
+v 10.45 5 0
+v 10.45 5 3.4
+v 0 5 0
+v 0 5 3.4
+# </points>
+
+# <edges count="12">
+l 2 3
+l 4 1
+l 5 6
+l 7 8
+l 1 2
+l 3 4
+l 2 5
+l 6 3
+l 5 7
+l 8 6
+l 7 1
+l 4 8
+# </edges>

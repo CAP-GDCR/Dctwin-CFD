@@ -1,0 +1,19 @@
+# Wavefront OBJ file written 2026-04-09T01:10:32
+o baffle_Baffle_5_edgeMesh
+
+# points : 4
+# lines  : 4
+
+# <points count="4">
+v 2.07 -0.24941 2.75
+v 2.07 1.249 2.75
+v 8.2 1.249 2.75
+v 8.2 -0.24941 2.75
+# </points>
+
+# <edges count="4">
+l 1 2
+l 2 3
+l 3 4
+l 4 1
+# </edges>

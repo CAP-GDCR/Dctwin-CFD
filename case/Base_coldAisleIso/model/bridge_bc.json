@@ -1,29 +1,13 @@
 {
-  "ACU_01_Front_patch": {
+  "ACU_1_Bottom_patch": {
     "bc_type": "acu_supply",
-    "temperature": 20.0,
-    "flow_rate": 4.2,
-    "power": null,
-    "sigma": null,
-    "heat_flux": null
-  },
-  "ACU_01_Back_patch": {
-    "bc_type": "acu_return",
-    "temperature": null,
-    "flow_rate": 4.2,
-    "power": null,
-    "sigma": null,
-    "heat_flux": null
-  },
-  "ACU_02_Front_patch": {
-    "bc_type": "acu_supply",
-    "temperature": 21.0,
+    "temperature": 15.0,
     "flow_rate": 4.0,
     "power": null,
     "sigma": null,
     "heat_flux": null
   },
-  "ACU_02_Back_patch": {
+  "ACU_1_Top_patch": {
     "bc_type": "acu_return",
     "temperature": null,
     "flow_rate": 4.0,
@@ -31,599 +15,23 @@
     "sigma": null,
     "heat_flux": null
   },
-  "ACU_03_Front_patch": {
-    "bc_type": "acu_supply",
-    "temperature": 19.0,
-    "flow_rate": 3.0,
-    "power": null,
-    "sigma": null,
-    "heat_flux": null
-  },
-  "ACU_03_Back_patch": {
-    "bc_type": "acu_return",
-    "temperature": null,
-    "flow_rate": 3.0,
-    "power": null,
-    "sigma": null,
-    "heat_flux": null
-  },
-  "ACU_04_Front_patch": {
-    "bc_type": "acu_supply",
-    "temperature": 19.0,
-    "flow_rate": 3.5,
-    "power": null,
-    "sigma": null,
-    "heat_flux": null
-  },
-  "ACU_04_Back_patch": {
-    "bc_type": "acu_return",
-    "temperature": null,
-    "flow_rate": 3.5,
-    "power": null,
-    "sigma": null,
-    "heat_flux": null
-  },
-  "Rack_A_01_Rack_A_01_server_1_inlet_patch": {
+  "Rack_1_fan_server_1_inlet_patch": {
     "bc_type": "fan_inlet",
     "temperature": null,
-    "flow_rate": 0.01,
-    "power": 5000.0,
+    "flow_rate": 0.05,
+    "power": 150.0,
     "sigma": null,
     "heat_flux": null
   },
-  "Rack_A_01_Rack_A_01_server_1_outlet_patch": {
+  "Rack_1_fan_server_1_outlet_patch": {
     "bc_type": "fan_outlet",
-    "temperature": 439.18157720344595,
-    "flow_rate": 0.01,
-    "power": 5000.0,
+    "temperature": 27.485089463220675,
+    "flow_rate": 0.05,
+    "power": 150.0,
     "sigma": null,
     "heat_flux": null
   },
-  "Rack_A_01_Rack_A_01_server_2_inlet_patch": {
-    "bc_type": "fan_inlet",
-    "temperature": null,
-    "flow_rate": 0.02,
-    "power": 10000.0,
-    "sigma": null,
-    "heat_flux": null
-  },
-  "Rack_A_01_Rack_A_01_server_2_outlet_patch": {
-    "bc_type": "fan_outlet",
-    "temperature": 439.18157720344595,
-    "flow_rate": 0.02,
-    "power": 10000.0,
-    "sigma": null,
-    "heat_flux": null
-  },
-  "Rack_A_01_Rack_A_01_server_3_inlet_patch": {
-    "bc_type": "fan_inlet",
-    "temperature": null,
-    "flow_rate": 0.01,
-    "power": 5000.0,
-    "sigma": null,
-    "heat_flux": null
-  },
-  "Rack_A_01_Rack_A_01_server_3_outlet_patch": {
-    "bc_type": "fan_outlet",
-    "temperature": 439.18157720344595,
-    "flow_rate": 0.01,
-    "power": 5000.0,
-    "sigma": null,
-    "heat_flux": null
-  },
-  "Rack_A_01_Rack_A_01_server_4_inlet_patch": {
-    "bc_type": "fan_inlet",
-    "temperature": null,
-    "flow_rate": 0.02,
-    "power": 12000.0,
-    "sigma": null,
-    "heat_flux": null
-  },
-  "Rack_A_01_Rack_A_01_server_4_outlet_patch": {
-    "bc_type": "fan_outlet",
-    "temperature": 522.0178926441351,
-    "flow_rate": 0.02,
-    "power": 12000.0,
-    "sigma": null,
-    "heat_flux": null
-  },
-  "Rack_A_02_Rack_A_02_server_1_inlet_patch": {
-    "bc_type": "fan_inlet",
-    "temperature": null,
-    "flow_rate": 0.01,
-    "power": 4000.0,
-    "sigma": null,
-    "heat_flux": null
-  },
-  "Rack_A_02_Rack_A_02_server_1_outlet_patch": {
-    "bc_type": "fan_outlet",
-    "temperature": 356.34526176275676,
-    "flow_rate": 0.01,
-    "power": 4000.0,
-    "sigma": null,
-    "heat_flux": null
-  },
-  "Rack_A_02_Rack_A_02_server_2_inlet_patch": {
-    "bc_type": "fan_inlet",
-    "temperature": null,
-    "flow_rate": 0.02,
-    "power": 8000.0,
-    "sigma": null,
-    "heat_flux": null
-  },
-  "Rack_A_02_Rack_A_02_server_2_outlet_patch": {
-    "bc_type": "fan_outlet",
-    "temperature": 356.34526176275676,
-    "flow_rate": 0.02,
-    "power": 8000.0,
-    "sigma": null,
-    "heat_flux": null
-  },
-  "Rack_A_02_Rack_A_02_server_3_inlet_patch": {
-    "bc_type": "fan_inlet",
-    "temperature": null,
-    "flow_rate": 0.01,
-    "power": 4000.0,
-    "sigma": null,
-    "heat_flux": null
-  },
-  "Rack_A_02_Rack_A_02_server_3_outlet_patch": {
-    "bc_type": "fan_outlet",
-    "temperature": 356.34526176275676,
-    "flow_rate": 0.01,
-    "power": 4000.0,
-    "sigma": null,
-    "heat_flux": null
-  },
-  "Rack_A_02_Rack_A_02_server_4_inlet_patch": {
-    "bc_type": "fan_inlet",
-    "temperature": null,
-    "flow_rate": 0.02,
-    "power": 9000.0,
-    "sigma": null,
-    "heat_flux": null
-  },
-  "Rack_A_02_Rack_A_02_server_4_outlet_patch": {
-    "bc_type": "fan_outlet",
-    "temperature": 397.76341948310136,
-    "flow_rate": 0.02,
-    "power": 9000.0,
-    "sigma": null,
-    "heat_flux": null
-  },
-  "Rack_A_03_Rack_A_03_server_1_inlet_patch": {
-    "bc_type": "fan_inlet",
-    "temperature": null,
-    "flow_rate": 0.01,
-    "power": 3000.0,
-    "sigma": null,
-    "heat_flux": null
-  },
-  "Rack_A_03_Rack_A_03_server_1_outlet_patch": {
-    "bc_type": "fan_outlet",
-    "temperature": 273.5089463220676,
-    "flow_rate": 0.01,
-    "power": 3000.0,
-    "sigma": null,
-    "heat_flux": null
-  },
-  "Rack_A_03_Rack_A_03_server_2_inlet_patch": {
-    "bc_type": "fan_inlet",
-    "temperature": null,
-    "flow_rate": 0.02,
-    "power": 7000.0,
-    "sigma": null,
-    "heat_flux": null
-  },
-  "Rack_A_03_Rack_A_03_server_2_outlet_patch": {
-    "bc_type": "fan_outlet",
-    "temperature": 314.92710404241217,
-    "flow_rate": 0.02,
-    "power": 7000.0,
-    "sigma": null,
-    "heat_flux": null
-  },
-  "Rack_A_03_Rack_A_03_server_3_inlet_patch": {
-    "bc_type": "fan_inlet",
-    "temperature": null,
-    "flow_rate": 0.01,
-    "power": 3000.0,
-    "sigma": null,
-    "heat_flux": null
-  },
-  "Rack_A_03_Rack_A_03_server_3_outlet_patch": {
-    "bc_type": "fan_outlet",
-    "temperature": 273.5089463220676,
-    "flow_rate": 0.01,
-    "power": 3000.0,
-    "sigma": null,
-    "heat_flux": null
-  },
-  "Rack_A_03_Rack_A_03_server_4_inlet_patch": {
-    "bc_type": "fan_inlet",
-    "temperature": null,
-    "flow_rate": 0.02,
-    "power": 10000.0,
-    "sigma": null,
-    "heat_flux": null
-  },
-  "Rack_A_03_Rack_A_03_server_4_outlet_patch": {
-    "bc_type": "fan_outlet",
-    "temperature": 439.18157720344595,
-    "flow_rate": 0.02,
-    "power": 10000.0,
-    "sigma": null,
-    "heat_flux": null
-  },
-  "Rack_A_04_Rack_A_04_server_1_inlet_patch": {
-    "bc_type": "fan_inlet",
-    "temperature": null,
-    "flow_rate": 0.01,
-    "power": 2000.0,
-    "sigma": null,
-    "heat_flux": null
-  },
-  "Rack_A_04_Rack_A_04_server_1_outlet_patch": {
-    "bc_type": "fan_outlet",
-    "temperature": 190.67263088137838,
-    "flow_rate": 0.01,
-    "power": 2000.0,
-    "sigma": null,
-    "heat_flux": null
-  },
-  "Rack_A_04_Rack_A_04_server_2_inlet_patch": {
-    "bc_type": "fan_inlet",
-    "temperature": null,
-    "flow_rate": 0.02,
-    "power": 10000.0,
-    "sigma": null,
-    "heat_flux": null
-  },
-  "Rack_A_04_Rack_A_04_server_2_outlet_patch": {
-    "bc_type": "fan_outlet",
-    "temperature": 439.18157720344595,
-    "flow_rate": 0.02,
-    "power": 10000.0,
-    "sigma": null,
-    "heat_flux": null
-  },
-  "Rack_A_04_Rack_A_04_server_3_inlet_patch": {
-    "bc_type": "fan_inlet",
-    "temperature": null,
-    "flow_rate": 0.01,
-    "power": 4000.0,
-    "sigma": null,
-    "heat_flux": null
-  },
-  "Rack_A_04_Rack_A_04_server_3_outlet_patch": {
-    "bc_type": "fan_outlet",
-    "temperature": 356.34526176275676,
-    "flow_rate": 0.01,
-    "power": 4000.0,
-    "sigma": null,
-    "heat_flux": null
-  },
-  "Rack_A_04_Rack_A_04_server_4_inlet_patch": {
-    "bc_type": "fan_inlet",
-    "temperature": null,
-    "flow_rate": 0.02,
-    "power": 9000.0,
-    "sigma": null,
-    "heat_flux": null
-  },
-  "Rack_A_04_Rack_A_04_server_4_outlet_patch": {
-    "bc_type": "fan_outlet",
-    "temperature": 397.76341948310136,
-    "flow_rate": 0.02,
-    "power": 9000.0,
-    "sigma": null,
-    "heat_flux": null
-  },
-  "Rack_A_05_Rack_A_05_server_1_inlet_patch": {
-    "bc_type": "fan_inlet",
-    "temperature": null,
-    "flow_rate": 0.01,
-    "power": 2000.0,
-    "sigma": null,
-    "heat_flux": null
-  },
-  "Rack_A_05_Rack_A_05_server_1_outlet_patch": {
-    "bc_type": "fan_outlet",
-    "temperature": 190.67263088137838,
-    "flow_rate": 0.01,
-    "power": 2000.0,
-    "sigma": null,
-    "heat_flux": null
-  },
-  "Rack_A_05_Rack_A_05_server_2_inlet_patch": {
-    "bc_type": "fan_inlet",
-    "temperature": null,
-    "flow_rate": 0.02,
-    "power": 8000.0,
-    "sigma": null,
-    "heat_flux": null
-  },
-  "Rack_A_05_Rack_A_05_server_2_outlet_patch": {
-    "bc_type": "fan_outlet",
-    "temperature": 356.34526176275676,
-    "flow_rate": 0.02,
-    "power": 8000.0,
-    "sigma": null,
-    "heat_flux": null
-  },
-  "Rack_A_05_Rack_A_05_server_3_inlet_patch": {
-    "bc_type": "fan_inlet",
-    "temperature": null,
-    "flow_rate": 0.01,
-    "power": 3000.0,
-    "sigma": null,
-    "heat_flux": null
-  },
-  "Rack_A_05_Rack_A_05_server_3_outlet_patch": {
-    "bc_type": "fan_outlet",
-    "temperature": 273.5089463220676,
-    "flow_rate": 0.01,
-    "power": 3000.0,
-    "sigma": null,
-    "heat_flux": null
-  },
-  "Rack_A_05_Rack_A_05_server_4_inlet_patch": {
-    "bc_type": "fan_inlet",
-    "temperature": null,
-    "flow_rate": 0.02,
-    "power": 8000.0,
-    "sigma": null,
-    "heat_flux": null
-  },
-  "Rack_A_05_Rack_A_05_server_4_outlet_patch": {
-    "bc_type": "fan_outlet",
-    "temperature": 356.34526176275676,
-    "flow_rate": 0.02,
-    "power": 8000.0,
-    "sigma": null,
-    "heat_flux": null
-  },
-  "Rack_A_06_Rack_A_06_server_1_inlet_patch": {
-    "bc_type": "fan_inlet",
-    "temperature": null,
-    "flow_rate": 0.01,
-    "power": 1000.0,
-    "sigma": null,
-    "heat_flux": null
-  },
-  "Rack_A_06_Rack_A_06_server_1_outlet_patch": {
-    "bc_type": "fan_outlet",
-    "temperature": 107.83631544068919,
-    "flow_rate": 0.01,
-    "power": 1000.0,
-    "sigma": null,
-    "heat_flux": null
-  },
-  "Rack_A_06_Rack_A_06_server_2_inlet_patch": {
-    "bc_type": "fan_inlet",
-    "temperature": null,
-    "flow_rate": 0.02,
-    "power": 5000.0,
-    "sigma": null,
-    "heat_flux": null
-  },
-  "Rack_A_06_Rack_A_06_server_2_outlet_patch": {
-    "bc_type": "fan_outlet",
-    "temperature": 232.09078860172298,
-    "flow_rate": 0.02,
-    "power": 5000.0,
-    "sigma": null,
-    "heat_flux": null
-  },
-  "Rack_A_06_Rack_A_06_server_3_inlet_patch": {
-    "bc_type": "fan_inlet",
-    "temperature": null,
-    "flow_rate": 0.01,
-    "power": 3000.0,
-    "sigma": null,
-    "heat_flux": null
-  },
-  "Rack_A_06_Rack_A_06_server_3_outlet_patch": {
-    "bc_type": "fan_outlet",
-    "temperature": 273.5089463220676,
-    "flow_rate": 0.01,
-    "power": 3000.0,
-    "sigma": null,
-    "heat_flux": null
-  },
-  "Rack_A_06_Rack_A_06_server_4_inlet_patch": {
-    "bc_type": "fan_inlet",
-    "temperature": null,
-    "flow_rate": 0.02,
-    "power": 7000.0,
-    "sigma": null,
-    "heat_flux": null
-  },
-  "Rack_A_06_Rack_A_06_server_4_outlet_patch": {
-    "bc_type": "fan_outlet",
-    "temperature": 314.92710404241217,
-    "flow_rate": 0.02,
-    "power": 7000.0,
-    "sigma": null,
-    "heat_flux": null
-  },
-  "Rack_B_01_Rack_B_01_server_1_inlet_patch": {
-    "bc_type": "fan_inlet",
-    "temperature": null,
-    "flow_rate": 0.01,
-    "power": 1500.0,
-    "sigma": null,
-    "heat_flux": null
-  },
-  "Rack_B_01_Rack_B_01_server_1_outlet_patch": {
-    "bc_type": "fan_outlet",
-    "temperature": 149.2544731610338,
-    "flow_rate": 0.01,
-    "power": 1500.0,
-    "sigma": null,
-    "heat_flux": null
-  },
-  "Rack_B_01_Rack_B_01_server_2_inlet_patch": {
-    "bc_type": "fan_inlet",
-    "temperature": null,
-    "flow_rate": 0.02,
-    "power": 7000.0,
-    "sigma": null,
-    "heat_flux": null
-  },
-  "Rack_B_01_Rack_B_01_server_2_outlet_patch": {
-    "bc_type": "fan_outlet",
-    "temperature": 314.92710404241217,
-    "flow_rate": 0.02,
-    "power": 7000.0,
-    "sigma": null,
-    "heat_flux": null
-  },
-  "Rack_B_01_Rack_B_01_server_3_inlet_patch": {
-    "bc_type": "fan_inlet",
-    "temperature": null,
-    "flow_rate": 0.01,
-    "power": 3000.0,
-    "sigma": null,
-    "heat_flux": null
-  },
-  "Rack_B_01_Rack_B_01_server_3_outlet_patch": {
-    "bc_type": "fan_outlet",
-    "temperature": 273.5089463220676,
-    "flow_rate": 0.01,
-    "power": 3000.0,
-    "sigma": null,
-    "heat_flux": null
-  },
-  "Rack_B_01_Rack_A_01_server_4_inlet_patch": {
-    "bc_type": "fan_inlet",
-    "temperature": null,
-    "flow_rate": 0.02,
-    "power": 9000.0,
-    "sigma": null,
-    "heat_flux": null
-  },
-  "Rack_B_01_Rack_A_01_server_4_outlet_patch": {
-    "bc_type": "fan_outlet",
-    "temperature": 397.76341948310136,
-    "flow_rate": 0.02,
-    "power": 9000.0,
-    "sigma": null,
-    "heat_flux": null
-  },
-  "Rack_B_02_Rack_B_02_server_1_inlet_patch": {
-    "bc_type": "fan_inlet",
-    "temperature": null,
-    "flow_rate": 0.01,
-    "power": 3000.0,
-    "sigma": null,
-    "heat_flux": null
-  },
-  "Rack_B_02_Rack_B_02_server_1_outlet_patch": {
-    "bc_type": "fan_outlet",
-    "temperature": 273.5089463220676,
-    "flow_rate": 0.01,
-    "power": 3000.0,
-    "sigma": null,
-    "heat_flux": null
-  },
-  "Rack_B_02_Rack_B_02_server_2_inlet_patch": {
-    "bc_type": "fan_inlet",
-    "temperature": null,
-    "flow_rate": 0.02,
-    "power": 5000.0,
-    "sigma": null,
-    "heat_flux": null
-  },
-  "Rack_B_02_Rack_B_02_server_2_outlet_patch": {
-    "bc_type": "fan_outlet",
-    "temperature": 232.09078860172298,
-    "flow_rate": 0.02,
-    "power": 5000.0,
-    "sigma": null,
-    "heat_flux": null
-  },
-  "Rack_B_02_Rack_B_02_server_3_inlet_patch": {
-    "bc_type": "fan_inlet",
-    "temperature": null,
-    "flow_rate": 0.01,
-    "power": 3000.0,
-    "sigma": null,
-    "heat_flux": null
-  },
-  "Rack_B_02_Rack_B_02_server_3_outlet_patch": {
-    "bc_type": "fan_outlet",
-    "temperature": 273.5089463220676,
-    "flow_rate": 0.01,
-    "power": 3000.0,
-    "sigma": null,
-    "heat_flux": null
-  },
-  "Rack_B_02_Rack_B_02_server_4_inlet_patch": {
-    "bc_type": "fan_inlet",
-    "temperature": null,
-    "flow_rate": 0.02,
-    "power": 3000.0,
-    "sigma": null,
-    "heat_flux": null
-  },
-  "Rack_B_02_Rack_B_02_server_4_outlet_patch": {
-    "bc_type": "fan_outlet",
-    "temperature": 149.2544731610338,
-    "flow_rate": 0.02,
-    "power": 3000.0,
-    "sigma": null,
-    "heat_flux": null
-  },
-  "Rack_B_03_Rack_B_03_server_1_inlet_patch": {
-    "bc_type": "fan_inlet",
-    "temperature": null,
-    "flow_rate": 0.01,
-    "power": 1000.0,
-    "sigma": null,
-    "heat_flux": null
-  },
-  "Rack_B_03_Rack_B_03_server_1_outlet_patch": {
-    "bc_type": "fan_outlet",
-    "temperature": 107.83631544068919,
-    "flow_rate": 0.01,
-    "power": 1000.0,
-    "sigma": null,
-    "heat_flux": null
-  },
-  "Rack_B_03_Rack_B_03_server_2_inlet_patch": {
-    "bc_type": "fan_inlet",
-    "temperature": null,
-    "flow_rate": 0.02,
-    "power": 6000.0,
-    "sigma": null,
-    "heat_flux": null
-  },
-  "Rack_B_03_Rack_B_03_server_2_outlet_patch": {
-    "bc_type": "fan_outlet",
-    "temperature": 273.5089463220676,
-    "flow_rate": 0.02,
-    "power": 6000.0,
-    "sigma": null,
-    "heat_flux": null
-  },
-  "Rack_B_03_Rack_B_03_server_3_inlet_patch": {
-    "bc_type": "fan_inlet",
-    "temperature": null,
-    "flow_rate": 0.01,
-    "power": 2000.0,
-    "sigma": null,
-    "heat_flux": null
-  },
-  "Rack_B_03_Rack_B_03_server_3_outlet_patch": {
-    "bc_type": "fan_outlet",
-    "temperature": 190.67263088137838,
-    "flow_rate": 0.01,
-    "power": 2000.0,
-    "sigma": null,
-    "heat_flux": null
-  },
-  "Rack_B_03_Rack_B_03_server_4_inlet_patch": {
+  "Rack_2_fan_server_1_inlet_patch": {
     "bc_type": "fan_inlet",
     "temperature": null,
     "flow_rate": 0.5,
@@ -631,7 +39,7 @@
     "sigma": null,
     "heat_flux": null
   },
-  "Rack_B_03_Rack_B_03_server_4_outlet_patch": {
+  "Rack_2_fan_server_1_outlet_patch": {
     "bc_type": "fan_outlet",
     "temperature": 26.656726308813784,
     "flow_rate": 0.5,
@@ -639,327 +47,23 @@
     "sigma": null,
     "heat_flux": null
   },
-  "Rack_B_04_Rack_B_04_server_1_inlet_patch": {
-    "bc_type": "fan_inlet",
+  "raised_floor_patch_master": {
+    "bc_type": "perforated_baffle",
     "temperature": null,
-    "flow_rate": 0.01,
-    "power": 3000.0,
-    "sigma": null,
+    "flow_rate": null,
+    "power": null,
+    "sigma": 0.8,
     "heat_flux": null
   },
-  "Rack_B_04_Rack_B_04_server_1_outlet_patch": {
-    "bc_type": "fan_outlet",
-    "temperature": 273.5089463220676,
-    "flow_rate": 0.01,
-    "power": 3000.0,
-    "sigma": null,
-    "heat_flux": null
-  },
-  "Rack_B_04_Rack_B_04_server_2_inlet_patch": {
-    "bc_type": "fan_inlet",
+  "raised_floor_patch_slave": {
+    "bc_type": "perforated_baffle",
     "temperature": null,
-    "flow_rate": 0.02,
-    "power": 8000.0,
-    "sigma": null,
+    "flow_rate": null,
+    "power": null,
+    "sigma": 0.8,
     "heat_flux": null
   },
-  "Rack_B_04_Rack_B_04_server_2_outlet_patch": {
-    "bc_type": "fan_outlet",
-    "temperature": 356.34526176275676,
-    "flow_rate": 0.02,
-    "power": 8000.0,
-    "sigma": null,
-    "heat_flux": null
-  },
-  "Rack_B_04_Rack_B_04_server_3_inlet_patch": {
-    "bc_type": "fan_inlet",
-    "temperature": null,
-    "flow_rate": 0.01,
-    "power": 1000.0,
-    "sigma": null,
-    "heat_flux": null
-  },
-  "Rack_B_04_Rack_B_04_server_3_outlet_patch": {
-    "bc_type": "fan_outlet",
-    "temperature": 107.83631544068919,
-    "flow_rate": 0.01,
-    "power": 1000.0,
-    "sigma": null,
-    "heat_flux": null
-  },
-  "Rack_B_04_Rack_B_04_server_4_inlet_patch": {
-    "bc_type": "fan_inlet",
-    "temperature": null,
-    "flow_rate": 0.02,
-    "power": 8000.0,
-    "sigma": null,
-    "heat_flux": null
-  },
-  "Rack_B_04_Rack_B_04_server_4_outlet_patch": {
-    "bc_type": "fan_outlet",
-    "temperature": 356.34526176275676,
-    "flow_rate": 0.02,
-    "power": 8000.0,
-    "sigma": null,
-    "heat_flux": null
-  },
-  "Rack_B_05_Rack_B_05_server_1_inlet_patch": {
-    "bc_type": "fan_inlet",
-    "temperature": null,
-    "flow_rate": 0.01,
-    "power": 1000.0,
-    "sigma": null,
-    "heat_flux": null
-  },
-  "Rack_B_05_Rack_B_05_server_1_outlet_patch": {
-    "bc_type": "fan_outlet",
-    "temperature": 107.83631544068919,
-    "flow_rate": 0.01,
-    "power": 1000.0,
-    "sigma": null,
-    "heat_flux": null
-  },
-  "Rack_B_05_Rack_B_05_server_2_inlet_patch": {
-    "bc_type": "fan_inlet",
-    "temperature": null,
-    "flow_rate": 0.02,
-    "power": 4000.0,
-    "sigma": null,
-    "heat_flux": null
-  },
-  "Rack_B_05_Rack_B_05_server_2_outlet_patch": {
-    "bc_type": "fan_outlet",
-    "temperature": 190.67263088137838,
-    "flow_rate": 0.02,
-    "power": 4000.0,
-    "sigma": null,
-    "heat_flux": null
-  },
-  "Rack_B_05_Rack_B_05_server_3_inlet_patch": {
-    "bc_type": "fan_inlet",
-    "temperature": null,
-    "flow_rate": 0.01,
-    "power": 3000.0,
-    "sigma": null,
-    "heat_flux": null
-  },
-  "Rack_B_05_Rack_B_05_server_3_outlet_patch": {
-    "bc_type": "fan_outlet",
-    "temperature": 273.5089463220676,
-    "flow_rate": 0.01,
-    "power": 3000.0,
-    "sigma": null,
-    "heat_flux": null
-  },
-  "Rack_B_05_Rack_B_05_server_4_inlet_patch": {
-    "bc_type": "fan_inlet",
-    "temperature": null,
-    "flow_rate": 0.02,
-    "power": 8000.0,
-    "sigma": null,
-    "heat_flux": null
-  },
-  "Rack_B_05_Rack_B_05_server_4_outlet_patch": {
-    "bc_type": "fan_outlet",
-    "temperature": 356.34526176275676,
-    "flow_rate": 0.02,
-    "power": 8000.0,
-    "sigma": null,
-    "heat_flux": null
-  },
-  "Rack_B_06_Rack_B_06_server_1_inlet_patch": {
-    "bc_type": "fan_inlet",
-    "temperature": null,
-    "flow_rate": 0.01,
-    "power": 3000.0,
-    "sigma": null,
-    "heat_flux": null
-  },
-  "Rack_B_06_Rack_B_06_server_1_outlet_patch": {
-    "bc_type": "fan_outlet",
-    "temperature": 273.5089463220676,
-    "flow_rate": 0.01,
-    "power": 3000.0,
-    "sigma": null,
-    "heat_flux": null
-  },
-  "Rack_B_06_Rack_B_06_server_2_inlet_patch": {
-    "bc_type": "fan_inlet",
-    "temperature": null,
-    "flow_rate": 0.02,
-    "power": 6000.0,
-    "sigma": null,
-    "heat_flux": null
-  },
-  "Rack_B_06_Rack_B_06_server_2_outlet_patch": {
-    "bc_type": "fan_outlet",
-    "temperature": 273.5089463220676,
-    "flow_rate": 0.02,
-    "power": 6000.0,
-    "sigma": null,
-    "heat_flux": null
-  },
-  "Rack_B_06_Rack_B_06_server_3_inlet_patch": {
-    "bc_type": "fan_inlet",
-    "temperature": null,
-    "flow_rate": 0.01,
-    "power": 3000.0,
-    "sigma": null,
-    "heat_flux": null
-  },
-  "Rack_B_06_Rack_B_06_server_3_outlet_patch": {
-    "bc_type": "fan_outlet",
-    "temperature": 273.5089463220676,
-    "flow_rate": 0.01,
-    "power": 3000.0,
-    "sigma": null,
-    "heat_flux": null
-  },
-  "Rack_B_06_Rack_B_06_server_4_inlet_patch": {
-    "bc_type": "fan_inlet",
-    "temperature": null,
-    "flow_rate": 0.02,
-    "power": 4000.0,
-    "sigma": null,
-    "heat_flux": null
-  },
-  "Rack_B_06_Rack_B_06_server_4_outlet_patch": {
-    "bc_type": "fan_outlet",
-    "temperature": 190.67263088137838,
-    "flow_rate": 0.02,
-    "power": 4000.0,
-    "sigma": null,
-    "heat_flux": null
-  },
-  "Rack_B_07_Rack_B_07_server_1_inlet_patch": {
-    "bc_type": "fan_inlet",
-    "temperature": null,
-    "flow_rate": 0.01,
-    "power": 2000.0,
-    "sigma": null,
-    "heat_flux": null
-  },
-  "Rack_B_07_Rack_B_07_server_1_outlet_patch": {
-    "bc_type": "fan_outlet",
-    "temperature": 190.67263088137838,
-    "flow_rate": 0.01,
-    "power": 2000.0,
-    "sigma": null,
-    "heat_flux": null
-  },
-  "Rack_B_07_Rack_B_07_server_2_inlet_patch": {
-    "bc_type": "fan_inlet",
-    "temperature": null,
-    "flow_rate": 0.02,
-    "power": 5000.0,
-    "sigma": null,
-    "heat_flux": null
-  },
-  "Rack_B_07_Rack_B_07_server_2_outlet_patch": {
-    "bc_type": "fan_outlet",
-    "temperature": 232.09078860172298,
-    "flow_rate": 0.02,
-    "power": 5000.0,
-    "sigma": null,
-    "heat_flux": null
-  },
-  "Rack_B_07_Rack_B_07_server_3_inlet_patch": {
-    "bc_type": "fan_inlet",
-    "temperature": null,
-    "flow_rate": 0.01,
-    "power": 1000.0,
-    "sigma": null,
-    "heat_flux": null
-  },
-  "Rack_B_07_Rack_B_07_server_3_outlet_patch": {
-    "bc_type": "fan_outlet",
-    "temperature": 107.83631544068919,
-    "flow_rate": 0.01,
-    "power": 1000.0,
-    "sigma": null,
-    "heat_flux": null
-  },
-  "Rack_B_07_Rack_B_07_server_4_inlet_patch": {
-    "bc_type": "fan_inlet",
-    "temperature": null,
-    "flow_rate": 0.02,
-    "power": 4000.0,
-    "sigma": null,
-    "heat_flux": null
-  },
-  "Rack_B_07_Rack_B_07_server_4_outlet_patch": {
-    "bc_type": "fan_outlet",
-    "temperature": 190.67263088137838,
-    "flow_rate": 0.02,
-    "power": 4000.0,
-    "sigma": null,
-    "heat_flux": null
-  },
-  "Rack_B_08_Rack_B_08_server_1_inlet_patch": {
-    "bc_type": "fan_inlet",
-    "temperature": null,
-    "flow_rate": 0.01,
-    "power": 1000.0,
-    "sigma": null,
-    "heat_flux": null
-  },
-  "Rack_B_08_Rack_B_08_server_1_outlet_patch": {
-    "bc_type": "fan_outlet",
-    "temperature": 107.83631544068919,
-    "flow_rate": 0.01,
-    "power": 1000.0,
-    "sigma": null,
-    "heat_flux": null
-  },
-  "Rack_B_08_Rack_B_08_server_2_inlet_patch": {
-    "bc_type": "fan_inlet",
-    "temperature": null,
-    "flow_rate": 0.02,
-    "power": 5000.0,
-    "sigma": null,
-    "heat_flux": null
-  },
-  "Rack_B_08_Rack_B_08_server_2_outlet_patch": {
-    "bc_type": "fan_outlet",
-    "temperature": 232.09078860172298,
-    "flow_rate": 0.02,
-    "power": 5000.0,
-    "sigma": null,
-    "heat_flux": null
-  },
-  "Rack_B_08_Rack_B_08_server_3_inlet_patch": {
-    "bc_type": "fan_inlet",
-    "temperature": null,
-    "flow_rate": 0.01,
-    "power": 2000.0,
-    "sigma": null,
-    "heat_flux": null
-  },
-  "Rack_B_08_Rack_B_08_server_3_outlet_patch": {
-    "bc_type": "fan_outlet",
-    "temperature": 190.67263088137838,
-    "flow_rate": 0.01,
-    "power": 2000.0,
-    "sigma": null,
-    "heat_flux": null
-  },
-  "Rack_B_08_Rack_B_08_server_4_inlet_patch": {
-    "bc_type": "fan_inlet",
-    "temperature": null,
-    "flow_rate": 0.02,
-    "power": 3000.0,
-    "sigma": null,
-    "heat_flux": null
-  },
-  "Rack_B_08_Rack_B_08_server_4_outlet_patch": {
-    "bc_type": "fan_outlet",
-    "temperature": 149.2544731610338,
-    "flow_rate": 0.02,
-    "power": 3000.0,
-    "sigma": null,
-    "heat_flux": null
-  },
-  "Floor_1_Top_patch_master": {
+  "raised_floor_part1_master": {
     "bc_type": "wall_baffle",
     "temperature": null,
     "flow_rate": null,
@@ -967,7 +71,7 @@
     "sigma": null,
     "heat_flux": null
   },
-  "Floor_1_Top_patch_slave": {
+  "raised_floor_part1_slave": {
     "bc_type": "wall_baffle",
     "temperature": null,
     "flow_rate": null,
@@ -975,7 +79,7 @@
     "sigma": null,
     "heat_flux": null
   },
-  "con_f_Front_master": {
+  "Baffle_1_master": {
     "bc_type": "wall_baffle",
     "temperature": null,
     "flow_rate": null,
@@ -983,7 +87,7 @@
     "sigma": null,
     "heat_flux": null
   },
-  "con_f_Front_slave": {
+  "Baffle_1_slave": {
     "bc_type": "wall_baffle",
     "temperature": null,
     "flow_rate": null,
@@ -991,7 +95,7 @@
     "sigma": null,
     "heat_flux": null
   },
-  "con_b_Front_master": {
+  "Baffle_1_copy_master": {
     "bc_type": "wall_baffle",
     "temperature": null,
     "flow_rate": null,
@@ -999,7 +103,7 @@
     "sigma": null,
     "heat_flux": null
   },
-  "con_b_Front_slave": {
+  "Baffle_1_copy_slave": {
     "bc_type": "wall_baffle",
     "temperature": null,
     "flow_rate": null,
@@ -1007,7 +111,7 @@
     "sigma": null,
     "heat_flux": null
   },
-  "con_b_copy_Front_master": {
+  "Baffle_1_copy2_master": {
     "bc_type": "wall_baffle",
     "temperature": null,
     "flow_rate": null,
@@ -1015,7 +119,7 @@
     "sigma": null,
     "heat_flux": null
   },
-  "con_b_copy_Front_slave": {
+  "Baffle_1_copy2_slave": {
     "bc_type": "wall_baffle",
     "temperature": null,
     "flow_rate": null,
@@ -1023,7 +127,23 @@
     "sigma": null,
     "heat_flux": null
   },
-  "Wall_1_Front": {
+  "Baffle_4_master": {
+    "bc_type": "wall_baffle",
+    "temperature": null,
+    "flow_rate": null,
+    "power": null,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "Baffle_4_slave": {
+    "bc_type": "wall_baffle",
+    "temperature": null,
+    "flow_rate": null,
+    "power": null,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "Wall_1": {
     "bc_type": "wall",
     "temperature": null,
     "flow_rate": null,
@@ -1031,7 +151,7 @@
     "sigma": null,
     "heat_flux": null
   },
-  "Wall_2_Front": {
+  "Wall_1_copy": {
     "bc_type": "wall",
     "temperature": null,
     "flow_rate": null,
@@ -1039,7 +159,7 @@
     "sigma": null,
     "heat_flux": null
   },
-  "Wall_3_Front": {
+  "Wall_1_copy2": {
     "bc_type": "wall",
     "temperature": null,
     "flow_rate": null,
@@ -1047,7 +167,7 @@
     "sigma": null,
     "heat_flux": null
   },
-  "Wall_4_Front": {
+  "Wall_1_copy_copy": {
     "bc_type": "wall",
     "temperature": null,
     "flow_rate": null,

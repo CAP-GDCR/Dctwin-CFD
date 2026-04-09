@@ -1,0 +1,37 @@
+# Wavefront OBJ file written 2026-04-09T01:03:56
+o baffle_raised_floor_part1_edgeMesh
+
+# points : 13
+# lines  : 13
+
+# <points count="13">
+v 6.401 2.2 0.2
+v 3.999 2.2 0.2
+v 2.14467 2.10088 0.2
+v 1.14467 2.10088 0.2
+v 0 0 0.2
+v 0 6 0.2
+v 2.14467 3.90088 0.2
+v 1.14467 3.90088 0.2
+v 3.999 3.8 0.2
+v 10 0 0.2
+v 10 6 0.2
+v 6.401 3.8 0.2
+v 5.201 3.8 0.2
+# </points>
+
+# <edges count="13">
+l 1 2
+l 3 4
+l 6 5
+l 7 3
+l 4 8
+l 2 9
+l 5 10
+l 11 6
+l 9 13
+l 12 1
+l 8 7
+l 13 12
+l 10 11
+# </edges>

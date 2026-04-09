@@ -1,0 +1,64 @@
+solid Wall_1
+  facet normal -0.0 1.0 0.0
+    outer loop
+      vertex 0.0 0.0 0.0
+      vertex 10.0 0.0 0.0
+      vertex 10.0 0.0 2.849703
+    endloop
+  endfacet
+  facet normal -0.0 1.0 0.0
+    outer loop
+      vertex 0.0 0.0 0.0
+      vertex 10.0 0.0 2.849703
+      vertex 0.0 0.0 2.849703
+    endloop
+  endfacet
+endsolid Wall_1
+solid Wall_1_copy
+  facet normal -1.0 0.0 0.0
+    outer loop
+      vertex 10.0 0.0 0.0
+      vertex 10.0 6.0 0.0
+      vertex 10.0 6.0 2.849703
+    endloop
+  endfacet
+  facet normal -1.0 0.0 0.0
+    outer loop
+      vertex 10.0 0.0 0.0
+      vertex 10.0 6.0 2.849703
+      vertex 10.0 0.0 2.849703
+    endloop
+  endfacet
+endsolid Wall_1_copy
+solid Wall_1_copy2
+  facet normal -0.0 -1.0 0.0
+    outer loop
+      vertex 10.0 6.0 0.0
+      vertex 0.0 6.0 0.0
+      vertex 0.0 6.0 2.849703
+    endloop
+  endfacet
+  facet normal -0.0 -1.0 0.0
+    outer loop
+      vertex 10.0 6.0 0.0
+      vertex 0.0 6.0 2.849703
+      vertex 10.0 6.0 2.849703
+    endloop
+  endfacet
+endsolid Wall_1_copy2
+solid Wall_1_copy_copy
+  facet normal 1.0 0.0 0.0
+    outer loop
+      vertex 0.0 6.0 0.0
+      vertex 0.0 0.0 0.0
+      vertex 0.0 0.0 2.849703
+    endloop
+  endfacet
+  facet normal 1.0 0.0 0.0
+    outer loop
+      vertex 0.0 6.0 0.0
+      vertex 0.0 0.0 2.849703
+      vertex 0.0 6.0 2.849703
+    endloop
+  endfacet
+endsolid Wall_1_copy_copy

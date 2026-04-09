@@ -1,0 +1,19 @@
+# Wavefront OBJ file written 2026-04-09T01:04:45
+o baffle_Default_Rack_3_inlet_u7_u13_wallBaffle_edgeMesh
+
+# points : 4
+# lines  : 4
+
+# <points count="4">
+v 4.63318 3.67893 0.87785
+v 4.63318 4.15893 0.5667
+v 4.63318 3.67893 0.5667
+v 4.63318 4.15893 0.87785
+# </points>
+
+# <edges count="4">
+l 2 3
+l 3 1
+l 1 4
+l 4 2
+# </edges>

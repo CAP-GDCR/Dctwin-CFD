@@ -1,0 +1,1480 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version 2.0;
+    format ascii;
+    class dictionary;
+    location system;
+    object createBafflesDict;
+}
+
+internalFacesOnly true;
+
+baffles
+{
+    AHU_partition_copy_copy_patch_1
+    {
+        type        faceZone;
+        zoneName    AHU_partition_copy_copy_patch_1;
+
+        patches
+        {
+            master
+            {
+                name            AHU_partition_copy_copy_patch_1_master;
+                type            cyclic;
+                neighbourPatch  AHU_partition_copy_copy_patch_1_slave;
+            }
+            slave
+            {
+                name            AHU_partition_copy_copy_patch_1_slave;
+                type            cyclic;
+                neighbourPatch  AHU_partition_copy_copy_patch_1_master;
+            }
+        }
+    }    AHU_partition_copy_copy_patch_2
+    {
+        type        faceZone;
+        zoneName    AHU_partition_copy_copy_patch_2;
+
+        patches
+        {
+            master
+            {
+                name            AHU_partition_copy_copy_patch_2_master;
+                type            cyclic;
+                neighbourPatch  AHU_partition_copy_copy_patch_2_slave;
+            }
+            slave
+            {
+                name            AHU_partition_copy_copy_patch_2_slave;
+                type            cyclic;
+                neighbourPatch  AHU_partition_copy_copy_patch_2_master;
+            }
+        }
+    }    AHU_partition_copy_copy_patch_3
+    {
+        type        faceZone;
+        zoneName    AHU_partition_copy_copy_patch_3;
+
+        patches
+        {
+            master
+            {
+                name            AHU_partition_copy_copy_patch_3_master;
+                type            cyclic;
+                neighbourPatch  AHU_partition_copy_copy_patch_3_slave;
+            }
+            slave
+            {
+                name            AHU_partition_copy_copy_patch_3_slave;
+                type            cyclic;
+                neighbourPatch  AHU_partition_copy_copy_patch_3_master;
+            }
+        }
+    }    AHU_partition_copy_copy_patch_4
+    {
+        type        faceZone;
+        zoneName    AHU_partition_copy_copy_patch_4;
+
+        patches
+        {
+            master
+            {
+                name            AHU_partition_copy_copy_patch_4_master;
+                type            cyclic;
+                neighbourPatch  AHU_partition_copy_copy_patch_4_slave;
+            }
+            slave
+            {
+                name            AHU_partition_copy_copy_patch_4_slave;
+                type            cyclic;
+                neighbourPatch  AHU_partition_copy_copy_patch_4_master;
+            }
+        }
+    }    AHU_partition_copy_copy_patch_5
+    {
+        type        faceZone;
+        zoneName    AHU_partition_copy_copy_patch_5;
+
+        patches
+        {
+            master
+            {
+                name            AHU_partition_copy_copy_patch_5_master;
+                type            cyclic;
+                neighbourPatch  AHU_partition_copy_copy_patch_5_slave;
+            }
+            slave
+            {
+                name            AHU_partition_copy_copy_patch_5_slave;
+                type            cyclic;
+                neighbourPatch  AHU_partition_copy_copy_patch_5_master;
+            }
+        }
+    }    AHU_partition_copy_copy_patch_6
+    {
+        type        faceZone;
+        zoneName    AHU_partition_copy_copy_patch_6;
+
+        patches
+        {
+            master
+            {
+                name            AHU_partition_copy_copy_patch_6_master;
+                type            cyclic;
+                neighbourPatch  AHU_partition_copy_copy_patch_6_slave;
+            }
+            slave
+            {
+                name            AHU_partition_copy_copy_patch_6_slave;
+                type            cyclic;
+                neighbourPatch  AHU_partition_copy_copy_patch_6_master;
+            }
+        }
+    }    AHU_partition_copy_copy_patch_7
+    {
+        type        faceZone;
+        zoneName    AHU_partition_copy_copy_patch_7;
+
+        patches
+        {
+            master
+            {
+                name            AHU_partition_copy_copy_patch_7_master;
+                type            cyclic;
+                neighbourPatch  AHU_partition_copy_copy_patch_7_slave;
+            }
+            slave
+            {
+                name            AHU_partition_copy_copy_patch_7_slave;
+                type            cyclic;
+                neighbourPatch  AHU_partition_copy_copy_patch_7_master;
+            }
+        }
+    }    AHU_partition_copy_copy_patch_8
+    {
+        type        faceZone;
+        zoneName    AHU_partition_copy_copy_patch_8;
+
+        patches
+        {
+            master
+            {
+                name            AHU_partition_copy_copy_patch_8_master;
+                type            cyclic;
+                neighbourPatch  AHU_partition_copy_copy_patch_8_slave;
+            }
+            slave
+            {
+                name            AHU_partition_copy_copy_patch_8_slave;
+                type            cyclic;
+                neighbourPatch  AHU_partition_copy_copy_patch_8_master;
+            }
+        }
+    }    AHU_partition_copy_copy_patch_9
+    {
+        type        faceZone;
+        zoneName    AHU_partition_copy_copy_patch_9;
+
+        patches
+        {
+            master
+            {
+                name            AHU_partition_copy_copy_patch_9_master;
+                type            cyclic;
+                neighbourPatch  AHU_partition_copy_copy_patch_9_slave;
+            }
+            slave
+            {
+                name            AHU_partition_copy_copy_patch_9_slave;
+                type            cyclic;
+                neighbourPatch  AHU_partition_copy_copy_patch_9_master;
+            }
+        }
+    }    AHU_partition_copy_copy_patch_10
+    {
+        type        faceZone;
+        zoneName    AHU_partition_copy_copy_patch_10;
+
+        patches
+        {
+            master
+            {
+                name            AHU_partition_copy_copy_patch_10_master;
+                type            cyclic;
+                neighbourPatch  AHU_partition_copy_copy_patch_10_slave;
+            }
+            slave
+            {
+                name            AHU_partition_copy_copy_patch_10_slave;
+                type            cyclic;
+                neighbourPatch  AHU_partition_copy_copy_patch_10_master;
+            }
+        }
+    }    AHU_partition_copy_copy_patch_11
+    {
+        type        faceZone;
+        zoneName    AHU_partition_copy_copy_patch_11;
+
+        patches
+        {
+            master
+            {
+                name            AHU_partition_copy_copy_patch_11_master;
+                type            cyclic;
+                neighbourPatch  AHU_partition_copy_copy_patch_11_slave;
+            }
+            slave
+            {
+                name            AHU_partition_copy_copy_patch_11_slave;
+                type            cyclic;
+                neighbourPatch  AHU_partition_copy_copy_patch_11_master;
+            }
+        }
+    }    AHU_partition_copy_copy_patch_12
+    {
+        type        faceZone;
+        zoneName    AHU_partition_copy_copy_patch_12;
+
+        patches
+        {
+            master
+            {
+                name            AHU_partition_copy_copy_patch_12_master;
+                type            cyclic;
+                neighbourPatch  AHU_partition_copy_copy_patch_12_slave;
+            }
+            slave
+            {
+                name            AHU_partition_copy_copy_patch_12_slave;
+                type            cyclic;
+                neighbourPatch  AHU_partition_copy_copy_patch_12_master;
+            }
+        }
+    }    AHU_partition_copy_copy_patch_13
+    {
+        type        faceZone;
+        zoneName    AHU_partition_copy_copy_patch_13;
+
+        patches
+        {
+            master
+            {
+                name            AHU_partition_copy_copy_patch_13_master;
+                type            cyclic;
+                neighbourPatch  AHU_partition_copy_copy_patch_13_slave;
+            }
+            slave
+            {
+                name            AHU_partition_copy_copy_patch_13_slave;
+                type            cyclic;
+                neighbourPatch  AHU_partition_copy_copy_patch_13_master;
+            }
+        }
+    }    AHU_partition_copy_copy_patch_14
+    {
+        type        faceZone;
+        zoneName    AHU_partition_copy_copy_patch_14;
+
+        patches
+        {
+            master
+            {
+                name            AHU_partition_copy_copy_patch_14_master;
+                type            cyclic;
+                neighbourPatch  AHU_partition_copy_copy_patch_14_slave;
+            }
+            slave
+            {
+                name            AHU_partition_copy_copy_patch_14_slave;
+                type            cyclic;
+                neighbourPatch  AHU_partition_copy_copy_patch_14_master;
+            }
+        }
+    }    AHU_partition_copy_copy_patch_15
+    {
+        type        faceZone;
+        zoneName    AHU_partition_copy_copy_patch_15;
+
+        patches
+        {
+            master
+            {
+                name            AHU_partition_copy_copy_patch_15_master;
+                type            cyclic;
+                neighbourPatch  AHU_partition_copy_copy_patch_15_slave;
+            }
+            slave
+            {
+                name            AHU_partition_copy_copy_patch_15_slave;
+                type            cyclic;
+                neighbourPatch  AHU_partition_copy_copy_patch_15_master;
+            }
+        }
+    }    AHU_partition_copy_copy_patch_16
+    {
+        type        faceZone;
+        zoneName    AHU_partition_copy_copy_patch_16;
+
+        patches
+        {
+            master
+            {
+                name            AHU_partition_copy_copy_patch_16_master;
+                type            cyclic;
+                neighbourPatch  AHU_partition_copy_copy_patch_16_slave;
+            }
+            slave
+            {
+                name            AHU_partition_copy_copy_patch_16_slave;
+                type            cyclic;
+                neighbourPatch  AHU_partition_copy_copy_patch_16_master;
+            }
+        }
+    }    AHU_partition_copy
+    {
+        type        faceZone;
+        zoneName    AHU_partition_copy;
+
+        patches
+        {
+            master
+            {
+                name            AHU_partition_copy_master;
+                type            cyclic;
+                neighbourPatch  AHU_partition_copy_slave;
+            }
+            slave
+            {
+                name            AHU_partition_copy_slave;
+                type            cyclic;
+                neighbourPatch  AHU_partition_copy_master;
+            }
+        }
+    }    Baffle_3
+    {
+        type        faceZone;
+        zoneName    Baffle_3;
+
+        patches
+        {
+            master
+            {
+                name            Baffle_3_master;
+                type            cyclic;
+                neighbourPatch  Baffle_3_slave;
+            }
+            slave
+            {
+                name            Baffle_3_slave;
+                type            cyclic;
+                neighbourPatch  Baffle_3_master;
+            }
+        }
+    }    Baffle_4
+    {
+        type        faceZone;
+        zoneName    Baffle_4;
+
+        patches
+        {
+            master
+            {
+                name            Baffle_4_master;
+                type            cyclic;
+                neighbourPatch  Baffle_4_slave;
+            }
+            slave
+            {
+                name            Baffle_4_slave;
+                type            cyclic;
+                neighbourPatch  Baffle_4_master;
+            }
+        }
+    }    Baffle_4_copy
+    {
+        type        faceZone;
+        zoneName    Baffle_4_copy;
+
+        patches
+        {
+            master
+            {
+                name            Baffle_4_copy_master;
+                type            cyclic;
+                neighbourPatch  Baffle_4_copy_slave;
+            }
+            slave
+            {
+                name            Baffle_4_copy_slave;
+                type            cyclic;
+                neighbourPatch  Baffle_4_copy_master;
+            }
+        }
+    }    Baffle_6
+    {
+        type        faceZone;
+        zoneName    Baffle_6;
+
+        patches
+        {
+            master
+            {
+                name            Baffle_6_master;
+                type            cyclic;
+                neighbourPatch  Baffle_6_slave;
+            }
+            slave
+            {
+                name            Baffle_6_slave;
+                type            cyclic;
+                neighbourPatch  Baffle_6_master;
+            }
+        }
+    }    Baffle_7
+    {
+        type        faceZone;
+        zoneName    Baffle_7;
+
+        patches
+        {
+            master
+            {
+                name            Baffle_7_master;
+                type            cyclic;
+                neighbourPatch  Baffle_7_slave;
+            }
+            slave
+            {
+                name            Baffle_7_slave;
+                type            cyclic;
+                neighbourPatch  Baffle_7_master;
+            }
+        }
+    }    AHU_partition_copy_copy_part1
+    {
+        type        faceZone;
+        zoneName    AHU_partition_copy_copy_part1;
+
+        patches
+        {
+            master
+            {
+                name            AHU_partition_copy_copy_part1_master;
+                type            cyclic;
+                neighbourPatch  AHU_partition_copy_copy_part1_slave;
+            }
+            slave
+            {
+                name            AHU_partition_copy_copy_part1_slave;
+                type            cyclic;
+                neighbourPatch  AHU_partition_copy_copy_part1_master;
+            }
+        }
+    }    Baffle_7_copy
+    {
+        type        faceZone;
+        zoneName    Baffle_7_copy;
+
+        patches
+        {
+            master
+            {
+                name            Baffle_7_copy_master;
+                type            cyclic;
+                neighbourPatch  Baffle_7_copy_slave;
+            }
+            slave
+            {
+                name            Baffle_7_copy_slave;
+                type            cyclic;
+                neighbourPatch  Baffle_7_copy_master;
+            }
+        }
+    }    Baffle_9
+    {
+        type        faceZone;
+        zoneName    Baffle_9;
+
+        patches
+        {
+            master
+            {
+                name            Baffle_9_master;
+                type            cyclic;
+                neighbourPatch  Baffle_9_slave;
+            }
+            slave
+            {
+                name            Baffle_9_slave;
+                type            cyclic;
+                neighbourPatch  Baffle_9_master;
+            }
+        }
+    }    Baffle_7_copy_copy
+    {
+        type        faceZone;
+        zoneName    Baffle_7_copy_copy;
+
+        patches
+        {
+            master
+            {
+                name            Baffle_7_copy_copy_master;
+                type            cyclic;
+                neighbourPatch  Baffle_7_copy_copy_slave;
+            }
+            slave
+            {
+                name            Baffle_7_copy_copy_slave;
+                type            cyclic;
+                neighbourPatch  Baffle_7_copy_copy_master;
+            }
+        }
+    }    Baffle_7_copy_copy_copy
+    {
+        type        faceZone;
+        zoneName    Baffle_7_copy_copy_copy;
+
+        patches
+        {
+            master
+            {
+                name            Baffle_7_copy_copy_copy_master;
+                type            cyclic;
+                neighbourPatch  Baffle_7_copy_copy_copy_slave;
+            }
+            slave
+            {
+                name            Baffle_7_copy_copy_copy_slave;
+                type            cyclic;
+                neighbourPatch  Baffle_7_copy_copy_copy_master;
+            }
+        }
+    }    Baffle_7_copy_copy_copy_copy
+    {
+        type        faceZone;
+        zoneName    Baffle_7_copy_copy_copy_copy;
+
+        patches
+        {
+            master
+            {
+                name            Baffle_7_copy_copy_copy_copy_master;
+                type            cyclic;
+                neighbourPatch  Baffle_7_copy_copy_copy_copy_slave;
+            }
+            slave
+            {
+                name            Baffle_7_copy_copy_copy_copy_slave;
+                type            cyclic;
+                neighbourPatch  Baffle_7_copy_copy_copy_copy_master;
+            }
+        }
+    }    Baffle_7_copy_copy_copy_copy_copy
+    {
+        type        faceZone;
+        zoneName    Baffle_7_copy_copy_copy_copy_copy;
+
+        patches
+        {
+            master
+            {
+                name            Baffle_7_copy_copy_copy_copy_copy_master;
+                type            cyclic;
+                neighbourPatch  Baffle_7_copy_copy_copy_copy_copy_slave;
+            }
+            slave
+            {
+                name            Baffle_7_copy_copy_copy_copy_copy_slave;
+                type            cyclic;
+                neighbourPatch  Baffle_7_copy_copy_copy_copy_copy_master;
+            }
+        }
+    }    Baffle_7_copy_copy_copy_copy_copy_copy
+    {
+        type        faceZone;
+        zoneName    Baffle_7_copy_copy_copy_copy_copy_copy;
+
+        patches
+        {
+            master
+            {
+                name            Baffle_7_copy_copy_copy_copy_copy_copy_master;
+                type            cyclic;
+                neighbourPatch  Baffle_7_copy_copy_copy_copy_copy_copy_slave;
+            }
+            slave
+            {
+                name            Baffle_7_copy_copy_copy_copy_copy_copy_slave;
+                type            cyclic;
+                neighbourPatch  Baffle_7_copy_copy_copy_copy_copy_copy_master;
+            }
+        }
+    }    Baffle_7_copy_copy_copy_copy_copy_copy_copy
+    {
+        type        faceZone;
+        zoneName    Baffle_7_copy_copy_copy_copy_copy_copy_copy;
+
+        patches
+        {
+            master
+            {
+                name            Baffle_7_copy_copy_copy_copy_copy_copy_copy_master;
+                type            cyclic;
+                neighbourPatch  Baffle_7_copy_copy_copy_copy_copy_copy_copy_slave;
+            }
+            slave
+            {
+                name            Baffle_7_copy_copy_copy_copy_copy_copy_copy_slave;
+                type            cyclic;
+                neighbourPatch  Baffle_7_copy_copy_copy_copy_copy_copy_copy_master;
+            }
+        }
+    }    Baffle_7_copy_copy_copy_copy_copy_copy_copy_copy
+    {
+        type        faceZone;
+        zoneName    Baffle_7_copy_copy_copy_copy_copy_copy_copy_copy;
+
+        patches
+        {
+            master
+            {
+                name            Baffle_7_copy_copy_copy_copy_copy_copy_copy_copy_master;
+                type            cyclic;
+                neighbourPatch  Baffle_7_copy_copy_copy_copy_copy_copy_copy_copy_slave;
+            }
+            slave
+            {
+                name            Baffle_7_copy_copy_copy_copy_copy_copy_copy_copy_slave;
+                type            cyclic;
+                neighbourPatch  Baffle_7_copy_copy_copy_copy_copy_copy_copy_copy_master;
+            }
+        }
+    }    Baffle_7_copy_copy_copy_copy_copy_copy_copy_copy_copy
+    {
+        type        faceZone;
+        zoneName    Baffle_7_copy_copy_copy_copy_copy_copy_copy_copy_copy;
+
+        patches
+        {
+            master
+            {
+                name            Baffle_7_copy_copy_copy_copy_copy_copy_copy_copy_copy_master;
+                type            cyclic;
+                neighbourPatch  Baffle_7_copy_copy_copy_copy_copy_copy_copy_copy_copy_slave;
+            }
+            slave
+            {
+                name            Baffle_7_copy_copy_copy_copy_copy_copy_copy_copy_copy_slave;
+                type            cyclic;
+                neighbourPatch  Baffle_7_copy_copy_copy_copy_copy_copy_copy_copy_copy_master;
+            }
+        }
+    }    Baffle_7_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy
+    {
+        type        faceZone;
+        zoneName    Baffle_7_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy;
+
+        patches
+        {
+            master
+            {
+                name            Baffle_7_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_master;
+                type            cyclic;
+                neighbourPatch  Baffle_7_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_slave;
+            }
+            slave
+            {
+                name            Baffle_7_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_slave;
+                type            cyclic;
+                neighbourPatch  Baffle_7_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_master;
+            }
+        }
+    }    Baffle_7_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy
+    {
+        type        faceZone;
+        zoneName    Baffle_7_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy;
+
+        patches
+        {
+            master
+            {
+                name            Baffle_7_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_master;
+                type            cyclic;
+                neighbourPatch  Baffle_7_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_slave;
+            }
+            slave
+            {
+                name            Baffle_7_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_slave;
+                type            cyclic;
+                neighbourPatch  Baffle_7_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_master;
+            }
+        }
+    }    Baffle_7_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy
+    {
+        type        faceZone;
+        zoneName    Baffle_7_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy;
+
+        patches
+        {
+            master
+            {
+                name            Baffle_7_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_master;
+                type            cyclic;
+                neighbourPatch  Baffle_7_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_slave;
+            }
+            slave
+            {
+                name            Baffle_7_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_slave;
+                type            cyclic;
+                neighbourPatch  Baffle_7_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_master;
+            }
+        }
+    }    Baffle_7_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy
+    {
+        type        faceZone;
+        zoneName    Baffle_7_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy;
+
+        patches
+        {
+            master
+            {
+                name            Baffle_7_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_master;
+                type            cyclic;
+                neighbourPatch  Baffle_7_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_slave;
+            }
+            slave
+            {
+                name            Baffle_7_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_slave;
+                type            cyclic;
+                neighbourPatch  Baffle_7_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_master;
+            }
+        }
+    }    Baffle_7_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy
+    {
+        type        faceZone;
+        zoneName    Baffle_7_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy;
+
+        patches
+        {
+            master
+            {
+                name            Baffle_7_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_master;
+                type            cyclic;
+                neighbourPatch  Baffle_7_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_slave;
+            }
+            slave
+            {
+                name            Baffle_7_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_slave;
+                type            cyclic;
+                neighbourPatch  Baffle_7_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_master;
+            }
+        }
+    }    Baffle_7_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy
+    {
+        type        faceZone;
+        zoneName    Baffle_7_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy;
+
+        patches
+        {
+            master
+            {
+                name            Baffle_7_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_master;
+                type            cyclic;
+                neighbourPatch  Baffle_7_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_slave;
+            }
+            slave
+            {
+                name            Baffle_7_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_slave;
+                type            cyclic;
+                neighbourPatch  Baffle_7_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_master;
+            }
+        }
+    }    Baffle_9_copy
+    {
+        type        faceZone;
+        zoneName    Baffle_9_copy;
+
+        patches
+        {
+            master
+            {
+                name            Baffle_9_copy_master;
+                type            cyclic;
+                neighbourPatch  Baffle_9_copy_slave;
+            }
+            slave
+            {
+                name            Baffle_9_copy_slave;
+                type            cyclic;
+                neighbourPatch  Baffle_9_copy_master;
+            }
+        }
+    }    Baffle_9_copy_copy
+    {
+        type        faceZone;
+        zoneName    Baffle_9_copy_copy;
+
+        patches
+        {
+            master
+            {
+                name            Baffle_9_copy_copy_master;
+                type            cyclic;
+                neighbourPatch  Baffle_9_copy_copy_slave;
+            }
+            slave
+            {
+                name            Baffle_9_copy_copy_slave;
+                type            cyclic;
+                neighbourPatch  Baffle_9_copy_copy_master;
+            }
+        }
+    }    Baffle_9_copy_copy_copy
+    {
+        type        faceZone;
+        zoneName    Baffle_9_copy_copy_copy;
+
+        patches
+        {
+            master
+            {
+                name            Baffle_9_copy_copy_copy_master;
+                type            cyclic;
+                neighbourPatch  Baffle_9_copy_copy_copy_slave;
+            }
+            slave
+            {
+                name            Baffle_9_copy_copy_copy_slave;
+                type            cyclic;
+                neighbourPatch  Baffle_9_copy_copy_copy_master;
+            }
+        }
+    }    Baffle_9_copy_copy_copy_copy
+    {
+        type        faceZone;
+        zoneName    Baffle_9_copy_copy_copy_copy;
+
+        patches
+        {
+            master
+            {
+                name            Baffle_9_copy_copy_copy_copy_master;
+                type            cyclic;
+                neighbourPatch  Baffle_9_copy_copy_copy_copy_slave;
+            }
+            slave
+            {
+                name            Baffle_9_copy_copy_copy_copy_slave;
+                type            cyclic;
+                neighbourPatch  Baffle_9_copy_copy_copy_copy_master;
+            }
+        }
+    }    Baffle_9_copy_copy_copy_copy_copy
+    {
+        type        faceZone;
+        zoneName    Baffle_9_copy_copy_copy_copy_copy;
+
+        patches
+        {
+            master
+            {
+                name            Baffle_9_copy_copy_copy_copy_copy_master;
+                type            cyclic;
+                neighbourPatch  Baffle_9_copy_copy_copy_copy_copy_slave;
+            }
+            slave
+            {
+                name            Baffle_9_copy_copy_copy_copy_copy_slave;
+                type            cyclic;
+                neighbourPatch  Baffle_9_copy_copy_copy_copy_copy_master;
+            }
+        }
+    }    Baffle_9_copy_copy_copy_copy_copy_copy
+    {
+        type        faceZone;
+        zoneName    Baffle_9_copy_copy_copy_copy_copy_copy;
+
+        patches
+        {
+            master
+            {
+                name            Baffle_9_copy_copy_copy_copy_copy_copy_master;
+                type            cyclic;
+                neighbourPatch  Baffle_9_copy_copy_copy_copy_copy_copy_slave;
+            }
+            slave
+            {
+                name            Baffle_9_copy_copy_copy_copy_copy_copy_slave;
+                type            cyclic;
+                neighbourPatch  Baffle_9_copy_copy_copy_copy_copy_copy_master;
+            }
+        }
+    }    Baffle_9_copy_copy_copy_copy_copy_copy_copy
+    {
+        type        faceZone;
+        zoneName    Baffle_9_copy_copy_copy_copy_copy_copy_copy;
+
+        patches
+        {
+            master
+            {
+                name            Baffle_9_copy_copy_copy_copy_copy_copy_copy_master;
+                type            cyclic;
+                neighbourPatch  Baffle_9_copy_copy_copy_copy_copy_copy_copy_slave;
+            }
+            slave
+            {
+                name            Baffle_9_copy_copy_copy_copy_copy_copy_copy_slave;
+                type            cyclic;
+                neighbourPatch  Baffle_9_copy_copy_copy_copy_copy_copy_copy_master;
+            }
+        }
+    }    Baffle_3_copy
+    {
+        type        faceZone;
+        zoneName    Baffle_3_copy;
+
+        patches
+        {
+            master
+            {
+                name            Baffle_3_copy_master;
+                type            cyclic;
+                neighbourPatch  Baffle_3_copy_slave;
+            }
+            slave
+            {
+                name            Baffle_3_copy_slave;
+                type            cyclic;
+                neighbourPatch  Baffle_3_copy_master;
+            }
+        }
+    }    Baffle_4_copy_copy
+    {
+        type        faceZone;
+        zoneName    Baffle_4_copy_copy;
+
+        patches
+        {
+            master
+            {
+                name            Baffle_4_copy_copy_master;
+                type            cyclic;
+                neighbourPatch  Baffle_4_copy_copy_slave;
+            }
+            slave
+            {
+                name            Baffle_4_copy_copy_slave;
+                type            cyclic;
+                neighbourPatch  Baffle_4_copy_copy_master;
+            }
+        }
+    }    Baffle_4_copy_copy_copy
+    {
+        type        faceZone;
+        zoneName    Baffle_4_copy_copy_copy;
+
+        patches
+        {
+            master
+            {
+                name            Baffle_4_copy_copy_copy_master;
+                type            cyclic;
+                neighbourPatch  Baffle_4_copy_copy_copy_slave;
+            }
+            slave
+            {
+                name            Baffle_4_copy_copy_copy_slave;
+                type            cyclic;
+                neighbourPatch  Baffle_4_copy_copy_copy_master;
+            }
+        }
+    }    Baffle_3_copy_copy
+    {
+        type        faceZone;
+        zoneName    Baffle_3_copy_copy;
+
+        patches
+        {
+            master
+            {
+                name            Baffle_3_copy_copy_master;
+                type            cyclic;
+                neighbourPatch  Baffle_3_copy_copy_slave;
+            }
+            slave
+            {
+                name            Baffle_3_copy_copy_slave;
+                type            cyclic;
+                neighbourPatch  Baffle_3_copy_copy_master;
+            }
+        }
+    }    Baffle_3_copy_copy2
+    {
+        type        faceZone;
+        zoneName    Baffle_3_copy_copy2;
+
+        patches
+        {
+            master
+            {
+                name            Baffle_3_copy_copy2_master;
+                type            cyclic;
+                neighbourPatch  Baffle_3_copy_copy2_slave;
+            }
+            slave
+            {
+                name            Baffle_3_copy_copy2_slave;
+                type            cyclic;
+                neighbourPatch  Baffle_3_copy_copy2_master;
+            }
+        }
+    }    Baffle_4_copy_copy_copy2
+    {
+        type        faceZone;
+        zoneName    Baffle_4_copy_copy_copy2;
+
+        patches
+        {
+            master
+            {
+                name            Baffle_4_copy_copy_copy2_master;
+                type            cyclic;
+                neighbourPatch  Baffle_4_copy_copy_copy2_slave;
+            }
+            slave
+            {
+                name            Baffle_4_copy_copy_copy2_slave;
+                type            cyclic;
+                neighbourPatch  Baffle_4_copy_copy_copy2_master;
+            }
+        }
+    }    Baffle_4_copy_copy_copy2_copy
+    {
+        type        faceZone;
+        zoneName    Baffle_4_copy_copy_copy2_copy;
+
+        patches
+        {
+            master
+            {
+                name            Baffle_4_copy_copy_copy2_copy_master;
+                type            cyclic;
+                neighbourPatch  Baffle_4_copy_copy_copy2_copy_slave;
+            }
+            slave
+            {
+                name            Baffle_4_copy_copy_copy2_copy_slave;
+                type            cyclic;
+                neighbourPatch  Baffle_4_copy_copy_copy2_copy_master;
+            }
+        }
+    }    Baffle_4_copy_copy_copy2_copy_copy
+    {
+        type        faceZone;
+        zoneName    Baffle_4_copy_copy_copy2_copy_copy;
+
+        patches
+        {
+            master
+            {
+                name            Baffle_4_copy_copy_copy2_copy_copy_master;
+                type            cyclic;
+                neighbourPatch  Baffle_4_copy_copy_copy2_copy_copy_slave;
+            }
+            slave
+            {
+                name            Baffle_4_copy_copy_copy2_copy_copy_slave;
+                type            cyclic;
+                neighbourPatch  Baffle_4_copy_copy_copy2_copy_copy_master;
+            }
+        }
+    }    Baffle_4_copy_copy_copy2_copy_copy_copy
+    {
+        type        faceZone;
+        zoneName    Baffle_4_copy_copy_copy2_copy_copy_copy;
+
+        patches
+        {
+            master
+            {
+                name            Baffle_4_copy_copy_copy2_copy_copy_copy_master;
+                type            cyclic;
+                neighbourPatch  Baffle_4_copy_copy_copy2_copy_copy_copy_slave;
+            }
+            slave
+            {
+                name            Baffle_4_copy_copy_copy2_copy_copy_copy_slave;
+                type            cyclic;
+                neighbourPatch  Baffle_4_copy_copy_copy2_copy_copy_copy_master;
+            }
+        }
+    }    Baffle_4_copy_copy_copy2_copy_copy_copy_copy
+    {
+        type        faceZone;
+        zoneName    Baffle_4_copy_copy_copy2_copy_copy_copy_copy;
+
+        patches
+        {
+            master
+            {
+                name            Baffle_4_copy_copy_copy2_copy_copy_copy_copy_master;
+                type            cyclic;
+                neighbourPatch  Baffle_4_copy_copy_copy2_copy_copy_copy_copy_slave;
+            }
+            slave
+            {
+                name            Baffle_4_copy_copy_copy2_copy_copy_copy_copy_slave;
+                type            cyclic;
+                neighbourPatch  Baffle_4_copy_copy_copy2_copy_copy_copy_copy_master;
+            }
+        }
+    }    Baffle_4_copy_copy_copy2_copy_copy_copy_copy_copy
+    {
+        type        faceZone;
+        zoneName    Baffle_4_copy_copy_copy2_copy_copy_copy_copy_copy;
+
+        patches
+        {
+            master
+            {
+                name            Baffle_4_copy_copy_copy2_copy_copy_copy_copy_copy_master;
+                type            cyclic;
+                neighbourPatch  Baffle_4_copy_copy_copy2_copy_copy_copy_copy_copy_slave;
+            }
+            slave
+            {
+                name            Baffle_4_copy_copy_copy2_copy_copy_copy_copy_copy_slave;
+                type            cyclic;
+                neighbourPatch  Baffle_4_copy_copy_copy2_copy_copy_copy_copy_copy_master;
+            }
+        }
+    }    Baffle_4_copy_copy_copy2_copy_copy_copy_copy_copy_copy
+    {
+        type        faceZone;
+        zoneName    Baffle_4_copy_copy_copy2_copy_copy_copy_copy_copy_copy;
+
+        patches
+        {
+            master
+            {
+                name            Baffle_4_copy_copy_copy2_copy_copy_copy_copy_copy_copy_master;
+                type            cyclic;
+                neighbourPatch  Baffle_4_copy_copy_copy2_copy_copy_copy_copy_copy_copy_slave;
+            }
+            slave
+            {
+                name            Baffle_4_copy_copy_copy2_copy_copy_copy_copy_copy_copy_slave;
+                type            cyclic;
+                neighbourPatch  Baffle_4_copy_copy_copy2_copy_copy_copy_copy_copy_copy_master;
+            }
+        }
+    }    Baffle_4_copy_copy_copy2_copy_copy_copy_copy_copy_copy_copy
+    {
+        type        faceZone;
+        zoneName    Baffle_4_copy_copy_copy2_copy_copy_copy_copy_copy_copy_copy;
+
+        patches
+        {
+            master
+            {
+                name            Baffle_4_copy_copy_copy2_copy_copy_copy_copy_copy_copy_copy_master;
+                type            cyclic;
+                neighbourPatch  Baffle_4_copy_copy_copy2_copy_copy_copy_copy_copy_copy_copy_slave;
+            }
+            slave
+            {
+                name            Baffle_4_copy_copy_copy2_copy_copy_copy_copy_copy_copy_copy_slave;
+                type            cyclic;
+                neighbourPatch  Baffle_4_copy_copy_copy2_copy_copy_copy_copy_copy_copy_copy_master;
+            }
+        }
+    }    Baffle_3_copy_copy2_copy
+    {
+        type        faceZone;
+        zoneName    Baffle_3_copy_copy2_copy;
+
+        patches
+        {
+            master
+            {
+                name            Baffle_3_copy_copy2_copy_master;
+                type            cyclic;
+                neighbourPatch  Baffle_3_copy_copy2_copy_slave;
+            }
+            slave
+            {
+                name            Baffle_3_copy_copy2_copy_slave;
+                type            cyclic;
+                neighbourPatch  Baffle_3_copy_copy2_copy_master;
+            }
+        }
+    }    Baffle_3_copy_copy2_copy_copy
+    {
+        type        faceZone;
+        zoneName    Baffle_3_copy_copy2_copy_copy;
+
+        patches
+        {
+            master
+            {
+                name            Baffle_3_copy_copy2_copy_copy_master;
+                type            cyclic;
+                neighbourPatch  Baffle_3_copy_copy2_copy_copy_slave;
+            }
+            slave
+            {
+                name            Baffle_3_copy_copy2_copy_copy_slave;
+                type            cyclic;
+                neighbourPatch  Baffle_3_copy_copy2_copy_copy_master;
+            }
+        }
+    }    Baffle_3_copy_copy2_copy_copy_copy
+    {
+        type        faceZone;
+        zoneName    Baffle_3_copy_copy2_copy_copy_copy;
+
+        patches
+        {
+            master
+            {
+                name            Baffle_3_copy_copy2_copy_copy_copy_master;
+                type            cyclic;
+                neighbourPatch  Baffle_3_copy_copy2_copy_copy_copy_slave;
+            }
+            slave
+            {
+                name            Baffle_3_copy_copy2_copy_copy_copy_slave;
+                type            cyclic;
+                neighbourPatch  Baffle_3_copy_copy2_copy_copy_copy_master;
+            }
+        }
+    }    Baffle_3_copy_copy2_copy_copy_copy_copy
+    {
+        type        faceZone;
+        zoneName    Baffle_3_copy_copy2_copy_copy_copy_copy;
+
+        patches
+        {
+            master
+            {
+                name            Baffle_3_copy_copy2_copy_copy_copy_copy_master;
+                type            cyclic;
+                neighbourPatch  Baffle_3_copy_copy2_copy_copy_copy_copy_slave;
+            }
+            slave
+            {
+                name            Baffle_3_copy_copy2_copy_copy_copy_copy_slave;
+                type            cyclic;
+                neighbourPatch  Baffle_3_copy_copy2_copy_copy_copy_copy_master;
+            }
+        }
+    }    Baffle_3_copy_copy2_copy_copy_copy2
+    {
+        type        faceZone;
+        zoneName    Baffle_3_copy_copy2_copy_copy_copy2;
+
+        patches
+        {
+            master
+            {
+                name            Baffle_3_copy_copy2_copy_copy_copy2_master;
+                type            cyclic;
+                neighbourPatch  Baffle_3_copy_copy2_copy_copy_copy2_slave;
+            }
+            slave
+            {
+                name            Baffle_3_copy_copy2_copy_copy_copy2_slave;
+                type            cyclic;
+                neighbourPatch  Baffle_3_copy_copy2_copy_copy_copy2_master;
+            }
+        }
+    }    Baffle_3_copy_copy2_copy_copy2
+    {
+        type        faceZone;
+        zoneName    Baffle_3_copy_copy2_copy_copy2;
+
+        patches
+        {
+            master
+            {
+                name            Baffle_3_copy_copy2_copy_copy2_master;
+                type            cyclic;
+                neighbourPatch  Baffle_3_copy_copy2_copy_copy2_slave;
+            }
+            slave
+            {
+                name            Baffle_3_copy_copy2_copy_copy2_slave;
+                type            cyclic;
+                neighbourPatch  Baffle_3_copy_copy2_copy_copy2_master;
+            }
+        }
+    }    Baffle_3_copy_copy2_copy2
+    {
+        type        faceZone;
+        zoneName    Baffle_3_copy_copy2_copy2;
+
+        patches
+        {
+            master
+            {
+                name            Baffle_3_copy_copy2_copy2_master;
+                type            cyclic;
+                neighbourPatch  Baffle_3_copy_copy2_copy2_slave;
+            }
+            slave
+            {
+                name            Baffle_3_copy_copy2_copy2_slave;
+                type            cyclic;
+                neighbourPatch  Baffle_3_copy_copy2_copy2_master;
+            }
+        }
+    }    AHU_partition_copy_copy2
+    {
+        type        faceZone;
+        zoneName    AHU_partition_copy_copy2;
+
+        patches
+        {
+            master
+            {
+                name            AHU_partition_copy_copy2_master;
+                type            cyclic;
+                neighbourPatch  AHU_partition_copy_copy2_slave;
+            }
+            slave
+            {
+                name            AHU_partition_copy_copy2_slave;
+                type            cyclic;
+                neighbourPatch  AHU_partition_copy_copy2_master;
+            }
+        }
+    }    AHU_partition_copy_copy2_copy
+    {
+        type        faceZone;
+        zoneName    AHU_partition_copy_copy2_copy;
+
+        patches
+        {
+            master
+            {
+                name            AHU_partition_copy_copy2_copy_master;
+                type            cyclic;
+                neighbourPatch  AHU_partition_copy_copy2_copy_slave;
+            }
+            slave
+            {
+                name            AHU_partition_copy_copy2_copy_slave;
+                type            cyclic;
+                neighbourPatch  AHU_partition_copy_copy2_copy_master;
+            }
+        }
+    }    AHU_partition_copy_copy2_copy_copy
+    {
+        type        faceZone;
+        zoneName    AHU_partition_copy_copy2_copy_copy;
+
+        patches
+        {
+            master
+            {
+                name            AHU_partition_copy_copy2_copy_copy_master;
+                type            cyclic;
+                neighbourPatch  AHU_partition_copy_copy2_copy_copy_slave;
+            }
+            slave
+            {
+                name            AHU_partition_copy_copy2_copy_copy_slave;
+                type            cyclic;
+                neighbourPatch  AHU_partition_copy_copy2_copy_copy_master;
+            }
+        }
+    }    AHU_partition_copy_copy2_copy_copy_copy
+    {
+        type        faceZone;
+        zoneName    AHU_partition_copy_copy2_copy_copy_copy;
+
+        patches
+        {
+            master
+            {
+                name            AHU_partition_copy_copy2_copy_copy_copy_master;
+                type            cyclic;
+                neighbourPatch  AHU_partition_copy_copy2_copy_copy_copy_slave;
+            }
+            slave
+            {
+                name            AHU_partition_copy_copy2_copy_copy_copy_slave;
+                type            cyclic;
+                neighbourPatch  AHU_partition_copy_copy2_copy_copy_copy_master;
+            }
+        }
+    }    AHU_partition_copy_copy2_copy_copy_copy_copy
+    {
+        type        faceZone;
+        zoneName    AHU_partition_copy_copy2_copy_copy_copy_copy;
+
+        patches
+        {
+            master
+            {
+                name            AHU_partition_copy_copy2_copy_copy_copy_copy_master;
+                type            cyclic;
+                neighbourPatch  AHU_partition_copy_copy2_copy_copy_copy_copy_slave;
+            }
+            slave
+            {
+                name            AHU_partition_copy_copy2_copy_copy_copy_copy_slave;
+                type            cyclic;
+                neighbourPatch  AHU_partition_copy_copy2_copy_copy_copy_copy_master;
+            }
+        }
+    }    AHU_partition_copy_copy2_copy_copy_copy_copy_copy
+    {
+        type        faceZone;
+        zoneName    AHU_partition_copy_copy2_copy_copy_copy_copy_copy;
+
+        patches
+        {
+            master
+            {
+                name            AHU_partition_copy_copy2_copy_copy_copy_copy_copy_master;
+                type            cyclic;
+                neighbourPatch  AHU_partition_copy_copy2_copy_copy_copy_copy_copy_slave;
+            }
+            slave
+            {
+                name            AHU_partition_copy_copy2_copy_copy_copy_copy_copy_slave;
+                type            cyclic;
+                neighbourPatch  AHU_partition_copy_copy2_copy_copy_copy_copy_copy_master;
+            }
+        }
+    }    AHU_partition_copy_copy2_copy_copy_copy_copy_copy_copy
+    {
+        type        faceZone;
+        zoneName    AHU_partition_copy_copy2_copy_copy_copy_copy_copy_copy;
+
+        patches
+        {
+            master
+            {
+                name            AHU_partition_copy_copy2_copy_copy_copy_copy_copy_copy_master;
+                type            cyclic;
+                neighbourPatch  AHU_partition_copy_copy2_copy_copy_copy_copy_copy_copy_slave;
+            }
+            slave
+            {
+                name            AHU_partition_copy_copy2_copy_copy_copy_copy_copy_copy_slave;
+                type            cyclic;
+                neighbourPatch  AHU_partition_copy_copy2_copy_copy_copy_copy_copy_copy_master;
+            }
+        }
+    }
+}

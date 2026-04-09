@@ -1,16 +1,32 @@
-solid Floor_2_Top
-  facet normal 0.000000 0.000000 1.000000
+solid Room_Floor
+  facet normal 0 0 -1
     outer loop
-      vertex 1.990648 7.426081 0.000000
-      vertex 1.990648 1.041110 0.000000
-      vertex 6.014294 1.041110 0.000000
+      vertex 1.9906 7.4261 0.0
+      vertex 6.0142 1.0411 0.0
+      vertex 1.9906 1.0411 0.0
     endloop
   endfacet
-  facet normal 0.000000 0.000000 1.000000
+  facet normal 0 0 -1
     outer loop
-      vertex 6.014294 1.041110 0.000000
-      vertex 6.014294 7.426081 0.000000
-      vertex 1.990648 7.426081 0.000000
+      vertex 1.9906 7.4261 0.0
+      vertex 6.0142 7.4261 0.0
+      vertex 6.0142 1.0411 0.0
     endloop
   endfacet
-endsolid Floor_2_Top
+endsolid Room_Floor
+solid Room_Ceiling
+  facet normal 0 0 1
+    outer loop
+      vertex 1.9906 7.4261 3.018
+      vertex 1.9906 1.0411 3.018
+      vertex 6.0142 1.0411 3.018
+    endloop
+  endfacet
+  facet normal 0 0 1
+    outer loop
+      vertex 1.9906 7.4261 3.018
+      vertex 6.0142 1.0411 3.018
+      vertex 6.0142 7.4261 3.018
+    endloop
+  endfacet
+endsolid Room_Ceiling

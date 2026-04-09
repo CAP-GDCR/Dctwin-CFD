@@ -103,7 +103,7 @@
     "sigma": 0.05,
     "heat_flux": null
   },
-  "Default_Rack_1_copy2_fan_server_1_inlet_patch": {
+  "Default_Rack_2_fan_server_1_inlet_patch": {
     "bc_type": "fan_inlet",
     "temperature": null,
     "flow_rate": 1.2,
@@ -111,7 +111,7 @@
     "sigma": null,
     "heat_flux": null
   },
-  "Default_Rack_1_copy2_fan_server_1_outlet_patch": {
+  "Default_Rack_2_fan_server_1_outlet_patch": {
     "bc_type": "fan_outlet",
     "temperature": 28.31345261762757,
     "flow_rate": 1.2,
@@ -119,7 +119,7 @@
     "sigma": null,
     "heat_flux": null
   },
-  "Default_Rack_1_copy_fan_server_1_inlet_patch": {
+  "Default_Rack_3_fan_server_1_inlet_patch": {
     "bc_type": "fan_inlet",
     "temperature": null,
     "flow_rate": 1.0,
@@ -127,7 +127,7 @@
     "sigma": null,
     "heat_flux": null
   },
-  "Default_Rack_1_copy_fan_server_1_outlet_patch": {
+  "Default_Rack_3_fan_server_1_outlet_patch": {
     "bc_type": "fan_outlet",
     "temperature": 27.07090788601723,
     "flow_rate": 1.0,
@@ -135,7 +135,7 @@
     "sigma": null,
     "heat_flux": null
   },
-  "Default_Rack_1_copy_copy_fan_server_1_inlet_patch": {
+  "Default_Rack_4_fan_server_1_inlet_patch": {
     "bc_type": "fan_inlet",
     "temperature": null,
     "flow_rate": 1.0,
@@ -143,7 +143,7 @@
     "sigma": null,
     "heat_flux": null
   },
-  "Default_Rack_1_copy_copy_fan_server_1_outlet_patch": {
+  "Default_Rack_4_fan_server_1_outlet_patch": {
     "bc_type": "fan_outlet",
     "temperature": 27.982107355864812,
     "flow_rate": 1.0,
@@ -151,7 +151,7 @@
     "sigma": null,
     "heat_flux": null
   },
-  "raising_floor_Top_patch_master": {
+  "Room_Raising_floor_patch_master": {
     "bc_type": "perforated_baffle",
     "temperature": null,
     "flow_rate": null,
@@ -159,7 +159,7 @@
     "sigma": 0.9,
     "heat_flux": null
   },
-  "raising_floor_Top_patch_slave": {
+  "Room_Raising_floor_patch_slave": {
     "bc_type": "perforated_baffle",
     "temperature": null,
     "flow_rate": null,
@@ -167,7 +167,7 @@
     "sigma": 0.9,
     "heat_flux": null
   },
-  "raising_floor_Top_part1_master": {
+  "Room_Raising_floor_part1_master": {
     "bc_type": "wall_baffle",
     "temperature": null,
     "flow_rate": null,
@@ -175,7 +175,7 @@
     "sigma": null,
     "heat_flux": null
   },
-  "raising_floor_Top_part1_slave": {
+  "Room_Raising_floor_part1_slave": {
     "bc_type": "wall_baffle",
     "temperature": null,
     "flow_rate": null,
@@ -215,7 +215,7 @@
     "sigma": null,
     "heat_flux": null
   },
-  "Default_Rack_1_copy2_outlet_u4_u9_wallBaffle_master": {
+  "Default_Rack_2_outlet_u4_u9_wallBaffle_master": {
     "bc_type": "wall_baffle",
     "temperature": null,
     "flow_rate": null,
@@ -223,7 +223,7 @@
     "sigma": null,
     "heat_flux": null
   },
-  "Default_Rack_1_copy2_outlet_u4_u9_wallBaffle_slave": {
+  "Default_Rack_2_outlet_u4_u9_wallBaffle_slave": {
     "bc_type": "wall_baffle",
     "temperature": null,
     "flow_rate": null,
@@ -231,7 +231,7 @@
     "sigma": null,
     "heat_flux": null
   },
-  "Default_Rack_1_copy_inlet_u7_u13_wallBaffle_master": {
+  "Default_Rack_3_inlet_u7_u13_wallBaffle_master": {
     "bc_type": "wall_baffle",
     "temperature": null,
     "flow_rate": null,
@@ -239,7 +239,7 @@
     "sigma": null,
     "heat_flux": null
   },
-  "Default_Rack_1_copy_inlet_u7_u13_wallBaffle_slave": {
+  "Default_Rack_3_inlet_u7_u13_wallBaffle_slave": {
     "bc_type": "wall_baffle",
     "temperature": null,
     "flow_rate": null,
@@ -247,7 +247,7 @@
     "sigma": null,
     "heat_flux": null
   },
-  "Baffle_1_Front_master": {
+  "Baffle_1_master": {
     "bc_type": "wall_baffle",
     "temperature": null,
     "flow_rate": null,
@@ -255,7 +255,7 @@
     "sigma": null,
     "heat_flux": null
   },
-  "Baffle_1_Front_slave": {
+  "Baffle_1_slave": {
     "bc_type": "wall_baffle",
     "temperature": null,
     "flow_rate": null,
@@ -263,7 +263,7 @@
     "sigma": null,
     "heat_flux": null
   },
-  "Baffle_2_Front_master": {
+  "Baffle_2_master": {
     "bc_type": "wall_baffle",
     "temperature": null,
     "flow_rate": null,
@@ -271,7 +271,7 @@
     "sigma": null,
     "heat_flux": null
   },
-  "Baffle_2_Front_slave": {
+  "Baffle_2_slave": {
     "bc_type": "wall_baffle",
     "temperature": null,
     "flow_rate": null,
@@ -279,7 +279,7 @@
     "sigma": null,
     "heat_flux": null
   },
-  "Baffle_3_Front_master": {
+  "Baffle_3_master": {
     "bc_type": "wall_baffle",
     "temperature": null,
     "flow_rate": null,
@@ -287,8 +287,40 @@
     "sigma": null,
     "heat_flux": null
   },
-  "Baffle_3_Front_slave": {
+  "Baffle_3_slave": {
     "bc_type": "wall_baffle",
+    "temperature": null,
+    "flow_rate": null,
+    "power": null,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "Room_Wall_1": {
+    "bc_type": "wall",
+    "temperature": null,
+    "flow_rate": null,
+    "power": null,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "Room_Wall_2": {
+    "bc_type": "wall",
+    "temperature": null,
+    "flow_rate": null,
+    "power": null,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "Room_Wall_3": {
+    "bc_type": "wall",
+    "temperature": null,
+    "flow_rate": null,
+    "power": null,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "Room_Wall_4": {
+    "bc_type": "wall",
     "temperature": null,
     "flow_rate": null,
     "power": null,

@@ -290,15 +290,15 @@
   "A15_A15_27_inlet_patch": {
     "bc_type": "fan_inlet",
     "temperature": null,
-    "flow_rate": 0.0111,
+    "flow_rate": 0.0235,
     "power": 340.0,
     "sigma": null,
     "heat_flux": null
   },
   "A15_A15_27_outlet_patch": {
     "bc_type": "fan_outlet",
-    "temperature": 50.37328581066156,
-    "flow_rate": 0.0111,
+    "temperature": 36.98482861695078,
+    "flow_rate": 0.0235,
     "power": 340.0,
     "sigma": null,
     "heat_flux": null
@@ -786,15 +786,15 @@
   "A13_A13_31_inlet_patch": {
     "bc_type": "fan_inlet",
     "temperature": null,
-    "flow_rate": 0.0111,
+    "flow_rate": 0.0255,
     "power": 370.0,
     "sigma": null,
     "heat_flux": null
   },
   "A13_A13_31_outlet_patch": {
     "bc_type": "fan_outlet",
-    "temperature": 52.6121051468964,
-    "flow_rate": 0.0111,
+    "temperature": 37.01938694629608,
+    "flow_rate": 0.0255,
     "power": 370.0,
     "sigma": null,
     "heat_flux": null
@@ -1490,15 +1490,15 @@
   "A10_A10_29_inlet_patch": {
     "bc_type": "fan_inlet",
     "temperature": null,
-    "flow_rate": 0.0111,
+    "flow_rate": 0.0246,
     "power": 356.0,
     "sigma": null,
     "heat_flux": null
   },
   "A10_A10_29_outlet_patch": {
     "bc_type": "fan_outlet",
-    "temperature": 51.567322789986804,
-    "flow_rate": 0.0111,
+    "temperature": 36.98769442962819,
+    "flow_rate": 0.0246,
     "power": 356.0,
     "sigma": null,
     "heat_flux": null
@@ -1602,15 +1602,15 @@
   "A09_A09_11_inlet_patch": {
     "bc_type": "fan_inlet",
     "temperature": null,
-    "flow_rate": 0.0111,
+    "flow_rate": 0.0262,
     "power": 380.0,
     "sigma": null,
     "heat_flux": null
   },
   "A09_A09_11_outlet_patch": {
     "bc_type": "fan_outlet",
-    "temperature": 53.35837825897468,
-    "flow_rate": 0.0111,
+    "temperature": 37.014427430328965,
+    "flow_rate": 0.0262,
     "power": 380.0,
     "sigma": null,
     "heat_flux": null
@@ -1778,15 +1778,15 @@
   "A09_A09_33_inlet_patch": {
     "bc_type": "fan_inlet",
     "temperature": null,
-    "flow_rate": 0.0111,
+    "flow_rate": 0.0228,
     "power": 330.0,
     "sigma": null,
     "heat_flux": null
   },
   "A09_A09_33_outlet_patch": {
     "bc_type": "fan_outlet",
-    "temperature": 49.62701269858327,
-    "flow_rate": 0.0111,
+    "temperature": 36.98946670852081,
+    "flow_rate": 0.0228,
     "power": 330.0,
     "sigma": null,
     "heat_flux": null
@@ -2066,15 +2066,15 @@
   "A07_A07_11_inlet_patch": {
     "bc_type": "fan_inlet",
     "temperature": null,
-    "flow_rate": 0.0111,
+    "flow_rate": 0.0262,
     "power": 379.0,
     "sigma": null,
     "heat_flux": null
   },
   "A07_A07_11_outlet_patch": {
     "bc_type": "fan_outlet",
-    "temperature": 53.28375094776685,
-    "flow_rate": 0.0111,
+    "temperature": 36.982810516038626,
+    "flow_rate": 0.0262,
     "power": 379.0,
     "sigma": null,
     "heat_flux": null
@@ -2082,15 +2082,15 @@
   "A07_A07_13_inlet_patch": {
     "bc_type": "fan_inlet",
     "temperature": null,
-    "flow_rate": 0.0111,
+    "flow_rate": 0.0317,
     "power": 459.0,
     "sigma": null,
     "heat_flux": null
   },
   "A07_A07_13_outlet_patch": {
     "bc_type": "fan_outlet",
-    "temperature": 59.2539358443931,
-    "flow_rate": 0.0111,
+    "temperature": 36.99428037453512,
+    "flow_rate": 0.0317,
     "power": 459.0,
     "sigma": null,
     "heat_flux": null
@@ -2098,15 +2098,15 @@
   "A07_A07_15_inlet_patch": {
     "bc_type": "fan_inlet",
     "temperature": null,
-    "flow_rate": 0.0111,
+    "flow_rate": 0.0269,
     "power": 389.0,
     "sigma": null,
     "heat_flux": null
   },
   "A07_A07_15_outlet_patch": {
     "bc_type": "fan_outlet",
-    "temperature": 54.03002405984513,
-    "flow_rate": 0.0111,
+    "temperature": 36.97893186112569,
+    "flow_rate": 0.0269,
     "power": 389.0,
     "sigma": null,
     "heat_flux": null
@@ -2114,15 +2114,15 @@
   "A07_A07_17_inlet_patch": {
     "bc_type": "fan_inlet",
     "temperature": null,
-    "flow_rate": 0.0111,
+    "flow_rate": 0.0269,
     "power": 389.0,
     "sigma": null,
     "heat_flux": null
   },
   "A07_A07_17_outlet_patch": {
     "bc_type": "fan_outlet",
-    "temperature": 54.03002405984513,
-    "flow_rate": 0.0111,
+    "temperature": 36.97893186112569,
+    "flow_rate": 0.0269,
     "power": 389.0,
     "sigma": null,
     "heat_flux": null
@@ -2130,15 +2130,15 @@
   "A07_A07_19_inlet_patch": {
     "bc_type": "fan_inlet",
     "temperature": null,
-    "flow_rate": 0.0111,
+    "flow_rate": 0.0289,
     "power": 419.0,
     "sigma": null,
     "heat_flux": null
   },
   "A07_A07_19_outlet_patch": {
     "bc_type": "fan_outlet",
-    "temperature": 56.26884339607997,
-    "flow_rate": 0.0111,
+    "temperature": 37.00983258465355,
+    "flow_rate": 0.0289,
     "power": 419.0,
     "sigma": null,
     "heat_flux": null
@@ -2514,15 +2514,15 @@
   "A06_A06_35_inlet_patch": {
     "bc_type": "fan_inlet",
     "temperature": null,
-    "flow_rate": 0.0111,
+    "flow_rate": 0.0235,
     "power": 340.0,
     "sigma": null,
     "heat_flux": null
   },
   "A06_A06_35_outlet_patch": {
     "bc_type": "fan_outlet",
-    "temperature": 50.37328581066156,
-    "flow_rate": 0.0111,
+    "temperature": 36.98482861695078,
+    "flow_rate": 0.0235,
     "power": 340.0,
     "sigma": null,
     "heat_flux": null
@@ -2962,15 +2962,15 @@
   "A04_A04_35_inlet_patch": {
     "bc_type": "fan_inlet",
     "temperature": null,
-    "flow_rate": 0.0111,
+    "flow_rate": 0.0252,
     "power": 365.0,
     "sigma": null,
     "heat_flux": null
   },
   "A04_A04_35_outlet_patch": {
     "bc_type": "fan_outlet",
-    "temperature": 52.238968590857255,
-    "flow_rate": 0.0111,
+    "temperature": 36.998117117401414,
+    "flow_rate": 0.0252,
     "power": 365.0,
     "sigma": null,
     "heat_flux": null
@@ -3106,15 +3106,15 @@
   "A03_A03_21_inlet_patch": {
     "bc_type": "fan_inlet",
     "temperature": null,
-    "flow_rate": 0.0111,
+    "flow_rate": 0.0221,
     "power": 320.0,
     "sigma": null,
     "heat_flux": null
   },
   "A03_A03_21_outlet_patch": {
     "bc_type": "fan_outlet",
-    "temperature": 48.88073958650499,
-    "flow_rate": 0.0111,
+    "temperature": 36.9943986158464,
+    "flow_rate": 0.0221,
     "power": 320.0,
     "sigma": null,
     "heat_flux": null
@@ -3858,15 +3858,15 @@
   "B15_B15_25_inlet_patch": {
     "bc_type": "fan_inlet",
     "temperature": null,
-    "flow_rate": 0.0111,
+    "flow_rate": 0.0221,
     "power": 320.0,
     "sigma": null,
     "heat_flux": null
   },
   "B15_B15_25_outlet_patch": {
     "bc_type": "fan_outlet",
-    "temperature": 48.88073958650499,
-    "flow_rate": 0.0111,
+    "temperature": 36.9943986158464,
+    "flow_rate": 0.0221,
     "power": 320.0,
     "sigma": null,
     "heat_flux": null
@@ -4082,15 +4082,15 @@
   "B14_B14_21_inlet_patch": {
     "bc_type": "fan_inlet",
     "temperature": null,
-    "flow_rate": 0.0111,
+    "flow_rate": 0.0235,
     "power": 340.0,
     "sigma": null,
     "heat_flux": null
   },
   "B14_B14_21_outlet_patch": {
     "bc_type": "fan_outlet",
-    "temperature": 50.37328581066156,
-    "flow_rate": 0.0111,
+    "temperature": 36.98482861695078,
+    "flow_rate": 0.0235,
     "power": 340.0,
     "sigma": null,
     "heat_flux": null
@@ -4306,15 +4306,15 @@
   "B13_B13_23_inlet_patch": {
     "bc_type": "fan_inlet",
     "temperature": null,
-    "flow_rate": 0.0111,
+    "flow_rate": 0.0235,
     "power": 340.0,
     "sigma": null,
     "heat_flux": null
   },
   "B13_B13_23_outlet_patch": {
     "bc_type": "fan_outlet",
-    "temperature": 50.37328581066156,
-    "flow_rate": 0.0111,
+    "temperature": 36.98482861695078,
+    "flow_rate": 0.0235,
     "power": 340.0,
     "sigma": null,
     "heat_flux": null
@@ -4562,15 +4562,15 @@
   "B12_B12_25_inlet_patch": {
     "bc_type": "fan_inlet",
     "temperature": null,
-    "flow_rate": 0.0111,
+    "flow_rate": 0.0249,
     "power": 360.0,
     "sigma": null,
     "heat_flux": null
   },
   "B12_B12_25_outlet_patch": {
     "bc_type": "fan_outlet",
-    "temperature": 51.86583203481811,
-    "flow_rate": 0.0111,
+    "temperature": 36.97633476250928,
+    "flow_rate": 0.0249,
     "power": 360.0,
     "sigma": null,
     "heat_flux": null
@@ -5010,15 +5010,15 @@
   "B10_B10_25_inlet_patch": {
     "bc_type": "fan_inlet",
     "temperature": null,
-    "flow_rate": 0.0111,
+    "flow_rate": 0.0235,
     "power": 340.0,
     "sigma": null,
     "heat_flux": null
   },
   "B10_B10_25_outlet_patch": {
     "bc_type": "fan_outlet",
-    "temperature": 50.37328581066156,
-    "flow_rate": 0.0111,
+    "temperature": 36.98482861695078,
+    "flow_rate": 0.0235,
     "power": 340.0,
     "sigma": null,
     "heat_flux": null
@@ -5282,15 +5282,15 @@
   "B09_B09_25_inlet_patch": {
     "bc_type": "fan_inlet",
     "temperature": null,
-    "flow_rate": 0.0111,
+    "flow_rate": 0.0235,
     "power": 340.0,
     "sigma": null,
     "heat_flux": null
   },
   "B09_B09_25_outlet_patch": {
     "bc_type": "fan_outlet",
-    "temperature": 50.37328581066156,
-    "flow_rate": 0.0111,
+    "temperature": 36.98482861695078,
+    "flow_rate": 0.0235,
     "power": 340.0,
     "sigma": null,
     "heat_flux": null
@@ -5714,15 +5714,15 @@
   "B07_B07_25_inlet_patch": {
     "bc_type": "fan_inlet",
     "temperature": null,
-    "flow_rate": 0.0111,
+    "flow_rate": 0.0221,
     "power": 320.0,
     "sigma": null,
     "heat_flux": null
   },
   "B07_B07_25_outlet_patch": {
     "bc_type": "fan_outlet",
-    "temperature": 48.88073958650499,
-    "flow_rate": 0.0111,
+    "temperature": 36.9943986158464,
+    "flow_rate": 0.0221,
     "power": 320.0,
     "sigma": null,
     "heat_flux": null
@@ -6002,15 +6002,15 @@
   "B06_B06_27_inlet_patch": {
     "bc_type": "fan_inlet",
     "temperature": null,
-    "flow_rate": 0.0111,
+    "flow_rate": 0.0214,
     "power": 310.0,
     "sigma": null,
     "heat_flux": null
   },
   "B06_B06_27_outlet_patch": {
     "bc_type": "fan_outlet",
-    "temperature": 48.13446647442671,
-    "flow_rate": 0.0111,
+    "temperature": 36.99965317131479,
+    "flow_rate": 0.0214,
     "power": 310.0,
     "sigma": null,
     "heat_flux": null
@@ -6466,15 +6466,15 @@
   "B04_B04_27_inlet_patch": {
     "bc_type": "fan_inlet",
     "temperature": null,
-    "flow_rate": 0.0111,
+    "flow_rate": 0.0221,
     "power": 320.0,
     "sigma": null,
     "heat_flux": null
   },
   "B04_B04_27_outlet_patch": {
     "bc_type": "fan_outlet",
-    "temperature": 48.88073958650499,
-    "flow_rate": 0.0111,
+    "temperature": 36.9943986158464,
+    "flow_rate": 0.0221,
     "power": 320.0,
     "sigma": null,
     "heat_flux": null
@@ -6722,15 +6722,15 @@
   "B03_B03_27_inlet_patch": {
     "bc_type": "fan_inlet",
     "temperature": null,
-    "flow_rate": 0.0111,
+    "flow_rate": 0.0228,
     "power": 330.0,
     "sigma": null,
     "heat_flux": null
   },
   "B03_B03_27_outlet_patch": {
     "bc_type": "fan_outlet",
-    "temperature": 49.62701269858327,
-    "flow_rate": 0.0111,
+    "temperature": 36.98946670852081,
+    "flow_rate": 0.0228,
     "power": 330.0,
     "sigma": null,
     "heat_flux": null
@@ -7170,15 +7170,15 @@
   "B01_B01_25_inlet_patch": {
     "bc_type": "fan_inlet",
     "temperature": null,
-    "flow_rate": 0.0111,
+    "flow_rate": 0.0235,
     "power": 340.0,
     "sigma": null,
     "heat_flux": null
   },
   "B01_B01_25_outlet_patch": {
     "bc_type": "fan_outlet",
-    "temperature": 50.37328581066156,
-    "flow_rate": 0.0111,
+    "temperature": 36.98482861695078,
+    "flow_rate": 0.0235,
     "power": 340.0,
     "sigma": null,
     "heat_flux": null
@@ -7970,15 +7970,15 @@
   "C12_C12_13_inlet_patch": {
     "bc_type": "fan_inlet",
     "temperature": null,
-    "flow_rate": 0.0111,
+    "flow_rate": 0.0228,
     "power": 330.0,
     "sigma": null,
     "heat_flux": null
   },
   "C12_C12_13_outlet_patch": {
     "bc_type": "fan_outlet",
-    "temperature": 49.62701269858327,
-    "flow_rate": 0.0111,
+    "temperature": 36.98946670852081,
+    "flow_rate": 0.0228,
     "power": 330.0,
     "sigma": null,
     "heat_flux": null
@@ -8578,15 +8578,15 @@
   "C07_C07_21_inlet_patch": {
     "bc_type": "fan_inlet",
     "temperature": null,
-    "flow_rate": 0.0703,
+    "flow_rate": 0.1201,
     "power": 1740.0,
     "sigma": null,
     "heat_flux": null
   },
   "C07_C07_21_outlet_patch": {
     "bc_type": "fan_outlet",
-    "temperature": 45.5028718160454,
-    "flow_rate": 0.0703,
+    "temperature": 37.00126468499577,
+    "flow_rate": 0.1201,
     "power": 1740.0,
     "sigma": null,
     "heat_flux": null
@@ -8594,15 +8594,15 @@
   "C07_C07_29_inlet_patch": {
     "bc_type": "fan_inlet",
     "temperature": null,
-    "flow_rate": 0.0703,
+    "flow_rate": 0.1229,
     "power": 1780.0,
     "sigma": null,
     "heat_flux": null
   },
   "C07_C07_29_outlet_patch": {
     "bc_type": "fan_outlet",
-    "temperature": 45.97420220262116,
-    "flow_rate": 0.0703,
+    "temperature": 36.99744845276052,
+    "flow_rate": 0.1229,
     "power": 1780.0,
     "sigma": null,
     "heat_flux": null
@@ -8610,15 +8610,15 @@
   "C07_C07_37_inlet_patch": {
     "bc_type": "fan_inlet",
     "temperature": null,
-    "flow_rate": 0.0703,
+    "flow_rate": 0.1222,
     "power": 1770.0,
     "sigma": null,
     "heat_flux": null
   },
   "C07_C07_37_outlet_patch": {
     "bc_type": "fan_outlet",
-    "temperature": 45.85636960597722,
-    "flow_rate": 0.0703,
+    "temperature": 36.99838611538624,
+    "flow_rate": 0.1222,
     "power": 1770.0,
     "sigma": null,
     "heat_flux": null
@@ -9522,15 +9522,15 @@
   "D16_D16_11_inlet_patch": {
     "bc_type": "fan_inlet",
     "temperature": null,
-    "flow_rate": 0.0099,
+    "flow_rate": 0.0193,
     "power": 280.0,
     "sigma": null,
     "heat_flux": null
   },
   "D16_D16_11_outlet_patch": {
     "bc_type": "fan_outlet",
-    "temperature": 48.4284528519121,
-    "flow_rate": 0.0099,
+    "temperature": 37.01770379450413,
+    "flow_rate": 0.0193,
     "power": 280.0,
     "sigma": null,
     "heat_flux": null
@@ -9570,15 +9570,15 @@
   "D16_D16_14_inlet_patch": {
     "bc_type": "fan_inlet",
     "temperature": null,
-    "flow_rate": 0.0099,
+    "flow_rate": 0.0193,
     "power": 280.0,
     "sigma": null,
     "heat_flux": null
   },
   "D16_D16_14_outlet_patch": {
     "bc_type": "fan_outlet",
-    "temperature": 48.4284528519121,
-    "flow_rate": 0.0099,
+    "temperature": 37.01770379450413,
+    "flow_rate": 0.0193,
     "power": 280.0,
     "sigma": null,
     "heat_flux": null
@@ -11682,15 +11682,15 @@
   "E14_E14_21_inlet_patch": {
     "bc_type": "fan_inlet",
     "temperature": null,
-    "flow_rate": 0.0111,
+    "flow_rate": 0.0221,
     "power": 320.0,
     "sigma": null,
     "heat_flux": null
   },
   "E14_E14_21_outlet_patch": {
     "bc_type": "fan_outlet",
-    "temperature": 48.88073958650499,
-    "flow_rate": 0.0111,
+    "temperature": 36.9943986158464,
+    "flow_rate": 0.0221,
     "power": 320.0,
     "sigma": null,
     "heat_flux": null
@@ -12034,15 +12034,15 @@
   "E13_E13_33_inlet_patch": {
     "bc_type": "fan_inlet",
     "temperature": null,
-    "flow_rate": 0.0111,
+    "flow_rate": 0.0248,
     "power": 359.0,
     "sigma": null,
     "heat_flux": null
   },
   "E13_E13_33_outlet_patch": {
     "bc_type": "fan_outlet",
-    "temperature": 51.79120472361029,
-    "flow_rate": 0.0111,
+    "temperature": 36.991224694841705,
+    "flow_rate": 0.0248,
     "power": 359.0,
     "sigma": null,
     "heat_flux": null
@@ -12226,15 +12226,15 @@
   "E12_E12_25_inlet_patch": {
     "bc_type": "fan_inlet",
     "temperature": null,
-    "flow_rate": 0.0111,
+    "flow_rate": 0.0261,
     "power": 378.0,
     "sigma": null,
     "heat_flux": null
   },
   "E12_E12_25_outlet_patch": {
     "bc_type": "fan_outlet",
-    "temperature": 53.20912363655902,
-    "flow_rate": 0.0111,
+    "temperature": 36.99698361554809,
+    "flow_rate": 0.0261,
     "power": 378.0,
     "sigma": null,
     "heat_flux": null
@@ -15554,15 +15554,15 @@
   "F07_F07_15_inlet_patch": {
     "bc_type": "fan_inlet",
     "temperature": null,
-    "flow_rate": 0.0111,
+    "flow_rate": 0.0253,
     "power": 366.0,
     "sigma": null,
     "heat_flux": null
   },
   "F07_F07_15_outlet_patch": {
     "bc_type": "fan_outlet",
-    "temperature": 52.31359590206509,
-    "flow_rate": 0.0111,
+    "temperature": 36.983435356242,
+    "flow_rate": 0.0253,
     "power": 366.0,
     "sigma": null,
     "heat_flux": null
@@ -16978,15 +16978,15 @@
   "G17_G17_14_inlet_patch": {
     "bc_type": "fan_inlet",
     "temperature": null,
-    "flow_rate": 0.0099,
+    "flow_rate": 0.0262,
     "power": 380.0,
     "sigma": null,
     "heat_flux": null
   },
   "G17_G17_14_outlet_patch": {
     "bc_type": "fan_outlet",
-    "temperature": 56.795757441880696,
-    "flow_rate": 0.0099,
+    "temperature": 37.014427430328965,
+    "flow_rate": 0.0262,
     "power": 380.0,
     "sigma": null,
     "heat_flux": null
@@ -17122,15 +17122,15 @@
   "G16_G16_14_inlet_patch": {
     "bc_type": "fan_inlet",
     "temperature": null,
-    "flow_rate": 0.0099,
+    "flow_rate": 0.0249,
     "power": 360.0,
     "sigma": null,
     "heat_flux": null
   },
   "G16_G16_14_outlet_patch": {
     "bc_type": "fan_outlet",
-    "temperature": 55.12229652388698,
-    "flow_rate": 0.0099,
+    "temperature": 36.97633476250928,
+    "flow_rate": 0.0249,
     "power": 360.0,
     "sigma": null,
     "heat_flux": null
@@ -17698,15 +17698,15 @@
   "G11_G11_01_inlet_patch": {
     "bc_type": "fan_inlet",
     "temperature": null,
-    "flow_rate": 0.0576,
+    "flow_rate": 0.1001,
     "power": 1450.0,
     "sigma": null,
     "heat_flux": null
   },
   "G11_G11_01_outlet_patch": {
     "bc_type": "fan_outlet",
-    "temperature": 45.85289190781238,
-    "flow_rate": 0.0576,
+    "temperature": 36.99926647242751,
+    "flow_rate": 0.1001,
     "power": 1450.0,
     "sigma": null,
     "heat_flux": null
@@ -17714,15 +17714,15 @@
   "G11_G11_06_inlet_patch": {
     "bc_type": "fan_inlet",
     "temperature": null,
-    "flow_rate": 0.0576,
+    "flow_rate": 0.1008,
     "power": 1460.0,
     "sigma": null,
     "heat_flux": null
   },
   "G11_G11_06_outlet_patch": {
     "bc_type": "fan_outlet",
-    "temperature": 45.99670495545247,
-    "flow_rate": 0.0576,
+    "temperature": 36.998117117401414,
+    "flow_rate": 0.1008,
     "power": 1460.0,
     "sigma": null,
     "heat_flux": null
@@ -17762,15 +17762,15 @@
   "G11_G11_21_inlet_patch": {
     "bc_type": "fan_inlet",
     "temperature": null,
-    "flow_rate": 0.0214,
+    "flow_rate": 0.0415,
     "power": 601.0,
     "sigma": null,
     "heat_flux": null
   },
   "G11_G11_21_outlet_patch": {
     "bc_type": "fan_outlet",
-    "temperature": 48.26384372890384,
-    "flow_rate": 0.0214,
+    "temperature": 36.9962953204468,
+    "flow_rate": 0.0415,
     "power": 601.0,
     "sigma": null,
     "heat_flux": null
@@ -17778,15 +17778,15 @@
   "G11_G11_29_inlet_patch": {
     "bc_type": "fan_inlet",
     "temperature": null,
-    "flow_rate": 0.0214,
+    "flow_rate": 0.0429,
     "power": 621.0,
     "sigma": null,
     "heat_flux": null
   },
   "G11_G11_29_outlet_patch": {
     "bc_type": "fan_outlet",
-    "temperature": 49.038014901246726,
-    "flow_rate": 0.0214,
+    "temperature": 36.99099111623963,
+    "flow_rate": 0.0429,
     "power": 621.0,
     "sigma": null,
     "heat_flux": null
@@ -17794,15 +17794,15 @@
   "G11_G11_37_inlet_patch": {
     "bc_type": "fan_inlet",
     "temperature": null,
-    "flow_rate": 0.0214,
+    "flow_rate": 0.0415,
     "power": 601.0,
     "sigma": null,
     "heat_flux": null
   },
   "G11_G11_37_outlet_patch": {
     "bc_type": "fan_outlet",
-    "temperature": 48.26384372890384,
-    "flow_rate": 0.0214,
+    "temperature": 36.9962953204468,
+    "flow_rate": 0.0415,
     "power": 601.0,
     "sigma": null,
     "heat_flux": null
@@ -19586,15 +19586,15 @@
   "H14_H14_01_inlet_patch": {
     "bc_type": "fan_inlet",
     "temperature": null,
-    "flow_rate": 0.0576,
+    "flow_rate": 0.0994,
     "power": 1440.0,
     "sigma": null,
     "heat_flux": null
   },
   "H14_H14_01_outlet_patch": {
     "bc_type": "fan_outlet",
-    "temperature": 45.7090788601723,
-    "flow_rate": 0.0576,
+    "temperature": 37.00043201555256,
+    "flow_rate": 0.0994,
     "power": 1440.0,
     "sigma": null,
     "heat_flux": null
@@ -19618,15 +19618,15 @@
   "H14_H14_17_inlet_patch": {
     "bc_type": "fan_inlet",
     "temperature": null,
-    "flow_rate": 0.0214,
+    "flow_rate": 0.0415,
     "power": 601.0,
     "sigma": null,
     "heat_flux": null
   },
   "H14_H14_17_outlet_patch": {
     "bc_type": "fan_outlet",
-    "temperature": 48.26384372890384,
-    "flow_rate": 0.0214,
+    "temperature": 36.9962953204468,
+    "flow_rate": 0.0415,
     "power": 601.0,
     "sigma": null,
     "heat_flux": null
@@ -19634,15 +19634,15 @@
   "H14_H14_25_inlet_patch": {
     "bc_type": "fan_inlet",
     "temperature": null,
-    "flow_rate": 0.0214,
+    "flow_rate": 0.038,
     "power": 551.0,
     "sigma": null,
     "heat_flux": null
   },
   "H14_H14_25_outlet_patch": {
     "bc_type": "fan_outlet",
-    "temperature": 46.328415798046606,
-    "flow_rate": 0.0214,
+    "temperature": 37.01126573889994,
+    "flow_rate": 0.038,
     "power": 551.0,
     "sigma": null,
     "heat_flux": null
@@ -19650,15 +19650,15 @@
   "H14_H14_33_inlet_patch": {
     "bc_type": "fan_inlet",
     "temperature": null,
-    "flow_rate": 0.0214,
+    "flow_rate": 0.0415,
     "power": 601.0,
     "sigma": null,
     "heat_flux": null
   },
   "H14_H14_33_outlet_patch": {
     "bc_type": "fan_outlet",
-    "temperature": 48.26384372890384,
-    "flow_rate": 0.0214,
+    "temperature": 36.9962953204468,
+    "flow_rate": 0.0415,
     "power": 601.0,
     "sigma": null,
     "heat_flux": null
@@ -20818,15 +20818,15 @@
   "H03_H03_01_inlet_patch": {
     "bc_type": "fan_inlet",
     "temperature": null,
-    "flow_rate": 0.0576,
+    "flow_rate": 0.1008,
     "power": 1460.0,
     "sigma": null,
     "heat_flux": null
   },
   "H03_H03_01_outlet_patch": {
     "bc_type": "fan_outlet",
-    "temperature": 45.99670495545247,
-    "flow_rate": 0.0576,
+    "temperature": 36.998117117401414,
+    "flow_rate": 0.1008,
     "power": 1460.0,
     "sigma": null,
     "heat_flux": null
@@ -20834,15 +20834,15 @@
   "H03_H03_06_inlet_patch": {
     "bc_type": "fan_inlet",
     "temperature": null,
-    "flow_rate": 0.0576,
+    "flow_rate": 0.1015,
     "power": 1470.0,
     "sigma": null,
     "heat_flux": null
   },
   "H03_H03_06_outlet_patch": {
     "bc_type": "fan_outlet",
-    "temperature": 46.14051800309255,
-    "flow_rate": 0.0576,
+    "temperature": 36.99698361554809,
+    "flow_rate": 0.1015,
     "power": 1470.0,
     "sigma": null,
     "heat_flux": null
@@ -20882,15 +20882,15 @@
   "H03_H03_21_inlet_patch": {
     "bc_type": "fan_inlet",
     "temperature": null,
-    "flow_rate": 0.0214,
+    "flow_rate": 0.0444,
     "power": 643.0,
     "sigma": null,
     "heat_flux": null
   },
   "H03_H03_21_outlet_patch": {
     "bc_type": "fan_outlet",
-    "temperature": 49.889603190823905,
-    "flow_rate": 0.0214,
+    "temperature": 36.996340276658366,
+    "flow_rate": 0.0444,
     "power": 643.0,
     "sigma": null,
     "heat_flux": null
@@ -20898,15 +20898,15 @@
   "H03_H03_29_inlet_patch": {
     "bc_type": "fan_inlet",
     "temperature": null,
-    "flow_rate": 0.0214,
+    "flow_rate": 0.0396,
     "power": 573.0,
     "sigma": null,
     "heat_flux": null
   },
   "H03_H03_29_outlet_patch": {
     "bc_type": "fan_outlet",
-    "temperature": 47.180004087623786,
-    "flow_rate": 0.0214,
+    "temperature": 36.98616382513003,
+    "flow_rate": 0.0396,
     "power": 573.0,
     "sigma": null,
     "heat_flux": null
@@ -20914,15 +20914,15 @@
   "H03_H03_37_inlet_patch": {
     "bc_type": "fan_inlet",
     "temperature": null,
-    "flow_rate": 0.0214,
+    "flow_rate": 0.0437,
     "power": 633.0,
     "sigma": null,
     "heat_flux": null
   },
   "H03_H03_37_outlet_patch": {
     "bc_type": "fan_outlet",
-    "temperature": 49.50251760465246,
-    "flow_rate": 0.0214,
+    "temperature": 36.99894454781608,
+    "flow_rate": 0.0437,
     "power": 633.0,
     "sigma": null,
     "heat_flux": null
@@ -21074,15 +21074,15 @@
   "H01_H01_11_inlet_patch": {
     "bc_type": "fan_inlet",
     "temperature": null,
-    "flow_rate": 0.0111,
+    "flow_rate": 0.0377,
     "power": 546.0,
     "sigma": null,
     "heat_flux": null
   },
   "H01_H01_11_outlet_patch": {
     "bc_type": "fan_outlet",
-    "temperature": 65.74651191947414,
-    "flow_rate": 0.0111,
+    "temperature": 36.99698361554809,
+    "flow_rate": 0.0377,
     "power": 546.0,
     "sigma": null,
     "heat_flux": null
@@ -21090,15 +21090,15 @@
   "H01_H01_13_inlet_patch": {
     "bc_type": "fan_inlet",
     "temperature": null,
-    "flow_rate": 0.0111,
+    "flow_rate": 0.037,
     "power": 536.0,
     "sigma": null,
     "heat_flux": null
   },
   "H01_H01_13_outlet_patch": {
     "bc_type": "fan_outlet",
-    "temperature": 65.00023880739586,
-    "flow_rate": 0.0111,
+    "temperature": 37.00007164221876,
+    "flow_rate": 0.037,
     "power": 536.0,
     "sigma": null,
     "heat_flux": null
@@ -21106,15 +21106,15 @@
   "H01_H01_21_inlet_patch": {
     "bc_type": "fan_inlet",
     "temperature": null,
-    "flow_rate": 0.0214,
+    "flow_rate": 0.0432,
     "power": 626.0,
     "sigma": null,
     "heat_flux": null
   },
   "H01_H01_21_outlet_patch": {
     "bc_type": "fan_outlet",
-    "temperature": 49.23155769433245,
-    "flow_rate": 0.0214,
+    "temperature": 37.00359570969246,
+    "flow_rate": 0.0432,
     "power": 626.0,
     "sigma": null,
     "heat_flux": null
@@ -21122,15 +21122,15 @@
   "H01_H01_29_inlet_patch": {
     "bc_type": "fan_inlet",
     "temperature": null,
-    "flow_rate": 0.0214,
+    "flow_rate": 0.0446,
     "power": 646.0,
     "sigma": null,
     "heat_flux": null
   },
   "H01_H01_29_outlet_patch": {
     "bc_type": "fan_outlet",
-    "temperature": 50.00572886667534,
-    "flow_rate": 0.0214,
+    "temperature": 36.998264523472024,
+    "flow_rate": 0.0446,
     "power": 646.0,
     "sigma": null,
     "heat_flux": null
@@ -21138,15 +21138,15 @@
   "H01_H01_37_inlet_patch": {
     "bc_type": "fan_inlet",
     "temperature": null,
-    "flow_rate": 0.0214,
+    "flow_rate": 0.0432,
     "power": 626.0,
     "sigma": null,
     "heat_flux": null
   },
   "H01_H01_37_outlet_patch": {
     "bc_type": "fan_outlet",
-    "temperature": 49.23155769433245,
-    "flow_rate": 0.0214,
+    "temperature": 37.00359570969246,
+    "flow_rate": 0.0432,
     "power": 626.0,
     "sigma": null,
     "heat_flux": null
@@ -22082,15 +22082,15 @@
   "I11_I11_17_inlet_patch": {
     "bc_type": "fan_inlet",
     "temperature": null,
-    "flow_rate": 0.0214,
+    "flow_rate": 0.0382,
     "power": 554.0,
     "sigma": null,
     "heat_flux": null
   },
   "I11_I11_17_outlet_patch": {
     "bc_type": "fan_outlet",
-    "temperature": 46.44454147389804,
-    "flow_rate": 0.0214,
+    "temperature": 37.013434228832935,
+    "flow_rate": 0.0382,
     "power": 554.0,
     "sigma": null,
     "heat_flux": null
@@ -22098,15 +22098,15 @@
   "I11_I11_25_inlet_patch": {
     "bc_type": "fan_inlet",
     "temperature": null,
-    "flow_rate": 0.0214,
+    "flow_rate": 0.0431,
     "power": 624.0,
     "sigma": null,
     "heat_flux": null
   },
   "I11_I11_25_outlet_patch": {
     "bc_type": "fan_outlet",
-    "temperature": 49.15414057709816,
-    "flow_rate": 0.0214,
+    "temperature": 36.99300715429004,
+    "flow_rate": 0.0431,
     "power": 624.0,
     "sigma": null,
     "heat_flux": null
@@ -22114,15 +22114,15 @@
   "I11_I11_33_inlet_patch": {
     "bc_type": "fan_inlet",
     "temperature": null,
-    "flow_rate": 0.0214,
+    "flow_rate": 0.0445,
     "power": 644.0,
     "sigma": null,
     "heat_flux": null
   },
   "I11_I11_33_outlet_patch": {
     "bc_type": "fan_outlet",
-    "temperature": 49.92831174944105,
-    "flow_rate": 0.0214,
+    "temperature": 36.98799711096716,
+    "flow_rate": 0.0445,
     "power": 644.0,
     "sigma": null,
     "heat_flux": null
@@ -22754,15 +22754,15 @@
   "I05_I05_17_inlet_patch": {
     "bc_type": "fan_inlet",
     "temperature": null,
-    "flow_rate": 0.0214,
+    "flow_rate": 0.04,
     "power": 579.0,
     "sigma": null,
     "heat_flux": null
   },
   "I05_I05_17_outlet_patch": {
     "bc_type": "fan_outlet",
-    "temperature": 47.41225543932666,
-    "flow_rate": 0.0214,
+    "temperature": 36.99055666003976,
+    "flow_rate": 0.04,
     "power": 579.0,
     "sigma": null,
     "heat_flux": null
@@ -22770,15 +22770,15 @@
   "I05_I05_25_inlet_patch": {
     "bc_type": "fan_inlet",
     "temperature": null,
-    "flow_rate": 0.0214,
+    "flow_rate": 0.0413,
     "power": 599.0,
     "sigma": null,
     "heat_flux": null
   },
   "I05_I05_25_outlet_patch": {
     "bc_type": "fan_outlet",
-    "temperature": 48.186426611669546,
-    "flow_rate": 0.0214,
+    "temperature": 37.01427432178519,
+    "flow_rate": 0.0413,
     "power": 599.0,
     "sigma": null,
     "heat_flux": null
@@ -22786,15 +22786,15 @@
   "I05_I05_33_inlet_patch": {
     "bc_type": "fan_inlet",
     "temperature": null,
-    "flow_rate": 0.0214,
+    "flow_rate": 0.04,
     "power": 579.0,
     "sigma": null,
     "heat_flux": null
   },
   "I05_I05_33_outlet_patch": {
     "bc_type": "fan_outlet",
-    "temperature": 47.41225543932666,
-    "flow_rate": 0.0214,
+    "temperature": 36.99055666003976,
+    "flow_rate": 0.04,
     "power": 579.0,
     "sigma": null,
     "heat_flux": null
@@ -31999,7 +31999,103 @@
     "sigma": null,
     "heat_flux": null
   },
-  "AHU_partition_copy_copy_Front_patch_1_master": {
+  "AHU_partition_copy_master": {
+    "bc_type": "wall_baffle",
+    "temperature": null,
+    "flow_rate": null,
+    "power": null,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "AHU_partition_copy_slave": {
+    "bc_type": "wall_baffle",
+    "temperature": null,
+    "flow_rate": null,
+    "power": null,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "Baffle_3_master": {
+    "bc_type": "wall_baffle",
+    "temperature": null,
+    "flow_rate": null,
+    "power": null,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "Baffle_3_slave": {
+    "bc_type": "wall_baffle",
+    "temperature": null,
+    "flow_rate": null,
+    "power": null,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "Baffle_4_master": {
+    "bc_type": "wall_baffle",
+    "temperature": null,
+    "flow_rate": null,
+    "power": null,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "Baffle_4_slave": {
+    "bc_type": "wall_baffle",
+    "temperature": null,
+    "flow_rate": null,
+    "power": null,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "Baffle_4_copy_master": {
+    "bc_type": "wall_baffle",
+    "temperature": null,
+    "flow_rate": null,
+    "power": null,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "Baffle_4_copy_slave": {
+    "bc_type": "wall_baffle",
+    "temperature": null,
+    "flow_rate": null,
+    "power": null,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "Baffle_6_master": {
+    "bc_type": "wall_baffle",
+    "temperature": null,
+    "flow_rate": null,
+    "power": null,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "Baffle_6_slave": {
+    "bc_type": "wall_baffle",
+    "temperature": null,
+    "flow_rate": null,
+    "power": null,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "Baffle_7_master": {
+    "bc_type": "wall_baffle",
+    "temperature": null,
+    "flow_rate": null,
+    "power": null,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "Baffle_7_slave": {
+    "bc_type": "wall_baffle",
+    "temperature": null,
+    "flow_rate": null,
+    "power": null,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "AHU_partition_copy_copy_patch_1_master": {
     "bc_type": "perforated_baffle",
     "temperature": null,
     "flow_rate": null,
@@ -32007,7 +32103,7 @@
     "sigma": 0.9,
     "heat_flux": null
   },
-  "AHU_partition_copy_copy_Front_patch_1_slave": {
+  "AHU_partition_copy_copy_patch_1_slave": {
     "bc_type": "perforated_baffle",
     "temperature": null,
     "flow_rate": null,
@@ -32015,7 +32111,7 @@
     "sigma": 0.9,
     "heat_flux": null
   },
-  "AHU_partition_copy_copy_Front_patch_2_master": {
+  "AHU_partition_copy_copy_patch_2_master": {
     "bc_type": "perforated_baffle",
     "temperature": null,
     "flow_rate": null,
@@ -32023,7 +32119,7 @@
     "sigma": 0.9,
     "heat_flux": null
   },
-  "AHU_partition_copy_copy_Front_patch_2_slave": {
+  "AHU_partition_copy_copy_patch_2_slave": {
     "bc_type": "perforated_baffle",
     "temperature": null,
     "flow_rate": null,
@@ -32031,7 +32127,7 @@
     "sigma": 0.9,
     "heat_flux": null
   },
-  "AHU_partition_copy_copy_Front_patch_3_master": {
+  "AHU_partition_copy_copy_patch_3_master": {
     "bc_type": "perforated_baffle",
     "temperature": null,
     "flow_rate": null,
@@ -32039,7 +32135,7 @@
     "sigma": 0.9,
     "heat_flux": null
   },
-  "AHU_partition_copy_copy_Front_patch_3_slave": {
+  "AHU_partition_copy_copy_patch_3_slave": {
     "bc_type": "perforated_baffle",
     "temperature": null,
     "flow_rate": null,
@@ -32047,7 +32143,7 @@
     "sigma": 0.9,
     "heat_flux": null
   },
-  "AHU_partition_copy_copy_Front_patch_4_master": {
+  "AHU_partition_copy_copy_patch_4_master": {
     "bc_type": "perforated_baffle",
     "temperature": null,
     "flow_rate": null,
@@ -32055,7 +32151,7 @@
     "sigma": 0.9,
     "heat_flux": null
   },
-  "AHU_partition_copy_copy_Front_patch_4_slave": {
+  "AHU_partition_copy_copy_patch_4_slave": {
     "bc_type": "perforated_baffle",
     "temperature": null,
     "flow_rate": null,
@@ -32063,7 +32159,7 @@
     "sigma": 0.9,
     "heat_flux": null
   },
-  "AHU_partition_copy_copy_Front_patch_5_master": {
+  "AHU_partition_copy_copy_patch_5_master": {
     "bc_type": "perforated_baffle",
     "temperature": null,
     "flow_rate": null,
@@ -32071,7 +32167,7 @@
     "sigma": 0.9,
     "heat_flux": null
   },
-  "AHU_partition_copy_copy_Front_patch_5_slave": {
+  "AHU_partition_copy_copy_patch_5_slave": {
     "bc_type": "perforated_baffle",
     "temperature": null,
     "flow_rate": null,
@@ -32079,7 +32175,7 @@
     "sigma": 0.9,
     "heat_flux": null
   },
-  "AHU_partition_copy_copy_Front_patch_6_master": {
+  "AHU_partition_copy_copy_patch_6_master": {
     "bc_type": "perforated_baffle",
     "temperature": null,
     "flow_rate": null,
@@ -32087,7 +32183,7 @@
     "sigma": 0.9,
     "heat_flux": null
   },
-  "AHU_partition_copy_copy_Front_patch_6_slave": {
+  "AHU_partition_copy_copy_patch_6_slave": {
     "bc_type": "perforated_baffle",
     "temperature": null,
     "flow_rate": null,
@@ -32095,7 +32191,7 @@
     "sigma": 0.9,
     "heat_flux": null
   },
-  "AHU_partition_copy_copy_Front_patch_7_master": {
+  "AHU_partition_copy_copy_patch_7_master": {
     "bc_type": "perforated_baffle",
     "temperature": null,
     "flow_rate": null,
@@ -32103,7 +32199,7 @@
     "sigma": 0.9,
     "heat_flux": null
   },
-  "AHU_partition_copy_copy_Front_patch_7_slave": {
+  "AHU_partition_copy_copy_patch_7_slave": {
     "bc_type": "perforated_baffle",
     "temperature": null,
     "flow_rate": null,
@@ -32111,7 +32207,23 @@
     "sigma": 0.9,
     "heat_flux": null
   },
-  "AHU_partition_copy_copy_Front_patch_9_master": {
+  "AHU_partition_copy_copy_patch_8_master": {
+    "bc_type": "wall_baffle",
+    "temperature": null,
+    "flow_rate": null,
+    "power": null,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "AHU_partition_copy_copy_patch_8_slave": {
+    "bc_type": "wall_baffle",
+    "temperature": null,
+    "flow_rate": null,
+    "power": null,
+    "sigma": null,
+    "heat_flux": null
+  },
+  "AHU_partition_copy_copy_patch_9_master": {
     "bc_type": "perforated_baffle",
     "temperature": null,
     "flow_rate": null,
@@ -32119,7 +32231,7 @@
     "sigma": 0.9,
     "heat_flux": null
   },
-  "AHU_partition_copy_copy_Front_patch_9_slave": {
+  "AHU_partition_copy_copy_patch_9_slave": {
     "bc_type": "perforated_baffle",
     "temperature": null,
     "flow_rate": null,
@@ -32127,7 +32239,7 @@
     "sigma": 0.9,
     "heat_flux": null
   },
-  "AHU_partition_copy_copy_Front_patch_10_master": {
+  "AHU_partition_copy_copy_patch_10_master": {
     "bc_type": "perforated_baffle",
     "temperature": null,
     "flow_rate": null,
@@ -32135,7 +32247,7 @@
     "sigma": 0.9,
     "heat_flux": null
   },
-  "AHU_partition_copy_copy_Front_patch_10_slave": {
+  "AHU_partition_copy_copy_patch_10_slave": {
     "bc_type": "perforated_baffle",
     "temperature": null,
     "flow_rate": null,
@@ -32143,7 +32255,7 @@
     "sigma": 0.9,
     "heat_flux": null
   },
-  "AHU_partition_copy_copy_Front_patch_11_master": {
+  "AHU_partition_copy_copy_patch_11_master": {
     "bc_type": "perforated_baffle",
     "temperature": null,
     "flow_rate": null,
@@ -32151,7 +32263,7 @@
     "sigma": 0.9,
     "heat_flux": null
   },
-  "AHU_partition_copy_copy_Front_patch_11_slave": {
+  "AHU_partition_copy_copy_patch_11_slave": {
     "bc_type": "perforated_baffle",
     "temperature": null,
     "flow_rate": null,
@@ -32159,7 +32271,7 @@
     "sigma": 0.9,
     "heat_flux": null
   },
-  "AHU_partition_copy_copy_Front_patch_12_master": {
+  "AHU_partition_copy_copy_patch_12_master": {
     "bc_type": "perforated_baffle",
     "temperature": null,
     "flow_rate": null,
@@ -32167,7 +32279,7 @@
     "sigma": 0.9,
     "heat_flux": null
   },
-  "AHU_partition_copy_copy_Front_patch_12_slave": {
+  "AHU_partition_copy_copy_patch_12_slave": {
     "bc_type": "perforated_baffle",
     "temperature": null,
     "flow_rate": null,
@@ -32175,7 +32287,7 @@
     "sigma": 0.9,
     "heat_flux": null
   },
-  "AHU_partition_copy_copy_Front_patch_13_master": {
+  "AHU_partition_copy_copy_patch_13_master": {
     "bc_type": "perforated_baffle",
     "temperature": null,
     "flow_rate": null,
@@ -32183,7 +32295,7 @@
     "sigma": 0.9,
     "heat_flux": null
   },
-  "AHU_partition_copy_copy_Front_patch_13_slave": {
+  "AHU_partition_copy_copy_patch_13_slave": {
     "bc_type": "perforated_baffle",
     "temperature": null,
     "flow_rate": null,
@@ -32191,7 +32303,7 @@
     "sigma": 0.9,
     "heat_flux": null
   },
-  "AHU_partition_copy_copy_Front_patch_14_master": {
+  "AHU_partition_copy_copy_patch_14_master": {
     "bc_type": "perforated_baffle",
     "temperature": null,
     "flow_rate": null,
@@ -32199,7 +32311,7 @@
     "sigma": 0.9,
     "heat_flux": null
   },
-  "AHU_partition_copy_copy_Front_patch_14_slave": {
+  "AHU_partition_copy_copy_patch_14_slave": {
     "bc_type": "perforated_baffle",
     "temperature": null,
     "flow_rate": null,
@@ -32207,7 +32319,7 @@
     "sigma": 0.9,
     "heat_flux": null
   },
-  "AHU_partition_copy_copy_Front_patch_15_master": {
+  "AHU_partition_copy_copy_patch_15_master": {
     "bc_type": "perforated_baffle",
     "temperature": null,
     "flow_rate": null,
@@ -32215,7 +32327,7 @@
     "sigma": 0.9,
     "heat_flux": null
   },
-  "AHU_partition_copy_copy_Front_patch_15_slave": {
+  "AHU_partition_copy_copy_patch_15_slave": {
     "bc_type": "perforated_baffle",
     "temperature": null,
     "flow_rate": null,
@@ -32223,7 +32335,7 @@
     "sigma": 0.9,
     "heat_flux": null
   },
-  "AHU_partition_copy_copy_Front_patch_16_master": {
+  "AHU_partition_copy_copy_patch_16_master": {
     "bc_type": "perforated_baffle",
     "temperature": null,
     "flow_rate": null,
@@ -32231,7 +32343,7 @@
     "sigma": 0.9,
     "heat_flux": null
   },
-  "AHU_partition_copy_copy_Front_patch_16_slave": {
+  "AHU_partition_copy_copy_patch_16_slave": {
     "bc_type": "perforated_baffle",
     "temperature": null,
     "flow_rate": null,
@@ -32239,7 +32351,7 @@
     "sigma": 0.9,
     "heat_flux": null
   },
-  "AHU_partition_copy_Front_master": {
+  "AHU_partition_copy_copy_part1_master": {
     "bc_type": "wall_baffle",
     "temperature": null,
     "flow_rate": null,
@@ -32247,7 +32359,7 @@
     "sigma": null,
     "heat_flux": null
   },
-  "AHU_partition_copy_Front_slave": {
+  "AHU_partition_copy_copy_part1_slave": {
     "bc_type": "wall_baffle",
     "temperature": null,
     "flow_rate": null,
@@ -32255,7 +32367,7 @@
     "sigma": null,
     "heat_flux": null
   },
-  "Baffle_3_Front_master": {
+  "Baffle_7_copy_master": {
     "bc_type": "wall_baffle",
     "temperature": null,
     "flow_rate": null,
@@ -32263,7 +32375,7 @@
     "sigma": null,
     "heat_flux": null
   },
-  "Baffle_3_Front_slave": {
+  "Baffle_7_copy_slave": {
     "bc_type": "wall_baffle",
     "temperature": null,
     "flow_rate": null,
@@ -32271,7 +32383,7 @@
     "sigma": null,
     "heat_flux": null
   },
-  "Baffle_4_Front_master": {
+  "Baffle_9_master": {
     "bc_type": "wall_baffle",
     "temperature": null,
     "flow_rate": null,
@@ -32279,7 +32391,7 @@
     "sigma": null,
     "heat_flux": null
   },
-  "Baffle_4_Front_slave": {
+  "Baffle_9_slave": {
     "bc_type": "wall_baffle",
     "temperature": null,
     "flow_rate": null,
@@ -32287,7 +32399,7 @@
     "sigma": null,
     "heat_flux": null
   },
-  "Baffle_4_copy_Front_master": {
+  "Baffle_7_copy_copy_master": {
     "bc_type": "wall_baffle",
     "temperature": null,
     "flow_rate": null,
@@ -32295,7 +32407,7 @@
     "sigma": null,
     "heat_flux": null
   },
-  "Baffle_4_copy_Front_slave": {
+  "Baffle_7_copy_copy_slave": {
     "bc_type": "wall_baffle",
     "temperature": null,
     "flow_rate": null,
@@ -32303,7 +32415,7 @@
     "sigma": null,
     "heat_flux": null
   },
-  "Baffle_6_Front_master": {
+  "Baffle_7_copy_copy_copy_master": {
     "bc_type": "wall_baffle",
     "temperature": null,
     "flow_rate": null,
@@ -32311,7 +32423,7 @@
     "sigma": null,
     "heat_flux": null
   },
-  "Baffle_6_Front_slave": {
+  "Baffle_7_copy_copy_copy_slave": {
     "bc_type": "wall_baffle",
     "temperature": null,
     "flow_rate": null,
@@ -32319,7 +32431,7 @@
     "sigma": null,
     "heat_flux": null
   },
-  "Baffle_7_Front_master": {
+  "Baffle_7_copy_copy_copy_copy_master": {
     "bc_type": "wall_baffle",
     "temperature": null,
     "flow_rate": null,
@@ -32327,7 +32439,7 @@
     "sigma": null,
     "heat_flux": null
   },
-  "Baffle_7_Front_slave": {
+  "Baffle_7_copy_copy_copy_copy_slave": {
     "bc_type": "wall_baffle",
     "temperature": null,
     "flow_rate": null,
@@ -32335,7 +32447,7 @@
     "sigma": null,
     "heat_flux": null
   },
-  "AHU_partition_copy_copy_Front_patch_8_master": {
+  "Baffle_7_copy_copy_copy_copy_copy_master": {
     "bc_type": "wall_baffle",
     "temperature": null,
     "flow_rate": null,
@@ -32343,7 +32455,7 @@
     "sigma": null,
     "heat_flux": null
   },
-  "AHU_partition_copy_copy_Front_patch_8_slave": {
+  "Baffle_7_copy_copy_copy_copy_copy_slave": {
     "bc_type": "wall_baffle",
     "temperature": null,
     "flow_rate": null,
@@ -32351,7 +32463,7 @@
     "sigma": null,
     "heat_flux": null
   },
-  "AHU_partition_copy_copy_Front_part1_master": {
+  "Baffle_7_copy_copy_copy_copy_copy_copy_master": {
     "bc_type": "wall_baffle",
     "temperature": null,
     "flow_rate": null,
@@ -32359,7 +32471,7 @@
     "sigma": null,
     "heat_flux": null
   },
-  "AHU_partition_copy_copy_Front_part1_slave": {
+  "Baffle_7_copy_copy_copy_copy_copy_copy_slave": {
     "bc_type": "wall_baffle",
     "temperature": null,
     "flow_rate": null,
@@ -32367,7 +32479,7 @@
     "sigma": null,
     "heat_flux": null
   },
-  "Baffle_7_copy_Front_master": {
+  "Baffle_7_copy_copy_copy_copy_copy_copy_copy_master": {
     "bc_type": "wall_baffle",
     "temperature": null,
     "flow_rate": null,
@@ -32375,7 +32487,7 @@
     "sigma": null,
     "heat_flux": null
   },
-  "Baffle_7_copy_Front_slave": {
+  "Baffle_7_copy_copy_copy_copy_copy_copy_copy_slave": {
     "bc_type": "wall_baffle",
     "temperature": null,
     "flow_rate": null,
@@ -32383,7 +32495,7 @@
     "sigma": null,
     "heat_flux": null
   },
-  "Baffle_9_Front_master": {
+  "Baffle_7_copy_copy_copy_copy_copy_copy_copy_copy_master": {
     "bc_type": "wall_baffle",
     "temperature": null,
     "flow_rate": null,
@@ -32391,7 +32503,7 @@
     "sigma": null,
     "heat_flux": null
   },
-  "Baffle_9_Front_slave": {
+  "Baffle_7_copy_copy_copy_copy_copy_copy_copy_copy_slave": {
     "bc_type": "wall_baffle",
     "temperature": null,
     "flow_rate": null,
@@ -32399,7 +32511,7 @@
     "sigma": null,
     "heat_flux": null
   },
-  "Baffle_7_copy_copy_Front_master": {
+  "Baffle_7_copy_copy_copy_copy_copy_copy_copy_copy_copy_master": {
     "bc_type": "wall_baffle",
     "temperature": null,
     "flow_rate": null,
@@ -32407,7 +32519,7 @@
     "sigma": null,
     "heat_flux": null
   },
-  "Baffle_7_copy_copy_Front_slave": {
+  "Baffle_7_copy_copy_copy_copy_copy_copy_copy_copy_copy_slave": {
     "bc_type": "wall_baffle",
     "temperature": null,
     "flow_rate": null,
@@ -32415,7 +32527,7 @@
     "sigma": null,
     "heat_flux": null
   },
-  "Baffle_7_copy_copy_copy_Front_master": {
+  "Baffle_7_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_master": {
     "bc_type": "wall_baffle",
     "temperature": null,
     "flow_rate": null,
@@ -32423,7 +32535,7 @@
     "sigma": null,
     "heat_flux": null
   },
-  "Baffle_7_copy_copy_copy_Front_slave": {
+  "Baffle_7_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_slave": {
     "bc_type": "wall_baffle",
     "temperature": null,
     "flow_rate": null,
@@ -32431,7 +32543,7 @@
     "sigma": null,
     "heat_flux": null
   },
-  "Baffle_7_copy_copy_copy_copy_Front_master": {
+  "Baffle_7_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_master": {
     "bc_type": "wall_baffle",
     "temperature": null,
     "flow_rate": null,
@@ -32439,7 +32551,7 @@
     "sigma": null,
     "heat_flux": null
   },
-  "Baffle_7_copy_copy_copy_copy_Front_slave": {
+  "Baffle_7_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_slave": {
     "bc_type": "wall_baffle",
     "temperature": null,
     "flow_rate": null,
@@ -32447,7 +32559,7 @@
     "sigma": null,
     "heat_flux": null
   },
-  "Baffle_7_copy_copy_copy_copy_copy_Front_master": {
+  "Baffle_7_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_master": {
     "bc_type": "wall_baffle",
     "temperature": null,
     "flow_rate": null,
@@ -32455,7 +32567,7 @@
     "sigma": null,
     "heat_flux": null
   },
-  "Baffle_7_copy_copy_copy_copy_copy_Front_slave": {
+  "Baffle_7_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_slave": {
     "bc_type": "wall_baffle",
     "temperature": null,
     "flow_rate": null,
@@ -32463,7 +32575,7 @@
     "sigma": null,
     "heat_flux": null
   },
-  "Baffle_7_copy_copy_copy_copy_copy_copy_Front_master": {
+  "Baffle_7_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_master": {
     "bc_type": "wall_baffle",
     "temperature": null,
     "flow_rate": null,
@@ -32471,7 +32583,7 @@
     "sigma": null,
     "heat_flux": null
   },
-  "Baffle_7_copy_copy_copy_copy_copy_copy_Front_slave": {
+  "Baffle_7_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_slave": {
     "bc_type": "wall_baffle",
     "temperature": null,
     "flow_rate": null,
@@ -32479,7 +32591,7 @@
     "sigma": null,
     "heat_flux": null
   },
-  "Baffle_7_copy_copy_copy_copy_copy_copy_copy_Front_master": {
+  "Baffle_7_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_master": {
     "bc_type": "wall_baffle",
     "temperature": null,
     "flow_rate": null,
@@ -32487,7 +32599,7 @@
     "sigma": null,
     "heat_flux": null
   },
-  "Baffle_7_copy_copy_copy_copy_copy_copy_copy_Front_slave": {
+  "Baffle_7_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_slave": {
     "bc_type": "wall_baffle",
     "temperature": null,
     "flow_rate": null,
@@ -32495,7 +32607,7 @@
     "sigma": null,
     "heat_flux": null
   },
-  "Baffle_7_copy_copy_copy_copy_copy_copy_copy_copy_Front_master": {
+  "Baffle_7_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_master": {
     "bc_type": "wall_baffle",
     "temperature": null,
     "flow_rate": null,
@@ -32503,7 +32615,7 @@
     "sigma": null,
     "heat_flux": null
   },
-  "Baffle_7_copy_copy_copy_copy_copy_copy_copy_copy_Front_slave": {
+  "Baffle_7_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_slave": {
     "bc_type": "wall_baffle",
     "temperature": null,
     "flow_rate": null,
@@ -32511,7 +32623,7 @@
     "sigma": null,
     "heat_flux": null
   },
-  "Baffle_7_copy_copy_copy_copy_copy_copy_copy_copy_copy_Front_master": {
+  "Baffle_9_copy_master": {
     "bc_type": "wall_baffle",
     "temperature": null,
     "flow_rate": null,
@@ -32519,7 +32631,7 @@
     "sigma": null,
     "heat_flux": null
   },
-  "Baffle_7_copy_copy_copy_copy_copy_copy_copy_copy_copy_Front_slave": {
+  "Baffle_9_copy_slave": {
     "bc_type": "wall_baffle",
     "temperature": null,
     "flow_rate": null,
@@ -32527,7 +32639,7 @@
     "sigma": null,
     "heat_flux": null
   },
-  "Baffle_7_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_Front_master": {
+  "Baffle_9_copy_copy_master": {
     "bc_type": "wall_baffle",
     "temperature": null,
     "flow_rate": null,
@@ -32535,7 +32647,7 @@
     "sigma": null,
     "heat_flux": null
   },
-  "Baffle_7_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_Front_slave": {
+  "Baffle_9_copy_copy_slave": {
     "bc_type": "wall_baffle",
     "temperature": null,
     "flow_rate": null,
@@ -32543,7 +32655,7 @@
     "sigma": null,
     "heat_flux": null
   },
-  "Baffle_7_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_Front_master": {
+  "Baffle_9_copy_copy_copy_master": {
     "bc_type": "wall_baffle",
     "temperature": null,
     "flow_rate": null,
@@ -32551,7 +32663,7 @@
     "sigma": null,
     "heat_flux": null
   },
-  "Baffle_7_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_Front_slave": {
+  "Baffle_9_copy_copy_copy_slave": {
     "bc_type": "wall_baffle",
     "temperature": null,
     "flow_rate": null,
@@ -32559,7 +32671,7 @@
     "sigma": null,
     "heat_flux": null
   },
-  "Baffle_7_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_Front_master": {
+  "Baffle_9_copy_copy_copy_copy_master": {
     "bc_type": "wall_baffle",
     "temperature": null,
     "flow_rate": null,
@@ -32567,7 +32679,7 @@
     "sigma": null,
     "heat_flux": null
   },
-  "Baffle_7_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_Front_slave": {
+  "Baffle_9_copy_copy_copy_copy_slave": {
     "bc_type": "wall_baffle",
     "temperature": null,
     "flow_rate": null,
@@ -32575,7 +32687,7 @@
     "sigma": null,
     "heat_flux": null
   },
-  "Baffle_7_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_Front_master": {
+  "Baffle_9_copy_copy_copy_copy_copy_master": {
     "bc_type": "wall_baffle",
     "temperature": null,
     "flow_rate": null,
@@ -32583,7 +32695,7 @@
     "sigma": null,
     "heat_flux": null
   },
-  "Baffle_7_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_Front_slave": {
+  "Baffle_9_copy_copy_copy_copy_copy_slave": {
     "bc_type": "wall_baffle",
     "temperature": null,
     "flow_rate": null,
@@ -32591,7 +32703,7 @@
     "sigma": null,
     "heat_flux": null
   },
-  "Baffle_7_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_Front_master": {
+  "Baffle_9_copy_copy_copy_copy_copy_copy_master": {
     "bc_type": "wall_baffle",
     "temperature": null,
     "flow_rate": null,
@@ -32599,7 +32711,7 @@
     "sigma": null,
     "heat_flux": null
   },
-  "Baffle_7_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_Front_slave": {
+  "Baffle_9_copy_copy_copy_copy_copy_copy_slave": {
     "bc_type": "wall_baffle",
     "temperature": null,
     "flow_rate": null,
@@ -32607,7 +32719,7 @@
     "sigma": null,
     "heat_flux": null
   },
-  "Baffle_7_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_Front_master": {
+  "Baffle_9_copy_copy_copy_copy_copy_copy_copy_master": {
     "bc_type": "wall_baffle",
     "temperature": null,
     "flow_rate": null,
@@ -32615,7 +32727,7 @@
     "sigma": null,
     "heat_flux": null
   },
-  "Baffle_7_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_Front_slave": {
+  "Baffle_9_copy_copy_copy_copy_copy_copy_copy_slave": {
     "bc_type": "wall_baffle",
     "temperature": null,
     "flow_rate": null,
@@ -32623,7 +32735,7 @@
     "sigma": null,
     "heat_flux": null
   },
-  "Baffle_9_copy_Front_master": {
+  "Baffle_3_copy_master": {
     "bc_type": "wall_baffle",
     "temperature": null,
     "flow_rate": null,
@@ -32631,7 +32743,7 @@
     "sigma": null,
     "heat_flux": null
   },
-  "Baffle_9_copy_Front_slave": {
+  "Baffle_3_copy_slave": {
     "bc_type": "wall_baffle",
     "temperature": null,
     "flow_rate": null,
@@ -32639,7 +32751,7 @@
     "sigma": null,
     "heat_flux": null
   },
-  "Baffle_9_copy_copy_Front_master": {
+  "Baffle_4_copy_copy_master": {
     "bc_type": "wall_baffle",
     "temperature": null,
     "flow_rate": null,
@@ -32647,7 +32759,7 @@
     "sigma": null,
     "heat_flux": null
   },
-  "Baffle_9_copy_copy_Front_slave": {
+  "Baffle_4_copy_copy_slave": {
     "bc_type": "wall_baffle",
     "temperature": null,
     "flow_rate": null,
@@ -32655,7 +32767,7 @@
     "sigma": null,
     "heat_flux": null
   },
-  "Baffle_9_copy_copy_copy_Front_master": {
+  "Baffle_4_copy_copy_copy_master": {
     "bc_type": "wall_baffle",
     "temperature": null,
     "flow_rate": null,
@@ -32663,7 +32775,7 @@
     "sigma": null,
     "heat_flux": null
   },
-  "Baffle_9_copy_copy_copy_Front_slave": {
+  "Baffle_4_copy_copy_copy_slave": {
     "bc_type": "wall_baffle",
     "temperature": null,
     "flow_rate": null,
@@ -32671,7 +32783,7 @@
     "sigma": null,
     "heat_flux": null
   },
-  "Baffle_9_copy_copy_copy_copy_Front_master": {
+  "Baffle_3_copy_copy_master": {
     "bc_type": "wall_baffle",
     "temperature": null,
     "flow_rate": null,
@@ -32679,7 +32791,7 @@
     "sigma": null,
     "heat_flux": null
   },
-  "Baffle_9_copy_copy_copy_copy_Front_slave": {
+  "Baffle_3_copy_copy_slave": {
     "bc_type": "wall_baffle",
     "temperature": null,
     "flow_rate": null,
@@ -32687,7 +32799,7 @@
     "sigma": null,
     "heat_flux": null
   },
-  "Baffle_9_copy_copy_copy_copy_copy_Front_master": {
+  "Baffle_3_copy_copy2_master": {
     "bc_type": "wall_baffle",
     "temperature": null,
     "flow_rate": null,
@@ -32695,7 +32807,7 @@
     "sigma": null,
     "heat_flux": null
   },
-  "Baffle_9_copy_copy_copy_copy_copy_Front_slave": {
+  "Baffle_3_copy_copy2_slave": {
     "bc_type": "wall_baffle",
     "temperature": null,
     "flow_rate": null,
@@ -32703,7 +32815,7 @@
     "sigma": null,
     "heat_flux": null
   },
-  "Baffle_9_copy_copy_copy_copy_copy_copy_Front_master": {
+  "Baffle_4_copy_copy_copy2_master": {
     "bc_type": "wall_baffle",
     "temperature": null,
     "flow_rate": null,
@@ -32711,7 +32823,7 @@
     "sigma": null,
     "heat_flux": null
   },
-  "Baffle_9_copy_copy_copy_copy_copy_copy_Front_slave": {
+  "Baffle_4_copy_copy_copy2_slave": {
     "bc_type": "wall_baffle",
     "temperature": null,
     "flow_rate": null,
@@ -32719,7 +32831,7 @@
     "sigma": null,
     "heat_flux": null
   },
-  "Baffle_9_copy_copy_copy_copy_copy_copy_copy_Front_master": {
+  "Baffle_4_copy_copy_copy2_copy_master": {
     "bc_type": "wall_baffle",
     "temperature": null,
     "flow_rate": null,
@@ -32727,7 +32839,7 @@
     "sigma": null,
     "heat_flux": null
   },
-  "Baffle_9_copy_copy_copy_copy_copy_copy_copy_Front_slave": {
+  "Baffle_4_copy_copy_copy2_copy_slave": {
     "bc_type": "wall_baffle",
     "temperature": null,
     "flow_rate": null,
@@ -32735,7 +32847,7 @@
     "sigma": null,
     "heat_flux": null
   },
-  "Baffle_3_copy_Front_master": {
+  "Baffle_4_copy_copy_copy2_copy_copy_master": {
     "bc_type": "wall_baffle",
     "temperature": null,
     "flow_rate": null,
@@ -32743,7 +32855,7 @@
     "sigma": null,
     "heat_flux": null
   },
-  "Baffle_3_copy_Front_slave": {
+  "Baffle_4_copy_copy_copy2_copy_copy_slave": {
     "bc_type": "wall_baffle",
     "temperature": null,
     "flow_rate": null,
@@ -32751,7 +32863,7 @@
     "sigma": null,
     "heat_flux": null
   },
-  "Baffle_4_copy_copy_Front_master": {
+  "Baffle_4_copy_copy_copy2_copy_copy_copy_master": {
     "bc_type": "wall_baffle",
     "temperature": null,
     "flow_rate": null,
@@ -32759,7 +32871,7 @@
     "sigma": null,
     "heat_flux": null
   },
-  "Baffle_4_copy_copy_Front_slave": {
+  "Baffle_4_copy_copy_copy2_copy_copy_copy_slave": {
     "bc_type": "wall_baffle",
     "temperature": null,
     "flow_rate": null,
@@ -32767,7 +32879,7 @@
     "sigma": null,
     "heat_flux": null
   },
-  "Baffle_4_copy_copy_copy_Front_master": {
+  "Baffle_4_copy_copy_copy2_copy_copy_copy_copy_master": {
     "bc_type": "wall_baffle",
     "temperature": null,
     "flow_rate": null,
@@ -32775,7 +32887,7 @@
     "sigma": null,
     "heat_flux": null
   },
-  "Baffle_4_copy_copy_copy_Front_slave": {
+  "Baffle_4_copy_copy_copy2_copy_copy_copy_copy_slave": {
     "bc_type": "wall_baffle",
     "temperature": null,
     "flow_rate": null,
@@ -32783,7 +32895,7 @@
     "sigma": null,
     "heat_flux": null
   },
-  "Baffle_3_copy_copy_Front_master": {
+  "Baffle_4_copy_copy_copy2_copy_copy_copy_copy_copy_master": {
     "bc_type": "wall_baffle",
     "temperature": null,
     "flow_rate": null,
@@ -32791,7 +32903,7 @@
     "sigma": null,
     "heat_flux": null
   },
-  "Baffle_3_copy_copy_Front_slave": {
+  "Baffle_4_copy_copy_copy2_copy_copy_copy_copy_copy_slave": {
     "bc_type": "wall_baffle",
     "temperature": null,
     "flow_rate": null,
@@ -32799,7 +32911,7 @@
     "sigma": null,
     "heat_flux": null
   },
-  "Baffle_3_copy_copy2_Front_master": {
+  "Baffle_4_copy_copy_copy2_copy_copy_copy_copy_copy_copy_master": {
     "bc_type": "wall_baffle",
     "temperature": null,
     "flow_rate": null,
@@ -32807,7 +32919,7 @@
     "sigma": null,
     "heat_flux": null
   },
-  "Baffle_3_copy_copy2_Front_slave": {
+  "Baffle_4_copy_copy_copy2_copy_copy_copy_copy_copy_copy_slave": {
     "bc_type": "wall_baffle",
     "temperature": null,
     "flow_rate": null,
@@ -32815,7 +32927,7 @@
     "sigma": null,
     "heat_flux": null
   },
-  "Baffle_4_copy_copy_copy2_Front_master": {
+  "Baffle_4_copy_copy_copy2_copy_copy_copy_copy_copy_copy_copy_master": {
     "bc_type": "wall_baffle",
     "temperature": null,
     "flow_rate": null,
@@ -32823,7 +32935,7 @@
     "sigma": null,
     "heat_flux": null
   },
-  "Baffle_4_copy_copy_copy2_Front_slave": {
+  "Baffle_4_copy_copy_copy2_copy_copy_copy_copy_copy_copy_copy_slave": {
     "bc_type": "wall_baffle",
     "temperature": null,
     "flow_rate": null,
@@ -32831,7 +32943,7 @@
     "sigma": null,
     "heat_flux": null
   },
-  "Baffle_4_copy_copy_copy2_copy_Front_master": {
+  "Baffle_3_copy_copy2_copy_master": {
     "bc_type": "wall_baffle",
     "temperature": null,
     "flow_rate": null,
@@ -32839,7 +32951,7 @@
     "sigma": null,
     "heat_flux": null
   },
-  "Baffle_4_copy_copy_copy2_copy_Front_slave": {
+  "Baffle_3_copy_copy2_copy_slave": {
     "bc_type": "wall_baffle",
     "temperature": null,
     "flow_rate": null,
@@ -32847,7 +32959,7 @@
     "sigma": null,
     "heat_flux": null
   },
-  "Baffle_4_copy_copy_copy2_copy_copy_Front_master": {
+  "Baffle_3_copy_copy2_copy_copy_master": {
     "bc_type": "wall_baffle",
     "temperature": null,
     "flow_rate": null,
@@ -32855,7 +32967,7 @@
     "sigma": null,
     "heat_flux": null
   },
-  "Baffle_4_copy_copy_copy2_copy_copy_Front_slave": {
+  "Baffle_3_copy_copy2_copy_copy_slave": {
     "bc_type": "wall_baffle",
     "temperature": null,
     "flow_rate": null,
@@ -32863,7 +32975,7 @@
     "sigma": null,
     "heat_flux": null
   },
-  "Baffle_4_copy_copy_copy2_copy_copy_copy_Front_master": {
+  "Baffle_3_copy_copy2_copy_copy_copy_master": {
     "bc_type": "wall_baffle",
     "temperature": null,
     "flow_rate": null,
@@ -32871,7 +32983,7 @@
     "sigma": null,
     "heat_flux": null
   },
-  "Baffle_4_copy_copy_copy2_copy_copy_copy_Front_slave": {
+  "Baffle_3_copy_copy2_copy_copy_copy_slave": {
     "bc_type": "wall_baffle",
     "temperature": null,
     "flow_rate": null,
@@ -32879,7 +32991,7 @@
     "sigma": null,
     "heat_flux": null
   },
-  "Baffle_4_copy_copy_copy2_copy_copy_copy_copy_Front_master": {
+  "Baffle_3_copy_copy2_copy_copy_copy_copy_master": {
     "bc_type": "wall_baffle",
     "temperature": null,
     "flow_rate": null,
@@ -32887,7 +32999,7 @@
     "sigma": null,
     "heat_flux": null
   },
-  "Baffle_4_copy_copy_copy2_copy_copy_copy_copy_Front_slave": {
+  "Baffle_3_copy_copy2_copy_copy_copy_copy_slave": {
     "bc_type": "wall_baffle",
     "temperature": null,
     "flow_rate": null,
@@ -32895,7 +33007,7 @@
     "sigma": null,
     "heat_flux": null
   },
-  "Baffle_4_copy_copy_copy2_copy_copy_copy_copy_copy_Front_master": {
+  "Baffle_3_copy_copy2_copy_copy_copy2_master": {
     "bc_type": "wall_baffle",
     "temperature": null,
     "flow_rate": null,
@@ -32903,7 +33015,7 @@
     "sigma": null,
     "heat_flux": null
   },
-  "Baffle_4_copy_copy_copy2_copy_copy_copy_copy_copy_Front_slave": {
+  "Baffle_3_copy_copy2_copy_copy_copy2_slave": {
     "bc_type": "wall_baffle",
     "temperature": null,
     "flow_rate": null,
@@ -32911,7 +33023,7 @@
     "sigma": null,
     "heat_flux": null
   },
-  "Baffle_4_copy_copy_copy2_copy_copy_copy_copy_copy_copy_Front_master": {
+  "Baffle_3_copy_copy2_copy_copy2_master": {
     "bc_type": "wall_baffle",
     "temperature": null,
     "flow_rate": null,
@@ -32919,7 +33031,7 @@
     "sigma": null,
     "heat_flux": null
   },
-  "Baffle_4_copy_copy_copy2_copy_copy_copy_copy_copy_copy_Front_slave": {
+  "Baffle_3_copy_copy2_copy_copy2_slave": {
     "bc_type": "wall_baffle",
     "temperature": null,
     "flow_rate": null,
@@ -32927,7 +33039,7 @@
     "sigma": null,
     "heat_flux": null
   },
-  "Baffle_4_copy_copy_copy2_copy_copy_copy_copy_copy_copy_copy_Front_master": {
+  "Baffle_3_copy_copy2_copy2_master": {
     "bc_type": "wall_baffle",
     "temperature": null,
     "flow_rate": null,
@@ -32935,7 +33047,7 @@
     "sigma": null,
     "heat_flux": null
   },
-  "Baffle_4_copy_copy_copy2_copy_copy_copy_copy_copy_copy_copy_Front_slave": {
+  "Baffle_3_copy_copy2_copy2_slave": {
     "bc_type": "wall_baffle",
     "temperature": null,
     "flow_rate": null,
@@ -32943,7 +33055,7 @@
     "sigma": null,
     "heat_flux": null
   },
-  "Baffle_3_copy_copy2_copy_Front_master": {
+  "AHU_partition_copy_copy2_master": {
     "bc_type": "wall_baffle",
     "temperature": null,
     "flow_rate": null,
@@ -32951,7 +33063,7 @@
     "sigma": null,
     "heat_flux": null
   },
-  "Baffle_3_copy_copy2_copy_Front_slave": {
+  "AHU_partition_copy_copy2_slave": {
     "bc_type": "wall_baffle",
     "temperature": null,
     "flow_rate": null,
@@ -32959,7 +33071,7 @@
     "sigma": null,
     "heat_flux": null
   },
-  "Baffle_3_copy_copy2_copy_copy_Front_master": {
+  "AHU_partition_copy_copy2_copy_master": {
     "bc_type": "wall_baffle",
     "temperature": null,
     "flow_rate": null,
@@ -32967,7 +33079,7 @@
     "sigma": null,
     "heat_flux": null
   },
-  "Baffle_3_copy_copy2_copy_copy_Front_slave": {
+  "AHU_partition_copy_copy2_copy_slave": {
     "bc_type": "wall_baffle",
     "temperature": null,
     "flow_rate": null,
@@ -32975,7 +33087,7 @@
     "sigma": null,
     "heat_flux": null
   },
-  "Baffle_3_copy_copy2_copy_copy_copy_Front_master": {
+  "AHU_partition_copy_copy2_copy_copy_master": {
     "bc_type": "wall_baffle",
     "temperature": null,
     "flow_rate": null,
@@ -32983,7 +33095,7 @@
     "sigma": null,
     "heat_flux": null
   },
-  "Baffle_3_copy_copy2_copy_copy_copy_Front_slave": {
+  "AHU_partition_copy_copy2_copy_copy_slave": {
     "bc_type": "wall_baffle",
     "temperature": null,
     "flow_rate": null,
@@ -32991,7 +33103,7 @@
     "sigma": null,
     "heat_flux": null
   },
-  "Baffle_3_copy_copy2_copy_copy_copy_copy_Front_master": {
+  "AHU_partition_copy_copy2_copy_copy_copy_master": {
     "bc_type": "wall_baffle",
     "temperature": null,
     "flow_rate": null,
@@ -32999,7 +33111,7 @@
     "sigma": null,
     "heat_flux": null
   },
-  "Baffle_3_copy_copy2_copy_copy_copy_copy_Front_slave": {
+  "AHU_partition_copy_copy2_copy_copy_copy_slave": {
     "bc_type": "wall_baffle",
     "temperature": null,
     "flow_rate": null,
@@ -33007,7 +33119,7 @@
     "sigma": null,
     "heat_flux": null
   },
-  "Baffle_3_copy_copy2_copy_copy_copy2_Front_master": {
+  "AHU_partition_copy_copy2_copy_copy_copy_copy_master": {
     "bc_type": "wall_baffle",
     "temperature": null,
     "flow_rate": null,
@@ -33015,7 +33127,7 @@
     "sigma": null,
     "heat_flux": null
   },
-  "Baffle_3_copy_copy2_copy_copy_copy2_Front_slave": {
+  "AHU_partition_copy_copy2_copy_copy_copy_copy_slave": {
     "bc_type": "wall_baffle",
     "temperature": null,
     "flow_rate": null,
@@ -33023,7 +33135,7 @@
     "sigma": null,
     "heat_flux": null
   },
-  "Baffle_3_copy_copy2_copy_copy2_Front_master": {
+  "AHU_partition_copy_copy2_copy_copy_copy_copy_copy_master": {
     "bc_type": "wall_baffle",
     "temperature": null,
     "flow_rate": null,
@@ -33031,7 +33143,7 @@
     "sigma": null,
     "heat_flux": null
   },
-  "Baffle_3_copy_copy2_copy_copy2_Front_slave": {
+  "AHU_partition_copy_copy2_copy_copy_copy_copy_copy_slave": {
     "bc_type": "wall_baffle",
     "temperature": null,
     "flow_rate": null,
@@ -33039,7 +33151,7 @@
     "sigma": null,
     "heat_flux": null
   },
-  "Baffle_3_copy_copy2_copy2_Front_master": {
+  "AHU_partition_copy_copy2_copy_copy_copy_copy_copy_copy_master": {
     "bc_type": "wall_baffle",
     "temperature": null,
     "flow_rate": null,
@@ -33047,7 +33159,7 @@
     "sigma": null,
     "heat_flux": null
   },
-  "Baffle_3_copy_copy2_copy2_Front_slave": {
+  "AHU_partition_copy_copy2_copy_copy_copy_copy_copy_copy_slave": {
     "bc_type": "wall_baffle",
     "temperature": null,
     "flow_rate": null,
@@ -33055,119 +33167,7 @@
     "sigma": null,
     "heat_flux": null
   },
-  "AHU_partition_copy_copy2_Front_master": {
-    "bc_type": "wall_baffle",
-    "temperature": null,
-    "flow_rate": null,
-    "power": null,
-    "sigma": null,
-    "heat_flux": null
-  },
-  "AHU_partition_copy_copy2_Front_slave": {
-    "bc_type": "wall_baffle",
-    "temperature": null,
-    "flow_rate": null,
-    "power": null,
-    "sigma": null,
-    "heat_flux": null
-  },
-  "AHU_partition_copy_copy2_copy_Front_master": {
-    "bc_type": "wall_baffle",
-    "temperature": null,
-    "flow_rate": null,
-    "power": null,
-    "sigma": null,
-    "heat_flux": null
-  },
-  "AHU_partition_copy_copy2_copy_Front_slave": {
-    "bc_type": "wall_baffle",
-    "temperature": null,
-    "flow_rate": null,
-    "power": null,
-    "sigma": null,
-    "heat_flux": null
-  },
-  "AHU_partition_copy_copy2_copy_copy_Front_master": {
-    "bc_type": "wall_baffle",
-    "temperature": null,
-    "flow_rate": null,
-    "power": null,
-    "sigma": null,
-    "heat_flux": null
-  },
-  "AHU_partition_copy_copy2_copy_copy_Front_slave": {
-    "bc_type": "wall_baffle",
-    "temperature": null,
-    "flow_rate": null,
-    "power": null,
-    "sigma": null,
-    "heat_flux": null
-  },
-  "AHU_partition_copy_copy2_copy_copy_copy_Front_master": {
-    "bc_type": "wall_baffle",
-    "temperature": null,
-    "flow_rate": null,
-    "power": null,
-    "sigma": null,
-    "heat_flux": null
-  },
-  "AHU_partition_copy_copy2_copy_copy_copy_Front_slave": {
-    "bc_type": "wall_baffle",
-    "temperature": null,
-    "flow_rate": null,
-    "power": null,
-    "sigma": null,
-    "heat_flux": null
-  },
-  "AHU_partition_copy_copy2_copy_copy_copy_copy_Front_master": {
-    "bc_type": "wall_baffle",
-    "temperature": null,
-    "flow_rate": null,
-    "power": null,
-    "sigma": null,
-    "heat_flux": null
-  },
-  "AHU_partition_copy_copy2_copy_copy_copy_copy_Front_slave": {
-    "bc_type": "wall_baffle",
-    "temperature": null,
-    "flow_rate": null,
-    "power": null,
-    "sigma": null,
-    "heat_flux": null
-  },
-  "AHU_partition_copy_copy2_copy_copy_copy_copy_copy_Front_master": {
-    "bc_type": "wall_baffle",
-    "temperature": null,
-    "flow_rate": null,
-    "power": null,
-    "sigma": null,
-    "heat_flux": null
-  },
-  "AHU_partition_copy_copy2_copy_copy_copy_copy_copy_Front_slave": {
-    "bc_type": "wall_baffle",
-    "temperature": null,
-    "flow_rate": null,
-    "power": null,
-    "sigma": null,
-    "heat_flux": null
-  },
-  "AHU_partition_copy_copy2_copy_copy_copy_copy_copy_copy_Front_master": {
-    "bc_type": "wall_baffle",
-    "temperature": null,
-    "flow_rate": null,
-    "power": null,
-    "sigma": null,
-    "heat_flux": null
-  },
-  "AHU_partition_copy_copy2_copy_copy_copy_copy_copy_copy_Front_slave": {
-    "bc_type": "wall_baffle",
-    "temperature": null,
-    "flow_rate": null,
-    "power": null,
-    "sigma": null,
-    "heat_flux": null
-  },
-  "Wall_1_Front": {
+  "Wall_1": {
     "bc_type": "wall",
     "temperature": null,
     "flow_rate": null,
@@ -33175,7 +33175,7 @@
     "sigma": null,
     "heat_flux": null
   },
-  "Wall_1_copy_Front": {
+  "Wall_1_copy": {
     "bc_type": "wall",
     "temperature": null,
     "flow_rate": null,
@@ -33183,7 +33183,7 @@
     "sigma": null,
     "heat_flux": null
   },
-  "Wall_1_copy2_Front": {
+  "Wall_1_copy2": {
     "bc_type": "wall",
     "temperature": null,
     "flow_rate": null,
@@ -33191,7 +33191,7 @@
     "sigma": null,
     "heat_flux": null
   },
-  "Wall_1_copy2_copy_Front": {
+  "Wall_1_copy2_copy": {
     "bc_type": "wall",
     "temperature": null,
     "flow_rate": null,

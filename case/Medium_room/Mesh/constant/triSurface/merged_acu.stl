@@ -1,453 +1,612 @@
-solid PCU_1_Front
-  facet normal -1.000000 0.000000 0.000000
-    outer loop
-      vertex 1.800000 3.200000 2.000000
-      vertex 1.800000 3.200000 0.000000
-      vertex 1.800000 -0.000000 0.000000
-    endloop
-  endfacet
-  facet normal -1.000000 0.000000 0.000000
-    outer loop
-      vertex 1.800000 -0.000000 0.000000
-      vertex 1.800000 -0.000000 2.000000
-      vertex 1.800000 3.200000 2.000000
-    endloop
-  endfacet
-endsolid PCU_1_Front
-
-solid PCU_1_Back_patch
-  facet normal 1.000000 -0.000000 0.000000
-    outer loop
-      vertex 2.800000 1.400000 2.000000
-      vertex 2.800000 1.400000 0.000000
-      vertex 2.800000 3.200000 0.000000
-    endloop
-  endfacet
-  facet normal 1.000000 -0.000000 0.000000
-    outer loop
-      vertex 2.800000 3.200000 0.000000
-      vertex 2.800000 3.200000 2.000000
-      vertex 2.800000 1.400000 2.000000
-    endloop
-  endfacet
-endsolid PCU_1_Back_patch
-
-solid PCU_1_Back_part1
-  facet normal 1.000000 -0.000000 0.000000
-    outer loop
-      vertex 2.800000 -0.000000 2.000000
-      vertex 2.800000 -0.000000 0.000000
-      vertex 2.800000 1.400000 0.000000
-    endloop
-  endfacet
-  facet normal 1.000000 -0.000000 0.000000
-    outer loop
-      vertex 2.800000 1.400000 0.000000
-      vertex 2.800000 1.400000 2.000000
-      vertex 2.800000 -0.000000 2.000000
-    endloop
-  endfacet
-endsolid PCU_1_Back_part1
-
-solid PCU_1_Left
-  facet normal 0.000000 1.000000 0.000000
-    outer loop
-      vertex 2.800000 3.200000 2.000000
-      vertex 2.800000 3.200000 0.000000
-      vertex 1.800000 3.200000 0.000000
-    endloop
-  endfacet
-  facet normal 0.000000 1.000000 0.000000
-    outer loop
-      vertex 1.800000 3.200000 0.000000
-      vertex 1.800000 3.200000 2.000000
-      vertex 2.800000 3.200000 2.000000
-    endloop
-  endfacet
-endsolid PCU_1_Left
-
-solid PCU_1_Right
-  facet normal -0.000000 -1.000000 0.000000
-    outer loop
-      vertex 1.800000 -0.000000 2.000000
-      vertex 1.800000 -0.000000 0.000000
-      vertex 2.800000 -0.000000 0.000000
-    endloop
-  endfacet
-  facet normal -0.000000 -1.000000 0.000000
-    outer loop
-      vertex 2.800000 -0.000000 0.000000
-      vertex 2.800000 -0.000000 2.000000
-      vertex 1.800000 -0.000000 2.000000
-    endloop
-  endfacet
-endsolid PCU_1_Right
-
-solid PCU_1_Top_patch
-  facet normal 0.000000 0.000000 1.000000
-    outer loop
-      vertex 2.800000 3.200000 2.000000
-      vertex 1.800000 3.200000 2.000000
-      vertex 1.800000 1.402750 2.000000
-    endloop
-  endfacet
-  facet normal 0.000000 0.000000 1.000000
-    outer loop
-      vertex 1.800000 1.402750 2.000000
-      vertex 2.800000 1.402750 2.000000
-      vertex 2.800000 3.200000 2.000000
-    endloop
-  endfacet
-endsolid PCU_1_Top_patch
-
-solid PCU_1_Top_part1
-  facet normal 0.000000 0.000000 1.000000
-    outer loop
-      vertex 2.800000 1.402750 2.000000
-      vertex 1.800000 1.402750 2.000000
-      vertex 1.800000 -0.000000 2.000000
-    endloop
-  endfacet
-  facet normal 0.000000 0.000000 1.000000
-    outer loop
-      vertex 1.800000 -0.000000 2.000000
-      vertex 2.800000 -0.000000 2.000000
-      vertex 2.800000 1.402750 2.000000
-    endloop
-  endfacet
-endsolid PCU_1_Top_part1
-
-solid PCU_1_Bottom
-  facet normal 0.000000 0.000000 -1.000000
-    outer loop
-      vertex 1.800000 3.200000 0.000000
-      vertex 2.800000 3.200000 0.000000
-      vertex 2.800000 -0.000000 0.000000
-    endloop
-  endfacet
-  facet normal 0.000000 0.000000 -1.000000
-    outer loop
-      vertex 2.800000 -0.000000 0.000000
-      vertex 1.800000 -0.000000 0.000000
-      vertex 1.800000 3.200000 0.000000
-    endloop
-  endfacet
-endsolid PCU_1_Bottom
-
-solid PCU_2_Front
-  facet normal -1.000000 0.000000 0.000000
-    outer loop
-      vertex 1.800000 6.600000 2.000000
-      vertex 1.800000 6.600000 0.000000
-      vertex 1.800000 3.400000 0.000000
-    endloop
-  endfacet
-  facet normal -1.000000 0.000000 0.000000
-    outer loop
-      vertex 1.800000 3.400000 0.000000
-      vertex 1.800000 3.400000 2.000000
-      vertex 1.800000 6.600000 2.000000
-    endloop
-  endfacet
-endsolid PCU_2_Front
-
-solid PCU_2_Back_patch
-  facet normal 1.000000 -0.000000 0.000000
-    outer loop
-      vertex 2.800000 3.400000 2.000000
-      vertex 2.800000 3.400000 0.000000
-      vertex 2.800000 5.200000 0.000000
-    endloop
-  endfacet
-  facet normal 1.000000 -0.000000 0.000000
-    outer loop
-      vertex 2.800000 5.200000 0.000000
-      vertex 2.800000 5.200000 2.000000
-      vertex 2.800000 3.400000 2.000000
-    endloop
-  endfacet
-endsolid PCU_2_Back_patch
-
-solid PCU_2_Back_part1
-  facet normal 1.000000 -0.000000 0.000000
-    outer loop
-      vertex 2.800000 5.200000 2.000000
-      vertex 2.800000 5.200000 0.000000
-      vertex 2.800000 6.600000 0.000000
-    endloop
-  endfacet
-  facet normal 1.000000 -0.000000 0.000000
-    outer loop
-      vertex 2.800000 6.600000 0.000000
-      vertex 2.800000 6.600000 2.000000
-      vertex 2.800000 5.200000 2.000000
-    endloop
-  endfacet
-endsolid PCU_2_Back_part1
-
-solid PCU_2_Left
-  facet normal 0.000000 1.000000 0.000000
-    outer loop
-      vertex 2.800000 6.600000 2.000000
-      vertex 2.800000 6.600000 0.000000
-      vertex 1.800000 6.600000 0.000000
-    endloop
-  endfacet
-  facet normal 0.000000 1.000000 0.000000
-    outer loop
-      vertex 1.800000 6.600000 0.000000
-      vertex 1.800000 6.600000 2.000000
-      vertex 2.800000 6.600000 2.000000
-    endloop
-  endfacet
-endsolid PCU_2_Left
-
-solid PCU_2_Right
-  facet normal -0.000000 -1.000000 0.000000
-    outer loop
-      vertex 1.800000 3.400000 2.000000
-      vertex 1.800000 3.400000 0.000000
-      vertex 2.800000 3.400000 0.000000
-    endloop
-  endfacet
-  facet normal -0.000000 -1.000000 0.000000
-    outer loop
-      vertex 2.800000 3.400000 0.000000
-      vertex 2.800000 3.400000 2.000000
-      vertex 1.800000 3.400000 2.000000
-    endloop
-  endfacet
-endsolid PCU_2_Right
-
-solid PCU_2_Top_patch
-  facet normal 0.000000 0.000000 1.000000
-    outer loop
-      vertex 2.800000 5.200000 2.000000
-      vertex 1.800000 5.200000 2.000000
-      vertex 1.800000 3.400000 2.000000
-    endloop
-  endfacet
-  facet normal 0.000000 0.000000 1.000000
-    outer loop
-      vertex 1.800000 3.400000 2.000000
-      vertex 2.800000 3.400000 2.000000
-      vertex 2.800000 5.200000 2.000000
-    endloop
-  endfacet
-endsolid PCU_2_Top_patch
-
-solid PCU_2_Top_part1
-  facet normal 0.000000 0.000000 1.000000
-    outer loop
-      vertex 2.800000 6.600000 2.000000
-      vertex 1.800000 6.600000 2.000000
-      vertex 1.800000 5.200000 2.000000
-    endloop
-  endfacet
-  facet normal 0.000000 0.000000 1.000000
-    outer loop
-      vertex 1.800000 5.200000 2.000000
-      vertex 2.800000 5.200000 2.000000
-      vertex 2.800000 6.600000 2.000000
-    endloop
-  endfacet
-endsolid PCU_2_Top_part1
-
-solid PCU_2_Bottom
-  facet normal 0.000000 0.000000 -1.000000
-    outer loop
-      vertex 1.800000 6.600000 0.000000
-      vertex 2.800000 6.600000 0.000000
-      vertex 2.800000 3.400000 0.000000
-    endloop
-  endfacet
-  facet normal 0.000000 0.000000 -1.000000
-    outer loop
-      vertex 2.800000 3.400000 0.000000
-      vertex 1.800000 3.400000 0.000000
-      vertex 1.800000 6.600000 0.000000
-    endloop
-  endfacet
-endsolid PCU_2_Bottom
-
-solid PCU_3_Front_patch
-  facet normal -1.000000 0.000000 0.000000
-    outer loop
-      vertex 18.400000 5.715906 2.000000
-      vertex 18.400000 5.715906 0.000000
-      vertex 18.400000 3.176925 0.000000
-    endloop
-  endfacet
-  facet normal -1.000000 0.000000 0.000000
-    outer loop
-      vertex 18.400000 3.176925 0.000000
-      vertex 18.400000 3.176925 2.000000
-      vertex 18.400000 5.715906 2.000000
-    endloop
-  endfacet
-endsolid PCU_3_Front_patch
-
-solid PCU_3_Front_part1
-  facet normal -1.000000 0.000000 0.000000
-    outer loop
-      vertex 18.400000 6.600000 2.000000
-      vertex 18.400000 6.600000 0.000000
-      vertex 18.400000 5.715906 0.000000
-    endloop
-  endfacet
-  facet normal -1.000000 0.000000 0.000000
-    outer loop
-      vertex 18.400000 5.715906 0.000000
-      vertex 18.400000 5.715906 2.000000
-      vertex 18.400000 6.600000 2.000000
-    endloop
-  endfacet
-endsolid PCU_3_Front_part1
-
-solid PCU_3_Front_part2
-  facet normal -1.000000 0.000000 0.000000
-    outer loop
-      vertex 18.400000 3.176925 2.000000
-      vertex 18.400000 3.176925 0.000000
-      vertex 18.400000 1.600000 0.000000
-    endloop
-  endfacet
-  facet normal -1.000000 0.000000 0.000000
-    outer loop
-      vertex 18.400000 1.600000 0.000000
-      vertex 18.400000 1.600000 2.000000
-      vertex 18.400000 3.176925 2.000000
-    endloop
-  endfacet
-endsolid PCU_3_Front_part2
-
-solid PCU_3_Back
+solid left_fan_wall_room_crac_1_Front_patch
   facet normal 1.000000 0.000000 0.000000
     outer loop
-      vertex 20.000000 1.600000 2.000000
-      vertex 20.000000 1.600000 0.000000
-      vertex 20.000000 6.600000 0.000000
+      vertex 3.400000 2.400000 3.200000
+      vertex 3.400000 2.400000 0.000000
+      vertex 3.400000 5.200000 0.000000
     endloop
   endfacet
   facet normal 1.000000 0.000000 0.000000
     outer loop
-      vertex 20.000000 6.600000 0.000000
-      vertex 20.000000 6.600000 2.000000
-      vertex 20.000000 1.600000 2.000000
+      vertex 3.400000 5.200000 0.000000
+      vertex 3.400000 5.200000 3.200000
+      vertex 3.400000 2.400000 3.200000
     endloop
   endfacet
-endsolid PCU_3_Back
+endsolid left_fan_wall_room_crac_1_Front_patch
 
-solid PCU_3_Left
-  facet normal 0.000000 1.000000 0.000000
+solid left_fan_wall_room_crac_1_Back_patch
+  facet normal -1.000000 -0.000000 0.000000
     outer loop
-      vertex 20.000000 6.600000 2.000000
-      vertex 20.000000 6.600000 0.000000
-      vertex 18.400000 6.600000 0.000000
+      vertex 1.800000 5.200000 3.200000
+      vertex 1.800000 5.200000 0.000000
+      vertex 1.800000 2.400000 0.000000
     endloop
   endfacet
-  facet normal 0.000000 1.000000 0.000000
+  facet normal -1.000000 -0.000000 0.000000
     outer loop
-      vertex 18.400000 6.600000 0.000000
-      vertex 18.400000 6.600000 2.000000
-      vertex 20.000000 6.600000 2.000000
+      vertex 1.800000 2.400000 0.000000
+      vertex 1.800000 2.400000 3.200000
+      vertex 1.800000 5.200000 3.200000
     endloop
   endfacet
-endsolid PCU_3_Left
+endsolid left_fan_wall_room_crac_1_Back_patch
 
-solid PCU_3_Right
-  facet normal -0.000000 -1.000000 0.000000
+solid left_fan_wall_room_crac_1_Left
+  facet normal 0.000000 -1.000000 0.000000
     outer loop
-      vertex 18.400000 1.600000 2.000000
-      vertex 18.400000 1.600000 0.000000
-      vertex 20.000000 1.600000 0.000000
+      vertex 1.800000 2.400000 3.200000
+      vertex 1.800000 2.400000 0.000000
+      vertex 3.400000 2.400000 0.000000
     endloop
   endfacet
-  facet normal -0.000000 -1.000000 0.000000
+  facet normal 0.000000 -1.000000 0.000000
     outer loop
-      vertex 20.000000 1.600000 0.000000
-      vertex 20.000000 1.600000 2.000000
-      vertex 18.400000 1.600000 2.000000
+      vertex 3.400000 2.400000 0.000000
+      vertex 3.400000 2.400000 3.200000
+      vertex 1.800000 2.400000 3.200000
     endloop
   endfacet
-endsolid PCU_3_Right
+endsolid left_fan_wall_room_crac_1_Left
 
-solid PCU_3_Top_patch
-  facet normal 0.000000 0.000000 1.000000
+solid left_fan_wall_room_crac_1_Right
+  facet normal -0.000000 1.000000 0.000000
     outer loop
-      vertex 19.578050 5.097330 2.000000
-      vertex 18.400000 5.097330 2.000000
-      vertex 18.400000 2.674138 2.000000
+      vertex 3.400000 5.200000 3.200000
+      vertex 3.400000 5.200000 0.000000
+      vertex 1.800000 5.200000 0.000000
     endloop
   endfacet
-  facet normal 0.000000 0.000000 1.000000
+  facet normal -0.000000 1.000000 0.000000
     outer loop
-      vertex 18.400000 2.674138 2.000000
-      vertex 19.578050 2.674138 2.000000
-      vertex 19.578050 5.097330 2.000000
+      vertex 1.800000 5.200000 0.000000
+      vertex 1.800000 5.200000 3.200000
+      vertex 3.400000 5.200000 3.200000
     endloop
   endfacet
-endsolid PCU_3_Top_patch
+endsolid left_fan_wall_room_crac_1_Right
 
-solid PCU_3_Top_part1
+solid left_fan_wall_room_crac_1_Top
   facet normal 0.000000 0.000000 1.000000
     outer loop
-      vertex 20.000000 6.600000 2.000000
-      vertex 18.400000 6.600000 2.000000
-      vertex 18.400000 5.097330 2.000000
+      vertex 1.800000 2.400000 3.200000
+      vertex 3.400000 2.400000 3.200000
+      vertex 3.400000 5.200000 3.200000
     endloop
   endfacet
   facet normal 0.000000 0.000000 1.000000
     outer loop
-      vertex 19.578050 2.674138 2.000000
-      vertex 18.400000 2.674138 2.000000
-      vertex 18.400000 1.600000 2.000000
+      vertex 3.400000 5.200000 3.200000
+      vertex 1.800000 5.200000 3.200000
+      vertex 1.800000 2.400000 3.200000
     endloop
   endfacet
-  facet normal 0.000000 0.000000 1.000000
-    outer loop
-      vertex 20.000000 6.600000 2.000000
-      vertex 18.400000 5.097330 2.000000
-      vertex 19.578050 5.097330 2.000000
-    endloop
-  endfacet
-  facet normal 0.000000 0.000000 1.000000
-    outer loop
-      vertex 19.578050 2.674138 2.000000
-      vertex 18.400000 1.600000 2.000000
-      vertex 20.000000 1.600000 2.000000
-    endloop
-  endfacet
-  facet normal 0.000000 0.000000 1.000000
-    outer loop
-      vertex 20.000000 1.600000 2.000000
-      vertex 20.000000 6.600000 2.000000
-      vertex 19.578050 5.097330 2.000000
-    endloop
-  endfacet
-  facet normal 0.000000 0.000000 1.000000
-    outer loop
-      vertex 19.578050 5.097330 2.000000
-      vertex 19.578050 2.674138 2.000000
-      vertex 20.000000 1.600000 2.000000
-    endloop
-  endfacet
-endsolid PCU_3_Top_part1
+endsolid left_fan_wall_room_crac_1_Top
 
-solid PCU_3_Bottom
+solid left_fan_wall_room_crac_1_Bottom
   facet normal 0.000000 0.000000 -1.000000
     outer loop
-      vertex 18.400000 6.600000 0.000000
-      vertex 20.000000 6.600000 0.000000
-      vertex 20.000000 1.600000 0.000000
+      vertex 3.400000 2.400000 0.000000
+      vertex 1.800000 2.400000 0.000000
+      vertex 1.800000 5.200000 0.000000
     endloop
   endfacet
   facet normal 0.000000 0.000000 -1.000000
     outer loop
-      vertex 20.000000 1.600000 0.000000
-      vertex 18.400000 1.600000 0.000000
-      vertex 18.400000 6.600000 0.000000
+      vertex 1.800000 5.200000 0.000000
+      vertex 3.400000 5.200000 0.000000
+      vertex 3.400000 2.400000 0.000000
     endloop
   endfacet
-endsolid PCU_3_Bottom
+endsolid left_fan_wall_room_crac_1_Bottom
+
+solid left_fan_wall_room_crac_2_Front_patch
+  facet normal 1.000000 0.000000 0.000000
+    outer loop
+      vertex 3.400000 7.200000 3.200000
+      vertex 3.400000 7.200000 0.000000
+      vertex 3.400000 10.000000 0.000000
+    endloop
+  endfacet
+  facet normal 1.000000 0.000000 0.000000
+    outer loop
+      vertex 3.400000 10.000000 0.000000
+      vertex 3.400000 10.000000 3.200000
+      vertex 3.400000 7.200000 3.200000
+    endloop
+  endfacet
+endsolid left_fan_wall_room_crac_2_Front_patch
+
+solid left_fan_wall_room_crac_2_Back_patch
+  facet normal -1.000000 -0.000000 0.000000
+    outer loop
+      vertex 1.800000 10.000000 3.200000
+      vertex 1.800000 10.000000 0.000000
+      vertex 1.800000 7.200000 0.000000
+    endloop
+  endfacet
+  facet normal -1.000000 -0.000000 0.000000
+    outer loop
+      vertex 1.800000 7.200000 0.000000
+      vertex 1.800000 7.200000 3.200000
+      vertex 1.800000 10.000000 3.200000
+    endloop
+  endfacet
+endsolid left_fan_wall_room_crac_2_Back_patch
+
+solid left_fan_wall_room_crac_2_Left
+  facet normal 0.000000 -1.000000 0.000000
+    outer loop
+      vertex 1.800000 7.200000 3.200000
+      vertex 1.800000 7.200000 0.000000
+      vertex 3.400000 7.200000 0.000000
+    endloop
+  endfacet
+  facet normal 0.000000 -1.000000 0.000000
+    outer loop
+      vertex 3.400000 7.200000 0.000000
+      vertex 3.400000 7.200000 3.200000
+      vertex 1.800000 7.200000 3.200000
+    endloop
+  endfacet
+endsolid left_fan_wall_room_crac_2_Left
+
+solid left_fan_wall_room_crac_2_Right
+  facet normal 0.000000 1.000000 0.000000
+    outer loop
+      vertex 3.400000 10.000000 3.200000
+      vertex 3.400000 10.000000 0.000000
+      vertex 1.800000 10.000000 0.000000
+    endloop
+  endfacet
+  facet normal 0.000000 1.000000 0.000000
+    outer loop
+      vertex 1.800000 10.000000 0.000000
+      vertex 1.800000 10.000000 3.200000
+      vertex 3.400000 10.000000 3.200000
+    endloop
+  endfacet
+endsolid left_fan_wall_room_crac_2_Right
+
+solid left_fan_wall_room_crac_2_Top
+  facet normal 0.000000 0.000000 1.000000
+    outer loop
+      vertex 1.800000 7.200000 3.200000
+      vertex 3.400000 7.200000 3.200000
+      vertex 3.400000 10.000000 3.200000
+    endloop
+  endfacet
+  facet normal 0.000000 0.000000 1.000000
+    outer loop
+      vertex 3.400000 10.000000 3.200000
+      vertex 1.800000 10.000000 3.200000
+      vertex 1.800000 7.200000 3.200000
+    endloop
+  endfacet
+endsolid left_fan_wall_room_crac_2_Top
+
+solid left_fan_wall_room_crac_2_Bottom
+  facet normal 0.000000 0.000000 -1.000000
+    outer loop
+      vertex 3.400000 7.200000 0.000000
+      vertex 1.800000 7.200000 0.000000
+      vertex 1.800000 10.000000 0.000000
+    endloop
+  endfacet
+  facet normal 0.000000 0.000000 -1.000000
+    outer loop
+      vertex 1.800000 10.000000 0.000000
+      vertex 3.400000 10.000000 0.000000
+      vertex 3.400000 7.200000 0.000000
+    endloop
+  endfacet
+endsolid left_fan_wall_room_crac_2_Bottom
+
+solid left_fan_wall_room_crac_3_Front_patch
+  facet normal 1.000000 0.000000 0.000000
+    outer loop
+      vertex 3.400000 12.200000 3.200000
+      vertex 3.400000 12.200000 0.000000
+      vertex 3.400000 15.000000 0.000000
+    endloop
+  endfacet
+  facet normal 1.000000 0.000000 0.000000
+    outer loop
+      vertex 3.400000 15.000000 0.000000
+      vertex 3.400000 15.000000 3.200000
+      vertex 3.400000 12.200000 3.200000
+    endloop
+  endfacet
+endsolid left_fan_wall_room_crac_3_Front_patch
+
+solid left_fan_wall_room_crac_3_Back_patch
+  facet normal -1.000000 -0.000000 0.000000
+    outer loop
+      vertex 1.800000 15.000000 3.200000
+      vertex 1.800000 15.000000 0.000000
+      vertex 1.800000 12.200000 0.000000
+    endloop
+  endfacet
+  facet normal -1.000000 -0.000000 0.000000
+    outer loop
+      vertex 1.800000 12.200000 0.000000
+      vertex 1.800000 12.200000 3.200000
+      vertex 1.800000 15.000000 3.200000
+    endloop
+  endfacet
+endsolid left_fan_wall_room_crac_3_Back_patch
+
+solid left_fan_wall_room_crac_3_Left
+  facet normal 0.000000 -1.000000 0.000000
+    outer loop
+      vertex 1.800000 12.200000 3.200000
+      vertex 1.800000 12.200000 0.000000
+      vertex 3.400000 12.200000 0.000000
+    endloop
+  endfacet
+  facet normal 0.000000 -1.000000 0.000000
+    outer loop
+      vertex 3.400000 12.200000 0.000000
+      vertex 3.400000 12.200000 3.200000
+      vertex 1.800000 12.200000 3.200000
+    endloop
+  endfacet
+endsolid left_fan_wall_room_crac_3_Left
+
+solid left_fan_wall_room_crac_3_Right
+  facet normal -0.000000 1.000000 0.000000
+    outer loop
+      vertex 3.400000 15.000000 3.200000
+      vertex 3.400000 15.000000 0.000000
+      vertex 1.800000 15.000000 0.000000
+    endloop
+  endfacet
+  facet normal -0.000000 1.000000 0.000000
+    outer loop
+      vertex 1.800000 15.000000 0.000000
+      vertex 1.800000 15.000000 3.200000
+      vertex 3.400000 15.000000 3.200000
+    endloop
+  endfacet
+endsolid left_fan_wall_room_crac_3_Right
+
+solid left_fan_wall_room_crac_3_Top
+  facet normal 0.000000 0.000000 1.000000
+    outer loop
+      vertex 1.800000 12.200000 3.200000
+      vertex 3.400000 12.200000 3.200000
+      vertex 3.400000 15.000000 3.200000
+    endloop
+  endfacet
+  facet normal 0.000000 0.000000 1.000000
+    outer loop
+      vertex 3.400000 15.000000 3.200000
+      vertex 1.800000 15.000000 3.200000
+      vertex 1.800000 12.200000 3.200000
+    endloop
+  endfacet
+endsolid left_fan_wall_room_crac_3_Top
+
+solid left_fan_wall_room_crac_3_Bottom
+  facet normal 0.000000 0.000000 -1.000000
+    outer loop
+      vertex 3.400000 12.200000 0.000000
+      vertex 1.800000 12.200000 0.000000
+      vertex 1.800000 15.000000 0.000000
+    endloop
+  endfacet
+  facet normal 0.000000 0.000000 -1.000000
+    outer loop
+      vertex 1.800000 15.000000 0.000000
+      vertex 3.400000 15.000000 0.000000
+      vertex 3.400000 12.200000 0.000000
+    endloop
+  endfacet
+endsolid left_fan_wall_room_crac_3_Bottom
+
+solid right_fan_wall_room_crac_1_Front_patch
+  facet normal -1.000000 0.000000 0.000000
+    outer loop
+      vertex 27.600000 5.200000 3.200000
+      vertex 27.600000 5.200000 0.000000
+      vertex 27.600000 2.400000 0.000000
+    endloop
+  endfacet
+  facet normal -1.000000 0.000000 0.000000
+    outer loop
+      vertex 27.600000 2.400000 0.000000
+      vertex 27.600000 2.400000 3.200000
+      vertex 27.600000 5.200000 3.200000
+    endloop
+  endfacet
+endsolid right_fan_wall_room_crac_1_Front_patch
+
+solid right_fan_wall_room_crac_1_Back_patch
+  facet normal 1.000000 0.000000 0.000000
+    outer loop
+      vertex 29.200000 2.400000 3.200000
+      vertex 29.200000 2.400000 0.000000
+      vertex 29.200000 5.200000 0.000000
+    endloop
+  endfacet
+  facet normal 1.000000 0.000000 0.000000
+    outer loop
+      vertex 29.200000 5.200000 0.000000
+      vertex 29.200000 5.200000 3.200000
+      vertex 29.200000 2.400000 3.200000
+    endloop
+  endfacet
+endsolid right_fan_wall_room_crac_1_Back_patch
+
+solid right_fan_wall_room_crac_1_Left
+  facet normal 0.000000 1.000000 0.000000
+    outer loop
+      vertex 29.200000 5.200000 3.200000
+      vertex 29.200000 5.200000 0.000000
+      vertex 27.600000 5.200000 0.000000
+    endloop
+  endfacet
+  facet normal 0.000000 1.000000 0.000000
+    outer loop
+      vertex 27.600000 5.200000 0.000000
+      vertex 27.600000 5.200000 3.200000
+      vertex 29.200000 5.200000 3.200000
+    endloop
+  endfacet
+endsolid right_fan_wall_room_crac_1_Left
+
+solid right_fan_wall_room_crac_1_Right
+  facet normal -0.000000 -1.000000 0.000000
+    outer loop
+      vertex 27.600000 2.400000 3.200000
+      vertex 27.600000 2.400000 0.000000
+      vertex 29.200000 2.400000 0.000000
+    endloop
+  endfacet
+  facet normal -0.000000 -1.000000 0.000000
+    outer loop
+      vertex 29.200000 2.400000 0.000000
+      vertex 29.200000 2.400000 3.200000
+      vertex 27.600000 2.400000 3.200000
+    endloop
+  endfacet
+endsolid right_fan_wall_room_crac_1_Right
+
+solid right_fan_wall_room_crac_1_Top
+  facet normal 0.000000 0.000000 1.000000
+    outer loop
+      vertex 29.200000 5.200000 3.200000
+      vertex 27.600000 5.200000 3.200000
+      vertex 27.600000 2.400000 3.200000
+    endloop
+  endfacet
+  facet normal 0.000000 0.000000 1.000000
+    outer loop
+      vertex 27.600000 2.400000 3.200000
+      vertex 29.200000 2.400000 3.200000
+      vertex 29.200000 5.200000 3.200000
+    endloop
+  endfacet
+endsolid right_fan_wall_room_crac_1_Top
+
+solid right_fan_wall_room_crac_1_Bottom
+  facet normal 0.000000 0.000000 -1.000000
+    outer loop
+      vertex 27.600000 5.200000 0.000000
+      vertex 29.200000 5.200000 0.000000
+      vertex 29.200000 2.400000 0.000000
+    endloop
+  endfacet
+  facet normal 0.000000 0.000000 -1.000000
+    outer loop
+      vertex 29.200000 2.400000 0.000000
+      vertex 27.600000 2.400000 0.000000
+      vertex 27.600000 5.200000 0.000000
+    endloop
+  endfacet
+endsolid right_fan_wall_room_crac_1_Bottom
+
+solid right_fan_wall_room_crac_2_Front_patch
+  facet normal -1.000000 0.000000 0.000000
+    outer loop
+      vertex 27.600000 10.000000 3.200000
+      vertex 27.600000 10.000000 0.000000
+      vertex 27.600000 7.200000 0.000000
+    endloop
+  endfacet
+  facet normal -1.000000 0.000000 0.000000
+    outer loop
+      vertex 27.600000 7.200000 0.000000
+      vertex 27.600000 7.200000 3.200000
+      vertex 27.600000 10.000000 3.200000
+    endloop
+  endfacet
+endsolid right_fan_wall_room_crac_2_Front_patch
+
+solid right_fan_wall_room_crac_2_Back_patch
+  facet normal 1.000000 0.000000 0.000000
+    outer loop
+      vertex 29.200000 7.200000 3.200000
+      vertex 29.200000 7.200000 0.000000
+      vertex 29.200000 10.000000 0.000000
+    endloop
+  endfacet
+  facet normal 1.000000 0.000000 0.000000
+    outer loop
+      vertex 29.200000 10.000000 0.000000
+      vertex 29.200000 10.000000 3.200000
+      vertex 29.200000 7.200000 3.200000
+    endloop
+  endfacet
+endsolid right_fan_wall_room_crac_2_Back_patch
+
+solid right_fan_wall_room_crac_2_Left
+  facet normal 0.000000 1.000000 0.000000
+    outer loop
+      vertex 29.200000 10.000000 3.200000
+      vertex 29.200000 10.000000 0.000000
+      vertex 27.600000 10.000000 0.000000
+    endloop
+  endfacet
+  facet normal 0.000000 1.000000 0.000000
+    outer loop
+      vertex 27.600000 10.000000 0.000000
+      vertex 27.600000 10.000000 3.200000
+      vertex 29.200000 10.000000 3.200000
+    endloop
+  endfacet
+endsolid right_fan_wall_room_crac_2_Left
+
+solid right_fan_wall_room_crac_2_Right
+  facet normal 0.000000 -1.000000 0.000000
+    outer loop
+      vertex 27.600000 7.200000 3.200000
+      vertex 27.600000 7.200000 0.000000
+      vertex 29.200000 7.200000 0.000000
+    endloop
+  endfacet
+  facet normal 0.000000 -1.000000 0.000000
+    outer loop
+      vertex 29.200000 7.200000 0.000000
+      vertex 29.200000 7.200000 3.200000
+      vertex 27.600000 7.200000 3.200000
+    endloop
+  endfacet
+endsolid right_fan_wall_room_crac_2_Right
+
+solid right_fan_wall_room_crac_2_Top
+  facet normal 0.000000 0.000000 1.000000
+    outer loop
+      vertex 29.200000 10.000000 3.200000
+      vertex 27.600000 10.000000 3.200000
+      vertex 27.600000 7.200000 3.200000
+    endloop
+  endfacet
+  facet normal 0.000000 0.000000 1.000000
+    outer loop
+      vertex 27.600000 7.200000 3.200000
+      vertex 29.200000 7.200000 3.200000
+      vertex 29.200000 10.000000 3.200000
+    endloop
+  endfacet
+endsolid right_fan_wall_room_crac_2_Top
+
+solid right_fan_wall_room_crac_2_Bottom
+  facet normal 0.000000 0.000000 -1.000000
+    outer loop
+      vertex 27.600000 10.000000 0.000000
+      vertex 29.200000 10.000000 0.000000
+      vertex 29.200000 7.200000 0.000000
+    endloop
+  endfacet
+  facet normal 0.000000 0.000000 -1.000000
+    outer loop
+      vertex 29.200000 7.200000 0.000000
+      vertex 27.600000 7.200000 0.000000
+      vertex 27.600000 10.000000 0.000000
+    endloop
+  endfacet
+endsolid right_fan_wall_room_crac_2_Bottom
+
+solid right_fan_wall_room_crac_3_Front_patch
+  facet normal -1.000000 0.000000 0.000000
+    outer loop
+      vertex 27.600000 15.200000 3.200000
+      vertex 27.600000 15.200000 0.000000
+      vertex 27.600000 12.400000 0.000000
+    endloop
+  endfacet
+  facet normal -1.000000 0.000000 0.000000
+    outer loop
+      vertex 27.600000 12.400000 0.000000
+      vertex 27.600000 12.400000 3.200000
+      vertex 27.600000 15.200000 3.200000
+    endloop
+  endfacet
+endsolid right_fan_wall_room_crac_3_Front_patch
+
+solid right_fan_wall_room_crac_3_Back_patch
+  facet normal 1.000000 0.000000 0.000000
+    outer loop
+      vertex 29.200000 12.400000 3.200000
+      vertex 29.200000 12.400000 0.000000
+      vertex 29.200000 15.200000 0.000000
+    endloop
+  endfacet
+  facet normal 1.000000 0.000000 0.000000
+    outer loop
+      vertex 29.200000 15.200000 0.000000
+      vertex 29.200000 15.200000 3.200000
+      vertex 29.200000 12.400000 3.200000
+    endloop
+  endfacet
+endsolid right_fan_wall_room_crac_3_Back_patch
+
+solid right_fan_wall_room_crac_3_Left
+  facet normal 0.000000 1.000000 0.000000
+    outer loop
+      vertex 29.200000 15.200000 3.200000
+      vertex 29.200000 15.200000 0.000000
+      vertex 27.600000 15.200000 0.000000
+    endloop
+  endfacet
+  facet normal 0.000000 1.000000 0.000000
+    outer loop
+      vertex 27.600000 15.200000 0.000000
+      vertex 27.600000 15.200000 3.200000
+      vertex 29.200000 15.200000 3.200000
+    endloop
+  endfacet
+endsolid right_fan_wall_room_crac_3_Left
+
+solid right_fan_wall_room_crac_3_Right
+  facet normal 0.000000 -1.000000 0.000000
+    outer loop
+      vertex 27.600000 12.400000 3.200000
+      vertex 27.600000 12.400000 0.000000
+      vertex 29.200000 12.400000 0.000000
+    endloop
+  endfacet
+  facet normal 0.000000 -1.000000 0.000000
+    outer loop
+      vertex 29.200000 12.400000 0.000000
+      vertex 29.200000 12.400000 3.200000
+      vertex 27.600000 12.400000 3.200000
+    endloop
+  endfacet
+endsolid right_fan_wall_room_crac_3_Right
+
+solid right_fan_wall_room_crac_3_Top
+  facet normal 0.000000 0.000000 1.000000
+    outer loop
+      vertex 29.200000 15.200000 3.200000
+      vertex 27.600000 15.200000 3.200000
+      vertex 27.600000 12.400000 3.200000
+    endloop
+  endfacet
+  facet normal 0.000000 0.000000 1.000000
+    outer loop
+      vertex 27.600000 12.400000 3.200000
+      vertex 29.200000 12.400000 3.200000
+      vertex 29.200000 15.200000 3.200000
+    endloop
+  endfacet
+endsolid right_fan_wall_room_crac_3_Top
+
+solid right_fan_wall_room_crac_3_Bottom
+  facet normal 0.000000 0.000000 -1.000000
+    outer loop
+      vertex 27.600000 15.200000 0.000000
+      vertex 29.200000 15.200000 0.000000
+      vertex 29.200000 12.400000 0.000000
+    endloop
+  endfacet
+  facet normal 0.000000 0.000000 -1.000000
+    outer loop
+      vertex 29.200000 12.400000 0.000000
+      vertex 27.600000 12.400000 0.000000
+      vertex 27.600000 15.200000 0.000000
+    endloop
+  endfacet
+endsolid right_fan_wall_room_crac_3_Bottom
 

@@ -1,0 +1,16 @@
+solid Baffle_3_copy_copy2_copy
+  facet normal 0.000000 -1.000000 0.000000
+    outer loop
+      vertex 22.051000 2.150000 4.000000
+      vertex 22.051000 2.150000 0.000000
+      vertex 23.851000 2.150000 0.000000
+    endloop
+  endfacet
+  facet normal 0.000000 -1.000000 0.000000
+    outer loop
+      vertex 23.851000 2.150000 0.000000
+      vertex 23.851000 2.150000 4.000000
+      vertex 22.051000 2.150000 4.000000
+    endloop
+  endfacet
+endsolid Baffle_3_copy_copy2_copy

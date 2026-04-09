@@ -1,0 +1,19 @@
+# Wavefront OBJ file written 2026-04-09T01:03:30
+o baffle_AHU_partition_copy_copy_patch_3_edgeMesh
+
+# points : 4
+# lines  : 4
+
+# <points count="4">
+v 11.3 13.7206 3
+v 11.3 13.7206 0
+v 14.299 13.7206 0
+v 14.299 13.7206 3
+# </points>
+
+# <edges count="4">
+l 1 2
+l 2 3
+l 3 4
+l 4 1
+# </edges>
