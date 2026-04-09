@@ -1,0 +1,376 @@
+{
+  "version": "1.0",
+  "source": "STLGeneratorForOpenFoam",
+  "projectName": "default",
+  "room": {
+    "height": 3,
+    "plane": [
+      {
+        "x": 4.5,
+        "y": 3.3000000000000003,
+        "z": 0
+      },
+      {
+        "x": 8.436876355748373,
+        "y": 7.125162689804773,
+        "z": 0
+      },
+      {
+        "x": 0.8368763557483734,
+        "y": 7.125162689804773,
+        "z": 0
+      }
+    ],
+    "locationInMesh": {
+      "x": 4.85,
+      "y": 4.87,
+      "z": 1.34
+    },
+    "extraLocationsInMesh": []
+  },
+  "racks": {
+    "Default_Rack_1": {
+      "stlFile": "merged_rack.stl",
+      "leakageStlFile": null,
+      "geometry": {
+        "anchor": {
+          "x": 5.459104295520039,
+          "y": 4.818048573018559,
+          "z": 0
+        },
+        "size": {
+          "W": 0.6,
+          "D": 1,
+          "H": 1.8669000000000002
+        },
+        "orientation": 45,
+        "unitCount": 42,
+        "unitHeight": 0.04445,
+        "slotWidthRatio": 0.8
+      },
+      "servers": [
+        {
+          "id": "Default_Rack_1_fan_server_1",
+          "type": "fanServer",
+          "startSlot": 25,
+          "spanSlots": 9,
+          "inletSolidName": "Default_Rack_1_fan_server_1_inlet_patch",
+          "outletSolidName": "Default_Rack_1_fan_server_1_outlet_patch",
+          "physics": {
+            "volumeFlowRate": 0.1553,
+            "power": 2250,
+            "fixedTemperature": null,
+            "fixedTempFace": null
+          }
+        }
+      ],
+      "leakage": {
+        "enabled": false,
+        "throughSlots": [],
+        "groups": []
+      },
+      "wallBaffleSolids": [],
+      "wallSolidNames": []
+    },
+    "Default_Rack_2": {
+      "stlFile": "merged_rack.stl",
+      "leakageStlFile": null,
+      "geometry": {
+        "anchor": {
+          "x": 4.290578882027281,
+          "y": 5.489720959994034,
+          "z": 0
+        },
+        "size": {
+          "W": 0.6,
+          "D": 1,
+          "H": 1.8669000000000002
+        },
+        "orientation": 135,
+        "unitCount": 42,
+        "unitHeight": 0.04445,
+        "slotWidthRatio": 0.8
+      },
+      "servers": [
+        {
+          "id": "Default_Rack_2_fan_server_1",
+          "type": "fanServer",
+          "startSlot": 13,
+          "spanSlots": 8,
+          "inletSolidName": "Default_Rack_2_fan_server_1_inlet_patch",
+          "outletSolidName": "Default_Rack_2_fan_server_1_outlet_patch",
+          "physics": {
+            "volumeFlowRate": 0.1381,
+            "power": 2000,
+            "fixedTemperature": null,
+            "fixedTempFace": null
+          }
+        },
+        {
+          "id": "Default_Rack_2_fan_server_2",
+          "type": "fanServer",
+          "startSlot": 33,
+          "spanSlots": 8,
+          "inletSolidName": "Default_Rack_2_fan_server_2_inlet_patch",
+          "outletSolidName": "Default_Rack_2_fan_server_2_outlet_patch",
+          "physics": {
+            "volumeFlowRate": 0.1381,
+            "power": 2000,
+            "fixedTemperature": null,
+            "fixedTempFace": null
+          }
+        }
+      ],
+      "leakage": {
+        "enabled": false,
+        "throughSlots": [],
+        "groups": []
+      },
+      "wallBaffleSolids": [],
+      "wallSolidNames": []
+    }
+  },
+  "acus": {
+    "ACU_1": {
+      "stlFile": "merged_acu.stl",
+      "geometry": {
+        "anchor": {
+          "x": 5.092532446009339,
+          "y": 7.1251626659629155,
+          "z": 0
+        },
+        "size": {
+          "W": 1.2,
+          "D": 0.6,
+          "H": 2
+        },
+        "orientation": 180
+      },
+      "supplyFaces": [
+        {
+          "solidName": "ACU_1_Back_patch",
+          "patchId": "p_1",
+          "face": "back",
+          "physics": {
+            "temperature": 15,
+            "volumeFlowRate": 4,
+            "velocity": 2
+          }
+        }
+      ],
+      "returnFaces": [
+        {
+          "solidName": "ACU_1_Top_patch",
+          "patchId": "p_2",
+          "face": "top",
+          "physics": {
+            "volumeFlowRate": 4,
+            "velocity": 2
+          }
+        }
+      ],
+      "wallSolidNames": []
+    }
+  },
+  "wallObjects": {},
+  "heatSources": {},
+  "baffles": {},
+  "floors": {
+    "Room_Floor": {
+      "stlFile": "merged_floor_ceiling.stl",
+      "geometry": {
+        "anchor": {
+          "x": 0.8368763557483734,
+          "y": 3.3000000000000003,
+          "z": 0
+        },
+        "size": {
+          "W": 7.6,
+          "D": 3.8251626898047726
+        }
+      },
+      "defaultBC": "wall",
+      "defaultBCPorosity": 0,
+      "defaultBCSeedConfig": null,
+      "defaultBCSeedConfigs": {},
+      "openings": []
+    },
+    "Room_Ceiling": {
+      "stlFile": "merged_floor_ceiling.stl",
+      "geometry": {
+        "anchor": {
+          "x": 0.8368763557483734,
+          "y": 3.3000000000000003,
+          "z": 3
+        },
+        "size": {
+          "W": 7.6,
+          "D": 3.8251626898047726
+        }
+      },
+      "defaultBC": "wall",
+      "defaultBCPorosity": 0,
+      "defaultBCSeedConfig": null,
+      "defaultBCSeedConfigs": {},
+      "openings": []
+    }
+  },
+  "walls": {
+    "Room_Wall_1": {
+      "stlFile": "room_wall.stl",
+      "geometry": {
+        "anchor": {
+          "x": 4.5,
+          "y": 3.3000000000000003,
+          "z": 0
+        },
+        "size": {
+          "W": 5.489158864883132,
+          "D": 0,
+          "H": 3
+        },
+        "orientation": 44.17543835525248
+      }
+    },
+    "Room_Wall_2": {
+      "stlFile": "room_wall.stl",
+      "geometry": {
+        "anchor": {
+          "x": 8.436876355748373,
+          "y": 7.125162689804773,
+          "z": 0
+        },
+        "size": {
+          "W": 7.6,
+          "D": 0,
+          "H": 3
+        },
+        "orientation": 180
+      }
+    },
+    "Room_Wall_3": {
+      "stlFile": "room_wall.stl",
+      "geometry": {
+        "anchor": {
+          "x": 0.8368763557483734,
+          "y": 7.125162689804773,
+          "z": 0
+        },
+        "size": {
+          "W": 5.296257587820839,
+          "D": 0,
+          "H": 3
+        },
+        "orientation": 313.76036995263576
+      }
+    }
+  },
+  "meshConfig": {
+    "baseSize": 0.2,
+    "maxGlobalCells": 500000,
+    "refinementLevel": [
+      1,
+      1
+    ],
+    "rackRefinementLevel": [
+      1,
+      1
+    ],
+    "serverFaceRefinementLevel": [
+      1,
+      1
+    ],
+    "serverFacePerUnitLevel": {},
+    "blankingPlateRefinementLevel": [
+      1,
+      1
+    ],
+    "blankingPlatePerUnitLevel": {},
+    "rackLeakageRefinementLevel": [
+      1,
+      2
+    ],
+    "rackLeakagePerUnitLevel": {},
+    "acuRefinementLevel": [
+      1,
+      1
+    ],
+    "boxRefinementLevel": [
+      1,
+      1
+    ],
+    "baffleRefinementLevel": [
+      1,
+      1
+    ],
+    "leakageRefinementLevel": [
+      2,
+      3
+    ],
+    "defaultFeatureLevel": 2,
+    "rackFeatureLevel": 2,
+    "acuFeatureLevel": 2,
+    "boxFeatureLevel": 2,
+    "baffleFeatureLevel": 2,
+    "leakageFeatureLevel": 2,
+    "parallelMesh": true,
+    "meshProcess": 4,
+    "blockMeshBounds": {
+      "min": {
+        "x": -0.072,
+        "y": 2.765,
+        "z": -0.398
+      },
+      "max": {
+        "x": 9.309,
+        "y": 7.66,
+        "z": 3.309
+      }
+    },
+    "refinementZones": []
+  },
+  "simulationConfig": {
+    "endTime": 500,
+    "writeInterval": 100,
+    "solverType": "steady",
+    "roomTemperature": 22,
+    "parallelSolve": false,
+    "solveProcess": 16,
+    "gravity": {
+      "x": 0,
+      "y": 0,
+      "z": -9.81
+    },
+    "monitoring": {
+      "residuals": true,
+      "serverTemperature": []
+    },
+    "residualControl": {
+      "p_rgh": 0.0001,
+      "U": 0.00001,
+      "T": 0.00001,
+      "k_epsilon": 0.0001
+    },
+    "schemes": {
+      "divSchemeU": "bounded Gauss linearUpwind grad(U)",
+      "divSchemeT": "bounded Gauss linearUpwind grad(U)",
+      "divSchemeK": "bounded Gauss limitedLinear 1",
+      "divSchemeEpsilon": "bounded Gauss limitedLinear 1",
+      "gradSchemeDefault": "Gauss linear",
+      "gradSchemeU": "cellLimited Gauss linear 1",
+      "gradSchemeK": "",
+      "gradSchemeEpsilon": "",
+      "laplacianScheme": "Gauss linear limited 0.667",
+      "snGradScheme": "limited 0.667"
+    },
+    "relaxationFactors": {
+      "p_rgh": 0.3,
+      "U": 0.7,
+      "T": 0.7,
+      "k_epsilon": 0.5
+    },
+    "nNonOrthogonalCorrectors": 0,
+    "solverPreset": "balanced",
+    "nonOrthoCorrection": false
+  }
+}

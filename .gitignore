@@ -4,10 +4,16 @@
 .vscode/
 .DS_Store
 
-# DCTwin output - exclude generated mesh but keep STL inputs
+# DCTwin output - exclude generated mesh but keep STL inputs and model/
 **/Mesh/constant/polyMesh/
-**/Mesh/constant/*.eMesh
+**/*.eMesh
+**/Mesh/constant/extendedFeatureEdgeMesh/
+**/Mesh/constant/g
+**/Mesh/constant/thermophysicalProperties
+**/Mesh/constant/transportProperties
+**/Mesh/constant/turbulenceProperties
 **/Mesh/0/
+**/Mesh/system/
 **/Mesh/processor*/
 **/Mesh/postProcessing/
 **/Mesh/log.*
