@@ -8,6 +8,9 @@
 **/Mesh/constant/polyMesh/
 **/*.eMesh
 **/Mesh/constant/extendedFeatureEdgeMesh/
+# Auto-generated baffle STL files (createBaffles output, not user input)
+**/Mesh/constant/triSurface/baffle_*.stl
+**/Mesh/constant/triSurface/leakage_*.stl
 **/Mesh/constant/g
 **/Mesh/constant/thermophysicalProperties
 **/Mesh/constant/transportProperties

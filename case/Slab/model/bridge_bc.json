@@ -50,15 +50,15 @@
   "R2_fan_server_1_inlet_patch": {
     "bc_type": "fan_inlet",
     "temperature": null,
-    "flow_rate": 0.2485,
+    "flow_rate": 0.1,
     "power": 3600.0,
     "sigma": null,
     "heat_flux": null
   },
   "R2_fan_server_1_outlet_patch": {
     "bc_type": "fan_outlet",
-    "temperature": 37.00043201555256,
-    "flow_rate": 0.2485,
+    "temperature": 54.82107355864811,
+    "flow_rate": 0.1,
     "power": 3600.0,
     "sigma": null,
     "heat_flux": null

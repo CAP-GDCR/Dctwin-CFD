@@ -34749,7 +34749,7 @@
         "anchor": {
           "x": 9.450999975204468,
           "y": 2.150000214576722,
-          "z": -6.250896333881428e-08
+          "z": -6.250896333881428e-8
         },
         "size": {
           "W": 10.199999833106997,
@@ -35448,8 +35448,8 @@
     "boxFeatureLevel": 2,
     "baffleFeatureLevel": 2,
     "leakageFeatureLevel": 2,
-    "parallelMesh": false,
-    "meshProcess": 1,
+    "parallelMesh": true,
+    "meshProcess": 24,
     "blockMeshBounds": {
       "min": {
         "x": -4.228,
@@ -35465,12 +35465,12 @@
     "refinementZones": []
   },
   "simulationConfig": {
-    "endTime": 100,
-    "writeInterval": 100,
+    "endTime": 1000,
+    "writeInterval": 1000,
     "solverType": "steady",
     "roomTemperature": 22,
     "parallelSolve": true,
-    "solveProcess": 1,
+    "solveProcess": 24,
     "gravity": {
       "x": 0,
       "y": 0,
@@ -35482,8 +35482,8 @@
     },
     "residualControl": {
       "p_rgh": 0.0001,
-      "U": 1e-05,
-      "T": 1e-05,
+      "U": 0.00001,
+      "T": 0.00001,
       "k_epsilon": 0.0001
     },
     "schemes": {

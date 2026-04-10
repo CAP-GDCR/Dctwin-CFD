@@ -31,39 +31,23 @@
     "sigma": null,
     "heat_flux": null
   },
-  "Rack_2_fan_server_1_inlet_patch": {
+  "Rack_2_Rack_2_Server_1_inlet_patch": {
     "bc_type": "fan_inlet",
     "temperature": null,
-    "flow_rate": 0.5,
-    "power": 1000.0,
+    "flow_rate": 0.02,
+    "power": 550.0,
     "sigma": null,
     "heat_flux": null
   },
-  "Rack_2_fan_server_1_outlet_patch": {
+  "Rack_2_Rack_2_Server_1_outlet_patch": {
     "bc_type": "fan_outlet",
-    "temperature": 26.656726308813784,
-    "flow_rate": 0.5,
-    "power": 1000.0,
+    "temperature": 47.77998674618953,
+    "flow_rate": 0.02,
+    "power": 550.0,
     "sigma": null,
     "heat_flux": null
   },
-  "raised_floor_patch_master": {
-    "bc_type": "perforated_baffle",
-    "temperature": null,
-    "flow_rate": null,
-    "power": null,
-    "sigma": 0.8,
-    "heat_flux": null
-  },
-  "raised_floor_patch_slave": {
-    "bc_type": "perforated_baffle",
-    "temperature": null,
-    "flow_rate": null,
-    "power": null,
-    "sigma": 0.8,
-    "heat_flux": null
-  },
-  "raised_floor_part1_master": {
+  "Room_Floor_copy_master": {
     "bc_type": "wall_baffle",
     "temperature": null,
     "flow_rate": null,
@@ -71,7 +55,7 @@
     "sigma": null,
     "heat_flux": null
   },
-  "raised_floor_part1_slave": {
+  "Room_Floor_copy_slave": {
     "bc_type": "wall_baffle",
     "temperature": null,
     "flow_rate": null,
@@ -143,7 +127,7 @@
     "sigma": null,
     "heat_flux": null
   },
-  "Wall_1": {
+  "Room_Wall_1": {
     "bc_type": "wall",
     "temperature": null,
     "flow_rate": null,
@@ -151,7 +135,7 @@
     "sigma": null,
     "heat_flux": null
   },
-  "Wall_1_copy": {
+  "Room_Wall_2": {
     "bc_type": "wall",
     "temperature": null,
     "flow_rate": null,
@@ -159,7 +143,7 @@
     "sigma": null,
     "heat_flux": null
   },
-  "Wall_1_copy2": {
+  "Room_Wall_3": {
     "bc_type": "wall",
     "temperature": null,
     "flow_rate": null,
@@ -167,7 +151,7 @@
     "sigma": null,
     "heat_flux": null
   },
-  "Wall_1_copy_copy": {
+  "Room_Wall_4": {
     "bc_type": "wall",
     "temperature": null,
     "flow_rate": null,
