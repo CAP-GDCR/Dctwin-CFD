@@ -5666,8 +5666,8 @@
     "refinementZones": []
   },
   "simulationConfig": {
-    "endTime": 100,
-    "writeInterval": 100,
+    "endTime": 5,
+    "writeInterval": 5,
     "solverType": "steady",
     "roomTemperature": 22,
     "parallelSolve": false,
