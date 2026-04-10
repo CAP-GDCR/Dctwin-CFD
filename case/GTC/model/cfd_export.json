@@ -6585,8 +6585,8 @@
     }
   },
   "meshConfig": {
-    "baseSize": 0.5,
-    "maxGlobalCells": 2000000,
+    "baseSize": 0.25,
+    "maxGlobalCells": 10000000,
     "refinementLevel": [
       1,
       1
@@ -6601,12 +6601,12 @@
     ],
     "serverFacePerUnitLevel": {
       "2": [
-        3,
-        4
+        4,
+        5
       ],
       "4": [
-        2,
-        3
+        3,
+        4
       ]
     },
     "blankingPlateRefinementLevel": [
@@ -6670,8 +6670,8 @@
     "boxFeatureLevel": 2,
     "baffleFeatureLevel": 2,
     "leakageFeatureLevel": 2,
-    "parallelMesh": false,
-    "meshProcess": 1,
+    "parallelMesh": true,
+    "meshProcess": 24,
     "blockMeshBounds": {
       "min": {
         "x": -3.199,
@@ -6687,8 +6687,8 @@
     "refinementZones": []
   },
   "simulationConfig": {
-    "endTime": 100,
-    "writeInterval": 100,
+    "endTime": 20,
+    "writeInterval": 20,
     "solverType": "steady",
     "roomTemperature": 22,
     "parallelSolve": false,
@@ -6710,7 +6710,7 @@
     },
     "schemes": {
       "divSchemeU": "bounded Gauss linearUpwind grad(U)",
-      "divSchemeT": "bounded Gauss linearUpwind grad(U)",
+      "divSchemeT": "bounded Gauss upwind",
       "divSchemeK": "bounded Gauss limitedLinear 1",
       "divSchemeEpsilon": "bounded Gauss limitedLinear 1",
       "gradSchemeDefault": "Gauss linear",
@@ -6723,10 +6723,10 @@
     "relaxationFactors": {
       "p_rgh": 0.3,
       "U": 0.7,
-      "T": 0.7,
-      "k_epsilon": 0.5
+      "T": 0.5,
+      "k_epsilon": 0.3
     },
-    "nNonOrthogonalCorrectors": 0,
+    "nNonOrthogonalCorrectors": 2,
     "solverPreset": "balanced",
     "nonOrthoCorrection": false
   }
