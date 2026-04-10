@@ -6298,7 +6298,7 @@
         "anchor": {
           "x": 25,
           "y": 4.800999975204467,
-          "z": 1.2030202611867935e-8
+          "z": 1.2030202611867935e-08
         },
         "size": {
           "W": 2.400000190734869,
@@ -6420,7 +6420,7 @@
         "anchor": {
           "x": 25,
           "y": 12.000999975204468,
-          "z": 1.2030202611867935e-8
+          "z": 1.2030202611867935e-08
         },
         "size": {
           "W": 2.400000190734869,
@@ -6670,8 +6670,8 @@
     "boxFeatureLevel": 2,
     "baffleFeatureLevel": 2,
     "leakageFeatureLevel": 2,
-    "parallelMesh": true,
-    "meshProcess": 24,
+    "parallelMesh": false,
+    "meshProcess": 1,
     "blockMeshBounds": {
       "min": {
         "x": -3.199,
@@ -6687,8 +6687,8 @@
     "refinementZones": []
   },
   "simulationConfig": {
-    "endTime": 1000,
-    "writeInterval": 1000,
+    "endTime": 100,
+    "writeInterval": 100,
     "solverType": "steady",
     "roomTemperature": 22,
     "parallelSolve": false,
@@ -6704,8 +6704,8 @@
     },
     "residualControl": {
       "p_rgh": 0.0001,
-      "U": 0.00001,
-      "T": 0.00001,
+      "U": 1e-05,
+      "T": 1e-05,
       "k_epsilon": 0.0001
     },
     "schemes": {

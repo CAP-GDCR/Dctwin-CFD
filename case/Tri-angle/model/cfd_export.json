@@ -313,8 +313,8 @@
     "boxFeatureLevel": 2,
     "baffleFeatureLevel": 2,
     "leakageFeatureLevel": 2,
-    "parallelMesh": true,
-    "meshProcess": 4,
+    "parallelMesh": false,
+    "meshProcess": 1,
     "blockMeshBounds": {
       "min": {
         "x": -0.072,
@@ -330,12 +330,12 @@
     "refinementZones": []
   },
   "simulationConfig": {
-    "endTime": 500,
+    "endTime": 100,
     "writeInterval": 100,
     "solverType": "steady",
     "roomTemperature": 22,
     "parallelSolve": false,
-    "solveProcess": 16,
+    "solveProcess": 1,
     "gravity": {
       "x": 0,
       "y": 0,
@@ -347,8 +347,8 @@
     },
     "residualControl": {
       "p_rgh": 0.0001,
-      "U": 0.00001,
-      "T": 0.00001,
+      "U": 1e-05,
+      "T": 1e-05,
       "k_epsilon": 0.0001
     },
     "schemes": {
