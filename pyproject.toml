@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "dctwin"
-version = "3.0.0"
+version = "3.0.3"
 
 description = "Automated CFD simulation framework for data center thermal analysis."
 authors = ["Ruihang Wang", "Zhiwei Cao"]
