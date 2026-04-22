@@ -8,12 +8,7 @@
 
 [![Python 3.10+](https://img.shields.io/badge/python-3.10%2B-blue.svg?logo=python&logoColor=white)](https://www.python.org/downloads/)
 [![License: Apache 2.0](https://img.shields.io/badge/license-Apache%202.0-green.svg)](LICENSE)
-[![OpenFOAM v2312](https://img.shields.io/badge/OpenFOAM-v2312-red.svg)](https://www.openfoam.com/)
-[![Poetry](https://img.shields.io/badge/packaging-Poetry-blue.svg?logo=poetry)](https://python-poetry.org/)
-[![Code style: Black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
-[![Tests](https://github.com/CAP-GDCR/Dctwin-CFD/actions/workflows/run-tests.yml/badge.svg)](https://github.com/CAP-GDCR/Dctwin-CFD/actions/workflows/run-tests.yml)
-[![Security: Bandit](https://img.shields.io/badge/security-bandit-yellow.svg)](https://github.com/PyCQA/bandit)
-[![Pydantic v2](https://img.shields.io/badge/pydantic-v2-E92063.svg?logo=pydantic)](https://docs.pydantic.dev/)
+[![OpenFOAM v2404](https://img.shields.io/badge/OpenFOAM-v2404-red.svg)](https://www.openfoam.com/)
 
 </div>
 
@@ -35,7 +30,7 @@
 ## Prerequisites
 
 - Python 3.10+
-- [OpenFOAM v2312](https://www.openfoam.com/) installed and available on PATH
+- [OpenFOAM v2404](https://www.openfoam.com/) installed and available on PATH
 - [Poetry](https://python-poetry.org/) for dependency management
 
 ## Installation
@@ -73,14 +68,14 @@ python -m dctwin.runner.run_cfd --config config.toml --solve-only  # Solve only
 
 ## Example Cases
 
-| Case | Description |
-|------|-------------|
-| `case/Base_coldAisleIso/` | 2 racks, 1 ACU, cold aisle containment |
-| `case/Base_leakage/` | Air leakage modeling through unoccupied rack U-slots |
-| `case/Large_facility/` | Large-scale facility with multiple racks and ACUs |
-| `case/Highrise_hall/` | High-ceiling data hall configuration |
-| `case/Medium_room/` | Medium-sized standard data center |
-| `case/Raised_floor/` | Raised floor with perforated tile openings |
+| Case                        | Description                                          |
+| --------------------------- | ---------------------------------------------------- |
+| `case/Base_coldAisleIso/` | 2 racks, 1 ACU, cold aisle containment               |
+| `case/Base_leakage/`      | Air leakage modeling through unoccupied rack U-slots |
+| `case/Large_facility/`    | Large-scale facility with multiple racks and ACUs    |
+| `case/Highrise_hall/`     | High-ceiling data hall configuration                 |
+| `case/Medium_room/`       | Medium-sized standard data center                    |
+| `case/Raised_floor/`      | Raised floor with perforated tile openings           |
 
 ## Architecture
 
