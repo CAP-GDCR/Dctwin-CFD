@@ -14,12 +14,12 @@
 
 ---
 
-**DCTwin** is an open-source Python framework that turns a simple JSON room layout definition into a complete [OpenFOAM](https://openfoam.org/) thermal simulation for data center environments.
+**DCTwin** is an open-source Python framework that automates [OpenFOAM](https://openfoam.org/) thermal simulation for data center environments. Given a JSON simulation manifest (`cfd_export.json`) and pre-exported STL geometry files, DCTwin handles the full CFD pipeline automatically.
 
 ## Key Features
 
-- **JSON-driven workflow** -- Define your data center layout (racks, servers, ACUs, raised floor, containment) in a `room.json` file
-- **Automated CFD pipeline** -- STL geometry generation -> blockMesh -> snappyHexMesh -> boundary conditions -> buoyantBoussinesqSimpleFoam -> post-processing
+- **JSON-driven workflow** -- Data center layout (racks, servers, ACUs, raised floor, containment) defined in a `cfd_export.json` manifest with pre-exported multi-solid STL files
+- **Automated CFD pipeline** -- blockMesh -> snappyHexMesh -> boundary conditions -> buoyantBoussinesqSimpleFoam -> post-processing
 - **Domain-specific automation**:
   - Automatic U-slot server positioning and inlet/outlet face generation
   - Air leakage modeling with auto-computed Darcy-Forchheimer porous media
@@ -55,15 +55,12 @@ poetry install
 ## Quick Start
 
 ```bash
-cd case/Base_coldAisleIso/
-
-# Full pipeline (STL -> mesh -> solve)
-python -m dctwin.runner.run_cfd --config config.toml
+# Full pipeline (mesh -> solve)
+python -m dctwin.runner.run_cfd --from-cfdrun case/Base_coldAisleIso/model/cfd_export.json
 
 # Or run stages independently:
-python -m dctwin.runner.run_cfd --config config.toml --stl-only    # Geometry only
-python -m dctwin.runner.run_cfd --config config.toml --mesh-only   # Mesh only
-python -m dctwin.runner.run_cfd --config config.toml --solve-only  # Solve only
+python -m dctwin.runner.run_cfd --from-cfdrun case/Base_coldAisleIso/model/cfd_export.json --mesh-only   # Mesh only
+python -m dctwin.runner.run_cfd --from-cfdrun case/Base_coldAisleIso/model/cfd_export.json --solve-only  # Solve only
 ```
 
 ## Example Cases
@@ -72,21 +69,22 @@ python -m dctwin.runner.run_cfd --config config.toml --solve-only  # Solve only
 | --------------------------- | ---------------------------------------------------- |
 | `case/Base_coldAisleIso/` | 2 racks, 1 ACU, cold aisle containment               |
 | `case/Base_leakage/`      | Air leakage modeling through unoccupied rack U-slots |
-| `case/Large_facility/`    | Large-scale facility with multiple racks and ACUs    |
-| `case/Highrise_hall/`     | High-ceiling data hall configuration                 |
-| `case/Medium_room/`       | Medium-sized standard data center                    |
-| `case/Raised_floor/`      | Raised floor with perforated tile openings           |
+| `case/Slab/`              | Single-slab data center room                         |
+| `case/STDCT/`             | Standard data center topology                        |
+| `case/Tri-angle/`         | Triangular room layout                               |
+| `case/GTC/`               | GTC conference demo case                             |
+| `case/Alibaba-hongchou/`  | Large-scale Alibaba data center                      |
 
 ## Architecture
 
 ```
-room.json (layout definition)
+cfd_export.json + STL files
     |
     v
 +------------------------------+
-|  GeometryManager             |
-|  JSON -> multi-solid STL     |
-|  (racks, ACUs, walls, floor) |
+|  STLGenRunner                |
+|  Validates JSON manifest,    |
+|  discovers STL geometry      |
 +------------------------------+
     |
     v
@@ -118,21 +116,20 @@ room.json (layout definition)
 ## Project Structure
 
 ```
-dctwin/
-├── dctwin/                    # Core Python package
+Dctwin-CFD/
+├── src/dctwin/                # Core Python package
 │   ├── runner/                # Pipeline orchestration
-│   │   ├── case.py            # CaseRunner (main orchestrator)
+│   │   ├── stlgen_runner.py   # STLGenRunner (main orchestrator)
 │   │   ├── run_cfd.py         # CLI entry point
-│   │   ├── mesh.py            # MeshGenerator
+│   │   ├── cfdproj_schema.py  # Pydantic v2 schema validation
+│   │   ├── bridge_bc.py       # Boundary condition registry
 │   │   ├── fields.py          # FieldGenerator (boundary conditions)
-│   │   └── config.py          # Configuration management
+│   │   └── postprocess.py     # Result extraction
 │   ├── third_parties/foam/    # OpenFOAM integration
 │   │   ├── geometry/          # STL generation (Entity/SubEntity pattern)
 │   │   └── template/          # Jinja2 OpenFOAM dict templates
 │   └── utils/                 # Shared utilities
-├── dclib/                     # Data center domain models (Pydantic v2)
 ├── case/                      # Example simulation cases
-├── test/                      # Test suite
 └── docs/                      # Documentation (MkDocs)
 ```
 

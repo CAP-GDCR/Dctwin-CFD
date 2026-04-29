@@ -7,7 +7,7 @@ authors = ["Ruihang Wang", "Zhiwei Cao"]
 license = "Apache-2.0"
 readme = "README.md"
 packages = [
-    {include = "dctwin"},
+    {include = "dctwin", from = "src"},
 ]
 
 [tool.poetry.dependencies]
