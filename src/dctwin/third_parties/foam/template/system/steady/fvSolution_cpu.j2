@@ -15,6 +15,26 @@ FoamFile
 }
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
+// 2026-04-18: aligned with official OpenFOAM-6 hotRoom tutorial
+// (https://github.com/OpenFOAM/OpenFOAM-6/tree/master/tutorials/heatTransfer/
+//  buoyantBoussinesqSimpleFoam/hotRoom/system) — PBiCGStab+DILU for
+// (U|T|k|ε), PCG+GAMG-preconditioner for p_rgh. Pair with relax_k_epsilon
+// default 0.3 (below) to damp buoyancy-driven k-ε self-excitation that
+// caused CMI-China NaN at iter ~309 with relax=0.5.
+//
+// History:
+// - fd81aa4 (2026-04-17) moved T/k/ε to smoothSolver+symGaussSeidel.
+//   Problem: smoothSolver with nSweeps=2 OVER-CONVERGES T/k/ε in a single
+//   SIMPLE iteration on sparse cases (Tri_angle T final residual 0.029 vs
+//   PBiCGStab's 0.084). Next outer step, T has nothing left to solve →
+//   smoothSolver does 0-2 trivial iterations → T decouples from U →
+//   continuity explodes 800× at Time=2 → NaN by Time=7.
+// - GAMG + minIter attempts: minIter is not respected by GAMG/GAMGPCG in
+//   OpenFOAM 2406 (docs say it is); p_rghFinal still reports 0 iter.
+// - maxInternalSkewness tightening 4.0→2.5: hypothesis that CMI-China NaN
+//   was caused by 1 skew=4.12 cell — disproved. Even with clean mesh,
+//   CMI-China diverged at Time=309 with relax_k_epsilon=0.5. Real fix was
+//   lowering k/ε under-relaxation to 0.3; skew 4 is fine.
 solvers
 {
     p_rgh
@@ -59,6 +79,9 @@ SIMPLE
     nNonOrthogonalCorrectors {{ n_non_ortho_correctors | default(0) }};
     pRefCell    0;
     pRefValue   0;
+{% if use_pref_point %}
+    pRefPoint   ({{ pref_x }} {{ pref_y }} {{ pref_z }});
+{% endif %}
     consistent  yes;
 
     residualControl
@@ -81,7 +104,7 @@ relaxationFactors
     {
         U               {{ relax_U | default(0.7) }};
         T               {{ relax_T | default(0.7) }};
-        "(k|epsilon)"   {{ relax_k_epsilon | default(0.5) }};
+        "(k|epsilon)"   table ((0 0.05) (50 {{ relax_k_epsilon | default(0.3) }}));
     }
 }
 

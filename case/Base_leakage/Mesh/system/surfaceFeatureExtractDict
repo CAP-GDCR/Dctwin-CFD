@@ -12,79 +12,13 @@ FoamFile
     object surfaceFeatureExtractDict;
 }
 
-    baffle_Baffle_1.stl
-    {
-        extractionMethod    extractFromSurface;
-        extractFromSurfaceCoeffs { includedAngle 150; }
-        writeObj yes;
-    }
-    baffle_Baffle_2.stl
-    {
-        extractionMethod    extractFromSurface;
-        extractFromSurfaceCoeffs { includedAngle 150; }
-        writeObj yes;
-    }
-    baffle_Baffle_3.stl
-    {
-        extractionMethod    extractFromSurface;
-        extractFromSurfaceCoeffs { includedAngle 150; }
-        writeObj yes;
-    }
-    baffle_Default_Rack_1_outlet_u4_u5_wallBaffle.stl
-    {
-        extractionMethod    extractFromSurface;
-        extractFromSurfaceCoeffs { includedAngle 150; }
-        writeObj yes;
-    }
-    baffle_Default_Rack_1_outlet_u8_u9_wallBaffle.stl
-    {
-        extractionMethod    extractFromSurface;
-        extractFromSurfaceCoeffs { includedAngle 150; }
-        writeObj yes;
-    }
-    baffle_Default_Rack_2_outlet_u4_u9_wallBaffle.stl
-    {
-        extractionMethod    extractFromSurface;
-        extractFromSurfaceCoeffs { includedAngle 150; }
-        writeObj yes;
-    }
-    baffle_Default_Rack_3_inlet_u7_u13_wallBaffle.stl
-    {
-        extractionMethod    extractFromSurface;
-        extractFromSurfaceCoeffs { includedAngle 150; }
-        writeObj yes;
-    }
-    baffle_Room_Raising_floor_part1.stl
-    {
-        extractionMethod    extractFromSurface;
-        extractFromSurfaceCoeffs { includedAngle 150; }
-        writeObj yes;
-    }
-    baffle_Room_Raising_floor_patch.stl
-    {
-        extractionMethod    extractFromSurface;
-        extractFromSurfaceCoeffs { includedAngle 150; }
-        writeObj yes;
-    }
-    leakage_Default_Rack_1_u30_u32_leakage_zone.stl
-    {
-        extractionMethod    extractFromSurface;
-        extractFromSurfaceCoeffs { includedAngle 150; }
-        writeObj yes;
-    }
-    leakage_Default_Rack_1_u39_u41_leakage_zone.stl
-    {
-        extractionMethod    extractFromSurface;
-        extractFromSurfaceCoeffs { includedAngle 150; }
-        writeObj yes;
-    }
-    leakage_Default_Rack_1_u4_u9_leakage_zone.stl
-    {
-        extractionMethod    extractFromSurface;
-        extractFromSurfaceCoeffs { includedAngle 150; }
-        writeObj yes;
-    }
     merged_acu.stl
+    {
+        extractionMethod    extractFromSurface;
+        extractFromSurfaceCoeffs { includedAngle 150; }
+        writeObj yes;
+    }
+    merged_blanking_6U.stl
     {
         extractionMethod    extractFromSurface;
         extractFromSurfaceCoeffs { includedAngle 150; }
@@ -96,7 +30,97 @@ FoamFile
         extractFromSurfaceCoeffs { includedAngle 150; }
         writeObj yes;
     }
-    merged_rack.stl
+    merged_rack_frame.stl
+    {
+        extractionMethod    extractFromSurface;
+        extractFromSurfaceCoeffs { includedAngle 150; }
+        writeObj yes;
+    }
+    merged_server_12U.stl
+    {
+        extractionMethod    extractFromSurface;
+        extractFromSurfaceCoeffs { includedAngle 150; }
+        writeObj yes;
+    }
+    merged_server_14U.stl
+    {
+        extractionMethod    extractFromSurface;
+        extractFromSurfaceCoeffs { includedAngle 150; }
+        writeObj yes;
+    }
+    merged_server_6U.stl
+    {
+        extractionMethod    extractFromSurface;
+        extractFromSurfaceCoeffs { includedAngle 150; }
+        writeObj yes;
+    }
+    merged_through_zone_13U__Default_Rack_1_u30_u42_through_zone.stl
+    {
+        extractionMethod    extractFromSurface;
+        extractFromSurfaceCoeffs { includedAngle 150; }
+        writeObj yes;
+    }
+    merged_through_zone_15U__Default_Rack_1_u1_u15_through_zone.stl
+    {
+        extractionMethod    extractFromSurface;
+        extractFromSurfaceCoeffs { includedAngle 150; }
+        writeObj yes;
+    }
+    merged_through_zone_15U__Default_Rack_2_u1_u15_through_zone.stl
+    {
+        extractionMethod    extractFromSurface;
+        extractFromSurfaceCoeffs { includedAngle 150; }
+        writeObj yes;
+    }
+    merged_through_zone_24U__Default_Rack_3_u1_u24_through_zone.stl
+    {
+        extractionMethod    extractFromSurface;
+        extractFromSurfaceCoeffs { includedAngle 150; }
+        writeObj yes;
+    }
+    merged_through_zone_24U__Default_Rack_4_u1_u24_through_zone.stl
+    {
+        extractionMethod    extractFromSurface;
+        extractFromSurfaceCoeffs { includedAngle 150; }
+        writeObj yes;
+    }
+    merged_through_zone_3U__Default_Rack_1_u30_u32_through_zone.stl
+    {
+        extractionMethod    extractFromSurface;
+        extractFromSurfaceCoeffs { includedAngle 150; }
+        writeObj yes;
+    }
+    merged_through_zone_3U__Default_Rack_2_u30_u32_through_zone.stl
+    {
+        extractionMethod    extractFromSurface;
+        extractFromSurfaceCoeffs { includedAngle 150; }
+        writeObj yes;
+    }
+    merged_through_zone_4U__Default_Rack_1_u39_u42_through_zone.stl
+    {
+        extractionMethod    extractFromSurface;
+        extractFromSurfaceCoeffs { includedAngle 150; }
+        writeObj yes;
+    }
+    merged_through_zone_4U__Default_Rack_2_u39_u42_through_zone.stl
+    {
+        extractionMethod    extractFromSurface;
+        extractFromSurfaceCoeffs { includedAngle 150; }
+        writeObj yes;
+    }
+    merged_through_zone_6U__Default_Rack_3_u37_u42_through_zone.stl
+    {
+        extractionMethod    extractFromSurface;
+        extractFromSurfaceCoeffs { includedAngle 150; }
+        writeObj yes;
+    }
+    merged_through_zone_6U__Default_Rack_4_u37_u42_through_zone.stl
+    {
+        extractionMethod    extractFromSurface;
+        extractFromSurfaceCoeffs { includedAngle 150; }
+        writeObj yes;
+    }
+    merged_wall_baffle.stl
     {
         extractionMethod    extractFromSurface;
         extractFromSurfaceCoeffs { includedAngle 150; }

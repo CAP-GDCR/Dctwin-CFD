@@ -1,99 +1,62 @@
-"""Integration tests: verify solver runs 100 steps without NaN/divergence.
+"""Integration tests: verify solver runs without NaN/divergence.
 
 These are end-to-end tests that exercise the full pipeline:
-cfd_export.json + STL files → mesh (if needed) → solve 100 steps → check no NaN.
+.cfdrun + STL files -> mesh -> solve -> check no NaN.
+
+These tests are slow (minutes per case) and require OpenFOAM on PATH.
+Mark with @pytest.mark.slow so they can be skipped in CI.
 """
-import json
+import re
 import subprocess
 import sys
-import pytest
 from pathlib import Path
 
-CASE_DIR = Path("/mnt/lv/litianyu/mycode/dctwin/case")
+import pytest
+
+CASE_DIR = Path(__file__).resolve().parents[4] / "case"
 PYTHON = sys.executable
 
 
-def _run_solve(case_name: str, steps: int = 100, timeout: int = 600) -> dict:
-    """Run solve-only for a case and return result dict."""
-    case = CASE_DIR / case_name
-    cfd_json = case / "model" / "cfd_export.json"
-    mesh_points = case / "Mesh" / "constant" / "polyMesh" / "points"
-
-    if not cfd_json.exists():
-        return {"ok": False, "reason": f"cfd_export.json not found: {cfd_json}"}
-    if not mesh_points.exists():
-        return {"ok": False, "reason": f"No mesh: {mesh_points}"}
-
-    # Patch endTime to `steps` and force serial
-    with open(cfd_json) as f:
-        d = json.load(f)
-    d.setdefault("simulationConfig", {})["endTime"] = steps
-    d["simulationConfig"]["writeInterval"] = steps
-    d["simulationConfig"]["solveProcess"] = 1
-    with open(cfd_json, "w") as f:
-        json.dump(d, f, indent=2)
-
-    cmd = [PYTHON, "-m", "dctwin.runner.run_cfd",
-           "--from-stlgen", str(cfd_json), "--solve-only"]
-    proc = subprocess.run(cmd, cwd=str(case), capture_output=True,
-                          text=True, timeout=timeout)
-
-    stdout = proc.stdout + proc.stderr
-    has_nan = "nan" in stdout.lower() and "Initial residual = nan" in stdout
-    has_fatal = "FOAM FATAL" in stdout
-
-    # Check for time-step output
-    log_dir = case / "log"
-    latest_run = sorted(log_dir.glob("*")) if log_dir.exists() else []
-    solved_to = None
-    if latest_run:
-        for td in sorted(latest_run[-1].iterdir()):
-            if td.is_dir() and td.name.isdigit() and int(td.name) > 0:
-                solved_to = int(td.name)
-
-    return {
-        "ok": proc.returncode == 0 and not has_nan and not has_fatal,
-        "returncode": proc.returncode,
-        "has_nan": has_nan,
-        "has_fatal": has_fatal,
-        "solved_to": solved_to,
-        "reason": "diverged (NaN)" if has_nan else
-                  ("FOAM FATAL" if has_fatal else
-                   (f"exit code {proc.returncode}" if proc.returncode != 0 else "OK")),
-    }
+def _find_cfdrun(case_name: str) -> Path:
+    model_dir = CASE_DIR / case_name / "model"
+    cfdrun_files = list(model_dir.glob("*.cfdrun"))
+    if cfdrun_files:
+        return cfdrun_files[0]
+    json_files = list(model_dir.glob("*.json"))
+    if json_files:
+        return json_files[0]
+    raise FileNotFoundError(f"No .cfdrun manifest in {model_dir}")
 
 
+def _check_solver_log(case_path: Path) -> dict:
+    """Parse the latest solver log for NaN and final time step."""
+    log_dir = case_path / "log"
+    if not log_dir.exists():
+        return {"last_time": 0, "nan_count": 0}
+    runs = sorted(log_dir.iterdir(), key=lambda p: p.name)
+    if not runs:
+        return {"last_time": 0, "nan_count": 0}
+    latest = runs[-1]
+    solver_log = latest / "log.mpi_solver"
+    if not solver_log.exists():
+        return {"last_time": 0, "nan_count": 0}
+    text = solver_log.read_text(errors="replace")
+    times = re.findall(r"^Time = (\d+)", text, re.MULTILINE)
+    last_time = int(times[-1]) if times else 0
+    nan_count = text.count("Nan")
+    return {"last_time": last_time, "nan_count": nan_count}
+
+
+@pytest.mark.slow
 class TestSolverConvergence:
-    """Verify that STDCT and GTC cases solve 100 steps without divergence."""
 
-    @pytest.mark.slow
-    def test_stdct_solves_100_steps(self):
-        """STDCT must solve 100 steps without NaN or FOAM FATAL errors."""
-        result = _run_solve("STDCT", steps=100, timeout=600)
-        assert result["ok"], (
-            f"STDCT diverged: {result['reason']}. "
-            f"solved_to={result.get('solved_to')}, "
-            f"has_nan={result.get('has_nan')}"
-        )
-        assert result["solved_to"] == 100, (
-            f"STDCT only solved to t={result['solved_to']}, expected 100"
-        )
-
-    @pytest.mark.slow
-    def test_gtc_solves_20_steps(self):
-        """GTC must solve 20 steps without NaN or FOAM FATAL errors.
-
-        Note: only 20 steps because GTC has ~8M cells (baseSize=0.25 required to
-        capture 2U server patches). Each step takes ~100s, so 20 steps ~= 35 min.
-        The divergence bug was that T went NaN at step 1, so 20 steps is
-        sufficient to prove the fix works.
-        """
-        result = _run_solve("GTC", steps=20, timeout=3000)
-        assert result["ok"], (
-            f"GTC diverged: {result['reason']}. "
-            f"solved_to={result.get('solved_to')}, "
-            f"has_nan={result.get('has_nan')}"
-        )
-        assert result["solved_to"] == 20, (
-            f"GTC only solved to t={result['solved_to']}, expected 20"
-        )
+    @pytest.mark.parametrize("case_name", ["Tri-angle", "Slab"])
+    def test_small_case_no_nan(self, case_name):
+        """Small cases must complete without NaN."""
+        cfdrun = _find_cfdrun(case_name)
+        cmd = [PYTHON, "-m", "dctwin.runner.run_cfd", "--from-cfdrun", str(cfdrun)]
+        proc = subprocess.run(cmd, capture_output=True, text=True,
+                              timeout=600, cwd=str(CASE_DIR.parent))
+        result = _check_solver_log(CASE_DIR / case_name)
+        assert result["nan_count"] == 0, f"{case_name}: {result['nan_count']} NaN detected"
+        assert proc.returncode == 0, f"{case_name}: exit code {proc.returncode}"

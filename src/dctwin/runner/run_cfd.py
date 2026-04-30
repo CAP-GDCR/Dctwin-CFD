@@ -3,9 +3,12 @@
 Run OpenFOAM CFD simulation for data center thermal analysis.
 
 Usage:
-    python -m dctwin.runner.run_cfd --from-stlgen <path/to/cfd_export.json>
-    python -m dctwin.runner.run_cfd --from-stlgen <path> --mesh-only
-    python -m dctwin.runner.run_cfd --from-stlgen <path> --solve-only
+    python -m dctwin.runner.run_cfd --from-cfdrun <path/to/<basename>.cfdrun>
+    python -m dctwin.runner.run_cfd --from-cfdrun <path> --mesh-only
+    python -m dctwin.runner.run_cfd --from-cfdrun <path> --solve-only
+
+The .cfdrun manifest is a JSON file produced by the STL UI via
+`/api/browser/export-cfdrun`; it sits at `<case>/model/<basename>.cfdrun`.
 """
 import argparse
 import sys
@@ -26,11 +29,11 @@ def parse_args() -> argparse.Namespace:
     )
 
     parser.add_argument(
-        "--from-stlgen",
+        "--from-cfdrun",
         type=str,
         required=True,
-        metavar="CFD_EXPORT_JSON",
-        help="Path to cfd_export.json from STLGeneratorForOpenFoam. "
+        metavar="CFDRUN_PATH",
+        help="Path to <basename>.cfdrun from STLGeneratorForOpenFoam. "
              "Uses browser-exported STL files in Mesh/constant/triSurface/ directly.",
     )
 
@@ -55,21 +58,21 @@ def main() -> None:
 
     from dctwin.runner.stlgen_runner import STLGenRunner
 
-    cfdproj_path = Path(args.from_stlgen).resolve()
-    if not cfdproj_path.exists():
-        logger.error(f"CFD export file not found: {cfdproj_path}")
+    cfdrun_path = Path(args.from_cfdrun).resolve()
+    if not cfdrun_path.exists():
+        logger.error(f"cfdrun file not found: {cfdrun_path}")
         sys.exit(1)
 
-    # cfd_export.json lives in <case>/model/ — case_dir is the parent
-    case_dir = cfdproj_path.parent
+    # <basename>.cfdrun lives in <case>/model/ — case_dir is the parent
+    case_dir = cfdrun_path.parent
     if case_dir.name == "model":
         case_dir = case_dir.parent
 
-    logger.info(f"STLGen pipeline: {cfdproj_path}")
+    logger.info(f"STLGen pipeline: {cfdrun_path}")
     logger.info(f"Case directory: {case_dir}")
 
     try:
-        runner = STLGenRunner(case_dir, cfdproj_path)
+        runner = STLGenRunner(case_dir, cfdrun_path)
         if args.mesh_only:
             runner.run_mesh_only()
         elif args.solve_only:

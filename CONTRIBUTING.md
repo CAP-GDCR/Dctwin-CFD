@@ -33,7 +33,7 @@ bash lint.sh
 ### Running Tests
 
 ```bash
-pytest test/
+pytest src/dctwin/runner/tests/
 ```
 
 ### Building Documentation
@@ -44,7 +44,7 @@ mkdocs serve
 
 ## Submitting Changes
 
-1. Ensure your code passes linting (`bash lint.sh`) and tests (`pytest test/`)
+1. Ensure your code passes linting (`bash lint.sh`) and tests (`pytest src/dctwin/runner/tests/`)
 2. Write clear commit messages
 3. Open a pull request against the `main` branch
 4. Describe what your change does and why
@@ -53,7 +53,7 @@ mkdocs serve
 
 - Use GitHub Issues to report bugs or request features
 - Include your Python version, OpenFOAM version, and OS
-- For simulation issues, include the `config.toml` and relevant log output
+- For simulation issues, include the `.cfdrun` manifest and relevant log output
 
 ## License
 

@@ -15,11 +15,18 @@ FoamFile
 }
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
+// 2026-04-18: realizableKE replaces standard kEpsilon.
+// Standard k-ε has a 1/k singularity in the ε source term
+// (C_1ε · (ε/k) · P_k) that destabilises under jet/shear inlets —
+// CMI-China NaN at iter ~309 and Tri_angle ε-boundedness saturation
+// at 5.3e6 m²/s³ both traced to this. Shih et al. (1995) realizable
+// variant replaces the denominator with (k + √(νε)) — no singularity.
+// Identical k/ε BC types → no downstream template changes required.
 simulationType RAS;
 
 RAS
 {
-    RASModel        kEpsilon;
+    RASModel        realizableKE;
 
     turbulence      {{ turbulence }};
 

@@ -1,13 +1,11 @@
 """
 Tests that verify the OSS repo is usable by a fresh clone following README instructions.
 
-These tests check:
-1. Package installs correctly (poetry can find dctwin)
-2. CLI entry point works with documented arguments
-3. Tutorial cases have the files the README says they have
-4. Case-level run_cfd.py scripts can at least import successfully
+Every assertion maps to a specific README or CONTRIBUTING.md claim.
+If a test fails, either the code or the docs are wrong — fix the one that's lying.
 """
-import importlib
+import json
+import re
 import subprocess
 import sys
 from pathlib import Path
@@ -17,144 +15,216 @@ import pytest
 REPO_ROOT = Path(__file__).resolve().parents[4]
 CASE_DIR = REPO_ROOT / "case"
 
+EXPECTED_CASES = [
+    "Tri-angle",
+    "Slab",
+    "Base_leakage",
+    "STDCT",
+    "GTC",
+]
+
+
+def _find_cfdrun(case_name: str) -> Path:
+    model_dir = CASE_DIR / case_name / "model"
+    cfdrun_files = list(model_dir.glob("*.cfdrun"))
+    if cfdrun_files:
+        return cfdrun_files[0]
+    json_files = list(model_dir.glob("*.json"))
+    if json_files:
+        return json_files[0]
+    raise FileNotFoundError(f"No .cfdrun manifest in {model_dir}")
+
+
+# ── README: Package Installation ──────────────────────────────────────────
 
 class TestPackageInstallation:
-    """Verify the package is importable after poetry install."""
+    """README §Installation: after setup, dctwin must be importable."""
 
-    def test_dctwin_is_importable(self):
+    def test_dctwin_importable(self):
         import dctwin
         assert hasattr(dctwin, "__init__")
 
-    def test_runner_module_importable(self):
-        from dctwin.runner import stlgen_runner
+    def test_runner_modules_importable(self):
+        """README §Project Structure lists these modules — they must all import."""
+        from dctwin.runner import stlgen_runner, run_cfd, cfdproj_schema
+        from dctwin.runner import bridge_bc, fields, postprocess
         assert hasattr(stlgen_runner, "STLGenRunner")
-
-    def test_run_cfd_module_importable(self):
-        from dctwin.runner import run_cfd
         assert hasattr(run_cfd, "main")
-
-    def test_cfdproj_schema_importable(self):
-        from dctwin.runner import cfdproj_schema
         assert hasattr(cfdproj_schema, "CFDExport")
 
 
-class TestCLIEntryPoint:
-    """Verify the CLI entry point matches README documentation."""
+# ── README: CLI Entry Point ───────────────────────────────────────────────
 
-    def test_run_cfd_help(self):
+class TestCLIEntryPoint:
+    """README §Quick Start: CLI flags must match documented usage."""
+
+    def test_help_shows_from_cfdrun(self):
         result = subprocess.run(
             [sys.executable, "-m", "dctwin.runner.run_cfd", "--help"],
             capture_output=True, text=True, timeout=30,
         )
-        assert result.returncode == 0, f"--help failed: {result.stderr}"
-        assert "--from-cfdrun" in result.stdout, (
-            "CLI should accept --from-cfdrun, "
-            f"but help says: {result.stdout}"
-        )
+        assert result.returncode == 0
+        assert "--from-cfdrun" in result.stdout
 
-    def test_readme_claims_config_toml_flag(self):
-        """README says: python -m dctwin.runner.run_cfd --config config.toml
-        But the actual CLI only accepts --from-stlgen. This test documents
-        the mismatch."""
+    def test_help_shows_mesh_only(self):
         result = subprocess.run(
-            [sys.executable, "-m", "dctwin.runner.run_cfd", "--config", "fake.toml"],
+            [sys.executable, "-m", "dctwin.runner.run_cfd", "--help"],
             capture_output=True, text=True, timeout=30,
         )
-        # If --config is not recognized, argparse returns exit code 2
-        assert result.returncode != 0, (
-            "--config should NOT be accepted (README is wrong)"
+        assert "--mesh-only" in result.stdout
+
+    def test_help_shows_solve_only(self):
+        result = subprocess.run(
+            [sys.executable, "-m", "dctwin.runner.run_cfd", "--help"],
+            capture_output=True, text=True, timeout=30,
         )
+        assert "--solve-only" in result.stdout
+
+    def test_quick_start_path_exists(self):
+        """The exact path shown in README Quick Start must exist."""
+        qstart = REPO_ROOT / "case" / "Tri-angle" / "model" / "Tri_angle.cfdrun"
+        assert qstart.is_file(), f"Quick Start path missing: {qstart}"
 
 
-class TestTutorialCaseFiles:
-    """Verify tutorial cases have the files needed to run."""
+# ── README: Example Cases ─────────────────────────────────────────────────
 
-    EXPECTED_CASES = [
-        "Base_coldAisleIso",
-        "Base_leakage",
-        "Slab",
-        "STDCT",
-        "Tri-angle",
-        "GTC",
-        "Alibaba-hongchou",
-    ]
+class TestExampleCases:
+    """README §Example Cases: every listed case must exist with valid data."""
 
     @pytest.mark.parametrize("case_name", EXPECTED_CASES)
-    def test_case_directory_exists(self, case_name):
-        case_path = CASE_DIR / case_name
-        assert case_path.is_dir(), f"Case directory missing: {case_path}"
+    def test_case_dir_exists(self, case_name):
+        assert (CASE_DIR / case_name).is_dir()
 
     @pytest.mark.parametrize("case_name", EXPECTED_CASES)
-    def test_case_has_cfd_export_json(self, case_name):
-        cfd_export = CASE_DIR / case_name / "model" / "cfd_export.json"
-        assert cfd_export.is_file(), f"Missing: {cfd_export}"
+    def test_case_has_cfdrun(self, case_name):
+        cfdrun = _find_cfdrun(case_name)
+        assert cfdrun.is_file()
+        data = json.loads(cfdrun.read_text())
+        assert "room" in data, f"{case_name}: cfdrun missing 'room' key"
 
     @pytest.mark.parametrize("case_name", EXPECTED_CASES)
     def test_case_has_stl_files(self, case_name):
         tri_surface = CASE_DIR / case_name / "Mesh" / "constant" / "triSurface"
-        assert tri_surface.is_dir(), f"Missing triSurface dir: {tri_surface}"
+        assert tri_surface.is_dir()
         stl_files = list(tri_surface.glob("*.stl"))
-        assert len(stl_files) > 0, f"No STL files in {tri_surface}"
+        assert len(stl_files) >= 1
 
-    def test_readme_cases_match_actual(self):
-        """README case list should match actual case directories."""
-        readme_cases = {
-            "Base_coldAisleIso", "Base_leakage",
-            "Slab", "STDCT", "Tri-angle", "GTC", "Alibaba-hongchou",
-        }
-        actual_cases = {d.name for d in CASE_DIR.iterdir() if d.is_dir()}
-        phantom_in_readme = readme_cases - actual_cases
-        assert not phantom_in_readme, (
-            f"README lists cases that don't exist: {phantom_in_readme}"
-        )
+    def test_no_unlisted_cases(self):
+        """case/ must not contain dirs that README doesn't mention."""
+        actual = {d.name for d in CASE_DIR.iterdir() if d.is_dir()}
+        expected = set(EXPECTED_CASES)
+        extra = actual - expected
+        assert not extra, f"case/ has dirs not in README: {extra}"
 
+    def test_no_stale_cfd_export_json(self):
+        """Old cfd_export.json files should not remain."""
+        stale = list(CASE_DIR.rglob("cfd_export.json"))
+        assert len(stale) == 0, f"Stale cfd_export.json: {stale}"
 
-class TestCaseRunScripts:
-    """Verify no stale per-case run_cfd.py scripts remain."""
-
-    def test_no_stale_case_run_scripts(self):
-        """Old run_cfd.py scripts imported CaseRunner which doesn't exist.
-        They should be removed — use the CLI entry point instead."""
-        stale_scripts = list(CASE_DIR.rglob("run_cfd.py"))
-        assert len(stale_scripts) == 0, (
-            f"Stale run_cfd.py scripts found: {stale_scripts}. "
-            "Use 'python -m dctwin.runner.run_cfd --from-cfdrun ...' instead."
-        )
+    def test_no_stale_run_scripts(self):
+        """Per-case run_cfd.py scripts are obsolete."""
+        stale = list(CASE_DIR.rglob("run_cfd.py"))
+        assert len(stale) == 0, f"Stale run_cfd.py: {stale}"
 
 
-class TestReadmeAccuracy:
-    """Verify README claims match repository reality."""
+# ── README: Project Structure ─────────────────────────────────────────────
 
-    def test_no_config_toml_in_any_case(self):
-        """README Quick Start says to use config.toml but none exist."""
-        config_files = list(CASE_DIR.rglob("config.toml"))
-        # This SHOULD fail if README is accurate — documenting that it's wrong
-        assert len(config_files) == 0, (
-            "Expected no config.toml files (README is outdated)"
-        )
+class TestProjectStructure:
+    """README §Project Structure: every listed path must exist."""
 
-    def test_no_dclib_directory(self):
-        """README project structure shows dclib/ but it doesn't exist."""
-        dclib_dir = REPO_ROOT / "dclib"
-        assert not dclib_dir.exists(), (
-            "dclib/ should not exist (it's not a dependency)"
-        )
+    @pytest.mark.parametrize("path", [
+        "src/dctwin/runner/stlgen_runner.py",
+        "src/dctwin/runner/run_cfd.py",
+        "src/dctwin/runner/cfdproj_schema.py",
+        "src/dctwin/runner/bridge_bc.py",
+        "src/dctwin/runner/fields.py",
+        "src/dctwin/runner/postprocess.py",
+        "src/dctwin/third_parties/foam/template",
+        "src/dctwin/utils",
+        "docs",
+    ])
+    def test_readme_path_exists(self, path):
+        assert (REPO_ROOT / path).exists(), f"README lists {path} but it doesn't exist"
 
-    def test_project_structure_claims_root_dctwin(self):
-        """README shows dctwin/ at root but code is in src/dctwin/."""
-        root_dctwin = REPO_ROOT / "dctwin"
-        src_dctwin = REPO_ROOT / "src" / "dctwin"
-        assert not root_dctwin.exists(), "dctwin/ at root should not exist"
-        assert src_dctwin.exists(), "src/dctwin/ should exist"
+    def test_no_phantom_geometry_dir(self):
+        """geometry/ was removed — must not appear in README or filesystem."""
+        geo = REPO_ROOT / "src" / "dctwin" / "third_parties" / "foam" / "geometry"
+        assert not geo.exists()
 
-    def test_pyproject_packages_path(self):
-        """pyproject.toml says packages=[{include='dctwin'}] but code is in src/."""
+    def test_pyproject_src_layout(self):
         import toml
         pyproject = toml.load(REPO_ROOT / "pyproject.toml")
         packages = pyproject["tool"]["poetry"]["packages"]
         for pkg in packages:
             if pkg.get("include") == "dctwin":
-                assert pkg.get("from") == "src", (
-                    f"pyproject.toml packages should use from='src', "
-                    f"but got: {pkg}"
-                )
+                assert pkg.get("from") == "src"
+
+
+# ── README: Metadata ──────────────────────────────────────────────────────
+
+class TestMetadata:
+    """README badges and top-level files must be consistent."""
+
+    def test_license_file_exists(self):
+        assert (REPO_ROOT / "LICENSE").is_file()
+
+    def test_license_is_apache2(self):
+        text = (REPO_ROOT / "LICENSE").read_text()
+        assert "Apache License" in text
+        assert "Version 2.0" in text
+
+    def test_banner_image_exists(self):
+        assert (REPO_ROOT / "docs" / "_static" / "images" / "cap_banner.png").is_file()
+
+    def test_contributing_exists(self):
+        assert (REPO_ROOT / "CONTRIBUTING.md").is_file()
+
+    def test_setup_env_exists(self):
+        assert (REPO_ROOT / "setup_env.sh").is_file()
+
+    def test_lint_sh_exists(self):
+        assert (REPO_ROOT / "lint.sh").is_file()
+
+
+# ── README: No stale references ───────────────────────────────────────────
+
+class TestNoStaleReferences:
+    """Docs and code must not reference removed cases or old filenames."""
+
+    def test_readme_no_base_coldaisleiso(self):
+        text = (REPO_ROOT / "README.md").read_text()
+        assert "Base_coldAisleIso" not in text
+
+    def test_readme_no_alibaba(self):
+        text = (REPO_ROOT / "README.md").read_text()
+        assert "Alibaba" not in text
+
+    def test_readme_no_cfd_export_json(self):
+        text = (REPO_ROOT / "README.md").read_text()
+        assert "cfd_export.json" not in text
+
+    def test_contributing_no_old_test_path(self):
+        text = (REPO_ROOT / "CONTRIBUTING.md").read_text()
+        assert "pytest test/" not in text
+
+    def test_contributing_no_config_toml(self):
+        text = (REPO_ROOT / "CONTRIBUTING.md").read_text()
+        assert "config.toml" not in text
+
+    def test_no_dcdtuni_in_python_files(self):
+        this_file = Path(__file__).resolve()
+        for py_file in (REPO_ROOT / "src").rglob("*.py"):
+            if "__pycache__" in str(py_file) or py_file.resolve() == this_file:
+                continue
+            text = py_file.read_text(errors="replace")
+            assert "dcdtuni" not in text, f"dcdtuni leak in {py_file}"
+
+    def test_tests_no_deleted_case_refs(self):
+        this_file = Path(__file__).resolve()
+        test_dir = REPO_ROOT / "src" / "dctwin" / "runner" / "tests"
+        for py_file in test_dir.glob("*.py"):
+            if py_file.resolve() == this_file:
+                continue
+            text = py_file.read_text()
+            assert "Base_coldAisleIso" not in text, f"stale ref in {py_file.name}"
+            assert "Alibaba" not in text, f"stale ref in {py_file.name}"

@@ -1,8 +1,8 @@
 """
-dctwin - Data Center CFD Simulation Engine.
+dctwin - Data Center Digital Twin.
 
 Provides OpenFOAM-based thermal simulation for data center rooms
-via the STLGen pipeline (--from-stlgen).
+via the STLGen pipeline (--from-cfdrun).
 """
 
-__version__ = "3.0.0"
+__version__ = "4.0.1"

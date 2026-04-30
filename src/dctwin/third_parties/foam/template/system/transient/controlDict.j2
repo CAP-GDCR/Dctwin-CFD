@@ -17,7 +17,7 @@ FoamFile
 
 application     buoyantBoussinesqPimpleFoam;
 
-startFrom       latestTime;
+startFrom       {{ start_from }};
 
 startTime       0;
 
@@ -27,7 +27,11 @@ endTime         {{ end_time }};
 
 deltaT          {{ delta_t }};
 
+{% if adjust_time_step %}
 writeControl    adjustableRunTime;
+{% else %}
+writeControl    timeStep;
+{% endif %}
 
 writeInterval   {{ write_interval }};
 
@@ -35,23 +39,31 @@ purgeWrite      0;
 
 writeFormat     ascii;
 
-writePrecision  6;
+writePrecision  {{ write_precision }};
 
 writeCompression off;
 
 timeFormat      general;
 
-timePrecision   6;
+timePrecision   {{ time_precision }};
 
 runTimeModifiable true;
 
+{% if adjust_time_step %}
 adjustTimeStep  yes;
 
-maxCo           1;
+maxCo           {{ max_co }};
 
-{% if probes|length > 0 %}
+maxDeltaT       {{ max_delta_t }};
+{% else %}
+adjustTimeStep  no;
+{% endif %}
+
+{% set surface_field_values = surface_field_values|default([]) %}
+{% if probes|length > 0 or surface_field_values|length > 0 %}
 functions
 {
+{% if probes|length > 0 %}
 	probes
 	{
 		// Where to load it from
@@ -61,8 +73,12 @@ functions
 		// Name of the directory for probe data
 		name probes;
 		// Write control
+{% if adjust_time_step %}
 		writeControl adjustableRunTime;
-		writeInterval {{ write_interval }};
+{% else %}
+		writeControl timeStep;
+{% endif %}
+		writeInterval {{ fo_write_interval }};
 		// Fields to be probed
 		fields
 		(
@@ -79,6 +95,27 @@ functions
             {% endfor %}
         );
    }
+{% endif %}
+{% for fo in surface_field_values %}
+    {{ fo.name }}
+    {
+        type            surfaceFieldValue;
+        libs            ("libfieldFunctionObjects.so");
+        enabled         true;
+{% if adjust_time_step %}
+        writeControl    adjustableRunTime;
+{% else %}
+        writeControl    timeStep;
+{% endif %}
+        writeInterval   {{ fo_write_interval }};
+        log             true;
+        writeFields     false;
+        regionType      patch;
+        name            {{ fo.patch }};
+        operation       areaAverage;
+        fields          (T);
+    }
+{% endfor %}
 }
 {% endif %}
 

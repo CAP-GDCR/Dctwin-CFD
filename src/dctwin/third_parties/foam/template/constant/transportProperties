@@ -17,17 +17,17 @@ FoamFile
 
 transportModel Newtonian;
 
-// Laminar viscosity (air @ 20°C)
-nu              1.516e-05;
+// Laminar kinematic viscosity (air, mu/rho = 1.8e-5/1.19)
+nu              1.513e-05;
 
-// Thermal expansion coefficient (1/TRef)
-beta            3.43e-03;
+// Thermal expansion coefficient
+beta            3.3e-03;
 
-// Reference temperature (cold aisle temperature, ~20°C)
+// Reference temperature (cold aisle temperature, ~22°C)
 TRef            295.15;
 
-// Laminar Prandtl number (air @ 20°C)
-Pr              0.71;
+// Laminar Prandtl number (mu*Cp/k = 1.8e-5*1005/0.026)
+Pr              0.696;
 
 // Turbulent Prandtl number
 Prt             0.85;

@@ -16,184 +16,24 @@ internalFacesOnly true;
 
 baffles
 {
-    Room_Raising_floor_patch
+    merged_wall_baffle
     {
         type        faceZone;
-        zoneName    Room_Raising_floor_patch;
+        zoneName    merged_wall_baffle;
 
         patches
         {
             master
             {
-                name            Room_Raising_floor_patch_master;
+                name            merged_wall_baffle_master;
                 type            cyclic;
-                neighbourPatch  Room_Raising_floor_patch_slave;
+                neighbourPatch  merged_wall_baffle_slave;
             }
             slave
             {
-                name            Room_Raising_floor_patch_slave;
+                name            merged_wall_baffle_slave;
                 type            cyclic;
-                neighbourPatch  Room_Raising_floor_patch_master;
-            }
-        }
-    }    Room_Raising_floor_part1
-    {
-        type        faceZone;
-        zoneName    Room_Raising_floor_part1;
-
-        patches
-        {
-            master
-            {
-                name            Room_Raising_floor_part1_master;
-                type            cyclic;
-                neighbourPatch  Room_Raising_floor_part1_slave;
-            }
-            slave
-            {
-                name            Room_Raising_floor_part1_slave;
-                type            cyclic;
-                neighbourPatch  Room_Raising_floor_part1_master;
-            }
-        }
-    }    Default_Rack_1_outlet_u4_u5_wallBaffle
-    {
-        type        faceZone;
-        zoneName    Default_Rack_1_outlet_u4_u5_wallBaffle;
-
-        patches
-        {
-            master
-            {
-                name            Default_Rack_1_outlet_u4_u5_wallBaffle_master;
-                type            cyclic;
-                neighbourPatch  Default_Rack_1_outlet_u4_u5_wallBaffle_slave;
-            }
-            slave
-            {
-                name            Default_Rack_1_outlet_u4_u5_wallBaffle_slave;
-                type            cyclic;
-                neighbourPatch  Default_Rack_1_outlet_u4_u5_wallBaffle_master;
-            }
-        }
-    }    Default_Rack_1_outlet_u8_u9_wallBaffle
-    {
-        type        faceZone;
-        zoneName    Default_Rack_1_outlet_u8_u9_wallBaffle;
-
-        patches
-        {
-            master
-            {
-                name            Default_Rack_1_outlet_u8_u9_wallBaffle_master;
-                type            cyclic;
-                neighbourPatch  Default_Rack_1_outlet_u8_u9_wallBaffle_slave;
-            }
-            slave
-            {
-                name            Default_Rack_1_outlet_u8_u9_wallBaffle_slave;
-                type            cyclic;
-                neighbourPatch  Default_Rack_1_outlet_u8_u9_wallBaffle_master;
-            }
-        }
-    }    Default_Rack_2_outlet_u4_u9_wallBaffle
-    {
-        type        faceZone;
-        zoneName    Default_Rack_2_outlet_u4_u9_wallBaffle;
-
-        patches
-        {
-            master
-            {
-                name            Default_Rack_2_outlet_u4_u9_wallBaffle_master;
-                type            cyclic;
-                neighbourPatch  Default_Rack_2_outlet_u4_u9_wallBaffle_slave;
-            }
-            slave
-            {
-                name            Default_Rack_2_outlet_u4_u9_wallBaffle_slave;
-                type            cyclic;
-                neighbourPatch  Default_Rack_2_outlet_u4_u9_wallBaffle_master;
-            }
-        }
-    }    Default_Rack_3_inlet_u7_u13_wallBaffle
-    {
-        type        faceZone;
-        zoneName    Default_Rack_3_inlet_u7_u13_wallBaffle;
-
-        patches
-        {
-            master
-            {
-                name            Default_Rack_3_inlet_u7_u13_wallBaffle_master;
-                type            cyclic;
-                neighbourPatch  Default_Rack_3_inlet_u7_u13_wallBaffle_slave;
-            }
-            slave
-            {
-                name            Default_Rack_3_inlet_u7_u13_wallBaffle_slave;
-                type            cyclic;
-                neighbourPatch  Default_Rack_3_inlet_u7_u13_wallBaffle_master;
-            }
-        }
-    }    Baffle_1
-    {
-        type        faceZone;
-        zoneName    Baffle_1;
-
-        patches
-        {
-            master
-            {
-                name            Baffle_1_master;
-                type            cyclic;
-                neighbourPatch  Baffle_1_slave;
-            }
-            slave
-            {
-                name            Baffle_1_slave;
-                type            cyclic;
-                neighbourPatch  Baffle_1_master;
-            }
-        }
-    }    Baffle_2
-    {
-        type        faceZone;
-        zoneName    Baffle_2;
-
-        patches
-        {
-            master
-            {
-                name            Baffle_2_master;
-                type            cyclic;
-                neighbourPatch  Baffle_2_slave;
-            }
-            slave
-            {
-                name            Baffle_2_slave;
-                type            cyclic;
-                neighbourPatch  Baffle_2_master;
-            }
-        }
-    }    Baffle_3
-    {
-        type        faceZone;
-        zoneName    Baffle_3;
-
-        patches
-        {
-            master
-            {
-                name            Baffle_3_master;
-                type            cyclic;
-                neighbourPatch  Baffle_3_slave;
-            }
-            slave
-            {
-                name            Baffle_3_slave;
-                type            cyclic;
-                neighbourPatch  Baffle_3_master;
+                neighbourPatch  merged_wall_baffle_master;
             }
         }
     }

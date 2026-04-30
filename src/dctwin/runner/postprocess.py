@@ -718,10 +718,11 @@ class CFDPostProcessor:
 
         plotter = self._make_plotter(rc)
 
-        # Map string normals to vectors
+        # Map string normals to vectors. Y-up convention: fallback default
+        # for an unknown string is (0, 1, 0) (horizontal slice at fixed Y).
         normal_map = {"x": (1, 0, 0), "y": (0, 1, 0), "z": (0, 0, 1)}
         if isinstance(normal, str):
-            normal = normal_map.get(normal.lower(), (0, 0, 1))
+            normal = normal_map.get(normal.lower(), (0, 1, 0))
 
         if origin is None:
             origin = self.internal.center
@@ -1428,26 +1429,27 @@ class PostProcessor:
     def render_streamlines(
         self,
         visible_patches: Optional[List[str]] = None,
-        n_z_layers: int = 3,
-        n_xy_points: int = 9,
+        n_y_layers: int = 3,
+        n_xz_points: int = 9,
     ) -> str:
         """Render velocity streamlines and return a base64-encoded PNG.
 
-        Seed points are auto-generated within the mesh bounding box:
+        Seed points are auto-generated within the mesh bounding box under
+        Y-up convention (Y is vertical):
 
-        * ``n_z_layers`` horizontal layers evenly spaced within the Z range
-          (at z_min + h*k/(n_z_layers+1) for k=1..n_z_layers).
-        * ``n_xy_points`` seed points per layer in a sqrt(n)xsqrt(n) grid.
-          Default 9 gives a 3x3 grid.
+        * ``n_y_layers`` horizontal layers evenly spaced within the Y range
+          (at y_min + h*k/(n_y_layers+1) for k=1..n_y_layers).
+        * ``n_xz_points`` seed points per layer in a sqrt(n)xsqrt(n) XZ grid.
+          Default 9 gives a 3x3 grid on the horizontal floor plan.
 
         Parameters
         ----------
         visible_patches : list of str or None
             Patches to show as wireframe context.  None means all.
-        n_z_layers : int
-            Number of Z layers (default 3).
-        n_xy_points : int
-            Number of XY seed points per layer (default 9, i.e. 3x3).
+        n_y_layers : int
+            Number of Y (vertical) layers (default 3).
+        n_xz_points : int
+            Number of XZ seed points per layer (default 9, i.e. 3x3).
 
         Returns
         -------
@@ -1462,23 +1464,23 @@ class PostProcessor:
         bounds = pp.internal.bounds  # (xmin, xmax, ymin, ymax, zmin, zmax)
         xmin, xmax, ymin, ymax, zmin, zmax = bounds
 
-        # Generate seed points
-        h = zmax - zmin
-        n_side = max(1, int(round(n_xy_points ** 0.5)))
+        # Generate seed points (Y-up: Y is vertical, XZ is floor-plan)
+        h = ymax - ymin
+        n_side = max(1, int(round(n_xz_points ** 0.5)))
         seed_points = []
 
-        for k in range(1, n_z_layers + 1):
-            z = zmin + h * k / (n_z_layers + 1)
+        for k in range(1, n_y_layers + 1):
+            y = ymin + h * k / (n_y_layers + 1)
             for ix in range(n_side):
-                for iy in range(n_side):
+                for iz in range(n_side):
                     x = xmin + (xmax - xmin) * (ix + 0.5) / n_side
-                    y = ymin + (ymax - ymin) * (iy + 0.5) / n_side
+                    z = zmin + (zmax - zmin) * (iz + 0.5) / n_side
                     seed_points.append([x, y, z])
 
         seed_arr = np.array(seed_points, dtype=np.float64)
         logger.info(
-            "Streamline seeds: %d points (%d Z-layers x %d XY-grid)",
-            len(seed_arr), n_z_layers, n_side * n_side,
+            "Streamline seeds: %d points (%d Y-layers x %d XZ-grid)",
+            len(seed_arr), n_y_layers, n_side * n_side,
         )
 
         sc = StreamlineConfig(
@@ -2401,6 +2403,67 @@ class MeshPreviewLoader:
         self.mesh_dir = Path(mesh_dir).resolve()
         self._binary: Optional[bytes] = None
         self._meta: Optional[List[dict]] = None
+
+    # ------------------------------------------------------------------
+    # Volume mesh counts
+    # ------------------------------------------------------------------
+
+    def read_counts(self) -> dict:
+        """Return volume cell + boundary face counts from polyMesh.
+
+        OpenFOAM writes ``note "nPoints:... nCells:... nFaces:... nInternalFaces:..."``
+        into the ``owner`` file header. When present we use it directly —
+        it's authoritative and costs a few bytes to read. When absent
+        (very old meshes, or custom writers that drop the note) we return
+        ``None`` for counts that require it and still report the sum of
+        ``nFaces`` parsed from the ``boundary`` file.
+
+        Keys:
+          - ``nCells`` — total volume cells (or ``None`` if note absent)
+          - ``nFaces`` — total faces (internal + boundary) or ``None``
+          - ``nInternalFaces`` — internal faces or ``None``
+          - ``nBoundaryFaces`` — ``nFaces - nInternalFaces`` or ``None``
+          - ``nBoundarySum`` — sum of per-patch ``nFaces`` from ``boundary``
+            (always a concrete int; ``0`` when polyMesh missing)
+        """
+        import re
+
+        result = {
+            "nCells": None,
+            "nFaces": None,
+            "nInternalFaces": None,
+            "nBoundaryFaces": None,
+            "nBoundarySum": 0,
+        }
+        poly = self.mesh_dir / "constant" / "polyMesh"
+        owner = poly / "owner"
+        boundary = poly / "boundary"
+
+        if owner.exists():
+            # Header is ~20 lines; read a bounded chunk to avoid touching the
+            # binary payload on large meshes.
+            head = owner.read_text(encoding="utf-8", errors="replace")[:4096]
+            m = re.search(
+                r'note\s+"([^"]*)"',
+                head,
+            )
+            if m:
+                note = m.group(1)
+                pairs = dict(re.findall(r"(\w+):(\d+)", note))
+                if "nCells" in pairs:
+                    result["nCells"] = int(pairs["nCells"])
+                if "nFaces" in pairs:
+                    result["nFaces"] = int(pairs["nFaces"])
+                if "nInternalFaces" in pairs:
+                    result["nInternalFaces"] = int(pairs["nInternalFaces"])
+                if result["nFaces"] is not None and result["nInternalFaces"] is not None:
+                    result["nBoundaryFaces"] = result["nFaces"] - result["nInternalFaces"]
+
+        if boundary.exists():
+            patches = self._parse_boundary(boundary)
+            result["nBoundarySum"] = sum(int(p.get("nFaces", 0)) for p in patches)
+
+        return result
 
     # ------------------------------------------------------------------
     # polyMesh ASCII parsers
