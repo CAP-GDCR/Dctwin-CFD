@@ -1,0 +1,72 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  v2406                                 |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       dictionary;
+    location    "system";
+    object      fvSchemes;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+ddtSchemes
+{
+{% if ddt_scheme == "CrankNicolson" %}
+    default         CrankNicolson {{ cn_coeff }};
+{% elif ddt_scheme == "backward" %}
+    default         backward;
+{% else %}
+    default         Euler;
+{% endif %}
+}
+
+gradSchemes
+{
+    default         {{ grad_scheme_default }};
+{% if grad_scheme_U %}
+    grad(U)         {{ grad_scheme_U }};
+{% endif %}
+{% if grad_scheme_k %}
+    grad(k)         {{ grad_scheme_k }};
+{% endif %}
+{% if grad_scheme_epsilon %}
+    grad(epsilon)   {{ grad_scheme_epsilon }};
+{% endif %}
+}
+
+divSchemes
+{
+    default         none;
+
+    div(phi,U)      {{ div_scheme_U }};
+    div(phi,T)      {{ div_scheme_T }};
+    div(phi,k)      {{ div_scheme_k }};
+    div(phi,epsilon) {{ div_scheme_epsilon }};
+    div(phi,R)      bounded Gauss upwind;
+    div(R)          Gauss linear;
+    div((nuEff*dev2(T(grad(U))))) Gauss linear;
+}
+
+laplacianSchemes
+{
+    default         {{ laplacian_scheme }};
+}
+
+interpolationSchemes
+{
+    default         linear;
+}
+
+snGradSchemes
+{
+    default         {{ sn_grad_scheme }};
+}
+
+
+// ************************************************************************* //

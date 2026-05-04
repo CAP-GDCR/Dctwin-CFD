@@ -1,0 +1,28 @@
+site_name: DCTwin Documentation
+site_description: Automated CFD Simulation Framework for Data Center Thermal Analysis
+repo_url: https://github.com/CAP-GDCR/Dctwin-CFD
+
+theme:
+  name: material
+  palette:
+    primary: blue
+    accent: light blue
+
+nav:
+  - Home: index.md
+  - Getting Started:
+      - Installation: getting_started/installation.md
+      - Quick Start: getting_started/quick_start.md
+  - Tutorial Cases:
+      - Overview: cases/overview.md
+  - Architecture:
+      - Pipeline Overview: architecture/pipeline.md
+  - API Reference:
+      - CLI: api/cli.md
+
+markdown_extensions:
+  - admonition
+  - pymdownx.highlight
+  - pymdownx.superfences
+  - toc:
+      permalink: true
